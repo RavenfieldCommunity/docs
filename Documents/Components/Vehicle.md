@@ -1,11 +1,4 @@
-|名称|类型|描述|
-|AiType|enum||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
