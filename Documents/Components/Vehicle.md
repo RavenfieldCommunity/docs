@@ -1,32 +1,58 @@
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| aiType | enum |  |
+| armorRating | enum |  |
+| aiUseStrategy |enum |  |
+| name | string |  |
+| seats | List<Seat> |  |
+| targetType | Actor.TargetType |  |
+| armorDamagedBy | ArmorRating |  |
+| smallArmsMultiplier | float |  |
+| heavyArmsMultiplier | float |  |
+| canBeRepairedAfterDeath | bool |  |
+| maxHealth | float |  |
+| crashDamageSpeedThrehshold | float |  |
+| crashDamageMultiplier | float |  |
+| spotChanceMultiplier | float |  |
+| burnTime | float |  |
+| crashSkipsBurn | bool |  |
+| directJavelinPath | bool |  |
+| canCapturePoints | bool |  |
+| canFireAtOwnVehicle | bool |  |
+| targetLockPoint | Transform |  |
+| aiUseToDefendPoint | bool |  |
+| minCrewCount | int |  |
+| roamCompleteDistance | float |  |
+| smokeParticles | ParticleSystem |  |
+| fireParticles | ParticleSystem |  |
+| fireAlarmSound | AudioSource |  |
+| deathParticles | ParticleSystem |  |
+| deathSound | AudioSource |  |
+| impactAudio | AudioSource |  |
+| heavyDamageAudio | AudioSource |  |
+| blockSensor | Transform |  |
+| blip | Texture |  |
+| blipScale | float |  |
+| avoidanceSize | Vector2 |  |
+| pathingRadius | float |  |
+| ramSize | Vector3 |  |
+| ramOffset | Vector3 |  |
+| disableOnDeath | GameObject[] |  |
+| activateOnDeath | GameObject[] |  |
+| teamColorMaterials | MaterialTarget[] |  |
+| engine | Engine |  |
+| hasCountermeasures | bool |  |
+| countermeasuresActiveTime | float |  |
+| countermeasuresCooldown | float |  |
+| countermeasureParticles | ParticleSystem |  |
+| countermeasureSpawnPrefab | GameObject |  |
+| countermeasureAudio | AudioSource |  |
+| controlAudio | bool |  |
+| powerGainSpeed | float |  |
+| pitchGainSpeed | float |  |
+| throttleGainSpeed | float |  |
+| throttleAudioSource | AudioSource |  |
+| extraAudioSource | AudioSource |  |
+| shiftForwardClip | AudioClip |  |
+| shiftReverseClip | AudioClip |  |
+| ignitionClip | AudioClip |  |
