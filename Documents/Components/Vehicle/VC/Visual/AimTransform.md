@@ -3,4 +3,4 @@
 | idleTransform | Transform |  |
 | aimTransform | Transform |  |
 | changeSpeed | float |  |
-| userSeat | [Seat](https://github.com/Nevin23333/RavenfieldCommunityResource/tree/cn/Documents/Components/Vehicle/Seat.md) |  |
+| userSeat | [Seat](/Documents/Components/Vehicle/Seat.md) |  |
