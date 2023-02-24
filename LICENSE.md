@@ -1,4 +1,4 @@
-此项目（Github@RavenfieldCommunityResource）的文本内容（markdown的"*.md"）均以CC-BY-SA 2.0许可使用，任何形式的使用都必须署名"Github@RavenfieldCommunityResource"
+此项目(Github@[RavenfieldCommunityResource](https://github.com/Leafx-code/RavenfieldCommunityResource)的文本内容（markdown"*.md"）均以CC-BY-SA 2.0许可使用，任何形式的使用都必须署名"Github@RavenfieldCommunityResource"
 
 CC-BY-SA 2.0许可协议副本（如有更改以https://creativecommons.org/licenses/by-sa/4.0/legalcode 的版本为准）：
 
@@ -99,7 +99,7 @@ No term or condition of this Public License will be waived and no failure to com
 Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority. 
 ```
 
-而脚本内容（包括但不限于CSharp"*.cs"、Ravenscrpits"*.txt"）则以Apache 2.0授权许可使用（除非另行说明），任何形式的使用都必须署名"Github@RavenfieldCommunityResource"
+而该项目(Github@[RavenfieldCommunityResource](https://github.com/Leafx-code/RavenfieldCommunityResource)脚本内容（包括但不限于CSharp"*.cs"、Ravenscrpits"*.txt"）则以Apache 2.0授权许可使用（除非脚本所有者另行说明），任何形式的使用都必须署名"Github@RavenfieldCommunityResource"
 
 Apache 2.0协议副本（如有更改以https://www.apache.org/licenses/LICENSE-2.0.html 的版本为准）：
 ```
@@ -156,4 +156,6 @@ You may add Your own copyright statement to Your modifications and may provide a
 END OF TERMS AND CONDITIONS
 ```
 
-注意：该项目（Github@RavenfieldCommunityResource）的美术资源（包括但不限于例如"*.fbx""*.ogg""*.blend"）都禁止任何商业形式的使用（包括但不限于“通过捐赠付费制作MOD”）！
+该项目（Github@[RavenfieldCommunityResource](https://github.com/Leafx-code/RavenfieldCommunityResource)）的美术资源（包括但不限于例如"*.fbx""*.ogg""*.blend"）都禁止任何商业形式的使用（包括但不限于“通过捐赠付费制作MOD”）！
+
+如果您违反了上述协议，该项目（Github@[RavenfieldCommunityResource](https://github.com/Leafx-code/RavenfieldCommunityResource)）的所有者有权终止您通过此许可协议获得的权利，这意味着，您将其不再有资格使用、修改或分发此项目的任何内容
