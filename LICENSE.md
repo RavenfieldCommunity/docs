@@ -1,3 +1,18 @@
+# RavenfieldCommunityResource's License
+
+Copyright 2023 @ Leafx-code
+1. 定义
+
+    “此项目”指由Github@[Leafx-code](https://github.com/Leafx-code)在Github创建的存储库“[RavenfieldCommunityResource](https://github.com/Leafx-code/RavenfieldCommunityResource)”
+    
+    “您”指行使本许可授予的权限
+    
+    “文本内容”指此项目下的由John Gruber发布的markdown文件，其文件后缀为“.md”
+    
+    "脚本"指由美国Microsoft Corporation发布的C#编程语言文件（其文件后缀为“.cs”）与由瑞典SteelRaven7 AB.发布的基于Lua的Ravenscrpits编程文件（其文件后缀为“.txt”）等通俗上被社会承认的编程语言文件
+    
+    “美术资源”指由美国Autodesk Corporation出品的C#三维、二维创作与交换格式文件（其文件后缀为“.fbx”）与由OGG Vorbis音频文件（其文件后缀为“.ogg”）与由Blender 基金会维护的三维、二维创作与交换格式文件（其文件后缀为“.blend”）等为通俗上被社会承认的美术资源文件
+
 此项目(Github@[RavenfieldCommunityResource](https://github.com/Leafx-code/RavenfieldCommunityResource)的文本内容（markdown"*.md"）均以CC-BY-SA 2.0许可使用，任何形式的使用都必须署名"Github@RavenfieldCommunityResource"
 
 CC-BY-SA 2.0许可协议副本（如有更改以https://creativecommons.org/licenses/by-sa/4.0/legalcode 的版本为准）：
