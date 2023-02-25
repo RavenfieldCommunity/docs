@@ -15,5 +15,6 @@
         - ❌[RF快速上手指南](/Documents/in-GAME/QuickStart.md)
         - ❌[游戏内地图编辑器使用指南](/Documents/in-GAME/MapEditor.md)
 - ⏺[开源模组](/OpenSource%20Mod/README.md)
-- ⏺[项目维护须知](DEV-DOCUMENTS/EXAMPLE.md)
+- ⏺[项目维护须知](/DEV-DOCUMENTS/EXAMPLE.md)
+- ⏺[资源镜像](/Resource/README.md)
 
