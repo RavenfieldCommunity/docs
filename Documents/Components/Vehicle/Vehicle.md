@@ -4,7 +4,7 @@
 | armorRating | enum |  |
 | aiUseStrategy |enum |  |
 | name | string |  |
-| seats | List<Seat> |  |
+| seats | List<[Seat](/Documents/Components/Vehicle/Seat.md)> |  |
 | targetType | Actor.TargetType |  |
 | armorDamagedBy | ArmorRating |  |
 | smallArmsMultiplier | float |  |
