@@ -36,7 +36,7 @@
 
 然后我们再简单想一下脚本的运行逻辑与可以供玩家在游戏中调整的数值，方便实际敲代码(可以跳过)
 
-在这之前，如果您不了解诸如Start()以及实际开发中可以调用的方法，请自行查阅RCR的RS文档（或Unity文档，基本通用），此处不再赘述
+在这之前，如果您不了解诸如Start()以及实际开发中可以调用的方法，请自行查阅RCR的[RS文档](/Documents/Ravenscrpit/README.md)（或Unity文档，基本通用），此处不再赘述
 
 在本实例中，公开的可以供玩家在游戏中调整的数值：冷却时间、修复时间、激活键、是否使用Alt键、每次修复载具最大健康的%
 
@@ -56,9 +56,9 @@ Update() > 当游戏未暂停时冷却计时器累加时间到变量self.deltaTi
 
 场景内新建一个空物体，添加ScriptedBehaviour组件，游戏中这个物体下的所有东西都会被实例化
 
-新建一个TXT文件，把这个文件托入组件内的source，Behaviour处填写TXT的文件名
+新建一个TXT(Ravenscrpit)文件，把这个文件托入组件内的source，Behaviour处填写TXT的文件名
 
-预制件化这个物体，在Mutators Content Mod配置
+预制件化这个物体，在Mutator Content Mod配置
 
 
 # 1.1 撸码
