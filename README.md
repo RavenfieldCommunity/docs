@@ -40,4 +40,4 @@
 
 - ⏺[项目维护须知](/DEV-DOCUMENTS/README.md)
 
-- ⏺[资源镜像](/Resource/README.md）
+- ⏺[资源镜像](/Resource/README.md)
