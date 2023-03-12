@@ -32,7 +32,7 @@
 
     - ⏺in-GAME (游戏基础)
 
-        - ❌[RF快速上手指南](/Documents/in-GAME/QuickStart.md)
+        - ⏺[RF快速上手指南](/Documents/in-GAME/QuickStart.md)
 
         - ❌[游戏内地图编辑器使用指南](/Documents/in-GAME/MapEditor.md)
 
