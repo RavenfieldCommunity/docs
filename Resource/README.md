@@ -1,6 +1,6 @@
 **此处存放这一些常用的资源（包括旧版已存档资源）**
 
-**若对资源安全性存在疑虑，请自行检查资源数字签名或源码安全性！！**
+**若对资源安全性存在疑虑，欢迎检查资源数字签名或源码安全性！！**
 
 - RFTools [Github link](https://github.com/Leafx-code/RavenfieldCommunityResource/releases/download/Resource/RFTools.unitypackage)    EA26以上适用，版本2020.3.23f1
 - RavenfieldToolPack [Github link](https://github.com/Leafx-code/RavenfieldCommunityResource/releases/download/Resource/RavenfieldToolsPack.zip)    EA26以下适用，版本5.6.7f1
