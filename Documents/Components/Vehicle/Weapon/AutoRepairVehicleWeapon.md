@@ -1,4 +1,4 @@
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| repairAmount | float |  |
-| ShouldHaveProjectilePrefab | bool |  |
+| repairAmount | float | 修复血量 |
+| ShouldHaveProjectilePrefab | bool | 是否有发射物 |
