@@ -3,8 +3,8 @@
 | aiType | enum | ai类型 |
 | armorRating | enum | 装甲强度（轻武器，重武器，穿甲）|
 | aiUseStrategy |enum |  ai使用策略 （占领，游走，运输）|
-| name | string |  |
-| seats | List<[Seat](/Documents/Components/Vehicle/Seat.md)> |  |
+| name | string | 载具名称 | 
+| seats | List<[Seat](/Documents/Components/Vehicle/Seat.md)> | 座位（gameobject) |
 | targetType | Actor.TargetType | 目标类型（载具自身的类型）|
 | armorDamagedBy | ArmorRating | 装甲类型 | 
 | smallArmsMultiplier | float | 轻武器伤害倍率 | 
