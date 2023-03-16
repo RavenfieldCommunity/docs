@@ -1,7 +1,7 @@
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | bearingTransform | Transform | 此脚本过于古老，已废弃，不作注解 |
-| pitchTransform | Transform |  |
+| pitchTransform | Transform | 使用mountedstabilizedturret代替 |
 | clampX | Clamp |  |
 | clampY | Clamp |  |
 | sensitivityX | float |  |
