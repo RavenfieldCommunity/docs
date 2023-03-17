@@ -1,10 +1,16 @@
 # VehicleContentMod
+
+## 描述
 载具导出配置组件，只有给载具预制件
 (包含[Vehicle](/Documents/Components/Vehicle/Vehicle.md)或由其派生的组件)应用这个组件才能被Unity导出与被游戏导入
 
+## 用法
 将其套用在一个空物体预制件或载具本身配置即可
 
-注意：载具在Ravenscrpits中显示的名字是载具预制件的名字，可以把一个载具应用在多个载具类型槽位
+## 注意
+载具在Ravenscrpits中显示的名字是载具预制件的名字，可以把一个载具应用在多个载具类型槽位
+
+## Member
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | jeep | GameObject | Jeep的载具预制件 |

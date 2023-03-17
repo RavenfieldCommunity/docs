@@ -8,6 +8,18 @@
 
 </p>
 
+<p>
+
 <h3 align="center">中文稳定版</h3>
 
-[主页](/INDEX.md)
+
+</p>
+
+> 由Ravenfield社区强力驱动
+
+> 基于GPLv3许可(除[/OpenSource Mod](/OpenSource%20Mod)与[/Resource](/Resource)内被另外声明的内容)分发
+
+！！！Cilck here >>> [主页](/INDEX.md)
+
+想要帮助我们维护文档？ Cilck here >>>[项目维护帮助](/DEV-DOCUMENTS/README.md)
+
