@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://ravenfieldcommunity.github.io/docs/sitemap.xml
+Sitemap: https://ravenfieldcommunity.github.io/sitemap.xml
