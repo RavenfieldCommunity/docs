@@ -30,7 +30,8 @@ export default hopeTheme({
       footer: "CC-BY-NC-4.0 Licensed | Copyright © 2023-present RavenfieldCommunity and ALL Player",
       displayFooter: true,
       metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
+        editLink: "在 GitHub 上编辑此页", 
+        contributors: false
       },
     },
   },
