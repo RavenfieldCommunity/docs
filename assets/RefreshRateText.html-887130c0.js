@@ -1,1 +1,0 @@
-import{_ as e,X as t,Y as s,Z as _}from"./framework-77bf7967.js";const c={},o=_("p",null,"描述:",-1),n=[o];function r(a,l){return t(),s("div",null,n)}const d=e(c,[["render",r],["__file","RefreshRateText.html.vue"]]);export{d as default};
