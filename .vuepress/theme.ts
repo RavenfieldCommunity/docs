@@ -8,6 +8,9 @@ export default hopeTheme({
   favicon : "/logo3.jpg",
   logo: "/logo3.jpg",
   repo: "ravenfieldcommunity/docs",
+  meta: {
+        contributors: false
+  },
   locales: {
     '/': {
       footer: "CC-BY-NC-4.0 Licensed | Copyright © 2023-present RavenfieldCommunity and ALL Player",
@@ -31,7 +34,6 @@ export default hopeTheme({
       displayFooter: true,
       metaLocales: {
         editLink: "在 GitHub 上编辑此页", 
-        contributors: false
       },
     },
   },
