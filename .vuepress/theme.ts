@@ -1,4 +1,4 @@
-import { hopeTheme } from "vuepress-theme-hope";
+import { hopeTheme, readingTime } from "vuepress-theme-hope";
 import { enNavbar, cnNavbar } from "./navbar/index.js";
 import { enSidebar, cnSidebar } from "./sidebar/index.js";
 
@@ -8,17 +8,19 @@ export default hopeTheme({
   favicon : "/logo3.jpg",
   logo: "/logo3.jpg",
   repo: "ravenfieldcommunity/docs",
-  meta: {
-        contributors: false
-  },
+  pure: true,
+  contributors: false,
   locales: {
     '/': {
-      footer: "CC-BY-NC-4.0 Licensed | Copyright © 2023-present RavenfieldCommunity and ALL Player",
+      footer: "CC-BY-NC-4.0 Licensed | Copyright © 2023-present RavenfieldCommunity",
+      navbarLocales: {
+        langName: 'Hi~'
+      }
     },
     "/en/": {
       navbar: enNavbar,
       sidebar: enSidebar,
-      footer: "CC-BY-NC-4.0 Licensed | Copyright © 2023-present RavenfieldCommunity and ALL Player",
+      footer: "CC-BY-NC-4.0 Licensed | Copyright © 2023-present RavenfieldCommunity",
       displayFooter: true,
       metaLocales: {
         editLink: "Edit this page on GitHub",
@@ -44,6 +46,7 @@ export default hopeTheme({
       repoId: "R_kgDOJde86g",
       category: "Announcements",
       categoryId: "DIC_kwDOJde86s4CWLdI"
-    }
+    },
+    readingTime: false
   }
 });

@@ -1,6 +1,9 @@
+---
+title: 首页
+---
 <p align="center">
 
-<h1 align="center">Ravenfield社区客制化支持(简称RFMD)</h1>
+<h1 align="center">Ravenfield社区客制化支持</h1>
 
 <h4 align="center">Raven中文分部(bushi</h4>
 
@@ -24,39 +27,35 @@
     </a>
 </p>
 
-> 由Ravenfield社区强力驱动
-
-> 基于[CC-BY-NC-4.0](https://github.com/RavenfieldCommunity/docs/blob/master/LICENSE)许可授权与分发
+基于[CC-BY-NC-4.0](https://github.com/RavenfieldCommunity/docs/blob/master/LICENSE)许可授权的Ravenfield社区客制化文档💡
 
 想要帮助我们维护文档？ >>>[项目维护帮助](/cn/CONTRIBUTING.md)
 
 
-## 公告
-> 鉴于目前文档的完成度，故开放主分支以允许玩家直接修改，无需提交到开发分支，但是注意，[项目维护帮助](/cn/CONTRIBUTING.md)的文档目前还未修改完善，如有问题请issue
->
-> 20230423-171800 Leafx-code
+## 公告📑
+> null
 
 > **[点此](/cn/NOTICE.md)访问往期公告**
 
-## 目录
-### Unity组件
+## 食用方法🍴
 
-||||||
-|------|------|------|------|------|
-|[载具](/cn/Components/)|[武器](/cn/Components/Weapon/README.md)|地图|Ravenscrpit|Misc（其他）|
+## 目录📂
 
-### in-GAME (游戏基础)
-|||
-|------|------|
-|[RF快速上手指南](/cn/in-GAME/QuickStart.md)|游戏内地图编辑器使用指南|
+- [Unity组件](/cn/Components/README.md)
 
-### 杂项
-||||
-|------|------|------|
-|[资源镜像](/cn/RESOURCE.md)|[RFCreator Project](/cn/Tutorials/README.md) (MODDING教程)|开源模组|
+- in-GAME (游戏基础)
+  - [RF快速上手指南](/cn/in-GAME/QuickStart.md)
 
-## 鸣谢
+- [资源镜像](/cn/RESOURCE.md)
+- [RFCreator Project](/cn/Tutorials/README.md) (MODDING教程)
+- [开源模组](/cn/OSMod.md)
+
+## 鸣谢🧡
 
 所有的[贡献者](https://github.com/RavenfieldCommunity/docs/graphs/contributors)们，因为你们才使得了这个文档日臻完善❤❤❤
 
-以及[SocialSisterYi/bilibili-API-collect/](https://github.com/SocialSisterYi/bilibili-API-collect/)这个BilibiliAPI文档项目，他为这个项目的结构与Github Pages的构建提供了参考❤❤❤
+以及以下开源项目❤❤❤：
+- [SocialSisterYi/bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect/)
+为这个项目的结构与的构建提供了参考❤❤❤
+- [vuepress-theme-hope](https://github.com/vuepress-theme-hope/vuepress-theme-hope)、[vuepress/vuepress](https://github.com/vuepress/vuepress-next)、[JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
+部署项目文档使用的开源项目
