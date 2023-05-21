@@ -10,6 +10,7 @@ export default hopeTheme({
   repo: "ravenfieldcommunity/docs",
   pure: true,
   contributors: false,
+  pageInfo: ["Category", "Tag"],
   locales: {
     '/': {
       footer: "CC-BY-NC-4.0 Licensed | Copyright © 2023-present RavenfieldCommunity",
