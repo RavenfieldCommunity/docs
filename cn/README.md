@@ -3,8 +3,6 @@ title: 首页
 ---
 <p align="center">
 
-<img src="/assets/logo2.jpg" width="250" height="250">
-
 <h1 align="center">Ravenfield社区客制化支持</h1>
 
 <h4 align="center">Raven中文分部(bushi</h4>

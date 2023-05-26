@@ -1,5 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { redirectPlugin } from "vuepress-plugin-redirect";
 
 export default defineUserConfig({
   base: "/docs/",
@@ -22,4 +24,12 @@ export default defineUserConfig({
     }
   },
   theme,
+  plugins: [
+    searchProPlugin({
+      indexContent: true
+    }),
+    redirectPlugin({
+        autoLocale: true
+    })
+  ]
 });
