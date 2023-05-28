@@ -4,6 +4,9 @@ devDependencies:
   '@vuepress/client':
     specifier: 2.0.0-beta.62
     version: 2.0.0-beta.62
+  '@vuepress/plugin-google-analytics':
+    specifier: 2.0.0-beta.62
+    version: 2.0.0-beta.62
   vue:
     specifier: ^3.3.4
     version: 3.3.4
@@ -1848,7 +1851,7 @@ packages:
   /@types/sax@1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 20.2.4
     dev: true
 
   /@types/trusted-types@2.0.3:
@@ -2113,6 +2116,16 @@ packages:
       '@vuepress/core': 2.0.0-beta.62
       '@vuepress/utils': 2.0.0-beta.62
       execa: 7.1.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@vuepress/plugin-google-analytics@2.0.0-beta.62:
+    resolution: {integrity: sha512-Nm2GGb2KCooZjKD0ZgmmlI+2N05/mCMIJ8ziZU/3xrao6oRCxlKFm+g1L0iE/1XY2vNQpX76OedhSwRtYEjsRw==}
+    dependencies:
+      '@vuepress/client': 2.0.0-beta.62
+      '@vuepress/core': 2.0.0-beta.62
+      '@vuepress/utils': 2.0.0-beta.62
     transitivePeerDependencies:
       - supports-color
     dev: true

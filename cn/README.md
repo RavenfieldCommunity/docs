@@ -27,19 +27,28 @@ title: 首页
     </a>
 </p>
 
-基于[CC-BY-NC-4.0](https://github.com/RavenfieldCommunity/docs/blob/master/LICENSE)许可授权的Ravenfield社区客制化文档💡
+基于[CC-BY-NC-4.0](https://github.com/RavenfieldCommunity/docs/blob/master/LICENSE)许可授权的Ravenfield社区客制化文档✨
 
-想要帮助我们维护文档？ >>>[项目维护帮助](/cn/CONTRIBUTING.md)
-
-
-## 公告📑
-> null
-
-> **[点此](/cn/NOTICE.md)访问往期公告**
 
 ## 食用方法🍴
 
-???
+1. 在[Github Page](https://ravenfieldcommunity.github.io/docs/)访问（推荐）
+或者将此网站作为[PWA](https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps)安装到本地以实现最佳体验。
+不是很建议直接在Github访问，因为文档部分深度整合进了Vuepress,可能会导致部分BUG发生
+
+2. 使用Git克隆到本地访问
+
+## 做出贡献💡
+
+玩家与modder们对文档做出贡献！
+
+包括但不限于提出意见与完善文档
+
+无论是在评论区提出还是Issue
+
+总之，这个社区需要我们共同维护！
+
+更多信息请浏览[项目维护帮助](/cn/CONTRIBUTING.md)
 
 ## 目录📂
 
@@ -58,6 +67,6 @@ title: 首页
 
 以及以下开源项目❤❤❤：
 - [SocialSisterYi/bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect/)
-为这个项目的结构与的构建提供了参考❤❤❤
+    为这个项目的结构与的构建提供了参考❤❤❤
 - [vuepress-theme-hope](https://github.com/vuepress-theme-hope/vuepress-theme-hope)、[vuepress/vuepress](https://github.com/vuepress/vuepress-next)、[JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
-部署项目文档使用的开源项目
+    部署项目文档使用的开源项目

@@ -2,6 +2,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { redirectPlugin } from "vuepress-plugin-redirect";
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 
 export default defineUserConfig({
   base: "/docs/",
@@ -18,7 +19,7 @@ export default defineUserConfig({
             description: 'Ravenfield社区客制化文档'
     },
     '/en/': {
-            lang: 'zh-TW', 
+            lang: 'en-US', 
             title: 'Ravenfield Modding Documents',
             description: 'Ravenfield Community MODDING Documents'
     }
@@ -29,7 +30,10 @@ export default defineUserConfig({
       indexContent: true
     }),
     redirectPlugin({
-        autoLocale: true
+        autoLocale: true   
+    }),
+    googleAnalyticsPlugin({
+      id: 'G-SE76S2Y1LL'
     })
   ]
 });

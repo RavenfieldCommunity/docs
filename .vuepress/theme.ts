@@ -48,6 +48,10 @@ export default hopeTheme({
       category: "Announcements",
       categoryId: "DIC_kwDOJde86s4CWLdI"
     },
-    readingTime: false
+    readingTime: false,
+    pwa: {
+      themeColor: '#6d6d6d',
+      cacheHTML: true
+    }
   }
 });

@@ -5,13 +5,13 @@
 
 ## 维护注意事项
 
-> rfmd是一个仅用于学习研究、社区开源、公益性质的[Ravenfield](https://ravenfieldgame.com/)文档，基于 [CC-BY-NC 2.0](https://github.com/RavenfieldCommunity/docs/blob/main/LICENSE) (除被另外声明的内容)协议开源，禁止一切商业使用，如需转载请注明"Github@RavenfieldCommunity"
+1. rfmd是一个仅用于学习研究、社区开源、公益性质的[Ravenfield](https://ravenfieldgame.com/)文档，基于 [CC-BY-NC 2.0](https://github.com/RavenfieldCommunity/docs/blob/main/LICENSE) (除被另外声明的内容)协议开源，禁止一切商业使用，如需转载请注明"Github@RavenfieldCommunity"
 
-> 本项目为开源项目，不接受任何形式的催单和索取行为，更不容许存在付费内容
+2. 本项目为开源项目，不接受任何形式的催单和索取行为，更不容许存在付费内容
 
-> 该项目使用 Vuepress的扩展[Markdown](https://zh.wikipedia.org/zh-cn/Markdown)语法进行文档书写
+3. 该项目使用 Vuepress的扩展[Markdown](https://zh.wikipedia.org/zh-cn/Markdown)语法进行文档书写
 
-> 请上传内容之前检查版权合法性
+4. 请上传内容之前检查版权合法性
 
 ## 组件类文档编写规范
 
@@ -55,12 +55,19 @@ category:
 `{描述}`填写对这个变量的说明、作用，填写的内容请尽量详细可靠并避免含糊不清的描述。当这里为下拉列表或emun时，请填写对选项的说明，如“`（Auto=自动、None=无、Handgun=手枪、RifleSmall=小步枪、RifleLarge=大步枪、Launcher=炮、Tank=坦克）`”
 
 注意：
-> 当其上任何一个内容引用了任何一个其他的RFTools的组件时，应为这个字符串设置一个超链接，方便他人跳转。如`{变量类型}`中填写的“`List<Seat>`”时使用了一个组件，则应改为“`List<[Seat](/Documents/Components/Vehicle/Seat.md)>`”。其他地方同理。
+1. 当其上任何一个内容引用了任何一个其他的RFTools的组件时，应为这个字符串设置一个超链接，方便他人跳转。如`{变量类型}`中填写的“`List<Seat>`”时使用了一个组件，则应改为“`List<[Seat](/Documents/Components/Vehicle/Seat.md)>`”。其他地方同理。
 
-> 当您不知道一个项或一栏例应填写什么时，应在此处留空，而不是填写“未知”、“不知道”。
+2. 当您不知道一个项或一栏例应填写什么时，应在此处留空，而不是填写“未知”、“不知道”。
+
+3. 请遵循上述示例编写文档,不要额外修改Vuepress config
 
 示例：
 ```markdown
+---
+category: 
+- 组件
+- 载具
+---
 # Vehicle
 
 ## 描述
@@ -105,20 +112,18 @@ category:
 ## 开源模组上传
 
 在上传之前，您必须：
+
 1. 在自己的Github（只能在Github）创建一个专门的存储库储存自己的MOD源文件。基于版权纠纷的考虑，我们不允许直接在此存储库上传源文件
 
-2. 上传到这里之前，应先上传至Steam Workshop上，并在Workshop的MOD简介注明以下内容，否则您上传的MOD将会被当做无效MOD清理：
-```BBCode
-[quote]
-Open Source at [url=https://ravenfieldcommunity.github.io/docs/cn/OSMod.html]RavenfieldCommunity[/url]
-[/quote]
-```
-
-3. MOD的logo请存储至您的存储库
+2. MOD的logo请存储至您的存储库
 
 然后按页面的示例填写即可
 
-## 文档Commit提交
+## 杂项
+
+1. 不要使用诸如`/cn/Components/`这类绝对路径，保证为以下示例：`/cn/Components`、`/cn/Components/README.md`
+
+## 提交修改
 
 应先提交至开发分支（DEV-BRANCHES）
 
@@ -127,6 +132,11 @@ Open Source at [url=https://ravenfieldcommunity.github.io/docs/cn/OSMod.html]Rav
 确保GPG签名有效
 
 提交后等待管理员手动merge或Actions自动merge至稳定分支。不要fork或新建一个分支后向我们提交pull resquests
+
+如要在提交中加入共同编辑者，请在Commit message的行首添加：
+```
+Co-authored-by: {名字} <{邮箱}>
+```
 
 ## Issue与社群讨论
 

@@ -1,3 +1,7 @@
+---
+category: 
+- 组件
+---
 # 组件索引
 ## 载具
 - [VehicleContentMod](./VehicleContentMod.md) 载具导出配置
@@ -37,14 +41,13 @@
         - [AimingWheel](./AimingWheel.md)
         - [ControlSurface](./ControlSurface.md)
         - [CopyRotation](./CopyRotation.md)
-        - [DeltaRotationIndicator](./VisualDeltaRotationIndicator/.md)
+        - [DeltaRotationIndicator](./VisualDeltaRotationIndicator.md)
         - [DeltaRotationIndicator](./VisualDeltaRotationIndicator.md)
         - [EnginePoweredParticles](./EnginePoweredParticles.md)
         - [FollowMainCamera](./FollowMainCamera.md)
         - [ForceHeight](./ForceHeight.md)
         - [GeometryTrack](./GeometryTrack.md)
         - [HeadingGuide](./HeadingGuide.md)
-        - [InheritDeltaPosition](./VisualInheritDeltaPosition/.md)
         - [InheritDeltaRotation](./InheritDeltaRotation.md)
         - [Joystick](./Joystick.md)
         - [MountedStabilizedTurretUIAimIndicator](./MountedStabilizedTurretUIAimIndicator.md)

@@ -1,7 +1,7 @@
 # AutoRepairVehicleWeapon
 
 ## 描述
-从[MountedWeapon](./Weapon/MountedWeapon.md)类派生
+从[MountedWeapon](./MountedWeapon.md)类派生
 
 ## 用法
 
