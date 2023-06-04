@@ -25,6 +25,7 @@ export default defineUserConfig({
     }
   },
   theme,
+  shouldPrefetch: false,
   plugins: [
     searchProPlugin({
       indexContent: true
