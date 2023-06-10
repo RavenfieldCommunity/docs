@@ -15,12 +15,12 @@ category:
 - [AnimationDrivenVehicle](./AnimationDrivenVehicle.md)
 - Weapon 车载武器
     - [AutoRepairVehicleWeapon](./AutoRepairVehicleWeapon.md) 载具修复武器
-    - [CarHorn](./CarHorn.md)
-    - [Mortar](./Mortar.md)
-    - [MountedStabilizedTurret](./MountedStabilizedTurret.md)
-    - [MountedTurret](./MountedTurret.md)
-    - [MountedWeapon](./MountedWeapon.md)
-    - [TankTurret](./TankTurret.md)
+    - [CarHorn](./CarHorn.md) 载具喇叭
+    - [Mortar](./Mortar.md) 迫击炮
+    - [MountedStabilizedTurret](./MountedStabilizedTurret.md)  固定炮塔（类似tank）
+    - [MountedTurret](./MountedTurret.md) 固定炮塔(已弃用)
+    - [MountedWeapon](./MountedWeapon.md) 车载武器
+    - [TankTurret](./TankTurret.md) Tank的固定炮塔(已弃用)
 - Vehicle Components 载具附属组件
     - [AircraftDrag](./AircraftDrag.md)
     - [DirectionalDragForce](./DirectionalDragForce.md)
@@ -79,7 +79,7 @@ category:
 - [GrenadeProjectile](./GrenadeProjectile.md)
 - [Medipack](./Medipack.md)
 - [MeleeWeapon](./MeleeWeapon.md)
-- [Projectile](./Projectile.md)
+- [Projectile](./Projectile.md) 子弹
 - [ProximityFuzeProjectile](./ProximityFuzeProjectile.md)
 - [RigidbodyProjectile](./RigidbodyProjectile.md)
 - [Rocket](./Rocket.md)
@@ -98,7 +98,7 @@ category:
 - [CapturePoint](./CapturePoint.md)
 - [CustomActorModel](./CustomActorModel.md)
 - [CustomGraphCache](./CustomGraphCache.md)
-- [DamageZone](./DamageZone.md)
+- [DamageZone](./DamageZone.md) 伤害领域
 - [Destructible](./Destructible.md)
 - [GameModeInfo](./GameModeInfo.md)
 - [Ladder](./Ladder.md)

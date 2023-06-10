@@ -1,17 +1,8 @@
 # 贡献指南
 
 欢迎帮助我们维护RavenfieldCommunity\docs（以下简称rfmd）社区客制化支持项目！
-在开始之前，您需要先阅读维护注意事项
 
-## 维护注意事项
-
-1. rfmd是一个仅用于学习研究、社区开源、公益性质的[Ravenfield](https://ravenfieldgame.com/)文档，基于 [CC-BY-NC 2.0](https://github.com/RavenfieldCommunity/docs/blob/main/LICENSE) (除被另外声明的内容)协议开源，禁止一切商业使用，如需转载请注明"Github@RavenfieldCommunity"
-
-2. 本项目为开源项目，不接受任何形式的催单和索取行为，更不容许存在付费内容
-
-3. 该项目使用 Vuepress的扩展[Markdown](https://zh.wikipedia.org/zh-cn/Markdown)语法进行文档书写
-
-4. 请上传内容之前检查版权合法性
+由于项目仍处于早期阶段，导致此文档部分内容尚未完善，敬请谅解！
 
 ## 组件类文档编写规范
 
@@ -122,6 +113,7 @@ category:
 ## 杂项
 
 1. 不要使用诸如`/cn/Components/`这类绝对路径，保证为以下示例：`/cn/Components`、`/cn/Components/README.md`
+2. 请上传内容之前检查版权合法性
 
 ## 提交修改
 
@@ -133,9 +125,12 @@ category:
 
 提交后等待管理员手动merge或Actions自动merge至稳定分支。不要fork或新建一个分支后向我们提交pull resquests
 
-如要在提交中加入共同编辑者，请在Commit message的行首添加：
+如要在提交中加入共同编辑者，请在Commit message的行尾留空回车两行后添加`Co-authored-by: {名字} <{邮箱}>`。示例：
 ```
-Co-authored-by: {名字} <{邮箱}>
+这是一个Commit信息。
+
+
+Co-authored-by: Test <test@example.com>
 ```
 
 ## Issue与社群讨论

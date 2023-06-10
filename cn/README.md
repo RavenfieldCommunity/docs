@@ -3,32 +3,30 @@ title: 首页
 ---
 <p align="center">
 
-<h1 align="center">Ravenfield社区客制化支持</h1>
-
-<h4 align="center">Raven中文分部(bushi</h4>
+<h1 align="center">Ravenfield社区客制化文档</h1>
 
 </p>
-
 <p align="center">
     <a href="https://github.com/RavenfieldCommunity/docs/issues" style="text-decoration:none">
-        <img src="https://img.shields.io/github/issues/RavenfieldCommunity/docs.svg" alt="GitHub issues"/>
+        <img src="https://img.shields.io/github/issues/RavenfieldCommunity/docs.svg?style=flat-square&" alt="GitHub issues"/>
     </a>
     <a href="https://github.com/RavenfieldCommunity/docs/stargazers" style="text-decoration:none" >
-        <img src="https://img.shields.io/github/stars/RavenfieldCommunity/docs.svg" alt="GitHub stars"/>
+        <img src="https://img.shields.io/github/stars/RavenfieldCommunity/docs.svg?style=flat-square&" alt="GitHub stars"/>
     </a>
     <a href="https://github.com/RavenfieldCommunity/docs/network" style="text-decoration:none" >
-        <img src="https://img.shields.io/github/forks/RavenfieldCommunity/docs.svg" alt="GitHub forks"/>
+        <img src="https://img.shields.io/github/forks/RavenfieldCommunity/docs.svg?style=flat-square&" alt="GitHub forks"/>
     </a>
     <a href="https://github.com/RavenfieldCommunity/docs/actions">
-        <img src="https://img.shields.io/github/actions/workflow/status/RavenfieldCommunity/docs/deploy-docs.yml">
+        <img src="https://img.shields.io/github/actions/workflow/status/RavenfieldCommunity/docs/deploy-docs.yml?style=flat-square&">
     </a>
     <a href="https://github.com/RavenfieldCommunity/docs/blob/main/LICENSE" style="text-decoration:none" >
-        <img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="GitHub license"/>
+        <img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg?style=flat-square&" alt="GitHub license"/>
     </a>
 </p>
 
-基于[CC-BY-NC-4.0](https://github.com/RavenfieldCommunity/docs/blob/master/LICENSE)许可授权的Ravenfield社区客制化文档✨
+基于[CC-BY-NC-4.0](https://github.com/RavenfieldCommunity/docs/blob/master/LICENSE)许可授权
 
+在[Steam Game](https://store.steampowered.com/app/636480/)深入了解这款游戏
 
 ## 食用方法🍴
 
@@ -65,8 +63,8 @@ title: 首页
 
 所有的[贡献者](https://github.com/RavenfieldCommunity/docs/graphs/contributors)们，因为你们才使得了这个文档日臻完善❤❤❤
 
-以及以下开源项目❤❤❤：
+以及以下开源项目 ：
 - [SocialSisterYi/bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect/)
-    为这个项目的结构与的构建提供了参考❤❤❤
+    为这个项目的结构与的构建提供了参考
 - [vuepress-theme-hope](https://github.com/vuepress-theme-hope/vuepress-theme-hope)、[vuepress/vuepress](https://github.com/vuepress/vuepress-next)、[JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
     部署项目文档使用的开源项目

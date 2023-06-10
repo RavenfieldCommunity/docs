@@ -1,12 +1,25 @@
+---
+category: 
+- 组件
+- 地图
+---
 # DamageZone
 ## 描述
 
+一个用于生成伤害范围的类，当玩家或Bot走进范围时就会遭到伤害
+
 ## 用法
+
+套用在一个3D Object（譬如Cube立方体）上，可以附加材质（虽然实际游戏时不可见）
+
+物体的体积即是作用范围
+
+无需其他的附加组件（如碰撞检测、刚体之类）
 
 ## 注释
 
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| damagePerSecond  | float |  |  
-| balanceDamagePerSecond  | float |  |  
+| damagePerSecond  | float | 每秒的伤害 |  
+| balanceDamagePerSecond  | float | 每秒的冲击力（影响玩家平衡） |  

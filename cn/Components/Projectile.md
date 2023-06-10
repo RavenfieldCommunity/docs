@@ -1,3 +1,8 @@
+---
+category: 
+- 组件
+- 载具
+---
 # Projectile
 ## 描述
 
@@ -16,8 +21,7 @@
 | damage  | float |  伤害 |  
 | balanceDamage  | float | 冲击力（影响玩家平衡） |  
 | impactDecalSize  | float |  {机翻}冲击面积 |  
-| passThroughPenetrateLayer  | bool | r
-{机翻}通过穿透层 |  
+| passThroughPenetrateLayer  | bool | {机翻}通过穿透层 |  
 | piercing  | bool |  是否有穿透力 |  
 | makesFlybySound  | bool |  飞过时制造声音 |  
 | flybyPitch  | float |  飞行距离 |  

@@ -1,9 +1,19 @@
+---
+category: 
+- 组件
+- 载具
+---
 # CarHorn
 
 ## 描述
+
 从[MountedWeapon](./MountedWeapon.md)类派生
 
+只是一个喇叭
+
 ## 用法
+
+作为车载武器挂载到载具，参考[MountedWeapon](./MountedWeapon.md)
 
 ## 注释
 

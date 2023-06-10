@@ -1,9 +1,18 @@
-# TankTurret
+---
+category: 
+- 组件
+- 载具
+---
+# MountedWeapon
 
 ## 描述
 从[Weapon](./Weapon.md)类派生
 
+类似于[Weapon](./Weapon.md)，但针对车载武器，标准[Weapon](./Weapon.md)类无法在载具使用
+
 ## 用法
+
+挂载在[Seat](/cn/Components/Seat.md)的Weapons下
 
 ## 注释
 

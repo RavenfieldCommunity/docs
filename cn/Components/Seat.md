@@ -1,8 +1,17 @@
+---
+category: 
+- 组件
+- 载具
+---
 # Seat
 
 ## 描述
 
+载具的基础座位类
+
 ## 用法
+
+应用在空物体或一个座椅的模型上
 
 ## 注释
 
@@ -23,4 +32,4 @@
 | camera | Camera | 第一人称摄像机 |
 | thirdPersonCamera | Camera | 第三人称摄像机 |
 | hud | GameObject | 抬头显示 |
-| maxOccupantBalance | float | 未知 |
+| maxOccupantBalance | float |  |

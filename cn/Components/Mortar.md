@@ -3,9 +3,13 @@
 ## 描述
 从[MountedWeapon](./MountedWeapon.md)类派生
 
+一个作为迫击炮使用的武器，特性为可自动处理落点准星
+
 ## 用法
 
 ## 注释
+
+弹道需要在[Rocket](Rocket.md)配置？
 
 ## 变量
 | 名称 | 类型 | 描述 |
