@@ -6,5 +6,7 @@
 ## 注释
 
 ## 变量
+| 名称 | 类型 | 描述 |
+| ----------- | ----------- | ----------- |
 | useWorldUpDirection  | bool |  |  
 | positionBobWeight  | float |  |  

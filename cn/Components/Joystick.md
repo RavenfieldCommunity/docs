@@ -6,6 +6,8 @@
 ## 注释
 
 ## 变量
+| 名称 | 类型 | 描述 |
+| ----------- | ----------- | ----------- |
 | driverSeat | Seat |  |  
 | maxAngle  | float |  |  
 | moveSpeed  | float |  |  

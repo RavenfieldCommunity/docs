@@ -6,6 +6,8 @@
 ## 注释
 
 ## 变量
+| 名称 | 类型 | 描述 |
+| ----------- | ----------- | ----------- |
 | solidRotorRenderer | Renderer |  |  
 | blurredRotorRenderer | Renderer |  |  
 | renderSolidRendererShadow  | bool |  |  

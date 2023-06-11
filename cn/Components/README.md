@@ -18,9 +18,9 @@ category:
     - [CarHorn](./CarHorn.md) 载具喇叭
     - [Mortar](./Mortar.md) 迫击炮
     - [MountedStabilizedTurret](./MountedStabilizedTurret.md)  固定炮塔（类似tank）
-    - [MountedTurret](./MountedTurret.md) 固定炮塔(已弃用)
+    - ~~[MountedTurret](./MountedTurret.md) 固定炮塔~~(已弃用)
     - [MountedWeapon](./MountedWeapon.md) 车载武器
-    - [TankTurret](./TankTurret.md) Tank的固定炮塔(已弃用)
+    - ~~[TankTurret](./TankTurret.md) Tank的固定炮塔~~(已弃用)
 - Vehicle Components 载具附属组件
     - [AircraftDrag](./AircraftDrag.md)
     - [DirectionalDragForce](./DirectionalDragForce.md)
@@ -41,8 +41,6 @@ category:
         - [AimingWheel](./AimingWheel.md)
         - [ControlSurface](./ControlSurface.md)
         - [CopyRotation](./CopyRotation.md)
-        - [DeltaRotationIndicator](./VisualDeltaRotationIndicator.md)
-        - [DeltaRotationIndicator](./VisualDeltaRotationIndicator.md)
         - [EnginePoweredParticles](./EnginePoweredParticles.md)
         - [FollowMainCamera](./FollowMainCamera.md)
         - [ForceHeight](./ForceHeight.md)
@@ -118,6 +116,6 @@ category:
 - [SpeedLimitZone](./SpeedLimitZone.md)
 - [TimeOfDay](./TimeOfDay.md)
 - [TurretSpawner](./TurretSpawner.md)
-- [VehicleSpawner](./VehicleSpawner.md)
-- [WaterLevel](./WaterLevel.md)
-- [WaterVolume](./WaterVolume.md)
+- [VehicleSpawner](./VehicleSpawner.md) 载具生成点
+- [WaterLevel](./WaterLevel.md) 海平面
+- [WaterVolume](./WaterVolume.md) 水面

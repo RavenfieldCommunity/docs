@@ -5,8 +5,8 @@ import { enSidebar, cnSidebar } from "./sidebar/index.js";
 export default hopeTheme({
   hostname: "https://ravenfieldcommunity.github.io",
   iconAssets: "iconfont",
-  favicon : "/logo3.jpg",
-  logo: "/logo3.jpg",
+  favicon : "/Logo.png",
+  logo: "/Logo.png",
   repo: "ravenfieldcommunity/docs",
   pure: true,
   contributors: false,

@@ -6,6 +6,8 @@
 ## 注释
 
 ## 变量
+| 名称 | 类型 | 描述 |
+| ----------- | ----------- | ----------- |
 | activePlayerSeat | Seat |  |  
 | positionWeight  | Vector3 |  |  
 | rotationWeight  | Vector3 |  |  

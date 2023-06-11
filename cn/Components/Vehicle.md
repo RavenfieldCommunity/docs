@@ -23,7 +23,7 @@ category:
 | aiUseStrategy |enum |  ai认定的载具使用方案（Default, OnlyFromFrontlineSpawn, FromAnySpawn）|
 | name | string | 载具名称 | 
 | seats | List<[Seat](/Documents/Components/Vehicle/Seat.md)> | 座位 |
-| targetType | Actor.enum.TargetType | 目标类型（载具自身的类型。Infantry=步兵, InfantryGroup=步兵群, Unarmored=非装甲, Armored=装甲, Air=空中, AirFastMover=高速的空中目标）|
+| targetType | enum.Actor.TargetType | 目标类型（载具自身的类型。Infantry=步兵, InfantryGroup=步兵群, Unarmored=非装甲, Armored=装甲, Air=空中, AirFastMover=高速的空中目标）|
 | armorDamagedBy | enum.ArmorRating | 载具可被哪种武器攻击（SmallArms=轻武器, HeavyArms=重武器, AntiTank=穿甲） | 
 | smallArmsMultiplier | float | 轻武器伤害倍率 | 
 | heavyArmsMultiplier | float | 重武器伤害倍率 |
@@ -40,7 +40,7 @@ category:
 | targetLockPoint | Transform |   锁定点（须先开启引导导弹锁定） |
 | aiUseToDefendPoint | bool |   ai使用载具防御点位 |
 | minCrewCount | int |   最低载员（适用于运输载具） |
-| roamCompleteDistance | float |   没感觉出有啥用途 |
+| roamCompleteDistance | float |  |
 | smokeParticles | ParticleSystem |   冒烟粒子 |
 | fireParticles | ParticleSystem |   着火粒子 |
 | fireAlarmSound | AudioSource |   火焰警报 |
@@ -48,11 +48,11 @@ category:
 | deathSound | AudioSource |   死亡音效 |
 | impactAudio | AudioSource |   撞击音效 |
 | heavyDamageAudio | AudioSource |  冒烟时的音效 |
-| blockSensor | Transform |   没感觉出有啥用途 |
+| blockSensor | Transform |  |
 | blip | Texture |   小地图上的载具图标 |
 | blipScale | float |   小地图上的载具图标的显示大小倍率 |
-| avoidanceSize | Vector2 |   载具生成避让大小 |
-| pathingRadius | float |   ai进入载具的距离 |
+| avoidanceSize | Vector2 | 载具生成避让大小(AI在巡路系统中认为的体积大小) |
+| pathingRadius | float | ai进入载具的距离 |
 | ramSize | Vector3 |   撞击区域大小调整 |
 | ramOffset | Vector3 |  撞击区域位置调整 |
 | disableOnDeath | GameObject[] | 死亡时隐藏的物体 |
@@ -68,8 +68,8 @@ category:
 | powerGainSpeed | float |  音频响度提升速度（不太确定是不是） |
 | pitchGainSpeed | float |  音频频率提升速度 |
 | throttleGainSpeed | float |  载具油门提升速度 |
-| throttleAudioSource | AudioSource |  没用过，应该也是音效 |
-| extraAudioSource | AudioSource | 没用过，应该也是音效 |
-| shiftForwardClip | AudioClip |  没用过，应该也是音效 |
-| shiftReverseClip | AudioClip |  没用过，应该也是音效 |
+| throttleAudioSource | AudioSource |   |
+| extraAudioSource | AudioSource |  |
+| shiftForwardClip | AudioClip |   |
+| shiftReverseClip | AudioClip |   |
 | ignitionClip | AudioClip |  启动音效 |
