@@ -1,3 +1,8 @@
+---
+category: 
+- 组件
+- 地图
+---
 # VehicleSpawner
 ## 描述
 
@@ -7,7 +12,7 @@
 
 套用在一个空物体，需自行添加Mesh Filter（应选择RFTools内的Resource\Perview\Default.obj）、Mesh Renderer与材质
 
-或者直接使用\Assets\Prefabs\Map Elements内的Vehicle Spawner.prefab
+或者直接使用\Assets\Prefabs\Map Elements内的Vehicle Spawner.prefab(推荐)
 
 应将此物体至于[据点Capture Point](CapturePoint.md)的保护范围，否则导出地图时有概率报错
 

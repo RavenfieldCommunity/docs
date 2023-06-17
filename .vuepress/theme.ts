@@ -21,7 +21,7 @@ export default hopeTheme({
     "/en/": {
       navbar: enNavbar,
       sidebar: enSidebar,
-      footer: "CC-BY-NC-4.0 Licensed | Copyright © 2023-present RavenfieldCommunity and ALL Player",
+      footer: "CC-BY-NC-4.0 Licensed | Copyright © 2023-present RavenfieldCommunity",
       displayFooter: true,
       metaLocales: {
         editLink: "Edit this page on GitHub",
@@ -33,7 +33,7 @@ export default hopeTheme({
     "/cn/": {
       navbar: cnNavbar,
       sidebar: cnSidebar,
-      footer: "基于CC-BY-NC-4.0许可 | Copyright © 2023-present RavenfieldCommunity与全体玩家",
+      footer: "基于CC-BY-NC-4.0许可 | 版权所有 © 2023-present RavenfieldCommunity",
       displayFooter: true,
       metaLocales: {
         editLink: "在 GitHub 上编辑此页", 

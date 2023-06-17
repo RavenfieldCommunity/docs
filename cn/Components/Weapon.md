@@ -6,7 +6,13 @@ category:
 # Weapon
 ## 描述
 
+武器的基础类，是建构一个武器的基础
+
 ## 用法
+
+套用在武器物体的最顶层层级，附属物体下挂在这个物体里面
+
+参考[RFCreator Project](/cn/Tutorials/README.md)
 
 ## 注释
 
@@ -70,8 +76,8 @@ category:
 | spreadProneMultiplier  | float | 不精准度倍数 |  
 | followupSpreadProneMultiplier  | float | 趴下时后续增加的不精准度倍数 |  
 | snapProneMultiplier  | float |  |  
-| aiAllowedAimSpread  | float |  ai瞄准不精准度 |  
-| aiAimSwing  | float | {机翻}Bot的瞄准摇摆 |  
+| aiAllowedAimSpread  | float |  Bot瞄准不精准度（数值越高，Bot就越容易开火，即使未瞄准） |  
+| aiAimSwing  | float | Bot的攻击时的瞄准误差 |  
 | effInfantry  | enum.Effectiveness | 攻击是否对步兵作用(No, Yes, Preferred) | 
 | effInfantryGroup  | enum.Effectiveness |  攻击是否对步兵群作用(No, Yes, Preferred) | 
 | effUnarmored  | enum.Effectiveness |  攻击是否对无装甲的载具作用(No, Yes, Preferred) | 
@@ -79,10 +85,10 @@ category:
 | effAir  | enum.Effectiveness | 攻击是否对空中目标作用(No, Yes, Preferred) | 
 | effAirFastMover  | enum.Effectiveness |  攻击是否对快速移动的空中目标作用(No, Yes, Preferred) | 
 | effectiveRange  | float | 攻击有效范围 |  
-| haltStrategy  | enum.HaltStrategy |  开火方案（建议不用改。Auto, Never, PreferredLongRange, PreferredAnyRange, AlwaysLongRange, Always) |  
+| haltStrategy  | enum.HaltStrategy |  Bot移动时的开火策略（建议不改。Auto=自动调整, Never=移动时始终开火, PreferredLongRange=远距离优先停止移动再开火但近距离依旧开火, PreferredAnyRange=允许边移动边开火跑打但优先停移, AlwaysLongRange=远距离才始终停移但近距离依旧开火, Always=开火时始终停移) |  
 | pose  | int |  第三人称握持武器的姿势(类：0=AK、1=手雷、2=SMAW) |  
 | applyHeat  | bool | 是否有过热效果 |  
-| heatMaterial | MaterialTarget |  过热效果的材质（参考Unity的文档） |  
+| heatMaterial | MaterialTarget |  过热效果的材质（参考Unity的文档与Prefab） |  
 | heatGainPerShot  | float | 每发使武器过热%多少） |  
 | heatDrainRate  | float |  每秒使武器散热%多少 |  
 | heatColor | Color |  过热效果的颜色 |  
@@ -98,4 +104,4 @@ category:
 | maxAmmoPerReload  | int |  |  
 | advancedReload  | bool | 弹匣的最大弹药量（暂未深入了解） |  
 | allowedReloads | int[] |  {机翻}允许重新装填（什么玩意...） |  
-| sightModes | SightMode[] | 瞄准方式（Sizes=有多少种瞄准方式，overrideFov=铺满视角；fov=可视范围；name=名称，显示在实际游戏时的HUB中） |  
+| sightModes | SightMode[] | 瞄准方式（Sizes=有多少种瞄准方式；overrideFov=铺满视角；fov=可视范围；name=名称，显示在实际游戏时的HUB中） |  

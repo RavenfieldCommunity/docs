@@ -5,7 +5,7 @@ category:
 # 组件索引
 ## 载具
 - [VehicleContentMod](./VehicleContentMod.md) 载具导出配置
-- [Vehicle](./Vehicle.md) 载具
+- [Vehicle](./Vehicle.md) 载具基础类
 - [Seat](./Seat.md) 载具座位
 - [Plane](./Plane.md) 飞机
 - [Helicopter](./Helicopter.md) 直升机
@@ -17,7 +17,7 @@ category:
     - [AutoRepairVehicleWeapon](./AutoRepairVehicleWeapon.md) 载具修复武器
     - [CarHorn](./CarHorn.md) 载具喇叭
     - [Mortar](./Mortar.md) 迫击炮
-    - [MountedStabilizedTurret](./MountedStabilizedTurret.md)  固定炮塔（类似tank）
+    - [MountedStabilizedTurret](./MountedStabilizedTurret.md)  固定炮塔
     - ~~[MountedTurret](./MountedTurret.md) 固定炮塔~~(已弃用)
     - [MountedWeapon](./MountedWeapon.md) 车载武器
     - ~~[TankTurret](./TankTurret.md) Tank的固定炮塔~~(已弃用)
@@ -40,7 +40,7 @@ category:
         - [AimTransform](./AimTransform.md)
         - [AimingWheel](./AimingWheel.md)
         - [ControlSurface](./ControlSurface.md)
-        - [CopyRotation](./CopyRotation.md)
+        - [CopyRotation](./CopyRotation.md) 克隆旋转属性
         - [EnginePoweredParticles](./EnginePoweredParticles.md)
         - [FollowMainCamera](./FollowMainCamera.md)
         - [ForceHeight](./ForceHeight.md)
@@ -76,7 +76,7 @@ category:
 - [ExplodingProjectile](./ExplodingProjectile.md)
 - [GrenadeProjectile](./GrenadeProjectile.md)
 - [Medipack](./Medipack.md)
-- [MeleeWeapon](./MeleeWeapon.md)
+- [MeleeWeapon](./MeleeWeapon.md) 近战武器
 - [Projectile](./Projectile.md) 子弹
 - [ProximityFuzeProjectile](./ProximityFuzeProjectile.md)
 - [RigidbodyProjectile](./RigidbodyProjectile.md)
@@ -86,9 +86,9 @@ category:
 - [TargetSeekingMissile](./TargetSeekingMissile.md)
 - [ThrowableWeapon](./ThrowableWeapon.md)
 - [ToggleableItem](./ToggleableItem.md)
-- [Weapon](./Weapon.md)
+- [Weapon](./Weapon.md) 基础武器类
 - [WireGuidedMissile](./WireGuidedMissile.md)
-- [Wrench](./Wrench.md)
+- [Wrench](./Wrench.md) 扳手
 
 ## 地图
 - [AlternativePathSet](./AlternativePathSet.md)
@@ -110,12 +110,12 @@ category:
 - [PathfindingRelevantPoint](./PathfindingRelevantPoint.md)
 - [ReflectionProber](./ReflectionProber.md)
 - [ResupplyCrate](./ResupplyCrate.md)
-- [SceneryCamera](./SceneryCamera.md)
+- [SceneryCamera](./SceneryCamera.md) 地图背景相机
 - [SpawnPoint](./SpawnPoint.md)
 - [SpawnPointNeighborManager](./SpawnPointNeighborManager.md)
 - [SpeedLimitZone](./SpeedLimitZone.md)
 - [TimeOfDay](./TimeOfDay.md)
-- [TurretSpawner](./TurretSpawner.md)
+- [TurretSpawner](./TurretSpawner.md) 炮塔生成点
 - [VehicleSpawner](./VehicleSpawner.md) 载具生成点
 - [WaterLevel](./WaterLevel.md) 海平面
 - [WaterVolume](./WaterVolume.md) 水面

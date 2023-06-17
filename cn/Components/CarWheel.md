@@ -24,7 +24,7 @@ category:
 | wheelRadius | float| 轮胎半径 |
 | suspensionAcceleration | float | 悬挂加速度（应该是类似回弹速度？） |
 | suspensionDrag | float | 悬挂阻力 |
-| wheelModel | Transform | 轮胎模型（gameobject) |
+| wheelModel | Transform | 轮胎模型 |
 | rotate | bool | 是否可转向 |
 | invertRotation | bool | 反向转向 |
 | turnAngle | float | 转向角度 |
