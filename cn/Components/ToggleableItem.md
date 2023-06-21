@@ -1,6 +1,6 @@
 # ToggleableItem
 ## 描述
-从[Weapon](./)类派生
+从[Weapon](./Weapon.md)类派生
 ## 用法
 
 ## 注释

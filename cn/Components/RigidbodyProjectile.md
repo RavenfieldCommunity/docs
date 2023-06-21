@@ -1,6 +1,6 @@
 # RigidbodyProjectile
 ## 描述
-从[Projectile](./)类派生
+从[Projectile](./Projectile.md)类派生
 ## 用法
 
 ## 注释

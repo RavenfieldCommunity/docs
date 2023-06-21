@@ -1,6 +1,6 @@
 # ProximityFuzeProjectile
 ## 描述
-从[ExplodingProjectile](./)类派生
+从[ExplodingProjectile](./ExplodingProjectile.md)类派生
 ## 用法
 
 ## 注释

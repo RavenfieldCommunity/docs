@@ -1,6 +1,6 @@
 # TargetSeekingMissile
 ## 描述
-从[Rocket](./)类派生
+从[Rocket](./Rocket.md)类派生
 ## 用法
 
 ## 注释

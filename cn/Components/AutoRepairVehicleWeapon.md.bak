@@ -20,3 +20,4 @@ category:
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | repairAmount | float | 每次修复的血量 |
+| ShouldHaveProjectilePrefab | bool | 是否有发射物 |

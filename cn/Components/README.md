@@ -4,6 +4,7 @@ category:
 ---
 # 组件索引
 ## 载具
+- [Airplane](./Airplane.md)
 - [VehicleContentMod](./VehicleContentMod.md) 载具导出配置
 - [Vehicle](./Vehicle.md) 载具基础类
 - [Seat](./Seat.md) 载具座位
@@ -78,6 +79,7 @@ category:
 - [Medipack](./Medipack.md)
 - [MeleeWeapon](./MeleeWeapon.md) 近战武器
 - [Projectile](./Projectile.md) 子弹
+- [RemoteDetonatedProjectile](./RemoteDetonatedProjectile.md)
 - [ProximityFuzeProjectile](./ProximityFuzeProjectile.md)
 - [RigidbodyProjectile](./RigidbodyProjectile.md)
 - [Rocket](./Rocket.md)

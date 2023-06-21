@@ -1,6 +1,6 @@
 # GrenadeProjectile
 ## 描述
-从[Projectile](./)类派生
+从[Projectile](./Projectile.md)类派生
 ## 用法
 
 ## 注释
@@ -14,6 +14,7 @@
 | bounciness  | float |  |  
 | bounceDrag  | float |  |  
 | cleanupTime  | float |  |  
+| explosionParticles | ParticleSystem |  |  
 | activateOnExplosion | GameObject |  |  
 | deactivateAgainTime  | float |  |  
 | onlyDetonateOnGround  | bool |  |  

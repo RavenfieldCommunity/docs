@@ -6,4 +6,7 @@
 ## 注释
 
 ## 变量
-| target, relativeTo | Transform |  |  
+| 名称 | 类型 | 描述 |
+| ----------- | ----------- | ----------- |
+| target | Transform |  |  
+| relativeTo | Transform |  | 

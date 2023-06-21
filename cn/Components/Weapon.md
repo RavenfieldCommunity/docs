@@ -19,13 +19,16 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
+| displayName | string |   |  
 | thirdPersonTransform | Transform |  第三人称显示的武器模型 |  
 | thirdPersonOffset  | Vector3 | 第三人称显示的武器模型位置偏移量（矫正位置） |  
 | cullInThirdPerson | GameObject[] | 第三人称不显示的游戏物体（Size=数量。先填写要隐藏的物体数量，再在Element*处拖入物体） |  
 | thirdPersonScale  | float | 第三人称显示的武器模型缩放偏移量（矫正位置） |  
+| keepScriptsOnThirdPersonImposter  | bool |  | 
 | reloadAudio | AudioSource | 装填音效 |  
 | changeFireModeAudio | AudioSource |  切换开火模式的音效 |  
 | reflectionSound  | enum.ReflectionSound |  回音效果（Auto=自动、None=无、Handgun=手枪、RifleSmall=小步枪、RifleLarge=大步枪、Launcher=炮、Tank=坦克） |  
+| keepScriptsOnThirdPersonImposter  | bool |  |  
 | reflectionVolume  | float |  |  
 | walkBobMultiplier  | float |  走路时晃动倍数 |  
 | sprintBobMultiplier  | float |  跑步时晃动倍数 |  
@@ -74,8 +77,7 @@ category:
 | snapFrequency  | float | 开火时武器上抬频率 |  
 | kickbackProneMultiplier  | float | 趴下时后座倍数 |  
 | spreadProneMultiplier  | float | 不精准度倍数 |  
-| followupSpreadProneMultiplier  | float | 趴下时后续增加的不精准度倍数 |  
-| snapProneMultiplier  | float |  |  
+| followupSpreadProneMultiplier  | float | 趴下时后续增加的不精准度倍数 |  | snapProneMultiplier  | float |  |  
 | aiAllowedAimSpread  | float |  Bot瞄准不精准度（数值越高，Bot就越容易开火，即使未瞄准） |  
 | aiAimSwing  | float | Bot的攻击时的瞄准误差 |  
 | effInfantry  | enum.Effectiveness | 攻击是否对步兵作用(No, Yes, Preferred) | 
@@ -85,6 +87,11 @@ category:
 | effAir  | enum.Effectiveness | 攻击是否对空中目标作用(No, Yes, Preferred) | 
 | effAirFastMover  | enum.Effectiveness |  攻击是否对快速移动的空中目标作用(No, Yes, Preferred) | 
 | effectiveRange  | float | 攻击有效范围 |  
+| diffInfantry  | enum.Difficulty | (Auto,Easy,Challenging,Hard,Impossible) |  
+| diffInfantryGroup  | enum.Difficulty | (Auto,Easy,Challenging,Hard,Impossible) |  
+| diffGroundVehicles  | enum.Difficulty | (Auto,Easy,Challenging,Hard,Impossible) |  
+| diffAir  | enum.Difficulty | (Auto,Easy,Challenging,Hard,Impossible) |  
+| diffAirFastMover  | enum.Difficulty | (Auto,Easy,Challenging,Hard,Impossible) |  
 | haltStrategy  | enum.HaltStrategy |  Bot移动时的开火策略（建议不改。Auto=自动调整, Never=移动时始终开火, PreferredLongRange=远距离优先停止移动再开火但近距离依旧开火, PreferredAnyRange=允许边移动边开火跑打但优先停移, AlwaysLongRange=远距离才始终停移但近距离依旧开火, Always=开火时始终停移) |  
 | pose  | int |  第三人称握持武器的姿势(类：0=AK、1=手雷、2=SMAW) |  
 | applyHeat  | bool | 是否有过热效果 |  

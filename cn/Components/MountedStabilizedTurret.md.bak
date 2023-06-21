@@ -32,7 +32,7 @@ category:
 | springAmount | float | 未知 |
 | springForce | float  | 未知 |
 | springDrag |  float| 未知 |
-| type | enum.Type | 类型（clampnotch)  |
+| Type | Type | 类型（clampnotch)  |
 | bearingAngle | float | 偏航角（clampnotch) |
 | notchWidth | float | 点位上底宽度 |
 | notchSlopeWidth | float | 点位下底宽度 |

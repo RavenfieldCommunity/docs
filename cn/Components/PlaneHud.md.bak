@@ -8,7 +8,7 @@
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| plane | Airplane |  |  
+| plane | AirPlane |  |  
 | gearIndicator | Indicator |  |  
 | airbrakeIndicator | Indicator |  |  
 | countermeasureIndicator | Indicator |  |  

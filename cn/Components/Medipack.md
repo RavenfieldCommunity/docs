@@ -1,6 +1,6 @@
 # Medipack
 ## 描述
-从[RigidbodyProjectile](./)类派生
+从[RigidbodyProjectile](./RigidbodyProjectile.md)类派生
 ## 用法
 
 ## 注释

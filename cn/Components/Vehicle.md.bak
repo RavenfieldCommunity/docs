@@ -75,6 +75,3 @@ category:
 | shiftForwardClip | AudioClip |   |
 | shiftReverseClip | AudioClip |   |
 | ignitionClip | AudioClip |  启动音效 |
-| shiftForwardClip | AudioClip |  |  
-| shiftReverseClip | AudioClip |  |  
-| ignitionClip | AudioClip |  |  
