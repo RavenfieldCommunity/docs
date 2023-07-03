@@ -8,14 +8,17 @@ category:
 ## 描述
 从[Vehicle](./Vehicle.md)类派生
 
+带物理效果的载具？
 ## 用法
+请自行添加Rigidbody组件
 
+参考[Vehicle](./Vehicle.md)
 ## 注释
 
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| reverseTurnType | enum.ReverseTurnType | 倒车类型（作用未知） |
+| reverseTurnType | enum.ReverseTurnType | (Reverse Speed,Reverse Throttle,Never) |
 | acceleration | float | 加速度 |
 | reverseAcceleration | float | 倒车加速度 |
 | accelerationTipAmount | float | 加速倾斜程度 |
@@ -30,7 +33,7 @@ category:
 | brakeAccelerationTriggerSpeed | float | 刹车漂移最低触发速度 |
 | driftByBrake | bool | 刹车漂移 |
 | brakeDriftMinSpeed | float | 刹车漂移最低速度 |
-| driftingSlip | float | 未知 |
+| driftingSlip | float |  |
 | driftDuration | float | 漂移持续时间 |
 | isAmphibious | bool | 两栖的 |
 | extraStability | float | 额外稳定性（影响重心） |
@@ -41,4 +44,4 @@ category:
 | airAngularDrag | float | 空气角阻力（作用于角速度？） |
 | downforcePerSpeed | float | 按速度变化（是velocity，有方向性，不是speed）的向下力 |
 | suspensionShiftSounds | SoundBank | 悬挂音效 |
-| brakeSounds | SoundBank | 刹车音效|
+| brakeSounds | SoundBank | 刹车音效 |

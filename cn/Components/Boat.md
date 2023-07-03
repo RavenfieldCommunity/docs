@@ -1,10 +1,12 @@
 # Boat
 
 ## 描述
+船只类
+
 从[Vehicle](./Vehicle.md)类派生
 
 ## 用法
-
+参考[Vehicle](./Vehicle.md)
 ## 注释
 
 ## 变量

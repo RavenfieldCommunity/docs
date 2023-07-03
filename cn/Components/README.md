@@ -4,16 +4,16 @@ category:
 ---
 # 组件索引
 ## 载具
-- [Airplane](./Airplane.md)
+- [Airplane](./Airplane.md) 飞机
 - [VehicleContentMod](./VehicleContentMod.md) 载具导出配置
 - [Vehicle](./Vehicle.md) 载具基础类
 - [Seat](./Seat.md) 载具座位
-- [Plane](./Plane.md) 飞机
+- ~~[Plane](./Plane.md) 飞机~~(已弃用)
 - [Helicopter](./Helicopter.md) 直升机
 - [CarWheel](./CarWheel.md) 车轮
 - [Boat](./Boat.md) 船
-- [ArcadeCar](./ArcadeCar.md)
-- [AnimationDrivenVehicle](./AnimationDrivenVehicle.md)
+- [ArcadeCar](./ArcadeCar.md) 带物理效果的载具
+- [AnimationDrivenVehicle](./AnimationDrivenVehicle.md) 自定义动画的载具
 - Weapon 车载武器
     - [AutoRepairVehicleWeapon](./AutoRepairVehicleWeapon.md) 载具修复武器
     - [CarHorn](./CarHorn.md) 载具喇叭
@@ -25,9 +25,9 @@ category:
 - Vehicle Components 载具附属组件
     - [AircraftDrag](./AircraftDrag.md)
     - [DirectionalDragForce](./DirectionalDragForce.md)
-    - [FloatingRigidbody](./FloatingRigidbody.md)
+    - [FloatingRigidbody](./FloatingRigidbody.md) 浮动刚体
     - [IndependentRotation](./IndependentRotation.md)
-    - [SpinWhenBurning](./SpinWhenBurning.md)
+    - [SpinWhenBurning](./SpinWhenBurning.md) 坠机螺旋
     - [VehicleDestructibleHitbox](./VehicleDestructibleHitbox.md)
     - Cameras 相机
         - [BombCamera](./BombCamera.md)

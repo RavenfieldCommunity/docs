@@ -16,10 +16,35 @@ category:
 
 ## 注释
 
+此组件使用了一个Audio Source组件作为依赖项，请将开火音效置于此组件
+
+此组件对应的动画机Parameters：
+| 原名 | 类型 | 描述 |
+|------|------|------|
+| loaded ammo | Int | 已装载的弹药数 |
+| unholster | Trigger | 切换到武器时为Ture |
+| tuck | Bool | 冲刺时为Ture |
+| muzzle | Int | 等于目前玩家所处的枪口序号（默认0开始） |
+| alt weapons | Int | 等于目前玩家所处的副武器序号（0=处于主武器，默认1开始） |
+| charging |  |  |
+| overheat | Bool | 过热时为Ture |
+| sight mode | Int | 等于目前玩家所处的瞄准模式（默认0开始） |
+| smooth sight mode | Float | 等于目前玩家所处的瞄准模式（与sight mode等同，适用于BlenderTree） |
+| fire | Trigger | 开火时为Ture |
+| aim | Bool | 瞄准时为Ture，其余状态为False |
+| reload | Trigger | 装填时为Ture |
+| reloading | Bool | 装填时为Ture |
+| reload motion | Int | 等于本次装载行为需要装多少弹？ |
+| no ammo | Bool | 疑似无弹药时为Ture（疑似是以备用弹药判定） |
+| no ammo blend |  |  |
+| kick | Trigger | 踢人时为Ture |
+| call | Trigger | 召集队员时为Ture |
+| direct | Trigger | 指挥队员时为Ture |
+
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| displayName | string |   |  
+| displayName | string | 武器在实际UI显示的名称 |  
 | thirdPersonTransform | Transform |  第三人称显示的武器模型 |  
 | thirdPersonOffset  | Vector3 | 第三人称显示的武器模型位置偏移量（矫正位置） |  
 | cullInThirdPerson | GameObject[] | 第三人称不显示的游戏物体（Size=数量。先填写要隐藏的物体数量，再在Element*处拖入物体） |  

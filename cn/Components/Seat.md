@@ -22,7 +22,7 @@ category:
 | type | enum.Type | 座椅类型（FreelookUnarmed, LockedAllowFreelookUnarmed, AlwaysLockedUnarmed, FreelookArmed） |
 | enclosed | bool | 载具内 |
 | enclosedDamagedByDirectFire | bool | 载具内不受保护 |
-| soundMuffle | enum.SoundMuffle | 混响（ Auto, On, Off ） |
+| soundMuffle | enum.SoundMuffle | （ Auto, On, Off ） |
 | allowLean | bool | 允许侧头 |
 | allowUnderwater | bool | 允许在水下 |
 | exitOffset | Vector3 | 下车位移 |
