@@ -1,12 +1,18 @@
 # InheritDeltaRotation
 ## 描述
 
+继承增量旋转
+
+使挂载此组件的物体的旋转属性=目标物体的旋转属性 * 倍增速度multiplier + 挂载此组件的物体的初始旋转
+
 ## 用法
+
+挂载至要被继承增量旋转的物体
 
 ## 注释
 
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| target | Transform |  |  
-| multiplier  | Vector3 |  |  
+| target | Transform | 目标物体 |  
+| multiplier | Vector3 | 各个坐标轴方向的旋转速度倍增 |  

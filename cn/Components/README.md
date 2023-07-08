@@ -24,7 +24,7 @@ category:
     - ~~[TankTurret](./TankTurret.md) Tank的固定炮塔~~(已弃用)
 - Vehicle Components 载具附属组件
     - [AircraftDrag](./AircraftDrag.md)
-    - [DirectionalDragForce](./DirectionalDragForce.md)
+    - [DirectionalDragForce](./DirectionalDragForce.md) 方向阻力
     - [FloatingRigidbody](./FloatingRigidbody.md) 浮动刚体
     - [IndependentRotation](./IndependentRotation.md)
     - [SpinWhenBurning](./SpinWhenBurning.md) 坠机螺旋
@@ -35,37 +35,37 @@ category:
         - [LookAtCamera](./LookAtCamera.md)
         - [ThirdPersonCameraLook](./ThirdPersonCameraLook.md)
     - Visual 
-        - [ActivateForSeatWeapon](./ActivateForSeatWeapon.md)
-        - [ActivateWhenAimingWeapon](./ActivateWhenAimingWeapon.md)
-        - [ActivateWhenLocked](./ActivateWhenLocked.md)
-        - [AimTransform](./AimTransform.md)
-        - [AimingWheel](./AimingWheel.md)
+        - [ActivateForSeatWeapon](./ActivateForSeatWeapon.md) 按载具座位的活动武器激活物体
+        - [ActivateWhenAimingWeapon](./ActivateWhenAimingWeapon.md) 瞄准时激活物体
+        - [ActivateWhenLocked](./ActivateWhenLocked.md) 被导弹锁定时激活物体
+        - [AimTransform](./AimTransform.md) 瞄准时应用Transform
+        - [AimingWheel](./AimingWheel.md) 跟随目标物体的旋转属性
         - [ControlSurface](./ControlSurface.md)
         - [CopyRotation](./CopyRotation.md) 克隆旋转属性
         - [EnginePoweredParticles](./EnginePoweredParticles.md)
-        - [FollowMainCamera](./FollowMainCamera.md)
-        - [ForceHeight](./ForceHeight.md)
+        - [FollowMainCamera](./FollowMainCamera.md) 跟随活动相机的Transform
+        - [ForceHeight](./ForceHeight.md) 强制保持高度
         - [GeometryTrack](./GeometryTrack.md)
         - [HeadingGuide](./HeadingGuide.md)
-        - [InheritDeltaRotation](./InheritDeltaRotation.md)
+        - [InheritDeltaRotation](./InheritDeltaRotation.md) 继承增量旋转
         - [Joystick](./Joystick.md)
         - [MountedStabilizedTurretUIAimIndicator](./MountedStabilizedTurretUIAimIndicator.md)
         - [ParticlesAmbientColor](./ParticlesAmbientColor.md)
-        - [PitchRollGuide](./PitchRollGuide.md)
+        - [PitchRollGuide](./PitchRollGuide.md) 飞机水平仪
         - [PlayerRecoilCamera](./PlayerRecoilCamera.md)
         - [PlayerRecoilTransform](./PlayerRecoilTransform.md)
         - [RollGuide](./RollGuide.md)
-        - [Rotor](./Rotor.md)
+        - [Rotor](./Rotor.md) 飞机螺旋桨
         - [SteeringWheel](./SteeringWheel.md)
         - [UvOffset](./UvOffset.md)
         - [UvVehicleTrackScroll](./UvVehicleTrackScroll.md)
-        - [WaterRipples](./WaterRipples.md)
+        - [WaterRipples](./WaterRipples.md) 载具水波
         - UI
             - [ChangeEmissionAtNight](./ChangeEmissionAtNight.md)
             - [CountermeasureStatusIndicator](./CountermeasureStatusIndicator.md)
             - [GearIndicator](./GearIndicator.md)
-            - [HelicopterHud](./HelicopterHud.md)
-            - [PlaneHud](./PlaneHud.md)
+            - [HelicopterHud](./HelicopterHud.md) 直升机HUB监视
+            - [PlaneHud](./PlaneHud.md) 飞机HUB监视
             - [RefreshRateText](./RefreshRateText.md)
             - [Speedometer](./Speedometer.md)
             - [UiAnimator](./UiAnimator.md)
@@ -73,19 +73,19 @@ category:
             - [WeaponStatusIndicator](./WeaponStatusIndicator.md)
 
 ## 武器
-- [Ammobox](./Ammobox.md)
+- [Ammobox](./Ammobox.md) 弹药包
 - [ExplodingProjectile](./ExplodingProjectile.md)
 - [GrenadeProjectile](./GrenadeProjectile.md)
-- [Medipack](./Medipack.md)
+- [Medipack](./Medipack.md) 医疗包
 - [MeleeWeapon](./MeleeWeapon.md) 近战武器
 - [Projectile](./Projectile.md) 子弹
 - [RemoteDetonatedProjectile](./RemoteDetonatedProjectile.md)
 - [ProximityFuzeProjectile](./ProximityFuzeProjectile.md)
-- [RigidbodyProjectile](./RigidbodyProjectile.md)
+- [RigidbodyProjectile](./RigidbodyProjectile.md) 刚体Projectile
 - [Rocket](./Rocket.md)
 - [SoundBank](./SoundBank.md)
 - [SpinWhenHoldingFire](./SpinWhenHoldingFire.md)
-- [TargetSeekingMissile](./TargetSeekingMissile.md)
+- [TargetSeekingMissile](./TargetSeekingMissile.md) 跟踪导弹
 - [ThrowableWeapon](./ThrowableWeapon.md)
 - [ToggleableItem](./ToggleableItem.md)
 - [Weapon](./Weapon.md) 基础武器类

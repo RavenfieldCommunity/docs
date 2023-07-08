@@ -15,7 +15,7 @@
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| floatingSamplers | Transform[] | 采样点 |
+| floatingSamplers | Transform[] | 采样点(刚体基准点，空物体，建议跟循官方设置四个以保持载具平衡) |
 | floatAcceleration | float | 浮动加速度 |
 | floatDepth | float | 浮动深度 |
 | waterDrag | float | 在水中的阻力 |

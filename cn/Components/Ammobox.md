@@ -1,10 +1,14 @@
 # Ammobox
 ## 描述
 从[RigidbodyProjectile](./RigidbodyProjectile.md)类派生
+
+弹药包
+
 ## 用法
+
+参考[RigidbodyProjectile](./RigidbodyProjectile.md)
 
 ## 注释
 
 ## 变量
-| 名称 | 类型 | 描述 |
-| ----------- | ----------- | ----------- |
+无

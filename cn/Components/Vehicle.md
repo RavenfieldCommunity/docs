@@ -66,7 +66,7 @@ category:
 | countermeasureParticles | ParticleSystem |  干扰粒子 |
 | countermeasureSpawnPrefab | GameObject |  干扰生成prefab |
 | countermeasureAudio | AudioSource |   干扰音效 |
-| controlAudio | bool |  控制音频（引擎） |
+| controlAudio | bool |  控制音频（引擎音效） |
 | powerGainSpeed | float |  音频响度提升速度（不太确定是不是） |
 | pitchGainSpeed | float |  音频频率提升速度 |
 | throttleGainSpeed | float |  载具油门提升速度 |
