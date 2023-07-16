@@ -7,7 +7,7 @@ category:
 ## 描述
 从[Vehicle](./Vehicle.md)类派生
 
-飞机类
+飞机类，建构飞机的基础
 ## 用法
 参考[Vehicle](./Vehicle.md)
 
@@ -29,7 +29,7 @@ category:
 | yawSensitivity  | float | 偏航操作灵敏度 |  
 | rollSensitivity  | float |  |  
 | liftGainTime  | float |  |  
-| controlWhenBurning  | float |  |  
+| controlWhenBurning  | float | 飞机滚动的灵敏度 |  
 | landingGearActivationObjects | GameObject[] | 起落架物体 |  
 | throttleEngineAudioPitchControl  | float |  |  
 | flightAltitudeMultiplier  | float |  |  

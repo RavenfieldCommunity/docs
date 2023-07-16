@@ -8,7 +8,6 @@
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| explosionConfiguration | ExplodingProjectile.ExplosionConfiguration |  |  
 | renderers | Renderer[] |  |  
 | radius  | float |  |  
 | bounciness  | float |  |  

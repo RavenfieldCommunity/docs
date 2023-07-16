@@ -13,7 +13,7 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| autoAssignArmorDamage  | bool |  自动分配装甲载具各个部位的的伤害 |  
+| autoAssignArmorDamage  | bool | 是否自动分配装甲载具各个部位的的伤害 |  
 | armorDamage  | [Vehicle](./Vehicle.md).ArmorRating | 伤害类型（SmallArms=轻武器、HeavyArms=重武器、AntiTank=反装甲武器） |  
 | speed  | float | 速度（*m/s） |  
 | impactForce  | float | {机翻}冲击力 |  

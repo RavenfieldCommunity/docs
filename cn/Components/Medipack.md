@@ -2,7 +2,7 @@
 ## 描述
 从[RigidbodyProjectile](./RigidbodyProjectile.md)类派生
 
-医疗包
+医疗包，给附近的玩家与Bot补充血量
 ## 用法
 
 参考[RigidbodyProjectile](./RigidbodyProjectile.md)

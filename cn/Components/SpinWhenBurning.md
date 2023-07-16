@@ -6,7 +6,7 @@
 
 ## 用法
 
-参考[Vehicle](/cn/Components/Vehicle.md)
+参考[Vehicle](/cn/Components/Vehicle.md)，挂载在载具物体的最顶层物体上
 
 ## 注释
 

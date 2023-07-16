@@ -1,12 +1,16 @@
 # LookAtCamera
 ## 描述
 
+当此组件上的相机处于活动（enable）状态时克隆目标物体的旋转属性至本身
+
 ## 用法
+
+直接套用此组件至相机上（必须为相机）
 
 ## 注释
 
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| target | Transform |  |  
-| turnSpeed  | float |  |  
+| target | Transform | 目标物体 |  
+| turnSpeed  | float | 旋转速度 |  

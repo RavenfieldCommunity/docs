@@ -29,9 +29,9 @@ category:
 | useMaxTurnSpeed | bool | 使用最大旋转速度 |
 | maxTurnSpeed | float | 最大旋转速度 |
 | useSpring | bool  | 使用弹簧（这玩意几乎没人用，我也搞不清楚咋弄） |
-| springAmount | float | 未知 |
-| springForce | float  | 未知 |
-| springDrag |  float| 未知 |
+| springAmount | float |  |
+| springForce | float  |  |
+| springDrag |  float|  |
 | type | enum.Type | 类型（clampnotch)  |
 | bearingAngle | float | 偏航角（clampnotch) |
 | notchWidth | float | 点位上底宽度 |

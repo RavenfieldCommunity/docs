@@ -8,11 +8,11 @@ category:
 ## 描述
 从[Weapon](./Weapon.md)类派生
 
-类似于[Weapon](./Weapon.md)，但针对车载武器，标准类无法在载具使用
+载具基础武器类，类似于[Weapon](./Weapon.md)，但针对车载武器，标准[Weapon](./Weapon.md)类无法在载具使用
 
 ## 用法
 
-挂载在[Seat](/cn/Components/Seat.md)的Weapons下
+挂载在[Seat](/cn/Components/Seat.md)的Weapons[]下
 
 ## 注释
 

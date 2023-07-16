@@ -8,11 +8,11 @@ category:
 ## 描述
 从[Vehicle](./Vehicle.md)类派生
 
-带物理效果的载具？
+带物理驾驶效果的载具
 ## 用法
-请自行添加Rigidbody组件
-
 参考[Vehicle](./Vehicle.md)
+
+请自行添加Rigidbody组件，否则报错
 ## 注释
 
 ## 变量
@@ -35,7 +35,7 @@ category:
 | brakeDriftMinSpeed | float | 刹车漂移最低速度 |
 | driftingSlip | float |  |
 | driftDuration | float | 漂移持续时间 |
-| isAmphibious | bool | 两栖的 |
+| isAmphibious | bool | 载具是两栖的 |
 | extraStability | float | 额外稳定性（影响重心） |
 | groundDrag | float | 地面阻力 |
 | groundAngularDrag | float | 地面角阻力 |

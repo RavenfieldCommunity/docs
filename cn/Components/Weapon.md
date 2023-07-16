@@ -18,28 +18,30 @@ category:
 
 此组件使用了一个Audio Source组件作为依赖项，请将开火音效置于此组件
 
+此外请避免装载有Weapon组件的物体上并排存在多个Audio Source组件，这会导致游戏报错
+
 此组件对应的动画机Parameters：
 | 原名 | 类型 | 描述 |
 |------|------|------|
-| loaded ammo | Int | 已装载的弹药数 |
-| unholster | Trigger | 切换到武器时为Ture |
-| tuck | Bool | 冲刺时为Ture |
-| muzzle | Int | 等于目前玩家所处的枪口序号（默认0开始） |
-| alt weapons | Int | 等于目前玩家所处的副武器序号（0=处于主武器，默认1开始） |
+| loaded ammo | int | 已装载的弹药数 |
+| unholster | trigger | 切换到武器时为Ture |
+| tuck | bool | 冲刺时为Ture |
+| muzzle | int | 等于目前玩家所处的枪口序号（默认0开始） |
+| alt weapons | int | 等于目前玩家所处的副武器序号（0=处于主武器，默认1开始） |
 | charging |  |  |
-| overheat | Bool | 过热时为Ture |
-| sight mode | Int | 等于目前玩家所处的瞄准模式（默认0开始） |
-| smooth sight mode | Float | 等于目前玩家所处的瞄准模式（与sight mode等同，适用于BlenderTree） |
-| fire | Trigger | 开火时为Ture |
-| aim | Bool | 瞄准时为Ture，其余状态为False |
-| reload | Trigger | 装填时为Ture |
-| reloading | Bool | 装填时为Ture |
-| reload motion | Int | 等于本次装载行为需要装多少弹？ |
-| no ammo | Bool | 疑似无弹药时为Ture（疑似是以备用弹药判定） |
+| overheat | bool | 过热时为Ture |
+| sight mode | int | 等于目前玩家所处的瞄准模式（默认0开始） |
+| smooth sight mode | float | 等于目前玩家所处的瞄准模式（与sight mode等同，适用于BlenderTree） |
+| fire | trigger | 开火时为Ture |
+| aim | bool | 瞄准时为Ture，其余状态为False |
+| reload | trigger | 装填时为Ture |
+| reloading | bool | 装填时为Ture |
+| reload motion | int | 等于本次装载行为需要装多少弹？ |
+| no ammo | bool | 疑似无弹药时为Ture（疑似是以备用弹药判定） |
 | no ammo blend |  |  |
-| kick | Trigger | 踢人时为Ture |
-| call | Trigger | 召集队员时为Ture |
-| direct | Trigger | 指挥队员时为Ture |
+| kick | trigger | 踢人时为Ture |
+| call | trigger | 召集队员时为Ture |
+| direct | trigger | 指挥队员时为Ture |
 
 ## 变量
 | 名称 | 类型 | 描述 |
@@ -59,9 +61,9 @@ category:
 | sprintBobMultiplier  | float |  跑步时晃动倍数 |  
 | proneBobMultiplier  | float |  趴下时晃动倍数 |  
 | uiSprite | Sprite | 武器图标 |  
-| arms | SkinnedMeshRenderer | 武器动画的手臂模型（场景层级内的！） |  
+| arms | SkinnedMeshRenderer | 武器动画的手臂模型（场景层级内的！包含骨骼。） |  
 | allowArmMeshReplacement  | bool |  是否允许实际游戏时玩家皮肤替换手部皮肤 |  
-| parentWeapon | Weapon |  父武器 |  
+| parentWeapon | Weapon | 父武器 |  
 | useParentWeaponSightModes | bool |  使用父武器的瞄准方式 |  
 | ammo | int | 武器装载的弹药数 |  
 | isLocked  | bool | 是否该锁定武器 |  
@@ -82,7 +84,7 @@ category:
 | forceAutoReload  | bool |  强制自动换弹 |  
 | loud  | bool |  是否声音大（吸引Bot） |  
 | forceWorldAudioOutput  | bool |  强制场景音频输出 |  
-| muzzles | Transform[] |  枪口（生成子弹projectiles的地方，Size=数量。先填写枪口数量，一般为1，再在Element*处拖入物体） |  
+| muzzles | Transform[] |  枪口（生成子弹projectiles的地方，Size=数量。先填写枪口数量，一般为1，再在Element*处拖入物体。**muzzlesz中指定的物体及此物体的子层级的Particle System组件在在开火时会触发**） |  
 | optionalThirdPersonMuzzles | Transform[] | 可选的第三人称时的枪口 |  
 | casingParticles | ParticleSystem[] | 抛壳口（Size=数量。先填写数量，一般为1，再在Element*处拖入物体） |  
 | fireFromAllMuzzles  | bool | 开火时所有的枪口是否不受开火模式的影响，都会作用 |  

@@ -2,14 +2,14 @@
 
 ## 描述
 
-在游戏水面的浮动刚体
+在游戏水面（[WaterLevel](./WaterLevel.md)、[WaterVolume](./WaterVolume.md)）的浮动刚体
 
 适用于非[Boat](/cn/Components/Boat.md)载具
 
 ## 用法
+此组件已自带绑定Rigidbody组件，无需手动添加
 
-参考[Vehicle](/cn/Components/Vehicle.md)
-
+参考[Vehicle](/cn/Components/Vehicle.md)，挂载在载具物体的最顶层物体上
 ## 注释
 
 ## 变量

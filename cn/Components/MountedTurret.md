@@ -1,8 +1,6 @@
 # MountedStabilizedTurretUIAimIndicator
 ## 描述
-此脚本过于古老，已废弃，不作注解
-
-使用[MountedStabilizedTurret](./MountedStabilizedTurret.md)代替
+已废弃，使用[MountedStabilizedTurret](./MountedStabilizedTurret.md)代替
 ## 用法
 
 ## 注释

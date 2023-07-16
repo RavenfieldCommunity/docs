@@ -2,6 +2,13 @@
 category: 
 - 组件
 ---
+
+::: warning
+此组件文档仍处于十分早期的阶段，由于相当一部分组件仅通过检查源码进行编写，所以可能与现实存在偏差，敬请在网站评论区或[此项目的Steam指南原链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158)评论区提出此错误！
+
+另外请注意“派生类”（类似“克隆”父脚本并添加一些新的内容）这个在C#开发中的概念，此文档大量应用并省略了子类引用的父类内容但在文档开头的地方注明了父类文档的链接，请注意
+:::
+
 # 组件索引
 ## 载具
 - [Airplane](./Airplane.md) 飞机
@@ -12,7 +19,7 @@ category:
 - [Helicopter](./Helicopter.md) 直升机
 - [CarWheel](./CarWheel.md) 车轮
 - [Boat](./Boat.md) 船
-- [ArcadeCar](./ArcadeCar.md) 带物理效果的载具
+- [ArcadeCar](./ArcadeCar.md) 带物理驾驶效果的载具
 - [AnimationDrivenVehicle](./AnimationDrivenVehicle.md) 自定义动画的载具
 - Weapon 车载武器
     - [AutoRepairVehicleWeapon](./AutoRepairVehicleWeapon.md) 载具修复武器
@@ -23,17 +30,17 @@ category:
     - [MountedWeapon](./MountedWeapon.md) 车载武器
     - ~~[TankTurret](./TankTurret.md) Tank的固定炮塔~~(已弃用)
 - Vehicle Components 载具附属组件
-    - [AircraftDrag](./AircraftDrag.md)
+    - [AircraftDrag](./AircraftDrag.md) 飞机阻力
     - [DirectionalDragForce](./DirectionalDragForce.md) 方向阻力
     - [FloatingRigidbody](./FloatingRigidbody.md) 浮动刚体
-    - [IndependentRotation](./IndependentRotation.md)
+    - [IndependentRotation](./IndependentRotation.md) 独立旋转
     - [SpinWhenBurning](./SpinWhenBurning.md) 坠机螺旋
-    - [VehicleDestructibleHitbox](./VehicleDestructibleHitbox.md)
+    - [VehicleDestructibleHitbox](./VehicleDestructibleHitbox.md) 
     - Cameras 相机
         - [BombCamera](./BombCamera.md)
-        - [FirstPersonCameraLook](./FirstPersonCameraLook.md)
-        - [LookAtCamera](./LookAtCamera.md)
-        - [ThirdPersonCameraLook](./ThirdPersonCameraLook.md)
+        - [FirstPersonCameraLook](./FirstPersonCameraLook.md) 
+        - [LookAtCamera](./LookAtCamera.md) 当相机启用时克隆旋转属性
+        - [ThirdPersonCameraLook](./ThirdPersonCameraLook.md) 
     - Visual 
         - [ActivateForSeatWeapon](./ActivateForSeatWeapon.md) 按载具座位的活动武器激活物体
         - [ActivateWhenAimingWeapon](./ActivateWhenAimingWeapon.md) 瞄准时激活物体
@@ -47,7 +54,7 @@ category:
         - [ForceHeight](./ForceHeight.md) 强制保持高度
         - [GeometryTrack](./GeometryTrack.md)
         - [HeadingGuide](./HeadingGuide.md)
-        - [InheritDeltaRotation](./InheritDeltaRotation.md) 继承增量旋转
+        - [InheritDeltaRotation](./InheritDeltaRotation.md) 克隆旋转属性Pro
         - [Joystick](./Joystick.md)
         - [MountedStabilizedTurretUIAimIndicator](./MountedStabilizedTurretUIAimIndicator.md)
         - [ParticlesAmbientColor](./ParticlesAmbientColor.md)
@@ -70,19 +77,19 @@ category:
             - [Speedometer](./Speedometer.md)
             - [UiAnimator](./UiAnimator.md)
             - [UiElementTracker](./UiElementTracker.md)
-            - [WeaponStatusIndicator](./WeaponStatusIndicator.md)
+            - [WeaponStatusIndicator](./WeaponStatusIndicator.md) 武器HUB监视
 
 ## 武器
 - [Ammobox](./Ammobox.md) 弹药包
-- [ExplodingProjectile](./ExplodingProjectile.md)
-- [GrenadeProjectile](./GrenadeProjectile.md)
+- [ExplodingProjectile](./ExplodingProjectile.md) 爆炸性Projectile
+- [GrenadeProjectile](./GrenadeProjectile.md) 手榴弹Projectile
 - [Medipack](./Medipack.md) 医疗包
 - [MeleeWeapon](./MeleeWeapon.md) 近战武器
 - [Projectile](./Projectile.md) 子弹
 - [RemoteDetonatedProjectile](./RemoteDetonatedProjectile.md)
-- [ProximityFuzeProjectile](./ProximityFuzeProjectile.md)
+- [ProximityFuzeProjectile](./ProximityFuzeProjectile.md) 近程引信Projectile
 - [RigidbodyProjectile](./RigidbodyProjectile.md) 刚体Projectile
-- [Rocket](./Rocket.md)
+- [Rocket](./Rocket.md) 火箭弹
 - [SoundBank](./SoundBank.md)
 - [SpinWhenHoldingFire](./SpinWhenHoldingFire.md)
 - [TargetSeekingMissile](./TargetSeekingMissile.md) 跟踪导弹
@@ -94,7 +101,7 @@ category:
 
 ## 地图
 - [AlternativePathSet](./AlternativePathSet.md)
-- [AvoidanceBox](./AvoidanceBox.md)
+- [AvoidanceBox](./AvoidanceBox.md) 避障箱
 - [CapturePoint](./CapturePoint.md)
 - [CustomActorModel](./CustomActorModel.md)
 - [CustomGraphCache](./CustomGraphCache.md)
@@ -105,7 +112,7 @@ category:
 - [LandingZone](./LandingZone.md)
 - [LevelColorGrading](./LevelColorGrading.md)
 - [LevelGravity](./LevelGravity.md)
-- [MinimapCamera](./MinimapCamera.md)
+- [MinimapCamera](./MinimapCamera.md) 小地图相机
 - [ObjectOptionsToggler](./ObjectOptionsToggler.md)
 - [PathfindingBox](./PathfindingBox.md)
 - [PathfindingLink](./PathfindingLink.md)
@@ -114,7 +121,7 @@ category:
 - [ResupplyCrate](./ResupplyCrate.md)
 - [SceneryCamera](./SceneryCamera.md) 地图背景相机
 - [SpawnPoint](./SpawnPoint.md)
-- [SpawnPointNeighborManager](./SpawnPointNeighborManager.md)
+- [SpawnPointNeighborManager](./SpawnPointNeighborManager.md) 据点寻路系统
 - [SpeedLimitZone](./SpeedLimitZone.md)
 - [TimeOfDay](./TimeOfDay.md)
 - [TurretSpawner](./TurretSpawner.md) 炮塔生成点

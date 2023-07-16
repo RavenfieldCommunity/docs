@@ -2,7 +2,7 @@
 ## 描述
 从[RigidbodyProjectile](./RigidbodyProjectile.md)类派生
 
-弹药包
+弹药包，给附近的玩家与Bot补充弹药
 
 ## 用法
 

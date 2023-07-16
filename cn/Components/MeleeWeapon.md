@@ -19,8 +19,8 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| radius  | float | 半径 |  
-| range  | float |  |  
+| radius  | float | 可攻击半径 |  
+| range  | float | 伤害半径 |  
 | swingTime  | float |  |  
 | damage  | float | 对人的伤害 |  
 | balanceDamage  | float | 冲击力（） |  

@@ -1,10 +1,9 @@
 # Boat
 
 ## 描述
-船只类
-
 从[Vehicle](./Vehicle.md)类派生
 
+船只类，建构船只的基础
 ## 用法
 参考[Vehicle](./Vehicle.md)
 ## 注释
@@ -19,5 +18,5 @@
 | reverseMultiplier | float | 倒车速度倍率 |
 | turnSpeed | float | 转向速度 |
 | stability | float | 稳定性（应该是影响的重心） |
-| floatingSamplers | Transform[] | 上浮采样器（gameobject） |
+| floatingSamplers | Transform[] | 上浮采样器 |
 | requireDeepWater | bool | 需要深水（未知作用，可能是会导致大船无法在潜水生成或者影响ai行为，还未测试） |

@@ -8,7 +8,7 @@ category:
 ## 描述
 从[Vehicle](./Vehicle.md)类派生
 
-直升机类
+直升机类，建构直升机的基础
 ## 用法
 参考[Vehicle](./Vehicle.md)
 
