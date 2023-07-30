@@ -54,7 +54,7 @@ category:
 | cullInThirdPerson | GameObject[] | 第三人称不显示的游戏物体（Size=数量。先填写要隐藏的物体数量，再在Element*处拖入物体） |  
 | thirdPersonScale  | float | 第三人称显示的武器模型缩放偏移量（矫正位置） |  
 | keepScriptsOnThirdPersonImposter  | bool |  | 
-| reloadAudio | AudioSource | 装填音效 |  
+| reloadAudio | AudioSource | 装填音效(开启advanceRaload时忽略此项，参阅[RFCreator Project](/cn/Tutorials/README.md)) |  
 | changeFireModeAudio | AudioSource |  切换开火模式的音效 |  
 | reflectionSound  | enum.ReflectionSound |  回音效果（Auto=自动、None=无、Handgun=手枪、RifleSmall=小步枪、RifleLarge=大步枪、Launcher=炮、Tank=坦克） |  
 | keepScriptsOnThirdPersonImposter  | bool |  |  

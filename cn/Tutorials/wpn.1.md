@@ -12,8 +12,6 @@
 
 Blender基本操作
 
-简单骨架变换
-
 打关键帧
 
 Unity游戏物体基本变换
@@ -128,12 +126,141 @@ flowchart TD
 
 这时，我们就可以正式开始为武器制作动画
 
-无论哪种武器，按照[Weapon](/cn/Components/Weapon.md)提供的Parameters，您都至少需要制作6个动画，分别为：切换、待机、瞄准(非热兵器可以不做)、装填、冲刺、踢(没错指挥队员、召集队员两个动画可以偷懒不做hhh)
+无论哪种武器，按照[Weapon](/cn/Components/Weapon.md)提供的Parameters，您都至少需要制作6个动画，分别为：切换(Unholster或Entry)、待机(Idle)、瞄准(Aim。非热兵器可以不做)、装填（Reload）、冲刺(Spirit)、踢(Kick)(没错指挥队员Direct Member、召集队员Call Member两个动画可以选择偷懒不做hhh)
 
 每个动画的大概用时可以参考官方模型（RFTools\Models\Weapons\，片段划分需要在Unity的文件Inspector\Animation\Cilps一栏查看）
 
 动画制作过程如下：
 ```
-1. 
+* 善用快捷键可以事半功倍 *
+* 不用担心各动画的过渡，Unity会自动过渡 *
+** 请始终确保践行一个原则：插入关键帧只插入有变动的物体与骨骼，一切从简，不要随手一个A（全选）加I（插入关键帧） **
+
+1. 估计一个动画的大概用时并划分时间
+2. 估计一个动作的大概用时并移动时间轴至对应时间点（tip：12帧=1秒，帧≠帧率FPS）
+3. (物体模式下)变换物体位置并插入关键帧
+4. (姿态模式下)变换骨骼位置并插入关键帧
+5. 精修动画：细调物体、骨骼动画，细调动画曲线以修改过渡动作过渡
+6. 重复以上过程
 ```
+::: tip
+投掷类武器在开火（投掷）动画这一个可能有点难，可以选择建一个空物体作为投掷点帮助K帧，然后再在Unity替换这个点
+:::
+这部分用时较长，一个动画K几小时很正常
+
+武器动画风格多样，COD风和轻柔风二选一，网上以及[Steam工坊](https://steamcommunity.com/workshop/browse/?appid=636480&requiredtags[]=Weapons)优秀例子过多，恕不一一举例，请自行临摹（
+
+另外，请确保手部骨骼始终保持贴合手的模型，像左图而不是右图，否则Unity内可能会出现动画问题：
+
+{缺图}
+
+K完帧了？是时候下一步了
+
+## 1.3 制作武器图标
+此步将介绍工坊的武器图标常用制作方法（当然可以选择截屏，但此处我们随大统）
+
+先新建一个blend工程（为不影响原工程）
+
+然后追加武器模型，调整模型位置，添加相机（大小随意，够大够清晰即可）与光源（面光）:
+
+{缺图}
+
+将您的武器与相机对齐
+
+转到属性，在世界属性中将背景颜色改为纯黑（表（曲）面-颜色，背景节点）
+
+在渲染属性中勾选Freestyle，将线条宽度改为2.5px(默认分辨率下)
+
+在视图层属性中勾选Freestyle，在其子选项卡“Freestyle线条样式”中选择颜色，将基础色改为纯白
+
+最后渲染图像即可
+
+太白灯光就后退一点，几乎没东西灯光就近一点：
+
+{缺图}
+
+最终效果参考RFTools\Materials\Textures\UI\Weapons
+
+## 1.4 音效制作
+这部分需要看自己
+
+需要按你自己制作的动画去剪辑音效（一般网上找到的可以直接用，但装填音效这个大坑要注意。单/多发装填武器则需要将装填音效分割成多个片段以对应各个装填动画）
+
+如果只是想练手可以选择直接套用RFTools自带音效用于测试
+
+## 2.0 导入Unity
+是时候将模型导入进Unity了
+
+导出的过程敬请参考首页的[提示](/cn/Tutorials/#模型、动画制作)
+
+然后我们打开Unity项目
+
+如果您未创建Unity项目或导入RFTools.unitypackage，请自行导入，此处不再赘述
+
+## 2.1 配置动画Cilps
+
+此处配置动画片段，这部分稍后会在动画机用到
+
+在Unity的Project窗口选中模型文件，在右侧的Inspector选择Animation选项卡：
+
+{缺图}
+
+在Clips处新建动画片段并在Start与End处设置动画起始帧与结束帧（像1~25而不是1~1，1~1在Unity无法正常播放），设置好所有的片段（名字按动画随便起）：
+
+{缺图}
+
+请始终确保切换(Unholster或Entry)动画处于Cilps的最顶层，这将有助于在Unity场景中设置枪口位置！
+
+::: details 如果您的武器是单/多发装填武器...（配置动画事件）
+此处配置动画事件用于单/多发装填武器能在对应的动画时间点播放正确的音效
+
+首先确保你已经配置好动画Cilps，将Reload动画细分为开始装弹、装入子弹动作、结束装弹（拉栓）,将开火动画（仅包括跳栓）以及Idle动画细分.**参考**RFTools\Models\Weapons\Garand.blend：
+
+{缺图}
+
+这一步需要先行在场景配置[Weapon](/cn/Components/Weapon.md)组件（启用advenceReload）以及[SoundBank](/cn/Components/SoundBank.md)组件,若未配置请先调至[下一章](#_2-2-在场景配置武器)然后再配置动画事件
+
+选中要播放自定义的Cilp，转到下方的Events选项卡，将时间轴拖至对应时间点后单击旁边的Add Event，参考[SoundBank的组件文档](/cn/Components/SoundBank.md)配置这个Event的Function为PlaySoundBank以及Int为对应的音效index
+
+重复以上操作
+
+**最后注意在结束装弹的对应时间点添加一个Function为ReloadDone的Event**
+
+**在一个装弹循环结束的对应时间点添加一个Function为MotionDone的Event**
+
+否则游戏时会卡动画
+:::
+
+## 2.2 在场景配置武器
+然后打开RFTools\Sence\Weapons Lab.unity场景
+
+然后将模型拖入左边的大纲视图（直接拖进场景难以调整位置），并确保场景内的其他武器处于禁用状态（在Inspector内消掉其他物体的复选框，不包括顶头的“Camera Parent”、“Directional Light”、“Plane”、“Soldier Weapon Holder Preview”、“EventSystem”、“Target Cube”）
+
+这时他看着应该是这样的：
+
+{缺图}
+
+选中您的武器（它现在应该自带Animator组件）：
+
+{缺图}
+
+添加[Weapon](/cn/Components/Weapon.md)（或按武器类型添加[MeleeWeapon](/cn/Components/MeleeWeapon.md)、[Wrench](/cn/Components/Wrench.md)或[ThrowableWeapon](/cn/Components/ThrowableWeapon.md)）、Audio Source（Weapon组件会附带）组件
+
+现在配置[Weapon](/cn/Components/Weapon.md)（或[MeleeWeapon](/cn/Components/MeleeWeapon.md)、[Wrench](/cn/Components/Wrench.md)或[ThrowableWeapon](/cn/Components/ThrowableWeapon.md),都是必填，**参阅[组件文档](/cn/Components/README.md)**）组件：
+
+配置组件的displayName、thirdPersonTransform、reloadAudio、uiSprite、arms、ammo、auto、spareAmmo、resupplyNumber、reloadTime、cooldown、aimFov、pose、advancedReload
+
+创建一个（多枪口可以多个）名为Muzzle（作为枪口或投掷类武器投掷点，其他名字亦可）的空物体对齐模型的枪口（或投掷点），确保空物体Z轴正对前方：
+
+{缺图}
+
+然后将这个空物体拖入Weapon组件(或其他)的muzzles：
+
+{缺图}
+
+在Muzzle物体下新建多个空物体作为枪口火花、烟雾的粒子系统（自行配置，可以从其他武器复制、冷兵器可以跳过）
+
+casingParticles
+
+projectilePrefab
 
