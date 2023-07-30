@@ -1,7 +1,12 @@
+---
+category: 
+- 组件
+- 载具
+---
 # TankTurret
 
 ## 描述
-从[MountedWeapon](./Weapon/MountedWeapon.md)类派生
+从[MountedWeapon](./MountedWeapon.md)类派生
 
 已废弃，使用[MountedStabilizedTurret](./MountedStabilizedTurret.md)代替
 

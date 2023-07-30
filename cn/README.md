@@ -61,10 +61,14 @@ title: 首页
 
 ## 鸣谢🧡
 
-所有的[贡献者](https://github.com/RavenfieldCommunity/docs/graphs/contributors)们，因为你们才使得了这个文档日臻完善❤❤❤
+所有的[贡献者](https://github.com/RavenfieldCommunity/docs/graphs/contributors)们，因为你们才使得了这个文档日臻完善❤❤❤:
+
+![GitHub Contributors Image](https://contrib.rocks/image?repo=RavenfieldCommunity/docs)
 
 以及以下开源项目 ：
 - [SocialSisterYi/bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect/)
+
     为这个项目的结构与的构建提供了参考
 - [vuepress-theme-hope](https://github.com/vuepress-theme-hope/vuepress-theme-hope)、[vuepress/vuepress](https://github.com/vuepress/vuepress-next)、[JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
+
     部署项目文档使用的开源项目

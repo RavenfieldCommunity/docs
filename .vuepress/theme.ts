@@ -52,6 +52,9 @@ export default hopeTheme({
     pwa: {
       themeColor: '#6d6d6d',
       cacheHTML: true
+    },
+    mdEnhance: {
+      mermaid: true,
     }
   }
 });

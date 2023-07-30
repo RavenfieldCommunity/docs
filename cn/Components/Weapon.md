@@ -18,30 +18,32 @@ category:
 
 此组件使用了一个Audio Source组件作为依赖项，请将开火音效置于此组件
 
-此外请避免装载有Weapon组件的物体上并排存在多个Audio Source组件，这会导致游戏报错
+此外请避免装载有Weapon组件的物体上并排存在多个Audio Source组件，这会导致音效冲突+游戏报错
 
-此组件对应的动画机Parameters：
+解决方法是武器内新建空物体再另外挂载一个Audio Source
+
+此组件对应的可用动画机Parameters：
 | 原名 | 类型 | 描述 |
 |------|------|------|
 | loaded ammo | int | 已装载的弹药数 |
-| unholster | trigger | 切换到武器时为Ture |
-| tuck | bool | 冲刺时为Ture |
+| unholster | trigger | 切换到武器时为True |
+| tuck | bool | 冲刺时为True |
 | muzzle | int | 等于目前玩家所处的枪口序号（默认0开始） |
 | alt weapons | int | 等于目前玩家所处的副武器序号（0=处于主武器，默认1开始） |
-| charging |  |  |
-| overheat | bool | 过热时为Ture |
+| charging | 处于充能状态时为True |  |
+| overheat | bool | 过热时为True |
 | sight mode | int | 等于目前玩家所处的瞄准模式（默认0开始） |
 | smooth sight mode | float | 等于目前玩家所处的瞄准模式（与sight mode等同，适用于BlenderTree） |
-| fire | trigger | 开火时为Ture |
-| aim | bool | 瞄准时为Ture，其余状态为False |
-| reload | trigger | 装填时为Ture |
-| reloading | bool | 装填时为Ture |
+| fire | trigger | 开火时为True |
+| aim | bool | 瞄准时为True，其余状态为False |
+| reload | trigger | 装填时为True |
+| reloading | bool | 装填时为True |
 | reload motion | int | 等于本次装载行为需要装多少弹？ |
-| no ammo | bool | 疑似无弹药时为Ture（疑似是以备用弹药判定） |
+| no ammo | bool | 疑似无弹药时为True（疑似是以备用弹药判定） |
 | no ammo blend |  |  |
-| kick | trigger | 踢人时为Ture |
-| call | trigger | 召集队员时为Ture |
-| direct | trigger | 指挥队员时为Ture |
+| kick | trigger | 踢人时为True |
+| call | trigger | 召集队员时为True |
+| direct | trigger | 指挥队员时为True |
 
 ## 变量
 | 名称 | 类型 | 描述 |
@@ -67,7 +69,7 @@ category:
 | useParentWeaponSightModes | bool |  使用父武器的瞄准方式 |  
 | ammo | int | 武器装载的弹药数 |  
 | isLocked  | bool | 是否该锁定武器 |  
-| auto  | bool | 是否为自动武器 |  
+| auto  | bool | 是否为自动武器（开火是否为连发还是单发，影响开火音效是即使停止还是直接播放完音效） |  
 | spareAmmo  | int | 武器备用的弹药数 |  
 | resupplyNumber  | int | 每次从补给箱补充的弹药数 |  
 | reloadTime  | float |   装填所用时间 |  
@@ -114,13 +116,13 @@ category:
 | effAir  | enum.Effectiveness | 攻击是否对空中目标作用(No, Yes, Preferred) | 
 | effAirFastMover  | enum.Effectiveness |  攻击是否对快速移动的空中目标作用(No, Yes, Preferred) | 
 | effectiveRange  | float | 攻击有效范围 |  
-| diffInfantry  | enum.Difficulty | (Auto,Easy,Challenging,Hard,Impossible) |  
-| diffInfantryGroup  | enum.Difficulty | (Auto,Easy,Challenging,Hard,Impossible) |  
-| diffGroundVehicles  | enum.Difficulty | (Auto,Easy,Challenging,Hard,Impossible) |  
-| diffAir  | enum.Difficulty | (Auto,Easy,Challenging,Hard,Impossible) |  
-| diffAirFastMover  | enum.Difficulty | (Auto,Easy,Challenging,Hard,Impossible) |  
+| diffInfantry  | enum.Difficulty | Bot使用此武器攻击步兵的难度(Auto=自动调整,Easy=轻松,Challenging=还行,Hard=困难,Impossible=不可能。**游戏中Bot自动分为Beginner、Normal、Veteran、Elite四个等级，各个级别的实力可从名字体现，武器的攻击难度对于不同级别的Bot是不同的，会削减或增强**) |  
+| diffInfantryGroup  | enum.Difficulty | Bot使用此武器攻击步兵群的难度(Auto=自动调整,Easy=轻松,Challenging=还行,Hard=困难,Impossible=不可能) |  
+| diffGroundVehicles  | enum.Difficulty | Bot使用此武器攻击载具的难度(Auto=自动调整,Easy=轻松,Challenging=还行,Hard=困难,Impossible=不可能) |  
+| diffAir  | enum.Difficulty | Bot使用此武器攻击空中目标的难度(Auto=自动调整,Easy=轻松,Challenging=还行,Hard=困难,Impossible=不可能) |  
+| diffAirFastMover  | enum.Difficulty | Bot使用此武器攻击快速移动的空中目标的难度(Auto=自动调整,Easy=轻松,Challenging=还行,Hard=困难,Impossible=不可能) |  
 | haltStrategy  | enum.HaltStrategy |  Bot移动时的开火策略（建议不改。Auto=自动调整, Never=移动时始终开火, PreferredLongRange=远距离优先停止移动再开火但近距离依旧开火, PreferredAnyRange=允许边移动边开火跑打但优先停移, AlwaysLongRange=远距离才始终停移但近距离依旧开火, Always=开火时始终停移) |  
-| pose  | int |  第三人称握持武器的姿势(类：0=AK、1=手雷、2=SMAW) |  
+| pose  | int |  第三人称握持武器的姿势(例子：0=AK、1=手雷、2=SMAW) |  
 | applyHeat  | bool | 是否有过热效果 |  
 | heatMaterial | MaterialTarget |  过热效果的材质（参考Unity的文档与Prefab） |  
 | heatGainPerShot  | float | 每发使武器过热%多少） |  
@@ -129,13 +131,13 @@ category:
 | heatColorGain | AnimationCurve | 过热散热时颜色消失的曲线 |  
 | overheatParticles | ParticleSystem |  过热出现的粒子 |  
 | overheatSound | AudioSource |  过热音效 |  
-| useChargeTime  | bool |  更改开火模式是否有切换时间 |  
-| chargeTime  | float |  开火模式切换时间 |  
-| chargeSound | AudioSource |  开火模式切换音效 |  
-| dropAmmoWhenReloading  | bool | 换弹时丢弃弹药 |  
+| useChargeTime  | bool | 武器是否需要充能（蓄力）  |  
+| chargeTime  | float |  武器充能时间  |  
+| chargeSound | AudioSource |  武器充能音效 |  
+| dropAmmoWhenReloading  | bool | 换弹时丢弃剩余弹药 |  
 | maxRemainingAmmoAfterDrop  | int | 丢弃弹药后最大剩余弹药 |  
-| useMaxAmmoPerReload  | bool | 允许的换弹（应该是弹药数） |  
-| maxAmmoPerReload  | int |  |  
-| advancedReload  | bool | 弹匣的最大弹药量（暂未深入了解） |  
+| useMaxAmmoPerReload  | bool | 限制每次换弹的最大装填数 |  
+| maxAmmoPerReload  | int | 每次换弹的最大装填数（与useMaxAmmoPerReload联动） |  
+| advancedReload  | bool | 是否启用高级装填（用于单\多发装填武器,需要在AnimationEvent手动调用ReloadDone才能结束装填） |  
 | allowedReloads | int[] |  {机翻}允许重新装填（什么玩意...） |  
 | sightModes | SightMode[] | 瞄准方式（Sizes=有多少种瞄准方式；overrideFov=铺满视角；fov=可视范围；name=名称，显示在实际游戏时的HUB中） |  

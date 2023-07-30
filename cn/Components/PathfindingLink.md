@@ -1,6 +1,6 @@
 # PathfindingLink
 ## 描述
-从[GraphModifier](./GraphModifier.md)类派生
+从GraphModifier类派生
 ## 用法
 
 ## 注释

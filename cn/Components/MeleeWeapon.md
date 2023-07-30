@@ -21,7 +21,7 @@ category:
 | ----------- | ----------- | ----------- |
 | radius  | float | 可攻击半径 |  
 | range  | float | 伤害半径 |  
-| swingTime  | float |  |  
+| swingTime  | float | 攻击所需时间 |  
 | damage  | float | 对人的伤害 |  
 | balanceDamage  | float | 冲击力（） |  
 | force  | float |  |  

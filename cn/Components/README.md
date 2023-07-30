@@ -3,13 +3,15 @@ category:
 - 组件
 ---
 
+# 组件索引
 ::: warning
 此组件文档仍处于十分早期的阶段，由于相当一部分组件仅通过检查源码进行编写，所以可能与现实存在偏差，敬请在网站评论区或[此项目的Steam指南原链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158)评论区提出此错误！
 
-另外请注意“派生类”（类似“克隆”父脚本并添加一些新的内容）这个在C#开发中的概念，此文档大量应用并省略了子类引用的父类内容但在文档开头的地方注明了父类文档的链接，请注意
+另外请注意“[派生类](https://www.runoob.com/csharp/csharp-inheritance.html)”（类似“克隆”父脚本并添加一些新的内容）这个在[C#](https://www.runoob.com/csharp/csharp-tutorial.html)开发中的概念
+
+此文档大量应用并省略了子类引用的父类内容但在文档开头的地方注明了父类文档的链接
 :::
 
-# 组件索引
 ## 载具
 - [Airplane](./Airplane.md) 飞机
 - [VehicleContentMod](./VehicleContentMod.md) 载具导出配置
@@ -90,7 +92,7 @@ category:
 - [ProximityFuzeProjectile](./ProximityFuzeProjectile.md) 近程引信Projectile
 - [RigidbodyProjectile](./RigidbodyProjectile.md) 刚体Projectile
 - [Rocket](./Rocket.md) 火箭弹
-- [SoundBank](./SoundBank.md)
+- [SoundBank](./SoundBank.md)  AudioCilp集
 - [SpinWhenHoldingFire](./SpinWhenHoldingFire.md)
 - [TargetSeekingMissile](./TargetSeekingMissile.md) 跟踪导弹
 - [ThrowableWeapon](./ThrowableWeapon.md)
