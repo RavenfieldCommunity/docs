@@ -93,7 +93,7 @@ flowchart TD
 
 **贴图方案（仅光学）**：直接制作一个准星贴图放置在瞄具对应的位置即可（RFTools\Models\Weapons\Sinper.blend内有，可以在此基础上修改）
 
-后续详细过程请参考[2.? ????](#2??)
+后续详细过程请参考[2.4 瞄具设置（仅枪械）](#_2-4-瞄具设置-仅枪械)
 :::
 
 ## 1.2 制作动画
@@ -218,7 +218,7 @@ K完帧了？是时候下一步了
 
 {缺图}
 
-这一步需要先行在场景配置[Weapon](/cn/Components/Weapon.md)组件（启用advenceReload）以及[SoundBank](/cn/Components/SoundBank.md)组件,若未配置请先调至[下一章](#_2-2-在场景配置武器)然后再配置动画事件
+这一步需要先行在场景配置[Weapon](/cn/Components/Weapon.md)组件（启用advenceReload）以及[SoundBank](/cn/Components/SoundBank.md)组件,若未配置请先调至[下一章](#_2-3-在场景配置武器)然后再配置动画事件
 
 选中要播放自定义的Cilp，转到下方的Events选项卡，将时间轴拖至对应时间点后单击旁边的Add Event，参考[SoundBank的组件文档](/cn/Components/SoundBank.md)配置这个Event的Function为PlaySoundBank以及Int为对应的音效index
 
@@ -231,8 +231,17 @@ K完帧了？是时候下一步了
 否则游戏时会卡动画
 :::
 
-## 2.2 在场景配置武器
-然后打开RFTools\Sence\Weapons Lab.unity场景
+## 2.2 预配置武器图标
+此处配置武器图标的部分属性，否则在[下一章](#_2-3-在场景配置武器)时可能会出现奇怪的Bug（？
+
+在Unity的Project窗口选中武器图标文件，在右侧的Inspector选择将Texture Type改为Sprite(2D and UI)，勾选Generate Mip Maps，Filter Mode改为Trilinear：
+
+{缺图}
+
+这样就将武器图标从普通图片配置成了Sprite（又称精灵图或UI图像）
+
+## 2.3 在场景配置武器
+打开RFTools\Sence\Weapons Lab.unity场景
 
 然后将模型拖入左边的大纲视图（直接拖进场景难以调整位置），并确保场景内的其他武器处于禁用状态（在Inspector内消掉其他物体的复选框，不包括顶头的“Camera Parent”、“Directional Light”、“Plane”、“Soldier Weapon Holder Preview”、“EventSystem”、“Target Cube”）
 
@@ -248,8 +257,6 @@ K完帧了？是时候下一步了
 
 现在配置[Weapon](/cn/Components/Weapon.md)（或[MeleeWeapon](/cn/Components/MeleeWeapon.md)、[Wrench](/cn/Components/Wrench.md)或[ThrowableWeapon](/cn/Components/ThrowableWeapon.md),都是必填，**参阅[组件文档](/cn/Components/README.md)**）组件：
 
-配置组件的displayName、thirdPersonTransform、reloadAudio、uiSprite、arms、ammo、auto、spareAmmo、resupplyNumber、reloadTime、cooldown、aimFov、pose、advancedReload
-
 创建一个（多枪口可以多个）名为Muzzle（作为枪口或投掷类武器投掷点，其他名字亦可）的空物体对齐模型的枪口（或投掷点），确保空物体Z轴正对前方：
 
 {缺图}
@@ -258,9 +265,106 @@ K完帧了？是时候下一步了
 
 {缺图}
 
-在Muzzle物体下新建多个空物体作为枪口火花、烟雾的粒子系统（自行配置，可以从其他武器复制、冷兵器可以跳过）
+在Muzzle物体下新建多个空物体作为枪口火花、烟雾的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示），可以从其他武器复制、冷兵器可以跳过）
 
-casingParticles
+在抛壳口的位置新建一个名为casingParticles的空物体作为抛壳口的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示），可以从其他武器复制、冷兵器可以跳过）,将这个空物体拖入Weapon组件的casingParticles
 
-projectilePrefab
+在projectilePrefab处配置子弹的的Prefab（不是一般意义,参考RFTools\Prefabs\Projectiles，可直接RFTools复制一份使用，此物体必须包含[Projectile](./Projectile.md)或其派生组件，当子弹为重火力兵器时建议添加Audio Source）
+
+然后检查并配置组件的displayName、thirdPersonTransform、reloadAudio、uiSprite、arms、ammo、auto、spareAmmo、resupplyNumber、reloadTime、aimFov、pose、advancedReload、effInfantry、effInfantryGroup、effUnarmored、effArmored、effAir、effAirFastMover,其他选项的看需求配置（[MeleeWeapon](/cn/Components/MeleeWeapon.md)、[Wrench](/cn/Components/Wrench.md)或[ThrowableWeapon](/cn/Components/ThrowableWeapon.md)需要配置更多，**参阅[组件文档](/cn/Components/README.md)**）
+
+kickback、randomKick、、spread、followupSpreadGain、followupSpreadStayTime、followupSpreadDissipateTime、snapMagnitude、snapDuration、snapFrequency等武器手感相关的参数需要慢慢调
+
+## 2.4 瞄具设置（仅枪械）
+瞄具有四种，分别为：机械瞄具、光学瞄具、全息瞄具、红点瞄具
+
+### 机械瞄具
+
+最简单的瞄具，在BlenderK好瞄准动画，直接跳到[下一章](#_2-4-制作动画机)即可，可以调Weapon的aimFov
+
+### 光学瞄具
+
+光学瞄具有两种设置镜头的方法：
+
+一是直接像官方的Sinper一样直接在Blender套一个**贴图物体**在镜筒，到Unity就直接套材质和改aimFov
+
+二是**双渲染**：在Bledner放个薄的物体（类似标准平面、圆柱）当镜片，
+在Unity新建一个Render Texture材质，500x500px大概够用了：
+
+{缺图}
+
+新建普通材质，将类型改为Unlit\Texture，Base选择刚才创建的Render Texture：
+
+{缺图}
+
+场景内新建一个摄像机在武器下（不要放在武器模型的层级下）,检查器内的Target Texture就选刚才创建的Render Texture：：
+
+{缺图}
+
+最后，把刚才创建的普通材质应用在镜片即可，相机的Z轴位置可以调一下，跟换倍率的效果差不多：
+
+{缺图}
+
+::: details 狙击手聚焦视角
+{缺图}
+
+对于像图中的狙击手聚焦视角，把场景内的FP_scope（官方武器Sinper下）复制到与镜片相同的层级下即可，可能需要细调一下FP_scope的位置，请自行调整，别忘记把这个物体拖到Weapon组件的scopeAimObject里！
+
+如果不满意FP_scope的标线，您可以到Blender自行更改，它在RFTools\Assets\Models\Weapons\Sinper.blend里 
+:::
+
+### 全息瞄具
+同光学瞄具，在Bledner放个薄的物体（类似标准平面、圆柱）当镜片，在Unity再复制一份到同样的位置
+
+分别给予RFTools\Materials\UI\HUD Glass.mat（作镜片）与RFTools\Materials\Weapons\Holo Sight.mat（做红点贴图）材质
+
+红点贴图可以在Holo Sight的材质选项改
+
+镜片颜色可以在HUD Glass的材质选项中的Tint Color改
+
+贴图太大可以把带Holo Sight材质的物体的Y方向拖远一点
+
+### 红点瞄具
+同样简单，在武器下新建一个空物体，添加组件Line Render，取消勾选组件的Use World Space
+
+将Positions的Sizes设为2，Element0不动，调整Element1的Z方向长度即可，颜色可以在Color改，Width可以改线条宽度，Material处可以改射线材质：
+
+{缺图}
+
+## 2.5 制作动画机
+这玩意就需要你的想象力了
+
+Project内右键新建一个动画机AnimationController，双击打开
+
+动画机本质上就是各种状态时的if、if、if...，通过这些if与Parameters的配合，帮助模型跳转至一个合适的动画，但是各个States的链接有点费脑，一个基础的动画机（.controller）实例如下：
+```mermaid
+flowchart LR
+  A(("Any States")) -- "当tigger为kick时" -->  B["Kick踢"] --> D["Hip待机"] <--"当tigger为kick时，跳转一次又跳回来" --> F["Direct Menber指挥"]
+  A-->  C["Unholster切换"] --> D
+  E(("Entry")) --> D <--"当tigger为kick时，跳转一次又跳回来" --> G["Call Menber召集"]
+  D <--"当tigger为tuck时，跳转一次又跳回来" --> H["Spirit冲"]
+  D <--"当aim为true时，跳转一次又跳回来" --> I["Aim瞄准"] -- "当tigger为tuck时" --> H
+  D <--"当tigger为reload时，跳转一次又跳回来" --> J["Reload装填"]
+  I -- "当tigger为reload时" --> J
+  K(("Exit"))
+```
+这时官方AK 47的动画机
+
+如果武器复杂，动画机就会更复杂，这就需要你依靠parameters发挥充分的逻辑想象力
+
+特别是单/多发装填武器，在配置动画事后件，这应该会简单一点点，参考官方RFTools\Animations\Weapons\Garand.blend
+
+## 3.0 测试与导出
+现在我们的武器基本完工了！
+
+这时您就可以在场景中预览武器了
+
+如果不能正常播放请检查组件设置与场景内是否有其他武器处于启用状态
+
+部分功能需要在游戏内测试（例如踢的动画，转动视角...）,但这需要导出Mod
+
+所以我们需要先配置WeaponContectMod（武器导出向导）组件
+
+配置过程参考[WeaponContectMod的组件文档](/cn/Components/WeaponContectMod.md)
+
 

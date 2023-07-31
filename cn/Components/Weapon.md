@@ -16,7 +16,7 @@ category:
 
 ## 注释
 
-此组件使用了一个Audio Source组件作为依赖项，请将开火音效置于此组件
+此组件使用了一个Audio Source组件作为依赖项，请将开火音效置于此组件（如果是自动武器请勾选Audio Source的Loop，注意不要勾选Play on Awake！）
 
 此外请避免装载有Weapon组件的物体上并排存在多个Audio Source组件，这会导致音效冲突+游戏报错
 
@@ -49,30 +49,30 @@ category:
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | displayName | string | 武器在实际UI显示的名称 |  
-| thirdPersonTransform | Transform |  第三人称显示的武器模型 |  
+| thirdPersonTransform | Transform |  第三人称显示的武器模型（包括手臂） |  
 | thirdPersonOffset  | Vector3 | 第三人称显示的武器模型位置偏移量（矫正位置） |  
 | cullInThirdPerson | GameObject[] | 第三人称不显示的游戏物体（Size=数量。先填写要隐藏的物体数量，再在Element*处拖入物体） |  
 | thirdPersonScale  | float | 第三人称显示的武器模型缩放偏移量（矫正位置） |  
 | keepScriptsOnThirdPersonImposter  | bool |  | 
-| reloadAudio | AudioSource | 装填音效(开启advanceRaload时忽略此项，参阅[RFCreator Project](/cn/Tutorials/README.md)) |  
+| reloadAudio | AudioSource | 装填音效(开启advanceRaload时忽略此项，此AudioSource建议放置于武器内的空物体上，参阅[RFCreator Project](/cn/Tutorials/README.md)) |  
 | changeFireModeAudio | AudioSource |  切换开火模式的音效 |  
 | reflectionSound  | enum.ReflectionSound |  回音效果（Auto=自动、None=无、Handgun=手枪、RifleSmall=小步枪、RifleLarge=大步枪、Launcher=炮、Tank=坦克） |  
 | keepScriptsOnThirdPersonImposter  | bool |  |  
-| reflectionVolume  | float |  |  
-| walkBobMultiplier  | float |  走路时晃动倍数 |  
-| sprintBobMultiplier  | float |  跑步时晃动倍数 |  
-| proneBobMultiplier  | float |  趴下时晃动倍数 |  
+| reflectionVolume  | float | 回音效果大小 |  
+| walkBobMultiplier  | float | 走路时晃动倍数 |  
+| sprintBobMultiplier  | float | 跑步时晃动倍数 |  
+| proneBobMultiplier  | float | 趴下时晃动倍数 |  
 | uiSprite | Sprite | 武器图标 |  
-| arms | SkinnedMeshRenderer | 武器动画的手臂模型（场景层级内的！包含骨骼。） |  
+| arms | SkinnedMeshRenderer | 武器动画的手臂模型（场景层级内的！包含骨骼，默认名为“Hands“） |  
 | allowArmMeshReplacement  | bool |  是否允许实际游戏时玩家皮肤替换手部皮肤 |  
-| parentWeapon | Weapon | 父武器 |  
-| useParentWeaponSightModes | bool |  使用父武器的瞄准方式 |  
+| parentWeapon | [Weapon](./Weapon.md) | 父武器（有子武器时可用，子武器就是Weapon物体里再套一个Weapon） |  
+| useParentWeaponSightModes | bool | 使用父武器的sightModes |  
 | ammo | int | 武器装载的弹药数 |  
 | isLocked  | bool | 是否该锁定武器 |  
 | auto  | bool | 是否为自动武器（开火是否为连发还是单发，影响开火音效是即使停止还是直接播放完音效） |  
 | spareAmmo  | int | 武器备用的弹药数 |  
 | resupplyNumber  | int | 每次从补给箱补充的弹药数 |  
-| reloadTime  | float |   装填所用时间 |  
+| reloadTime  | float | 装填所需时间（启用advanceReload时不可用） |  
 | cooldown  | float | 开火时连续两发子弹的间隔（开火速度，值越小越快） |  
 | unholsterTime  | float | 切换到武器时所用时间 |  
 | unholsterIsReload  | bool |  切换到武器的行为是否可以替代装填 |  
@@ -92,7 +92,7 @@ category:
 | fireFromAllMuzzles  | bool | 开火时所有的枪口是否不受开火模式的影响，都会作用 |  
 | projectilesPerShot  | int |  每次开火出多少子弹 |  
 | projectilePrefab | GameObject |  子弹的预制件 |  
-| scopeAimObject | GameObject | 瞄准时出现的物体（可选，类似狙击时画面外的一圈黑边，聚焦瞄准时的黑边物体。应在场景层级内，游戏时默认在此项设置的物体会禁用，玩家瞄准时会启用） |  
+| scopeAimObject | GameObject | 瞄准时出现的物体（可选，类似狙击时画面外的一圈黑边，聚焦瞄准时的黑边物体。应在场景层级内，机制为游戏时默认在此项设置的物体会禁用，玩家瞄准时会启用） |  
 | kickback  | float |  后坐力 |  
 | randomKick  | float |  随机附加后坐的最大值 |  
 | spread  | float |  散布效果 |  

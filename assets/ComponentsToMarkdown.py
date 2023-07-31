@@ -3,7 +3,7 @@
 import os
 
 # 组件所在位置
-workPath = r'D:\***\RavenfieldToolsPack\Assets\Scripts\Vehicle Tools\Components\Vehicle Components\Visual\UI'
+workPath = r'D:\***\RFProject\Assets\RFTools\Scripts\Ravenscript Tools\Components'
 # 导出目录
 mdPath = r'D:\***\RavenfieldToolsPack\Assets\Scripts\md'
 os.chdir(workPath)

@@ -3,7 +3,7 @@ category:
 - 组件
 - Ravenscrpit
 ---
-# ScriptedBehaviour
+# MutatorCotentMod
 ## 描述
 
 ## 用法
