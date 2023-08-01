@@ -1,3 +1,8 @@
+---
+category: 
+- 组件
+- 载具
+---
 # WeaponStatusIndicator
 ## 描述
 用于监视在游戏中实时监控目标武器的各项数值并应用到UI物体

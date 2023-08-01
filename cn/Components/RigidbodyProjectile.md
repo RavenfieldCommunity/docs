@@ -1,3 +1,8 @@
+---
+category: 
+- 组件
+- 武器
+---
 # RigidbodyProjectile
 ## 描述
 从[Projectile](./Projectile.md)类派生

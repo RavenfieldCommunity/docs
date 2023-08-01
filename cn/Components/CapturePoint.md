@@ -1,3 +1,8 @@
+---
+category: 
+- 组件
+- 地图
+---
 # CapturePoint
 ## 描述
 从[SpawnPoint](./SpawnPoint.md)类派生

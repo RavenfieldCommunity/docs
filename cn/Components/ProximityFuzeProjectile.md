@@ -1,3 +1,8 @@
+---
+category: 
+- 组件
+- 武器
+---
 # ProximityFuzeProjectile
 ## 描述
 从[ExplodingProjectile](./ExplodingProjectile.md)类派生

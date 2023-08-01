@@ -1,3 +1,8 @@
+---
+category: 
+- 组件
+- 载具
+---
 # ActivateWhenLocked
 ## 描述
 当挂载此组件的载具被导弹锁定时，激活指定物体

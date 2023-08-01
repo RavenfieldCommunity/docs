@@ -1,3 +1,8 @@
+---
+category: 
+- ื้ผþ
+- ฮไฦ๗
+---
 # AmmoCountUiText
 ## ร่ส๖
 

@@ -1,20 +1,29 @@
 # otr.3 Mutators
 ## 前言
+
 此文档将一步步引导你开发一个简单的Mutators，带您理解Mutators的基本构造
+
 ## -1.0 环境配置
 **此处不再详细说明，如果你有看过相关编程语言的教程，对下面的事情你应该会很快上手**
 
 **详情请参考官方文档**
-1. 安装[VSCode](https://code.visualstudio.com/)
+1. 安装
+[![Install in VS Code](https://img.shields.io/badge/VS%20Code-Install-blue?style=for-the-badge&logo=visualstudiocode "Install in VS Code")](https://code.visualstudio.com/)
+
 2. 安装Chinese-Simple语言扩展包[![Install in VS Code](https://img.shields.io/badge/VS%20Code-Install-blue?style=for-the-badge&logo=visualstudiocode "Install in VS Code")](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans)
+
 3. 安装vscode-lua扩展[![Install in VS Code](https://img.shields.io/badge/VS%20Code-Install-blue?style=for-the-badge&logo=visualstudiocode "Install in VS Code")](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
+
 4. 安装C#扩展[![Install in VS Code](https://img.shields.io/badge/VS%20Code-Install-blue?style=for-the-badge&logo=visualstudiocode "Install in VS Code")](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+
 5. 配置工作区的.vscode\settings.json为：
 ```json 
 {
+    //配置文件扩展名关联
     "files.associations": {
         "*.txt": "lua",
     },
+	//隐藏meta文件
     "files.exclude": {
         "**/*.meta":true,
     },
@@ -25,39 +34,26 @@
 ## 0.0 想！
 现在我们先想一下我们的Mutators有什么功能
 
-例如我们本次的示例Mutators载具快速修复，他应该有：
-- 基本的修复载具，每次修复35%
-- 有冷却时间
-- 防止修复载具后载具健康超过最大值
-- 防止通过暂停游戏跳过修复时间
-- 显示修复状态与健康
-- 有音效
-- 可以使用附加Alt键防止键位冲突
-- 修复时不可操作载具(载具内有队友时除外)
+例如我们本次的示例Mutators简单血量回复，他应该有：
+- 基本的血量回复，每次修复35%（可修改）
+- 有冷却时间（可修改）
+- 防止血量回复后健康超过最大值
+- 加入UI，显示修复状态与健康
 
 然后我们再简单想一下脚本的运行逻辑与可以供玩家在游戏中调整的数值，方便实际敲代码(可以跳过)
 
-在这之前，如果您不了解诸如Start()以及实际开发中可以调用的方法，请自行查阅RS文档（或Unity文档，基本通用），此处不再赘述
+在本实例中，公开的可以供玩家在游戏中调整的数值：血量回复比例、冷却时间
 
-在本实例中，公开的可以供玩家在游戏中调整的数值：冷却时间、修复时间、激活键、是否使用Alt键、每次修复载具最大健康的%
-
-计划的运行逻辑：
-``` 
-Start() > local化自定义选项与本地变量(如果数值不符合要求或为空则填充默认数值)
-
-Update() > 当游戏未暂停时冷却计时器累加时间到变量self.deltaTime；
-如果玩家按下激活键且不处于冷却状态且驾驶载具中，则将变量self.Repairing变量设置为Ture，否则打印报错信息到屏幕；
-当self.Repairing为Ture时且游戏未暂停时，修复时间计时器累加时间到变量self.repairingDeltaTime并播放循环音效，打印修复剩余时间到屏幕，当载具只有玩家一个人时阻止玩家操作载具；
-当self.rpairingDeltaTime大于玩家设置的修复时间，则修复载具的%，并打印修复的健康到屏幕，重置所有计时器，停止播放音效，重新允许玩家操作载具
- ```
 现在我们可以正式开始了!
 
 ## 1.0 Unity内简单配置
-在打代码之前，我们先在Unity配置一下Mutators的预制件()的Mod导出设置
+在打代码之前，我们先在Unity配置一下Mutators的预制件的Mod导出设置
 
-场景内新建一个空物体，添加ScriptedBehaviour组件，游戏中这个物体下的所有东西都会被实例化
+场景内新建一个空物体，添加[ScriptedBehaviour](/cn/Components/ScriptedBehaviour.md)组件，游戏中这个物体下的所有东西都会被实例化
 
-新建一个TXT(Ravenscrpit)文件，把这个文件托入组件内的source，Behaviour处填写TXT的文件名
+新建一个右键新建一个Ravenscrpit文件，把这个文件拖入组件内的source，Behaviour处填写TXT的文件名：
+
+{缺图}
 
 预制件化这个物体，在Mutator Content Mod配置
 

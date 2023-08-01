@@ -1,3 +1,8 @@
+---
+category: 
+- 组件
+- 武器
+---
 # PlayAudioAfterDelay
 ## 描述
 

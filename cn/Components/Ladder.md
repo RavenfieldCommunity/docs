@@ -1,3 +1,8 @@
+---
+category: 
+- 组件
+- 地图
+---
 # Ladder
 ## 描述
 从[Pathfinding](./PathfindingLink.md)类派生

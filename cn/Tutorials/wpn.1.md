@@ -72,7 +72,7 @@ flowchart TD
 
 如果只是想练手，可以直接使用RFTools\Models\Weapons内的模型
 
-如果想自己制作而建模有些许不行，可以在Sketchfab这类网站寻找模型或按要仿制的游戏武器自行寻找对应原版游戏美术资源
+如果想自己制作而建模有些许不行，可以在[Sketchfab](https://www.sketchfab.com/)、[模之屋](https://www.aplaybox.com/)这类网站寻找模型或按要仿制的游戏武器自行寻找对应原版游戏美术资源
 
 当我们制作完模型后，它应该看着应该是这样的：
 
@@ -327,7 +327,7 @@ kickback、randomKick、、spread、followupSpreadGain、followupSpreadStayTime�
 ### 红点瞄具
 同样简单，在武器下新建一个空物体，添加组件Line Render，取消勾选组件的Use World Space
 
-将Positions的Sizes设为2，Element0不动，调整Element1的Z方向长度即可，颜色可以在Color改，Width可以改线条宽度，Material处可以改射线材质：
+将Positions的Sizes设为2，Element0不动，调整Element1的Z方向长度即可，颜色可以在Color改，Width可以改线条宽度，Material处可以改射线材质（RFTools\Materials\Tracers）：
 
 {缺图}
 
@@ -348,23 +348,38 @@ flowchart LR
   I -- "当tigger为reload时" --> J
   K(("Exit"))
 ```
-这时官方AK 47的动画机
+这是官方AK 47的动画机
 
 如果武器复杂，动画机就会更复杂，这就需要你依靠parameters发挥充分的逻辑想象力
 
-特别是单/多发装填武器，在配置动画事后件，这应该会简单一点点，参考官方RFTools\Animations\Weapons\Garand.blend
+特别是单/多发装填武器，在配置动画事件后，这应该会简单一点点，参考官方RFTools\Animations\Weapons\Garand.controller
 
 ## 3.0 测试与导出
 现在我们的武器基本完工了！
 
-这时您就可以在场景中预览武器了
+这时您就可以在Weapon Lab场景中通过 Play播放 预览来武器了
+
+附场景内的的可用键位：
+| 键位 | 功能 |
+|------|------|
+| LMB | 开火 |
+| RMB | 瞄准 |
+| R | 装填 |
+| X | 切换开火模式 |
+| T+鼠标滚轮上 或 4 | 下一个瞄准模式 |
+| T+鼠标滚轮下 或 3 | 上一个瞄准模式 |
+| 数字键盘1 | Unholster |
+| CapsLock | 子弹时间 |
+| + | 增加标靶的距离50m |
+| - | 减少标靶的距离50m |
+| T | 标靶视图 |
 
 如果不能正常播放请检查组件设置与场景内是否有其他武器处于启用状态
 
 部分功能需要在游戏内测试（例如踢的动画，转动视角...）,但这需要导出Mod
 
-所以我们需要先配置WeaponContectMod（武器导出向导）组件
+所以我们需要先配置WeaponCotentMod（武器导出向导）组件
 
-配置过程参考[WeaponContectMod的组件文档](/cn/Components/WeaponContectMod.md)
+配置过程参考[WeaponContectMod的组件文档](/cn/Components/WeaponCotentMod.md)
 
 

@@ -1,3 +1,8 @@
+---
+category: 
+- 组件
+- 载具
+---
 # AircraftDrag
 
 ## 描述

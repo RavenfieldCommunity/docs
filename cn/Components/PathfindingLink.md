@@ -1,3 +1,8 @@
+---
+category: 
+- 组件
+- 地图
+---
 # PathfindingLink
 ## 描述
 从GraphModifier类派生

@@ -6,27 +6,14 @@ title: 首页
 <h1 align="center">Ravenfield社区客制化文档</h1>
 
 </p>
-<p align="center">
-    <a href="https://github.com/RavenfieldCommunity/docs/issues" style="text-decoration:none">
-        <img src="https://img.shields.io/github/issues/RavenfieldCommunity/docs.svg?style=flat-square&" alt="GitHub issues"/>
-    </a>
-    <a href="https://github.com/RavenfieldCommunity/docs/stargazers" style="text-decoration:none" >
-        <img src="https://img.shields.io/github/stars/RavenfieldCommunity/docs.svg?style=flat-square&" alt="GitHub stars"/>
-    </a>
-    <a href="https://github.com/RavenfieldCommunity/docs/network" style="text-decoration:none" >
-        <img src="https://img.shields.io/github/forks/RavenfieldCommunity/docs.svg?style=flat-square&" alt="GitHub forks"/>
-    </a>
-    <a href="https://github.com/RavenfieldCommunity/docs/actions">
-        <img src="https://img.shields.io/github/actions/workflow/status/RavenfieldCommunity/docs/deploy-docs.yml?style=flat-square&">
-    </a>
-    <a href="https://github.com/RavenfieldCommunity/docs/blob/main/LICENSE" style="text-decoration:none" >
-        <img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg?style=flat-square&" alt="GitHub license"/>
-    </a>
-</p>
 
-基于[CC-BY-NC-4.0](https://github.com/RavenfieldCommunity/docs/blob/master/LICENSE)许可授权
+::: center
+![GitHub issues](https://img.shields.io/github/issues/RavenfieldCommunity/docs.svg?style=flat-square&) ![GitHub stars](https://img.shields.io/github/stars/RavenfieldCommunity/docs.svg?style=flat-square&) ![Github docs deploy](https://img.shields.io/github/actions/workflow/status/RavenfieldCommunity/docs/deploy-docs.yml?style=flat-square&)
+:::
 
-在[Steam Game](https://store.steampowered.com/app/636480/)深入了解这款游戏
+[![License](https://img.shields.io/badge/%E6%8E%88%E6%9D%83%E5%9F%BA%E4%BA%8E%E8%AE%B8%E5%8F%AF-CC%20BY--NC%204.0-lightblue.svg?style=for-the-badge&)](https://github.com/RavenfieldCommunity/docs/blob/master/LICENSE)
+
+[![在 Steam 上了解Ravenfield](https://img.shields.io/badge/steam-%E4%BA%86%E8%A7%A3%20Ravenfield-blue.svg?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/636480/)
 
 ## 食用方法🍴
 

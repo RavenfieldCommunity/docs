@@ -7,7 +7,7 @@ category:
 ::: warning
 此组件文档仍处于十分早期的阶段，由于相当一部分组件仅通过检查源码进行编写，所以可能与现实存在偏差，敬请在网站评论区或[此项目的Steam指南原链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158)评论区提出此错误！
 
-另外请注意“[派生类](https://www.runoob.com/csharp/csharp-inheritance.html)”（类似“克隆”父脚本并添加一些新的内容）这个在[C#](https://www.runoob.com/csharp/csharp-tutorial.html)开发中的概念
+另外请注意“[派生类](https://www.runoob.com/csharp/csharp-inheritance.html)”（类似“克隆”父脚本并添加一些新的内容）这个在[C#](https://www.runoob.com/csharp/csharp-tutorial.html)开发中的概念，父脚本的变量、注释大部分情况对于子脚本都是通用的
 
 此文档大量应用并省略了子类引用的父类内容但在文档开头的地方注明了父类文档的链接
 :::
@@ -51,12 +51,14 @@ category:
         - [AimingWheel](./AimingWheel.md) 跟随目标物体的旋转属性
         - [ControlSurface](./ControlSurface.md)
         - [CopyRotation](./CopyRotation.md) 克隆旋转属性
+		- [DeltaRotationIndicator](./DeltaRotationIndicator.md)
         - [EnginePoweredParticles](./EnginePoweredParticles.md)
         - [FollowMainCamera](./FollowMainCamera.md) 跟随活动相机的Transform
         - [ForceHeight](./ForceHeight.md) 强制保持高度
         - [GeometryTrack](./GeometryTrack.md)
         - [HeadingGuide](./HeadingGuide.md)
         - [InheritDeltaRotation](./InheritDeltaRotation.md) 克隆旋转属性Pro
+		- [InheritDeltaPosition](./InheritDeltaPosition.md)
         - [Joystick](./Joystick.md)
         - [MountedStabilizedTurretUIAimIndicator](./MountedStabilizedTurretUIAimIndicator.md)
         - [ParticlesAmbientColor](./ParticlesAmbientColor.md)
@@ -141,8 +143,8 @@ category:
 - [WaterVolume](./WaterVolume.md) 水面
 
 ## Ravenscrpit
-- [MutatorCotentMod](./MutatorCotentMod.md)
-- [ScriptedBehaviour](./ScriptedBehaviour.md)
+- [MutatorCotentMod](./MutatorCotentMod.md) Mutator导出向导
+- [ScriptedBehaviour](./ScriptedBehaviour.md) 实例化脚本
 
 ## Misc（其他）
 - [ActorSkinContentMod](./ActorSkinContentMod.md)

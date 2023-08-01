@@ -1,4 +1,9 @@
-# MountedStabilizedTurretUIAimIndicator
+---
+category: 
+- 组件
+- 载具
+---
+# MountedTurret
 ## 描述
 已废弃，使用[MountedStabilizedTurret](./MountedStabilizedTurret.md)代替
 ## 用法

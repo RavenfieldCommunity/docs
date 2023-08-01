@@ -1,3 +1,8 @@
+---
+category: 
+- 组件
+- 武器
+---
 # Medipack
 ## 描述
 从[RigidbodyProjectile](./RigidbodyProjectile.md)类派生

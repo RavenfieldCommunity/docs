@@ -1,3 +1,8 @@
+---
+category: 
+- 组件
+- 地图
+---
 # GameModeInfo
 ## 描述
 

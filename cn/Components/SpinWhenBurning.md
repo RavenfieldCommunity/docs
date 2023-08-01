@@ -1,3 +1,8 @@
+---
+category: 
+- 组件
+- 载具
+---
 # SpinWhenBurning
 
 ## 描述

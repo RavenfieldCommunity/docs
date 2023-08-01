@@ -1,3 +1,8 @@
+---
+category: 
+- 组件
+- 武器
+---
 # ToggleableItem
 ## 描述
 从[Weapon](./Weapon.md)类派生
