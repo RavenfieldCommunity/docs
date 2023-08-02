@@ -36,13 +36,13 @@
 
 例如我们本次的示例Mutators简单血量回复，他应该有：
 - 基本的血量回复，每次修复35%（可修改）
-- 有冷却时间（可修改）
+- 有冷却时间（可修改，最低为60s）
 - 防止血量回复后健康超过最大值
-- 加入UI，显示修复状态与健康
+- （次要）加入UI，显示修复状态与健康
 
 然后我们再简单想一下脚本的运行逻辑与可以供玩家在游戏中调整的数值，方便实际敲代码(可以跳过)
 
-在本实例中，公开的可以供玩家在游戏中调整的数值：血量回复比例、冷却时间
+在本实例中，公开的可以供玩家在游戏中调整的数值：血量回复比例、冷却时间、键位
 
 现在我们可以正式开始了!
 
@@ -55,130 +55,105 @@
 
 {缺图}
 
-预制件化这个物体，在Mutator Content Mod配置
+预制件化这个物体，在[MutatorCotentMod](/cn/Components/MutatorCotentMod.md)配置这个Mutator，这里配置了float、range、string各一个：
+
+{缺图}
 
 
-## 1.1 撸码
+## 1.1 完成主要功能
 
-首先您需要明白如何为脚本对应找到合适的Api:
+打开官方的[Ravenscrpit的文档](http://ravenfieldgame.com/ravenscript/api.html)
+
+首先你需要明白文档中那些classes可以[“直接调用”](https://www.runoob.com/csharp/csharp-class.html)
+
+即哪些类已经实例化可以直接作为对象进行调用（如[类Player](http://ravenfieldgame.com/ravenscript/api/Player.html)），哪些是作为“数据类型”，需要先实例化才能使用（如[类Actor](http://ravenfieldgame.com/ravenscript/api/Actor.html)，它需要先在一个Bot的GameObject上调用GetComponentInParent\<Actor\>，“get”了这个类才能使用 ）
+
+官方并没有标注这些内容，这需要您按照逻辑思维与常识自行探索
+
+其次你需要明白如何为脚本对应找到合适的Api:
+
 提取功能中的关键字，如“载具” > Vehicle
-然后到文档的Api索引查找相关方法、member，如我们可以在Player这个类中找到可以获取玩家活动载具的menber Player.Actor.activeVehicle
+
+然后到文档的Api索引查找相关方法、member，如我们可以在Player这个类中找到可以获取玩家活动载具的menber是Player.Actor.activeVehicle，我们就可以在
+
 如果找不到合适的方法，可以尝试关键词搜索，如果还找不到。那就是乌鸦没写估计，只能另辟蹊径
 
-然后复制一份
+然后按文档提供的member和method编写脚本，不断重复这个行为
 
-
-您最后的成品应该看着像这样
+首先，我们先实现我们最核心的功能血量回复：
 ```lua 
-behaviour("QuickRepair")  --注册Ravenscript行为
+behaviour("QuickTreat")  --注册Ravenscript行为，然后我们才能从这个基类派生自己的自定义类
 
---以下的变量均为局部变量，无法从外界访问
-local deltaTime = 0   --初始化冷却计时器
-local repairDeltaTime = 0   --初始化修理时间计时器
-local repairTime  --初始化修理所需时间
-local colddown
-local isRepairing    --初始化"是否正在维修"状态
-local oldVehicleHealth   --初始化未维修前的载具健康
-local keybind   --初始化激活键
-local useAlt   --初始化"是否使用Alt键"
-local repairRange    --初始化要维修载具健康的百分比
-local mutators     --初始化与脚本绑定的Mutators
-local isRuning     --初始化Mutator状态
-local audioSource
-local audioSourceVolume
-
-function QuickRepair:AddListener()
-    if isRuning == Ture then
-        if useAlt == Ture then  --A
-            function QuickRepair:Listener()
-                if Input.GetKey(KeyCode.Alt) then
-                    if Input.GetKeyDown(keybind) then
-                        if deltaTime >= colddown then
-                            isRepairing = Ture
-                        end
-                    end
-                end
-            end
-    else   --B
-            function QuickRepair:Listener()
-                if Input.GetKeyDown(keybind) then
-                    if deltaTime >= colddown then
-                        isRepairing = Ture
-                    end
-                end
-            end
-    end      
+function QuickTreat:Start()
 end
 
-function QuickRepair:Start()  --在进入游戏游戏时运行一次，用于将游戏设置载入变量
-    coroutine.yield(WaitForSeconds(0.2))    --延迟运行确保mutators设置加载成功
-    mutators = ScriptedBehaviour.mutator
-    if mutators == nil then   --如果无法读取设置，则报错并禁用Mutators
-        print("[QuickRepair]Couldn't find mutator setting,check mod plz.")
-        isRuning = Flase
-    else  --如果可以读取设置，则导入设置
-        isRuning = Ture
-        AddListener()
-        if mutators.GetConfigurationFloat(epairTime) == nil then
-            repairTime = 10
-        else
-            repairTime = mutators.GetConfigurationFloat(repairTime)
-        if mutators.mutators.GetConfigurationString(keybind) == nil then
-            keybind = '`'
-        else
-            keybind = mutators.GetConfigurationString(keybind)
-        audioSource = self.target.audioSource.GameObject.GetComponent<AudioSource>
-        audioSourceVolume = audioSource.AudioSource.volume
-        audioSource.AudioSource.volume = 0
-        useAlt = mutators.GetConfigurationBool(useAlt)
-        repairRange = mutators.GetConfigurationRange(repairRange)
-        end
+function QuickTreat:Update()
+    if Input.GetKey(KeyCode.P) then --当按下P键时...
+        Player.actor.ResupplyHealth(50) --调用Player的成员actor内的一个成员方法来回复50血量
+    end
 end
-
-function QuickRepair:Update()
-    if isRuning == Ture then
-            if GameManeger.isPaused == Flase then
-                    deltaTime =+ Time.deltaTime  --计时器累加时间
-                    Listener()
-                    if isRepairing then
-                        if Player.Actor.activeVehicle == nil then
-                            Overlay.ShowMessage("[QuickRepair]No vehicle is active!", 0.2)
-                            isRepairing = Flase
-                    else
-                        repairDeltaTime =+ Time.deltaTime
-                        Overlay.ShowMessage("[QuickRepair]Remaining" + repairTime-repairDeltaTime, 0.01)
-                        if Player.Actor.activeVehicle.team == nil then   --当载具只有玩家一个人时阻止玩家操作载具
-                            Player.allowMouseLook = Flase
-                            Screen.UnlockCursor()
-                        end
-                    end
-                    if repairDeltaTime >= repairTime then
-                        oldVehicleHealth = Player.Actor.activeVehicle.health
-                        if Player.Actor.activeVehicle.health + Player.Actor.activeVehicle.maxHealth * repairRange >> Player.Actor.activeVehicle.maxHealth then
-                            Player.Actor.activeVehicle.health = Player.Actor.activeVehicle.maxHealth
-                        else
-                            Player.Actor.activeVehicle.Repair(Player.Actor.activeVehicle.maxHealth * repairRange)
-                        Overlay.ShowMessage("[QuickRepair]Success,Repaired" + Player.Actor.activeVehicle.health-oldVehicleHealth +'/'+ Player.Actor.activeVehicle.health, 0.5)
-                        isRepairing = Flase
-                        deltaTime = 0
-                        repairDeltaTime = 0
-                        Player.Actor.activeVehicle.isDead = Flase
-                        if Player.allowMouseLook == Flase then
-                            Player.allowMouseLook = Ture
-                            Screen.LockCursor()
-                        end
-                    end
-                    if Player.Actor.isDead == Ture then
-                        Overlay.ShowMessage("[QuickRepair]Player is died!", 0.2)
-                        isRepairing == Flase
-                        deltaTime = 0
-                    end
-                    if Player.Actor.activeVehicle.isDead == Ture then
-                        Overlay.ShowMessage("[QuickRepair]Vehicle is  too bad,can't repair!", 0.2)
-                        isRepairing == Flase
-                        deltaTime = 0
-                    end
-            end
-     end
-end 
 ```
+
+然后实际测试，发现没有Bug，同时发现使用Player.actor.ResupplyHealth()这个方法可以确保防止血量回复后健康超过最大值，这意味着我们可以减少实现这个功能的代码量
+
+
+然后继续添加下一个功能冷却时间：
+```lua 
+behaviour("QuickTreat")
+
+--初始化局部变量变量
+local timer = 0
+
+function QuickTreat:Start()
+end
+
+function QuickTreat:Update()
+    timer = Time.deltaTime + timer  --计时器，会不断累加一帧的时间
+    if Input.GetKey(KeyCode.P) then
+	    if timer >= 60 then
+            Player.actor.ResupplyHealth(50)
+			timer = 0  --重置计时器
+		end
+    end
+end
+```
+
+然后实际测试，发现没有Bug，然后继续添加下一个功能，不断重复这个过程，直到完成：
+```lua 
+behaviour("QuickTreat")  --注册Ravenscript行为，然后我们才能从这个基类派生自己的自定义类
+
+--初始化局部变量变量
+local timer = 0
+local cooldown  --冷却时间
+local bits --血量回复比
+local keybind --触发键位
+local mutator
+
+function QuickTreat:Start() --进入游戏地图的一开始时运行
+    coroutine.yield(WaitForSeconds(0.2))    --延迟运行下一行确保mutators设置加载成功
+    mutator = ScriptedBehaviour.mutator  --获取此脚本绑定的mutator信息
+	cooldown = mutator.GetConfigurationFloat("cooldown")  --获取mutator自定义选项卡中id为cooldown的float对应的值
+	if cooldown < 60 then  --如果cooldown小于60，则重置cooldown为60
+	    cooldown = 60
+    end
+	bits = mutator.GetConfigurationRange("bits")  --获取mutator自定义选项卡中id为bits的range对应的值
+	keybind = mutator.GetConfigurationString("keybind")  --获取mutator自定义选项卡中id为keybind的string对应的值
+	if keybind == "" then  --如果keybind为空，则重置keybind为"p"
+	    keybind = "P"
+    end
+end
+
+function QuickTreat:Update() --在游戏的每帧时运行
+    timer = Time.deltaTime + timer  --计时器，会不断累加一帧的时间
+    if Input.GetKeyDown(keybind) then --当按下可以keybind对应的键位时...
+	    if timer >= cooldown then --当计时器超出冷却时间时...
+            Player.actor.ResupplyHealth(Player.actor.maxHealth * bits) --调用Player的成员actor内的一个成员方法来回复最大血量的%bits
+			timer = 0  --重置计时器
+		end
+    end
+end
+```
+
+当主要功能完成时，我们就可以继续下一步：添加次要功能
+
+## 1.2 添加次要功能
