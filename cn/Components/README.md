@@ -130,7 +130,7 @@ category:
 - [PathfindingBox](./PathfindingBox.md)
 - [PathfindingLink](./PathfindingLink.md)
 - [PathfindingRelevantPoint](./PathfindingRelevantPoint.md)
-- [ReflectionProber](./ReflectionProber.md)
+- [ReflectionProber](./ReflectionProber.md) [反射探针](https://docs.unity.cn/cn/2020.3/Manual/class-ReflectionProbe.html)配置器
 - [ResupplyCrate](./ResupplyCrate.md)
 - [SceneryCamera](./SceneryCamera.md) 地图背景相机
 - [SpawnPoint](./SpawnPoint.md)

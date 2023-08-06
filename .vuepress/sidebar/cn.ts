@@ -7,7 +7,9 @@ export const cnSidebar = sidebar({
     text: "正文",
     children: [
       "/cn/Tutorials/wpn.1",
-      "/cn/Tutorials/otr.3"
+	  "/cn/Tutorials/vhc.1",
+      "/cn/Tutorials/otr.3",
+	  "/cn/Tutorials/otr.4"
     ],
   }]
 });

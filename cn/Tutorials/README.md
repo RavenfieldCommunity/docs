@@ -12,7 +12,7 @@ Hi~（＾∀＾●）ﾉｼ
 骚年哟，相信你自己，为你的热爱启程吧！o(*≧▽≦)↗
 
 ## 在启程之前...
-在启程之前，这是您需要的掌握一些技能，**您必须至少先看一遍教程才能确保您MODDING的顺利**：
+在启程之前，这是您需要的掌握一些技能，**您必须至少先看一遍教程才能确保您MODDING的顺利，RFCreator Project不是零基础教程**：
 
 ### 你必须掌握的技能
 #### Unity开发
@@ -29,7 +29,7 @@ Hi~（＾∀＾●）ﾉｼ
 ::: details 学习路线（仅参考）
 初阶 [Tutorials1(速通请跳P1\~8、11\~17、20\~31、33\~61)](https://www.bilibili.com/video/BV1gQ4y1e7SS) => 
 
-中高阶 [Unity Learn(Unity官方课程，支持中文翻译)](https://learn.unity.com/)
+中高阶 [Unity Learn(Unity官方课程，支持中文翻译)](https://learn.unity.com/) [Unity文档](https://docs.unity.cn/cn/2020.3/Manual/index.html)
 :::
 #### 模型、动画制作
 
@@ -81,7 +81,7 @@ Hi~（＾∀＾●）ﾉｼ
 ::: details 学习路线（仅参考）
 初阶（速通级，需要一定编程基础） [C#](https://www.bilibili.com/video/BV1sy4y1u7cw)、[Lua](https://www.bilibili.com/video/BV1vf4y1L7Rb)
 
-中高阶 [Unity文档(毕竟万物基于Unity，除了编程语言不同，开发逻辑完全一致)](https://docs.unity.cn/cn/2020.3/Manual/)
+中高阶 [Unity文档(毕竟万物基于Unity，除了编程语言不同，开发逻辑完全一致)](https://docs.unity.cn/cn/2020.3/Manual/) [菜鸟教程](https://www.runoob.com/)
 :::
         
 :::tip

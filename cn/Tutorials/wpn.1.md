@@ -186,6 +186,8 @@ K完帧了？是时候下一步了
 
 需要按你自己制作的动画去剪辑音效（一般网上找到的可以直接用，但装填音效这个大坑要注意。单/多发装填武器则需要将装填音效分割成多个片段以对应各个装填动画）
 
+让音效对应动画
+
 如果只是想练手可以选择直接套用RFTools自带音效用于测试
 
 ## 2.0 导入Unity
@@ -255,7 +257,7 @@ K完帧了？是时候下一步了
 
 添加[Weapon](/cn/Components/Weapon.md)（或按武器类型添加[MeleeWeapon](/cn/Components/MeleeWeapon.md)、[Wrench](/cn/Components/Wrench.md)或[ThrowableWeapon](/cn/Components/ThrowableWeapon.md)）、Audio Source（Weapon组件会附带）组件
 
-现在配置[Weapon](/cn/Components/Weapon.md)（或[MeleeWeapon](/cn/Components/MeleeWeapon.md)、[Wrench](/cn/Components/Wrench.md)或[ThrowableWeapon](/cn/Components/ThrowableWeapon.md),都是必填，**参阅[组件文档](/cn/Components/README.md)**）组件：
+现在配置[Weapon](/cn/Components/Weapon.md)（或[MeleeWeapon](/cn/Components/MeleeWeapon.md)、[Wrench](/cn/Components/Wrench.md)或[ThrowableWeapon](/cn/Components/ThrowableWeapon.md),都是必填，**参阅[组件文档](/cn/Components/README.md)**，要优先配置派生组件的选项）组件：
 
 创建一个（多枪口可以多个）名为Muzzle（作为枪口或投掷类武器投掷点，其他名字亦可）的空物体对齐模型的枪口（或投掷点），确保空物体Z轴正对前方：
 
@@ -269,7 +271,7 @@ K完帧了？是时候下一步了
 
 在抛壳口的位置新建一个名为casingParticles的空物体作为抛壳口的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示），可以从其他武器复制、冷兵器可以跳过）,将这个空物体拖入Weapon组件的casingParticles
 
-在projectilePrefab处配置子弹的的Prefab（不是一般意义,参考RFTools\Prefabs\Projectiles，可直接RFTools复制一份使用，此物体必须包含[Projectile](./Projectile.md)或其派生组件，当子弹为重火力兵器时建议添加Audio Source）
+在projectilePrefab处配置子弹的的Prefab（不是一般意义,参考RFTools\Prefabs\Projectiles，可直接RFTools复制一份使用，此物体必须包含[Projectile](/cn/Components/Projectile.md)或其派生组件，当子弹为重火力兵器时建议添加Audio Source）
 
 然后检查并配置组件的displayName、thirdPersonTransform、reloadAudio、uiSprite、arms、ammo、auto、spareAmmo、resupplyNumber、reloadTime、aimFov、pose、advancedReload、effInfantry、effInfantryGroup、effUnarmored、effArmored、effAir、effAirFastMover,其他选项的看需求配置（[MeleeWeapon](/cn/Components/MeleeWeapon.md)、[Wrench](/cn/Components/Wrench.md)或[ThrowableWeapon](/cn/Components/ThrowableWeapon.md)需要配置更多，**参阅[组件文档](/cn/Components/README.md)**）
 
@@ -351,6 +353,8 @@ flowchart LR
 这是官方AK 47的动画机
 
 如果武器复杂，动画机就会更复杂，这就需要你依靠parameters发挥充分的逻辑想象力
+
+善于运用[动画机过渡](https://docs.unity.cn/cn/2020.3/Manual/StateMachineTransitions.html)、[动画层](https://docs.unity.cn/cn/2020.3/Manual/AnimationLayers.html)、[States](https://docs.unity.cn/cn/2020.3/Manual/class-State.html)的各个知识点（虽然大部分情况用不到？）
 
 特别是单/多发装填武器，在配置动画事件后，这应该会简单一点点，参考官方RFTools\Animations\Weapons\Garand.controller
 
