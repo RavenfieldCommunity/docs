@@ -55,9 +55,7 @@
 
 {缺图}
 
-
-
-预制件化这个物体（游戏中这个物体下的所有东西都会被实例化，包括UI之类的物体），在[MutatorCotentMod](/cn/Components/MutatorCotentMod.md)配置这个Mutator，这里配置了float、range、string各一个：
+预制件化这个物体（游戏中这个物体下的所有东西都会被实例化，包括UI之类的物体），在[MutatorCotentMod](/cn/Components/MutatorCotentMod.md)配置这个Mutator，此处在config这里配置了float、range、string各一个：
 
 {缺图}
 
@@ -109,7 +107,11 @@ function QuickTreat:Update()
 end
 ```
 
-然后实际测试，发现没有Bug，同时发现使用Player.actor.ResupplyHealth()这个方法可以确保防止血量回复后健康超过最大值，这意味着我们可以减少实现这个功能的代码量
+然后选中带MutatorCotentMod的Prefab，在顶栏的RFTools选项卡点击Test Cotent Mod or map在游戏测试mutator
+
+操作过程不再赘述，参考[CSDN](https://blog.csdn.net/x3464/article/details/105137284)
+
+实际测试，发现没有Bug，同时发现使用Player.actor.ResupplyHealth()这个方法可以确保防止血量回复后健康超过最大值，这意味着我们可以减少实现这个功能的代码量
 
 然后继续添加下一个功能冷却时间：
 ```lua 
@@ -152,7 +154,7 @@ function QuickTreat:Start() --进入游戏地图的一开始时运行
     end
 	self.ratio = self.mutator.GetConfigurationRange("ratio")  --获取mutator自定义选项卡中id为ratio的range对应的值
 	self.keybind = self.mutator.GetConfigurationString("keybind")  --获取mutator自定义选项卡中id为keybind的string对应的值
-	if self.keybind == "" then  --如果keybind为空，则重置keybind为"p"
+	if self.keybind == nil then  --如果keybind为空，则重置keybind为"p"
 	    self.keybind = "P"
     end
 	self.timer = Time.time + self.cooldown  --计算超出冷却时间后的游戏时间
@@ -176,6 +178,8 @@ end
 ## 1.2 添加次要功能
 
 现在添加我们的次要功能UI操作
+
+各类[UI组件的应用](https://docs.unity.cn/cn/current/Manual/UICanvas.html)不再赘述
 
 首先在场景内的Mutator添加一个Canvas，在Canvas内添加Scroll View，在Scroll View内添加Button和Text：
 
@@ -217,7 +221,7 @@ function QuickTreat:Start()
     end
 	self.ratio = self.mutator.GetConfigurationRange("ratio")
 	self.keybind = self.mutator.GetConfigurationString("keybind")
-	if self.keybind == "" then
+	if self.keybind == nil then
 	    self.keybind = "P"
     end
 	if self.mutator.GetConfigurationBool("enableUI") != nil then
