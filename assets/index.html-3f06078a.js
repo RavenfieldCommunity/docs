@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as t,c as o,a as s}from"./app-8c059b8d.js";const c={},r=s("p",null,"it just a folder for assets like pictures etc",-1),n=[r];function _(a,i){return t(),o("div",null,n)}const f=e(c,[["render",_],["__file","index.html.vue"]]);export{f as default};
