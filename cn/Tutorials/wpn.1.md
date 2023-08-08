@@ -1,26 +1,11 @@
 # wpn.1 武器
 ## 前言
-在此文档中，我们将为您呈现制作一个武器的大致过程并详细解释每一步制作过程
+在此文档中，我们将为您呈现制作一个武器的大致过程
 
 :::info
 **在本文档中，我们不会指导您制作套皮武器，在武器本身各方面高质量的情况下，这样固能快速生产大量高质量MOD，但在质量不可控的情况下这种做法却会让低质MOD污染Steam工坊环境，因此我们不提倡初阶MODDER模仿这些做法，套皮的流程敬请您在日后的实操中摸索。**
 :::
 
-**当前您所需掌握的技能点：**
-
-简单建模
-
-Blender基本操作
-
-打关键帧
-
-Unity游戏物体基本变换
-
-Unity组件的应用
-
-Animator组件
-
-动画机的应用（States、BlendTree...）
 ## 0.0 构思
 想什么？⊙﹏⊙∥
 
@@ -129,6 +114,8 @@ flowchart TD
 无论哪种武器，按照[Weapon](/cn/Components/Weapon.md)提供的Parameters，您都至少需要制作6个动画，分别为：切换(Unholster或Entry)、待机(Idle)、瞄准(Aim。非热兵器可以不做)、装填（Reload）、冲刺(Spirit)、踢(Kick)(没错指挥队员Direct Member、召集队员Call Member两个动画可以选择偷懒不做hhh)
 
 每个动画的大概用时可以参考官方模型（RFTools\Models\Weapons\，片段划分需要在Unity的文件Inspector\Animation\Cilps一栏查看）
+
+动画的细节很多，官方提供的模型动画示例都相对简单，你可以按想制作动画的精细程度，给一个动画是一个单帧动画还是一个循环多帧动画（如冲刺），或按Parameters制作更多动画（如开火、多瞄准）
 
 动画制作过程如下：
 ```
@@ -354,7 +341,7 @@ flowchart LR
 
 如果武器复杂，动画机就会更复杂，这就需要你依靠parameters发挥充分的逻辑想象力
 
-善于运用[动画机过渡](https://docs.unity.cn/cn/2020.3/Manual/StateMachineTransitions.html)、[动画层](https://docs.unity.cn/cn/2020.3/Manual/AnimationLayers.html)、[States](https://docs.unity.cn/cn/2020.3/Manual/class-State.html)的各个知识点（虽然大部分情况用不到？）
+善于运用[动画机过渡](https://docs.unity.cn/cn/2020.3/Manual/StateMachineTransitions.html)、[动画层](https://docs.unity.cn/cn/2020.3/Manual/AnimationLayers.html)、[States](https://docs.unity.cn/cn/2020.3/Manual/class-State.html)的各个知识点（例如一个动画的过渡、过渡时间、循环等。虽然大部分情况用不到？）
 
 特别是单/多发装填武器，在配置动画事件后，这应该会简单一点点，参考官方RFTools\Animations\Weapons\Garand.controller
 

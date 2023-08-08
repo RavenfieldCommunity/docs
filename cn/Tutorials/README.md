@@ -111,7 +111,7 @@ NOTE：此文档可能在某些方面仍然存在笼统、错误的部分，但�
 > [https://blog.csdn.net/x3464/article/details/105137284](https://blog.csdn.net/x3464/article/details/105137284)　#这是＠Lezvin大佬翻译的
 
 ::: right
-*————引自@SRNKMDT*
+*————引自@SRNKMDT[[Steam](http://steamcommunity.com/profiles/76561198859753798) [Github](https://github.com/SOP-von-SRN)]*
 :::
 ::::
 

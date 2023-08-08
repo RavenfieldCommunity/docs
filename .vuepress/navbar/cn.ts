@@ -20,6 +20,10 @@ export const cnNavbar = navbar([
         text: "游戏官网",
         link: "https://www.ravenfieldgame.com/"
       },
+	  {
+        text: "Unity文档",
+        link: "https://docs.unity3d.com/cn/2020.3/Manual/"
+      },
       {
         text: "游戏官方Discord",
         link: "https://discord.gg/ravenfield"
