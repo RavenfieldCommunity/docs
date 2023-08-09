@@ -9,7 +9,7 @@ export default defineUserConfig({
   locales: {
     '/': {
             // 不要改变'/'内lang的值，保证为'en-US',否则编译会报错！！
-            lang: 'en-US', 
+            lang: 'zh-CN', 
             title: 'Ravenfield Modding Documents',
             description: 'Ravenfield Community Modding Documents'
     },

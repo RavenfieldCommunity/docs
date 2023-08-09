@@ -12,7 +12,7 @@ category:
 
 套用在武器物体的最顶层层级，附属物体下挂在这个物体里面
 
-参考[RFCreator Project](/cn/Tutorials/README.md)
+参考[RFCreator Project](/cn/Tutorials/wpn.1.md)
 
 ## 注释
 
@@ -69,7 +69,7 @@ category:
 | useParentWeaponSightModes | bool | 使用父武器的sightModes |  
 | ammo | int | 武器装载的弹药数 |  
 | isLocked  | bool | 是否该锁定武器 |  
-| auto  | bool | 是否为自动武器（开火是否为连发还是单发，影响开火音效是即使停止还是直接播放完音效） |  
+| auto  | bool | 是否为自动武器（开火是否为连发还是单发，影响开火音效是即时停止还是直接播放完音效） |  
 | spareAmmo  | int | 武器备用的弹药数 |  
 | resupplyNumber  | int | 每次从补给箱补充的弹药数 |  
 | reloadTime  | float | 装填所需时间（启用advanceReload时不可用） |  

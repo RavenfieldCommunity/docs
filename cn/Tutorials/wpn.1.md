@@ -1,6 +1,6 @@
 # wpn.1 武器
 ## 前言
-在此文档中，我们将为您呈现制作一个武器的大致过程
+在此文档中，我们将为您呈现制作一个武器（主要面向热兵器）的大致过程
 
 :::info
 **在本文档中，我们不会指导您制作套皮武器，在武器本身各方面高质量的情况下，这样固能快速生产大量高质量MOD，但在质量不可控的情况下这种做法却会让低质MOD污染Steam工坊环境，因此我们不提倡初阶MODDER模仿这些做法，套皮的流程敬请您在日后的实操中摸索。**
@@ -246,7 +246,7 @@ K完帧了？是时候下一步了
 
 现在配置[Weapon](/cn/Components/Weapon.md)（或[MeleeWeapon](/cn/Components/MeleeWeapon.md)、[Wrench](/cn/Components/Wrench.md)或[ThrowableWeapon](/cn/Components/ThrowableWeapon.md),都是必填，**参阅[组件文档](/cn/Components/README.md)**，要优先配置派生组件的选项）组件：
 
-创建一个（多枪口可以多个）名为Muzzle（作为枪口或投掷类武器投掷点，其他名字亦可）的空物体对齐模型的枪口（或投掷点），确保空物体Z轴正对前方：
+创建一个（多枪口可以多个）名为Muzzle（作为枪口、近战武器攻击点或投掷类武器投掷点，其他名字亦可）的空物体对齐模型的枪口（或投掷点），确保空物体Z轴正对前方：
 
 {缺图}
 
@@ -258,18 +258,18 @@ K完帧了？是时候下一步了
 
 在抛壳口的位置新建一个名为casingParticles的空物体作为抛壳口的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示），可以从其他武器复制、冷兵器可以跳过）,将这个空物体拖入Weapon组件的casingParticles
 
-在projectilePrefab处配置子弹的的Prefab（不是一般意义,参考RFTools\Prefabs\Projectiles，可直接RFTools复制一份使用，此物体必须包含[Projectile](/cn/Components/Projectile.md)或其派生组件，当子弹为重火力兵器时建议添加Audio Source）
+在projectilePrefab处配置子弹的的Prefab（不是一般意义,参考RFTools\Prefabs\Projectiles，可直接RFTools复制一份使用，此物体必须包含[Projectile](/cn/Components/Projectile.md)或其派生组件，当子弹为重火力兵器时建议添加在子弹上添加Audio Source）
 
-然后检查并配置组件的displayName、thirdPersonTransform、reloadAudio、uiSprite、arms、ammo、auto、spareAmmo、resupplyNumber、reloadTime、aimFov、pose、advancedReload、effInfantry、effInfantryGroup、effUnarmored、effArmored、effAir、effAirFastMover,其他选项的看需求配置（[MeleeWeapon](/cn/Components/MeleeWeapon.md)、[Wrench](/cn/Components/Wrench.md)或[ThrowableWeapon](/cn/Components/ThrowableWeapon.md)需要配置更多，**参阅[组件文档](/cn/Components/README.md)**）
+然后检查并配置组件的displayName、thirdPersonTransform、reloadAudio（仅热兵器）、uiSprite、arms、ammo（仅热兵器，否则设置为-1）、auto（仅热兵器）、spareAmmo（仅热兵器，否则设置为-1）、resupplyNumber（仅热兵器，否则设置为-1）、reloadTime、aimFov、pose、advancedReload、effInfantry、effInfantryGroup、effUnarmored、effArmored、effAir、effAirFastMover,其他选项的看需求配置（**参阅[组件文档](/cn/Components/README.md)**）
 
-kickback、randomKick、、spread、followupSpreadGain、followupSpreadStayTime、followupSpreadDissipateTime、snapMagnitude、snapDuration、snapFrequency等武器手感相关的参数需要慢慢调
+kickback、randomKick、、spread、followupSpreadGain、followupSpreadStayTime、followupSpreadDissipateTime、snapMagnitude、snapDuration、snapFrequency等武器手感（仅热兵器，否则以上参数请清零）相关的参数需要慢慢调
 
 ## 2.4 瞄具设置（仅枪械）
 瞄具有四种，分别为：机械瞄具、光学瞄具、全息瞄具、红点瞄具
 
 ### 机械瞄具
 
-最简单的瞄具，在BlenderK好瞄准动画，直接跳到[下一章](#_2-4-制作动画机)即可，可以调Weapon的aimFov
+最简单的瞄具，在Blender K好瞄准动画，直接跳到[下一章](#_2-4-制作动画机)即可，可以调Weapon的aimFov
 
 ### 光学瞄具
 

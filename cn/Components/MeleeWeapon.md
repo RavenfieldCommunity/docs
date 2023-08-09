@@ -23,6 +23,6 @@ category:
 | range  | float | 伤害半径 |  
 | swingTime  | float | 攻击所需时间 |  
 | damage  | float | 对人的伤害 |  
-| balanceDamage  | float | 冲击力（） |  
+| balanceDamage  | float | 冲击力（影响平衡） |  
 | force  | float |  |  
 | hitSound | AudioClip | 攻击音效 |  

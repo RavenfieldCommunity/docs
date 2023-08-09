@@ -7,7 +7,7 @@ category:
 ## 描述
 从[Weapon](./Weapon.md)类派生
 ## 用法
-
+参考[Weapon](./Weapon.md)
 ## 注释
 
 ## 变量
