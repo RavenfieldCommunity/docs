@@ -5,7 +5,7 @@ import { enSidebar, cnSidebar } from "./sidebar/index.js";
 export default hopeTheme({
   hostname: "https://ravenfieldcommunity.github.io",
   iconAssets: "iconfont",
-  favicon : "/Logo.png",
+  favicon : "/favicon.ico",
   logo: "/Logo.png",
   repo: "ravenfieldcommunity/docs",
   pure: true,
@@ -56,10 +56,6 @@ export default hopeTheme({
     mdEnhance: {
       mermaid: true,
 	  align: true
-    },
-	feed: {
-	  hostname: "https://ravenfieldcommunity.github.io/docs/",
-	  rss: true
-	}
+    }
   }
 });

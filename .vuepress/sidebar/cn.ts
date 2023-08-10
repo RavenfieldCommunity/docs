@@ -8,8 +8,8 @@ export const cnSidebar = sidebar({
     children: [
       "/cn/Tutorials/wpn.1",
 	  "/cn/Tutorials/vhc.1",
-      "/cn/Tutorials/otr.3",
-	  "/cn/Tutorials/otr.4"
+      "/cn/Tutorials/rvs.2",
+	  "/cn/Tutorials/rvs.3"
     ],
   }]
 });

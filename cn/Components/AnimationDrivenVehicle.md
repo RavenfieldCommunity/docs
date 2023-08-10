@@ -17,12 +17,12 @@ category:
 |------|------|------|
 | input forward | float |  |
 | input right | float |  |
-| moving | bool |  |
-| sprint | bool |  |
-| jump | bool |  |
-| crouch | bool |  |
-| lean | float |  |
-| touching ground | bool |  |
+| moving | bool | 当载具在移动时为true（仅XY轴） |
+| sprint | bool | 玩家按下“冲刺”键时为true |
+| jump | bool | 玩家按下“跳”键时为true |
+| crouch | bool | 玩家按下“蹲起”键时为true |
+| lean | float | 玩家按下“侧头”键时为true |
+| touching ground | bool | 载具碰撞体接触地面时为true |
 
 ## 变量
 | 名称 | 类型 | 描述 |
