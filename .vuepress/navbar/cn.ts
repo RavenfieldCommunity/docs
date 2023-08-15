@@ -6,6 +6,10 @@ export const cnNavbar = navbar([
     link: "/cn/"
   },
   {
+    text: "游戏入门",
+    link: "/cn/in-GAME/"
+  },
+  {
         text: "组件文档",
         link: "/cn/Components/"
   },

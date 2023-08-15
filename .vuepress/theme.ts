@@ -55,7 +55,11 @@ export default hopeTheme({
     },
     mdEnhance: {
       mermaid: true,
-	  align: true
-    }
+	  align: true,
+	  card: true,
+    },
+	sitemap: {
+	  excludeUrls: ["/index.html"]
+	}
   }
 });

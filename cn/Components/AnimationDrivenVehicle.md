@@ -10,6 +10,8 @@ category:
 
 自定义动画的载具
 ## 用法
+需要一个CharacterController组件，否则载具无法操作
+
 参考[Vehicle](./Vehicle.md)
 ## 注释
 对应动画机的Parameters：

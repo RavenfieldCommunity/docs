@@ -1,41 +1,67 @@
 ---
 title: 首页
+home: true
+heroText: false
+tagline: false
 ---
 <p align="center">
 
-<h1 align="center">Ravenfield社区客制化文档</h1>
+# Ravenfield社区客制化文档
 
 </p>
 
-::: center
 ![GitHub issues](https://img.shields.io/github/issues/RavenfieldCommunity/docs.svg?style=flat-square&) ![GitHub stars](https://img.shields.io/github/stars/RavenfieldCommunity/docs.svg?style=flat-square&) ![Github docs deploy](https://img.shields.io/github/actions/workflow/status/RavenfieldCommunity/docs/deploy-docs.yml?style=flat-square&)
+
+
+[![License](https://img.shields.io/badge/%E6%8E%88%E6%9D%83%E5%9F%BA%E4%BA%8E%E8%AE%B8%E5%8F%AF-CC%20BY--NC%204.0-lightblue.svg?style=for-the-badge&)](https://github.com/RavenfieldCommunity/docs/blob/main/LICENSE) [![在 Steam 上了解Ravenfield](https://img.shields.io/badge/steam-%E4%BA%86%E8%A7%A3%20Ravenfield-blue.svg?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/636480/)
+
+Ravenfield是一款由[SteelRaven7](https://github.com/SteelRaven7)(他自己的网站挂了)开发的FPS射击游戏
+
+此文档可帮助您了解如何如何开发Ravenfield的模组。您可以从头到尾阅读该文档，或将其用作参考。
+
+如果这是第一次使用游玩Ravenfield或开发MOD，欢迎查看有关游玩Ravenfield的[介绍性文档](/cn/in-GAME/)，并参阅[RFCreator Project](/cn/Tutorials/README.md)。
+
+------
+
+**浏览文档的组成部分**
+
+::: card
+
+```card
+title: 游戏入门
+desc: 引导 上手 熟悉Ravenfield
+logo: /image/Components.png
+link: /cn/in-GAME/README.md
+```
+
+```card
+title: 教程
+desc: 开发Ravenfield模组
+logo: /image/Components.png
+link: /cn/Tutorials/README.md
+```
+
+```card
+title: 组件参考
+desc: RFTools自建组件参考文档
+logo: /image/Components.png
+link: /cn/Components/README.md
+```
+
+```card
+title: 资源镜像
+desc: 开发资源链接
+logo: /image/Components.png
+link: /cn/RESOURCE.md
+```
+
+```card
+title: 旧版项目
+desc: 此文档的Steam原项目
+logo: https://store.steampowered.com/favicon.ico
+link: https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158
+```
 :::
-
-[![License](https://img.shields.io/badge/%E6%8E%88%E6%9D%83%E5%9F%BA%E4%BA%8E%E8%AE%B8%E5%8F%AF-CC%20BY--NC%204.0-lightblue.svg?style=for-the-badge&)](https://github.com/RavenfieldCommunity/docs/blob/master/LICENSE)
-
-[![在 Steam 上了解Ravenfield](https://img.shields.io/badge/steam-%E4%BA%86%E8%A7%A3%20Ravenfield-blue.svg?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/636480/)
-
-## 食用方法🍴
-
-1. 在[Github Page](https://ravenfieldcommunity.github.io/docs/)访问（推荐）
-或者将此网站作为[PWA](https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps)安装到本地以实现最佳体验。
-不是很建议直接在Github访问，因为文档部分深度整合进了Vuepress,可能会导致部分BUG发生
-
-2. 使用Git克隆到本地访问
-
-## 做出贡献💡
-
-欢迎玩家与modder们对文档做出贡献！
-
-包括但不限于提出意见与完善文档
-
-无论是在评论区提出还是Issue
-
-总之，这个社区需要我们共同维护！
-
-更多信息请浏览[贡献指南](/cn/CONTRIBUTING.md)
-
-## 目录📂
 
 - [Unity组件](/cn/Components/README.md)
 
@@ -46,7 +72,7 @@ title: 首页
 - [RFCreator Project](/cn/Tutorials/README.md) (MODDING教程)
 - [开源模组](/cn/OSMod.md)
 
-## 鸣谢🧡
+**鸣谢**
 
 所有的[贡献者](https://github.com/RavenfieldCommunity/docs/graphs/contributors)们，因为你们才使得了这个文档日臻完善❤❤❤:
 

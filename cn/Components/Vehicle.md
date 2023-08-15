@@ -24,7 +24,7 @@ category:
 | armorRating | enum | 装甲强度（SmallArms=轻武器, HeavyArms=重武器, AntiTank=穿甲）|
 | aiUseStrategy |enum |  ai认定的载具使用方案（Default, OnlyFromFrontlineSpawn, FromAnySpawn）|
 | name | string | 载具名称 | 
-| seats | List<[Seat](./Seat.md)> | 座位 |
+| seats | List<[Seat](./Seat.md)> | 座位(第一个座位将设置为驾驶位) |
 | targetType | enum.Actor.TargetType | 目标类型（载具自身的类型。Infantry=步兵, InfantryGroup=步兵群, Unarmored=非装甲, Armored=装甲, Air=空中, AirFastMover=高速的空中目标）|
 | armorDamagedBy | enum.ArmorRating | 载具可被哪种武器攻击（SmallArms=轻武器, HeavyArms=重武器, AntiTank=穿甲） | 
 | smallArmsMultiplier | float | 轻武器伤害倍率 | 
