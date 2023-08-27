@@ -59,7 +59,10 @@ export default hopeTheme({
 	  card: true,
     },
 	sitemap: {
-	  excludeUrls: ["/index.html"]
+	  excludeUrls: ["/index.html","/404.html","/cn/Components/"]
+	},
+	seo: {
+	  autoDescription: false
 	}
   }
 });

@@ -14,11 +14,13 @@ category:
 
 参考[Vehicle](./Vehicle.md)
 ## 注释
+当CharacterController的与地面碰撞时，载具才会移动
+
 对应动画机的Parameters：
 | Parameters名 | 类型 | 描述 |
 |------|------|------|
-| input forward | float |  |
-| input right | float |  |
+| input forward | float | 前后操作的axis虚拟轴（Vertical） |
+| input right | float | 左右操作的axis虚拟轴（Horizontal） |
 | moving | bool | 当载具在移动时为true（仅XY轴） |
 | sprint | bool | 玩家按下“冲刺”键时为true |
 | jump | bool | 玩家按下“跳”键时为true |
@@ -30,6 +32,6 @@ category:
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | groundCheckers | GroundChecker[] | 地面检测 |
-| inputSmoothness | int | 输入平滑度 |
+| inputSmoothness | int | 虚拟轴输入平滑度 |
 | checker | Transform |  |
-| rayLength | float  | 光线长度（应该是作用于groundChecker） |
+| rayLength | float  | 光线长度（应该是作用于groundChecker，但疑似废弃） |

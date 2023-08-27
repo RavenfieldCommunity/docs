@@ -6,7 +6,7 @@ category:
 # FirstPersonCameraLook
 ## 描述
 
-
+第一人称自由视角，允许相机随操作转动
 
 ## 用法
 

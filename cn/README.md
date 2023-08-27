@@ -49,6 +49,13 @@ link: /cn/Components/README.md
 ```
 
 ```card
+title: ❤贡献指南
+desc: 帮助我们维护文档！
+logo: /image/Components.png
+link: /cn/CONTRIBUTING.md
+```
+
+```card
 title: 资源镜像
 desc: 开发资源链接
 logo: /image/Components.png
@@ -63,20 +70,13 @@ link: https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158
 ```
 :::
 
-- [Unity组件](/cn/Components/README.md)
-
-- in-GAME (游戏基础)
-  - [RF快速上手指南](/cn/in-GAME/QuickStart.md)
-
-- [资源镜像](/cn/RESOURCE.md)
-- [RFCreator Project](/cn/Tutorials/README.md) (MODDING教程)
-- [开源模组](/cn/OSMod.md)
-
 **鸣谢**
 
 所有的[贡献者](https://github.com/RavenfieldCommunity/docs/graphs/contributors)们，因为你们才使得了这个文档日臻完善❤❤❤:
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=RavenfieldCommunity/docs)
+
+当然还有RF的modder群友们！谢谢你们对组件做出的注解！
 
 以及以下开源项目 ：
 - [SocialSisterYi/bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect/)

@@ -14,6 +14,8 @@ category:
 
 参考[MountedWeapon](./MountedWeapon.md)
 
+修复=开火，因此可以调整“开火”参数
+
 ## 注释
 
 ## 变量

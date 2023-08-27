@@ -88,7 +88,7 @@ category:
 | forceWorldAudioOutput  | bool |  强制场景音频输出 |  
 | muzzles | Transform[] |  枪口（生成子弹projectiles的地方，Size=数量。先填写枪口数量，一般为1，再在Element*处拖入物体。**muzzlesz中指定的物体及此物体的子层级的Particle System组件在在开火时会触发**） |  
 | optionalThirdPersonMuzzles | Transform[] | 可选的第三人称时的枪口 |  
-| casingParticles | ParticleSystem[] | 抛壳口（Size=数量。先填写数量，一般为1，再在Element*处拖入物体） |  
+| casingParticles | ParticleSystem[] | 抛壳口（Size=数量。先填写数量，一般为1，再在Element*处拖入物体，抛壳次序与muzzles次序保持一致） |  
 | fireFromAllMuzzles  | bool | 开火时所有的枪口是否不受开火模式的影响，都会作用 |  
 | projectilesPerShot  | int |  每次开火出多少子弹 |  
 | projectilePrefab | GameObject |  子弹的预制件 |  
@@ -124,7 +124,7 @@ category:
 | haltStrategy  | enum.HaltStrategy |  Bot移动时的开火策略（建议不改。Auto=自动调整, Never=移动时始终开火, PreferredLongRange=远距离优先停止移动再开火但近距离依旧开火, PreferredAnyRange=允许边移动边开火跑打但优先停移, AlwaysLongRange=远距离才始终停移但近距离依旧开火, Always=开火时始终停移) |  
 | pose  | int |  第三人称握持武器的姿势(例子：0=AK、1=手雷、2=SMAW) |  
 | applyHeat  | bool | 是否有过热效果 |  
-| heatMaterial | MaterialTarget |  过热效果的材质（参考Unity的文档与Prefab） |  
+| heatMaterial | MaterialTarget |  过热效果的材质（参考Unity的文档与Prefab,需要自发光材质） |  
 | heatGainPerShot  | float | 每发使武器过热%多少） |  
 | heatDrainRate  | float |  每秒使武器散热%多少 |  
 | heatColor | Color |  过热效果的颜色 |  

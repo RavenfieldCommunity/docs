@@ -27,7 +27,7 @@ category:
     - [AutoRepairVehicleWeapon](./AutoRepairVehicleWeapon.md) 载具修复武器
     - [CarHorn](./CarHorn.md) 载具喇叭
     - [Mortar](./Mortar.md) 迫击炮
-    - [MountedStabilizedTurret](./MountedStabilizedTurret.md)  固定炮塔
+    - [MountedStabilizedTurret](./MountedStabilizedTurret.md)  固定旋转炮塔
     - ~~[MountedTurret](./MountedTurret.md) 固定炮塔~~(已弃用)
     - [MountedWeapon](./MountedWeapon.md) 车载武器
     - ~~[TankTurret](./TankTurret.md) Tank的固定炮塔~~(已弃用)
@@ -40,9 +40,9 @@ category:
     - [VehicleDestructibleHitbox](./VehicleDestructibleHitbox.md) 
     - Cameras 相机
         - [BombCamera](./BombCamera.md)
-        - [FirstPersonCameraLook](./FirstPersonCameraLook.md) 
+        - [FirstPersonCameraLook](./FirstPersonCameraLook.md)  第一人称自由视角
         - [LookAtCamera](./LookAtCamera.md) 当相机启用时克隆旋转属性
-        - [ThirdPersonCameraLook](./ThirdPersonCameraLook.md) 
+        - [ThirdPersonCameraLook](./ThirdPersonCameraLook.md) 第三人称自由视角
     - Visual 
         - [ActivateForSeatWeapon](./ActivateForSeatWeapon.md) 按载具座位的活动武器激活物体
         - [ActivateWhenAimingWeapon](./ActivateWhenAimingWeapon.md) 瞄准时激活物体
@@ -147,6 +147,6 @@ category:
 - [ScriptedBehaviour](./ScriptedBehaviour.md) 实例化脚本
 
 ## Misc（其他）
-- [ActorSkinContentMod](./ActorSkinContentMod.md)
-- [DataContainer](./DataContainer.md)
-- [RequireGameVersion](./RequireGameVersion.md)
+- [ActorSkinContentMod](./ActorSkinContentMod.md) 皮肤导出向导
+- [DataContainer](./DataContainer.md) 数据体
+- [RequireGameVersion](./RequireGameVersion.md) 限制最低运行游戏版本

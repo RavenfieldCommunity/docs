@@ -3,34 +3,6 @@
 
 此文档将一步步引导你开发一个简单的Mutators，带您理解Mutators的基本构造
 
-## -1.0 环境配置
-**此处不再详细说明，如果你有看过相关编程语言的教程，对下面的事情你应该会很快上手**
-
-**详情请参考官方文档**
-1. 安装
-[![Install in VS Code](https://img.shields.io/badge/VS%20Code-Install-blue?style=for-the-badge&logo=visualstudiocode "Install in VS Code")](https://code.visualstudio.com/)
-
-2. 安装Chinese-Simple语言扩展包[![Install in VS Code](https://img.shields.io/badge/VS%20Code-Install-blue?style=for-the-badge&logo=visualstudiocode "Install in VS Code")](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans)
-
-3. 安装vscode-lua扩展[![Install in VS Code](https://img.shields.io/badge/VS%20Code-Install-blue?style=for-the-badge&logo=visualstudiocode "Install in VS Code")](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
-
-4. 安装C#扩展[![Install in VS Code](https://img.shields.io/badge/VS%20Code-Install-blue?style=for-the-badge&logo=visualstudiocode "Install in VS Code")](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
-
-5. 配置工作区的.vscode\settings.json为：
-```json 
-{
-    //配置文件扩展名关联
-    "files.associations": {
-        "*.txt": "lua",
-    },
-	//隐藏meta文件
-    "files.exclude": {
-        "**/*.meta":true,
-    },
-}
-```
-6. 配置VSCode为Unity的外部编辑器
-
 ## 0.0 想！
 现在我们先想一下我们的Mutators有什么功能
 
@@ -276,3 +248,5 @@ end
 此步不再赘述
 
 ## 3.0 测试与导出
+
+参考[MutatorCotentMod](/cn/Components/MutatorCotentMod.md)

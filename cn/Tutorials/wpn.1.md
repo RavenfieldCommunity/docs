@@ -78,7 +78,7 @@ flowchart TD
 
 **贴图方案（仅光学）**：直接制作一个准星贴图放置在瞄具对应的位置即可（RFTools\Models\Weapons\Sinper.blend内有，可以在此基础上修改）
 
-后续详细过程请参考[2.4 瞄具设置（仅枪械）](#_2-4-瞄具设置-仅枪械)
+后续详细过程请参考[2.5 瞄具设置（仅枪械）](#_2-5-瞄具设置-仅枪械)
 :::
 
 ## 1.2 制作动画
@@ -207,7 +207,7 @@ K完帧了？是时候下一步了
 
 {缺图}
 
-这一步需要先行在场景配置[Weapon](/cn/Components/Weapon.md)组件（启用advenceReload）以及[SoundBank](/cn/Components/SoundBank.md)组件,若未配置请先调至[下一章](#_2-3-在场景配置武器)然后再配置动画事件
+这一步需要先行在场景配置[Weapon](/cn/Components/Weapon.md)组件（启用advenceReload）以及[SoundBank](/cn/Components/SoundBank.md)组件,若未配置请先调至[下一章](#_2-4-在场景配置武器)然后再配置动画事件
 
 选中要播放自定义的Cilp，转到下方的Events选项卡，将时间轴拖至对应时间点后单击旁边的Add Event，参考[SoundBank的组件文档](/cn/Components/SoundBank.md)配置这个Event的Function为PlaySoundBank以及Int为对应的音效index
 
@@ -220,8 +220,14 @@ K完帧了？是时候下一步了
 否则游戏时会卡动画
 :::
 
+::: details 如果您的武器是投掷类武器...（配置动画事件）
+同上
+
+**在投弹的的对应时间点添加一个Function为SpawnThrow的Event**
+:::
+
 ## 2.2 预配置武器图标
-此处配置武器图标的部分属性，否则在[下一章](#_2-3-在场景配置武器)时可能会出现奇怪的Bug（？
+此处配置武器图标的部分属性，否则在[下一章](#_2-4-在场景配置武器)时可能会出现奇怪的Bug（？
 
 在Unity的Project窗口选中武器图标文件，在右侧的Inspector选择将Texture Type改为Sprite(2D and UI)，勾选Generate Mip Maps，Filter Mode改为Trilinear：
 
@@ -229,7 +235,19 @@ K完帧了？是时候下一步了
 
 这样就将武器图标从普通图片配置成了Sprite（又称精灵图或UI图像）
 
-## 2.3 在场景配置武器
+## 2.3 配置Projectile（仅热兵器）
+
+为你的武器配置子弹
+
+在组件文档处选择一个合适的Projectile套用在子弹（弹体）模型上
+
+然后预制件化
+
+或者可以选择直接套用RFTools自带的Projectile（建议复制一份保留原件）
+
+等会要用
+
+## 2.4 在场景配置武器
 打开RFTools\Sence\Weapons Lab.unity场景
 
 然后将模型拖入左边的大纲视图（直接拖进场景难以调整位置），并确保场景内的其他武器处于禁用状态（在Inspector内消掉其他物体的复选框，不包括顶头的“Camera Parent”、“Directional Light”、“Plane”、“Soldier Weapon Holder Preview”、“EventSystem”、“Target Cube”）
@@ -264,12 +282,12 @@ K完帧了？是时候下一步了
 
 kickback、randomKick、、spread、followupSpreadGain、followupSpreadStayTime、followupSpreadDissipateTime、snapMagnitude、snapDuration、snapFrequency等武器手感（仅热兵器，否则以上参数请清零）相关的参数需要慢慢调
 
-## 2.4 瞄具设置（仅枪械）
+## 2.5 瞄具设置（仅枪械）
 瞄具有四种，分别为：机械瞄具、光学瞄具、全息瞄具、红点瞄具
 
 ### 机械瞄具
 
-最简单的瞄具，在Blender K好瞄准动画，直接跳到[下一章](#_2-4-制作动画机)即可，可以调Weapon的aimFov
+最简单的瞄具，在Blender K好瞄准动画，直接跳到[下一章](#_2-5-制作动画机)即可，可以调Weapon的aimFov
 
 ### 光学瞄具
 
@@ -320,7 +338,7 @@ kickback、randomKick、、spread、followupSpreadGain、followupSpreadStayTime�
 
 {缺图}
 
-## 2.5 制作动画机
+## 2.6 制作动画机
 这玩意就需要你的想象力了
 
 Project内右键新建一个动画机AnimationController，双击打开

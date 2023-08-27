@@ -6,6 +6,8 @@ category:
 # ThirdPersonCameraLook
 ## 描述
 
+第三人称自由视角，允许相机随操作转动
+
 ## 用法
 
 ## 注释

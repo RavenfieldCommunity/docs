@@ -10,5 +10,7 @@ category:
 参考[Weapon](./Weapon.md)
 ## 注释
 
+此组件的开火Trigger为throw
+
 ## 变量
 无
