@@ -1,5 +1,3 @@
 
 User-agent:*
 Disallow:
-
-Sitemap: https://ravenfieldcommunity.github.io/docs/sitemap.xml
