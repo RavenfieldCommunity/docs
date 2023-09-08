@@ -58,9 +58,7 @@ export default hopeTheme({
 	  align: true,
 	  card: true,
     },
-	sitemap: {
-	  excludeUrls: ["/index.html","/404.html","/cn/Components/"]
-	},
+	sitemap: false,
 	seo: {
 	  autoDescription: false
 	}

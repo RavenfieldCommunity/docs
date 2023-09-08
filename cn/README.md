@@ -3,6 +3,7 @@ title: 首页
 home: true
 heroText: false
 tagline: false
+description: Ravenfield中文社区模组开发与游戏入门文档
 ---
 <p align="center">
 

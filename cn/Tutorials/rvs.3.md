@@ -7,12 +7,12 @@
 
 在您为您的MOD付出很大心血时，不想被盗版玩家无情滥用
 
-遏制盗版玩家的猖狂
+遏制盗版玩家的猖狂（毕竟你游盗版玩家真的多又恶心）
 
 不建议滥用AP机制
 
 ## 1.0 原理
-自Ravenfield在EA20（？）去除UFO反盗版机制（一大群UFO在头顶飞击杀玩家）后，相当一部分MODDER开始转入自开发反盗版机制
+自Ravenfield在EA20（？）去除UFO反盗版机制（一大群UFO在头顶飞击杀玩家）后，相当（？）一部分MODDER开始转入自开发反盗版机制
 
 按大多数MOD采用的方案，都是用判断Player.actor.name是否等于"Unknown Player"？来确定游戏是否为盗版
 
@@ -82,6 +82,11 @@ apAS.SetOutputAudioMixer(AudioMixer.FirstPerson)  --将AS组件的Output设置�
 
 适度就好
 
+## 2.1 混淆机制
+
+防止盗版玩家通过分批测试找到带AP机制的MOD
+
+此规避机制包括延时&随机启动AP
 
 ## 3.0 应用
 

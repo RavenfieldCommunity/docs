@@ -45,6 +45,8 @@ category:
 | call | trigger | 召集队员时为True |
 | direct | trigger | 指挥队员时为True |
 
+对于此组件的子组件，部分选项是不可用的，请按照逻辑判断
+
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
@@ -55,8 +57,8 @@ category:
 | thirdPersonScale  | float | 第三人称显示的武器模型缩放偏移量（矫正位置） |  
 | keepScriptsOnThirdPersonImposter  | bool |  | 
 | reloadAudio | AudioSource | 装填音效(开启advanceRaload时忽略此项，此AudioSource建议放置于武器内的空物体上，参阅[RFCreator Project](/cn/Tutorials/README.md)) |  
-| changeFireModeAudio | AudioSource |  切换开火模式的音效 |  
-| reflectionSound  | enum.ReflectionSound |  回音效果（Auto=自动、None=无、Handgun=手枪、RifleSmall=小步枪、RifleLarge=大步枪、Launcher=炮、Tank=坦克） |  
+| changeFireModeAudio | AudioSource | 切换开火模式的音效 |  
+| reflectionSound  | enum.ReflectionSound | 回音效果（Auto=自动、None=无、Handgun=手枪、RifleSmall=小步枪、RifleLarge=大步枪、Launcher=炮、Tank=坦克） |  
 | keepScriptsOnThirdPersonImposter  | bool |  |  
 | reflectionVolume  | float | 回音效果大小 |  
 | walkBobMultiplier  | float | 走路时晃动倍数 |  
@@ -67,10 +69,10 @@ category:
 | allowArmMeshReplacement  | bool |  是否允许实际游戏时玩家皮肤替换手部皮肤 |  
 | parentWeapon | [Weapon](./Weapon.md) | 父武器（有子武器时可用，子武器就是Weapon物体里再套一个Weapon） |  
 | useParentWeaponSightModes | bool | 使用父武器的sightModes |  
-| ammo | int | 武器装载的弹药数 |  
+| ammo | int | 武器装载的弹药数（如武器无此弹药逻辑则设为-1） |  
 | isLocked  | bool | 是否该锁定武器 |  
-| auto  | bool | 是否为自动武器（开火是否为连发还是单发，影响开火音效是即时停止还是直接播放完音效） |  
-| spareAmmo  | int | 武器备用的弹药数 |  
+| auto  | bool | 是否为自动武器（影响开火是否为连发还是单发，影响开火音效是即时停止还是直接播放完音效） |  
+| spareAmmo  | int | 武器备用的弹药数（如武器无此弹药逻辑则设为-1 |  
 | resupplyNumber  | int | 每次从补给箱补充的弹药数 |  
 | reloadTime  | float | 装填所需时间（启用advanceReload时不可用） |  
 | cooldown  | float | 开火时连续两发子弹的间隔（开火速度，值越小越快） |  
@@ -83,10 +85,10 @@ category:
 | aimSensitivityMultiplier  | float |  瞄准灵敏度倍数 |  
 | autoReloadDelay  | float | 自动装填的延迟 |  
 | canBeAimedWhileReloading  | bool |  装填时是否可以瞄准 |  
-| forceAutoReload  | bool |  强制自动换弹 |  
+| forceAutoReload  | bool |  强制自动换弹（如投掷类武器） |  
 | loud  | bool |  是否声音大（吸引Bot） |  
 | forceWorldAudioOutput  | bool |  强制场景音频输出 |  
-| muzzles | Transform[] |  枪口（生成子弹projectiles的地方，Size=数量。先填写枪口数量，一般为1，再在Element*处拖入物体。**muzzlesz中指定的物体及此物体的子层级的Particle System组件在在开火时会触发**） |  
+| muzzles | Transform[] |  枪口（或近战武器攻击点，掷弹点。生成子弹projectiles的地方，Size=数量。先填写枪口数量，一般为1，再在Element*处拖入物体。**muzzlesz中指定的物体及此物体的子层级的Particle System组件在在开火时会触发**） |  
 | optionalThirdPersonMuzzles | Transform[] | 可选的第三人称时的枪口 |  
 | casingParticles | ParticleSystem[] | 抛壳口（Size=数量。先填写数量，一般为1，再在Element*处拖入物体，抛壳次序与muzzles次序保持一致） |  
 | fireFromAllMuzzles  | bool | 开火时所有的枪口是否不受开火模式的影响，都会作用 |  

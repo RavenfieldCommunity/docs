@@ -143,6 +143,10 @@ flowchart TD
 
 K完帧了？是时候下一步了
 
+::: tip
+简单动画（如抛壳）可以在[Unity](https://docs.unity.cn/cn/2020.3/Manual/AnimationEditorGuide.html)中完成
+:::
+
 ## 1.3 制作武器图标
 此步将介绍工坊的武器图标常用制作方法（当然可以选择截屏，但此处我们随大统）
 
@@ -246,6 +250,9 @@ K完帧了？是时候下一步了
 或者可以选择直接套用RFTools自带的Projectile（建议复制一份保留原件）
 
 等会要用
+
+::: details 如果您的武器是烟雾弹...（烟雾弹原理）
+:::
 
 ## 2.4 在场景配置武器
 打开RFTools\Sence\Weapons Lab.unity场景

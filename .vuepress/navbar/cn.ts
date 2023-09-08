@@ -18,6 +18,10 @@ export const cnNavbar = navbar([
     link: "/cn/Tutorials/"
   },
   {
+    text: "贡献指南",
+    link: "/cn/CONTRIBUTING"
+  },
+  {
     text: "站外链接",
     children: [
       {

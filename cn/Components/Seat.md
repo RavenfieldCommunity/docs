@@ -35,5 +35,5 @@ category:
 | handTargetR | Transform | 右手放置的位置（空物体。留空则不显示） |
 | camera | Camera | 第一人称摄像机（需保持Camera组件的禁用） |
 | thirdPersonCamera | Camera | 第三人称摄像机（需保持Camera组件的禁用） |
-| hud | GameObject | 抬头显示HUB |
+| hud | GameObject | 抬头显示HUB（此HUB的Canvas要绑定相机） |
 | maxOccupantBalance | float |  |
