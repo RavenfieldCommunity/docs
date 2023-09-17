@@ -2,9 +2,7 @@ import { sidebar } from "vuepress-theme-hope";
 
 export const cnSidebar = sidebar({
   "/cn/": ["/cn/",
-	"/cn/NOTICE",
 	"/cn/CONTRIBUTING",
-	"/cn/OSMod",
 	"/cn/RESOURCE"],
   "/cn/in-GAME/": [
 	"/cn/in-GAME/QuickStart",

@@ -3,6 +3,7 @@ title: Home
 home: true
 heroText: false
 tagline: false
+description: Ravenfield Community Mod Development and Game Introduction Document
 ---
 <p align="center">
 
@@ -15,7 +16,7 @@ tagline: false
 
 [![License](https://img.shields.io/badge/LICENSED%20UNDER-CC%20BY--NC%204.0-lightblue.svg?style=for-the-badge&)](https://github.com/RavenfieldCommunity/docs/blob/main/LICENSE) [![Getting to know Ravenfield on Steam](https://img.shields.io/badge/steam-Getting%20to%20know%20Ravenfield-blue.svg?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/636480/)
 
-Ravenfield is an FPS shooter developed by [SteelRaven7](https://github.com/SteelRaven7) (whose own website is died)
+Ravenfield is an FPS shooter developed by [SteelRaven7](http://steelraven7.com/) 
 
 This document helps you understand how to how to develop Ravenfield's modules. You can read the document from start to finish or use it as a reference.
 

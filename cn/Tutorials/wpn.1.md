@@ -133,9 +133,9 @@ flowchart TD
 ::: tip
 投掷类武器在开火（投掷）动画这一个可能有点难，可以选择建一个空物体作为投掷点帮助K帧，然后再在Unity替换这个点
 :::
-这部分用时较长，一个动画K几小时很正常
+这部分用时较长，开始的时候一个动画K几小时很正常
 
-武器动画风格多样，COD风和轻柔风二选一，网上以及[Steam工坊](https://steamcommunity.com/workshop/browse/?appid=636480&requiredtags[]=Weapons)优秀例子过多，恕不一一举例，请自行临摹（
+武器动画风格多样，COD风和轻柔风二选一，网上（比如BF的武器演示或者RF的modder们的武器演示与K帧实况）以及[Steam工坊](https://steamcommunity.com/workshop/browse/?appid=636480&requiredtags[]=Weapons)优秀例子过多，恕不一一举例，请自行临摹（
 
 另外，请确保手部骨骼始终保持贴合手的模型，像左图而不是右图，否则Unity内可能会出现动画问题：
 
@@ -294,7 +294,7 @@ kickback、randomKick、、spread、followupSpreadGain、followupSpreadStayTime�
 
 ### 机械瞄具
 
-最简单的瞄具，在Blender K好瞄准动画，直接跳到[下一章](#_2-5-制作动画机)即可，可以调Weapon的aimFov
+最简单的瞄具，在Blender K好瞄准动画，直接跳到[下一章](#_2-6-制作动画机)即可，可以调Weapon的aimFov
 
 ### 光学瞄具
 

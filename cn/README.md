@@ -16,7 +16,7 @@ description: Ravenfield中文社区模组开发与游戏入门文档
 
 [![License](https://img.shields.io/badge/%E6%8E%88%E6%9D%83%E5%9F%BA%E4%BA%8E%E8%AE%B8%E5%8F%AF-CC%20BY--NC%204.0-lightblue.svg?style=for-the-badge&)](https://github.com/RavenfieldCommunity/docs/blob/main/LICENSE) [![在 Steam 上了解Ravenfield](https://img.shields.io/badge/steam-%E4%BA%86%E8%A7%A3%20Ravenfield-blue.svg?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/636480/)
 
-Ravenfield是一款由[SteelRaven7](https://github.com/SteelRaven7)(他自己的网站挂了)开发的FPS射击游戏
+Ravenfield是一款由[SteelRaven7](http://steelraven7.com/)开发的FPS射击游戏
 
 此文档可帮助您了解如何如何开发Ravenfield的模组。您可以从头到尾阅读该文档，或将其用作参考。
 

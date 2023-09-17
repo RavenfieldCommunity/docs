@@ -146,6 +146,88 @@ category:
 - [MutatorCotentMod](./MutatorCotentMod.md) Mutator导出向导
 - [ScriptedBehaviour](./ScriptedBehaviour.md) 实例化脚本
 
+## Custom GameMode（自定义游戏模式）
+- [GameModeBase](./GameModeBase.md)
+- [ScriptedGameMode](./ScriptedGameMode.md)
+- ScriptedGameMode触发系统
+    - [ICompoundTriggerSender](./ICompoundTriggerSender.md)
+    - [TriggerBaseComponent](./TriggerBaseComponent.md)
+    - [TriggerDebug](./TriggerDebug.md)
+    - [TriggerReceiver](./TriggerReceiver.md)
+    - [TriggerSend](./TriggerSend.md)
+	- AI
+        - [TriggerDetectionGroup](./TriggerDetectionGroup.md)
+        - [TriggerEnterVehicle](./TriggerEnterVehicle.md)
+		- [TriggerFireWeapon](./TriggerFireWeapon.md)
+        - [TriggerFollowPathGroup](./TriggerFollowPathGroup.md)
+        - [TriggerIssueSquadOrder](./TriggerIssueSquadOrder.md)
+        - [TriggerJoinSquad](./TriggerJoinSquad.md)
+        - [TriggerLeavePathGroup](./TriggerLeavePathGroup.md)
+        - [TriggerLookAt](./TriggerLookAt.md)
+		- [TriggerOnSquadRequestsNewOrder](./TriggerOnSquadRequestsNewOrder.md)
+        - [TriggerSmokePoint](./TriggerSmokePoint.md)
+        - [TriggerSyncPathGroup](./TriggerSyncPathGroup.md)
+        - [TriggerUpdateSquadInfo](./TriggerUpdateSquadInfo.md)
+	- Events
+        - [TriggerOnActorDeath](./TriggerOnActorDeath.md)
+        - [TriggerOnActorEnter](./TriggerOnActorEnter.md)
+        - [TriggerOnActorEnterVehicle](./TriggerOnActorEnterVehicle.md)
+        - [TriggerOnCaptured](./TriggerOnCaptured.md)
+        - [TriggerOnDestructibleDamage](./TriggerOnDestructibleDamage.md)
+    - Flow
+	    - [TriggerCompleteAllGroup](./TriggerCompleteAllGroup.md)
+        - [TriggerCondition](./TriggerCondition.md)
+        - [TriggerDelay](./TriggerDelay.md)
+        - [TriggerEndMatch](./TriggerEndMatch.md)
+        - [TriggerForEach](./TriggerForEach.md)
+        - [TriggerLoadCheckpoint](./TriggerLoadCheckpoint.md)
+        - [TriggerOnStart](./TriggerOnStart.md)
+        - [TriggerPassthroughNode](./TriggerPassthroughNode.md)
+        - [TriggerPickOne](./TriggerPickOne.md)
+        - [TriggerRandom](./TriggerRandom.md)
+        - [TriggerRepeat](./TriggerRepeat.md)
+        - [TriggerSaveCheckpoint](./TriggerSaveCheckpoint.md)
+        - [TriggerSequence](./TriggerSequence.md)
+	- Level
+	    - [TriggerActivation](./TriggerActivation.md)
+	    - [TriggerAddActorAccessory](./TriggerAddActorAccessory.md)
+	    - [TriggerAnimatorController](./TriggerAnimatorController.md)
+	    - [TriggerAudioSnapshot](./TriggerAudioSnapshot.md)
+		- [TriggerChangeScene](./TriggerChangeScene.md)
+	    - [TriggerCrossfadeAudio](./TriggerCrossfadeAudio.md)
+	    - [TriggerDialog](./TriggerDialog.md)
+	    - [TriggerDifficultyOption](./TriggerDifficultyOption.md)
+	    - [TriggerDisablePlayerInput](./TriggerDisablePlayerInput.md)
+	    - [TriggerEffect](./TriggerEffect.md)
+	    - [TriggerEquipWeapon](./TriggerEquipWeapon.md)
+	    - [TriggerExplosion](./TriggerExplosion.md)
+	    - [TriggerKillActor](./TriggerKillActor.md)
+	    - [TriggerMoveGameObject](./TriggerMoveGameObject.md)
+	    - [TriggerPlayerOrderPoint](./TriggerPlayerOrderPoint.md)
+	    - [TriggerRagdoll](./TriggerRagdoll.md)
+	    - [TriggerRestartMap](./TriggerRestartMap.md)
+	    - [TriggerSlowmotion](./TriggerSlowmotion.md)
+	    - [TriggerTeleport](./TriggerTeleport.md)
+	    - [TriggerUpdateActorInfo](./TriggerUpdateActorInfo.md)
+	    - [TriggerUpdateCapturePoint](./TriggerUpdateCapturePoint.md)
+	    - [TriggerUpdateVehicle](./TriggerUpdateVehicle.md)
+	    - [TriggerUsable](./TriggerUsable.md)
+	- Objective
+	    - [TriggerCreateObjective](./TriggerCreateObjective.md)
+        - [TriggerUpdateObjective](./TriggerUpdateObjective.md)
+    - Ravenscript
+        - [TriggerScriptedFunction](./TriggerScriptedFunction.md)
+        - [TriggerScriptedSignal](./TriggerScriptedSignal.md)
+    - Spawn
+	    - [TriggerPlayerTakeOverActor](./TriggerPlayerTakeOverActor.md)
+        - [TriggerSpawnBloodParticles](./TriggerSpawnBloodParticles.md)
+        - [TriggerSpawnPlayer](./TriggerSpawnPlayer.md)
+        - [TriggerSpawnPrefab](./TriggerSpawnPrefab.md)
+        - [TriggerSpawnSquad](./TriggerSpawnSquad.md)
+        - [TriggerSpawnVehicle](./TriggerSpawnVehicle.md)
+		
+		
+		
 ## Misc（其他）
 - [ActorSkinContentMod](./ActorSkinContentMod.md) 皮肤导出向导
 - [DataContainer](./DataContainer.md) 数据体

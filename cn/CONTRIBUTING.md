@@ -10,9 +10,25 @@
 1. 网站自建评论区提出或[Issue](#issue与社群讨论)（需要Github账号，免费）
 2. 在[此项目的Steam指南原链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158)
 
-我们在收到后
+我们在收到后会及时同步更新
 ### 在线修改
+在此之前请先访问这篇文章[《Github 是什么，有什么用？》](https://www.github-zh.com/post/what-is-github)与[Github快速入门](https://docs.github.com/zh/get-started/quickstart/hello-world)
+
+首先[fork](https://zhuanlan.zhihu.com/p/103695781)本项目
+
+然后在这个fork的项目中修改文档内容
+
+提交，确认修改完成后给我们提交一个[Pull requests](https://docs.github.com/zh/get-started/quickstart/contributing-to-projects#making-and-pushing-changes)
 ### 本地修改（高级）
+一般是在大批量修改以及修改Vuepress（文档网页构建器，目录包括“\.github”以及“\.vuepress”）的时候再本地修改
+
+需要先在Github fork本项目并clone到本地
+
+在此本地git存储库配置[vuepress-theme-hope](https://theme-hope.vuejs.press/zh/cookbook/tutorial/)环境
+
+然后修改文档，测试文档是否能正常构建
+
+提交，确认修改完成后给我们提交一个Pull requests
 
 ## 文档编写规范
 
