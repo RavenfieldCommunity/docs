@@ -12,12 +12,12 @@ export default hopeTheme({
   contributors: false,
   pageInfo: ["Category", "Tag"],
   locales: {
-    '/': {
-      footer: "<p>CC-BY-NC-4.0 Licensed | Copyright © 2023-PRESENT RavenfieldCommunity</p><p>Anonymous analysis of website data using Google Analytics</p>",
-      navbarLocales: {
-        langName: 'Hi~'
-      }
-    },
+    //'/': {
+    //  footer: "<p>CC-BY-NC-4.0 Licensed | Copyright © 2023-PRESENT RavenfieldCommunity</p><p>Anonymous analysis of website data using Google Analytics</p>",
+    //  navbarLocales: {
+    //    langName: 'Hi~'
+    //  }
+    //},
     "/en/": {
       navbar: enNavbar,
       sidebar: enSidebar,

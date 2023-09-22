@@ -4,6 +4,10 @@ home: true
 heroText: false
 tagline: false
 description: Ravenfield中文社区模组开发与游戏入门文档
+head:
+  - - meta
+    - name: robots
+      content: yesindex
 ---
 <p align="center">
 
@@ -21,6 +25,26 @@ Ravenfield是一款由[SteelRaven7](http://steelraven7.com/)开发的FPS射击�
 此文档可帮助您了解如何如何开发Ravenfield的模组。您可以从头到尾阅读该文档，或将其用作参考。
 
 如果这是第一次使用游玩Ravenfield或开发MOD，欢迎查看有关游玩Ravenfield的[介绍性文档](/cn/in-GAME/)，并参阅[RFCreator Project](/cn/Tutorials/README.md)。
+
+:::: warning 公告：坏消息
+> 由于[Unity的价格政策](https://unity.com/cn/pricing-updates)调整，目前RF开发者正在全力赶工非Early Access的正式1.0游戏版本，争取在新政策正式生效前取消掉他的Unity开发者执照。
+>
+>如果计划没有变更，这将意味着:
+>- 原先计划的部分内容可能会被砍掉
+>- 游戏可能将不会提供长期支持（不排除在另一个引擎上制作RF续作的可能）
+::: right
+——转自@[Sofa](http://steamcommunity.com/profiles/76561197985987595)的Discord频道（此处从[国内QQ频道RFCN](9pmc179t29)二转,经转意，[原图](/image/tmp/notice1.jpg)）
+:::
+
+因此，本文档可能在游戏停更后的某个未来时间节点（大概两年内？）永久停止维护
+
+非常抱歉
+
+但没有办法，如果未来游戏的创意工坊逐渐冷落，我想这只能是无用之功
+
+@[Leafx-code](https://github.com/Leafx-code)
+2023.9.22
+::::
 
 ------
 
