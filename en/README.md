@@ -29,25 +29,6 @@ If this is your first time using Play Ravenfield or developing a mod, feel free 
 And note that this is a document **mainly for Chinese players**, part of the translation may have fallacies, please understand!
 Also, please feel free to help us write & translate the document!
 
-:::: warning Announcement: Bad news
-> Due to [Unity's pricing policy](https://unity.com/cn/pricing-updates)Adjustment, RF developers are making every effort to work on the official 1.0 game version of non Early Access, striving to cancel their Unity developer license before the new policy takes effect.
->
-> If there are no changes to the plan, this will mean:
-> - Part of the original plan may be cut off
-> - The game may not provide long-term support (it is not ruled out to create RF sequels on another engine)
-::: right
-——Transferred from @ [Sofa](http://steamcommunity.com/profiles/76561197985987595)Discord channel ([original image](/image/tmp/notice1.jpg))
-:::
-Therefore, this document may permanently cease maintenance at a future time point (approximately two years after the game is stopped)
-
-I'm very sorry
-
-But there's no way, if the creative workshops for future games gradually fade away, I think this can only be a useless effort
-
-@[Leafx code](https://github.com/Leafx-code)
-2023.9.22
-::::
-
 ------
 
 **Browse this Documents**

@@ -119,7 +119,7 @@ Hi~（＾∀＾●）ﾉｼ
 :::
 ::::
 
-## 其他
+## 社区支持
 
 **Ravenfield官方支持页面**：[链接](http://ravenfieldgame.com/modding.html)
 

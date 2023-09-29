@@ -6,12 +6,17 @@ category:
 # Ladder
 ## 描述
 从[Pathfinding](./PathfindingLink.md)类派生
+
+梯子类
 ## 用法
+应用在空物体，在这个物体下放置梯子的模型(没错，需要手动应用模型)上
+
+不建议直接在模型上应用组件，模型的缩放会影响人物模型的缩放
 
 ## 注释
 
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| height  | float |  |  
-| topExitDirection  | Vector3 |  |  
+| height  | float | 梯子高度 |  
+| topExitDirection  | Vector3 | 到达梯子顶端离开梯子时的相对离开点位置 |  

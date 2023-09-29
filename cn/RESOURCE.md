@@ -10,11 +10,13 @@
 
 ### RFTools
 
-EA26以上适用，版本2020.3.48f1，2023年9月15日时发布，用于脚本化任务的增量更新
+EA26以上适用，版本2020.3.48f1，2023/09/28时发布
 
 如无问题可直接双击文件导入增加的组件
 
-[[Github镜像]](https://github.com/Leafx-code/RavenfieldCommunityResource/releases/download/Resource/RFToolsV3.unitypackage)  [[**官方链接**]](http://ravenfieldgame.com/modding.html)
+详细更新信息请参阅官方Discord频道
+
+[[**官方链接（非Goolge网盘）**]](https://www.ravenfieldgame.com/rftools/RFTools.unitypackage)
 
 - ~~RavenfieldToolPack~~（已废弃）
 

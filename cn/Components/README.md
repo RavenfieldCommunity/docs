@@ -115,28 +115,28 @@ category:
 ## 地图
 - [AlternativePathSet](./AlternativePathSet.md)
 - [AvoidanceBox](./AvoidanceBox.md) 避障箱
-- [CapturePoint](./CapturePoint.md)
-- [CustomActorModel](./CustomActorModel.md)
+- [CapturePoint](./CapturePoint.md) 地图据点
+- [CustomActorModel](./CustomActorModel.md) 自定义皮肤
 - [CustomGraphCache](./CustomGraphCache.md)
 - [DamageZone](./DamageZone.md) 伤害领域
 - [Destructible](./Destructible.md)
-- [GameModeInfo](./GameModeInfo.md)
-- [Ladder](./Ladder.md)
-- [LandingZone](./LandingZone.md)
+- [GameModeInfo](./GameModeInfo.md) 地图信息
+- [Ladder](./Ladder.md) 梯子
+- [LandingZone](./LandingZone.md) 船只停泊区
 - [LevelColorGrading](./LevelColorGrading.md)
 - [LevelGravity](./LevelGravity.md)
 - [MinimapCamera](./MinimapCamera.md) 小地图相机
 - [ObjectOptionsToggler](./ObjectOptionsToggler.md)
-- [PathfindingBox](./PathfindingBox.md)
-- [PathfindingLink](./PathfindingLink.md)
+- [PathfindingBox](./PathfindingBox.md) 寻路盒
+- [PathfindingLink](./PathfindingLink.md) 强制寻路器
 - [PathfindingRelevantPoint](./PathfindingRelevantPoint.md)
 - [ReflectionProber](./ReflectionProber.md) [反射探针](https://docs.unity.cn/cn/2020.3/Manual/class-ReflectionProbe.html)配置器
-- [ResupplyCrate](./ResupplyCrate.md)
+- [ResupplyCrate](./ResupplyCrate.md) 补给箱
 - [SceneryCamera](./SceneryCamera.md) 地图背景相机
-- [SpawnPoint](./SpawnPoint.md)
+- [SpawnPoint](./SpawnPoint.md) 点位基类
 - [SpawnPointNeighborManager](./SpawnPointNeighborManager.md) 据点寻路系统
-- [SpeedLimitZone](./SpeedLimitZone.md)
-- [TimeOfDay](./TimeOfDay.md)
+- [SpeedLimitZone](./SpeedLimitZone.md) 限速区
+- [TimeOfDay](./TimeOfDay.md) 地图昼夜环境控制
 - [TurretSpawner](./TurretSpawner.md) 炮塔生成点
 - [VehicleSpawner](./VehicleSpawner.md) 载具生成点
 - [WaterLevel](./WaterLevel.md) 海平面

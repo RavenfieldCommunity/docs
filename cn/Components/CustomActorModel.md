@@ -6,7 +6,13 @@ category:
 # CustomActorModel
 ## 描述
 
+自定义在地图中使用的玩家皮肤
+
 ## 用法
+
+随意挂载在一个空物体内
+
+或者直接使用\Assets\Prefabs\Map Elements内的Custom Actor Model.prefab(推荐)
 
 ## 注释
 
