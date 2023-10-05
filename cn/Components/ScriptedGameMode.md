@@ -6,6 +6,10 @@ category:
 # ScriptedGameMode
 ## 描述
 从[GameModeBase](./GameModeBase.md)类派生
+
+地图脚本任务的配置类
+
+应用后将强制将地图游戏模式设置为脚本任务模式
 ## 用法
 
 ## 注释

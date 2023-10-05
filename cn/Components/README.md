@@ -129,7 +129,7 @@ category:
 - [ObjectOptionsToggler](./ObjectOptionsToggler.md)
 - [PathfindingBox](./PathfindingBox.md) 寻路盒
 - [PathfindingLink](./PathfindingLink.md) 强制寻路器
-- [PathfindingRelevantPoint](./PathfindingRelevantPoint.md)
+- [PathfindingRelevantPoint](./PathfindingRelevantPoint.md) 相关寻路点
 - [ReflectionProber](./ReflectionProber.md) [反射探针](https://docs.unity.cn/cn/2020.3/Manual/class-ReflectionProbe.html)配置器
 - [ResupplyCrate](./ResupplyCrate.md) 补给箱
 - [SceneryCamera](./SceneryCamera.md) 地图背景相机

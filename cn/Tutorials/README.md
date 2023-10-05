@@ -3,13 +3,9 @@
 ## 前言
 Hi~（＾∀＾●）ﾉｼ
 
-欢迎来到这个项目！
+欢迎成为RF的modder！
 
-这个项目旨在填充官方与社区在客制化教程方面的空白，帮助您写出自己的第一个ＭＯＤ！！
-
-也许这对您有一些困难，但
-
-骚年哟，相信你自己，为你的热爱启程吧！o(*≧▽≦)↗
+此页面集将指导您创建MOD
 
 ::: tip
 此文档可能在某些方面仍然存在笼统、错误的部分，但只要我没弃坑这个项目都应该会长期维护&更新&重写XD，欢迎时不时回来这里!!
@@ -91,20 +87,44 @@ Hi~（＾∀＾●）ﾉｼ
 :::
         
 :::tip
-相比C#，我们更建议学Lua，它相比C#更友好且目前在RF开发Mod写脚本用得更多的还是Lua(Ravenscript)
+Lua它相比C#更友好且目前在RF开发Mod写脚本用得更多的还是Lua(Ravenscript)
 
-最重要的一点是，**从EA27开始，游戏开始限制外来C#脚本的导入**，RFTools在实际C#开发中缺少API支持，开发环境不友好，游戏导入机制极其*B，导致开发体验糟糕
+最重要的一点是，TMD从EA27开始，游戏开始限制外来C#脚本的导入**，RFTools在实际C#开发中缺少API支持，开发环境不友好，游戏导入机制极其*B，导致开发体验糟糕，除非你想使用[BepInEx](https://bepinex.dev)这类高级UnityMOD开发框架，否则不建议C#
 
-因此，除非你想使用[BepInEx](https://bepinex.dev)这类高级UnityMOD开发框架，否则不建议C#
+但是，学习使用RS开发脚本是一项极其繁琐的行为（反复导出+加测试MOD），不如C#在Unity Editor里的所见即所得与快速修改，加之C#的逻辑与Lua一致，因此从这一方面来说如果你真的打算使用Lua来娴熟地开发脚本，那么你还是得学C#才能获得开发能力地最大化，等到你的C#在Unity实战运用得极为成熟了，再快速入门Lua
 :::
 
 **看不懂可以硬着头皮看，实际开发过程有不会可以重新回来看相应内容，没有谁在实操中可以直接一下记下所有技能点**
 
-**多看RFTools里的官方预制件**
-
 ## 文档正文
 
-<= 在侧边栏
+<= 正文在侧边栏
+
+在开始前，你必须安装Unity并在你新建得Unity项目中导入RFTools（开发工具包，如果你使用的是旧版本的RavenfieldToolPack就直接解压并使用Unity打开此项目文件夹）
+
+这两项的下载链接你可以在本站的[资源镜像](/cn/RESOURCE.md)内找到
+
+**记住多研究RFTools里的官方预制件！**
+
+更新计划：
+> wpn.1 武器
+>
+> vhc.1 载具
+>
+> map.1 地图
+>
+> map.2 自定义游戏模式（TriggerSystem与ScriptMission）
+>
+> otr.1 杂项（包括RFTools的一些功能、文件目录结构、常见问题等的集合）
+>
+> otr.2 皮肤
+>
+> rvs.1 Ravenscript（RS的入门）
+>
+> rvs.2 Mutator（Mutator的制作）
+>
+> rvs.3 反盗版（MOD内建反盗版的工作原理与实战）
+>
 
 :::: details ＳＯＭＥ　ＴＨＩＮＧＳ
 > 我个人感觉做模组到了一定地步就是动画和脚本了，模型很多人都是“偷（DOWNLOADS）”的，但是如果你是一个有自己想法的人可以像@[青木](http://steamcommunity.com/profiles/76561198368231803)一样自己设计并制作。比如像我的模组大部分可以说是换皮，素材经常重复利用，不过说实话我的重复利用度已经很低了，[LETMS](https://steamcommunity.com/sharedfiles/filedetails/?id=2798038529)全系用的apfsds和heat模型总共也就俩，这几个武器的ui也是完全一致的，我是会给不同的炮弹不同的建模以及ui。在制作枪械模组的时候可以学习下骨骼和权重（用于弓弩或者机枪弹链），这些在皮肤和载具也很可能用到。制作载具基本就是拿原版换皮调调数据就完事，但是不管怎么样坐在剧的时候还是得自己弄精简的碰撞箱，这也需要点模型知识。皮肤是需要权重和绑骨。地图差不多就是找素材搭积木弄寻路，这个在之前这位佬的指南里应该有我就不说了。脚本需要编程知识，我不会，但是这边有几个网站
@@ -115,11 +135,11 @@ Hi~（＾∀＾●）ﾉｼ
 > [https://blog.csdn.net/x3464/article/details/105137284](https://blog.csdn.net/x3464/article/details/105137284)　#这是＠[Lezvin](http://steamcommunity.com/profiles/76561198310507502)大佬翻译的
 
 ::: right
-*————引自@SRNKMDT[[Steam](http://steamcommunity.com/profiles/76561198859753798) [Github](https://github.com/SOP-von-SRN)]*
+*————@SRNKMDT[[Steam](http://steamcommunity.com/profiles/76561198859753798) [Github](https://github.com/SOP-von-SRN)]*
 :::
 ::::
 
-## 社区支持
+## 社区服务支持
 
 **Ravenfield官方支持页面**：[链接](http://ravenfieldgame.com/modding.html)
 
