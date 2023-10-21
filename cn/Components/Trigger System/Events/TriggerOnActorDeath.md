@@ -23,4 +23,4 @@ category:
 | ----------- | ----------- | ----------- |
 | filter | [ActorFilter](./ActorFilter.md) | 条件组(达成条件后才会发送信号) |  
 | ignoreSilentKills | bool | 是否忽略被静默击杀的人员(在原版中只有在玩家接替Bot时才会触发静默击杀) |  
-| onDeath | [TriggerSend](./TriggerSend.md) | 如果条件满足，检测到人员死亡后会给目标组发送信号 |  
+| onDeath | [TriggerSend](../TriggerSend.md) | 如果条件满足，检测到人员死亡后会给目标组发送信号 |  
