@@ -1,7 +1,5 @@
 # 游戏入门
-在看到本文档的这一刻起，我们祝贺您入手了Ravenfield
-
-\(@^0^@)/
+在访问本页面的这一刻起，我们祝贺您入手了Ravenfield \(@^0^@)/
 
 这是由SteelRaven7制作和发行的FPS游戏
 
@@ -11,8 +9,7 @@
 
 如果你熟悉Unity开发，您还可以创造自己的MOD！
 
-我们将在这里引导你上手属性Ravenfield
-
+我们将此页面集在这里引导你上手Ravenfield
 
 目录：
 - [上手Ravenfield](/cn/in-GAME/QuickStart.md)

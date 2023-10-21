@@ -12,23 +12,39 @@
 
 我们在收到后会及时同步更新
 ### 在线修改
-在此之前请先访问这篇文章[《Github 是什么，有什么用？》](https://www.github-zh.com/post/what-is-github)与[Github快速入门](https://docs.github.com/zh/get-started/quickstart/hello-world)
+在此之前请先通读这两篇篇文章[Github 是什么，有什么用？(包括附属文章)](https://www.github-zh.com/post/what-is-github)与[Github快速入门](https://docs.github.com/zh/get-started/quickstart/hello-world)以保证你对Git与Github的了解与使用
 
-首先[fork](https://zhuanlan.zhihu.com/p/103695781)本项目
+在线进入一个编辑模式的入口有两个，一是点击网页右上角的<HopeIcon icon="github" color="grey"/>Github图标进入本文档的Github存储库，再找到对应Markdown文件进入编辑模式
 
-然后在这个fork的项目中修改文档内容
+或者直接点击页面底部的"[在 GitHub 上编辑此页](https://github.com/ravenfieldcommunity/docs/edit/main/cn/CONTRIBUTING.md)"
 
-提交，确认修改完成后给我们提交一个[Pull requests](https://docs.github.com/zh/get-started/quickstart/contributing-to-projects#making-and-pushing-changes)
+完成后，无论如何你都将需要一个Github账号并[Fork本存储库](https://zhuanlan.zhihu.com/p/639014459)，如果曾经已经fork过的请先同步你的fork存储库至最新
+
+如果你是直接点击编辑链接进入的，Github可能会提示"You need to fork this repository to propose changes."(你需要fork此存储库以编辑文档)，这时你可以直接点击"Fork this respository"进入编辑界面，Github会自动fork项目，然后你就可以直接编辑了，点击"Commit Changes"，在Commit Messages内填写好修改说明，将把修改提交至你的“副本”存储库
+
+第一种方式的流程也大体类似
+
+确认修改完毕后请在此“副本”存储库给我们提交一个[Pull requests](https://docs.github.com/zh/get-started/quickstart/contributing-to-projects#making-and-pushing-changes)
+
+如要在提交中加入共同编辑者，请在Commit message的行尾留空回车两行后添加`Co-authored-by: {名字} <{邮箱}>`
 ### 本地修改（高级）
-一般是在大批量修改以及修改Vuepress（文档网页构建器，目录包括“\.github”以及“\.vuepress”）的时候再本地修改
+一般是在大批量修改以及修改Vuepress（文档网页构建器，目录包括“\.github”以及“\.vuepress”）配置的时候再本地修改
 
 需要先在Github fork本项目并clone到本地
 
-在此本地git存储库配置[vuepress-theme-hope](https://theme-hope.vuejs.press/zh/cookbook/tutorial/)环境
+然后在此本地git存储库配置[vuepress-theme-hope](https://theme-hope.vuejs.press/zh/cookbook/tutorial/)环境
 
 然后修改文档，测试文档是否能正常构建
 
 提交，确认修改完成后给我们提交一个Pull requests
+
+如要在提交中加入共同编辑者，请在Commit message的行尾留空回车两行后添加`Co-authored-by: {名字} <{邮箱}>`。示例：
+```
+这是一个Commit信息。
+
+
+Co-authored-by: Test <test@example.com>
+```
 
 ## 文档编写规范
 
@@ -56,7 +72,7 @@ category:
 {以下省略}
 ```
 
-其中，`{组件类别}`填写该组件的类别（载具、武器、地图、Misc）
+其中，`{组件类别}`填写该组件的类别（载具、武器、地图、Misc、Ravenscrpit、Custom GameMode）
 
 `{组件名}`与该组件文档相对应的组件名（未格式化,即文件名）一致，无需其他字符
 
@@ -121,15 +137,7 @@ category:
 {以下省略}
 ```
 
-### 编程语言类文档编写规范
-
-未计划启用
-
 ### 教程类文档编写规范
-
-未计划启用
-
-## 开源模组上传
 
 未计划启用
 
@@ -137,25 +145,13 @@ category:
 
 1. 不要使用诸如`/cn/Components/`这类绝对路径，保证为以下示例：`/cn/Components`、`/cn/Components/README.md`
 2. 请上传内容之前检查版权合法性
-3. 不要上传图片
+3. 如要帮助翻译文档，请使用靠谱一点的翻译器如DeepL、ChatGPT
+### 图片上传
+尽量不要上传图片（特别是组件文档），如要上传请传入至/.vuepress/pubilc/image文件夹内
 
-## 提交修改
+按以下方式命名：`{文件名（对应引用的Markdown文件）}.{序号}{.语言（可选）}.{扩展名}`
 
-应先提交至开发分支（DEV-BRANCHES）
-
-并填写好Commit的详细信息（包括修改、增添的大概，方便其他贡献者）
-
-确保GPG签名有效
-
-提交后等待管理员手动merge或Actions自动merge至稳定分支。不要fork或新建一个分支后向我们提交pull resquests
-
-如要在提交中加入共同编辑者，请在Commit message的行尾留空回车两行后添加`Co-authored-by: {名字} <{邮箱}>`。示例：
-```
-这是一个Commit信息。
-
-
-Co-authored-by: Test <test@example.com>
-```
+如/cn/Tutorials/rvs.1.md引用的第二张图片，文件名为`rvs.1.001.png`，保存为/.vuepress/pubilc/image/Tutorials/rvs.1.001.png
 
 ## Issue与社群讨论
 
