@@ -26,9 +26,10 @@
 
 确认修改完毕后请在此“副本”存储库给我们提交一个[Pull requests](https://docs.github.com/zh/get-started/quickstart/contributing-to-projects#making-and-pushing-changes)
 
-如要在提交中加入共同编辑者，请在Commit message的行尾留空回车两行后添加`Co-authored-by: {名字} <{邮箱}>`
 ### 本地修改（高级）
 一般是在大批量修改以及修改Vuepress（文档网页构建器，目录包括“\.github”以及“\.vuepress”）配置的时候再本地修改
+
+需要安装[git](https://git-scm.com/)
 
 需要先在Github fork本项目并clone到本地
 
@@ -37,6 +38,8 @@
 然后修改文档，测试文档是否能正常构建
 
 提交，确认修改完成后给我们提交一个Pull requests
+
+记得提交的时候签名
 
 如要在提交中加入共同编辑者，请在Commit message的行尾留空回车两行后添加`Co-authored-by: {名字} <{邮箱}>`。示例：
 ```
@@ -145,17 +148,38 @@ category:
 
 1. 不要使用诸如`/cn/Components/`这类绝对路径，保证为以下示例：`/cn/Components`、`/cn/Components/README.md`
 2. 请上传内容之前检查版权合法性
-3. 如要帮助翻译文档，请使用靠谱一点的翻译器如DeepL、ChatGPT
+
+### 翻译文档
+如要帮助翻译文档，请使用靠谱一点的翻译器如DeepL、ChatGPT
+
+由于大部分翻译器在翻译文档时，会变更markdown语法格式导致错误，因此建议请使用翻译器PC端的划词翻译进行逐句翻译
+
+对于不同语言的文档内容差异，可以使用[WinMerge](https://winmerge.org/)这类软件检查差异,但记住使用WinMerge时不要将[备份文件](https://manual.winmerge.org/en/Configuration.html#Configuration_backup)保存在git存储库内，选择一个其他的位置存储
+
+固定词语的替换表：
+| 原文 | 译文 |
+|------|------|
+| 组件 | Components |
+| 载具 | Vehicle |
+| 武器 | Weapon |
+| 地图 | Map |
+| Ravenscrpit | Ravenscrpit |
+| Custom GameMode | Custom GameMode |
+| Misc | Misc |
+| 描述 | Description |
+| 用法 | Usage |
+| 注释 | Comment |
+| 变量 | Variables |
 ### 图片上传
 尽量不要上传图片（特别是组件文档），如要上传请传入至/.vuepress/pubilc/image文件夹内
 
-按以下方式命名：`{文件名（对应引用的Markdown文件）}.{序号}{.语言（可选）}.{扩展名}`
+按以下方式命名：`{文件名（对应引用的Markdown文件）}.{序号}{.语言（可选，仅一张图片需要多个显示语言时）}.{扩展名}`
 
-如/cn/Tutorials/rvs.1.md引用的第二张图片，文件名为`rvs.1.001.png`，保存为/.vuepress/pubilc/image/Tutorials/rvs.1.001.png
+如/cn/Tutorials/rvs.1.md引用的第二张图片，文件名为`rvs.1.002.png`，保存为/.vuepress/pubilc/image/Tutorials/rvs.1.001.png（或rvs.1.002.cn.png。只有一级子文件夹）
 
 ## Issue与社群讨论
 
-对文档内容存在**不理解**之处、以及发现文档内容有所**缺失**或**错误**，可直接提出，强烈建议以发 **Issue** 的形式参与用户反馈，并希望关于本项目的各种交流都是**公开进行**的，因为这样才可以保证关键信息的一致性。
+对文档内容存在**不理解**之处、以及发现文档内容有所**缺失**或**错误**，可直接提出，强烈建议以发 **Issue** 的形式参与玩家反馈，并希望关于本项目的各种交流都是**公开进行**的，因为这样才可以保证关键信息的一致性。
 
 由于本项目属于文档型项目，故不设置 Issue 模板，同时允许中英文标题，但提交 Issue 请遵守以下原则：
 
