@@ -67,8 +67,8 @@ export default hopeTheme({
     },
     mdEnhance: {
       mermaid: true,
-	  align: true,
-	  card: true,
+	    align: true,
+	    card: true,
     },
 	sitemap: false,
 	seo: {

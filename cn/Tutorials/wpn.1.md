@@ -1,3 +1,7 @@
+---
+category: 
+- 教程
+---
 # wpn.1 武器
 ## 前言
 在此文档中，我们将为您呈现制作一个武器（主要面向热兵器）的大致过程
@@ -43,7 +47,7 @@ flowchart TD
 
 冷兵器不需要粒子效果，热兵器则需要枪口火花、烟雾等，可以选择直接套用RFTools自带的粒子
 
-上述两项资源需要您自行上网寻找或按要仿制的游戏武器自行寻找对应原版游戏美术资源（如解包、从视频录音、Unity AssetsStore的资源或手搓）
+上述两项资源需要您自行上网寻找或按要仿制的游戏武器自行寻找对应原版游戏美术资源（如解包、Unity AssetsStore的资源或手搓。音效可以从视频录音，常用）
 
 模型将在[下一章](#_1-1-建模)详细解释
 
@@ -63,7 +67,7 @@ flowchart TD
 
 {缺图}
 
-所有的物体能独立的都已独立并设置了父物体（以后你就懂力😋），原点正确，已应用缩放，物体mesh无问题
+所有的物体能独立的都已独立并设置了父物体（方便后期维护+Clone），原点正确，已应用缩放，物体mesh无问题
 
 这时您就可以在菜单处追加RFTools\Models\Character\Hands.blend内的所有内容
 
@@ -133,7 +137,7 @@ flowchart TD
 ::: tip
 投掷类武器在开火（投掷）动画这一个可能有点难，可以选择建一个空物体作为投掷点帮助K帧，然后再在Unity替换这个点
 :::
-这部分用时较长，开始的时候一个动画K几小时很正常
+这部分用时较长，开始的时候一个动画K几小时很正常，K得动作僵硬或不真实也十分正常，多模仿加练习就行
 
 武器动画风格多样，COD风和轻柔风二选一，网上（比如BF的武器演示或者RF的modder们的武器演示与K帧实况）以及[Steam工坊](https://steamcommunity.com/workshop/browse/?appid=636480&requiredtags[]=Weapons)优秀例子过多，恕不一一举例，请自行临摹（
 
@@ -175,9 +179,9 @@ K完帧了？是时候下一步了
 ## 1.4 音效制作
 这部分需要看自己
 
-需要按你自己制作的动画去剪辑音效（一般网上找到的可以直接用，但装填音效这个大坑要注意。单/多发装填武器则需要将装填音效分割成多个片段以对应各个装填动画）
+需要按你自己制作的动画去剪辑音效（一般网上找到的特别是从实录视频剪下来的可以直接用，但装填音效这个大坑要注意。单/多发装填武器则需要将装填音效分割成多个片段以对应各个装填动画）
 
-让音效对应动画
+注意让音效对应动画
 
 如果只是想练手可以选择直接套用RFTools自带音效用于测试
 
@@ -243,11 +247,13 @@ K完帧了？是时候下一步了
 
 为你的武器配置子弹
 
-在组件文档处选择一个合适的Projectile套用在子弹（弹体）模型上
+在本站的组件文档处找到一个合适的Projectile组件，在Unity添加在子弹（弹体）模型上
 
 然后预制件化
 
 或者可以选择直接套用RFTools自带的Projectile（建议复制一份保留原件）
+
+记得添加自发光材质，具体参考RFTools\Prefab\Projectiles内的Projectile预制件
 
 等会要用
 
@@ -279,7 +285,7 @@ K完帧了？是时候下一步了
 
 {缺图}
 
-在Muzzle物体下新建多个空物体作为枪口火花、烟雾的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示），可以从其他武器复制、冷兵器可以跳过）
+在Muzzle物体下新建多个空物体作为枪口火花、烟雾的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,主要为Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示）的参数，可以从其他武器复制、冷兵器可以跳过）
 
 在抛壳口的位置新建一个名为casingParticles的空物体作为抛壳口的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示），可以从其他武器复制、冷兵器可以跳过）,将这个空物体拖入Weapon组件的casingParticles
 
@@ -398,4 +404,4 @@ flowchart LR
 
 配置过程参考[WeaponContectMod的组件文档](/cn/Components/WeaponCotentMod.md)
 
-
+然后选中你的武器Prefab，在菜单栏上的 Ravenfied Tools 里 选择  “Test ...”或“Export ...”，然后即可测试或导出

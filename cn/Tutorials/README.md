@@ -1,3 +1,7 @@
+---
+category: 
+- 教程
+---
 # RFCreator Project
 
 ## 前言
@@ -13,7 +17,7 @@ Hi~（＾∀＾●）ﾉｼ
 另外欢迎回到这个项目的[旧Steam指南](https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158)给我们点赞或回馈点数！
 :::
 
-## 在启程之前...
+## 在启程之前...(必读)
 在启程之前，这是您需要的掌握一些技能，**您必须至少先看一遍教程才能确保您MODDING的顺利，RFCreator Project不是零基础教程**：
 
 ### 你必须掌握的技能
@@ -89,7 +93,7 @@ Hi~（＾∀＾●）ﾉｼ
 :::tip
 Lua它相比C#更友好且目前在RF开发Mod写脚本用得更多的还是Lua(Ravenscript)
 
-最重要的一点是，TMD从EA27开始，游戏开始限制外来C#脚本的导入**，RFTools在实际C#开发中缺少API支持，开发环境不友好，游戏导入机制极其*B，导致开发体验糟糕，除非你想使用[BepInEx](https://bepinex.dev)这类高级UnityMOD开发框架，否则不建议C#
+最重要的一点是，TMD从EA27开始，游戏开始限制外来C#脚本的导入，RFTools在实际C#开发中缺少API支持，开发环境不友好，游戏导入机制极其SB，导致开发体验糟糕，除非你想使用[BepInEx](https://bepinex.dev)这类高级UnityMOD开发框架，否则不建议C#
 
 但是，学习使用RS开发脚本是一项极其繁琐的行为（反复导出+加测试MOD），不如C#在Unity Editor里的所见即所得与快速修改，加之C#的逻辑与Lua一致，因此从这一方面来说如果你真的打算使用Lua来娴熟地开发脚本，那么你还是得学C#才能获得开发能力地最大化，等到你的C#在Unity实战运用得极为成熟了，再快速入门Lua
 :::
@@ -115,9 +119,11 @@ Lua它相比C#更友好且目前在RF开发Mod写脚本用得更多的还是Lua(
 >
 > map.2 自定义游戏模式（TriggerSystem与ScriptMission）
 >
-> otr.1 杂项（包括RFTools的一些功能、文件目录结构、常见问题等的集合）
+> otr.1 RFTools杂项（包括RFTools的一些功能、文件目录结构、常见问题等的集合）
 >
 > otr.2 皮肤
+>
+> ext.1 BepInEX插件
 >
 > rvs.1 Ravenscript（RS的入门）
 >
@@ -127,7 +133,7 @@ Lua它相比C#更友好且目前在RF开发Mod写脚本用得更多的还是Lua(
 >
 
 :::: details ＳＯＭＥ　ＴＨＩＮＧＳ
-> 我个人感觉做模组到了一定地步就是动画和脚本了，模型很多人都是“偷（DOWNLOADS）”的，但是如果你是一个有自己想法的人可以像@[青木](http://steamcommunity.com/profiles/76561198368231803)一样自己设计并制作。比如像我的模组大部分可以说是换皮，素材经常重复利用，不过说实话我的重复利用度已经很低了，[LETMS](https://steamcommunity.com/sharedfiles/filedetails/?id=2798038529)全系用的apfsds和heat模型总共也就俩，这几个武器的ui也是完全一致的，我是会给不同的炮弹不同的建模以及ui。在制作枪械模组的时候可以学习下骨骼和权重（用于弓弩或者机枪弹链），这些在皮肤和载具也很可能用到。制作载具基本就是拿原版换皮调调数据就完事，但是不管怎么样坐在剧的时候还是得自己弄精简的碰撞箱，这也需要点模型知识。皮肤是需要权重和绑骨。地图差不多就是找素材搭积木弄寻路，这个在之前这位佬的指南里应该有我就不说了。脚本需要编程知识，我不会，但是这边有几个网站
+> 我个人感觉做模组到了一定地步就是动画和脚本了，模型很多人都是“偷（DOWNLOADS）”的，但是如果你是一个有自己想法的人可以像@[青木](http://steamcommunity.com/profiles/76561198368231803)一样自己设计并制作。比如像我的模组大部分可以说是换皮，素材经常重复利用，不过说实话我的重复利用度已经很低了，[LETMS](https://steamcommunity.com/sharedfiles/filedetails/?id=2798038529)全系用的apfsds和heat模型总共也就俩，这几个武器的ui也是完全一致的，我是会给不同的炮弹不同的建模以及ui。在制作枪械模组的时候可以学习下骨骼和权重（用于弓弩或者机枪弹链），这些在皮肤和载具也很可能用到。制作载具基本就是拿原版换皮调调数据就完事，但是不管怎么样坐在剧的时候还是得自己弄精简的碰撞箱，这也需要点模型知识。皮肤是需要权重和绑骨。地图差不多就是找素材搭积木弄寻路，这个在之前这位佬（此项目所有者）的指南里应该有我就不说了。脚本需要编程知识，我不会，但是这边有几个网站
 可能能给你提供帮助
 >
 > [http://ravenfieldgame.com/ravenscript/getting-started.html](http://ravenfieldgame.com/ravenscript/getting-started.html) #your-first-bug 这是乌鸦的
@@ -141,11 +147,7 @@ Lua它相比C#更友好且目前在RF开发Mod写脚本用得更多的还是Lua(
 
 ## 社区服务支持
 
-**Ravenfield官方支持页面**：[链接](http://ravenfieldgame.com/modding.html)
-
-**Ravenscript与Unity文档**：[1](http://ravenfieldgame.com/ravenscript/)、[2](https://docs.unity3d.com/cn/2020.3/Manual/)
-
-**官方Discord（纯英文!）**：[Discord链接](http://discord.gg/ravenfield)
+一些有用的网站在顶栏上的“站外链接”里 ↑↑
 
 **非官方QQ频道号**：9pmc179t29
 

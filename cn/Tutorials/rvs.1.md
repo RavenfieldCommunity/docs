@@ -1,3 +1,7 @@
+---
+category: 
+- 教程
+---
 # rvs.1 Ravenscrpit
 ## -2.0 何为Ravenscrpit？
 Ravenscrpit是一个基于Lua的游戏语言（其实就是Lua），为了Ravenfield的模组化开发
