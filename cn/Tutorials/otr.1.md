@@ -91,7 +91,7 @@ RFTools
 │      ├─Effects #一些杂七杂八的像烟与子弹飞行声
 │      └─Reflection #子弹打击回声，勿动
 ├─Standalone #Steam相关，勿动
-├─Standard Assets #Unity Standard Assets资源包的东西，此处不作注解
+├─Standard Assets #Unity Standard Assets资源包的东西，有Shaders以及图像材质，此处不作注解
 │  ├─Editor
 │  │  └─ImageEffects
 │  └─Effects
@@ -132,17 +132,36 @@ RFTools
 ```
 
 ## 菜单栏功能
+```
 Ravenfield Tool
 ├─ Build Target #导出MOD对应目标系统类型（点击“Set ...”设置）
 ├─ Set Game Executeble #选择游戏文件目录（方便测试MOD）
 ├─ Map #地图相关
-│   ├─ Scan Pathfinding
-│   ├─ Export Open Scene as Map
-│   └─ Sanity Check Map
-├─ Content
-│  ├─ Sanity Check Content Mod
-│  └─ Export Open Scene as Map
-├─ Export Map or Content Mod
-├─ Test Map or Content Mod
-└─ Publish to Steam Workshop
+│   ├─ Scan Pathfinding #扫描地图的NAV-MESH（会唤醒游戏进程）
+│   ├─ Export Open Scene as Map #将打开的Unity场景作为Map导出
+│   └─ Sanity Check Map #检查Map是否可以导出（是否缺失必要物体）
+├─ Content #MOD
+│  ├─ Sanity Check Content Mod #检查选中的Mod导出向导Prefab是否可以导出（是否缺失必要物体）
+│  └─ Export Content Mod #导出选中的Mod导出向导Prefab
+├─ Export Map or Content Mod #导出选中的Map或Mod导出向导Prefab
+├─ Test Map or Content Mod #导出并运行游戏测试选中的Map或Mod导出向导Prefab
+└─ Publish to Steam Workshop #发布已导出的Mod或Map到Steam创意工坊
 ```
+
+## 常见问题
+### 打开Unity工程，提示进入安全模式
+提示[安全模式](https://docs.unity.cn/cn/2020.3/Manual/SafeMode.html)时，此时如果忽略错误并强制进入，大部分情况下RFTools的所有依赖组件都会无法运行
+
+按以下方式排查：
+1. 上一次打开工程时刚导入RFTools包
+
+尝试新建工程，再次导入RFTools包，检查控制台是否有报错
+
+如果有，则说明以下2个可能：
+> 1. RFTools损坏或有Bug，尝试到官网下载一个最新版使用
+>
+> 2. RFTools包与当前的Unity Editor版本不兼容，请确保使用的Unity Editor与Tools版本对应。详情请看本站的资源镜像
+
+2. 不是第一个情况
+
+请检查上一次打开工程时是否添加了外部C#脚本进入工程或修改了RFTools依赖组件，如果有，替换原版脚本或删除外来脚本

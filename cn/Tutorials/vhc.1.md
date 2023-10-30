@@ -68,7 +68,7 @@ flowchart TD
 
 ## 2.0 导入Unity
 
-导出的过程敬请参考首页的[提示](/cn/Tutorials/#模型、动画制作)
+导出的过程敬请参考教程首页的[提示](/cn/Tutorials/#模型、动画制作)
 
 打开Unity项目
 

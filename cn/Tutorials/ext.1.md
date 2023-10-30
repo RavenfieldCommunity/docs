@@ -28,6 +28,9 @@ category:
 
 官版英文文档
 
+:::tip
+因为RF使用的.Net Framework版本为4，因此对于电脑渣的玩家可以选择下载VS Express 2010 Visual C#（至少，但这个版本仅英文。建议2013）编辑器来代替VS Community，前者仅占磁盘空间大约300MB
+:::
 
 :::tip
 如果插件要引入外部Assets资源，记得先给assets构建AssetBundles
