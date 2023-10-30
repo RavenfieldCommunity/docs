@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-beta.67" />
+    <meta name="theme" content="VuePress Theme Hope" />
+    <meta property="og:url" content="https://ravenfieldcommunity.github.io/docs/cn/Tutorials/otr.1.html"><meta property="og:site_name" content="Ravenfield社区客制化文档"><meta property="og:title" content="otr.1 RFTools杂项"><meta property="og:type" content="article"><meta property="og:locale" content="zh-CN"><meta property="og:updated_time" content="2023-10-30T09:55:48.000Z"><meta property="article:modified_time" content="2023-10-30T09:55:48.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"otr.1 RFTools杂项","image":[""],"dateModified":"2023-10-30T09:55:48.000Z","author":[]}</script><meta name="robots" content="noindex"><link rel="icon" href="/favicon.ico"><link rel="manifest" href="/docs/manifest.webmanifest" crossorigin="use-credentials"><meta name="theme-color" content="#6d6d6d"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"><link rel="icon" href="/docs/favicon.ico"><title>otr.1 RFTools杂项 | Ravenfield社区客制化文档</title><meta name="description" content="Ravenfield社区客制化文档">
+    <style>
+      :root {
+        --bg-color: #fff;
+      }
+
+      html[data-theme="dark"] {
+        --bg-color: #1d1e1f;
+      }
+
+      html,
+      body {
+        background: var(--bg-color);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    </script>
+    <link rel="preload" href="/docs/assets/style-54a4c559.css" as="style"><link rel="stylesheet" href="/docs/assets/style-54a4c559.css">
+    <link rel="modulepreload" href="/docs/assets/app-6463cab3.js"><link rel="modulepreload" href="/docs/assets/otr.1.html-7d1988cc.js"><link rel="modulepreload" href="/docs/assets/otr.1.html-a1c16afa.js"><link rel="modulepreload" href="/docs/assets/plugin-vue_export-helper-c27b6911.js">
+  </head>
+  <body>
+    <div id="app"><!--[--><!--[--><!--[--><span tabindex="-1"></span><a href="#main-content" class="vp-skip-link sr-only">跳至主要內容</a><!--]--><!--[--><div class="theme-container has-toc"><!--[--><header id="navbar" class="vp-navbar"><div class="vp-navbar-start"><button type="button" class="vp-toggle-sidebar-button" title="Toggle Sidebar"><span class="icon"></span></button><!--[--><!----><!--]--><!--[--><a class="vp-link vp-brand vp-brand" href="/docs/cn/"><img class="vp-nav-logo" src="/docs/Logo.png" alt="Ravenfield社区客制化文档"><!----><span class="vp-site-name hide-in-pad">Ravenfield社区客制化文档</span></a><!--]--><!--[--><!----><!--]--></div><div class="vp-navbar-center"><!--[--><!----><!--]--><!--[--><nav class="vp-nav-links"><div class="nav-item hide-in-mobile"><a aria-label="首页" class="vp-link nav-link nav-link" href="/docs/cn/"><!---->首页<!----></a></div><div class="nav-item hide-in-mobile"><a aria-label="游戏入门" class="vp-link nav-link nav-link" href="/docs/cn/in-GAME/"><!---->游戏入门<!----></a></div><div class="nav-item hide-in-mobile"><a aria-label="组件文档" class="vp-link nav-link nav-link" href="/docs/cn/Components/"><!---->组件文档<!----></a></div><div class="nav-item hide-in-mobile"><a aria-label="教程" class="vp-link nav-link active nav-link active" href="/docs/cn/Tutorials/"><!---->教程<!----></a></div><div class="nav-item hide-in-mobile"><a aria-label="贡献指南" class="vp-link nav-link nav-link" href="/docs/cn/CONTRIBUTING.html"><!---->贡献指南<!----></a></div><div class="nav-item hide-in-mobile"><div class="dropdown-wrapper"><button type="button" class="dropdown-title" aria-label="站外链接"><span class="title"><!---->站外链接</span><span class="arrow"></span><ul class="nav-dropdown"><li class="dropdown-item"><a href="https://www.ravenfieldgame.com/" rel="noopener noreferrer" target="_blank" aria-label="游戏官网" class="nav-link"><!---->游戏官网<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!----></a></li><li class="dropdown-item"><a href="https://docs.unity3d.com/cn/2020.3/Manual/" rel="noopener noreferrer" target="_blank" aria-label="Unity文档" class="nav-link"><!---->Unity文档<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!----></a></li><li class="dropdown-item"><a href="https://discord.gg/ravenfield" rel="noopener noreferrer" target="_blank" aria-label="游戏官方Discord" class="nav-link"><!---->游戏官方Discord<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!----></a></li><li class="dropdown-item"><a href="http://ravenfieldgame.com/ravenscript/" rel="noopener noreferrer" target="_blank" aria-label="官方Ravenscrpit文档" class="nav-link"><!---->官方Ravenscrpit文档<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!----></a></li><li class="dropdown-item"><a href="https://steamcommunity.com/app/636480/workshop/" rel="noopener noreferrer" target="_blank" aria-label="游戏Steam创意工坊" class="nav-link"><!---->游戏Steam创意工坊<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!----></a></li><li class="dropdown-item"><a href="https://github.com/iliadsh/RavenM" rel="noopener noreferrer" target="_blank" aria-label="多人游戏支持（国际版）" class="nav-link"><!---->多人游戏支持（国际版）<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!----></a></li></ul></button></div></div></nav><!--]--><!--[--><!----><!--]--></div><div class="vp-navbar-end"><!--[--><!----><!--]--><!--[--><div class="nav-item"><div class="dropdown-wrapper i18n-dropdown"><button type="button" class="dropdown-title" aria-label="选择语言"><!--[--><svg xmlns="http://www.w3.org/2000/svg" class="icon i18n-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="i18n icon" style="width:1rem;height:1rem;vertical-align:middle;"><path d="M379.392 460.8 494.08 575.488l-42.496 102.4L307.2 532.48 138.24 701.44l-71.68-72.704L234.496 460.8l-45.056-45.056c-27.136-27.136-51.2-66.56-66.56-108.544h112.64c7.68 14.336 16.896 27.136 26.112 35.84l45.568 46.08 45.056-45.056C382.976 312.32 409.6 247.808 409.6 204.8H0V102.4h256V0h102.4v102.4h256v102.4H512c0 70.144-37.888 161.28-87.04 210.944L378.88 460.8zM576 870.4 512 1024H409.6l256-614.4H768l256 614.4H921.6l-64-153.6H576zM618.496 768h196.608L716.8 532.48 618.496 768z"></path></svg><!--]--><span class="arrow"></span><ul class="nav-dropdown"><li class="dropdown-item"><a aria-label="简体中文" class="vp-link nav-link active nav-link active" href="/docs/cn/Tutorials/otr.1.html"><!---->简体中文<!----></a></li><li class="dropdown-item"><a aria-label="English" class="vp-link nav-link nav-link" href="/docs/en/"><!---->English<!----></a></li></ul></button></div></div><div class="nav-item vp-repo"><a class="vp-repo-link" href="https://github.com/ravenfieldcommunity/docs" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="icon github-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="github icon" style="width:1.25rem;height:1.25rem;vertical-align:middle;"><path d="M511.957 21.333C241.024 21.333 21.333 240.981 21.333 512c0 216.832 140.544 400.725 335.574 465.664 24.49 4.395 32.256-10.07 32.256-23.083 0-11.69.256-44.245 0-85.205-136.448 29.61-164.736-64.64-164.736-64.64-22.315-56.704-54.4-71.765-54.4-71.765-44.587-30.464 3.285-29.824 3.285-29.824 49.195 3.413 75.179 50.517 75.179 50.517 43.776 75.008 114.816 53.333 142.762 40.79 4.523-31.66 17.152-53.377 31.19-65.537-108.971-12.458-223.488-54.485-223.488-242.602 0-53.547 19.114-97.323 50.517-131.67-5.035-12.33-21.93-62.293 4.779-129.834 0 0 41.258-13.184 134.912 50.346a469.803 469.803 0 0 1 122.88-16.554c41.642.213 83.626 5.632 122.88 16.554 93.653-63.488 134.784-50.346 134.784-50.346 26.752 67.541 9.898 117.504 4.864 129.834 31.402 34.347 50.474 78.123 50.474 131.67 0 188.586-114.73 230.016-224.042 242.09 17.578 15.232 33.578 44.672 33.578 90.454v135.85c0 13.142 7.936 27.606 32.854 22.87C862.25 912.597 1002.667 728.747 1002.667 512c0-271.019-219.648-490.667-490.71-490.667z"></path></svg></a></div><div class="nav-item hide-in-mobile"><button type="button" id="appearance-switch"><svg xmlns="http://www.w3.org/2000/svg" class="icon auto-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="auto icon" style="display:block;"><path d="M512 992C246.92 992 32 777.08 32 512S246.92 32 512 32s480 214.92 480 480-214.92 480-480 480zm0-840c-198.78 0-360 161.22-360 360 0 198.84 161.22 360 360 360s360-161.16 360-360c0-198.78-161.22-360-360-360zm0 660V212c165.72 0 300 134.34 300 300 0 165.72-134.28 300-300 300z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon dark-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="dark icon" style="display:none;"><path d="M524.8 938.667h-4.267a439.893 439.893 0 0 1-313.173-134.4 446.293 446.293 0 0 1-11.093-597.334A432.213 432.213 0 0 1 366.933 90.027a42.667 42.667 0 0 1 45.227 9.386 42.667 42.667 0 0 1 10.24 42.667 358.4 358.4 0 0 0 82.773 375.893 361.387 361.387 0 0 0 376.747 82.774 42.667 42.667 0 0 1 54.187 55.04 433.493 433.493 0 0 1-99.84 154.88 438.613 438.613 0 0 1-311.467 128z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon light-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="light icon" style="display:none;"><path d="M952 552h-80a40 40 0 0 1 0-80h80a40 40 0 0 1 0 80zM801.88 280.08a41 41 0 0 1-57.96-57.96l57.96-58a41.04 41.04 0 0 1 58 58l-58 57.96zM512 752a240 240 0 1 1 0-480 240 240 0 0 1 0 480zm0-560a40 40 0 0 1-40-40V72a40 40 0 0 1 80 0v80a40 40 0 0 1-40 40zm-289.88 88.08-58-57.96a41.04 41.04 0 0 1 58-58l57.96 58a41 41 0 0 1-57.96 57.96zM192 512a40 40 0 0 1-40 40H72a40 40 0 0 1 0-80h80a40 40 0 0 1 40 40zm30.12 231.92a41 41 0 0 1 57.96 57.96l-57.96 58a41.04 41.04 0 0 1-58-58l58-57.96zM512 832a40 40 0 0 1 40 40v80a40 40 0 0 1-80 0v-80a40 40 0 0 1 40-40zm289.88-88.08 58 57.96a41.04 41.04 0 0 1-58 58l-57.96-58a41 41 0 0 1 57.96-57.96z"></path></svg></button></div><!--[--><button type="button" class="search-pro-button" role="search" aria-label="搜索"><svg xmlns="http://www.w3.org/2000/svg" class="icon search-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="search icon"><path d="M192 480a256 256 0 1 1 512 0 256 256 0 0 1-512 0m631.776 362.496-143.2-143.168A318.464 318.464 0 0 0 768 480c0-176.736-143.264-320-320-320S128 303.264 128 480s143.264 320 320 320a318.016 318.016 0 0 0 184.16-58.592l146.336 146.368c12.512 12.48 32.768 12.48 45.28 0 12.48-12.512 12.48-32.768 0-45.28"></path></svg><div class="search-pro-placeholder">搜索</div><div class="search-pro-key-hints"><kbd class="search-pro-key">Ctrl</kbd><kbd class="search-pro-key">K</kbd></div></button><!--]--><!--]--><!--[--><!----><!--]--><button type="button" class="vp-toggle-navbar-button" aria-label="Toggle Navbar" aria-expanded="false" aria-controls="nav-screen"><span><span class="vp-top"></span><span class="vp-middle"></span><span class="vp-bottom"></span></span></button></div></header><!----><!--]--><!----><div class="toggle-sidebar-wrapper"><span class="arrow start"></span></div><aside id="sidebar" class="vp-sidebar"><!--[--><!----><!--]--><ul class="vp-sidebar-links"><li><!--[--><a aria-label="RFCreator Project" class="vp-link nav-link vp-sidebar-link vp-sidebar-page nav-link vp-sidebar-link vp-sidebar-page" href="/docs/cn/Tutorials/"><!---->RFCreator Project<!----></a><ul class="vp-sidebar-sub-headers"></ul><!--]--></li><li><section class="vp-sidebar-group"><p class="vp-sidebar-heading active"><!----><span class="vp-sidebar-title">正文</span><!----></p><ul class="vp-sidebar-links"><li><!--[--><a aria-label="wpn.1 武器" class="vp-link nav-link vp-sidebar-link vp-sidebar-page nav-link vp-sidebar-link vp-sidebar-page" href="/docs/cn/Tutorials/wpn.1.html"><!---->wpn.1 武器<!----></a><ul class="vp-sidebar-sub-headers"></ul><!--]--></li><li><!--[--><a aria-label="vhc.1 载具" class="vp-link nav-link vp-sidebar-link vp-sidebar-page nav-link vp-sidebar-link vp-sidebar-page" href="/docs/cn/Tutorials/vhc.1.html"><!---->vhc.1 载具<!----></a><ul class="vp-sidebar-sub-headers"></ul><!--]--></li><li><!--[--><a aria-label="otr.1 RFTools杂项" class="vp-link nav-link active vp-sidebar-link vp-sidebar-page active nav-link active vp-sidebar-link vp-sidebar-page active" href="/docs/cn/Tutorials/otr.1.html"><!---->otr.1 RFTools杂项<!----></a><ul class="vp-sidebar-sub-headers"><li class="vp-sidebar-sub-header"><a aria-label="前言" class="vp-link nav-link vp-sidebar-link vp-heading nav-link vp-sidebar-link vp-heading" href="/docs/cn/Tutorials/otr.1.html#前言"><!---->前言<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a aria-label="RFTools的目录结构" class="vp-link nav-link vp-sidebar-link vp-heading nav-link vp-sidebar-link vp-heading" href="/docs/cn/Tutorials/otr.1.html#rftools的目录结构"><!---->RFTools的目录结构<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a aria-label="菜单栏功能" class="vp-link nav-link vp-sidebar-link vp-heading nav-link vp-sidebar-link vp-heading" href="/docs/cn/Tutorials/otr.1.html#菜单栏功能"><!---->菜单栏功能<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a aria-label="常见问题" class="vp-link nav-link vp-sidebar-link vp-heading nav-link vp-sidebar-link vp-heading" href="/docs/cn/Tutorials/otr.1.html#常见问题"><!---->常见问题<!----></a><ul class="vp-sidebar-sub-headers"><li class="vp-sidebar-sub-header"><a aria-label="打开Unity工程，提示进入安全模式" class="vp-link nav-link vp-sidebar-link vp-heading nav-link vp-sidebar-link vp-heading" href="/docs/cn/Tutorials/otr.1.html#打开unity工程-提示进入安全模式"><!---->打开Unity工程，提示进入安全模式<!----></a><ul class="vp-sidebar-sub-headers"></ul></li></ul></li></ul><!--]--></li><li><!--[--><a aria-label="rvs.1 Ravenscrpit" class="vp-link nav-link vp-sidebar-link vp-sidebar-page nav-link vp-sidebar-link vp-sidebar-page" href="/docs/cn/Tutorials/rvs.1.html"><!---->rvs.1 Ravenscrpit<!----></a><ul class="vp-sidebar-sub-headers"></ul><!--]--></li><li><!--[--><a aria-label="rvs.2 Mutators" class="vp-link nav-link vp-sidebar-link vp-sidebar-page nav-link vp-sidebar-link vp-sidebar-page" href="/docs/cn/Tutorials/rvs.2.html"><!---->rvs.2 Mutators<!----></a><ul class="vp-sidebar-sub-headers"></ul><!--]--></li><li><!--[--><a aria-label="rvs.3 反盗版" class="vp-link nav-link vp-sidebar-link vp-sidebar-page nav-link vp-sidebar-link vp-sidebar-page" href="/docs/cn/Tutorials/rvs.3.html"><!---->rvs.3 反盗版<!----></a><ul class="vp-sidebar-sub-headers"></ul><!--]--></li><li><!--[--><a aria-label="ext.1 BepInEX插件" class="vp-link nav-link vp-sidebar-link vp-sidebar-page nav-link vp-sidebar-link vp-sidebar-page" href="/docs/cn/Tutorials/ext.1.html"><!---->ext.1 BepInEX插件<!----></a><ul class="vp-sidebar-sub-headers"></ul><!--]--></li></ul></section></li></ul><!--[--><!----><!--]--></aside><!--[--><main id="main-content" class="vp-page"><!--[--><!----><!----><nav class="vp-breadcrumb disable"></nav><div class="vp-page-title"><h1><!---->otr.1 RFTools杂项</h1><div class="page-info"><span class="page-category-info" aria-label="分类"><svg xmlns="http://www.w3.org/2000/svg" class="icon category-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="category icon"><path d="M148.41 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H148.41c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.311-40.31zM147.556 553.478H429.73c22.263 0 40.311 18.048 40.311 40.31v282.176c0 22.263-18.048 40.312-40.31 40.312H147.555c-22.263 0-40.311-18.049-40.311-40.312V593.79c0-22.263 18.048-40.311 40.31-40.311zM593.927 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H593.927c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.31-40.31zM730.22 920.502H623.926c-40.925 0-74.22-33.388-74.22-74.425V623.992c0-41.038 33.387-74.424 74.425-74.424h222.085c41.038 0 74.424 33.226 74.424 74.067v114.233c0 10.244-8.304 18.548-18.547 18.548s-18.548-8.304-18.548-18.548V623.635c0-20.388-16.746-36.974-37.33-36.974H624.13c-20.585 0-37.331 16.747-37.331 37.33v222.086c0 20.585 16.654 37.331 37.126 37.331H730.22c10.243 0 18.547 8.304 18.547 18.547 0 10.244-8.304 18.547-18.547 18.547z"></path></svg><!--[--><span class="page-category-item" role>教程</span><!--]--><meta property="articleSection" content="教程"></span><!----></div><hr></div><div class="toc-place-holder"><aside id="toc"><!--[--><!----><!--]--><div class="toc-header">此页内容<button type="button" class="print-button" title="打印"><svg xmlns="http://www.w3.org/2000/svg" class="icon print-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="print icon"><path d="M819.2 364.8h-44.8V128c0-17.067-14.933-32-32-32H281.6c-17.067 0-32 14.933-32 32v236.8h-44.8C145.067 364.8 96 413.867 96 473.6v192c0 59.733 49.067 108.8 108.8 108.8h44.8V896c0 17.067 14.933 32 32 32h460.8c17.067 0 32-14.933 32-32V774.4h44.8c59.733 0 108.8-49.067 108.8-108.8v-192c0-59.733-49.067-108.8-108.8-108.8zM313.6 160h396.8v204.8H313.6V160zm396.8 704H313.6V620.8h396.8V864zM864 665.6c0 25.6-19.2 44.8-44.8 44.8h-44.8V588.8c0-17.067-14.933-32-32-32H281.6c-17.067 0-32 14.933-32 32v121.6h-44.8c-25.6 0-44.8-19.2-44.8-44.8v-192c0-25.6 19.2-44.8 44.8-44.8h614.4c25.6 0 44.8 19.2 44.8 44.8v192z"></path></svg></button></div><div class="toc-wrapper"><ul class="toc-list"><!--[--><li class="toc-item"><a class="vp-link toc-link level2 toc-link level2" href="/docs/#前言">前言</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level2 toc-link level2" href="/docs/#rftools的目录结构">RFTools的目录结构</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level2 toc-link level2" href="/docs/#菜单栏功能">菜单栏功能</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level2 toc-link level2" href="/docs/#常见问题">常见问题</a></li><li><ul class="toc-list"><!--[--><li class="toc-item"><a class="vp-link toc-link level3 toc-link level3" href="/docs/#打开unity工程-提示进入安全模式">打开Unity工程，提示进入安全模式</a></li><!----><!--]--></ul></li><!--]--></ul><div class="toc-marker" style="top:-1.7rem;"></div></div><!--[--><!----><!--]--></aside></div><!----><div class="theme-hope-content"><h1 id="otr-1-rftools杂项" tabindex="-1"><a class="header-anchor" href="#otr-1-rftools杂项" aria-hidden="true">#</a> otr.1 RFTools杂项</h1><h2 id="前言" tabindex="-1"><a class="header-anchor" href="#前言" aria-hidden="true">#</a> 前言</h2><p>本文介绍有关RFTools的一些功能、文件目录结构，以及关于其的常见问题等</p><h2 id="rftools的目录结构" tabindex="-1"><a class="header-anchor" href="#rftools的目录结构" aria-hidden="true">#</a> RFTools的目录结构</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>RFTools
+├─Animations 一些Prefab使用的动画机
+│  ├─Character #角色
+│  ├─Vehicles #载具
+│  └─Weapons #武器
+├─Content #MOD导出向导的配置实例，即预置的预导出MOD实例（此文件夹内的Prefab无法Export或Test）
+├─Export #MOD导出位置
+├─Fonts #载具HUB使用的字体
+├─Materials #Prefab以及示例场景使用的材质
+│  ├─Actor #玩家皮肤材质
+│  ├─Effects #粒子与Prijectiles效果
+│  ├─Level #Map的Flag
+│  ├─Misc #一些杂七杂八的像标靶、地图避障箱
+│  ├─Nature #自然事物（水）
+│  ├─Physics #物理材质
+│  ├─Props #一些杂七杂八的物体材质如补给箱
+│  ├─Shaders #材质Shader，但没什么东西
+│  │  └─GrassOverride
+│  ├─Skybox #天空盒材质
+│  ├─Standard Assets #Unity Standard Assets包,但只有草
+│  ├─Textures #图像材质
+│  │  ├─Camo #迷彩
+│  │  ├─Effects #又是粒子和载具准星
+│  │  │  └─Materials 已Material的图像材质
+│  │  ├─Misc #杂七杂八的的像标靶材质的原图像
+│  │  ├─Nature #自然纹理（地形、植被）的原图像与法向贴图
+│  │  ├─Props #杂七杂八的如补给箱的原图像
+│  │  ├─UI #UI物体
+│  │  │  ├─Blips #载具Prefab的地图图标
+│  │  │  ├─Vehicles #载具Prefab的UI贴图
+│  │  │  └─Weapons #武器Prefab的图标
+│  │  └─Vehicles #载具Prefab所用材质原图像
+│  │      └─Occlusion #武直Prefab的迷彩
+│  ├─Tracers 武器红点瞄具材质
+│  ├─UI #载具UI材质
+│  ├─Vehicles #载具材质
+│  │  └─Updated Vehicles #某次RFTools更新增加的载具材质
+│  │      └─Attack Helicopter
+│  └─Weapons #武器材质
+├─Models #Prefab所用模型
+│  ├─Character #玩家角色
+│  │  └─Materials
+│  ├─Effects #Projectiles的Prefab所用模型
+│  │  └─Materials
+│  ├─Misc #杂七杂八的别理
+│  │  └─Materials
+│  ├─Props #杂七杂八的别理
+│  │  └─Level Elements
+│  │      └─Materials
+│  ├─Vehicles #载具Prefab所用模型
+│  │  ├─Materials
+│  │  └─UI #飞机Prefab的UI所用模型
+│  │      └─Materials
+│  └─Weapons #武器
+│      ├─Materials
+│      └─Misc #武器Prefab的子弹抛壳
+├─Plugins #Steam Workshop的依赖，勿动
+├─Prefabs #一些Prefab
+│  ├─Combat #载具的Projectiles的Prefab
+│  ├─Map Elements #地图的Prefab
+│  │  └─Must Haves #地图必须有的Prefab
+│  │      └─Pathfinding #寻路系统的Prefab
+│  ├─Projectiles #子弹Projectiles的Prefab
+│  ├─Vehicles #载具
+│  │  ├─Misc #杂七杂八的
+│  │  └─Old Versions #以前版本的旧载具
+│  └─Weapons #武器
+├─Resources #一些工具包组件的可视化预览所用模型
+│  └─Preview
+│      └─Materials
+├─Scenes #示例场景
+│  ├─ExampleScene #示例地图
+│  └─Weapons Lab #武器实验场景
+├─Scripts #RFTools依赖组件，勿动
+├─Shaders #一些Shaders
+├─Sounds #一些音效
+│  ├─Ambience #环境音（风声）
+│  ├─Vehicles #载具
+│  └─Weapons #武器
+│      ├─Effects #一些杂七杂八的像烟与子弹飞行声
+│      └─Reflection #子弹打击回声，勿动
+├─Standalone #Steam相关，勿动
+├─Standard Assets #Unity Standard Assets资源包的东西，有Shaders以及图像材质，此处不作注解
+│  ├─Editor
+│  │  └─ImageEffects
+│  └─Effects
+│      ├─GlassRefraction
+│      │  ├─Materials
+│      │  ├─Shaders
+│      │  └─Textures
+│      ├─ImageEffects
+│      │  ├─Scripts
+│      │  ├─Shaders
+│      │  │  ├─Contrast Stretch
+│      │  │  ├─_Antialiasing
+│      │  │  ├─_BloomAndFlares
+│      │  │  └─_DepthOfField
+│      │  └─Textures
+│      ├─LightCookies
+│      │  └─Textures
+│      ├─LightFlares
+│      │  ├─Flares
+│      │  ├─Materials
+│      │  └─Textures
+│      ├─Projectors
+│      │  ├─Materials
+│      │  ├─Prefabs
+│      │  ├─Shaders
+│      │  └─Textures
+│      ├─TessellationShaders
+│      │  ├─Materials
+│      │  ├─Models
+│      │  ├─Scenes
+│      │  ├─Shaders
+│      │  └─Textures
+│      └─ToonShading
+│          ├─Materials
+│          ├─Shaders
+│          └─Textures
+└─Tools #勿动
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="菜单栏功能" tabindex="-1"><a class="header-anchor" href="#菜单栏功能" aria-hidden="true">#</a> 菜单栏功能</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>Ravenfield Tool
+├─ Build Target #导出MOD对应目标系统类型（点击“Set ...”设置）
+├─ Set Game Executeble #选择游戏文件目录（方便测试MOD）
+├─ Map #地图相关
+│   ├─ Scan Pathfinding #扫描地图的NAV-MESH（会唤醒游戏进程）
+│   ├─ Export Open Scene as Map #将打开的Unity场景作为Map导出
+│   └─ Sanity Check Map #检查Map是否可以导出（是否缺失必要物体）
+├─ Content #MOD
+│  ├─ Sanity Check Content Mod #检查选中的Mod导出向导Prefab是否可以导出（是否缺失必要物体）
+│  └─ Export Content Mod #导出选中的Mod导出向导Prefab
+├─ Export Map or Content Mod #导出选中的Map或Mod导出向导Prefab
+├─ Test Map or Content Mod #导出并运行游戏测试选中的Map或Mod导出向导Prefab
+└─ Publish to Steam Workshop #发布已导出的Mod或Map到Steam创意工坊
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="常见问题" tabindex="-1"><a class="header-anchor" href="#常见问题" aria-hidden="true">#</a> 常见问题</h2><h3 id="打开unity工程-提示进入安全模式" tabindex="-1"><a class="header-anchor" href="#打开unity工程-提示进入安全模式" aria-hidden="true">#</a> 打开Unity工程，提示进入安全模式</h3><p>提示<a href="https://docs.unity.cn/cn/2020.3/Manual/SafeMode.html" target="_blank" rel="noopener noreferrer">安全模式<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span></a>时，此时如果忽略错误并强制进入，大部分情况下RFTools的所有依赖组件都会无法运行</p><p>按以下方式排查：</p><ol><li>上一次打开工程时刚导入RFTools包</li></ol><p>尝试新建工程，再次导入RFTools包，检查控制台是否有报错</p><p>如果有，则说明以下2个可能：</p><blockquote><ol><li><p>RFTools损坏或有Bug，尝试到官网下载一个最新版使用</p></li><li><p>RFTools包与当前的Unity Editor版本不兼容，请确保使用的Unity Editor与Tools版本对应。详情请看本站的资源镜像</p></li></ol></blockquote><ol start="2"><li>不是第一个情况</li></ol><p>请检查上一次打开工程时是否添加了外部C#脚本进入工程或修改了RFTools依赖组件，如果有，替换原版脚本或删除外来脚本</p></div><!----><footer class="page-meta"><div class="meta-item edit-link"><a href="https://github.com/ravenfieldcommunity/docs/edit/main/cn/Tutorials/otr.1.md" rel="noopener noreferrer" target="_blank" aria-label="在 GitHub 上编辑此页" class="nav-link label"><!--[--><svg xmlns="http://www.w3.org/2000/svg" class="icon edit-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="edit icon"><path d="M430.818 653.65a60.46 60.46 0 0 1-50.96-93.281l71.69-114.012 7.773-10.365L816.038 80.138A60.46 60.46 0 0 1 859.225 62a60.46 60.46 0 0 1 43.186 18.138l43.186 43.186a60.46 60.46 0 0 1 0 86.373L588.879 565.55l-8.637 8.637-117.466 68.234a60.46 60.46 0 0 1-31.958 11.229z"></path><path d="M728.802 962H252.891A190.883 190.883 0 0 1 62.008 771.98V296.934a190.883 190.883 0 0 1 190.883-192.61h267.754a60.46 60.46 0 0 1 0 120.92H252.891a69.962 69.962 0 0 0-69.098 69.099V771.98a69.962 69.962 0 0 0 69.098 69.098h475.911A69.962 69.962 0 0 0 797.9 771.98V503.363a60.46 60.46 0 1 1 120.922 0V771.98A190.883 190.883 0 0 1 728.802 962z"></path></svg><!--]-->在 GitHub 上编辑此页<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!----></a></div><div class="meta-item git-info"><div class="update-time"><span class="label">上次编辑于: </span><!----></div><!----></div></footer><nav class="vp-page-nav"><a aria-label="vhc.1 载具" class="vp-link nav-link prev nav-link prev" href="/docs/cn/Tutorials/vhc.1.html"><div class="hint"><span class="arrow start"></span>上一页</div><div class="link"><!---->vhc.1 载具</div></a><a aria-label="rvs.1 Ravenscrpit" class="vp-link nav-link next nav-link next" href="/docs/cn/Tutorials/rvs.1.html"><div class="hint">下一页<span class="arrow end"></span></div><div class="link">rvs.1 Ravenscrpit<!----></div></a></nav><div id="comment" class="giscus-wrapper input-top" style="display:block;"><div class="loading-icon-wrapper" style="display:flex;align-items:center;justify-content:center;height:96px"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" preserveAspectRatio="xMidYMid" viewBox="25 25 50 50"><animateTransform attributeName="transform" type="rotate" dur="2s" keyTimes="0;1" repeatCount="indefinite" values="0;360"></animateTransform><circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><animate attributeName="stroke-dasharray" dur="1.5s" keyTimes="0;0.5;1" repeatCount="indefinite" values="1,200;90,200;1,200"></animate><animate attributeName="stroke-dashoffset" dur="1.5s" keyTimes="0;0.5;1" repeatCount="indefinite" values="0;-35px;-125px"></animate></circle></svg></div></div><!----><!--]--></main><!--]--><footer class="vp-footer-wrapper"><div class="vp-footer"><p>基于CC-BY-NC-4.0许可 | 版权所有 © 2023-PRESENT RavenfieldCommunity</p><p>使用Google Analytics匿名分析网站数据</p></div><!----></footer></div><!--]--><!--]--><!----><!----><!----><!--]--></div>
+    <script type="module" src="/docs/assets/app-6463cab3.js" defer></script>
+  </body>
+</html>
