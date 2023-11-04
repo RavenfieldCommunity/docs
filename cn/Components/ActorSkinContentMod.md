@@ -12,7 +12,7 @@ category:
 
 将其套用在一个空物体预制件
 
-配置各个Skin时先在Sizes设置本次导出的Skin数量
+配置各个Skin时先在`Sizes`设置本次导出的Skin数量
 
 ## 注释
 

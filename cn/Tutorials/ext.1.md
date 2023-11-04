@@ -29,7 +29,9 @@ category:
 官版英文文档
 
 :::tip
-因为RF使用的.Net Framework版本为4，因此对于电脑渣的玩家可以选择下载VS Express 2010 Visual C#（至少，但这个版本仅英文。建议2013）编辑器来代替VS Community，前者仅占磁盘空间大约300MB
+因为RF使用的.Net Framework版本为4，因此对于电脑渣的玩家可以选择下载[VS Express 2010 Visual C#](https://visualstudio.microsoft.com/zh-hans/dev-essentials/)（至少，但这个版本仅英文。建议VSE2013起步）编辑器来代替VS Community，前者仅占磁盘空间大约小于300MB
+
+不建议使用VS Code，基于JavaScript开发的它对.Net Solution的开发极其不友好，甚至不如VS Express 2010这个13年前的IDE
 :::
 
 :::tip

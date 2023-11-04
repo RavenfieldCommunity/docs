@@ -18,4 +18,4 @@ category:
 | armDistance  | float |  |  
 | autoExplodeDistance  | float |  |  
 | allowAllTargets  | bool |  |  
-| allowedTargetTypes | List<Actor.TargetType> |  |  
+| allowedTargetTypes | Actor.TargetType[] |  |  

@@ -77,7 +77,7 @@ Hi~（＾∀＾●）ﾉｼ
 #### C#、Lua(Ravenscript基于此)
 
 ::: details 可以代表这项技能的软件
-[VS Code](https://code.visualstudio.com/)、[JetBrains' apps](www.jetbrains.com)（Visual studio还是别了）
+[VS Code](https://code.visualstudio.com/)、[JetBrains' apps](www.jetbrains.com)、[Visual Studio](https://visualstudio.microsoft.com/zh-hans/vs/community/)
 ::: 
 
 ::: details 描述
@@ -87,7 +87,7 @@ Hi~（＾∀＾●）ﾉｼ
 ::: details 学习路线（仅参考）
 初阶（速通级，需要一定编程基础） [C#](https://www.bilibili.com/video/BV1sy4y1u7cw)、[Lua](https://www.bilibili.com/video/BV1vf4y1L7Rb)
 
-中高阶 [Unity文档(毕竟万物基于Unity，除了编程语言不同，开发逻辑完全一致)](https://docs.unity.cn/cn/2020.3/Manual/) [菜鸟教程](https://www.runoob.com/)
+中高阶 [Unity文档(毕竟万物基于Unity，除了编程语言不同，开发逻辑完全一致)](https://docs.unity.cn/cn/2020.3/Manual/) [菜鸟教程](https://www.runoob.com/)、[Microsoft Learn](https://learn.microsoft.com/zh-cn/dotnet/csharp/)
 :::
         
 :::tip
