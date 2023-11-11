@@ -18,7 +18,12 @@ export const cnSidebar = sidebar({
 	    "/cn/Tutorials/rvs.1",
       "/cn/Tutorials/rvs.2",
 	    "/cn/Tutorials/rvs.3",
-      "/cn/Tutorials/ext.1"
+	  {
+        text: "拓展教程",
+        children: [
+          "/cn/Tutorials/ext.1",
+        ],
+      }
     ],
   }]
 });

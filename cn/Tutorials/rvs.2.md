@@ -135,3 +135,11 @@ end
 ## 3.0 测试与导出
 
 参考[MutatorCotentMod](/cn/Components/MutatorCotentMod.md)
+
+## 4.0 拓展参考
+
+这些是一些modder在github上公开的mutators参考，你可以自行研究：
+
+- [veroiuxl/RavenfieldMutatorMods](https://github.com/veroiuxl/RavenfieldMutatorMods)
+
+- [RadioactiveJelly的Github主页](https://github.com/RadioactiveJelly?tab=repositories)

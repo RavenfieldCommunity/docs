@@ -20,6 +20,7 @@ Hi~（＾∀＾●）ﾉｼ
 ## 在启程之前...(必读)
 在启程之前，这是您需要的掌握一些技能，**您必须至少先看一遍教程才能确保您MODDING的顺利，RFCreator Project不是零基础教程**：
 
+你可以在[资源镜像](/cn/RESOURCE.md)中找到下载链接
 ### 你必须掌握的技能
 #### Unity开发
 ::: details 可以代表这项技能的软件
@@ -40,7 +41,7 @@ Hi~（＾∀＾●）ﾉｼ
 #### 模型、动画制作
 
 ::: details 可以代表这项技能的软件
-[Blender](https://mirrors.aliyun.com/blender/release/)（如果你想在这个游戏做MOD就必须用Blender😡）
+[Blender](https://www.blendercn.org/)（如果你想在这个游戏做MOD就必须用Blender😡）
 :::
 
 ::: details 描述
@@ -105,6 +106,8 @@ Lua它相比C#更友好且目前在RF开发Mod写脚本用得更多的还是Lua(
 <= 正文在侧边栏
 
 在开始前，你必须安装Unity并在你新建得Unity项目中导入RFTools（开发工具包，如果你使用的是旧版本的RavenfieldToolPack就直接解压并使用Unity打开此项目文件夹）
+
+**注意Unity Editor的版本是否兼容**
 
 这两项的下载链接你可以在本站的[资源镜像](/cn/RESOURCE.md)内找到
 

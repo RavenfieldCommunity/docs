@@ -47,7 +47,7 @@ flowchart TD
 
 冷兵器不需要粒子效果，热兵器则需要枪口火花、烟雾等，可以选择直接套用RFTools自带的粒子
 
-上述两项资源需要您自行上网寻找或按要仿制的游戏武器自行寻找对应原版游戏美术资源（如解包、Unity AssetsStore的资源或手搓。音效可以从视频录音，常用）
+上述两项资源需要您自行上网寻找或按要仿制的游戏武器自行寻找对应原版游戏美术资源（如解包、Unity AssetsStore的资源或手搓。音效可以从B站相关视频录音，常用）
 
 模型将在[下一章](#_1-1-建模)详细解释
 
@@ -61,7 +61,7 @@ flowchart TD
 
 如果只是想练手，可以直接使用RFTools\Models\Weapons内的模型
 
-如果想自己制作而建模有些许不行，可以在[Sketchfab](https://www.sketchfab.com/)、[模之屋](https://www.aplaybox.com/)这类网站寻找模型或按要仿制的游戏武器自行寻找对应原版游戏美术资源
+如果想自己制作而建模有些许不行，可以在[Sketchfab](https://www.sketchfab.com/)、[模之屋](https://www.aplaybox.com/)这类网站寻找模型或按要仿制的游戏武器自行寻找对应原版游戏美术资源（新手建议）
 
 当我们制作完模型后，它应该看着应该是这样的：
 
@@ -139,7 +139,7 @@ flowchart TD
 :::
 这部分用时较长，开始的时候一个动画K几小时很正常，K得动作僵硬或不真实也十分正常，多模仿加练习就行
 
-武器动画风格多样，COD风和轻柔风二选一，网上（比如BF的武器演示或者RF的modder们的武器演示与K帧实况）以及[Steam工坊](https://steamcommunity.com/workshop/browse/?appid=636480&requiredtags[]=Weapons)优秀例子过多，恕不一一举例，请自行临摹（
+武器动画风格多样，COD风和轻柔风二选一，网上（比如Battlefield的武器演示或者RF的modder们在B站的武器演示与K帧实况）以及[Steam工坊](https://steamcommunity.com/workshop/browse/?appid=636480&requiredtags[]=Weapons)。优秀例子过多，恕不一一举例，请自行临摹（
 
 另外，请确保手部骨骼始终保持贴合手的模型，像左图而不是右图，否则Unity内可能会出现动画问题：
 

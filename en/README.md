@@ -15,7 +15,7 @@ head:
 
 </p>
 
-![GitHub issues](https://img.shields.io/github/issues/RavenfieldCommunity/docs.svg?style=flat-square&) ![GitHub stars](https://img.shields.io/github/stars/RavenfieldCommunity/docs.svg?style=flat-square&) ![Github docs deploy](https://img.shields.io/github/actions/workflow/status/RavenfieldCommunity/docs/deploy-docs.yml?style=flat-square&)
+![GitHub issues](https://img.shields.io/github/issues/RavenfieldCommunity/docs.svg?style=flat-square&) ![GitHub last commit](https://img.shields.io/github/last-commit/RavenfieldCommunity/docs.svg?style=flat-square&) ![Github docs deploy](https://img.shields.io/github/actions/workflow/status/RavenfieldCommunity/docs/deploy-docs.yml?style=flat-square&)
 
 
 [![License](https://img.shields.io/badge/LICENSED%20UNDER-CC%20BY--NC%204.0-lightblue.svg?style=for-the-badge&)](https://github.com/RavenfieldCommunity/docs/blob/main/LICENSE) [![Getting to know Ravenfield on Steam](https://img.shields.io/badge/steam-Getting%20to%20know%20Ravenfield-blue.svg?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/636480/)
