@@ -10,7 +10,7 @@ Activates the specified object when the specified weapon item is in the targetin
 
 ## Usage
 
-Feel free to add to the vehicle pbject
+Add to any part of the vehicle object
 
 ## Comment
 

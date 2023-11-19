@@ -9,7 +9,7 @@ Activates the specified object when the carrier on which this component is mount
 
 ## Usage
 
-Feel free to add to the vehicle pbject
+Add to any part of the vehicle object
 
 ## Comment
 

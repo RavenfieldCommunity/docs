@@ -12,7 +12,7 @@ Useful when pressing a weapon to switch the HUB sights and such.
 
 ## Usage
 
-Feel free to add to the vehicle pbject
+Add to any part of the vehicle object
 
 ## Comment
 

@@ -7,7 +7,7 @@ category:
 ::: warning
 This component reference is still at a very early stage, and since a significant portion of the component was written only by examining the source code, it may deviate from reality, so please feel free to file a bug in the comments section of the website or in the [original link to the Steam guide for this project](https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158) comment section to raise this error!
 
-Also note the "[Derived Classes](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance)" (like "cloning" the parent script and adding some new content concept in C# development, the parent script's variable annotations (may need to be transposed), comments for most cases for the child script is common, exceptions will be specified!
+Also note the "[Derived Classes](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance)" (like "cloning" the parent script and adding some new content) concept in C# development, the parent script's variable annotations (may need to be transposed), comments for most cases for the child script is common, exceptions will be specified!
 
 This document is heavily used and omits references to the parents of the subclasses, but at the beginning of the document where the link to the parent document is indicated.
 :::
