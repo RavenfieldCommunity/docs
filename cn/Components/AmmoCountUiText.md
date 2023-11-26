@@ -6,12 +6,16 @@ category:
 # AmmoCountUiText
 ## 描述
 
+用于监视在游戏中实时监控武器的当前弹药量或备用弹药并应用到Text物体（纯数字，会覆盖原文本）
+
 ## 用法
+
+挂载在UI物体，于Text组件并列
 
 ## 注释
 
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| spareAmmo  | bool |  |  
-| weapon | Weapon |  |  
+| spareAmmo  | bool | 是显示备用弹药（否则为当前弹药量） |  
+| weapon | Weapon | 监视的武器 |  

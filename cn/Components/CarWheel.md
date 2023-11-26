@@ -28,4 +28,4 @@ category:
 | rotate | bool | 是否可转向 |
 | invertRotation | bool | 反向转向 |
 | turnAngle | float | 转向角度 |
-| speedSampleTransform | Transform |  |
+| speedSampleTransform | Transform | 速度采样器（控制车轮行为，默认为载具本身） |

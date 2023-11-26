@@ -10,9 +10,22 @@ category:
 
 ## 用法
 
+先给模型绑骨
+
 将其套用在一个空物体预制件
 
-配置各个Skin时先在`Sizes`设置本次导出的Skin数量
+配置各个Skin时先在`Sizes`设置本次导出的Skin数量再配置各个皮肤
+
+然后再各个MeshSkin槽位配置对应皮肤模型
+
+最后选中物体，在菜单栏导出
+
+MeshSkin槽位变量：
+| 名称 | 类型 | 描述 |
+| ----------- | ----------- | ----------- |
+| mesh | Mesh | 此MeshSkin的Mesh（模型） |  
+| materials | Material[] | 此MeshSkin模型所用材质 |  
+| teamMaterial  | int |  |   |  
 
 ## 注释
 
@@ -20,13 +33,6 @@ category:
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | name  | string | 皮肤名 |  
-| characterSkin | class.MeshSkin |  |  
-| armSkin | class.MeshSkin |  |  
-| kickLegSkin | class.MeshSkin |  |  
-| mesh | Mesh |  |  
-
-| materials | Material[] |  |  
-| teamMaterial  | int |  |  
-| RigVersion | enum |  |  
-| RigVersion RECOMMENDED_VERSION  | const |  |  
-| version  | RigVersion |  |  
+| characterSkin | class.MeshSkin | 第三人称的MeshSkin |  
+| armSkin | class.MeshSkin | 第一人称手臂的MeshSkin |  
+| kickLegSkin | class.MeshSkin | 第一人称腿的模型的MeshSkin |  

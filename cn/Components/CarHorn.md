@@ -22,4 +22,4 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| ShouldHaveProjectilePrefab | bool | 是否有发射物 |
+| ShouldHaveProjectilePrefab | bool | 是否有发射物（已弃用） |

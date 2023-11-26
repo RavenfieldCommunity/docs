@@ -43,5 +43,5 @@ category:
 | airDrag | float | 空气阻力 |
 | airAngularDrag | float | 空气角阻力（作用于角速度？） |
 | downforcePerSpeed | float | 按速度变化（是velocity，有方向性，不是speed）的向下力 |
-| suspensionShiftSounds | [SoundBank](./SoundBank.md) | 悬挂音效 |
-| brakeSounds | [SoundBank](./SoundBank.md) | 刹车音效 |
+| suspensionShiftSounds | [SoundBank](./SoundBank.md) | 悬挂音效（随机播放`clips`的一个AudioClip） |
+| brakeSounds | [SoundBank](./SoundBank.md) | 刹车音效（随机播放`clips`的一个AudioClip） |

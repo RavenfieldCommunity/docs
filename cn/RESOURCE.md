@@ -16,6 +16,8 @@ EA26以上适用，版本2020.3.48f1
 
 如无问题可直接双击文件导入增加的组件
 
+记得不要把自己以前用过的Unity场景覆盖哈
+
 详细更新信息请参阅官方Discord频道
 
 [[**官方链接**（非Goolge网盘）]](https://www.ravenfieldgame.com/rftools/RFTools.unitypackage) [[蓝奏云社区分流(提取码:rfcn)]](https://wwyl.lanzoum.com/b052nto8h)

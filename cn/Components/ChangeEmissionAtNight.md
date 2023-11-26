@@ -18,5 +18,5 @@ category:
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | uiTargets | Graphic[] | 要变化的UI物体 |  
-| targets | MaterialTarget[] | UI物体所用材质 |  
-| multiplyEmissionColor  | Color | 颜色 |  
+| targets | MaterialTarget[] | 要变化的材质 |  
+| multiplyEmissionColor  | Color | 变化后叠加颜色 |  

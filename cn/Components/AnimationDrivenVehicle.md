@@ -16,7 +16,9 @@ category:
 ## 注释
 建议将[InheritDeltaRotation](./InheritDeltaRotation.md)、[LookAtCamera](./LookAtCamera.md)与本组件配合使用
 
-注意Animator组件applyRootMotion选项，按需求启用，作用参考[Unity官方文档](https://docs.unity.cn/cn/2020.3/Manual/class-Animator.html)
+注意Animator组件`applyRootMotion`选项，按需求启用，作用参考[Unity官方文档](https://docs.unity.cn/cn/2020.3/Manual/class-Animator.html)
+
+注意Animator组件于AnimatorController的运用
 
 当CharacterController的碰撞箱与地面碰撞时，载具才会移动，因此请按情况调整CharacterController的碰撞箱体积
 
@@ -36,6 +38,6 @@ category:
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | groundCheckers | GroundChecker[] | 地面检测 |
-| inputSmoothness | int | 虚拟轴输入平滑度 |
+| inputSmoothness | int | 虚拟轴输入平滑度（值越大，载具实际操作灵敏度越低） |
 | checker | Transform |  |
-| rayLength | float  | 光线长度（应该是作用于groundChecker，但疑似废弃） |
+| rayLength | float  | 光线长度（应该是作用于`groundChecker`，但疑似废弃） |

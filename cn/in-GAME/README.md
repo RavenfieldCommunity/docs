@@ -23,6 +23,10 @@ SteelRaven7 （大乌鸦），瑞典人，单人独立开发Ravenfield
 
 曾参加7DFPS、7HFPS、No More Sweden 2018 Game Jam等游戏开发竞赛
 
+你可以在游戏的官方Discord频道找到他（Steam不常用），他一般在北京时间20时前后不定期上线
+
+你可以在这个视频一览乌鸦的风采：[Bilibili](https://www.bilibili.com/video/BV1d7411y7Cc)
+
 他的网站是：[SteelRaven7](http://steelraven7.com/)
 
 **关于本游戏**
