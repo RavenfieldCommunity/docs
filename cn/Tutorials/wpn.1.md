@@ -164,9 +164,9 @@ K完帧了？是时候下一步了
 
 转到属性，在世界属性中将背景颜色改为纯黑（表（曲）面-颜色，背景节点）
 
-在渲染属性中勾选Freestyle，将线条宽度改为2.5px(默认分辨率下)
+在渲染属性中勾选`Freestyle`，将线条宽度改为2.5px(默认分辨率下)
 
-在视图层属性中勾选Freestyle，在其子选项卡“Freestyle线条样式”中选择颜色，将基础色改为纯白
+在视图层属性中勾选`Freestyle`，在其子选项卡“`Freestyle线条样式`”中选择颜色，将基础色改为纯白
 
 最后渲染图像即可
 
@@ -206,7 +206,7 @@ K完帧了？是时候下一步了
 
 {缺图}
 
-请始终确保切换(Unholster或Entry)动画处于Cilps的最顶层，这将有助于在Unity场景中设置枪口位置！
+请始终确保待机(Hip，此时武器枪口正对前方)动画处于`Cilps`的最顶层，这将有助于在Unity场景中设置枪口位置！
 
 ::: details 如果您的武器是单/多发装填武器...（配置动画事件）
 此处配置动画事件用于单/多发装填武器能在对应的动画时间点播放正确的音效
@@ -215,15 +215,15 @@ K完帧了？是时候下一步了
 
 {缺图}
 
-这一步需要先行在场景配置[Weapon](/cn/Components/Weapon.md)组件（启用advenceReload）以及[SoundBank](/cn/Components/SoundBank.md)组件,若未配置请先调至[下一章](#_2-4-在场景配置武器)然后再配置动画事件
+这一步需要先行在场景配置[Weapon](/cn/Components/Weapon.md)组件（启用`advenceReload`）以及[SoundBank](/cn/Components/SoundBank.md)组件,若未配置请先调至[下一章](#_2-4-在场景配置武器)然后再配置动画事件
 
-选中要播放自定义的Cilp，转到下方的Events选项卡，将时间轴拖至对应时间点后单击旁边的Add Event，参考[SoundBank的组件文档](/cn/Components/SoundBank.md)配置这个Event的Function为PlaySoundBank以及Int为对应的音效index
+选中要播放自定义的Cilp，转到下方的`Events`选项卡，将时间轴拖至对应时间点后单击旁边的`Add Event`，参考[SoundBank的组件文档](/cn/Components/SoundBank.md)配置这个`Event`的`Function`为PlaySoundBank以及`Int`为对应的音效index
 
 重复以上操作
 
-**最后注意在结束装弹的对应时间点添加一个Function为ReloadDone的Event**
+**最后注意在结束装弹的对应时间点添加一个`Function`为`ReloadDone`的Event**
 
-**在一个装弹循环结束的对应时间点添加一个Function为MotionDone的Event**
+**在一个装弹循环结束的对应时间点添加一个`Function`为`MotionDone`的Event**
 
 否则游戏时会卡动画
 :::
@@ -231,13 +231,13 @@ K完帧了？是时候下一步了
 ::: details 如果您的武器是投掷类武器...（配置动画事件）
 同上
 
-**在投弹的的对应时间点添加一个Function为SpawnThrow的Event**
+**在投弹的的对应时间点添加一个`Function`为SpawnThrow的Event**
 :::
 
 ## 2.2 预配置武器图标
 此处配置武器图标的部分属性，否则在[下一章](#_2-4-在场景配置武器)时可能会出现奇怪的Bug（？
 
-在Unity的Project窗口选中武器图标文件，在右侧的Inspector选择将Texture Type改为Sprite(2D and UI)，勾选Generate Mip Maps，Filter Mode改为Trilinear：
+在Unity的Project窗口选中武器图标文件，在右侧的Inspector选择将`Texture Type`改为Sprite(2D and UI)，勾选`Generate Mip Maps`，`Filter Mode`改为Trilinear：
 
 {缺图}
 
@@ -281,43 +281,43 @@ K完帧了？是时候下一步了
 
 {缺图}
 
-然后将这个空物体拖入Weapon组件(或其他)的muzzles：
+然后将这个空物体拖入Weapon组件(或其他)的`muzzles`：
 
 {缺图}
 
 在Muzzle物体下新建多个空物体作为枪口火花、烟雾的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,主要为Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示）的参数，可以从其他武器复制、冷兵器可以跳过）
 
-在抛壳口的位置新建一个名为casingParticles的空物体作为抛壳口的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示），可以从其他武器复制、冷兵器可以跳过）,将这个空物体拖入Weapon组件的casingParticles
+在抛壳口的位置新建一个名为casingParticles的空物体作为抛壳口的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示），可以从其他武器复制、冷兵器可以跳过）,将这个空物体拖入Weapon组件的`casingParticles`
 
 在projectilePrefab处配置子弹的的Prefab（不是一般意义,参考RFTools\Prefabs\Projectiles，可直接RFTools复制一份使用，此物体必须包含[Projectile](/cn/Components/Projectile.md)或其派生组件，当子弹为重火力兵器时建议添加在子弹上添加Audio Source）
 
-然后检查并配置组件的displayName、thirdPersonTransform、reloadAudio（仅热兵器）、uiSprite、arms、ammo（仅热兵器，否则设置为-1）、auto（仅热兵器）、spareAmmo（仅热兵器，否则设置为-1）、resupplyNumber（仅热兵器，否则设置为-1）、reloadTime、aimFov、pose、advancedReload、effInfantry、effInfantryGroup、effUnarmored、effArmored、effAir、effAirFastMover,其他选项的看需求配置（**参阅[组件文档](/cn/Components/README.md)**）
+然后检查并配置组件的`displayName`、`thirdPersonTransform`、`reloadAudio`（仅热兵器）、`uiSprite`、`arms`、`ammo`（仅热兵器，否则设置为-1）、`auto`（仅热兵器）、`spareAmmo`（仅热兵器，否则设置为-1）、`resupplyNumber`（仅热兵器，否则设置为-1）、`reloadTime`、`aimFov`、`pose`、`advancedReload`、`effInfantry`、`effInfantryGroup`、`effUnarmored`、`effArmored`、`effAir`、`effAirFastMover`,其他选项的看需求配置（**参阅[组件文档](/cn/Components/README.md)**）
 
-kickback、randomKick、、spread、followupSpreadGain、followupSpreadStayTime、followupSpreadDissipateTime、snapMagnitude、snapDuration、snapFrequency等武器手感（仅热兵器，否则以上参数请清零）相关的参数需要慢慢调
+`kickback`、`randomKick`、`spread`、`followupSpreadGain`、`followupSpreadStayTime`、`followupSpreadDissipateTime`、`snapMagnitude`、`snapDuration`、`snapFrequency`等武器手感（仅热兵器，否则以上参数请清零）相关的参数需要慢慢调
 
 ## 2.5 瞄具设置（仅枪械）
 瞄具有四种，分别为：机械瞄具、光学瞄具、全息瞄具、红点瞄具
 
 ### 机械瞄具
 
-最简单的瞄具，在Blender K好瞄准动画，直接跳到[下一章](#_2-6-制作动画机)即可，可以调Weapon的aimFov
+最简单的瞄具，在Blender K好瞄准动画，直接跳到[下一章](#_2-6-制作动画机)即可，可以调Weapon的`aimFov`
 
 ### 光学瞄具
 
 光学瞄具有两种设置镜头的方法：
 
-一是直接像官方的Sinper一样直接在Blender套一个**贴图物体**在镜筒，到Unity就直接套材质和改aimFov
+一是直接像官方的Sinper一样直接在Blender套一个**贴图物体**在镜筒，到Unity就直接套材质和改`aimFov`
 
 二是**双渲染**：在Bledner放个薄的物体（类似标准平面、圆柱）当镜片，
 在Unity新建一个Render Texture材质，500x500px大概够用了：
 
 {缺图}
 
-新建普通材质，将类型改为Unlit\Texture，Base选择刚才创建的Render Texture：
+新建普通材质，将类型改为Unlit\Texture，`Base`选择刚才创建的Render Texture：
 
 {缺图}
 
-场景内新建一个摄像机在武器下（不要放在武器模型的层级下）,检查器内的Target Texture就选刚才创建的Render Texture：：
+场景内新建一个摄像机在武器下（不要放在武器模型的层级下）,检查器内的`Target Texture`就选刚才创建的Render Texture：：
 
 {缺图}
 
@@ -340,21 +340,21 @@ kickback、randomKick、、spread、followupSpreadGain、followupSpreadStayTime�
 
 红点贴图可以在Holo Sight的材质选项改
 
-镜片颜色可以在HUD Glass的材质选项中的Tint Color改
+镜片颜色可以在HUD Glass的材质选项中的`Tint Color`改
 
 贴图太大可以把带Holo Sight材质的物体的Y方向拖远一点
 
 ### 红点瞄具
-同样简单，在武器下新建一个空物体，添加组件Line Render，取消勾选组件的Use World Space
+同样简单，在武器下新建一个空物体，添加组件Line Render，取消勾选组件的`Use World Space`
 
-将Positions的Sizes设为2，Element0不动，调整Element1的Z方向长度即可，颜色可以在Color改，Width可以改线条宽度，Material处可以改射线材质（RFTools\Materials\Tracers）：
+将`Positions`的`Sizes`设为2，`Element 0`不动，调整`Element 1`的Z方向长度即可，颜色可以在`Color`改，`Width`可以改线条宽度，`Material`处可以改射线材质（RFTools\Materials\Tracers）：
 
 {缺图}
 
 ## 2.6 制作动画机
 这玩意就需要你的想象力了
 
-Project内右键新建一个动画机AnimationController，双击打开
+Project窗口右键新建一个动画机AnimationController，双击打开
 
 动画机本质上就是各种状态时的if、if、if...，通过这些if与Parameters的配合，帮助模型跳转至一个合适的动画，但是各个States的链接有点费脑，一个基础的动画机（.controller）实例如下：
 ```mermaid
@@ -412,4 +412,4 @@ flowchart LR
 
 配置过程参考[WeaponContectMod的组件文档](/cn/Components/WeaponCotentMod.md)
 
-然后选中你的武器Prefab，在菜单栏上的 Ravenfied Tools 里 选择  “Test ...”或“Export ...”，然后即可测试或导出
+然后选中你的武器Prefab，在[菜单栏](./otr.1.md)上的 Ravenfied Tools 里 选择  “Test ...”或“Export ...”，然后即可测试或导出
