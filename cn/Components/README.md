@@ -156,6 +156,7 @@ category:
 - [GameModeBase](./GameModeBase.md)
 - [ScriptedGameMode](./ScriptedGameMode.md)
 - ScriptedGameMode触发系统
+    - [DynamicBlockWalkableBox](./DynamicBlockWalkableBox.md)
     - [ICompoundTriggerSender](./ICompoundTriggerSender.md)
     - [TriggerBaseComponent](./TriggerBaseComponent.md)
     - [TriggerDebug](./TriggerDebug.md)
@@ -253,4 +254,6 @@ category:
 ## Misc（其他）
 - [ActorSkinContentMod](./ActorSkinContentMod.md) 皮肤导出向导
 - [DataContainer](./DataContainer.md) 数据体
+- [Lifetime](./Lifetime.md) 
 - [RequireGameVersion](./RequireGameVersion.md) 限制最低运行游戏版本
+- [SynchronizeEditorTransforms](./SynchronizeEditorTransforms.md)
