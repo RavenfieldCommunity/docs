@@ -6,12 +6,18 @@ category:
 # Speedometer
 ## 描述
 
+用于计算并显示载具刚体的前进速度文本
+
 ## 用法
 
+挂载在目标Text组件一栏，并指定载具的刚体
+
 ## 注释
+
+建议参考官方APC预制体，驾驶员HUD中的Speed Text物体内找到该组件的具体用法
 
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| target | Rigidbody |  |  
-| multiplier  | float |  |  
+| target | Rigidbody | 目标载具刚体 |  
+| multiplier  | float | 计算乘数（默认为3.6） |  
