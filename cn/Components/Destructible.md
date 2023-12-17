@@ -14,7 +14,7 @@ category:
 
 ## 注释
 
-如果你想给载具加上可被摧毁的物体，请使用 VehicleDestructibleHitbox
+如果你想给载具加上可被摧毁的物体，请使用 [VehicleDestructibleHitbox](./VehicleDestructibleHitbox.md)
 
 ## 变量
 | 名称 | 类型 | 描述 |
