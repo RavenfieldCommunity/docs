@@ -8,7 +8,7 @@ category:
 从[TriggerReceiver](./TriggerReceiver.md)类派生
 ## 用法
 
-一般用于激活或隐藏一些特定的游戏物体
+挂载在任意空物体上即可
 
 ## 注释
 
