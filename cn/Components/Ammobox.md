@@ -7,7 +7,8 @@ category:
 ## 描述
 从[RigidbodyProjectile](./RigidbodyProjectile.md)类派生
 
-弹药包，给附近的玩家与Bot补充弹药
+弹药包，给附近6米内的玩家与Bot补充弹药
+生成后等待3秒开始补充一次，之后每隔3秒补充一次
 
 ## 用法
 
