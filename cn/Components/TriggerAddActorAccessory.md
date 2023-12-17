@@ -5,7 +5,7 @@ category:
 ---
 # TriggerAddActorAccessory
 ## 描述
-从[TriggerReceiver](./TriggerReceiver.md)类派生
+从[TriggerReceiver](./TriggerReceiver.md)类派生\n
 官方特别行动模式中的通讯兵身上使用了本组件相同的方法
 
 ## 用法
