@@ -20,4 +20,4 @@ category:
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | seat | [Seat](./Seat.md) | 目标座位 |  
-| objects | GameObject[] | 目标物体（物体的排序与seat的武器排序一致） |  
+| objects | GameObject[] | 目标物体（物体的排序与`seat`的武器排序一致） |  

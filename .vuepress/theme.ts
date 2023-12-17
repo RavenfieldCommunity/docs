@@ -1,11 +1,20 @@
-import { hopeTheme, readingTime } from "vuepress-theme-hope";
+import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, cnNavbar } from "./navbar/index.js";
 import { enSidebar, cnSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://ravenfieldcommunity.github.io",
+  manifest: {
+    icons: [
+      {
+        src: "/favicon.ico",
+        sizes: "192x192",
+        type: "image/png"
+      }
+    ]
+  },
   iconAssets: "iconfont",
-  favicon : "/favicon.ico",
+  favicon: "/favicon.ico",
   logo: "/Logo.png",
   repo: "ravenfieldcommunity/docs",
   pure: true,
@@ -28,6 +37,9 @@ export default hopeTheme({
       },
       outlookLocales: {
         themeColor: "#0000ff"
+      },
+      routeLocales: {
+        notFoundMsg: ["Or this page doesn't support this language now, plz try to switch to \"简体中文\" language."]
       }
     },
     "/cn/": {
@@ -55,8 +67,8 @@ export default hopeTheme({
     },
     mdEnhance: {
       mermaid: true,
-	  align: true,
-	  card: true,
+	    align: true,
+	    card: true,
     },
 	sitemap: false,
 	seo: {

@@ -13,6 +13,6 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| driverSeat | Seat |  |  
+| driverSeat | [Seat](./Seat.md) |  |  
 | maxRotation  | float |  |  
 | steerRate  | float |  |  

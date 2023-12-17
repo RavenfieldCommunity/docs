@@ -13,7 +13,7 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| activePlayerSeat | Seat |  |  
+| activePlayerSeat | [Seat](./Seat.md) |  |  
 | positionWeight  | Vector3 |  |  
 | rotationWeight  | Vector3 |  |  
 | applyCameraKick  | bool |  |  

@@ -53,10 +53,10 @@ category:
 | displayName | string | 武器在实际UI显示的名称 |  
 | thirdPersonTransform | Transform |  第三人称显示的武器模型（包括手臂） |  
 | thirdPersonOffset  | Vector3 | 第三人称显示的武器模型位置偏移量（矫正位置） |  
-| cullInThirdPerson | GameObject[] | 第三人称不显示的游戏物体（Size=数量。先填写要隐藏的物体数量，再在Element*处拖入物体） |  
+| cullInThirdPerson | GameObject[] | 第三人称不显示的游戏物体（`Size`=数量。先填写要隐藏的物体数量，再在Element*处拖入物体） |  
 | thirdPersonScale  | float | 第三人称显示的武器模型缩放偏移量（矫正位置） |  
 | keepScriptsOnThirdPersonImposter  | bool |  | 
-| reloadAudio | AudioSource | 装填音效(开启advanceRaload时忽略此项，此AudioSource建议放置于武器内的空物体上，参阅[RFCreator Project](/cn/Tutorials/README.md)) |  
+| reloadAudio | AudioSource | 装填音效(开启`advanceRaload`时忽略此项，此AudioSource建议放置于武器内的空物体上，参阅[RFCreator Project](/cn/Tutorials/README.md)) |  
 | changeFireModeAudio | AudioSource | 切换开火模式的音效 |  
 | reflectionSound  | enum.ReflectionSound | 回音效果（Auto=自动、None=无、Handgun=手枪、RifleSmall=小步枪、RifleLarge=大步枪、Launcher=炮、Tank=坦克） |  
 | keepScriptsOnThirdPersonImposter  | bool |  |  
@@ -68,13 +68,13 @@ category:
 | arms | SkinnedMeshRenderer | 武器动画的手臂模型（场景层级内的！包含骨骼，默认名为“Hands“） |  
 | allowArmMeshReplacement  | bool |  是否允许实际游戏时玩家皮肤替换手部皮肤 |  
 | parentWeapon | [Weapon](./Weapon.md) | 父武器（有子武器时可用，子武器就是Weapon物体里再套一个Weapon） |  
-| useParentWeaponSightModes | bool | 使用父武器的sightModes |  
+| useParentWeaponSightModes | bool | 使用父武器的`sightModes` |  
 | ammo | int | 武器装载的弹药数（如武器无此弹药逻辑则设为-1） |  
 | isLocked  | bool | 是否该锁定武器 |  
 | auto  | bool | 是否为自动武器（影响开火是否为连发还是单发，影响开火音效是即时停止还是直接播放完音效） |  
 | spareAmmo  | int | 武器备用的弹药数（如武器无此弹药逻辑则设为-1 |  
 | resupplyNumber  | int | 每次从补给箱补充的弹药数 |  
-| reloadTime  | float | 装填所需时间（启用advanceReload时不可用） |  
+| reloadTime  | float | 装填所需时间（启用`advanceReload`时不可用） |  
 | cooldown  | float | 开火时连续两发子弹的间隔（开火速度，值越小越快） |  
 | unholsterTime  | float | 切换到武器时所用时间 |  
 | unholsterIsReload  | bool |  切换到武器的行为是否可以替代装填 |  
@@ -88,9 +88,9 @@ category:
 | forceAutoReload  | bool |  强制自动换弹（如投掷类武器） |  
 | loud  | bool |  是否声音大（吸引Bot） |  
 | forceWorldAudioOutput  | bool |  强制场景音频输出 |  
-| muzzles | Transform[] |  枪口（或近战武器攻击点，掷弹点。生成子弹projectiles的地方，Size=数量。先填写枪口数量，一般为1，再在Element*处拖入物体。**muzzlesz中指定的物体及此物体的子层级的Particle System组件在在开火时会触发**） |  
+| muzzles | Transform[] |  枪口（或近战武器攻击点，掷弹点。生成子弹projectiles的地方，`Size`=数量。先填写枪口数量，一般为1，再在`Element*`处拖入物体。**muzzlesz中指定的物体及此物体的子层级的Particle System组件在在开火时会触发**） |  
 | optionalThirdPersonMuzzles | Transform[] | 可选的第三人称时的枪口 |  
-| casingParticles | ParticleSystem[] | 抛壳口（Size=数量。先填写数量，一般为1，再在Element*处拖入物体，抛壳次序与muzzles次序保持一致） |  
+| casingParticles | ParticleSystem[] | 抛壳口（`Size`=数量。先填写数量，一般为1，再在`Element*`处拖入物体，抛壳次序与`muzzles`次序保持一致） |  
 | fireFromAllMuzzles  | bool | 开火时所有的枪口是否不受开火模式的影响，都会作用 |  
 | projectilesPerShot  | int |  每次开火出多少子弹 |  
 | projectilePrefab | GameObject |  子弹的预制件 |  
@@ -108,7 +108,8 @@ category:
 | snapFrequency  | float | 开火时武器上抬频率 |  
 | kickbackProneMultiplier  | float | 趴下时后座倍数 |  
 | spreadProneMultiplier  | float | 不精准度倍数 |  
-| followupSpreadProneMultiplier  | float | 趴下时后续增加的不精准度倍数 |  | snapProneMultiplier  | float |  |  
+| followupSpreadProneMultiplier  | float | 趴下时后续增加的不精准度倍数 | 
+| snapProneMultiplier  | float |  |  
 | aiAllowedAimSpread  | float |  Bot瞄准不精准度（数值越高，Bot就越容易开火，即使未瞄准） |  
 | aiAimSwing  | float | Bot的攻击时的瞄准误差 |  
 | effInfantry  | enum.Effectiveness | 攻击是否对步兵作用(No, Yes, Preferred) | 
@@ -139,7 +140,7 @@ category:
 | dropAmmoWhenReloading  | bool | 换弹时丢弃剩余弹药 |  
 | maxRemainingAmmoAfterDrop  | int | 丢弃弹药后最大剩余弹药 |  
 | useMaxAmmoPerReload  | bool | 限制每次换弹的最大装填数 |  
-| maxAmmoPerReload  | int | 每次换弹的最大装填数（与useMaxAmmoPerReload联动） |  
+| maxAmmoPerReload  | int | 每次换弹的最大装填数（与`useMaxAmmoPerReload`联动） |  
 | advancedReload  | bool | 是否启用高级装填（用于单\多发装填武器,需要在AnimationEvent手动调用ReloadDone才能结束装填） |  
 | allowedReloads | int[] |  {机翻}允许重新装填（什么玩意...） |  
-| sightModes | SightMode[] | 瞄准方式（Sizes=有多少种瞄准方式；overrideFov=铺满视角；fov=可视范围；name=名称，显示在实际游戏时的HUB中） |  
+| sightModes | SightMode[] | 瞄准方式（`Sizes`=有多少种瞄准方式；overrideFov=铺满视角；fov=可视范围；name=名称，显示在实际游戏时的HUB中） |  

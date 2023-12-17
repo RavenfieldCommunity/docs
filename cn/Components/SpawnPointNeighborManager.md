@@ -10,7 +10,7 @@ category:
 
 ## 用法
 
-套用在一个空物体，在Size处填入路线数量，然后在各个Element \*配置每条路线
+套用在一个空物体，在`Size`处填入路线数量，然后在各个`Element *`配置每条路线
 
 或者直接使用\Assets\Prefabs\Map Elements内的Spawn Point Neighbor Manager.prefab(推荐)
 

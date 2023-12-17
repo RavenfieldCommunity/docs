@@ -15,4 +15,4 @@ category:
 | ----------- | ----------- | ----------- |
 | spawnA | SpawnPoint |  |  
 | spawnB | SpawnPoint |  |  
-| type  | PathfindingBox.Type |  |  
+| type  | [PathfindingBox](./PathfindingBox.md).Type |  |  

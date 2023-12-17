@@ -13,5 +13,5 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| weapon | Weapon |  |  
+| weapon | [Weapon](./Weapon.md) |  |  
 | spinUpRate  | float |  |  

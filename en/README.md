@@ -15,12 +15,12 @@ head:
 
 </p>
 
-![GitHub issues](https://img.shields.io/github/issues/RavenfieldCommunity/docs.svg?style=flat-square&) ![GitHub stars](https://img.shields.io/github/stars/RavenfieldCommunity/docs.svg?style=flat-square&) ![Github docs deploy](https://img.shields.io/github/actions/workflow/status/RavenfieldCommunity/docs/deploy-docs.yml?style=flat-square&)
+![GitHub issues](https://img.shields.io/github/issues/RavenfieldCommunity/docs.svg?style=flat-square&) ![GitHub last commit](https://img.shields.io/github/last-commit/RavenfieldCommunity/docs.svg?style=flat-square&) ![Github docs deploy](https://img.shields.io/github/actions/workflow/status/RavenfieldCommunity/docs/deploy-docs.yml?style=flat-square&)
 
 
 [![License](https://img.shields.io/badge/LICENSED%20UNDER-CC%20BY--NC%204.0-lightblue.svg?style=for-the-badge&)](https://github.com/RavenfieldCommunity/docs/blob/main/LICENSE) [![Getting to know Ravenfield on Steam](https://img.shields.io/badge/steam-Getting%20to%20know%20Ravenfield-blue.svg?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/636480/)
 
-Ravenfield is an FPS shooter developed by [SteelRaven7](http://steelraven7.com/) 
+Ravenfield is an FPS game developed by [SteelRaven7](http://steelraven7.com/) 
 
 This document helps you understand how to how to develop Ravenfield's modules. You can read the document from start to finish or use it as a reference.
 
@@ -50,7 +50,7 @@ link: /en/Tutorials/README.md
 ```
 
 ```card
-title: Component Reference
+title: Components Reference
 desc: RFTools Self-Built Components Reference
 logo: /image/Components.png
 link: /en/Components/README.md
@@ -78,7 +78,7 @@ link: https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158
 ```
 :::
 
-**鸣谢**
+**THANKS**
 
 All [contributors](https://github.com/RavenfieldCommunity/docs/graphs/contributors), because of you this document is perfected day by day ❤❤❤:
 

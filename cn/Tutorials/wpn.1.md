@@ -1,3 +1,7 @@
+---
+category: 
+- 教程
+---
 # wpn.1 武器
 ## 前言
 在此文档中，我们将为您呈现制作一个武器（主要面向热兵器）的大致过程
@@ -43,7 +47,7 @@ flowchart TD
 
 冷兵器不需要粒子效果，热兵器则需要枪口火花、烟雾等，可以选择直接套用RFTools自带的粒子
 
-上述两项资源需要您自行上网寻找或按要仿制的游戏武器自行寻找对应原版游戏美术资源（如解包、从视频录音、Unity AssetsStore的资源或手搓）
+上述两项资源需要您自行上网寻找或按要仿制的游戏武器自行寻找对应原版游戏美术资源（如解包、Unity AssetsStore的资源或手搓。音效可以从B站相关视频录音，常用）
 
 模型将在[下一章](#_1-1-建模)详细解释
 
@@ -57,13 +61,13 @@ flowchart TD
 
 如果只是想练手，可以直接使用RFTools\Models\Weapons内的模型
 
-如果想自己制作而建模有些许不行，可以在[Sketchfab](https://www.sketchfab.com/)、[模之屋](https://www.aplaybox.com/)这类网站寻找模型或按要仿制的游戏武器自行寻找对应原版游戏美术资源
+如果想自己制作而建模有些许不行，可以在[Sketchfab](https://www.sketchfab.com/)、[模之屋](https://www.aplaybox.com/)这类网站寻找模型或按要仿制的游戏武器自行寻找对应原版游戏美术资源（新手建议）
 
 当我们制作完模型后，它应该看着应该是这样的：
 
 {缺图}
 
-所有的物体能独立的都已独立并设置了父物体（以后你就懂力😋），原点正确，已应用缩放，物体mesh无问题
+所有的物体能独立的都已独立并设置了父物体（方便后期维护+Clone），原点正确，已应用缩放，物体mesh无问题
 
 这时您就可以在菜单处追加RFTools\Models\Character\Hands.blend内的所有内容
 
@@ -133,9 +137,9 @@ flowchart TD
 ::: tip
 投掷类武器在开火（投掷）动画这一个可能有点难，可以选择建一个空物体作为投掷点帮助K帧，然后再在Unity替换这个点
 :::
-这部分用时较长，开始的时候一个动画K几小时很正常
+这部分用时较长，开始的时候一个动画K几小时很正常，K得动作僵硬或不真实也十分正常，多模仿加练习就行
 
-武器动画风格多样，COD风和轻柔风二选一，网上（比如BF的武器演示或者RF的modder们的武器演示与K帧实况）以及[Steam工坊](https://steamcommunity.com/workshop/browse/?appid=636480&requiredtags[]=Weapons)优秀例子过多，恕不一一举例，请自行临摹（
+武器动画风格多样，COD风和轻柔风二选一，网上（比如Battlefield的武器演示或者RF的modder们在B站的武器演示与K帧实况）以及[Steam工坊](https://steamcommunity.com/workshop/browse/?appid=636480&requiredtags[]=Weapons)。优秀例子过多，恕不一一举例，请自行临摹（
 
 另外，请确保手部骨骼始终保持贴合手的模型，像左图而不是右图，否则Unity内可能会出现动画问题：
 
@@ -160,9 +164,9 @@ K完帧了？是时候下一步了
 
 转到属性，在世界属性中将背景颜色改为纯黑（表（曲）面-颜色，背景节点）
 
-在渲染属性中勾选Freestyle，将线条宽度改为2.5px(默认分辨率下)
+在渲染属性中勾选`Freestyle`，将线条宽度改为2.5px(默认分辨率下)
 
-在视图层属性中勾选Freestyle，在其子选项卡“Freestyle线条样式”中选择颜色，将基础色改为纯白
+在视图层属性中勾选`Freestyle`，在其子选项卡“`Freestyle线条样式`”中选择颜色，将基础色改为纯白
 
 最后渲染图像即可
 
@@ -175,9 +179,9 @@ K完帧了？是时候下一步了
 ## 1.4 音效制作
 这部分需要看自己
 
-需要按你自己制作的动画去剪辑音效（一般网上找到的可以直接用，但装填音效这个大坑要注意。单/多发装填武器则需要将装填音效分割成多个片段以对应各个装填动画）
+需要按你自己制作的动画去剪辑音效（一般网上找到的特别是从实录视频剪下来的可以直接用，但装填音效这个大坑要注意。单/多发装填武器则需要将装填音效分割成多个片段以对应各个装填动画）
 
-让音效对应动画
+注意让音效对应动画
 
 如果只是想练手可以选择直接套用RFTools自带音效用于测试
 
@@ -202,7 +206,7 @@ K完帧了？是时候下一步了
 
 {缺图}
 
-请始终确保切换(Unholster或Entry)动画处于Cilps的最顶层，这将有助于在Unity场景中设置枪口位置！
+请始终确保待机(Hip，此时武器枪口正对前方)动画处于`Cilps`的最顶层，这将有助于在Unity场景中设置枪口位置！
 
 ::: details 如果您的武器是单/多发装填武器...（配置动画事件）
 此处配置动画事件用于单/多发装填武器能在对应的动画时间点播放正确的音效
@@ -211,15 +215,15 @@ K完帧了？是时候下一步了
 
 {缺图}
 
-这一步需要先行在场景配置[Weapon](/cn/Components/Weapon.md)组件（启用advenceReload）以及[SoundBank](/cn/Components/SoundBank.md)组件,若未配置请先调至[下一章](#_2-4-在场景配置武器)然后再配置动画事件
+这一步需要先行在场景配置[Weapon](/cn/Components/Weapon.md)组件（启用`advenceReload`）以及[SoundBank](/cn/Components/SoundBank.md)组件,若未配置请先调至[下一章](#_2-4-在场景配置武器)然后再配置动画事件
 
-选中要播放自定义的Cilp，转到下方的Events选项卡，将时间轴拖至对应时间点后单击旁边的Add Event，参考[SoundBank的组件文档](/cn/Components/SoundBank.md)配置这个Event的Function为PlaySoundBank以及Int为对应的音效index
+选中要播放自定义的Cilp，转到下方的`Events`选项卡，将时间轴拖至对应时间点后单击旁边的`Add Event`，参考[SoundBank的组件文档](/cn/Components/SoundBank.md)配置这个`Event`的`Function`为PlaySoundBank以及`Int`为对应的音效index
 
 重复以上操作
 
-**最后注意在结束装弹的对应时间点添加一个Function为ReloadDone的Event**
+**最后注意在结束装弹的对应时间点添加一个`Function`为`ReloadDone`的Event**
 
-**在一个装弹循环结束的对应时间点添加一个Function为MotionDone的Event**
+**在一个装弹循环结束的对应时间点添加一个`Function`为`MotionDone`的Event**
 
 否则游戏时会卡动画
 :::
@@ -227,13 +231,13 @@ K完帧了？是时候下一步了
 ::: details 如果您的武器是投掷类武器...（配置动画事件）
 同上
 
-**在投弹的的对应时间点添加一个Function为SpawnThrow的Event**
+**在投弹的的对应时间点添加一个`Function`为SpawnThrow的Event**
 :::
 
 ## 2.2 预配置武器图标
 此处配置武器图标的部分属性，否则在[下一章](#_2-4-在场景配置武器)时可能会出现奇怪的Bug（？
 
-在Unity的Project窗口选中武器图标文件，在右侧的Inspector选择将Texture Type改为Sprite(2D and UI)，勾选Generate Mip Maps，Filter Mode改为Trilinear：
+在Unity的Project窗口选中武器图标文件，在右侧的Inspector选择将`Texture Type`改为Sprite(2D and UI)，勾选`Generate Mip Maps`，`Filter Mode`改为Trilinear：
 
 {缺图}
 
@@ -243,11 +247,13 @@ K完帧了？是时候下一步了
 
 为你的武器配置子弹
 
-在组件文档处选择一个合适的Projectile套用在子弹（弹体）模型上
+在本站的组件文档处找到一个合适的Projectile组件，在Unity添加在子弹（弹体）模型上
 
 然后预制件化
 
 或者可以选择直接套用RFTools自带的Projectile（建议复制一份保留原件）
+
+记得添加自发光材质，具体参考RFTools\Prefab\Projectiles内的Projectile预制件
 
 等会要用
 
@@ -275,43 +281,43 @@ K完帧了？是时候下一步了
 
 {缺图}
 
-然后将这个空物体拖入Weapon组件(或其他)的muzzles：
+然后将这个空物体拖入Weapon组件(或其他)的`muzzles`：
 
 {缺图}
 
-在Muzzle物体下新建多个空物体作为枪口火花、烟雾的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示），可以从其他武器复制、冷兵器可以跳过）
+在Muzzle物体下新建多个空物体作为枪口火花、烟雾的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,主要为Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示）的参数，可以从其他武器复制、冷兵器可以跳过）
 
-在抛壳口的位置新建一个名为casingParticles的空物体作为抛壳口的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示），可以从其他武器复制、冷兵器可以跳过）,将这个空物体拖入Weapon组件的casingParticles
+在抛壳口的位置新建一个名为casingParticles的空物体作为抛壳口的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示），可以从其他武器复制、冷兵器可以跳过）,将这个空物体拖入Weapon组件的`casingParticles`
 
 在projectilePrefab处配置子弹的的Prefab（不是一般意义,参考RFTools\Prefabs\Projectiles，可直接RFTools复制一份使用，此物体必须包含[Projectile](/cn/Components/Projectile.md)或其派生组件，当子弹为重火力兵器时建议添加在子弹上添加Audio Source）
 
-然后检查并配置组件的displayName、thirdPersonTransform、reloadAudio（仅热兵器）、uiSprite、arms、ammo（仅热兵器，否则设置为-1）、auto（仅热兵器）、spareAmmo（仅热兵器，否则设置为-1）、resupplyNumber（仅热兵器，否则设置为-1）、reloadTime、aimFov、pose、advancedReload、effInfantry、effInfantryGroup、effUnarmored、effArmored、effAir、effAirFastMover,其他选项的看需求配置（**参阅[组件文档](/cn/Components/README.md)**）
+然后检查并配置组件的`displayName`、`thirdPersonTransform`、`reloadAudio`（仅热兵器）、`uiSprite`、`arms`、`ammo`（仅热兵器，否则设置为-1）、`auto`（仅热兵器）、`spareAmmo`（仅热兵器，否则设置为-1）、`resupplyNumber`（仅热兵器，否则设置为-1）、`reloadTime`、`aimFov`、`pose`、`advancedReload`、`effInfantry`、`effInfantryGroup`、`effUnarmored`、`effArmored`、`effAir`、`effAirFastMover`,其他选项的看需求配置（**参阅[组件文档](/cn/Components/README.md)**）
 
-kickback、randomKick、、spread、followupSpreadGain、followupSpreadStayTime、followupSpreadDissipateTime、snapMagnitude、snapDuration、snapFrequency等武器手感（仅热兵器，否则以上参数请清零）相关的参数需要慢慢调
+`kickback`、`randomKick`、`spread`、`followupSpreadGain`、`followupSpreadStayTime`、`followupSpreadDissipateTime`、`snapMagnitude`、`snapDuration`、`snapFrequency`等武器手感（仅热兵器，否则以上参数请清零）相关的参数需要慢慢调
 
 ## 2.5 瞄具设置（仅枪械）
 瞄具有四种，分别为：机械瞄具、光学瞄具、全息瞄具、红点瞄具
 
 ### 机械瞄具
 
-最简单的瞄具，在Blender K好瞄准动画，直接跳到[下一章](#_2-6-制作动画机)即可，可以调Weapon的aimFov
+最简单的瞄具，在Blender K好瞄准动画，直接跳到[下一章](#_2-6-制作动画机)即可，可以调Weapon的`aimFov`
 
 ### 光学瞄具
 
 光学瞄具有两种设置镜头的方法：
 
-一是直接像官方的Sinper一样直接在Blender套一个**贴图物体**在镜筒，到Unity就直接套材质和改aimFov
+一是直接像官方的Sinper一样直接在Blender套一个**贴图物体**在镜筒，到Unity就直接套材质和改`aimFov`
 
 二是**双渲染**：在Bledner放个薄的物体（类似标准平面、圆柱）当镜片，
 在Unity新建一个Render Texture材质，500x500px大概够用了：
 
 {缺图}
 
-新建普通材质，将类型改为Unlit\Texture，Base选择刚才创建的Render Texture：
+新建普通材质，将类型改为Unlit\Texture，`Base`选择刚才创建的Render Texture：
 
 {缺图}
 
-场景内新建一个摄像机在武器下（不要放在武器模型的层级下）,检查器内的Target Texture就选刚才创建的Render Texture：：
+场景内新建一个摄像机在武器下（不要放在武器模型的层级下）,检查器内的`Target Texture`就选刚才创建的Render Texture：：
 
 {缺图}
 
@@ -334,21 +340,21 @@ kickback、randomKick、、spread、followupSpreadGain、followupSpreadStayTime�
 
 红点贴图可以在Holo Sight的材质选项改
 
-镜片颜色可以在HUD Glass的材质选项中的Tint Color改
+镜片颜色可以在HUD Glass的材质选项中的`Tint Color`改
 
 贴图太大可以把带Holo Sight材质的物体的Y方向拖远一点
 
 ### 红点瞄具
-同样简单，在武器下新建一个空物体，添加组件Line Render，取消勾选组件的Use World Space
+同样简单，在武器下新建一个空物体，添加组件Line Render，取消勾选组件的`Use World Space`
 
-将Positions的Sizes设为2，Element0不动，调整Element1的Z方向长度即可，颜色可以在Color改，Width可以改线条宽度，Material处可以改射线材质（RFTools\Materials\Tracers）：
+将`Positions`的`Sizes`设为2，`Element 0`不动，调整`Element 1`的Z方向长度即可，颜色可以在`Color`改，`Width`可以改线条宽度，`Material`处可以改射线材质（RFTools\Materials\Tracers）：
 
 {缺图}
 
 ## 2.6 制作动画机
 这玩意就需要你的想象力了
 
-Project内右键新建一个动画机AnimationController，双击打开
+Project窗口右键新建一个动画机AnimationController，双击打开
 
 动画机本质上就是各种状态时的if、if、if...，通过这些if与Parameters的配合，帮助模型跳转至一个合适的动画，但是各个States的链接有点费脑，一个基础的动画机（.controller）实例如下：
 ```mermaid
@@ -372,6 +378,14 @@ flowchart LR
 
 ## 3.0 测试与导出
 现在我们的武器基本完工了！
+
+此时你的武器物体结构应该是这样的（模型等部分位置可变）：
+```
+武器顶层父物体（包含武器、Animator组件）
+├─ 手臂模型
+├─ 武器模型（包括muzzle、casing及粒子系统物体）
+└─ 其他的一些Audio Source物体或与SoundBank物体
+```
 
 这时您就可以在Weapon Lab场景中通过 Play播放 预览来武器了
 
@@ -398,4 +412,4 @@ flowchart LR
 
 配置过程参考[WeaponContectMod的组件文档](/cn/Components/WeaponCotentMod.md)
 
-
+然后选中你的武器Prefab，在[菜单栏](./otr.1.md)上的 Ravenfied Tools 里 选择  “Test ...”或“Export ...”，然后即可测试或导出
