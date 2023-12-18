@@ -15,5 +15,4 @@
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| enginePowerControlsEmissionRate  | bool |  |  
 | enginePowerControlsEmissionRate  | bool | 引擎功率是否控制粒子发射速率的变化 |  
