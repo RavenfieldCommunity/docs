@@ -6,11 +6,14 @@ category:
 # TriggerAnimatorController
 ## 描述
 从[TriggerReceiver](./TriggerReceiver.md)类派生
+当接收到信号时，触发动画状态机对应的条件名称（triggerName）
 ## 用法
 
-当接收到信号时，触发动画状态机对应的条件名称（triggerName）
+挂载在任意空物体上即可
 
 ## 注释
+
+注意，要触发的条件类型必须为trigger
 
 ## 变量
 | 名称 | 类型 | 描述 |
