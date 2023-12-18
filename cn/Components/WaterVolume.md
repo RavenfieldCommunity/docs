@@ -6,7 +6,7 @@ category:
 # WaterVolume
 ## 描述
 
-相当于生成一个小型的[WaterLevel](./WaterLevel.md，可用来模拟湖泊，河流等。
+相当于生成一个小型的[WaterLevel](./WaterLevel.md)，可用来模拟湖泊，河流等。
 
 ## 用法
 
