@@ -22,13 +22,13 @@ category:
 | InstantActionMutatorConfig | enum |  |  
 | TeamConfig | enum |  |  
 | testConfiguration | TestConfiguration |  |  
-| instantActionGameConfig | InstantActionGameConfig |  |  
-| instantActionMutatorConfig | InstantActionMutatorConfig |  |  
-| playerTeam | TeamConfig |  |  
+| instantActionGameConfig | InstantActionGameConfig | 游戏大厅的各项模组配置（是否使用玩家自定义配置或读取官方配置） |  
+| instantActionMutatorConfig | InstantActionMutatorConfig | 游戏大厅的脚本模组配置（是否使用玩家自定义配置或禁用） |  
+| playerTeam | TeamConfig | 玩家的所在队伍（玩家自定义队伍或指定蓝&红队） |  
 | Checkpoint currentCheckpoint  | static |  |  
-| canCaptureFlagsByDefault  | bool |  |  
-| spawnVehicles  | bool |  |  
-| spawnTurrets  | bool |  |  
-| generateAISquadOrders  | bool |  |  
+| canCaptureFlagsByDefault  | bool | 地图内旗帜据点是否可被占领 |  
+| spawnVehicles  | bool | 是否生成来自地图内载具重生点的载具 |  
+| spawnTurrets  | bool | 是否生成来自地图内固定武器重生点的炮塔 |  
+| generateAISquadOrders  | bool | 是否生成AI小队命令(如果关闭，则游戏不会自动下达任何有关进攻，防御等命令) |  
 | triggerDebugLevel  | TriggerDebug.DebugLevel |  |  
 | checkpoint | Checkpoint |  |  
