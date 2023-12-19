@@ -25,7 +25,6 @@ category:
 | ----------- | ----------- | ----------- |
 | type | enum.Type | 寻路盒类型(即此寻路盒是用于限定谁的。Infantry=步兵, Car=陆上载具, Boat=水上载具) |  
 | tiled  | bool | 此寻路盒内是一个平面（可加快寻路扫描时间，可能会引入一些不必要的障碍。禁用此项可保证NAV-MESH完全适合PathfindingBox。建议启用） |  
-| automaticCellSize  | bool | 启用路径自动扫描精细度（越小越精细，扫描时间越长） |  
 | cellSize  | float | 扫描精细度 |  
 | characterRadius  | float | Bot的半径大小（一个Bot行走时占多大空间，距离MAV-MESH的距离，不被完全包含的地方将被标记为不可行走） |  
 | climbHeight  | float | 最高相对坡度大小（度为单位） |  

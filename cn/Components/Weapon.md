@@ -27,23 +27,24 @@ category:
 |------|------|------|
 | loaded ammo | int | 已装载的弹药数 |
 | unholster | trigger | 切换到武器时为True |
-| tuck | bool | 冲刺时为True |
-| muzzle | int | 等于目前玩家所处的枪口序号（默认0开始） |
-| alt weapons | int | 等于目前玩家所处的副武器序号（0=处于主武器，默认1开始） |
-| charging | 处于充能状态时为True |  |
+| tuck | bool | 冲刺且没有换弹行为时为True |
+| muzzle | int | 开火时等于目前武器所处的枪口序号（默认0开始）之后+1，以此类推（如果当前武器枪口数量小于1或勾选fireFromAllMuzzles选项将忽略此条件） |
+| alt weapon | int | 当武器动画激活或切换到子武器时，等于目前子武器所处的序号（0=处于主武器，默认1开始） |
+| charging | bool | 处于充能状态时为True |
 | overheat | bool | 过热时为True |
 | sight mode | int | 等于目前玩家所处的瞄准模式（默认0开始） |
 | smooth sight mode | float | 等于目前玩家所处的瞄准模式（与sight mode等同，适用于BlenderTree） |
 | fire | trigger | 开火时为True |
 | aim | bool | 瞄准时为True，其余状态为False |
 | reload | trigger | 装填时为True |
-| reloading | bool | 装填时为True |
-| reload motion | int | 等于本次装载行为需要装多少弹？ |
-| no ammo | bool | 疑似无弹药时为True（疑似是以备用弹药判定） |
-| no ammo blend |  |  |
+| reloading | bool | 启用高级换弹选项后，装填时为True |
+| reload motion | int | 启用高级换弹选项后，按照allowedReloads的顺序，等于本次装载行为对应的弹药数量 |
+| no ammo | bool | 在弹药数量发生变化或当武器动画激活时，武器当前弹夹和备弹都没有弹药时为True |
+| no ammo blend | float | 在弹药数量发生变化或当武器动画激活时，武器拥有弹药（当前弹夹或备弹其一满足条件即可）时为0，否则为1 |
 | kick | trigger | 踢人时为True |
 | call | trigger | 召集队员时为True |
 | direct | trigger | 指挥队员时为True |
+| random | float | 在切换到武器时或每帧随机生成一个0到100的浮点值 |
 
 对于此组件的子组件，部分选项是不可用的，请按照逻辑判断
 
@@ -86,13 +87,13 @@ category:
 | autoReloadDelay  | float | 自动装填的延迟 |  
 | canBeAimedWhileReloading  | bool |  装填时是否可以瞄准 |  
 | forceAutoReload  | bool |  强制自动换弹（如投掷类武器） |  
-| loud  | bool |  是否声音大（吸引Bot） |  
+| loud  | bool |  开火造成声音是否响亮（会使武器持有者高亮4秒） |  
 | forceWorldAudioOutput  | bool |  强制场景音频输出 |  
 | muzzles | Transform[] |  枪口（或近战武器攻击点，掷弹点。生成子弹projectiles的地方，`Size`=数量。先填写枪口数量，一般为1，再在`Element*`处拖入物体。**muzzlesz中指定的物体及此物体的子层级的Particle System组件在在开火时会触发**） |  
 | optionalThirdPersonMuzzles | Transform[] | 可选的第三人称时的枪口 |  
 | casingParticles | ParticleSystem[] | 抛壳口（`Size`=数量。先填写数量，一般为1，再在`Element*`处拖入物体，抛壳次序与`muzzles`次序保持一致） |  
-| fireFromAllMuzzles  | bool | 开火时所有的枪口是否不受开火模式的影响，都会作用 |  
-| projectilesPerShot  | int |  每次开火出多少子弹 |  
+| fireFromAllMuzzles  | bool | 每次开火时所有的枪口是否全部开火（否则按照枪口顺序向下运行） |  
+| projectilesPerShot  | int |  每次开火会射出多少子弹 |  
 | projectilePrefab | GameObject |  子弹的预制件 |  
 | scopeAimObject | GameObject | 瞄准时出现的物体（可选，类似狙击时画面外的一圈黑边，聚焦瞄准时的黑边物体。应在场景层级内，机制为游戏时默认在此项设置的物体会禁用，玩家瞄准时会启用） |  
 | kickback  | float |  后坐力 |  
@@ -142,5 +143,5 @@ category:
 | useMaxAmmoPerReload  | bool | 限制每次换弹的最大装填数 |  
 | maxAmmoPerReload  | int | 每次换弹的最大装填数（与`useMaxAmmoPerReload`联动） |  
 | advancedReload  | bool | 是否启用高级装填（用于单\多发装填武器,需要在AnimationEvent手动调用ReloadDone才能结束装填） |  
-| allowedReloads | int[] |  {机翻}允许重新装填（什么玩意...） |  
+| allowedReloads | int[] |  启用高级装填选项后，换弹时将会按照设定好的顺序，装填对应的弹药数量 |  
 | sightModes | SightMode[] | 瞄准方式（`Sizes`=有多少种瞄准方式；overrideFov=铺满视角；fov=可视范围；name=名称，显示在实际游戏时的HUB中） |  

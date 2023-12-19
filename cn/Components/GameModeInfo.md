@@ -23,4 +23,4 @@ category:
 | defenderBase2 | [SpawnPoint](./SpawnPoint.md) | 防守方次据点 |  
 | defenderBase3 | [SpawnPoint](./SpawnPoint.md) | 防守方次次据点 |  
 | attackerBase | [SpawnPoint](./SpawnPoint.md) | 进攻方主据点 |  
-| kingOfTheHillBase | [SpawnPoint](./SpawnPoint.md) |  |  
+| kingOfTheHillBase | [SpawnPoint](./SpawnPoint.md) | （未实装在游戏中） | 

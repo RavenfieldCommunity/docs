@@ -6,7 +6,7 @@ category:
 # SpeedLimitZone
 ## 描述
 
-一个用于限制此范围内玩家与Bot速度的类
+一个用于限制此范围内Bot驾驶载具时速度的组件
 
 ## 用法
 
