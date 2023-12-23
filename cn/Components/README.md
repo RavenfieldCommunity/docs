@@ -153,6 +153,7 @@ category:
 - [ScriptedBehaviour](./ScriptedBehaviour.md) 实例化脚本
 
 ## Custom GameMode（自定义游戏模式）
+- [自定义类型](./CustomTypes.md) 游戏使用的数据类型注释
 - [GameModeBase](./GameModeBase.md)
 - [ScriptedGameMode](./ScriptedGameMode.md)
 - ScriptedGameMode触发系统

@@ -1,6 +1,6 @@
 # 贡献指南
 
-欢迎帮助我们维护RavenfieldCommunity\docs（以下简称rfmd）社区客制化支持项目！
+欢迎帮助我们维护RavenfieldCommunity\docs社区客制化支持项目！
 
 由于项目仍处于早期阶段，加之本项目基本没有其他外部人员参与文档维护，所以导致此文档部分内容尚未完善，敬请谅解！也欢迎给我们提issues！
 
@@ -18,7 +18,7 @@
 
 或者直接点击页面底部的"[在 GitHub 上编辑此页](https://github.com/ravenfieldcommunity/docs/edit/main/cn/CONTRIBUTING.md)"
 
-完成后，无论如何你都将需要一个Github账号并[Fork本存储库](https://zhuanlan.zhihu.com/p/639014459)，如果曾经已经fork过的请先同步你的fork存储库至最新
+完成后，无论如何你都将需要一个Github账号并[Fork本存储库](https://zhuanlan.zhihu.com/p/639014459)（有权限的编辑人员可直接在主库编辑），如果曾经已经fork过的请先同步你的fork存储库至最新
 
 如果你是直接点击编辑链接进入的，Github可能会提示"You need to fork this repository to propose changes."(你需要fork此存储库以编辑文档)，这时你可以直接点击"Fork this respository"进入编辑界面，Github会自动fork项目，然后你就可以直接编辑了，点击"Commit Changes"，在Commit Messages内填写好修改说明，将把修改提交至你的“副本”存储库
 
@@ -31,22 +31,22 @@
 
 需要安装[git](https://git-scm.com/)
 
-需要先在Github fork本项目并clone到本地
+需要先在Github fork本项目（有权限的编辑人员可直接clone主库，在主库编辑）并clone被fork的库到本地
 
-然后在此本地git存储库配置[vuepress-theme-hope](https://theme-hope.vuejs.press/zh/cookbook/tutorial/)环境
+然后在此本地git存储库配置[vuepress-theme-hope](https://theme-hope.vuejs.press/zh/cookbook/tutorial/)环境（仅当需要修改.vuepress/目录下的内容时）
 
-然后修改文档，测试文档是否能正常构建
+然后修改文档，测试文档是否能正常构建（仅当需要修改.vuepress/目录下的内容时）
 
 提交，确认修改完成后给我们提交一个Pull requests
 
 记得提交的时候签名
 
-如要在提交中加入共同编辑者，请在Commit message的行尾留空回车两行后添加`Co-authored-by: {名字} <{邮箱}>`。示例：
+如要在提交中加入共同编辑者，请在Commit message的行尾留空回车两行后添加`Co-authored-by: {名字} <{邮箱，建议使用github提供的noreply邮箱以保护真实地址}>`。示例：
 ```
 这是一个Commit信息。
 
 
-Co-authored-by: Test <test@example.com>
+Co-authored-by: Test <000000000+test@users.noreply.github.com>
 ```
 
 ## 文档编写规范
@@ -96,11 +96,13 @@ category:
 
 2. 当您不知道一个项或一栏例应填写什么时，应在此处留空，而不是填写“未知”、“不知道”。
 
-3. 请遵循上述示例编写文档,不要额外修改Vuepress config
+3. 请遵循上述示例编写文档,不要额外修改.vuepress内的内容
 
 4. 保证没有大小写的混淆
 
 5. 使用` `` `标记描述、用法、注释以及变量描述中使用的变量名
+
+6. 所有的组件文档均保存在{lang}/Components/下，不需要子文件夹
 
 示例：
 ```markdown

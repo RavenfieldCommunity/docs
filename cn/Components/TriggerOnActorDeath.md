@@ -13,5 +13,5 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| filter | ActorFilter |  |  
+| filter | [ActorFilter](.\CustomTypes.md#ActorFilter) |  |  
 | ignoreSilentKills  | bool |  |  
