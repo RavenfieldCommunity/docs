@@ -29,13 +29,13 @@ category:
 官版英文文档
 
 :::tip
-因为RF使用的.Net Framework版本为4，因此对于电脑渣的玩家可以选择下载[VS Express 2010 Visual C#](https://visualstudio.microsoft.com/zh-hans/dev-essentials/)（至少，但这个版本仅英文。建议VSE2013起步）编辑器来代替VS Community，前者仅占磁盘空间大约小于300MB
+因为RF使用的.Net Framework版本为4，但是这就不代表你可以使用类似[VS Express 2010 Visual C#](https://visualstudio.microsoft.com/zh-hans/dev-essentials/)编辑器来代替VS Community或VSCode这类支持年在2017年的IDE
 
-不建议使用VS Code，基于JavaScript开发的它对.Net Solution的开发极其不友好，甚至不如VS Express 2010这个13年前的IDE
+目前所有C#project及solution均要求使用[SDK风格项目文件](https://zhuanlan.zhihu.com/p/408933763),否则将无法使用一些所依赖的C#7.0新特性
 :::
 
 :::tip
-如果插件要引入外部Assets资源，记得先给assets构建AssetBundles
+如果插件要引入外部Assets资源，记得先给assets构建AssetBundles并通过加载AssetBundles的方式导入资源（像RF本身的模组导入一样）
 
 具体参考：[Github](https://github.com/BepInEx/Il2CppInterop/blob/master/Documentation/Injected-Components-In-Asset-Bundles.md)
 :::

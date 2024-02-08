@@ -156,7 +156,7 @@ Lua它相比C#更友好且目前在RF开发Mod写脚本用得更多的还是Lua(
 
 **非官方QQ频道号**：9pmc179t29
 
-**非官方QQ群**：771055407（modder几乎没有但能保证回答你的问题并提供干净的环境）、672972617（modder多但是不是专业群） 
+**非官方QQ群**：771055407（也许是目前最大专业群）、~~672972617（modder多但是不是专业群）~~ （群里modder跑啦但是可以和我们吹水hh）
 
 ## 附:如何更聪明地问他人问题
 原文链接：https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way

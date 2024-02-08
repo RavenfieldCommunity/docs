@@ -14,6 +14,15 @@ export const cnNavbar = navbar([
         link: "/cn/Components/"
   },
   {
+    text: "社区项目",
+    children: [
+      {
+        text: "RS IDEA",
+        link: "/cn/Project/rsidea"
+      }
+    ]
+  },
+  {
     text: "教程",
     link: "/cn/Tutorials/"
   },

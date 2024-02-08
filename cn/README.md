@@ -75,6 +75,15 @@ link: https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158
 ```
 :::
 
+**社区项目**
+
+```card
+title: Ravenscript IDEA
+desc: 新一代RS开发snippet插件
+logo: \image\Project\rsidea.logo.jpg
+link: /cn/Project/rsidea.md
+```
+
 **鸣谢**
 
 所有的[贡献者](https://github.com/RavenfieldCommunity/docs/graphs/contributors)们，因为你们才使得了这个文档日臻完善❤❤❤:

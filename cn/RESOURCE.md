@@ -4,7 +4,7 @@
 
 仅作转载
 
-若Github镜像链接下载过慢，请自行使用[GHProxy.com](https://ghproxy.com)或[GHProxy.net](https://ghproxy.net)这类网站加速
+若Github镜像链接下载过慢，请自行使用[GHProxy.com](https://ghproxy.com)或[GHProxy.net](https://ghproxy.net)这类网站加速,
 
 若无法访问蓝奏云，请参考[此知乎专栏](https://zhuanlan.zhihu.com/p/419457461)
 

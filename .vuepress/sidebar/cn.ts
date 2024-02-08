@@ -9,6 +9,7 @@ export const cnSidebar = sidebar({
 	"/cn/in-GAME/MapEditor"
 	],
   "/cn/Components/": "structure",
+  "/cn/Project/": "structure",
   "/cn/Tutorials/": ["/cn/Tutorials/",{
     text: "正文",
     children: [
