@@ -13,6 +13,15 @@ export const enNavbar = navbar([
         text: "Component Reference",
         link: "/en/Components/"
     },
+	{
+        text: "Community Project",
+        children: [
+          {
+            text: "RS IDEA",
+            link: "/en/Project/rsidea"
+          }
+        ]
+    },
     //{
     //  text: "Tutorials",
     //  link: "/en/Tutorials/"

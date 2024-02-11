@@ -80,7 +80,7 @@ link: https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158
 ```card
 title: Ravenscript IDEA
 desc: 新一代RS开发snippet插件
-logo: \image\Project\rsidea.logo.jpg
+logo: \image\Project\rsidea.001.png
 link: /cn/Project/rsidea.md
 ```
 

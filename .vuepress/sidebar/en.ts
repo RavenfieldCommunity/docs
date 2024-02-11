@@ -5,4 +5,5 @@ export const enSidebar = sidebar({
 	  "/en/CONTRIBUTING",
 	  "/en/RESOURCE"],
   "/en/Components/": "structure",
+  "/en/Project/": "structure"
 });

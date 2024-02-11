@@ -78,6 +78,15 @@ link: https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158
 ```
 :::
 
+**Community Project**
+
+```card
+title: Ravenscript IDEA
+desc: The NEXT snippet addons for ravenscript coding
+logo: \image\Project\rsidea.001.png
+link: /en/Project/rsidea.md
+```
+
 **THANKS**
 
 All [contributors](https://github.com/RavenfieldCommunity/docs/graphs/contributors), because of you this document is perfected day by day ❤❤❤:
