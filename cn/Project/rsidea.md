@@ -14,7 +14,7 @@ head:
 
 # Ravenscript IDEA
 
-:::center
+::: center
 ![GitHub issues](https://img.shields.io/github/issues/RavenfieldCommunity/ravenscriptidea.svg?style=flat-square&) ![GitHub last commit](https://img.shields.io/github/last-commit/RavenfieldCommunity/ravenscriptidea.svg?style=flat-square&)
 
 
@@ -29,7 +29,7 @@ head:
 
 ## 描述
 
-RSIDEA是一个帮助modder编写RS脚本的插件，依赖于前端Framework，它可以给modder带来完整的snippet填充以及基本类型检查且附带RS官方文档，帮助modder缩短coding用时，减少lua语法错误
+RSIDEA是一个帮助modder编写RS脚本的插件，依赖于前端Framework，它可以给modder带来完整的snippet自动补全以及基本类型检查且附带RS官方文档，帮助modder缩短coding用时，减少lua语法错误
 
 
 ## 特性
@@ -43,6 +43,8 @@ RSIDEA是一个帮助modder编写RS脚本的插件，依赖于前端Framework，
 ✅ 本体与前置Frameworks在开发支持期内
 
 ✅ 多IDE兼容
+
+🅾 未来将加入RavenM扩展api
 
 ❌ 稀烂的self指针与register(behaviour注册、local变量注入与同步的基本不可用)
 
