@@ -1,11 +1,11 @@
 ---
 title: Ravenscript IDEA
-home: ture
+home: true
 heroImage: \image\Project\rsidea.001.png
 heroText: Ravenscript IDEA
-tagline: "The NEXT snippet addons for ravenscript coding（NEW AND SUCK XD"
-description: "Ravenscript IDE Addon,The NEXT snippet addons for ravenscript coding
-sidebar: ture
+tagline: "Ravenscript IDE Addon, the NEXT snippet addons for ravenscript coding"
+description: "The NEXT snippet addons for ravenscript coding"
+sidebar: true
 head:
   - - meta
     - name: robots
@@ -23,7 +23,7 @@ head:
 Project repo：[Github](https://github.com/RavenfieldCommunity/ravenscriptidea) Steam Workshop:[Item](https://steamcommunity.com)
 :::
 
-:::tip
+::: tip
 In the following, the term "addon" refers to the RSIDEA project itself, and the terms "dependent extension" and "dependent framework" refer to IDE extensions such as Luals and EmmyLua. IDE extensions like Luals, EmmyLua, etc.
 :::
 
@@ -48,7 +48,7 @@ RSIDEA is a sub addon to help modders develop ravenscript. though dependent exte
 
 ❌ Sparse self pointers with register (behaviour registration, local variable injection and basic unavailability of synchronization)
 
-❌ Non-existent const / var / static / array discrimination (I can't help it if the frontend extension doesn't support it)
+❌ Non-existent const / var / static / array discrimination \(I can't help it if the frontend extension doesn't support it\)
 ```
 
 ## Installation
