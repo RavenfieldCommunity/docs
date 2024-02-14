@@ -18,9 +18,9 @@ head:
 ![GitHub issues](https://img.shields.io/github/issues/RavenfieldCommunity/ravenscriptidea.svg?style=flat-square&) ![GitHub last commit](https://img.shields.io/github/last-commit/RavenfieldCommunity/ravenscriptidea.svg?style=flat-square&)
 
 
-[![License](https://img.shields.io/badge/%E6%8E%88%E6%9D%83%E5%9F%BA%E4%BA%8E%E8%AE%B8%E5%8F%AF-GPLv3-lightblue.svg?style=for-the-badge&)](https://github.com/RavenfieldCommunity/ravenscriptidea/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/LICENSED%20UNDER-GPLv3-lightblue.svg?style=for-the-badge&)](https://github.com/RavenfieldCommunity/ravenscriptidea/blob/main/LICENSE)
 
-Project repo：[Github](https://github.com/RavenfieldCommunity/ravenscriptidea) Steam Workshop:[Item](https://steamcommunity.com)
+Project repo：[Github](https://github.com/RavenfieldCommunity/ravenscriptidea) Steam Workshop:[Item](https://steamcommunity.com/sharedfiles/filedetails/?id=3160495493)
 :::
 
 ::: tip
@@ -148,13 +148,13 @@ end
 
 I'm guessing there are no external contributors, so I'm not planning to write a contribution guide yet... If you want to help us contribute to the project, you can send us an issue, leave a comment in the comments section of this site or in the [Steam comments](https://steamcommunity.com/sharedfiles/filedetails/?id=2902808812), and I'll try to hurry up and write a contribution document, or take your suggestions to fix bugs and improve the plugin!
 
-## ❤SPONSR
+## ❤SPONSER
 
 The effort to develop this plugin is really big, and it's hard for me to allocate too much time to maintain it, so if you want to help us out, you are welcome to give us a small donation at AFDIAN (don't customize it too much, it's not worth it):
 
 [![License](https://img.shields.io/badge/AFDIAN-SPONSER%20US-lightpurple.svg?style=for-the-badge&)](https://afdian.net/a/Nsrc233)
 
-Or even simpler, give us a like and a subscribe at Steam Workshop so we can see your approval of this project!
+Or even simpler, give us a like and a subscribe at Steam Workshop so we can see your approval of this project and let more people know this addon!
 
 
 

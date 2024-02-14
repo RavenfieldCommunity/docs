@@ -20,7 +20,7 @@ head:
 
 [![License](https://img.shields.io/badge/%E6%8E%88%E6%9D%83%E5%9F%BA%E4%BA%8E%E8%AE%B8%E5%8F%AF-GPLv3-lightblue.svg?style=for-the-badge&)](https://github.com/RavenfieldCommunity/ravenscriptidea/blob/main/LICENSE)
 
-项目地址：[Github](https://github.com/RavenfieldCommunity/ravenscriptidea/)
+项目地址：[Github](https://github.com/RavenfieldCommunity/ravenscriptidea/) Steaml工坊：[Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3160495493)
 :::
 
 :::tip
@@ -148,7 +148,7 @@ end
 
 ## 鸣谢&贡献项目
 
-我估计没有外部贡献者，所以还没打算写贡献指南呢...如果你想帮助我们贡献项目，你可以给我们提issue、留下评论在本站评论区或[Steam评论区](https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158)，我会加紧时间赶写贡献文档，或吸取你的建议修bug和完善插件
+我估计没有外部贡献者，所以还没打算写贡献指南呢...如果你想帮助我们贡献项目，你可以给我们提issue、留下评论在本站评论区或[Steam评论区](https://steamcommunity.com/sharedfiles/filedetails/?id=3160495493)，我会加紧时间赶写贡献文档，或吸取你的建议修bug和完善插件
 
 ## ❤捐助
 
@@ -156,7 +156,7 @@ end
 
 [![License](https://img.shields.io/badge/爱发电-支持我们！-lightpurple.svg?style=for-the-badge&)](https://afdian.net/a/Nsrc233)
 
-或者说更简单，在Steam工坊给我们一个赞和订阅，让我们看到你们的对这个项目的认可！
+或者说更简单，在Steam工坊给我们一个赞和订阅，让我们看到你们的对这个项目的认可，让更多人知道这个插件！
 
 
 
