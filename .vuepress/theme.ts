@@ -13,7 +13,6 @@ export default hopeTheme({
       }
     ]
   },
-  iconAssets: "iconfont",
   favicon: "/favicon.ico",
   logo: "/Logo.png",
   repo: "ravenfieldcommunity/docs",

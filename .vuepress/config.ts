@@ -1,8 +1,10 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
-import { redirectPlugin } from "vuepress-plugin-redirect";
-import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
+import { redirectPlugin } from "@vuepress/plugin-redirect";
+import { viteBundler } from "@vuepress/bundler-vite";
+import { analyticsPlugin } from '@starzkg/vuepress-plugin-analytics';
+import { clarityAnalyticsPlugin } from '@starzkg/vuepress-plugin-clarity-analytics'
 
 export default defineUserConfig({
   base: "/docs/",
@@ -26,16 +28,14 @@ export default defineUserConfig({
   },
   head: [['meta', { name: 'robots', content: 'noindex' }]],
   theme,
+  bundler: viteBundler(),
   shouldPrefetch: false,
   plugins: [
-    searchProPlugin({
-      indexContent: true
-    }),
     redirectPlugin({
         autoLocale: true   
-    }),
-    googleAnalyticsPlugin({
-      id: 'G-SE76S2Y1LL'
-    })
+    })//,
+    //clarityAnalyticsPlugin({
+    //  id: 'G-SE76S2Y1LL'
+    //})
   ]
 });

@@ -38,13 +38,13 @@ RSIDEA是一个帮助modder编写RS脚本的插件，依赖于前端Framework，
 
 ✅ 基本完全还原RS官方文档
 
+✅ 加入RavenM扩展api
+
 ✅ 用户annotation支持
 
 ✅ 本体与前置Frameworks在开发支持期内
 
 ✅ 多IDE兼容
-
-🅾 未来将加入RavenM扩展api
 
 ❌ 稀烂的self指针与register(behaviour注册、local变量注入与同步的基本不可用)
 
@@ -76,6 +76,14 @@ RSIDEA是一个帮助modder编写RS脚本的插件，依赖于前端Framework，
 ## 用法
 
 由于前置扩展与我的开发经验不成熟，因此您在早期开发rs脚本时需遵循以下步骤
+
+### 更新插件
+
+打开插件管理器即可自动更新
+
+### 启用RavenM扩展支持
+
+在启用本插件时一并启用`Ravenscript IDEA with RavenM`
 
 ### 关联文件类型
 
