@@ -30,7 +30,7 @@ BepInEX是一个Unity模组插件框架，本项目的前置多语言插件需�
 > [Github](https://github.com/BepInEx/BepInEx/releases/latest)
 >
 > 在此页面找到并点击`Assets`下拉选项，找到`BepInEx_x64_XXX.zip`（例如`BepInEx_x64_5.4.22.0.zip`），点击并下载
-> ![](/img/Project/mlang.001.png)
+> ![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.001.png)
 
 > [KGithub镜像](https://kkgithub.com/BepInEx/BepInEx/releases/latest)
 >
@@ -46,11 +46,11 @@ BepInEX是一个Unity模组插件框架，本项目的前置多语言插件需�
 
 打开游戏目录（例如`E:\Program Files\Steam\steamapps\common\Ravenfield`）,你也可以在Steam的库页面找到游戏，点击`属性` > `管理` > `浏览本地文件`
 
-![](/img/Project/mlang.002.png)
+![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.002.png)
 
 将压缩文件内的文件解压到游戏目录，现在目录应该看着像多了这些文件：
 
-![](/img/Project/mlang.003.png)
+![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.003.png)
 
 启动一次游戏，等到出现过场动画就可以关闭，如果无报错，则BepInEX安装完成
 
@@ -75,7 +75,7 @@ XUnity.AutoTranslator是一个由BepInEX官方开发人员开发的一个游戏�
 
 将压缩文件解压到游戏目录，现在你的游戏目录看着应该像这样，原有的`BepInEX`文件夹下的`plugins`下多了两个文件夹，`core`下多了一个文件：
 
-![](/img/Project/mlang.004.png)
+![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.004.png)
 
 再运行一次游戏，同上，确保插件已正确安装
 
