@@ -1,0 +1,3 @@
+[submodule ".vuepress/public/img"]
+	path = .vuepress/public/img
+	url = https://github.com/ravenfieldcommunity/docs-img.git
