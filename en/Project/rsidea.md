@@ -6,10 +6,6 @@ heroText: Ravenscript IDEA
 tagline: "Ravenscript IDE Addon, the NEXT snippet addons for ravenscript coding"
 description: "The NEXT snippet addons for ravenscript coding"
 sidebar: true
-head:
-  - - meta
-    - name: robots
-      content: yesindex
 ---
 
 # Ravenscript IDEA

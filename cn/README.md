@@ -4,14 +4,10 @@ home: true
 heroText: false
 tagline: false
 description: Ravenfield中文社区模组开发与游戏入门文档
-head:
-  - - meta
-    - name: robots
-      content: yesindex
 ---
 <p align="center">
 
-# Ravenfield社区客制化文档
+# Ravenfield社区文档
 
 </p>
 
@@ -82,6 +78,13 @@ title: Ravenscript IDEA
 desc: 新一代RS开发snippet插件
 logo: \image\Project\rsidea.001.png
 link: /cn/Project/rsidea.md
+```
+
+```card
+title: 游戏多语言
+desc: 游戏本地化多语言支持
+logo: /image/Components.png
+link: /cn/Project/mlang.md
 ```
 
 **鸣谢**

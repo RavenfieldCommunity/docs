@@ -6,10 +6,6 @@ heroText: Ravenscript IDEA
 tagline: "新一代RS开发snippet插件（又新又拉XD"
 description: "Ravenscript IDE Addon,新一代RS开发snippet插件（又新又拉XD"
 sidebar: true
-head:
-  - - meta
-    - name: robots
-      content: yesindex
 ---
 
 # Ravenscript IDEA
@@ -160,11 +156,7 @@ end
 
 ## ❤捐助
 
-虽然很不想说，但确实，开发这个插件所费精力确实大，我也难以分配太多时间维护，因此如果你想帮助我们，欢迎在爱发电给我们一点小小的捐助（别自定义太多哈，不值得）：
-
-[![License](https://img.shields.io/badge/爱发电-支持我们！-lightpurple.svg?style=for-the-badge&)](https://afdian.net/a/Nsrc233)
-
-或者说更简单，在Steam工坊给我们一个赞和订阅，让我们看到你们的对这个项目的认可，让更多人知道这个插件！
+欢迎在Steam工坊给我们一个赞和订阅，让我们看到你们的对这个项目的认可，让更多人知道这个插件！
 
 
 

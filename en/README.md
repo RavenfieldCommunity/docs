@@ -4,10 +4,6 @@ home: true
 heroText: false
 tagline: false
 description: Ravenfield Community Mod Development and Game Introduction Document
-head:
-  - - meta
-    - name: robots
-      content: yesindex
 ---
 <p align="center">
 

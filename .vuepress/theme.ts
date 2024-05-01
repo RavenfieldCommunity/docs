@@ -4,17 +4,8 @@ import { enSidebar, cnSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://ravenfieldcommunity.github.io",
-  manifest: {
-    icons: [
-      {
-        src: "/favicon.ico",
-        sizes: "192x192",
-        type: "image/png"
-      }
-    ]
-  },
-  favicon: "/favicon.ico",
   logo: "/Logo.png",
+  favicon: "/favicon.ico",
   repo: "ravenfieldcommunity/docs",
   pure: true,
   contributors: false,
@@ -62,16 +53,26 @@ export default hopeTheme({
     readingTime: false,
     pwa: {
       themeColor: '#6d6d6d',
-      cacheHTML: true
+      cacheHTML: true,
+      appendBase: true,
+      favicon: "/favicon.ico",
+      showInstall: true,
+      manifest: {
+        icons: [{
+          src: "/favicon.ico",
+          sizes: "1024x1024",
+          type: "image/pxng"
+        }]
+      },
     },
     mdEnhance: {
       mermaid: true,
 	    align: true,
 	    card: true,
     },
-	sitemap: false,
-	seo: {
-	  autoDescription: false
-	}
+  sitemap: false,
+  seo: {
+    autoDescription: false
+  }
   }
 });

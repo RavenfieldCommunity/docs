@@ -17,16 +17,16 @@ export default defineUserConfig({
     //},
     '/cn/': {
             lang: 'zh-CN',
-            title: 'Ravenfield社区客制化文档',
-            description: 'Ravenfield社区客制化文档'
+            title: 'Ravenfield社区文档',
+            description: 'Ravenfield社区文档'
     },
     '/en/': {
             lang: 'en-US', 
-            title: 'Ravenfield Modding Documents',
-            description: 'Ravenfield Community MODDING Documents'
+            title: 'Ravenfield Documents',
+            description: 'Ravenfield Community Documents'
     }
   },
-  head: [['meta', { name: 'robots', content: 'noindex' }]],
+  //head: [['meta', { name: 'robots', content: 'noindex' }]],
   theme,
   bundler: viteBundler(),
   shouldPrefetch: false,

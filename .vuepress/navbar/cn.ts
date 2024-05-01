@@ -19,6 +19,10 @@ export const cnNavbar = navbar([
       {
         text: "RS IDEA",
         link: "/cn/Project/rsidea"
+      },
+      {
+        text: "游戏多语言",
+        link: "/cn/Project/mlang"
       }
     ]
   },
