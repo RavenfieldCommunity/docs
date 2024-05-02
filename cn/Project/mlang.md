@@ -10,7 +10,7 @@ sidebar: true
 # 游戏多语言
 
 ::: center
-Steam工坊：[Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3160495493)
+Steam工坊：[Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3237432182)
 :::
 
 ## 描述
@@ -85,7 +85,7 @@ XUnity.AutoTranslator是一个由BepInEX官方开发人员开发的一个游戏�
 
 打开游戏目录，返回当前目录的上两级目录（例如游戏目录为`E:\Program Files\Steam\steamapps\common\Ravenfield`，返回上级目录后，文件管理器应处在`E:\Program Files\Steam\steamapps\`）
 
-然后依次打开当前目录下的`\workshop\content\636480\`,如图：
+然后依次打开当前目录下的`\workshop\content\636480\3237432182`,如图（保证已订阅上面的工坊项目，此处的`3237432182`即为我们的工坊项目id）：
 
 里面就是所需文件，将它们全部复制
 
@@ -95,15 +95,17 @@ XUnity.AutoTranslator是一个由BepInEX官方开发人员开发的一个游戏�
 
 ## 提示
 
-`main-cn.txt`是基本的游戏翻译文件
+`main-sch.txt`是基本的游戏翻译文件
 
-`main_extra-cn.txt`是游戏的扩展翻译文件，包含剧情模式与SPEC OPS模式的对话文本
+`main_extra-sch.txt`是游戏的扩展翻译文件，包含剧情模式与SPEC OPS模式的对话文本
 
-`ravenm-cn.txt`是RavenM联机插件的翻译文件
+`ravenm-sch.txt`是RavenM联机插件的翻译文件
 
-现阶段，剧情模式与SPEC OPS模式的对话文本仍存在某些bug即滚动文字无法正常翻译，打开`BepInEx\config\AutoTranslatiorConfig.ini`,将`GeneratePartialTranslations`一项修改为`True`即可，但这可能会引发其他翻译bug，这个问题将在未来修复敬请留意
+现阶段，剧情模式与SPEC OPS模式的对话文本仍存在某些bug即滚动文字无法正常翻译，打开`BepInEx\config\AutoTranslatiorConfig.ini`,将`GeneratePartialTranslations`一项修改为`True`即可，但这可能会引发其他翻译bug，这个问题将在未来修复，敬请留意
 
-另外，地图编辑器与战役模式的翻译仍未完成，如需要请在评论区提出，我们会尽快更新
+要启用RavenM的翻译，请将`EnableIMGUI`修改为`True`
+
+另外，地图编辑器与战役模式的翻译仍未全部完成，如需要请在评论区提出，我们会尽快更新
 
 ## 为其他语言编写翻译文件
 
