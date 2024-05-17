@@ -1,10 +1,8 @@
 ---
 title: 游戏多语言
-home: true
 heroText: 游戏多语言
 tagline: "游戏本地化多语言 简体中文示例"
 description: "游戏本地化多语言 简体中文示例"
-sidebar: true
 ---
 
 # 游戏多语言

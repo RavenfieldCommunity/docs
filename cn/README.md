@@ -20,7 +20,9 @@ Ravenfield是一款由[SteelRaven7开发的FPS射击游戏](/cn/in-GAME/README.m
 
 此文档可帮助您了解如何如何开发Ravenfield的模组。您可以从头到尾阅读该文档，或将其用作参考。
 
-如果这是第一次使用游玩Ravenfield或开发MOD，欢迎查看有关游玩Ravenfield的[介绍性文档](/cn/in-GAME/)，并参阅[RFCreator Project](/cn/Tutorials/README.md)。
+如果这是第一次使用游玩Ravenfield或开发MOD，欢迎查看有关游玩Ravenfield的[介绍性文档](/cn/in-GAME/)，并参阅[RFCreator Project](/cn/Tutorials/README.md)
+
+如果你是普通玩家，你可以在[这里](/cn/Project/ravenm.md)找到联机插件
 
 ------
 
@@ -85,6 +87,13 @@ title: 游戏多语言
 desc: 游戏本地化多语言支持
 logo: /image/Components.png
 link: /cn/Project/mlang.md
+```
+
+```card
+title: 联机插件国内版
+desc: 国内社区优化的RavenM联机插件
+logo: /image/Components.png
+link: /cn/Project/ravenm.md
 ```
 
 **鸣谢**

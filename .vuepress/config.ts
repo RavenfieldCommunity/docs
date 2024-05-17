@@ -3,8 +3,6 @@ import theme from "./theme.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { redirectPlugin } from "@vuepress/plugin-redirect";
 import { viteBundler } from "@vuepress/bundler-vite";
-import { analyticsPlugin } from '@starzkg/vuepress-plugin-analytics';
-import { clarityAnalyticsPlugin } from '@starzkg/vuepress-plugin-clarity-analytics'
 
 export default defineUserConfig({
   base: "/docs/",
@@ -26,7 +24,6 @@ export default defineUserConfig({
             description: 'Ravenfield Community Documents'
     }
   },
-  //head: [['meta', { name: 'robots', content: 'noindex' }]],
   theme,
   bundler: viteBundler(),
   shouldPrefetch: false,

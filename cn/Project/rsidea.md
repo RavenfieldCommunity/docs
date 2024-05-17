@@ -1,11 +1,9 @@
 ---
 title: Ravenscript IDEA
-home: true
 heroImage: \image\Project\rsidea.001.png
 heroText: Ravenscript IDEA
 tagline: "新一代RS开发snippet插件（又新又拉XD"
 description: "Ravenscript IDE Addon,新一代RS开发snippet插件（又新又拉XD"
-sidebar: true
 ---
 
 # Ravenscript IDEA
