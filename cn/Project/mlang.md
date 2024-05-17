@@ -60,8 +60,7 @@ XUnity.AutoTranslator是一个由BepInEX官方开发人员开发的一个游戏�
 
 > [Github](https://github.com/bbepis/XUnity.AutoTranslator/releases/latest)
 >
-> 在此页面找到并点击`Assets`下拉选项，找到`XUnity.AutoTranslator-BepInEx-XXX.zip
-`（例如`XUnity.AutoTranslator-BepInEx-5.3.0.zip`，**注意不是`XUnity.AutoTranslator-BepInEx-IL2CPP-XXX.zip`**），点击并下载
+> 在此页面找到并点击`Assets`下拉选项，找到`XUnity.AutoTranslator-BepInEx-XXX.zip`（例如`XUnity.AutoTranslator-BepInEx-5.3.0.zip`，**注意不是`XUnity.AutoTranslator-BepInEx-IL2CPP-XXX.zip`**），点击并下载
 
 > [KGithub镜像](https://kkgithub.com/bbepis/XUnity.AutoTranslator/releases/latest)
 >
@@ -85,9 +84,13 @@ XUnity.AutoTranslator是一个由BepInEX官方开发人员开发的一个游戏�
 
 然后依次打开当前目录下的`\workshop\content\636480\3237432182`,如图（保证已订阅上面的工坊项目，此处的`3237432182`即为我们的工坊项目id）：
 
+![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.006.png)
+
 里面就是所需文件，将它们全部复制
 
-然后回到游戏目录，打开目录下的`BepInEX\Translations\`的`jp\Text`文件夹（默认），将先前复制的文件粘贴到这里
+然后回到游戏目录，打开目录下的`BepInEX\`文件夹下的`Translation\`下的`en\`下的`Text`文件夹（默认,否则查看`BepInEx\config\AutoTranslatiorConfig.ini`的`Language`一项的值），将先前复制的文件粘贴到这里：
+
+![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.005.png)
 
 大功告成！
 
@@ -99,7 +102,7 @@ XUnity.AutoTranslator是一个由BepInEX官方开发人员开发的一个游戏�
 
 `ravenm-sch.txt`是RavenM联机插件的翻译文件
 
-现阶段，剧情模式与SPEC OPS模式的对话文本仍存在某些bug即滚动文字无法正常翻译，打开`BepInEx\config\AutoTranslatiorConfig.ini`,将`GeneratePartialTranslations`一项修改为`True`即可，但这可能会引发其他翻译bug，这个问题将在未来修复，敬请留意
+现阶段，剧情模式与SPEC OPS模式的对话文本仍存在某些bug即滚动文字无法正常翻译，打开`BepInEx\config\AutoTranslatiorConfig.ini`，插件的配置文件,将`GeneratePartialTranslations`一项修改为`True`即可，但这可能会引发其他翻译bug，这个问题将在未来修复，敬请留意
 
 要启用RavenM的翻译，请将`EnableIMGUI`修改为`True`
 
@@ -111,4 +114,4 @@ XUnity.AutoTranslator是一个由BepInEX官方开发人员开发的一个游戏�
 
 ## ❤捐助
 
-欢迎在Steam工坊给我们一个赞和订阅，让我们看到你们的对这个项目的认可，让更多人知道这个插件！
+欢迎在Steam工坊给我们一个赞和订阅，让我们看到你们的对这个项目的认可，让更多人知道这个项目！
