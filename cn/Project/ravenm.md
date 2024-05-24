@@ -22,11 +22,13 @@ RavenM联机插件国内版，是国内社区在原RavenM国际版（社区驱�
 
 ### 一键安装
 
-在电脑上下载并运行网盘内的EXE文件即可
+在电脑上下载并运行网盘压缩包内的EXE文件即可
 
 ### 使用
 
-进入游戏后打开Instant Action（即平常跟游戏时一样）的对局配置界面，在此时按下M键以呼出联机菜单
+进入游戏后打开Instant Action（即平常跟游戏时一样）的对局配置界面，在此时按下M键以呼出联机菜单：
+
+![](https://ravenfieldcommunity.github.io/docs-img/Project/ravenm.001.png)
 
 ## 常见问题
 

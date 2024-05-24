@@ -3,6 +3,7 @@ import theme from "./theme.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { redirectPlugin } from "@vuepress/plugin-redirect";
 import { viteBundler } from "@vuepress/bundler-vite";
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 
 export default defineUserConfig({
   base: "/docs/",
@@ -30,9 +31,9 @@ export default defineUserConfig({
   plugins: [
     redirectPlugin({
         autoLocale: true   
-    })//,
-    //clarityAnalyticsPlugin({
-    //  id: 'G-SE76S2Y1LL'
-    //})
+    }),
+    googleAnalyticsPlugin({
+      id: 'G-SE76S2Y1LL'
+    })
   ]
 });
