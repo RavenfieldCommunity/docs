@@ -42,7 +42,7 @@ RSIDEA是一个帮助modder编写RS脚本的插件，依赖于前端Framework，
 
 ❌ 稀烂的self指针与register(behaviour注册、local变量注入与同步的基本不可用)
 
-❌ 不存在的const / var / static / array 辨别（前置扩展不支持我也没办法
+❌ 不存在的const / var / static 辨别（前置扩展不支持我也没办法
 ```
 
 ## 安装
@@ -73,15 +73,19 @@ RSIDEA是一个帮助modder编写RS脚本的插件，依赖于前端Framework，
 
 ### 更新插件
 
-打开插件管理器即可自动更新
+打开插件管理器即可自动更新, 若出现`Update`按钮请也一并点击
+
+将鼠标放在代码中的`behaviour()`上即可检查更新与访问插件管理器
 
 ### 启用RavenM扩展支持
 
 在启用本插件时一并启用`Ravenscript IDEA with RavenM`
 
-### 关联文件类型
+### 关联文件类型 (不需要)
 
-这个我就不用多说了吧？rs脚本用的是txt文件，那你就在IDE里把txt扩展名的文件跟Lua语言关联起来，这样才能使用Lua扩展开发rs
+在新版的RFTools（而非旧的RavenfieldToolPack）中无需配置拓展名关联，Unity可以自动将lua文件识别为TextAsset文件
+
+若你使用的是旧的RavenfieldToolPack，那你就在IDE里把txt扩展名的文件跟Lua语言关联起来，这样才能使用Lua扩展开发rs
 
 请自行上网查找，如[VSCode中txt文件关联Lua](https://blog.csdn.net/u012433546/article/details/100566579)
 
@@ -123,7 +127,7 @@ rawset(_G,"YOUR_BEHAVIOUR_NAME_X",TO_DEF_X2)
 
 现在你就可以把这个文件放一边，开始编写这个rs脚本了
 
-### 手动定义类型
+### 用法示例
 
 有时扩展不能自动判断一个变量的类型，需要手动定义，下方示例中的`---@type GameObject`就是声明这个变量`a`的类型是GameObject（仅做IDE层面的辅助变量类型判断，在实际运行中不具备任何功能）：
 ```lua
@@ -131,7 +135,11 @@ rawset(_G,"YOUR_BEHAVIOUR_NAME_X",TO_DEF_X2)
 a = self.targets.canvas
 ```
 
-### 手动定义function回传参数类型与返回值
+或直接
+```lua
+a = self.targets["canvas"]
+a = self.targets[1]
+```
 
 当你添加一个事件监听时，扩展不能自动辨别回传参数的类型，，需要手动定义，下方示例中的`---@param value int`就是声明这个参数`value`的类型是int（仅做IDE层面的辅助变量类型判断，在实际运行中不具备任何功能）：
 ```lua
@@ -140,7 +148,7 @@ function test: OnValueChanged(value)
 end
 ```
 
-如下，`---@return bool`声明这个function的返回值是bool（仅做IDE层面的辅助变量类型判断，在实际运行中不具备任何功能）：
+`---@return bool`声明这个function的返回值是bool（仅做IDE层面的辅助变量类型判断，在实际运行中不具备任何功能）：
 ```lua
 ---@return bool
 function test: Calc()

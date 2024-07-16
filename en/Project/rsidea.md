@@ -44,7 +44,7 @@ RSIDEA is a sub addon to help modders develop ravenscript. though dependent exte
 
 ❌ Sparse self pointers with register (behaviour registration, local variable injection and basic unavailability of synchronization)
 
-❌ Non-existent const / var / static / array discrimination \(I can't help it if the frontend extension doesn't support it\)
+❌ Non-existent const / var / static discrimination \(I can't help it if the frontend extension doesn't support it\)
 ```
 
 ## Installation
@@ -71,9 +71,16 @@ For example, download the source code for this project\(link:`https://github.com
 
 Due to the immaturity of the dependent extensions and my development experience, you will need to follow these steps in your early development of ravenscript
 
-### Associate file types
+### Update addon
 
-you have to associate the txt files with the Lua language in the IDE, so that you can use the Lua extension to develop RS.
+Open the addon manager to automatically update. If the 'Update' button appears, please also click it ,too.
+Place the cursor over the 'behavior()' in the code to check for updates and open the addon manager.
+
+### Associate file types (NO NEED)
+
+In the new version of RFTools (the old is RavenfieldToolPack), there is no need to configure extension associations, and Unity can automatically recognize Lua files as TextAsset
+
+If you are using an old RavenfieldToolPack ,you have to associate the txt files with the Lua language in the IDE, so that you can use the Lua extension to develop RS.
 
 Find out for yourself on the Internet
 
@@ -115,7 +122,7 @@ Finally, in `rawset(_G, "YOUR_BEHAVIOUR_NAME",TO_DEF2)`, `YOUR_BEHAVIOUR_NAME` i
 
 Now you can put this file aside and start writing this ravenscript
 
-### Manually defined types
+### Example Usage
 
 Sometimes extension can not automatically determine the type of a variable, you need to define it manually, the `--@type GameObject` in the example below is to declare that the type of this variable `a` is GameObject (only do IDE level auxiliary variable type determination, does not have any functionality in the actual operation):
 ```lua
@@ -123,7 +130,11 @@ Sometimes extension can not automatically determine the type of a variable, you 
 a = self.targets.canvas
 ```
 
-### Manually defining function parameter types and return values
+or:
+```lua
+a = self.targets["canvas"]
+a = self.targets[1]
+```
 
 When you add an event listener, the extension can not automatically identify the type of the return parameter, you need to define it manually, the `--@param value int` in the example below is to declare that the type of the parameter `value` is int (only to do the IDE level of auxiliary variables to determine the type of the actual operation does not have any function):
 ```lua
@@ -146,11 +157,7 @@ I'm guessing there are no external contributors, so I'm not planning to write a 
 
 ## ❤SPONSER
 
-The effort to develop this plugin is really big, and it's hard for me to allocate too much time to maintain it, so if you want to help us out, you are welcome to give us a small donation at AFDIAN (don't customize it too much, it's not worth it):
-
-[![License](https://img.shields.io/badge/AFDIAN-SPONSER%20US-lightpurple.svg?style=for-the-badge&)](https://afdian.net/a/Nsrc233)
-
-Or even simpler, give us a like and a subscribe at Steam Workshop so we can see your approval of this project and let more people know this addon!
+Give us a like and a subscribe at Steam Workshop so we can see your approval of this project and let more people know this addon!
 
 
 
