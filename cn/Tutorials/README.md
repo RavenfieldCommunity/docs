@@ -2,12 +2,12 @@
 category: 
 - 教程
 ---
-# RFCreator Project
+# MOD教程
 
 ## 前言
 Hi~（＾∀＾●）ﾉｼ
 
-欢迎成为RF的modder！
+欢迎成为RF的modder（模组作者）！
 
 此页面集将指导您创建MOD
 
@@ -18,7 +18,7 @@ Hi~（＾∀＾●）ﾉｼ
 :::
 
 ## 在启程之前...(必读)
-在启程之前，这是您需要的掌握一些技能，**您必须至少先看一遍教程才能确保您MODDING的顺利，RFCreator Project不是零基础教程**：
+在启程之前，这是您需要的掌握一些技能，**您必须至少先看一遍教程才能确保您MODDING的顺利，这里不是零基础教程**：
 
 你可以在[资源镜像](/cn/RESOURCE.md)中找到下载链接
 ### 你必须掌握的技能
@@ -53,7 +53,7 @@ Hi~（＾∀＾●）ﾉｼ
 
 中阶 [动画(速通请跳P1\~18)](https://www.bilibili.com/video/BV13y4y1H75J) [硬表面建模(速通请看完)](https://www.bilibili.com/video/BV14A411n76J)
 :::warning
-**请不要花费大量时间学习Blender的材质节点，了解材质槽等基础概念即可，Unity的材质并不与Blender兼容，有这时间不如学一下Unity的Shader**
+**请不要花费大量时间学习Blender的材质节点，了解材质槽等基础概念即可，Unity的材质并不与Blender兼容，有这时间不如学一下Unity的Shader（也不建议Shader，现阶段Shader跨版本兼容性不好）**
 :::
 ::::
 

@@ -2,14 +2,14 @@
 category: 
 - 教程
 ---
-# vhc.1 载具
+# 教程 vhc.1 载具
 
 ## 前言
 
 在此文档中，我们将为您呈现制作一个载具的大致过程
 
 :::info
-**同样地，在本文档中，我们不会指导您制作套皮载具**
+**同样地，在本文档中，我们不会指导您制作套皮载具（隐藏原模型Render的事）**
 :::
 
 ## 0.0 构思
@@ -48,7 +48,7 @@ flowchart TD
 
 模型这步真的没什么好说的，因载具而异
 
-如果只是想练手，可以直接使用RFTools\Models\Vehicles内的模型
+如果只是想练手，可以直接使用`RFTools\Models\Vehicles`内的模型
 
 如果想自己制作而建模有些许不行，可以自行寻找模型或按要仿制的游戏武器自行寻找对应原版游戏美术资源
 
@@ -63,7 +63,9 @@ flowchart TD
 总而言之、确保模型的规格化
 
 ::: details 如果是AnimationDrivenVehicle...（制作动画）
-未实装、请先参考[Unity文档](https://docs.unity.cn/cn/2020.3/Manual/AnimationSection.html)
+未实装、请先参考[Unity文档](https://docs.unity.cn/cn/2020.3/Manual/AnimationSection.html)与社区[Steam指南](https://steamcommunity.com/sharedfiles/filedetails/?id=3000223001)
+
+已经够用
 :::
 
 ## 2.0 导入Unity
@@ -78,10 +80,14 @@ flowchart TD
 
 我们将在这个场景继续我们的全部工作
 
-## 2.1 在Unity配置
+## 2.1 （各个载具组成）
 
 一个载具包含什么？
 
 包含载具主体[Vehicle]((/cn/Components/Vehicle.md))（或其派生组件）座位[Seat]((/cn/Components/Seat.md))、座位上的武器、座位武器的HUB（如果有）
+
+以下为各个类型载具的组成
+
+### 2.1.1 Jeep与武装Jeep
 
 ## 3.0 测试与导出

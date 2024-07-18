@@ -2,12 +2,16 @@
 category: 
 - 教程
 ---
-# wpn.1 武器
+# 教程 wpn.1 武器
 ## 前言
 在此文档中，我们将为您呈现制作一个武器（主要面向热兵器）的大致过程
 
 :::info
 **在本文档中，我们不会指导您制作套皮武器，在武器本身各方面高质量的情况下，这样固能快速生产大量高质量MOD，但在质量不可控的情况下这种做法却会让低质MOD污染Steam工坊环境，因此我们不提倡初阶MODDER模仿这些做法，套皮的流程敬请您在日后的实操中摸索。**
+
+另外，制作高还原度与质量的枪械模组，同样需要你入门一些基础枪械知识，尝试过其他modder的枪械手感来模仿优化你的枪械参数
+
+对于空仓、空挂、多瞄具动画适配、动画机layer叠加等高级特性，参见[百度贴吧精品贴](https://tieba.baidu.com/f?kw=ravenfield&ie=utf-8&tab=good&cid=4)或进[社区QQ群](./README.md#社区服务支持)请教武器modder
 :::
 
 ## 0.0 构思
@@ -55,11 +59,11 @@ flowchart TD
 
 按你所想的制作模型，是什么就什么，例如近战武器就制作本体，手榴弹就制作弹体
 
-枪械需要制作枪体、弹体（不是一般意义,参考RFTools\Prefabs\Projectiles，可直接使用RFTools自带）、弹壳（建议使用RFTools自带RFTools\Models\Weapons\Misc\casing.blend）
+枪械需要制作枪体、弹体（不是一般意义,参考`RFTools\Prefabs\Projectiles`，可直接使用RFTools自带）、弹壳（建议使用RFTools自带`RFTools\Models\Weapons\Misc\casing.blend`）
 
 不需要制作手臂模型，手臂模型RFTools自带，只需制作武器本体
 
-如果只是想练手，可以直接使用RFTools\Models\Weapons内的模型
+如果只是想练手，可以直接使用`RFTools\Models\Weapons`内的模型
 
 如果想自己制作而建模有些许不行，可以在[Sketchfab](https://www.sketchfab.com/)、[模之屋](https://www.aplaybox.com/)这类网站寻找模型或按要仿制的游戏武器自行寻找对应原版游戏美术资源（新手建议）
 
@@ -69,7 +73,7 @@ flowchart TD
 
 所有的物体能独立的都已独立并设置了父物体（方便后期维护+Clone），原点正确，已应用缩放，物体mesh无问题
 
-这时您就可以在菜单处追加RFTools\Models\Character\Hands.blend内的所有内容
+这时您就可以在菜单处追加`RFTools\Models\Character\Hands.blend`内的所有内容
 
 并继续下一步
 
@@ -80,14 +84,14 @@ flowchart TD
 
 准星将在稍后再Unity配置，请预制做一个准星贴图
 
-**贴图方案（仅光学）**：直接制作一个准星贴图放置在瞄具对应的位置即可（RFTools\Models\Weapons\Sinper.blend内有，可以在此基础上修改）
+**贴图方案（仅光学）**：直接制作一个准星贴图放置在瞄具对应的位置即可（`RFTools\Models\Weapons\Sinper.blend`内有，可以在此基础上修改）
 
 后续详细过程请参考[2.5 瞄具设置（仅枪械）](#_2-5-瞄具设置-仅枪械)
 :::
 
 ## 1.2 制作动画
 
-当您追加RFTools\Models\Character\Hands.blend完成后，它应该看着是这样的：
+当您追加`RFTools\Models\Character\Hands.blend`完成后，它应该看着是这样的：
 
 {缺图}
 
@@ -117,7 +121,7 @@ flowchart TD
 
 无论哪种武器，按照[Weapon](/cn/Components/Weapon.md)提供的Parameters，您都至少需要制作6个动画，分别为：切换(Unholster或Entry)、待机(Idle)、瞄准(Aim。非热兵器可以不做)、装填（Reload）、冲刺(Spirit)、踢(Kick)(没错指挥队员Direct Member、召集队员Call Member两个动画可以选择偷懒不做hhh)
 
-每个动画的大概用时可以参考官方模型（RFTools\Models\Weapons\，片段划分需要在Unity的文件Inspector\Animation\Cilps一栏查看）
+每个动画的大概用时可以参考官方模型（`RFTools\Models\Weapons`，片段划分需要在Unity的文件`Inspector\Animation\Cilps`一栏查看）
 
 动画的细节很多，官方提供的模型动画示例都相对简单，你可以按想制作动画的精细程度，给一个动画是一个单帧动画还是一个循环多帧动画（如冲刺），或按Parameters制作更多动画（如开火、多瞄准）
 
@@ -164,7 +168,7 @@ K完帧了？是时候下一步了
 
 转到属性，在世界属性中将背景颜色改为纯黑（表（曲）面-颜色，背景节点）
 
-在渲染属性中勾选`Freestyle`，将线条宽度改为2.5px(默认分辨率下)
+在渲染属性中勾选`Freestyle`，将线条宽度改为`2.5px`(默认分辨率下)
 
 在视图层属性中勾选`Freestyle`，在其子选项卡“`Freestyle线条样式`”中选择颜色，将基础色改为纯白
 
@@ -174,7 +178,7 @@ K完帧了？是时候下一步了
 
 {缺图}
 
-最终效果参考RFTools\Materials\Textures\UI\Weapons
+最终效果参考`RFTools\Materials\Textures\UI\Weapons`
 
 ## 1.4 音效制作
 这部分需要看自己
@@ -192,17 +196,17 @@ K完帧了？是时候下一步了
 
 然后我们打开Unity项目
 
-如果您未创建Unity项目或导入RFTools.unitypackage，请自行导入，此处不再赘述
+如果您未创建Unity项目或导入`RFTools.unitypackage`，请自行导入，此处不再赘述
 
 ## 2.1 配置动画Cilps
 
 此处配置动画片段，这部分稍后会在动画机用到
 
-在Unity的Project窗口选中模型文件，在右侧的Inspector选择Animation选项卡：
+在Unity的`Project`窗口选中模型文件，在右侧的`Inspector`选择`Animation`选项卡：
 
 {缺图}
 
-在Clips处新建动画片段并在Start与End处设置动画起始帧与结束帧（像1~25而不是1~1，1~1在Unity无法正常播放），设置好所有的片段（名字按动画随便起）：
+在Clips处新建动画片段并在`Start`与`End`处设置动画起始帧与结束帧（像`1~25`而不是`1~1`，`1~1`在Unity无法正常播放），设置好所有的片段（名字按动画随便起）：
 
 {缺图}
 
@@ -211,7 +215,7 @@ K完帧了？是时候下一步了
 ::: details 如果您的武器是单/多发装填武器...（配置动画事件）
 此处配置动画事件用于单/多发装填武器能在对应的动画时间点播放正确的音效
 
-首先确保你已经配置好动画Cilps，将Reload动画细分为开始装弹、装入子弹动作、结束装弹（拉栓）,将开火动画（仅包括跳栓）以及Idle动画细分.**参考**RFTools\Models\Weapons\Garand.blend：
+首先确保你已经配置好动画Cilps，将Reload动画细分为开始装弹、装入子弹动作、结束装弹（拉栓）,将开火动画（仅包括跳栓）以及Idle动画细分.**参考**`RFTools\Models\Weapons\Garand.blend`：
 
 {缺图}
 
@@ -237,7 +241,7 @@ K完帧了？是时候下一步了
 ## 2.2 预配置武器图标
 此处配置武器图标的部分属性，否则在[下一章](#_2-4-在场景配置武器)时可能会出现奇怪的Bug（？
 
-在Unity的Project窗口选中武器图标文件，在右侧的Inspector选择将`Texture Type`改为Sprite(2D and UI)，勾选`Generate Mip Maps`，`Filter Mode`改为Trilinear：
+在Unity的`Project`窗口选中武器图标文件，在右侧的`Inspector`选择将`Texture Type`改为`Sprite(2D and UI)`，勾选`Generate Mip Maps`，`Filter Mode`改为`Trilinear`：
 
 {缺图}
 
@@ -253,7 +257,7 @@ K完帧了？是时候下一步了
 
 或者可以选择直接套用RFTools自带的Projectile（建议复制一份保留原件）
 
-记得添加自发光材质，具体参考RFTools\Prefab\Projectiles内的Projectile预制件
+记得添加自发光材质，具体参考`RFTools\Prefab\Projectiles`内的Projectile预制件
 
 等会要用
 
@@ -261,9 +265,9 @@ K完帧了？是时候下一步了
 :::
 
 ## 2.4 在场景配置武器
-打开RFTools\Sence\Weapons Lab.unity场景
+打开`RFTools\Sence\Weapons Lab.unity`场景
 
-然后将模型拖入左边的大纲视图（直接拖进场景难以调整位置），并确保场景内的其他武器处于禁用状态（在Inspector内消掉其他物体的复选框，不包括顶头的“Camera Parent”、“Directional Light”、“Plane”、“Soldier Weapon Holder Preview”、“EventSystem”、“Target Cube”）
+然后将模型拖入左边的大纲视图（直接拖进场景难以调整位置），并确保场景内的其他武器处于禁用状态（在Inspector内消掉其他物体的复选框，不包括顶头的“`Camera Parent`”、“`Directional Light`”、“`Plane`”、“`Soldier Weapon Holder Preview`”、“`EventSystem`”、“`Target Cube`”）
 
 这时他看着应该是这样的：
 
@@ -277,7 +281,7 @@ K完帧了？是时候下一步了
 
 现在配置[Weapon](/cn/Components/Weapon.md)（或[MeleeWeapon](/cn/Components/MeleeWeapon.md)、[Wrench](/cn/Components/Wrench.md)或[ThrowableWeapon](/cn/Components/ThrowableWeapon.md),都是必填，**参阅[组件文档](/cn/Components/README.md)**，要优先配置派生组件的选项）组件：
 
-创建一个（多枪口可以多个）名为Muzzle（作为枪口、近战武器攻击点或投掷类武器投掷点，其他名字亦可）的空物体对齐模型的枪口（或投掷点），确保空物体Z轴正对前方：
+创建一个（多枪口可以多个）名为`Muzzle`（作为枪口、近战武器攻击点或投掷类武器投掷点，其他名字亦可）的空物体对齐模型的枪口（或投掷点），确保空物体Z轴正对前方：
 
 {缺图}
 
@@ -285,11 +289,11 @@ K完帧了？是时候下一步了
 
 {缺图}
 
-在Muzzle物体下新建多个空物体作为枪口火花、烟雾的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,主要为Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示）的参数，可以从其他武器复制、冷兵器可以跳过）
+在`Muzzle`物体下新建多个空物体作为枪口火花、烟雾的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,主要为Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示）的参数，可以从其他武器复制、冷兵器可以跳过）
 
-在抛壳口的位置新建一个名为casingParticles的空物体作为抛壳口的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示），可以从其他武器复制、冷兵器可以跳过）,将这个空物体拖入Weapon组件的`casingParticles`
+在抛壳口的位置新建一个名为`casingParticles`的空物体作为抛壳口的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示），可以从其他武器复制、冷兵器可以跳过）,将这个空物体拖入Weapon组件的`casingParticles`
 
-在projectilePrefab处配置子弹的的Prefab（不是一般意义,参考RFTools\Prefabs\Projectiles，可直接RFTools复制一份使用，此物体必须包含[Projectile](/cn/Components/Projectile.md)或其派生组件，当子弹为重火力兵器时建议添加在子弹上添加Audio Source）
+在`projectilePrefab`处配置子弹的的Prefab（不是一般意义,参考`RFTools\Prefabs\Projectiles`，可直接RFTools复制一份使用，此物体必须包含[Projectile](/cn/Components/Projectile.md)或其派生组件，当子弹为重火力兵器时建议添加在子弹上添加`Audio Source`）
 
 然后检查并配置组件的`displayName`、`thirdPersonTransform`、`reloadAudio`（仅热兵器）、`uiSprite`、`arms`、`ammo`（仅热兵器，否则设置为-1）、`auto`（仅热兵器）、`spareAmmo`（仅热兵器，否则设置为-1）、`resupplyNumber`（仅热兵器，否则设置为-1）、`reloadTime`、`aimFov`、`pose`、`advancedReload`、`effInfantry`、`effInfantryGroup`、`effUnarmored`、`effArmored`、`effAir`、`effAirFastMover`,其他选项的看需求配置（**参阅[组件文档](/cn/Components/README.md)**）
 
@@ -309,15 +313,15 @@ K完帧了？是时候下一步了
 一是直接像官方的Sinper一样直接在Blender套一个**贴图物体**在镜筒，到Unity就直接套材质和改`aimFov`
 
 二是**双渲染**：在Bledner放个薄的物体（类似标准平面、圆柱）当镜片，
-在Unity新建一个Render Texture材质，500x500px大概够用了：
+在Unity新建一个`Render Texture`材质，`500x500px`大概够用了：
 
 {缺图}
 
-新建普通材质，将类型改为Unlit\Texture，`Base`选择刚才创建的Render Texture：
+新建普通材质，将类型改为`Unlit\Texture`，`Base`选择刚才创建的`Render Texture`：
 
 {缺图}
 
-场景内新建一个摄像机在武器下（不要放在武器模型的层级下）,检查器内的`Target Texture`就选刚才创建的Render Texture：：
+场景内新建一个摄像机在武器下（不要放在武器模型的层级下）,检查器内的`Target Texture`就选刚才创建的`Render Texture`：
 
 {缺图}
 
@@ -328,33 +332,33 @@ K完帧了？是时候下一步了
 ::: details 狙击手聚焦视角
 {缺图}
 
-对于像图中的狙击手聚焦视角，把场景内的FP_scope（官方武器Sinper下）复制到与镜片相同的层级下即可，可能需要细调一下FP_scope的位置，请自行调整，别忘记把这个物体拖到Weapon组件的scopeAimObject里！
+对于像图中的狙击手聚焦视角，把场景内的`FP_scope`（官方武器Sinper下）复制到与镜片相同的层级下即可，可能需要细调一下`FP_scope`的位置，请自行调整，别忘记把这个物体拖到Weapon组件的`scopeAimObject`里！
 
-如果不满意FP_scope的标线，您可以到Blender自行更改，它在RFTools\Assets\Models\Weapons\Sinper.blend里 
+如果不满意`FP_scope`的标线，您可以到Blender自行更改，它在`RFTools\Assets\Models\Weapons\Sinper.blend`里 
 :::
 
 ### 全息瞄具
 同光学瞄具，在Bledner放个薄的物体（类似标准平面、圆柱）当镜片，在Unity再复制一份到同样的位置
 
-分别给予RFTools\Materials\UI\HUD Glass.mat（作镜片）与RFTools\Materials\Weapons\Holo Sight.mat（做红点贴图）材质
+分别给予`RFTools\Materials\UI\HUD Glass.mat`（作镜片）与`RFTools\Materials\Weapons\Holo Sight.mat`（做红点贴图）材质
 
-红点贴图可以在Holo Sight的材质选项改
+红点贴图可以在`Holo Sight`的材质选项改
 
-镜片颜色可以在HUD Glass的材质选项中的`Tint Color`改
+镜片颜色可以在`HUD Glass`的材质选项中的`Tint Color`改
 
-贴图太大可以把带Holo Sight材质的物体的Y方向拖远一点
+贴图太大可以把带`Holo Sight`材质的物体的Y方向拖远一点
 
 ### 红点瞄具
-同样简单，在武器下新建一个空物体，添加组件Line Render，取消勾选组件的`Use World Space`
+同样简单，在武器下新建一个空物体，添加组件`Line Render`，取消勾选组件的`Use World Space`
 
-将`Positions`的`Sizes`设为2，`Element 0`不动，调整`Element 1`的Z方向长度即可，颜色可以在`Color`改，`Width`可以改线条宽度，`Material`处可以改射线材质（RFTools\Materials\Tracers）：
+将`Positions`的`Sizes`设为2，`Element 0`不动，调整`Element 1`的Z方向长度即可，颜色可以在`Color`改，`Width`可以改线条宽度，`Material`处可以改射线材质（`RFTools\Materials\Tracers`）：
 
 {缺图}
 
 ## 2.6 制作动画机
 这玩意就需要你的想象力了
 
-Project窗口右键新建一个动画机AnimationController，双击打开
+`Project`窗口右键新建一个动画机`AnimationController`，双击打开
 
 动画机本质上就是各种状态时的if、if、if...，通过这些if与Parameters的配合，帮助模型跳转至一个合适的动画，但是各个States的链接有点费脑，一个基础的动画机（.controller）实例如下：
 ```mermaid
@@ -370,13 +374,27 @@ flowchart LR
 ```
 这是官方AK 47的动画机
 
-如果武器复杂，动画机就会更复杂，这就需要你依靠parameters发挥充分的逻辑想象力
+如果武器复杂，动画机就会更复杂，这就需要你依靠parameters发挥充分的逻辑想象力（不要感到害怕，实际上如果动画确实复杂，动画机布线确实会像蜘蛛网一样密集XD，能用就行）
 
 善于运用[动画机过渡](https://docs.unity.cn/cn/2020.3/Manual/StateMachineTransitions.html)、[动画层](https://docs.unity.cn/cn/2020.3/Manual/AnimationLayers.html)、[States](https://docs.unity.cn/cn/2020.3/Manual/class-State.html)的各个知识点（例如一个动画的过渡、过渡时间、循环等。虽然大部分情况用不到？）
 
-特别是单/多发装填武器，在配置动画事件后，这应该会简单一点点，参考官方RFTools\Animations\Weapons\Garand.controller
+特别是单/多发装填武器，在配置动画事件后，这应该会简单一点点，参考官方`RFTools\Animations\Weapons\Garand.controller`
 
-## 3.0 测试与导出
+## 3.1 参数细调
+
+同上，细调关于武器射击、子弹伤害的参数
+
+用以确保游戏平衡，导致一些诸如一枪秒、刮痧等事故而影响体验
+
+这是一个繁琐的过程，在Unity Editor基本调完后还要在游戏里测试
+
+各种武器的属性参见互联网与B站，如OfficialArch系列
+
+## 3.2 武器特性索引
+
+这里用于索引官方武器中的实现的一些特殊功能
+
+## 3.3 测试与导出
 现在我们的武器基本完工了！
 
 此时你的武器物体结构应该是这样的（模型等部分位置可变）：
@@ -408,7 +426,7 @@ flowchart LR
 
 部分功能需要在游戏内测试（例如踢的动画，转动视角...）,但这需要导出Mod
 
-所以我们需要先配置WeaponCotentMod（武器导出向导）组件
+所以我们需要先配置`WeaponCotentMod`（武器导出向导）组件
 
 配置过程参考[WeaponContectMod的组件文档](/cn/Components/WeaponCotentMod.md)
 
