@@ -16,7 +16,7 @@ category:
 
 无需其他的附加组件（如碰撞检测、刚体之类）
 
-或者直接使用\Assets\Prefabs\Map Elements\Must Have\Pathfinding内的prefab(推荐，名字的不同对应不同类型的寻路盒，可在下面修改，不必纠结)
+或者直接使用`RFTools\Prefabs\Map Elements\Must Have\Pathfinding`内的prefab(推荐，名字的不同对应不同类型的寻路盒，可在下面修改，不必纠结)
 
 ## 注释
 

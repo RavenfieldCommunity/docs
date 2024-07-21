@@ -10,7 +10,7 @@
 
 ## 注释
 
-该值影响粒子系统中的rateOverTimeMultiplier 和 rateOverDistanceMultiplier
+该值影响粒子系统中的`rateOverTimeMultiplier` 和 `rateOverDistanceMultiplier`
 
 ## 变量
 | 名称 | 类型 | 描述 |

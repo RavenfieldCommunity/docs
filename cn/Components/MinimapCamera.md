@@ -10,7 +10,7 @@ category:
 
 直接套用在一个Camera物体即可，其余画面调节请在Camera组件调整
 
-或者直接使用\Assets\Prefabs\Map Elements\Must Have内的Minimap Camera.prefab(推荐)
+或者直接使用`RFTools\Prefabs\Map Elements\Must Have`内的`Minimap Camera.prefab`(推荐)
 
 ## 注释
 

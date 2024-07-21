@@ -14,7 +14,7 @@ category:
 ## 用法
 作为车载武器挂载到载具，参考[MountedWeapon](./MountedWeapon.md)
 
-请自行在组件附带绑定的Audio Source组件选择/Sounds/Vehicle/jeep_horn.wav音效，注意Audio Source组件的音频播放配置
+请自行在组件附带绑定的Audio Source组件选择`RFTools/Sounds/Vehicle/jeep_horn.wav`音效，注意Audio Source组件的音频播放配置
 
 使用的延迟等参数的调整项同一般的武器一样
 ## 注释

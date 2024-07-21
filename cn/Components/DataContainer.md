@@ -16,7 +16,7 @@ category:
 
 置于空物体后配置
 
-在各个选项卡中在Sizes设置所需数量
+在各个选项卡中在`Sizes`设置所需数量
 
 再在value内填入数据，在id处填入在此数据在Ravenscript的内部调用id
 

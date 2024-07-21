@@ -12,9 +12,11 @@ category:
 
 套用在空物体中
 
-白天所使用的Light物体置于此组件应用物体内并并重命名为"Day",夜晚所使用的也做同样操作并重命名为"Night"
+白天所使用的Light物体（是的官方的Prefab里包含一个Light物体，你可以调整它）置于此组件应用物体内并并重命名为"`Day`",夜晚所使用的也做同样操作并重命名为"`Night`"
 
-或者直接使用\Assets\Prefabs\Map Elements\Must Haves内的Time Of Day.prefab(推荐)
+白天的Atmosphere直接在Lighting窗口 -> Environment选项卡配置
+
+或者直接使用`\Assets\Prefabs\Map Elements\Must Haves`内的`Time Of Day.prefab`(推荐)
 
 此组件很大一部分选项要生效的话，需要先行在[Lighting窗口](https://docs.unity.cn/cn/2020.3/Manual/lighting-window.html)配置地图场景环境
 
@@ -28,7 +30,6 @@ category:
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- | 
 | nightAtmosphere | Atmosphere | 夜晚的Atmosphere |  
-| atmosphere | Atmosphere | 白天的Atmosphere |  
 | testNight  | bool | 测试夜晚（在Editor的播放模式下预览夜晚效果） |  
 | sky | Color | 天空颜色 |  
 | equator | Color | 地平线的颜色 |  

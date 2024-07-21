@@ -10,9 +10,9 @@ category:
 
 ## 用法
 
-套用在任意空物体上即可正常使用
+套用在任意空物体上即可正常使用，可以包括模型
 
-或者直接使用\Assets\Prefabs\Map Elements\Must Have\内的Supply Crate.prefab(推荐)
+或者直接使用`RFTools\Prefabs\Map Elements\Must Have\`内的`Supply Crate.prefab`(推荐)
 
 ## 注释
 

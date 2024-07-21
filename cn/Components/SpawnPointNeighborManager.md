@@ -10,9 +10,9 @@ category:
 
 ## 用法
 
-套用在一个空物体，在`Size`处填入路线数量，然后在各个`Element *`配置每条路线
+套用在一个空物体，在`Size`处填入路线数量，然后在各个`Element *`配置每条路线，即两两之间把CapturePoint关联起来（就成了一条路线，是把CapturePoint放进去而不是SpawnPoint），按需配置每条路线的属性
 
-或者直接使用\Assets\Prefabs\Map Elements内的Spawn Point Neighbor Manager.prefab(推荐)
+或者直接使用`RFTools\Prefabs\Map Elements`内的`Spawn Point Neighbor Manager.prefab`(推荐)，同上配置这个物体
 
 ## 注释
 

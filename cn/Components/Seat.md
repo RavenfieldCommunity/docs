@@ -22,18 +22,18 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| animation | enum.SitAnimation | 座椅上的人的动作（Chair=坐下, Quad=驾驶车辆, Standing=站立） |
-| type | enum.Type | 座椅类型（FreelookUnarmed, LockedAllowFreelookUnarmed, AlwaysLockedUnarmed=锁定视角与人物装备栏的的武器, FreelookArmed=允许使用人物装备栏的的武器） |
-| enclosed | bool | 载具内（保证人物不受balanceDamage的伤害从座位上震掉） |
-| enclosedDamagedByDirectFire | bool | 载具内不受保护（与enclosed配套，判断会不会造成溅射伤害） |
-| soundMuffle | enum.SoundMuffle | （ Auto, On, Off ） |
+| animation | enum.SitAnimation | 座椅上的人的动作（`Chair`=坐下, `Quad`=驾驶车辆, `Standing`=站立） |
+| type | enum.Type | 座椅类型（`FreelookUnarmed`, `LockedAllowFreelookUnarmed`, `AlwaysLockedUnarmed`=锁定视角与人物装备栏的的武器, `FreelookArmed`=允许使用人物装备栏的的武器） |
+| enclosed | bool | 载具内（保证人物不受`balanceDamage`的伤害从座位上震掉） |
+| enclosedDamagedByDirectFire | bool | 载具内不受保护（与`enclosed`配套，判断会不会造成溅射伤害） |
+| soundMuffle | enum.SoundMuffle | （ `Auto`,`On`, `Off` ） |
 | allowLean | bool | 允许侧头 |
 | allowUnderwater | bool | 允许在水下 |
 | exitOffset | Vector3 | 下车位移 |
 | weapons | [MountedWeapon](./MountedWeapon.md)[] | 此座位的武器 |
-| handTargetL | Transform | 左手放置的位置（空物体。留空则不显示） |
-| handTargetR | Transform | 右手放置的位置（空物体。留空则不显示） |
+| handTargetL | Transform | 左手放置的位置（空物体，手臂位置会跟随这个物体。留空则不显示） |
+| handTargetR | Transform | 右手放置的位置（空物体，手臂位置会跟随这个物体。留空则不显示） |
 | camera | Camera | 第一人称摄像机（需保持Camera组件的禁用） |
 | thirdPersonCamera | Camera | 第三人称摄像机（需保持Camera组件的禁用） |
 | hud | GameObject | 抬头显示HUB（此HUB的Canvas要绑定相机） |
-| maxOccupantBalance | float |  |
+| maxOccupantBalance | float | 该座位的乘员平衡（受`balanceDamage`的最大限度，类似于健康值，但造成的效果是把玩家震下载具，`enclosed`为true时忽略） |

@@ -13,7 +13,7 @@ category:
 
 套用在一个3D Object，可以修改材质
 
-或者直接使用\Assets\Prefabs\Map Elements\Must Have内的Capture Point.prefab(推荐)
+或者直接使用`RFTools\Prefabs\Map Elements\Must Have`内的`Capture Point.prefab`(推荐)，你可以替换其中的模型
 
 ## 注释
 

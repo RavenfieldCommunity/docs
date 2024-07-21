@@ -6,7 +6,7 @@ category:
 
 ## 前言
 
-在此文档中，我们将为您呈现制作一个载具的大致过程
+在此文档中，我们将为您呈现制作一个载具的大致过程，使用原版载具作为示例
 
 :::info
 **同样地，在本文档中，我们不会指导您制作套皮载具（隐藏原模型Render的事）**
@@ -80,14 +80,31 @@ flowchart TD
 
 我们将在这个场景继续我们的全部工作
 
+将载具模型添加入场景
+
 ## 2.1 （各个载具组成）
 
 一个载具包含什么？
 
-包含载具主体[Vehicle]((/cn/Components/Vehicle.md))（或其派生组件）座位[Seat]((/cn/Components/Seat.md))、座位上的武器、座位武器的HUB（如果有）
 
 以下为各个类型载具的组成
 
 ### 2.1.1 Jeep与武装Jeep
+
+原版中Jeep使用的是[ArcadeCar](/cn/Components/ArcadeCar.md),你也可以直接使用[Vehicle](/cn/Components/Vehicle.md),但可能会缺失一些物理效果
+
+在这个模型中，包含车体、座位、方向盘、车轮，要进行的操作包括：
+```md
+- 添加载具组件、Rigidbody与Audio Source组件并配置（包括粒子效果）
+- 配置方向盘动画、车轮、座位及相机
+```
+
+在载具模型顶层添加`[ArcadeCar](/cn/Components/ArcadeCar.md)`与Rigidbody与Audio Source组件
+
+
+
+
+
+
 
 ## 3.0 测试与导出

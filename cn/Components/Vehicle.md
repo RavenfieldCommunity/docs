@@ -13,6 +13,8 @@ category:
 
 套用在载具物体的最顶层层级，附属物体下挂在这个物体里面
 
+如果一并添加了Audio Source组件（与Vehicle组件并列），该组件将作为载具的运行音效（记得勾选Audio Source的`Loop`）
+
 参考[RFCreator Project](/cn/Tutorials/README.md)
 
 ## 注释
@@ -20,12 +22,12 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| aiType | enum | ai认定的载具用途类型(Capture=占领据点, Roam=移动, Transport=运输) |
-| armorRating | enum | 装甲强度（SmallArms=轻武器, HeavyArms=重武器, AntiTank=穿甲）|
-| aiUseStrategy |enum |  ai认定的载具使用方案（Default, OnlyFromFrontlineSpawn, FromAnySpawn）|
+| aiType | enum | ai认定的载具用途类型(`Capture`=占领据点, `Roam`=移动, `Transport`=运输) |
+| armorRating | enum | 装甲强度（`SmallArms`=轻武器, `HeavyArms`=重武器, `AntiTank`=穿甲）|
+| aiUseStrategy |enum |  ai认定的载具使用方案（`Default`, `OnlyFromFrontlineSpawn`, `FromAnySpawn`）|
 | name | string | 载具名称 | 
 | seats | List<[Seat](./Seat.md)> | 座位(第一个座位将设置为驾驶位) |
-| targetType | enum.Actor.TargetType | 目标类型（载具自身的类型。Infantry=步兵, InfantryGroup=步兵群, Unarmored=非装甲, Armored=装甲, Air=空中, AirFastMover=高速的空中目标）|
+| targetType | enum.Actor.TargetType | 目标类型（载具自身的类型。`Infantry`=单步兵运输, `InfantryGroup`=步兵群运输, `Unarmored`=非装甲, `Armored`=装甲, `Air`=空中（即直升机）, `AirFastMover`=高速的空中目标（即飞机））|
 | armorDamagedBy | enum.ArmorRating | 载具可被哪种武器攻击（SmallArms=轻武器, HeavyArms=重武器, AntiTank=穿甲） | 
 | smallArmsMultiplier | float | 轻武器伤害倍率 | 
 | heavyArmsMultiplier | float | 重武器伤害倍率 |
@@ -38,7 +40,7 @@ category:
 | crashSkipsBurn | bool |  撞死跳过燃烧 |
 | directJavelinPath | bool |  是否引导导弹锁定（不打勾就默认是在坐标原点吧好像） |
 | canCapturePoints | bool |  载具是否可用来占领点位 |
-| canFireAtOwnVehicle | bool |   可以伤害自身所在的载具 |
+| canFireAtOwnVehicle | bool |   载具可以伤害自身 |
 | targetLockPoint | Transform |   导弹锁定点（须先开启引导导弹锁定） |
 | aiUseToDefendPoint | bool |  ai是否使用载具防御据点 |
 | minCrewCount | int |   最低载员（适用于运输载具） |
@@ -50,7 +52,7 @@ category:
 | deathSound | AudioSource |   死亡音效 |
 | impactAudio | AudioSource |   撞击音效 |
 | heavyDamageAudio | AudioSource |  冒烟时的音效 |
-| blockSensor | Transform |  阻挡检测(如果有友军在检测器的范围内，车辆的驾驶员会尝试刹车，直到检测器内没有任何友军后才会继续行驶。注意，对直升机和飞机无效)  |
+| blockSensor | Transform |  阻挡检测物体(一个简单的方块，并关闭其Mesh Render即可。如果有友军在检测器的范围内，车辆的驾驶员会尝试刹车，直到检测器内没有任何友军后才会继续行驶，但对直升机和飞机无效。疑似废弃，原版载具没有配置此项)  |
 | blip | Texture |   小地图上的载具图标 |
 | blipScale | float |   小地图上的载具图标的显示大小倍率 |
 | avoidanceSize | Vector2 | 载具生成避让大小(AI在巡路系统中认为的体积大小) |
@@ -61,11 +63,11 @@ category:
 | activateOnDeath | GameObject[] | 死亡时显示（启用）的物体 |
 | teamColorMaterials | MaterialTarget[] |  阵营颜色材质（需事先在Blender分配一个材质槽用于显示材质颜色） |
 | hasCountermeasures | bool | 有无干扰弹 |
-| countermeasuresActiveTime | float |   干扰持续时间 |
-| countermeasuresCooldown | float |   干扰冷却时间 |
-| countermeasureParticles | ParticleSystem |  干扰粒子 |
-| countermeasureSpawnPrefab | GameObject |  干扰生成prefab |
-| countermeasureAudio | AudioSource |   干扰音效 |
+| countermeasuresActiveTime | float |   干扰效果持续时间 |
+| countermeasuresCooldown | float |   干扰弹冷却时间 |
+| countermeasureParticles | ParticleSystem |  干扰弹发射时的粒子 |
+| countermeasureSpawnPrefab | GameObject |  发射干扰弹时同时生成的Prefab |
+| countermeasureAudio | AudioSource |   干扰弹音效 |
 | controlAudio | bool |  控制音频（引擎音效） |
 | powerGainSpeed | float |  音频响度提升速度（不太确定是不是） |
 | pitchGainSpeed | float |  音频频率提升速度 |

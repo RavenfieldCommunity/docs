@@ -6,7 +6,7 @@ category:
 # CopyRotation
 ## 描述
 
-复制目标物体（target）的rotation旋转属性至套用此组件的物体本身
+复制目标物体（`target`）的rotation旋转属性至套用此组件的物体本身
 
 ## 用法
 

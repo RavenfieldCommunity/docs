@@ -14,7 +14,7 @@ category:
 
 套用在一个空物体作上
 
-或者直接使用\Assets\Prefabs\Map Elements\Must Have\Pathfinding\的Relevant Pathfinding Point.prefab(推荐)
+或者直接使用`RFTools\Prefabs\Map Elements\Must Have\Pathfinding`的`Relevant Pathfinding Point.prefab`(推荐)
 
 ## 注释
 

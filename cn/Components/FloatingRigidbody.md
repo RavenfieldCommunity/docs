@@ -12,7 +12,7 @@ category:
 适用于非[Boat](/cn/Components/Boat.md)载具
 
 ## 用法
-此组件已自带绑定Rigidbody组件，无需手动添加
+此组件已自带绑定Rigidbody组件依赖，无需手动添加
 
 参考[Vehicle](/cn/Components/Vehicle.md)，挂载在载具物体的最顶层物体上
 ## 注释

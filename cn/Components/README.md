@@ -15,6 +15,8 @@ category:
 :::
 
 :::tip 一些变量设置提示
+在组件文档中`Sizes`的说法是对于Unity 5而不是现在的Unity 2020的，Unity 2020版本的直接点击`+`按钮即可
+
 对于一些诸如浮点数类型的组件变量设置，一部分像`*time*`的选项使用秒作为单位，一部分像`*multiplier*`以及[Weapon](./Weapon.md)的`followupSpreadGain`的倍数、倍增值、效果等，他们是作为百分比数值使用(作为小数显示)，注意辨别！
 :::
 
@@ -43,7 +45,7 @@ category:
     - [FloatingRigidbody](./FloatingRigidbody.md) 浮动刚体
     - [IndependentRotation](./IndependentRotation.md) 独立旋转
     - [SpinWhenBurning](./SpinWhenBurning.md) 坠机螺旋
-    - [VehicleDestructibleHitbox](./VehicleDestructibleHitbox.md) 
+    - [VehicleDestructibleHitbox](./VehicleDestructibleHitbox.md) 可破坏物体
     - Cameras 相机
         - [BombCamera](./BombCamera.md)
         - [FirstPersonCameraLook](./FirstPersonCameraLook.md)  第一人称自由视角
@@ -73,14 +75,14 @@ category:
         - [PlayerRecoilTransform](./PlayerRecoilTransform.md)
         - [RollGuide](./RollGuide.md)
         - [Rotor](./Rotor.md) 飞机螺旋桨
-        - [SteeringWheel](./SteeringWheel.md)
+        - [SteeringWheel](./SteeringWheel.md) 载具方向盘
         - [UvOffset](./UvOffset.md)
         - [UvVehicleTrackScroll](./UvVehicleTrackScroll.md)
         - [WaterRipples](./WaterRipples.md) 载具水波
         - UI
             - [ChangeEmissionAtNight](./ChangeEmissionAtNight.md)
             - [CountermeasureStatusIndicator](./CountermeasureStatusIndicator.md)
-            - [GearIndicator](./GearIndicator.md)
+            - [GearIndicator](./GearIndicator.md) 
             - [HelicopterHud](./HelicopterHud.md) 直升机HUB监视
             - [PlaneHud](./PlaneHud.md) 飞机HUB监视
             - [RefreshRateText](./RefreshRateText.md)
@@ -119,13 +121,13 @@ category:
 
 
 ## 地图
-- [AlternativePathSet](./AlternativePathSet.md)
+- ~~[AlternativePathSet](./AlternativePathSet.md)~~(已弃用)
 - [AvoidanceBox](./AvoidanceBox.md) 避障箱
 - [CapturePoint](./CapturePoint.md) 地图据点
 - [CustomActorModel](./CustomActorModel.md) 自定义皮肤
 - [CustomGraphCache](./CustomGraphCache.md)
 - [DamageZone](./DamageZone.md) 伤害领域
-- [Destructible](./Destructible.md)
+- [Destructible](./Destructible.md) 可破坏物体
 - [GameModeInfo](./GameModeInfo.md) 地图信息
 - [Ladder](./Ladder.md) 梯子
 - [LandingZone](./LandingZone.md) 船只停泊区

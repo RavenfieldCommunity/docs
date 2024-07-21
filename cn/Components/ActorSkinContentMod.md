@@ -20,12 +20,12 @@ category:
 
 最后选中物体，在菜单栏导出
 
-MeshSkin槽位变量：
+MeshSkin类槽位变量：
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | mesh | Mesh | 此MeshSkin的Mesh（模型） |  
 | materials | Material[] | 此MeshSkin模型所用材质 |  
-| teamMaterial  | int |  |   |  
+| teamMaterial  | int | 该MeshSkin对应的队伍（0为Eagle蓝队，1为Raven红队） |  
 
 ## 注释
 
@@ -33,6 +33,6 @@ MeshSkin槽位变量：
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | name  | string | 皮肤名 |  
-| characterSkin | class.MeshSkin | 第三人称的MeshSkin |  
-| armSkin | class.MeshSkin | 第一人称手臂的MeshSkin |  
-| kickLegSkin | class.MeshSkin | 第一人称腿的模型的MeshSkin |  
+| characterSkin | MeshSkin | 第三人称的MeshSkin |  
+| armSkin | MeshSkin | 第一人称手臂的MeshSkin |  
+| kickLegSkin | MeshSkin | 第一人称腿的模型的MeshSkin |  

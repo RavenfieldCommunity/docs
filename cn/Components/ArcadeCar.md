@@ -18,7 +18,7 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| reverseTurnType | enum.ReverseTurnType | (Reverse Speed,Reverse Throttle,Never) |
+| reverseTurnType | enum.ReverseTurnType | (`Reverse Speed`,`Reverse Throttle`,`Never`) |
 | acceleration | float | 加速度 |
 | reverseAcceleration | float | 倒车加速度 |
 | accelerationTipAmount | float | 加速倾斜程度 |
