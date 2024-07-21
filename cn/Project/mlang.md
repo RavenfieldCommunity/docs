@@ -23,11 +23,16 @@ Steam工坊：[Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=323
 
 BepInEX是一个Unity模组插件框架，本项目的前置多语言插件需要通过其来对游戏进行动态修改
 
+如果你的电脑是32位的，请到下方的Github或KGithub下载`BepInEx_x86_XXX.zip`，即32位版本，因为32位比较冷门，所以蓝奏云社区分流处就懒得添加32位的BepInEX了
+
+如果你是MacOS/Linux用户也同样请到下方的Github或KGithub下载`BepInEx_macos_XXX_XXX.zip`或`BepInEx_unix_XXX_XXX.zip`，即macos/linux版本（同样请注意区分32位和64位版本），然后按照[BepInEX官方文档](https://docs.bepinex.dev/articles/user_guide/installation/index.html?tabs=tabid-nix#installing-bepinex-1)来配置你的BepInEX环境，由于同样过于冷门这里不作翻译
+
 首先，你可以在以下网站下载BepInEX：
 
 > [Github](https://github.com/BepInEx/BepInEx/releases/latest)
 >
 > 在此页面找到并点击`Assets`下拉选项，找到`BepInEx_x64_XXX.zip`（例如`BepInEx_x64_5.4.22.0.zip`），点击并下载
+> 
 > ![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.001.png)
 
 > [KGithub镜像](https://kkgithub.com/BepInEx/BepInEx/releases/latest)
