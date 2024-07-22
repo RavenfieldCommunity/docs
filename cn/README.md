@@ -20,10 +20,13 @@ Ravenfield是一款由[SteelRaven7开发的FPS射击游戏](/cn/in-GAME/README.m
 
 此文档可帮助您了解如何如何开发Ravenfield的模组。您可以从头到尾阅读该文档，或将其用作参考。
 
-如果这是第一次使用游玩Ravenfield或开发MOD，欢迎查看有关游玩Ravenfield的[介绍性文档](/cn/in-GAME/)，并参阅[RFCreator Project](/cn/Tutorials/README.md)
+如果这是第一次使用游玩Ravenfield或开发MOD，欢迎查看有关游玩Ravenfield的[介绍性文档](/cn/in-GAME/README.md)，并参阅[MOD教程](/cn/Tutorials/README.md)
 
 如果你是普通玩家，你可以在[这里](/cn/Project/ravenm.md)找到联机插件
 
+::: tip
+我们推荐你将本网站以PWA（通俗叫“网页APP”、“快应用”。这时候你的浏览器可能已经弹出了安装提示）安装到你的设备以加快访问速度
+:::
 ------
 
 **浏览文档的组成部分**

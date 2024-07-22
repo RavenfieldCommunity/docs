@@ -25,7 +25,7 @@ BepInEX是一个Unity模组插件框架，本项目的前置多语言插件需�
 
 如果你的电脑是32位的，请到下方的Github或KGithub下载`BepInEx_x86_XXX.zip`，即32位版本，因为32位比较冷门，所以蓝奏云社区分流处就懒得添加32位的BepInEX了
 
-如果你是MacOS/Linux用户也同样请到下方的Github或KGithub下载`BepInEx_macos_XXX_XXX.zip`或`BepInEx_unix_XXX_XXX.zip`，即macos/linux版本（同样请注意区分32位和64位版本），然后按照[BepInEX官方文档](https://docs.bepinex.dev/articles/user_guide/installation/index.html?tabs=tabid-nix#installing-bepinex-1)来配置你的BepInEX环境，由于同样过于冷门这里不作翻译
+如果你是MacOS/Linux用户也同样请到下方的Github或KGithub下载`BepInEx_macos_XXX_XXX.zip`或`BepInEx_unix_XXX_XXX.zip`，即macos/linux版本（同样请注意区分32位和64位版本），然后按照[BepInEX官方文档](https://docs.bepinex.dev/articles/user_guide/installation/index.html?tabs=tabid-nix#installing-bepinex-1)来配置你的BepInEX环境，配置好环境后其他步骤基本完全相同。由于同样过于冷门这里不作翻译
 
 首先，你可以在以下网站下载BepInEX：
 
@@ -105,11 +105,11 @@ XUnity.AutoTranslator是一个由BepInEX官方开发人员开发的一个游戏�
 
 `main_extra-sch.txt`是游戏的扩展翻译文件，包含剧情模式与SPEC OPS模式的对话文本
 
-`ravenm-sch.txt`是RavenM联机插件的翻译文件
+`ravenm-sch.txt`是RavenM联机插件国际版的翻译文件（尽管我们用的是国内的，但这里我们仍然保留了对国际版的翻译。你可以自行选择是否安装ravenm的翻译文件）
 
-现阶段，剧情模式与SPEC OPS模式的对话文本仍存在某些bug即滚动文字无法正常翻译，打开`BepInEx\config\AutoTranslatiorConfig.ini`，插件的配置文件,将`GeneratePartialTranslations`一项修改为`True`即可，但这可能会引发其他翻译bug，这个问题将在未来修复，敬请留意
+现阶段，剧情模式与SPEC OPS模式的对话文本仍存在某些bug即滚动文字无法正常翻译（但在文本滚动结束的时候仍可以正常翻译），打开`BepInEx\config\AutoTranslatiorConfig.ini`，插件的配置文件,将`GeneratePartialTranslations`一项修改为`True`即可，但这可能会引发其他翻译bug，这个问题将在未来修复，敬请留意
 
-要启用RavenM的翻译，请将`EnableIMGUI`修改为`True`
+要启用RavenM国际版的翻译，请将`EnableIMGUI`修改为`True`
 
 另外，地图编辑器与战役模式的翻译仍未全部完成，如需要请在评论区提出，我们会尽快更新
 

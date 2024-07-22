@@ -47,6 +47,8 @@ category:
 
 ## 2.2 寻路Pathfinding配置
 
+
+
 ## 2.3 地图特性索引
 
 这里用于索引地图中的可实现的一些特殊功能
@@ -59,13 +61,17 @@ category:
 
 首先，你需要分清，Trigger组件分为"触发器"组件与"动作器"组件（官方没有注明）
 
-触发器组件用于“接受刺激”,即接受到一定的条件或发生的事件，就将信息传导到动作器组件，告诉动作器组件去执行它的操作
+触发器组件用于“接受刺激”,即接受到一定的条件或发生的事件，就将信息传导到动作器组件，告诉动作器组件去执行它（这个“它”指动作器组件）的操作
 
-触发器组件的标志是组件名包含"TriggerOn"，或由[TriggerBaseComponent](/cn/Components/TriggerBaseComponent.md)派生，或组件选项中包含"`Sender`"字段
+触发器组件的标志是组件名包含"TriggerOn"，或由[TriggerBaseComponent](/cn/Components/TriggerBaseComponent.md)派生，或组件选项中包含"`Sender`"字段（这个字段是用来放动作器组件的）
 
 动作器组件用于接受触发器组件的信息，执行玩家在动作器组件上定义的操作，例如结束游戏，跳转场景
 
 动作器组件的标志与触发器组件的标志的相反，由[TriggerReceiver](/cn/Components/TriggerReceiver.md)派生
 
 如果你的触发器与动作器组合无法正常执行，请你检查是否漏掉了某些选项没有配置
+
+## 3.0 测试&导出
+
+
 

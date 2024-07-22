@@ -16,11 +16,13 @@ category:
 
 将其挂载在带有碰撞体的目标物体上
 
+你可以把`disableOnDeath`、`activateOnDeath`的物体作为子物体放在主物体内
+
 ## 注释
 
 如果你想给载具加上可被摧毁的物体，请使用 [VehicleDestructibleHitbox](./VehicleDestructibleHitbox.md)
 
-如果`activateOnDeath`的物体具有Rigidbody组件且组件的`isKinematic`选项为false，则激活该物体时会AddTorque，即施加一个旋转力，并使该物体不属于任何一个父物体
+如果`activateOnDeath`的物体具有Rigidbody组件且组件的`isKinematic`选项为false，则激活该物体时会对这个物体AddTorque，即施加一个旋转力，并使该物体不属于任何一个父物体
 
 ## 变量
 | 名称 | 类型 | 描述 |

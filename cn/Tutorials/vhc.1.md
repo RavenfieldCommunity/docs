@@ -76,13 +76,13 @@ flowchart TD
 
 如果您未创建Unity项目或导入RFTools.unitypackage，请自行导入，此处不再赘述
 
-然后新建一个场景，乌鸦官方没有提供一个类似Weapon Lab.unity的场景用于测试载具
+然后新建一个场景，乌鸦官方没有提供一个类似`Weapon Lab.unity`的场景用于测试载具
 
 我们将在这个场景继续我们的全部工作
 
 将载具模型添加入场景
 
-## 2.1 （各个载具组成）
+## 2.1 各个载具组成
 
 一个载具包含什么？
 
@@ -93,13 +93,13 @@ flowchart TD
 
 原版中Jeep使用的是[ArcadeCar](/cn/Components/ArcadeCar.md),你也可以直接使用[Vehicle](/cn/Components/Vehicle.md),但可能会缺失一些物理效果
 
-在这个模型中，包含车体、座位、方向盘、车轮，要进行的操作包括：
+在这个模型中，模型包含车体、座位、方向盘、车轮，要进行的操作包括：
 ```md
 - 添加载具组件、Rigidbody与Audio Source组件并配置（包括粒子效果）
 - 配置方向盘动画、车轮、座位及相机
 ```
 
-在载具模型顶层添加`[ArcadeCar](/cn/Components/ArcadeCar.md)`与Rigidbody与Audio Source组件
+在载具模型顶层添加[ArcadeCar](/cn/Components/ArcadeCar.md)与Rigidbody与Audio Source组件
 
 
 

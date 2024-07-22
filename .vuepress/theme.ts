@@ -39,7 +39,7 @@ export default hopeTheme({
       displayFooter: true,
       metaLocales: {
         editLink: "在 GitHub 上编辑此页", 
-      },
+      }
     },
   },
   plugins:{
@@ -58,10 +58,13 @@ export default hopeTheme({
       favicon: "/favicon.ico",
       showInstall: true,
       manifest: {
+	    name: "Ravenfield Community Docs",
+	    description: "Ravenfield Community Docs for modding, projects and quick-start with game.",
+	    short_name: "Ravenfield Docs",
         icons: [{
           src: "/favicon.ico",
           sizes: "1024x1024",
-          type: "image/pxng"
+          type: "image/png"
         }]
       },
     },
