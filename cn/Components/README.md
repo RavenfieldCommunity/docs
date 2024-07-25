@@ -161,9 +161,9 @@ category:
 - ScriptedGameMode触发系统
     - [DynamicBlockWalkableBox](./DynamicBlockWalkableBox.md)
     - [ICompoundTriggerSender](./ICompoundTriggerSender.md)
-    - [TriggerBaseComponent](./TriggerBaseComponent.md)
+    - [TriggerBaseComponent](./TriggerBaseComponent.md) Trigger基类
     - [TriggerDebug](./TriggerDebug.md)
-    - [TriggerReceiver](./TriggerReceiver.md)
+    - [TriggerReceiver](./TriggerReceiver.md) Trigger动作器基类
     - [TriggerSend](./TriggerSend.md)
     - Actor
         - [TriggerAddActorAccessory](./TriggerAddActorAccessory.md)

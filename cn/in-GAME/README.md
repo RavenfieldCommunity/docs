@@ -14,6 +14,7 @@
 目录：
 - [上手Ravenfield](/cn/in-GAME/QuickStart.md)
 - [使用地图编辑器](/cn/in-GAME/MapEditor.md)
+- [使用RavenM联机](/cn/in-GAME/ravenm.md)
 
 ------------
 # 关于游戏

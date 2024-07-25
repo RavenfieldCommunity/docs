@@ -11,18 +11,18 @@ category:
 
 在您为您的MOD付出很大心血时，不想被盗版玩家无情滥用
 
-遏制盗版玩家的猖狂（毕竟你游盗版玩家真的多又恶心）
+遏制盗版玩家的猖狂（毕竟你游盗版玩家真的多又恶心。不包括会在将来补票的的玩家）
 
 不建议滥用AP机制
 
 ## 1.0 原理
 自Ravenfield在EA20（？）去除UFO反盗版机制（一大群UFO在头顶飞击杀玩家）后，相当（？）一部分MODDER开始转入自开发反盗版机制
 
-按大多数MOD采用的方案，都是用判断Player.actor.name是否等于"Unknown Player"？来确定游戏是否为盗版
+按大多数MOD采用的方案，都是用判断`Player.actor.name`是否等于"`Unknown Player`"？来确定游戏是否为盗版
 
-使用这原理的缘由是因为这是游戏提供的唯一一个可用Api（毕竟你游限制了外来C#的导入，C#使用SteamworksAPI进行盗版验证会更加地准确，此处仍可以通过***dll进行规避
+使用这原理的缘由是因为这是游戏提供的唯一一个可用Api（毕竟你游限制了外来C#的导入，C#使用SteamworksAPI进行盗版验证会更加地准确。即使是在正版环境，如果Steam不在后台，`Player.actor.name`仍等于"`Unknown Player`"，这是一个问题。此处仍可以通过***dll进行规避
 
-而且当Steam在后台时（即正版的运行环境）时，SteamworksAPI会传入用户名到游戏来填充Player.actor.name，即使Steam用户名未设置似乎也不会为"Unknown Player"？
+而且当Steam在后台时（即正版的运行环境）时，Steamworks API会传入用户名到游戏来填充`Player.actor.name`，即使Steam用户名未设置似乎也不会为"`Unknown Player`"？
 
 有了原理，我们就可以继续添加触发操作了
 

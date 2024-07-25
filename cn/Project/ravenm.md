@@ -26,12 +26,10 @@ RavenM联机插件国内版，是国内社区在原RavenM国际版（社区驱�
 
 ### 使用
 
-进入游戏后打开Instant Action（即平常跟游戏时一样）的对局配置界面，在此时按下M键以呼出联机菜单：
-
-![](https://ravenfieldcommunity.github.io/docs-img/Project/ravenm.001.png)
+参阅[RavenM联机使用](/cn/in-GAME/ravenm.md)
 
 ## 常见问题
 
-### 大部队在哪里？
-
-参见页首的QQ频道号和QQ群
+> **大部队在哪里？**
+>
+> 参见页首的QQ频道号和QQ群
