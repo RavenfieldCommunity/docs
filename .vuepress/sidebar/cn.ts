@@ -6,7 +6,8 @@ export const cnSidebar = sidebar({
 	"/cn/RESOURCE"],
   "/cn/in-GAME/": [
 	"/cn/in-GAME/QuickStart",
-	"/cn/in-GAME/MapEditor"
+	"/cn/in-GAME/MapEditor",
+	"/cn/in-GAME/ravenm"
 	],
   "/cn/Components/": "structure",
   "/cn/Project/": "structure",
