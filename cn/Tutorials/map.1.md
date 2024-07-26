@@ -47,7 +47,11 @@ category:
 
 ## 2.2 寻路Pathfinding配置
 
+不像游戏的Map Editor，在Unity你需要自行配置Pathfinding Box寻路盒
 
+参考[PathfindingBox](/cn/Components/PathfindingBox.md)
+
+其他的Pathfinding工具参见[组件文档](/cn/Components/README.md#地图)
 
 ## 2.3 地图特性索引
 
@@ -73,5 +77,6 @@ category:
 
 ## 3.0 测试&导出
 
+参考[RFTools杂项](/cn/Tutorials/otr.1.md)，确保已经打开要测试/导出的地图，点击菜单的`*** Map or Content Mod`即可
 
 

@@ -22,82 +22,64 @@ Hi~（＾∀＾●）ﾉｼ
 
 你可以在[资源镜像](/cn/RESOURCE.md)中找到下载链接
 ### 你必须掌握的技能
-#### Unity开发
-::: details 可以代表这项技能的软件
-[Unity Editor](https://unity.com/releases/editor/archive) （中国特供版爬）
+> ***Unity开发***
+>
+> 可以代表这项技能的软件 [Unity Editor](https://unity.com/releases/editor/archive) （中国特供版爬） *要求2020.3版的最新小版本*
+>
+> **描述**
+> 这是这个游戏的的游戏引擎，也是这个系列的核心，但是您不必完全掌握，您只需了解Unity的核心操作即可（甚至不用完全记住，有些东西学了一辈子都用不到），您可以去查找相关速通教程（5小时内为佳），然后在实际开发中不断提升能力
+>
+> **学习路线（仅参考）**
+>
+> 初阶 [Tutorials1(速通请跳P1\~8、11\~17、20\~31、33\~61)](https://www.bilibili.com/video/BV1gQ4y1e7SS) => 
+>
+> 中高阶 [Unity Learn(Unity官方课程，支持中文翻译)](https://learn.unity.com/) [Unity文档](https://docs.unity.cn/cn/2020.3/Manual/index.html)
 
-**要求2020.3版的最新小版本**
-:::
-
-::: details 描述
-这是这个游戏的的游戏引擎，也是这个系列的核心，但是您不必完全掌握，您只需了解Unity的核心操作即可（甚至不用完全记住，有些东西学了一辈子都用不到），您可以去查找相关速通教程（5小时内为佳），然后在实际开发中不断提升能力
-:::
-
-::: details 学习路线（仅参考）
-初阶 [Tutorials1(速通请跳P1\~8、11\~17、20\~31、33\~61)](https://www.bilibili.com/video/BV1gQ4y1e7SS) => 
-
-中高阶 [Unity Learn(Unity官方课程，支持中文翻译)](https://learn.unity.com/) [Unity文档](https://docs.unity.cn/cn/2020.3/Manual/index.html)
-:::
-#### 模型、动画制作
-
-::: details 可以代表这项技能的软件
-[Blender](https://www.blendercn.org/)（如果你想在这个游戏做MOD就必须用Blender😡）
-:::
-
-::: details 描述
+> ***模型、动画制作***
+> **可以代表这项技能的软件** [Blender](https://www.blendercn.org/)（如果你想在这个游戏做MOD就必须用Blender😡）
+>
+> **描述**
 这项技能我们同样无需完全掌握，速通即可，然后在实际项目中不断提升能力（除非你能找到美术资源，版权的话一般来说只要不盈利都是允许的。不提倡高模，模型面数最好低于8万，推荐使用Blender版本2.93）
-:::
-
-:::: details 学习路线（仅参考）
-初阶 [建模(速通请跳P1\~23)](https://www.bilibili.com/video/BV1qq4y1772P) [动画(速通请跳P1\~18)](https://www.bilibili.com/video/BV13y4y1H75J)
-
-中阶 [动画(速通请跳P1\~18)](https://www.bilibili.com/video/BV13y4y1H75J) [硬表面建模(速通请看完)](https://www.bilibili.com/video/BV14A411n76J)
-:::warning
-**请不要花费大量时间学习Blender的材质节点，了解材质槽等基础概念即可，Unity的材质并不与Blender兼容，有这时间不如学一下Unity的Shader（也不建议Shader，现阶段Shader跨版本兼容性不好）**
-:::
-::::
-
-:::tip
-无论您使用何种版本的Blender（2.79b除外），都请使用乌鸦的[FBX导出预设(*.blend不兼容)](https://steamcommunity.com/sharedfiles/filedetails/?id=2690680489)！
-
-或者更进一步，在Blender导出fbx模型时使用[Better FBX Importer & Exporter插件](https://blendermarket.com/products/better-fbx-importer--exporter)以最大化兼容性(付费，自行搜索破解版)
-:::
-
+>
+> **学习路线（仅参考）**
+> 初阶 [建模(速通请跳P1\~23)](https://www.bilibili.com/video/BV1qq4y1772P) [动画(速通请跳P1\~18)](https://www.bilibili.com/video/BV13y4y1H75J)
+>
+> 中阶 [动画(速通请跳P1\~18)](https://www.bilibili.com/video/BV13y4y1H75J) [硬表面建模(速通请看完)](https://www.bilibili.com/video/BV14A411n76J)
+>
+>请不要花费大量时间学习Blender的材质节点，了解材质槽等基础概念即可，Unity的材质并不与Blender兼容，有这时间不如学一下Unity的Shader（也不建议Shader，现阶段Shader跨版本兼容性不好）
+>
+> **提示**
+> 无论您使用何种版本的Blender（2.79b除外），都请使用乌鸦的[FBX导出预设(*.blend不兼容)](https://steamcommunity.com/sharedfiles/filedetails/?id=2690680489)！
+>
+> 或者更进一步，在Blender导出fbx模型时使用[Better FBX Importer & Exporter插件](https://blendermarket.com/products/better-fbx-importer--exporter)以最大化兼容性(付费，自行搜索破解版)
 
 ### 你可以额外掌握的技能
+> ***音频制作***
+>
+> **可以代表这项技能的软件**[Audition](www.adobe.com)、[Audacity](https://www.audacityteam.org/)
+> **描述**
+>
+>用于剪辑音效，同样速通
 
-#### 音频制作
-::: details 可以代表这项技能的软件
-[Audition](www.adobe.com)、[Audacity](https://www.audacityteam.org/)
-:::
-
-::: details 描述
-用于剪辑音效，同样速通
-::: 
-
-#### C#、Lua(Ravenscript基于此)
-
-::: details 可以代表这项技能的软件
-[VS Code](https://code.visualstudio.com/)、[JetBrains' apps](www.jetbrains.com)、[Visual Studio](https://visualstudio.microsoft.com/zh-hans/vs/community/)
-::: 
-
-::: details 描述
+> ***C#、Lua(Ravenscript基于此)***
+>
+> **可以代表这项技能的软件** [VS Code](https://code.visualstudio.com/)、[JetBrains' apps](www.jetbrains.com)、[Visual Studio](https://visualstudio.microsoft.com/zh-hans/vs/community/)
+>
+> **描述**
 除非你不想干高级一点的MOD开发，不然就要学，可速通（至少包括基本语法、简单理解面向对象、会打Helloworld以及一部分实例）
-:::
-        
-::: details 学习路线（仅参考）
-初阶（速通级，需要一定编程基础） [C#](https://www.bilibili.com/video/BV1sy4y1u7cw)、[Lua](https://www.bilibili.com/video/BV1vf4y1L7Rb)
-
-中高阶 [Unity文档(毕竟万物基于Unity，除了编程语言不同，开发逻辑完全一致)](https://docs.unity.cn/cn/2020.3/Manual/) [菜鸟教程](https://www.runoob.com/)、[Microsoft Learn](https://learn.microsoft.com/zh-cn/dotnet/csharp/)
-:::
-        
-:::tip
-Lua它相比C#更友好且目前在RF开发Mod写脚本用得更多的还是Lua(Ravenscript)
-
-最重要的一点是，TMD从EA27开始，游戏开始限制外来C#脚本的导入，RFTools在实际C#开发中缺少API支持，开发环境与实际C#导出入体验不友好，导致开发体验糟糕，除非你想使用[BepInEx](https://bepinex.dev)这类高级UnityMOD开发框架，否则不建议C#
-
-但是，学习使用RS开发脚本是一项极其繁琐的行为（反复导出+加测试MOD，这个指实际mod开发，不指单纯的rs学习），不如C#在Unity Editor里的所见即所得与快速修改，加之C#的逻辑与Lua一致，因此从这一方面来说如果你真的打算使用Lua来娴熟地开发脚本，那么你还是得学C#才能获得开发能力地最大化，等到你的C#在Unity实战运用得极为成熟了，再快速入门Lua
-:::
+>
+> **学习路线（仅参考）**
+>
+> 初阶（速通级，需要一定编程基础） [C#](https://www.bilibili.com/video/BV1sy4y1u7cw)、[Lua](https://www.bilibili.com/video/BV1vf4y1L7Rb)
+>
+>中高阶 [Unity文档(毕竟万物基于Unity，除了编程语言不同，开发逻辑完全一致)](https://docs.unity.cn/cn/2020.3/Manual/) [菜鸟教程](https://www.runoob.com/)、[Microsoft Learn](https://learn.microsoft.com/zh-cn/dotnet/csharp/)
+>
+> **提示**
+>Lua它相比C#更友好且目前在RF开发Mod写脚本用得更多的还是Lua(Ravenscript)
+>
+>最重要的一点是，从EA27开始，游戏开始限制外来C#脚本的导入，RFTools在实际C#开发中缺少API支持，开发环境与实际C#导出入体验不友好，导致开发体验糟糕，除非你想使用[BepInEx](https://bepinex.dev)这类高级UnityMOD开发框架，否则不建议C#
+>
+>但是，学习使用RS开发脚本是一项极其繁琐的行为（反复导出+加测试MOD，这个指实际mod开发，不指单纯的rs学习），不如C#在Unity Editor里的所见即所得与快速修改，加之C#的逻辑与Lua一致，因此从这一方面来说如果你真的打算使用Lua来娴熟地开发脚本，那么你还是得学C#才能获得开发能力地最大化，等到你的C#在Unity实战运用得极为成熟了，再快速入门Lua
 
 **看不懂可以硬着头皮看，实际开发过程有不会可以重新回来看相应内容，没有谁在实操中可以直接一下记下所有技能点**
 
