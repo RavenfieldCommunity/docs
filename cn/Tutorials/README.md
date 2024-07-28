@@ -24,9 +24,10 @@ Hi~（＾∀＾●）ﾉｼ
 ### 你必须掌握的技能
 > ***Unity开发***
 >
-> 可以代表这项技能的软件 [Unity Editor](https://unity.com/releases/editor/archive) （中国特供版爬） *要求2020.3版的最新小版本*
+> **可以代表这项技能的软件** [Unity Editor](https://unity.com/releases/editor/archive) （中国特供版爬） *要求2020.3版的最新小版本*
 >
 > **描述**
+>
 > 这是这个游戏的的游戏引擎，也是这个系列的核心，但是您不必完全掌握，您只需了解Unity的核心操作即可（甚至不用完全记住，有些东西学了一辈子都用不到），您可以去查找相关速通教程（5小时内为佳），然后在实际开发中不断提升能力
 >
 > **学习路线（仅参考）**
@@ -36,12 +37,15 @@ Hi~（＾∀＾●）ﾉｼ
 > 中高阶 [Unity Learn(Unity官方课程，支持中文翻译)](https://learn.unity.com/) [Unity文档](https://docs.unity.cn/cn/2020.3/Manual/index.html)
 
 > ***模型、动画制作***
+>
 > **可以代表这项技能的软件** [Blender](https://www.blendercn.org/)（如果你想在这个游戏做MOD就必须用Blender😡）
 >
 > **描述**
+>
 这项技能我们同样无需完全掌握，速通即可，然后在实际项目中不断提升能力（除非你能找到美术资源，版权的话一般来说只要不盈利都是允许的。不提倡高模，模型面数最好低于8万，推荐使用Blender版本2.93）
 >
 > **学习路线（仅参考）**
+>
 > 初阶 [建模(速通请跳P1\~23)](https://www.bilibili.com/video/BV1qq4y1772P) [动画(速通请跳P1\~18)](https://www.bilibili.com/video/BV13y4y1H75J)
 >
 > 中阶 [动画(速通请跳P1\~18)](https://www.bilibili.com/video/BV13y4y1H75J) [硬表面建模(速通请看完)](https://www.bilibili.com/video/BV14A411n76J)
@@ -49,6 +53,7 @@ Hi~（＾∀＾●）ﾉｼ
 >请不要花费大量时间学习Blender的材质节点，了解材质槽等基础概念即可，Unity的材质并不与Blender兼容，有这时间不如学一下Unity的Shader（也不建议Shader，现阶段Shader跨版本兼容性不好）
 >
 > **提示**
+>
 > 无论您使用何种版本的Blender（2.79b除外），都请使用乌鸦的[FBX导出预设(*.blend不兼容)](https://steamcommunity.com/sharedfiles/filedetails/?id=2690680489)！
 >
 > 或者更进一步，在Blender导出fbx模型时使用[Better FBX Importer & Exporter插件](https://blendermarket.com/products/better-fbx-importer--exporter)以最大化兼容性(付费，自行搜索破解版)
@@ -66,6 +71,7 @@ Hi~（＾∀＾●）ﾉｼ
 > **可以代表这项技能的软件** [VS Code](https://code.visualstudio.com/)、[JetBrains' apps](www.jetbrains.com)、[Visual Studio](https://visualstudio.microsoft.com/zh-hans/vs/community/)
 >
 > **描述**
+>
 除非你不想干高级一点的MOD开发，不然就要学，可速通（至少包括基本语法、简单理解面向对象、会打Helloworld以及一部分实例）
 >
 > **学习路线（仅参考）**
@@ -75,6 +81,7 @@ Hi~（＾∀＾●）ﾉｼ
 >中高阶 [Unity文档(毕竟万物基于Unity，除了编程语言不同，开发逻辑完全一致)](https://docs.unity.cn/cn/2020.3/Manual/) [菜鸟教程](https://www.runoob.com/)、[Microsoft Learn](https://learn.microsoft.com/zh-cn/dotnet/csharp/)
 >
 > **提示**
+>
 >Lua它相比C#更友好且目前在RF开发Mod写脚本用得更多的还是Lua(Ravenscript)
 >
 >最重要的一点是，从EA27开始，游戏开始限制外来C#脚本的导入，RFTools在实际C#开发中缺少API支持，开发环境与实际C#导出入体验不友好，导致开发体验糟糕，除非你想使用[BepInEx](https://bepinex.dev)这类高级UnityMOD开发框架，否则不建议C#

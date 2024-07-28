@@ -105,11 +105,11 @@ category:
 - [SoundBank](./SoundBank.md)  AudioCilp集
 - [SpinWhenHoldingFire](./SpinWhenHoldingFire.md)
 - [TargetSeekingMissile](./TargetSeekingMissile.md) 跟踪导弹
-- [ThrowableWeapon](./ThrowableWeapon.md)
-- [ToggleableItem](./ToggleableItem.md)
+- [ThrowableWeapon](./ThrowableWeapon.md) 可投掷武器
+- [ToggleableItem](./ToggleableItem.md) 可投掷物体
 - [Weapon](./Weapon.md) 基础武器类
 - [WeaponCotentMod](./WeaponCotentMod.md) 武器导出向导
-- [WireGuidedMissile](./WireGuidedMissile.md)
+- [WireGuidedMissile](./WireGuidedMissile.md) 引导导弹
 - [Wrench](./Wrench.md) 扳手
 - Misc其他
     - [AmmoCountUiText](./AmmoCountUiText.md)
@@ -132,9 +132,9 @@ category:
 - [Ladder](./Ladder.md) 梯子
 - [LandingZone](./LandingZone.md) 船只停泊区
 - [LevelColorGrading](./LevelColorGrading.md)
-- [LevelGravity](./LevelGravity.md)
+- [LevelGravity](./LevelGravity.md) 地图重力
 - [MinimapCamera](./MinimapCamera.md) 小地图相机
-- [ObjectOptionsToggler](./ObjectOptionsToggler.md)
+- [ObjectOptionsToggler](./ObjectOptionsToggler.md) 游戏选项关联物体
 - [PathfindingBox](./PathfindingBox.md) 寻路盒
 - [PathfindingLink](./PathfindingLink.md) 强制寻路器
 - [PathfindingRelevantPoint](./PathfindingRelevantPoint.md) 相关寻路点
@@ -257,6 +257,6 @@ category:
 ## Misc（其他）
 - [ActorSkinContentMod](./ActorSkinContentMod.md) 皮肤导出向导
 - [DataContainer](./DataContainer.md) 数据体
-- [Lifetime](./Lifetime.md) 
+- [Lifetime](./Lifetime.md) GameObject生命周期
 - [RequireGameVersion](./RequireGameVersion.md) 限制最低运行游戏版本
 - [SynchronizeEditorTransforms](./SynchronizeEditorTransforms.md)

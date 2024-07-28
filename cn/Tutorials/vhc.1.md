@@ -74,7 +74,7 @@ flowchart TD
 
 打开Unity项目
 
-如果您未创建Unity项目或导入RFTools.unitypackage，请自行导入，此处不再赘述
+如果您未创建Unity项目或导入`RFTools.unitypackage`，请自行导入，此处不再赘述
 
 然后新建一个场景，乌鸦官方没有提供一个类似`Weapon Lab.unity`的场景用于测试载具
 
@@ -87,7 +87,7 @@ flowchart TD
 一个载具包含什么？
 
 
-以下为各个类型载具的组成（面向差异与一些比较隐蔽的步骤）
+以下为各个类型载具的组成（面向差异、原版载具向与一些比较隐蔽的步骤）
 
 ### 2.1.1 Jeep与武装Jeep
 
@@ -95,13 +95,18 @@ flowchart TD
 
 在这个模型中，模型包含车体、座位、方向盘、车轮，要进行的操作包括：
 ```md
-- 添加载具组件、Rigidbody与Audio Source组件并配置（包括粒子效果）
-- 配置方向盘动画、车轮、座位及相机
+- 添加载具组件、Rigidbody与AudioSource组件
+- 配置方向盘动画、粒子效果、音效、车轮、座位及相机
+- 配置载具组件
 ```
 
-在载具模型顶层添加[ArcadeCar](/cn/Components/ArcadeCar.md)与Rigidbody与Audio Source组件
+在载具模型顶层添加[ArcadeCar](/cn/Components/ArcadeCar.md)与Rigidbody与AudioSource组件
 
+找到方向盘物体，可以直接挂上SteeringWheel组件并配置，确保方向盘模型的z轴在LOCAL坐标模式下转地正常（否则你得套一个空物体在模型上，作为子物体）：
 
+{缺图}
+
+再然后在方向盘下放两个子物体作为手放在方向盘的位置，待会备用
 
 
 

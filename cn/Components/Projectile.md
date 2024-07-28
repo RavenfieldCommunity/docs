@@ -6,7 +6,11 @@ category:
 # Projectile
 ## 描述
 
+子弹Projectile的基本类，作为子弹
+
 ## 用法
+
+挂载在子弹模型物体上，参考本站MOD武器教程，将其作为预制件
 
 ## 注释
 
