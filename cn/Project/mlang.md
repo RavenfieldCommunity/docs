@@ -99,6 +99,8 @@ XUnity.AutoTranslator是一个由BepInEX官方开发人员开发的一个游戏�
 
 大功告成！
 
+**如果可能的话，请回到[我们的Steam工坊物品页面](https://steamcommunity.com/sharedfiles/filedetails/?id=3237432182)点一个免费的赞，让更多的人知道这个项目！（否则我就会怀疑这玩意到底有没有人用 XD）**
+
 ## 提示
 
 `main-sch.txt`是基本的游戏翻译文件

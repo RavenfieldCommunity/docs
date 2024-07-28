@@ -86,8 +86,7 @@ flowchart TD
 
 一个载具包含什么？
 
-
-以下为各个类型载具的组成（面向差异、原版载具向与一些比较隐蔽的步骤）
+以下为各个类型原版载具的组成（面向差异，与一些比较隐蔽的步骤）
 
 ### 2.1.1 Jeep与武装Jeep
 
@@ -108,7 +107,9 @@ flowchart TD
 
 再然后在方向盘下放两个子物体作为手放在方向盘的位置，待会备用
 
+新建两个Particle System粒子系统，作为载具的`smokeParticles`和`deathParticles`
 
+仿照原版jeep，配置粒子系统的Main（原版中改变了`duration`、`looping`、`startLifetime`、`startSpeed`、`startSize`、`startRotation`、startColor`,注意配置项旁边的小三角）、Emission、Renderer模块，参见[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)
 
 
 

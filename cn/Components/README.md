@@ -47,7 +47,7 @@ category:
     - [SpinWhenBurning](./SpinWhenBurning.md) 坠机螺旋
     - [VehicleDestructibleHitbox](./VehicleDestructibleHitbox.md) 可破坏物体
     - Cameras 相机
-        - [BombCamera](./BombCamera.md)
+        - [BombCamera](./BombCamera.md) 投弹视角
         - [FirstPersonCameraLook](./FirstPersonCameraLook.md)  第一人称自由视角
         - [LookAtCamera](./LookAtCamera.md) 当相机启用时克隆旋转属性
         - [ThirdPersonCameraLook](./ThirdPersonCameraLook.md) 第三人称自由视角
