@@ -99,18 +99,46 @@ flowchart TD
 - 配置载具组件
 ```
 
-在载具模型顶层添加[ArcadeCar](/cn/Components/ArcadeCar.md)与Rigidbody与AudioSource组件
+在载具模型顶层添加[ArcadeCar](/cn/Components/ArcadeCar.md)与Rigidbody（配置其`mass`、`drag`、`angularDrag`，参考[刚体](https://docs.unity.cn/cn/2020.3/Manual/class-Rigidbody.html)）与AudioSource（记得勾选`loop`，参下）组件
 
 找到方向盘物体，可以直接挂上SteeringWheel组件并配置，确保方向盘模型的z轴在LOCAL坐标模式下转地正常（否则你得套一个空物体在模型上，作为子物体）：
 
 {缺图}
 
-再然后在方向盘下放两个子物体作为手放在方向盘的位置，待会备用
+再然后在方向盘下放两个子物体作为手放在方向盘的位置，待会备用：
 
-新建两个Particle System粒子系统，作为载具的`smokeParticles`和`deathParticles`
+{缺图}
 
-仿照原版jeep，配置粒子系统的Main（原版中改变了`duration`、`looping`、`startLifetime`、`startSpeed`、`startSize`、`startRotation`、startColor`,注意配置项旁边的小三角）、Emission、Renderer模块，参见[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)
+新建两个Particle System粒子系统子物体（或从原版jeep处复制粘贴，推荐），作为载具的`smokeParticles`和`deathParticles`
 
+仿照原版jeep，配置这两个粒子系统的Main（原版中改变了`duration`、`looping`、`startLifetime`、`startSpeed`、`startSize`、`startRotation`、`startColor`、`scalingMode`、`playOnAwake`,注意配置项旁边的小三角）、Emission（原版中改变了`rateOverTime`、`bursts`）、Renderer模块（原版中改变了`material`、`sortingFudge`、`reflectionProbes`），参见[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)
+
+然后将其放入载具组件对应位置`smokeParticles`和`deathParticles`
+
+新建两个空物体，并分别挂载AudioSource组件（如果你刚才是复制粘贴原版jeep粒子系统的话，那么应该已经带了AudioSource组件，可以免去这步），作为载具的`impactAudio`和`deathSound`
+
+配置这两个AudioSource组件（原版中改变了`audioClip`、`playOnAwake`、`priority`、`volumeRolloff`、`maxDistance`、立体音3D曲线）参见[AudioSource组件](https://docs.unity.cn/cn/2020.3/Manual/class-AudioSource.html)
+
+然后将其放入载具组件对应位置
+
+新建一个空物体，添加CarWheel组件（如果CarWheel组件的绿色圆圈旋转不正确，你需要先旋转一下这个空物体，使它回到正确位置）：
+
+
+将一个车轮模型作为子物体放进去，调整好位置，使其与圆圈重合：
+
+然后删掉其他的轮子模型物体，复制粘贴做好的这个放到原位置上（你也可以分别弄，但会麻烦得多）。这个不用像刚才一样将其放入载具组件对应位置（因为不需要放）：
+
+新建一个相机子物体，放在载具内合适位置，禁用其上的Camera组件，添加ThirdPersonCameraLook组件。作为第三人称视角相机，备用
+
+新建一个空物体并添加Seat、BoxCollider组件（你也可以直接在模型物体上添加组件，但不推荐，除非模型的缩放为0），然后调整BoxCollider大小，将一个座椅模型作为子物体放进去并调整好位置使其重合与BoxCollider重合
+
+然后删掉其他的座椅模型物体，复制粘贴做好的这个放到原位置上（如果你是直接在模型物体上添加组件，复制粘贴组件即可。你也可以分别弄，但会麻烦得多）。这个它们放入载具组件对应位置`seats`
+
+配置各个Seat的`allowLean`、`exitOffset`、`ThirdPersonCamera`，放入刚才新建的相机
+
+对于驾驶位的Seat，一并配置`handTargetL`、`handTargetR`与`weapons`，（使用CarHorn组件，如果你想给驾驶位加个喇叭，像制作武器Mod一样配置CarHorn组件）
+
+最后配置完ArcadeCar组件的剩余项`name`、`crashDamageSpeedThrehshold`、`crashDamageMultiplier`、`aiType`、`aiUseToDefendPoint`、`blip`、`disableOnDeath`、`acceleration`、`topSpeed`、`brakeAccelerationTriggerSpeed`、`driftByBrake`、`extraStability`、`groundDrag`
 
 
 ## 3.0 测试与导出

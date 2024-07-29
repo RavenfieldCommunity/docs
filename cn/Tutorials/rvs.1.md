@@ -54,11 +54,13 @@ Ravenscript可以控制Ravenfield和Unity引擎的某些部分
 --#1 注册RS父table，这样你才能从里面派生方法并让游戏执行
 behavior("test")
 
---#2 local变量，为什么不可以在事件方法体里可以自行研究
+--#2 local变量，（现在这一步是可选的）
 local var1
 
 --#3 定义事件方法体
 function test: Start ()
+    --这是对#2的另一种替代
+    self.var1 = 1
 end
 
 function test: Update ()

@@ -10,7 +10,7 @@ category:
 
 ## 用法
 
-套用在载具层级顶层，需手动添加ParticleSystem组件
+套用在载具层级顶层或内的子物体，需手动添加ParticleSystem组件
 
 此组件需要载具包含Rigidbody组件
 
