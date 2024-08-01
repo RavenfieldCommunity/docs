@@ -71,7 +71,7 @@ category:
         - [MountedStabilizedTurretUIAimIndicator](./MountedStabilizedTurretUIAimIndicator.md)
         - [ParticlesAmbientColor](./ParticlesAmbientColor.md)
         - [PitchRollGuide](./PitchRollGuide.md) 飞机水平仪
-        - [PlayerRecoilCamera](./PlayerRecoilCamera.md)
+        - [PlayerRecoilCamera](./PlayerRecoilCamera.md) 镜头抖动
         - [PlayerRecoilTransform](./PlayerRecoilTransform.md)
         - [RollGuide](./RollGuide.md)
         - [Rotor](./Rotor.md) 飞机螺旋桨

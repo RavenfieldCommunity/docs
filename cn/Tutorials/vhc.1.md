@@ -8,10 +8,6 @@ category:
 
 在此文档中，我们将为您呈现制作一个载具的大致过程，使用原版载具作为示例
 
-:::info
-**同样地，在本文档中，我们不会指导您制作套皮载具（隐藏原模型Render的事）**
-:::
-
 ## 0.0 构思
 同样地，像[wpn.1](/cn/Tutorials/wpn.1.md)一样
 
@@ -82,11 +78,19 @@ flowchart TD
 
 将载具模型添加入场景
 
-## 2.1 各个载具组成
+## 2.1 各个载具组成（简单换皮向）
 
-一个载具包含什么？
+出于快速入门与简单易行的原因，我们将向你介绍一种简单易行的方法来快速制作载具
+
+首先按照要制作的载具类型，复制粘贴一个原版对应载具的Prefab，这就是我们的工作prefab
+
+各个原版载具包含什么？
+
+## 2.2 各个载具组成（复杂向）
 
 以下为各个类型原版载具的组成（面向差异，与一些比较隐蔽的步骤）
+
+下面的一些配置项跟着的值为原版各载具的值
 
 ### 2.1.1 Jeep与武装Jeep
 
@@ -95,11 +99,21 @@ flowchart TD
 在这个模型中，模型包含车体、座位、方向盘、车轮，要进行的操作包括：
 ```md
 - 添加载具组件、Rigidbody与AudioSource组件
-- 配置方向盘动画、粒子效果、音效、车轮、座位及相机
+- 配置，添加BoxCollider、方向盘动画、粒子效果、音效、车轮、座位及相机
 - 配置载具组件
 ```
 
-在载具模型顶层添加[ArcadeCar](/cn/Components/ArcadeCar.md)与Rigidbody（配置其`mass`、`drag`、`angularDrag`，参考[刚体](https://docs.unity.cn/cn/2020.3/Manual/class-Rigidbody.html)）与AudioSource（记得勾选`loop`，参下）组件
+新建一个空物体（这将作为载具物体。不推荐直接将模型拖入场景，模型物体作为载具物体，模型的中心点可能不正确），将模型（`RFTools/Models/Vehicles/jeep.blend`）拖入空物体内，作为其子物体添加进去
+
+在载具物体顶层添加[ArcadeCar](/cn/Components/ArcadeCar.md)组件
+
+在载具物体顶层添加Rigidbody组件配置其`mass`=300、`drag`=0.1、`angularDrag`=3，参考[刚体](https://docs.unity.cn/cn/2020.3/Manual/class-Rigidbody.html)
+
+在载具物体内均匀添加BoxCollider，使其基本覆盖载具，可以留一些空
+
+与AudioSource，勾选`loop`，参下）组件
+
+
 
 找到方向盘物体，可以直接挂上SteeringWheel组件并配置，确保方向盘模型的z轴在LOCAL坐标模式下转地正常（否则你得套一个空物体在模型上，作为子物体）：
 
@@ -139,6 +153,8 @@ flowchart TD
 对于驾驶位的Seat，一并配置`handTargetL`、`handTargetR`与`weapons`，（使用CarHorn组件，如果你想给驾驶位加个喇叭，像制作武器Mod一样配置CarHorn组件）
 
 最后配置完ArcadeCar组件的剩余项`name`、`crashDamageSpeedThrehshold`、`crashDamageMultiplier`、`aiType`、`aiUseToDefendPoint`、`blip`、`disableOnDeath`、`acceleration`、`topSpeed`、`brakeAccelerationTriggerSpeed`、`driftByBrake`、`extraStability`、`groundDrag`
+
+
 
 
 ## 3.0 测试与导出
