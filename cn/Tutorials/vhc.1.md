@@ -84,6 +84,8 @@ flowchart TD
 
 首先按照要制作的载具类型，复制粘贴一个原版对应载具的Prefab，这就是我们的工作prefab
 
+在文档完成之前，参考[BiliBili](https://www.bilibili.com/video/BV1aF411N7mJ)
+
 各个原版载具包含什么？
 
 ## 2.2 各个载具组成（复杂向）
