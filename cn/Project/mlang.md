@@ -1,11 +1,7 @@
 ---
 title: 游戏多语言
-heroText: 游戏多语言
-tagline: "游戏本地化多语言 简体中文示例"
-description: "游戏本地化多语言 简体中文示例"
+description: "Ravenfield 简体中文汉化 游戏本地化多语言"
 ---
-
-# 游戏多语言
 
 ::: center
 Steam工坊：[Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3237432182)

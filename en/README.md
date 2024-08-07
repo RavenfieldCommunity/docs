@@ -1,15 +1,12 @@
 ---
-title: Home
+title: Ravenfield Community Docs(UNOFFICIAL)
 home: true
 heroText: false
 tagline: false
 description: Ravenfield Community Mod Development and Game Introduction Document
 ---
-<p align="center">
 
-# Ravenfield Modding Documents(UNOFFICIAL)
-
-</p>
+## Ravenfield Modding Documents(UNOFFICIAL)
 
 ![GitHub issues](https://img.shields.io/github/issues/RavenfieldCommunity/docs.svg?style=flat-square&) ![GitHub last commit](https://img.shields.io/github/last-commit/RavenfieldCommunity/docs.svg?style=flat-square&) ![Github docs deploy](https://img.shields.io/github/actions/workflow/status/RavenfieldCommunity/docs/deploy-docs.yml?style=flat-square&)
 

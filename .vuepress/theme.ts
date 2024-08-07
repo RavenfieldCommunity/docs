@@ -20,7 +20,7 @@ export default hopeTheme({
     "/en/": {
       navbar: enNavbar,
       sidebar: enSidebar,
-      footer: "<p>CC-BY-NC-4.0 Licensed | Copyright © 2023-PRESENT RavenfieldCommunity</p><p>Anonymous analysis of website data using Google Analytics</p>",
+      footer: "<p>CC-BY-NC-4.0 Licensed | Copyright © 2023-PRESENT RavenfieldCommunity</p><p>Use Google Analytics and Umami Cloud for anonymous website analysis</p>",
       displayFooter: true,
       metaLocales: {
         editLink: "Edit this page on GitHub",
@@ -35,7 +35,7 @@ export default hopeTheme({
     "/cn/": {
       navbar: cnNavbar,
       sidebar: cnSidebar,
-      footer: "<p>基于CC-BY-NC-4.0许可 | 版权所有 © 2023-PRESENT RavenfieldCommunity</p><p>使用Google Analytics匿名分析网站数据</p>",
+      footer: "<p>基于CC-BY-NC-4.0许可 | 版权所有 © 2023-PRESENT RavenfieldCommunity</p><p>使用Google Analytics与Umami Cloud匿名分析网站数据</p>",
       displayFooter: true,
       metaLocales: {
         editLink: "在 GitHub 上编辑此页", 
@@ -73,7 +73,12 @@ export default hopeTheme({
 	    align: true,
 	    card: true,
     },
-  sitemap: false,
+	components: {
+        components: [
+          "BiliBili",
+          "VPCard"
+        ]
+      },
   seo: {
     autoDescription: false
   }

@@ -28,7 +28,15 @@ SteelRaven7 （大乌鸦），瑞典人，单人独立开发Ravenfield
 
 如果没有时间等到乌鸦上线，你可以给乌鸦留言，若无回信可间隔重复发送，不建议频繁发送，乌鸦会看私信，但有时候随缘
 
-你可以在这个视频一览乌鸦的风采：[Bilibili](https://www.bilibili.com/video/BV1d7411y7Cc)
+一般情况下，有问题可以在Discord公共频道问
+
+你可以在这个视频一览乌鸦的风采：
+
+<BiliBili bvid="BV1d7411y7Cc" />
+
+（顺便说一句，这位B站的转载视频作者也是RF贴吧的老前辈，下面的RF全球通史也是他写的）
+
+（致敬~）
 
 他的网站是：[SteelRaven7](http://steelraven7.com/)
 

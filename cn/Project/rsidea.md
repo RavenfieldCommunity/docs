@@ -6,8 +6,6 @@ tagline: "新一代RS开发snippet插件（又新又拉XD"
 description: "Ravenscript IDE Addon,新一代RS开发snippet插件（又新又拉XD"
 ---
 
-# Ravenscript IDEA
-
 ::: center
 ![GitHub issues](https://img.shields.io/github/issues/RavenfieldCommunity/ravenscriptidea.svg?style=flat-square&) ![GitHub last commit](https://img.shields.io/github/last-commit/RavenfieldCommunity/ravenscriptidea.svg?style=flat-square&)
 

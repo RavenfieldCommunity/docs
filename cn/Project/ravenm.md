@@ -1,8 +1,7 @@
 ---
 title: 联机插件国内版
+description: 适用于国内Ravenfield玩家的RavenM联机插件
 ---
-
-# 联机插件国内版
 
 ::: center
 ![QQGuild](https://img.shields.io/badge/QQ频道-9pmc179t29-blue?style=flat-square) ![插件QQ群](https://img.shields.io/badge/插件QQ群-710832844-blue?style=flat-square)

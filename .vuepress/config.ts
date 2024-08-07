@@ -4,16 +4,11 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { redirectPlugin } from "@vuepress/plugin-redirect";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { umamiAnalyticsPlugin } from 'vuepress-plugin-umami-analytics'
 
 export default defineUserConfig({
   base: "/docs/",
   locales: {
-    //'/': {
-    //        // 不要改变'/'内lang的值，保证为'en-US',否则编译会报错！！
-    //        lang: 'zh-CN', 
-    //        title: 'Ravenfield Modding Documents',
-    //        description: 'Ravenfield Community Modding Documents'
-    //},
     '/cn/': {
             lang: 'zh-CN',
             title: 'Ravenfield社区文档',
@@ -34,6 +29,10 @@ export default defineUserConfig({
     }),
     googleAnalyticsPlugin({
       id: 'G-SE76S2Y1LL'
-    })
+    }),
+	umamiAnalyticsPlugin({
+      id: '545907a5-e0a1-401c-a49a-48f121c37f03',
+	  src: "https://cloud.umami.is/script.js"
+	})
   ]
 });

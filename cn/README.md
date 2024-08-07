@@ -1,15 +1,12 @@
 ---
-title: 首页
+title: Ravenfield社区文档
 home: true
 heroText: false
 tagline: false
 description: Ravenfield中文社区模组开发与游戏入门文档
 ---
-<p align="center">
 
-# Ravenfield社区文档
-
-</p>
+## Ravenfield社区文档
 
 ![GitHub issues](https://img.shields.io/github/issues/RavenfieldCommunity/docs.svg?style=flat-square&) ![GitHub last commit](https://img.shields.io/github/last-commit/RavenfieldCommunity/docs.svg?style=flat-square&) ![Github docs deploy](https://img.shields.io/github/actions/workflow/status/RavenfieldCommunity/docs/deploy-docs.yml?style=flat-square&)
 
