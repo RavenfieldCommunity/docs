@@ -7,9 +7,11 @@ description: 适用于国内版RavenM联机插件的使用说明
 
 参考[RavenM联机插件国内版](/cn/Project/ravenm.md)
 
-打开游戏，若右下角提示版本不兼容，请参考产[常见问题](#常见问题)
+打开游戏，若右下角提示版本不兼容，请参考[常见问题](#常见问题)
 
-**已安装插件的玩家，如果插件有更新，游戏时会弹窗提示（但你需要手动重新下载安装）**
+**已安装插件的玩家，如果插件有更新，游戏时会弹窗提示（但你需要手动重新下载安装）：**
+
+![](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.004.png)
 
 ## 游戏前配置房间
 以下括号中的英文部分表示国际版RavenM原文
@@ -54,9 +56,13 @@ description: 适用于国内版RavenM联机插件的使用说明
 
 按`“`可标记地点
 
-小队指挥控件（`G`、`B`键）是可用的
+小队指挥控件（`G`、`B`键）是可用的，用于指挥小队内其他玩家
 
 右上角会显示Ping延迟值（房主的当然为0ms）
+
+玩的开心！
+
+![截图 Discord@Sofa#8366](https://steamuserimages-a.akamaihd.net/ugc/1917988387306327667/C90622D8C9B8B654E187AA5038A84759DFF050D9/)
 
 ## 常见问题
 
@@ -85,6 +91,10 @@ description: 适用于国内版RavenM联机插件的使用说明
 > **原版游戏出现严重Bug（例如无法上车）**
 >
 > 一般是由于原版游戏小型补丁更新，导致插件不适用于现有游戏版本，切换至游戏stable（标准）分支（当为Beta版时，即在Steam游戏属性 -> 测试版处选`无`），更新或临时禁用插件即可
+
+> **如何禁用插件**
+>
+> 打开游戏安装目录的`BepInEX\plugins`文件夹，将`RavenM.dll`文件重命名为`RavenM.dall`即可（或其他名称。但文件扩展名不可包含“`dll`”字样。若文件管理器不显示扩展名，参考[Win10](https://jingyan.baidu.com/article/9158e0004c6cbea2541228da.html)、[Win7](https://jingyan.baidu.com/article/3c48dd347a3e76e10be35895.html)）
 
 > **联机失败**
 >
