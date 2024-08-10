@@ -48,7 +48,7 @@ description: 适用于国内版RavenM联机插件的使用说明
 
 按`Enter`打开重生界面的同时可打开房间菜单
 
-按`CapsLock`可打开语音（疑似需要Discord）
+按`CapsLock`可打开语音（不需要Discord，。语音基于Steam）
 
 按`F7`可打开数据流检测UI(仅作测试用)
 

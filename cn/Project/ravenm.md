@@ -37,7 +37,7 @@ Macos/linux用户，请按照[BepInEX官方文档](https://docs.bepinex.dev/arti
 >
 > 抱歉这是为了QQ群防爆破
 >
-> 如有问题可先至QQ频道或[贴吧](https://tieba.baidu.com/f?kw=ravenfield)提问（务必关注你的回复）
+> 如有问题可先至QQ频道或[贴吧](https://tieba.baidu.com/f?kw=ravenfield)提问（务必关注回复）
 
 > **这个插件跟RFMP有什么区别？**
 >
