@@ -17,14 +17,14 @@ category:
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | weapon | [Weapon](./Weapon.md) | 目标武器 |  
-| ignoreUnholster  | bool | 是否监视武器的切换行为 |  
-| ignoreCooldown  | bool | 是否监视武器的过热行为 |  
+| ignoreUnholster  | bool | 是否监视武器的切换行为（勾选为否） |  
+| ignoreCooldown  | bool | 是否监视武器的过热行为（勾选为否） |  
 | textIndicator | Text | 显示武器状态的Text物体 |  
-| readyText  | string | 就绪时显示的文本 |  
-| notReadyText  | string | 未就绪时显示的文本 |  
-| reloadText  | string | 装弹中显示的文本 |  
-| tintTargets | Graphic[] |  |  
-| readyColor | Color |  |  
-| notReadyColor | Color |  |  
-| readyObject | GameObject | 就绪时启用的物体 |  
-| notReadyObject | GameObject | 未就绪时启用的物体 |  
+| readyText  | string | 就绪时显示的文本（应用到`textIndicator`并覆盖） |  
+| notReadyText  | string | 未就绪时显示的文本（应用到`textIndicator`并覆盖） |  
+| reloadText  | string | 装弹中显示的文本（应用到`textIndicator`并覆盖） |  
+| tintTargets | Graphic[] | 用于显示武器状态的UI物体（用于依据武器状态渐变色） |  
+| readyColor | Color | 就绪时在`tintTargets`叠加的颜色 |  
+| notReadyColor | Color | 未就绪时在`tintTargets`叠加的颜色 |  
+| readyObject | GameObject | 武器就绪时启用的物体 |  
+| notReadyObject | GameObject | 武器未就绪时启用的物体 |  

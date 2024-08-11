@@ -4,7 +4,7 @@ description: 适用于国内Ravenfield玩家的RavenM联机插件
 ---
 
 ::: center
-![QQGuild](https://img.shields.io/badge/QQ频道-9pmc179t29-blue?style=flat-square) ![插件QQ群](https://img.shields.io/badge/插件QQ群-710832844-blue?style=flat-square)![插件QQ群](https://img.shields.io/badge/插件QQ群-若群已满，请在安装RavenM后使用游戏右下角显示的QQ群号-blue?style=flat-square)
+![QQGuild](https://img.shields.io/badge/QQ频道-9pmc179t29-blue?style=flat-square) ![插件QQ群](https://img.shields.io/badge/插件QQ群-710832844-blue?style=flat-square) ![插件QQ群](https://img.shields.io/badge/插件QQ群-677540488-blue?style=flat-square)
 :::
 
 ## 描述
@@ -34,8 +34,6 @@ Macos/linux用户，请按照[BepInEX官方文档](https://docs.bepinex.dev/arti
 > 参见页首的QQ频道号和QQ群
 >
 > 若群已满，请在安装RavenM后，添加游戏右下角显示的QQ群号
->
-> 抱歉这是为了QQ群防爆破
 >
 > 如有问题可先至QQ频道或[贴吧](https://tieba.baidu.com/f?kw=ravenfield)提问（务必关注回复）
 

@@ -12,7 +12,7 @@ category:
 ## 用法
 需要一个CharacterController组件，否则载具无法操作
 
-参考[Vehicle](./Vehicle.md)
+参考[Vehicle](./Vehicle.md)/
 ## 注释
 建议将[InheritDeltaRotation](./InheritDeltaRotation.md)、[LookAtCamera](./LookAtCamera.md)与本组件配合使用
 
@@ -37,7 +37,7 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| groundCheckers | GroundChecker[] | 地面检测 |
+| groundCheckers | GroundChecker[] | 地面检测（疑似废弃） |
 | inputSmoothness | int | 虚拟轴输入平滑度（值越大，载具实际操作灵敏度越低） |
 | checker | Transform |  |
 | rayLength | float  | 光线长度（应该是作用于`groundChecker`，但疑似废弃） |

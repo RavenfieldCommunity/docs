@@ -6,7 +6,7 @@ category:
 # ActivateForSeatWeapon
 ## 描述
 
-按载具座位的活动武器激活物体
+按载具座位的活动武器（正在使用的武器）激活物体
 
 适用于按武器切换HUB准星之类的情况
 

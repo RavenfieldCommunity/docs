@@ -11,11 +11,15 @@
     "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
+    "@starzkg/vuepress-plugin-analytics": "^1.1.2",
+    "@starzkg/vuepress-plugin-clarity-analytics": "^1.1.2",
     "@vuepress/bundler-vite": "2.0.0-rc.9",
+    "@vuepress/client": "2.0.0-rc.2",
     "@vuepress/plugin-comment": "2.0.0-rc.26",
     "@vuepress/plugin-google-analytics": "2.0.0-rc.21",
     "@vuepress/plugin-pwa": "2.0.0-rc.26",
     "@vuepress/plugin-redirect": "2.0.0-rc.26",
+    "@vuepress/utils": "2.0.0-rc.2",
     "vue": "^3.4.25",
     "vuepress": "2.0.0-rc.9",
     "vuepress-plugin-md-enhance": "2.0.0-rc.37",

@@ -19,7 +19,7 @@ category:
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | helicopter | [Helicopter](./Helicopter.md) | 目标监控直升机 |  
-| autoHover | GameObject.[PlaneHud](./PlaneHud.md).Indicator | 自动悬停状态(ready=启用时显示的UI物体, waiting=关闭时显示的UI物体) |  
+| autoHover | GameObject.[PlaneHud](./PlaneHud.md).Indicator | 自动悬停状态显示物体(ready=启用时显示的UI物体, waiting=关闭时显示的UI物体) |  
 | countermeasureIndicator | GameObject.[PlaneHud](./PlaneHud.md).Indicator | 自动悬停状态(ready=启用时显示的UI物体, waiting=关闭时显示的UI物体) |  
 | horizontalSpeedText | Text | 显示水平速度的Text物体（纯数字，会覆盖原文本） |  
 | verticalSpeedText | Text | 显示垂直速度的Text物体（纯数字，会覆盖原文本） |  
