@@ -13,6 +13,8 @@ description: 适用于国内版RavenM联机插件的使用说明
 
 ![](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.004.png)
 
+你可以直接运行你以前下载的安装工具，安装工具的会自动使用服务器提供的最新版本RavenM安装
+
 ## 游戏前配置房间
 以下括号中的英文部分表示国际版RavenM原文
 

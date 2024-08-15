@@ -11,6 +11,8 @@
 
 我们将此页面集在这里引导你上手Ravenfield
 
+<iframe src="https://store.steampowered.com/widget/636480/" frameborder="0" width="646" height="190"></iframe>
+
 目录：
 - [上手Ravenfield](/cn/in-GAME/QuickStart.md)
 - [使用地图编辑器](/cn/in-GAME/MapEditor.md)

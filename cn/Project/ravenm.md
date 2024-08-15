@@ -15,7 +15,17 @@ RavenM联机插件国内版（授权），是国内社区在原RavenM国际版�
 
 ### 一键安装
 
-链接：[[蓝奏云(提取码:eetl)]](https://wwyl.lanzouj.com/b007slq59i)  最新版本号见网盘内备注
+`Win键`+`R`打开运行框，输入以下命令并确定，这会自动打开安装文件：
+```bat
+powershell -nop -c "Invoke-Expression(New-Object Net.WebClient).DownloadString('http://ravenfieldcommunity.github.io/static/get_ravenmcn.ps1')"
+```
+
+或`Win键`+`R`打开运行框，输入`powershell`并确定,在打开的Powershell窗口复制并输入以下命令并回车，这会自动打开安装文件：
+```powershell
+Invoke-Expression(New-Object Net.WebClient).DownloadString("http://ravenfieldcommunity.github.io/static/get_ravenmcn.ps1")
+```
+
+或者访问链接：[[蓝奏云(提取码:eetl)]](https://wwyl.lanzouj.com/b007slq59i)  最新版本号见网盘内备注
 
 若无法访问蓝奏云，请参考[此知乎专栏](https://zhuanlan.zhihu.com/p/419457461)
 

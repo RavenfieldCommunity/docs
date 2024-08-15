@@ -23,6 +23,8 @@ BepInEX是一个Unity模组插件框架，本项目的前置多语言插件需�
 
 如果你是MacOS/Linux用户也同样请到下方的Github或KGithub下载`BepInEx_macos_XXX_XXX.zip`或`BepInEx_unix_XXX_XXX.zip`，即macos/linux版本（同样请注意区分32位和64位版本），然后按照[BepInEX官方文档](https://docs.bepinex.dev/articles/user_guide/installation/index.html?tabs=tabid-nix#installing-bepinex-1)来配置你的BepInEX环境，配置好环境后其他步骤基本完全相同。由于同样过于冷门这里不作翻译
 
+**注意建议不要使用BepInEX 6，即文件不带"`pre6`"，而是使用当前的BepInEX 5**
+
 首先，你可以在以下网站下载BepInEX：
 
 > [Github](https://github.com/BepInEx/BepInEx/releases/latest)
@@ -80,6 +82,8 @@ XUnity.AutoTranslator是一个由BepInEX官方开发人员开发的一个游戏�
 ### 导入翻译文件
 
 这是最后一步
+
+我们故意将翻译文件作为工坊物品上传是为了进行正版认证（毕竟Steam已经关闭了Mod下载工具对RF工坊访问权限），如果您确有需要且无主观恶意，请自行找一个朋友代下
 
 打开游戏目录，返回当前目录的上两级目录（例如游戏目录为`E:\Program Files\Steam\steamapps\common\Ravenfield`，返回上级目录后，文件管理器应处在`E:\Program Files\Steam\steamapps\`）
 
