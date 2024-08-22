@@ -21,6 +21,8 @@ RavenM联机插件国内版（授权），是国内社区在原RavenM国际版�
 > ```batch
 > powershell -nop -c "Invoke-Expression(New-Object Net.WebClient).DownloadString('http://ravenfieldcommunity.github.io/static/get_ravenmcn.ps1')"
 > ```
+>
+>直接安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
 
 > 手动一键安装
 >

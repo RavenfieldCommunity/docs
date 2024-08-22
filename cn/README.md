@@ -67,12 +67,6 @@ logo: /image/Components.png
 link: /cn/RESOURCE.md
 ```
 
-```card
-title: 旧版项目
-desc: 此文档的Steam原项目
-logo: https://store.steampowered.com/favicon.ico
-link: https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158
-```
 :::
 
 **社区项目**
@@ -94,6 +88,13 @@ link: /cn/Project/mlang.md
 ```card
 title: 联机插件国内版
 desc: 国内社区优化的RavenM联机插件
+logo: /image/Components.png
+link: /cn/Project/ravenm.md
+```
+
+```card
+title: 其他社区项目
+desc: 其他社区项目 (不属于本站)
 logo: /image/Components.png
 link: /cn/Project/ravenm.md
 ```

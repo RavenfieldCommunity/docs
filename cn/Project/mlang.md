@@ -14,10 +14,14 @@ Steam工坊：[Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=323
 本项目依赖前置BepInEX插件
 
 ## 直接安装
+先订阅工坊文件，让Steam客户端将其下载到本地后
+
 `Win键`+`R`打开运行框，输入以下命令并确定，这会自动打开安装文件，按说明操作即可：
 ```batch
 powershell -nop -c "Invoke-Expression(New-Object Net.WebClient).DownloadString('http://ravenfieldcommunity.github.io/static/get_ravenmcn.ps1')"
 ```
+
+直接安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
 
 安装完后记得看完这篇文档！ ↓↓↓
 
