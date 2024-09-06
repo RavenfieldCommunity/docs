@@ -24,11 +24,11 @@ export const cnNavbar = navbar([
         text: "游戏多语言",
         link: "/cn/Project/mlang"
       },
-	  {
+	    {
         text: "联机插件",
         link: "/cn/Project/ravenm"
       },
-	  {
+	    {
         text: "其他社区项目",
         link: "/cn/Project/other"
       }
