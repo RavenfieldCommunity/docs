@@ -29,6 +29,9 @@ importers:
       '@vuepress/plugin-redirect':
         specifier: 2.0.0-rc.42
         version: 2.0.0-rc.42(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.15(@types/node@22.5.4)(sass@1.78.0)(terser@5.31.6)(yaml@2.4.1))(vue@3.5.3))
+      '@vuepress/plugin-umami-analytics':
+        specifier: 2.0.0-rc.42
+        version: 2.0.0-rc.42(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.15(@types/node@22.5.4)(sass@1.78.0)(terser@5.31.6)(yaml@2.4.1))(vue@3.5.3))
       vue:
         specifier: ^3.5.3
         version: 3.5.3
@@ -38,9 +41,6 @@ importers:
       vuepress-plugin-md-enhance:
         specifier: 2.0.0-rc.52
         version: 2.0.0-rc.52(markdown-it@14.1.0)(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.15(@types/node@22.5.4)(sass@1.78.0)(terser@5.31.6)(yaml@2.4.1))(vue@3.5.3))
-      vuepress-plugin-umami-analytics:
-        specifier: 1.13.0
-        version: 1.13.0
       vuepress-theme-hope:
         specifier: 2.0.0-rc.52
         version: 2.0.0-rc.52(@vuepress/plugin-prismjs@2.0.0-rc.21(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.15(@types/node@22.5.4)(sass@1.78.0)(terser@5.31.6)(yaml@2.4.1))(vue@3.5.3)))(@vuepress/plugin-pwa@2.0.0-rc.42(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.15(@types/node@22.5.4)(sass@1.78.0)(terser@5.31.6)(yaml@2.4.1))(vue@3.5.3)))(@vuepress/plugin-redirect@2.0.0-rc.42(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.15(@types/node@22.5.4)(sass@1.78.0)(terser@5.31.6)(yaml@2.4.1))(vue@3.5.3)))(markdown-it@14.1.0)(vuepress-plugin-search-pro@2.0.0-rc.37(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.15(@types/node@22.5.4)(sass@1.78.0)(terser@5.31.6)(yaml@2.4.1))(vue@3.5.3)))(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.15(@types/node@22.5.4)(sass@1.78.0)(terser@5.31.6)(yaml@2.4.1))(vue@3.5.3))
@@ -1553,6 +1553,11 @@ packages:
     resolution: {integrity: sha512-fNwaPpqM46gI23n5d4UrwC8Y+JRDi7mKs1sjawqKU9PdJpUQKd/2lOSOSx/farLqxiswHTQdZtLCxWjvWlcZRw==}
     peerDependencies:
       vuepress: 2.0.0-rc.14
+
+  '@vuepress/plugin-umami-analytics@2.0.0-rc.42':
+    resolution: {integrity: sha512-240PpCpWzeGUaZpWLuWWW101OK9VjpYR/z4Gj6bI2p4F945uBqeC1enusloN6WbALK2EgLFOVtHakTZUspRukg==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.15
 
   '@vuepress/plugin-watermark@2.0.0-rc.39':
     resolution: {integrity: sha512-16BZnwIZa+AEBcnXI59udHX04/VLiCwrdy8wsdBf3vy5co8/PPyG3iDC1Tlwbkotsuz/+J23KG7MjN4Fr9dFEQ==}
@@ -3212,10 +3217,6 @@ packages:
     peerDependenciesMeta:
       sass-loader:
         optional: true
-
-  vuepress-plugin-umami-analytics@1.13.0:
-    resolution: {integrity: sha512-8KJ7R7iT+3fLU6OP2vebakUDieg2zcBjv81ees8t67+E9PFhgmW49Iwi2IXyXkuwxC7iyUMMHvMWusKz4K6k1w==}
-    engines: {node: ^16.0.0 || >=18.0.0}
 
   vuepress-shared@2.0.0-rc.37:
     resolution: {integrity: sha512-hzG9NaX5b+9HW0d5H//dajyNf0bMZc+OQZ7wEDkdRKnpXx3/nEmNb4yTTGYRicLZRlEen7NLa1IrjqdLH9zFBg==}
@@ -5250,6 +5251,14 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
+  '@vuepress/plugin-umami-analytics@2.0.0-rc.42(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.15(@types/node@22.5.4)(sass@1.78.0)(terser@5.31.6)(yaml@2.4.1))(vue@3.5.3))':
+    dependencies:
+      '@vuepress/helper': 2.0.0-rc.42(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.15(@types/node@22.5.4)(sass@1.78.0)(terser@5.31.6)(yaml@2.4.1))(vue@3.5.3))
+      vue: 3.5.3
+      vuepress: 2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.15(@types/node@22.5.4)(sass@1.78.0)(terser@5.31.6)(yaml@2.4.1))(vue@3.5.3)
+    transitivePeerDependencies:
+      - typescript
+
   '@vuepress/plugin-watermark@2.0.0-rc.39(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.15(@types/node@22.5.4)(sass@1.78.0)(terser@5.31.6)(yaml@2.4.1))(vue@3.5.3))':
     dependencies:
       '@vuepress/helper': 2.0.0-rc.39(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.15(@types/node@22.5.4)(sass@1.78.0)(terser@5.31.6)(yaml@2.4.1))(vue@3.5.3))
@@ -7017,15 +7026,6 @@ snapshots:
       - '@vue/composition-api'
       - typescript
     optional: true
-
-  vuepress-plugin-umami-analytics@1.13.0:
-    dependencies:
-      '@vuepress/client': 2.0.0-rc.15
-      '@vuepress/core': 2.0.0-rc.15
-      '@vuepress/utils': 2.0.0-rc.15
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
 
   vuepress-shared@2.0.0-rc.37(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.15(@types/node@22.5.4)(sass@1.78.0)(terser@5.31.6)(yaml@2.4.1))(vue@3.5.3)):
     dependencies:
