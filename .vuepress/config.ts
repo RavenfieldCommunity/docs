@@ -32,8 +32,7 @@ export default defineUserConfig({
     }),
 	umamiAnalyticsPlugin({
       id: '545907a5-e0a1-401c-a49a-48f121c37f03',
-	  src: "https://analytics.umami.is/script.js",
-	  hostUrl: "https://api-gateway.umami.dev"
+	  src: "https://analytics.umami.is/script.js"
 	})
   ]
 });

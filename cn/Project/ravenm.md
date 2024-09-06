@@ -58,9 +58,9 @@ Macos/linux用户，请按照[BepInEX官方文档](https://docs.bepinex.dev/arti
 >
 > 它长得像原版只是因为乌鸦协助开发了这款游戏，因此这两个实际上是完全不同的游戏（而RavenM是真正用于原版RF的一个插件）
 >
-> RFMP发行于2019年7月11日，终止更新于[2020年5月31日（来源SteamDB）](https://steamdb.info/app/1104390/patchnotes/)
+> RFMP发行于2019年7月11日，最后一次更新于[2020年5月31日（来源SteamDB）](https://steamdb.info/app/1104390/patchnotes/)
 >
-> RFMP曾辉煌了一段时期（甚至RF贴吧那边都搭建过国服服务器，开设联机赛，当然现在已经关了，Steam评论区犹见当年吧主贴的[公告评论](https://steamcommunity.com/profiles/76561198357197363/recommended/1104390/)），但由于RFMM确实确实比较粗糙，质量堪忧，挂壁飞天，不久就鬼服（指没人玩）+ 停更 + 贬褒不一（评论区一堆差评和之前的好评）了
+> RFMP曾辉煌了一段时期（甚至RF贴吧那边都搭建过国服服务器，开设联机赛，当然现在已经关了，Steam评论区犹见当年吧主贴的[公告评论](https://steamcommunity.com/profiles/76561198357197363/recommended/1104390/)），但由于RFMP确实确实比较粗糙，质量堪忧，挂壁飞天，不久就鬼服（指没人玩）+ 停更 + 贬褒不一（评论区一堆差评和之前的好评）了
 >
 > 至此，RFMP应是RF史上的一座遗迹
 
