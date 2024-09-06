@@ -31,7 +31,7 @@ export default defineUserConfig({
       id: 'G-SE76S2Y1LL'
     }),
 	umamiAnalyticsPlugin({
-      id: '545907a5-e0a1-401c-a49a-48f121c37f03',
+      id: 'f49691ea-f10a-4dc3-a42d-c1a2f844e0b4',
 	    link: "https://analytics.umami.is/script.js"
 	})
   ]
