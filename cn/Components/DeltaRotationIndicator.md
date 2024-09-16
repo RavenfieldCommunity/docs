@@ -6,6 +6,8 @@ category:
 # DeltaRotationIndicator
 ## 描述
 
+装甲载具物体的方向指示器
+
 ## 用法
 
 ## 注释

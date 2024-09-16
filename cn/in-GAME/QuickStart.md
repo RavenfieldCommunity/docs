@@ -6,7 +6,11 @@
 
 {缺表}(主菜单翻译)
 
-## 游戏模式
+### Mod管理
+
+### 设置
+
+### 游戏模式
 接上一章
 
 游戏模式分为以下两个：
@@ -18,7 +22,7 @@
 CONQUSET模式为INSTANT ACTION模式套壳，且年久失修，此文档在此模式下一次更新之前将不会加入此内容，如有需要请移步至[旧指南](https://steamcommunity.com/sharedfiles/filedetails/?id=2805259547)
 
 选择INSTANT ACTION模式，我们将配置这局游戏
-## 对局配置
+#### 对局配置
 
 {缺图}
 

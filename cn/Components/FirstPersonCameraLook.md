@@ -17,6 +17,6 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| maxHeadBobOffset | float |  |  
-| headBobPositionWeight  | float |  |  
-| headBobRecoilKickWeight  | float |  |  
+| maxHeadBobOffset | float | 摄像机晃动效果的最大偏移量 |  
+| headBobPositionWeight  | float | 玩家视角操作晃动效果的权重 |  
+| headBobRecoilKickWeight  | float | 武器后坐力效果对摄像机旋转角度的影响权重 |  

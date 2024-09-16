@@ -19,6 +19,17 @@ category:
 
 ## 注释
 
+可用动画机的Parameters：
+| Parameters名 | 类型 | 描述 |
+|------|------|------|
+| velocity x | float | 载具x轴方向的速度 |
+| velocity y | float | 载具y轴方向的速度 |
+| velocity z | float | 载具z轴方向的速度 |
+| input x | float | x轴方向操作的axis虚拟轴 |
+| input y | float | y轴方向操作的axis虚拟轴 |
+| input z | float | z轴方向操作的axis虚拟轴 |
+| input w| float |  |
+
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
