@@ -6,7 +6,7 @@ category:
 # LandingZone
 ## 描述
 
-定义船只的停泊区
+定义直升机的可降落区
 
 ## 用法
 
@@ -18,7 +18,9 @@ category:
 
 ## 注释
 
+此组件将在将来废弃，游戏会自动生成直升机的可降落点
+
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| target | [SpawnPoint](./SpawnPoint.md) | 此停泊区对应的据点 |  
+| target | [SpawnPoint](./SpawnPoint.md) | 此降落区对应的据点 |  

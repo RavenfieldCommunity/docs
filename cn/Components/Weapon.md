@@ -144,4 +144,4 @@ category:
 | maxAmmoPerReload  | int | 每次换弹的最大装填数（与`useMaxAmmoPerReload`联动） |  
 | advancedReload  | bool | 是否启用高级装填（用于单\多发装填武器,需要在AnimationEvent手动调用ReloadDone才能结束装填） |  
 | allowedReloads | int[] |  启用高级装填选项后，换弹时将会按照设定好的顺序，装填对应的弹药数量 |  
-| sightModes | SightMode[] | 瞄准方式（`Sizes`=有多少种瞄准方式；overrideFov=铺满视角；fov=可视范围；name=名称，显示在实际游戏时的HUB中） |  
+| sightModes | SightMode[] | 瞄准方式（`Sizes`=有多少种瞄准方式；overrideFov=是否使用此`sightMode`的`fov`；fov=可视范围；name=名称，显示在实际游戏时的HUB中） |  

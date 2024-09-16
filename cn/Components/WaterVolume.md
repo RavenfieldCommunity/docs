@@ -12,7 +12,7 @@ category:
 
 套用在一个3D Object，可以修改材质
 
-或者直接使用\Assets\Prefabs\Map Elements内的Water Volume.prefab(推荐)
+或者直接使用RFTools的`\Prefabs\Map Elements内的Water Volume.prefab`(推荐)
 
 ## 注释
 

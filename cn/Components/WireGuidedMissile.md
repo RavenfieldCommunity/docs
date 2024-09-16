@@ -17,6 +17,6 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| correctionGain  | float |  |  
-| maxCorrection  | float |  |  
+| correctionGain  | float | 额外弹道引导偏差 |  
+| maxCorrection  | float | 额外弹道引导最大偏差 |  
 | controlLossDistance  | float | 最大引导范围（子弹飞出这个范围后不受再受控制） |  
