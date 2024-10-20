@@ -95,8 +95,9 @@ description: 适用于国内版RavenM联机插件的使用说明
 > 一般是由于原版游戏小型补丁更新，导致插件不适用于现有游戏版本，切换至游戏stable（标准）分支（当为Beta版时，即在Steam游戏属性 -> 测试版处选`无`），更新或临时禁用插件即可
 
 > **如何禁用插件**
+> 打开steam，在游戏属性的启动参数里加上`-noravenm`（如果已经有其他参数请空格再加）即可，如图，要启用插件时记得手动删除：
 >
-> 打开游戏安装目录的`BepInEX\plugins`文件夹，将`RavenM.dll`文件重命名为`RavenM.dall`即可（或其他名称。但文件扩展名不可包含“`dll`”字样。若文件管理器不显示扩展名，参考[Win10](https://jingyan.baidu.com/article/9158e0004c6cbea2541228da.html)、[Win7](https://jingyan.baidu.com/article/3c48dd347a3e76e10be35895.html)）
+> 或打开游戏安装目录的`BepInEX\plugins`文件夹，将`RavenM.dll`文件重命名为`RavenM.dall`即可（或其他名称。但文件扩展名不可包含“`dll`”字样。若文件管理器不显示扩展名，参考[Win10](https://jingyan.baidu.com/article/9158e0004c6cbea2541228da.html)、[Win7](https://jingyan.baidu.com/article/3c48dd347a3e76e10be35895.html)）
 
 > **联机失败**
 >
