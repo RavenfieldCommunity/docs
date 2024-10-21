@@ -7,6 +7,10 @@ category:
 
 本文介绍有关RFTools的一些功能、文件目录结构，以及关于其的常见问题等
 
+## 使用RFTools
+
+新建一个空Unity项目（务必注意版本）并打开，然后在windows文件管理器点击打开RFTools包即可导入
+
 ## RFTools的目录结构
 ```
 RFTools

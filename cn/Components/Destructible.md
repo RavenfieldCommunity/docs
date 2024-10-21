@@ -35,7 +35,7 @@ category:
 | armorInstantShatteredBy  | Vehicle.ArmorRating | 被伤害直接消亡所需的最低伤害类型 |  
 | activateOnDeath | GameObject[] | 消亡（死亡）后激活的游戏物体 |  
 | disableOnDeath | GameObject[] | 消亡（死亡）后隐藏（禁用）的游戏物体 |  
-| showHitIndicator  | bool | 是否显示命中反馈 |  
+| showHitIndicator  | bool | 玩家攻击此物体时，玩家是否显示命中反馈 |  
 | takeSplashDamage  | bool | 允许受到溅射伤害 |  
 | takesMeleeDamage  | bool | 允许受到近战伤害 |  
 | takesCollisionDamage  | bool | 允许受到撞击的伤害 |  
