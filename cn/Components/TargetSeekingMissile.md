@@ -6,6 +6,8 @@ category:
 # TargetSeekingMissile
 ## 描述
 从[Rocket](./Rocket.md)类派生
+
+跟踪导弹（仅载具）
 ## 用法
 
 ## 注释

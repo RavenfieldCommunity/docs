@@ -20,6 +20,6 @@ category:
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | target | Transform | 目标物体（如炮塔） |  
-| relativeTo | Transform | 相对物体（如炮塔外的指向正前方的物体物体） | 
+| relativeTo | Transform | 相对物体（如炮塔外的指向正前方的空物体物体） | 
 | targetRotationAxis | Vector3 | 目标物体的旋转矫正 |
 | indicatorRotationAxis | Vector3 | 相对物体的旋转矫正 | 

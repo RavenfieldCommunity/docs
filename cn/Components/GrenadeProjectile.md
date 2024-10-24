@@ -5,6 +5,8 @@ category:
 ---
 # GrenadeProjectile
 ## 描述
+手榴弹Projectile
+
 从[Projectile](./Projectile.md)类派生
 ## 用法
 
@@ -13,7 +15,7 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| renderers | Renderer[] |  |  
+| renderers | Renderer[] | projectlie下的模型模型 |  
 | radius  | float |  |  
 | bounciness  | float |  |  
 | bounceDrag  | float |  |  
