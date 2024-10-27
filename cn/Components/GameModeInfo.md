@@ -12,7 +12,7 @@ category:
 
 随意挂载在空物体上
 
-或者直接使用\Assets\Prefabs\Map Elements\Must Have内的Neighbor Manager.prefab(推荐，已预装此组件)
+或者直接使用`RFTools\Prefabs\Map Elements\Must Have内的Neighbor Manager.prefab`(推荐，已预装此组件)
 
 ## 注释
 
