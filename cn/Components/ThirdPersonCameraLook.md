@@ -10,10 +10,12 @@ category:
 
 ## 用法
 
+与Camera组件同级
+
 ## 注释
 
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | useWorldUpDirection  | bool |  |  
-| positionBobWeight  | float | 相机位置随载具移动的权重 |  
+| positionBobWeight  | float | 相机位置随载具移动的权重（阻尼？） |  

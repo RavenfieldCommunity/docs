@@ -29,7 +29,7 @@ category:
 | piercing  | bool |  是否有穿透力 |  
 | makesFlybySound  | bool |  飞过时制造声音 |  
 | flybyPitch  | float |  飞行距离 |  
-| dropoffEnd  | float |  {机翻}下降结束 |  
+| dropoffEnd  | float | 最大距离 |  
 | gravityMultiplier  | float |  重力效应 |  
 | damageDropOff | AnimationCurve |  {机翻}伤害曲线 |  
 | inheritVelocity  | bool |  {机翻}继承速度 |  
