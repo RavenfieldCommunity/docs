@@ -10,6 +10,8 @@ category:
 
 ## 用法
 
+参考[Projectile](./Projectile.md)
+
 ## 注释
 
 ## 变量
