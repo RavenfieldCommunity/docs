@@ -18,19 +18,19 @@ export const cnNavbar = navbar([
     children: [
       {
         text: "RS IDEA",
-        link: "/cn/Project/rsidea"
+        link: "/cn/Projects/rsidea"
       },
       {
         text: "游戏多语言",
-        link: "/cn/Project/mlang"
+        link: "/cn/Projects/mlang"
       },
 	    {
         text: "联机插件",
-        link: "/cn/Project/ravenm"
+        link: "/cn/Projects/ravenm"
       },
 	    {
         text: "其他社区项目",
-        link: "/cn/Project/other"
+        link: "/cn/Projects/other"
       }
     ]
   },

@@ -11,12 +11,6 @@ export default hopeTheme({
   contributors: false,
   pageInfo: ["Category", "Tag"],
   locales: {
-    //'/': {
-    //  footer: "<p>CC-BY-NC-4.0 Licensed | Copyright © 2023-PRESENT RavenfieldCommunity</p><p>Anonymous analysis of website data using Google Analytics</p>",
-    //  navbarLocales: {
-    //    langName: 'Hi~'
-    //  }
-    //},
     "/en/": {
       navbar: enNavbar,
       sidebar: enSidebar,
@@ -35,7 +29,7 @@ export default hopeTheme({
     "/cn/": {
       navbar: cnNavbar,
       sidebar: cnSidebar,
-      footer: "<p>基于CC-BY-NC-4.0许可 | 版权所有 © 2023-PRESENT RavenfieldCommunity</p><p>使用Google Analytics与Umami Cloud匿名分析网站数据</p>",
+      footer: "<p>基于CC-BY-NC-4.0许可<p></p>版权所有 © 2023-PRESENT RavenfieldCommunity</p><p>使用Google Analytics与Umami Cloud匿名分析网站数据</p><p>我们希望您在实际开发模组时遇到的问题与笔记、文档纰漏不吝麻烦在本站留言，既给自己一个记忆也帮助了他人，谢谢支持!</p>",
       displayFooter: true,
       metaLocales: {
         editLink: "在 GitHub 上编辑此页", 
@@ -73,6 +67,16 @@ export default hopeTheme({
 	    align: true,
 	    card: true,
     },
+	redirect: {
+	    autoLocale: true, 
+	    config: {
+            '/cn/Project/mlang.html': '/cn/Projects/mlang.html',
+            '/cn/Project/other.html': '/cn/Projects/other.html',
+            '/cn/Project/ravenm.html': '/cn/Projects/ravenm.html',
+            '/cn/Project/rsidea.html': '/cn/Projects/rsidea.html',
+			'/en/Project/rsidea.html': '/en/Projects/rsidea.html'
+        }
+	},
 	components: {
         components: [
           "BiliBili",

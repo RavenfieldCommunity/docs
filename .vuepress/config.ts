@@ -24,9 +24,6 @@ export default defineUserConfig({
   bundler: viteBundler(),
   shouldPrefetch: false,
   plugins: [
-    redirectPlugin({
-        autoLocale: true   
-    }),
     googleAnalyticsPlugin({
       id: 'G-SE76S2Y1LL'
     }),
