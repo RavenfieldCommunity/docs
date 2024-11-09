@@ -18,7 +18,7 @@ export const enNavbar = navbar([
         children: [
           {
             text: "RS IDEA",
-            link: "/en/Project/rsidea"
+            link: "/en/Projects/rsidea"
           }
         ]
     },
