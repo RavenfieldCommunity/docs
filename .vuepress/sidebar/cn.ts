@@ -10,7 +10,7 @@ export const cnSidebar = sidebar({
 	"/cn/in-GAME/ravenm"
 	],
   "/cn/Components/": "structure",
-  "/cn/Project/": "structure",
+  "/cn/Projects/": "structure",
   "/cn/Tutorials/": ["/cn/Tutorials/",{
     text: "正文",
     children: [

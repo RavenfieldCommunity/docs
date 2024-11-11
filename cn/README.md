@@ -75,28 +75,28 @@ link: /cn/RESOURCE.md
 title: Ravenscript IDEA
 desc: 新一代RS开发snippet插件
 logo: \image\Project\rsidea.001.png
-link: /cn/Project/rsidea.md
+link: /cn/Projects/rsidea.md
 ```
 
 ```card
 title: 游戏多语言
 desc: 游戏本地化多语言支持
 logo: /image/Components.png
-link: /cn/Project/mlang.md
+link: /cn/Projects/mlang.md
 ```
 
 ```card
 title: 联机插件国内版
 desc: 国内社区优化的RavenM联机插件
 logo: /image/Components.png
-link: /cn/Project/ravenm.md
+link: /cn/Projects/ravenm.md
 ```
 
 ```card
 title: 其他社区项目
 desc: 其他社区项目 (不属于本站)
 logo: /image/Components.png
-link: /cn/Project/ravenm.md
+link: /cn/Projects/ravenm.md
 ```
 
 **鸣谢**
