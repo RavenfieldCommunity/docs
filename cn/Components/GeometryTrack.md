@@ -19,4 +19,4 @@ category:
 | ----------- | ----------- | ----------- |
 | speedSampleTransform | Transform | 速度采样器（可选） |  
 | linkDistance  | float |  |  
-| vehicleRigidbody | Rigidbody | 目标载具钢体 |   
+| vehicleRigidbody | Rigidbody | 目标载具剛体 |   

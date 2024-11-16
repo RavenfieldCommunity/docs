@@ -15,6 +15,8 @@ category:
 :::
 
 :::tip 一些变量设置提示
+大部分时候，尤其是一些设置项很少的效果组件，变量槽位多为必填
+
 在组件文档中`Sizes`的说法是对于Unity 5而不是现在的Unity 2020的，Unity 2020版本的直接点击`+`按钮即可
 
 对于一些诸如浮点数类型的组件变量设置，一部分像`*time*`的选项使用秒作为单位，一部分像`*multiplier*`以及[Weapon](./Weapon.md)的`followupSpreadGain`的倍数、倍增值、效果等，他们是作为百分比数值使用(作为小数显示)，注意辨别！
@@ -57,38 +59,38 @@ category:
         - [ActivateWhenLocked](./ActivateWhenLocked.md) 被导弹锁定时激活物体
         - [AimTransform](./AimTransform.md) 瞄准时应用Transform
         - [AimingWheel](./AimingWheel.md) 跟随目标物体的旋转属性
-        - [ControlSurface](./ControlSurface.md)
+        - [ControlSurface](./ControlSurface.md) 飞机控制面
         - [CopyRotation](./CopyRotation.md) 克隆旋转属性
-		- [DeltaRotationIndicator](./DeltaRotationIndicator.md)
-        - [EnginePoweredParticles](./EnginePoweredParticles.md)
+		- [DeltaRotationIndicator](./DeltaRotationIndicator.md) 炮塔旋转指示器
+        - [EnginePoweredParticles](./EnginePoweredParticles.md) 飞机引擎粒子效果
         - [FollowMainCamera](./FollowMainCamera.md) 跟随活动相机的Transform
         - [ForceHeight](./ForceHeight.md) 强制保持高度
-        - [GeometryTrack](./GeometryTrack.md)
+        - [GeometryTrack](./GeometryTrack.md) 形状混合权重
         - [HeadingGuide](./HeadingGuide.md)
-        - [InheritDeltaRotation](./InheritDeltaRotation.md) 克隆旋转属性Pro
-		- [InheritDeltaPosition](./InheritDeltaPosition.md)
-        - [Joystick](./Joystick.md)
+        - [InheritDeltaRotation](./InheritDeltaRotation.md) 增量旋转
+		- [InheritDeltaPosition](./InheritDeltaPosition.md) 增量移动
+        - [Joystick](./Joystick.md) 飞机操控手柄
         - [MountedStabilizedTurretUIAimIndicator](./MountedStabilizedTurretUIAimIndicator.md)
         - [ParticlesAmbientColor](./ParticlesAmbientColor.md)
         - [PitchRollGuide](./PitchRollGuide.md) 飞机水平仪
-        - [PlayerRecoilCamera](./PlayerRecoilCamera.md) 镜头抖动
-        - [PlayerRecoilTransform](./PlayerRecoilTransform.md)
+        - [PlayerRecoilCamera](./PlayerRecoilCamera.md) 玩家镜头抖动
+        - [PlayerRecoilTransform](./PlayerRecoilTransform.md) 开火后座
         - [RollGuide](./RollGuide.md)
         - [Rotor](./Rotor.md) 飞机螺旋桨
         - [SteeringWheel](./SteeringWheel.md) 载具方向盘
-        - [UvOffset](./UvOffset.md)
-        - [UvVehicleTrackScroll](./UvVehicleTrackScroll.md)
+        - [UvOffset](./UvOffset.md) UV贴图滚动
+        - [UvVehicleTrackScroll](./UvVehicleTrackScroll.md) UV贴图滚动
         - [WaterRipples](./WaterRipples.md) 载具水波
         - UI
-            - [ChangeEmissionAtNight](./ChangeEmissionAtNight.md)
-            - [CountermeasureStatusIndicator](./CountermeasureStatusIndicator.md)
-            - [GearIndicator](./GearIndicator.md) 
+            - [ChangeEmissionAtNight](./ChangeEmissionAtNight.md) 夜间模式材质
+            - [CountermeasureStatusIndicator](./CountermeasureStatusIndicator.md) 热诱弹指示器
+            - [GearIndicator](./GearIndicator.md) 起落架HUB监视
             - [HelicopterHud](./HelicopterHud.md) 直升机HUB监视
             - [PlaneHud](./PlaneHud.md) 飞机HUB监视
-            - [RefreshRateText](./RefreshRateText.md)
-            - [Speedometer](./Speedometer.md)
-            - [UiAnimator](./UiAnimator.md)
-            - [UiElementTracker](./UiElementTracker.md)
+            - [RefreshRateText](./RefreshRateText.md) 监视屏刷新率表
+            - [Speedometer](./Speedometer.md) 速度表
+            - [UiAnimator](./UiAnimator.md) 简单UI动画
+            - [UiElementTracker](./UiElementTracker.md) UI物体跟踪
             - [WeaponStatusIndicator](./WeaponStatusIndicator.md) 武器HUB监视
 
 ## 武器
@@ -98,12 +100,12 @@ category:
 - [Medipack](./Medipack.md) 医疗包
 - [MeleeWeapon](./MeleeWeapon.md) 近战武器
 - [Projectile](./Projectile.md) 子弹
-- [RemoteDetonatedProjectile](./RemoteDetonatedProjectile.md)
+- [RemoteDetonatedProjectile](./RemoteDetonatedProjectile.md) 遥控炸弹Projectile
 - [ProximityFuzeProjectile](./ProximityFuzeProjectile.md) 近程引信Projectile
 - [RigidbodyProjectile](./RigidbodyProjectile.md) 刚体Projectile
 - [Rocket](./Rocket.md) 火箭弹
 - [SoundBank](./SoundBank.md)  AudioCilp集
-- [SpinWhenHoldingFire](./SpinWhenHoldingFire.md)
+- [SpinWhenHoldingFire](./SpinWhenHoldingFire.md) 开火旋转力
 - [TargetSeekingMissile](./TargetSeekingMissile.md) 跟踪导弹
 - [ThrowableWeapon](./ThrowableWeapon.md) 可投掷武器
 - [ToggleableItem](./ToggleableItem.md) 可投掷物体
@@ -112,12 +114,12 @@ category:
 - [WireGuidedMissile](./WireGuidedMissile.md) 引导导弹
 - [Wrench](./Wrench.md) 扳手
 - Misc其他
-    - [AmmoCountUiText](./AmmoCountUiText.md)
+    - [AmmoCountUiText](./AmmoCountUiText.md) 弹药HUB监视
     - [MaterialTarget](./MaterialTarget.md)
-    - [PlayAudioAfterDelay](./PlayAudioAfterDelay.md)
+    - [PlayAudioAfterDelay](./PlayAudioAfterDelay.md) 延迟播放音频
     - [Rangefinder](./Rangefinder.md) 测距仪
-    - [RocketPodShaderController](./RocketPodShaderController.md)
-    - [TargetTracker](./TargetTracker.md)
+    - [RocketPodShaderController](./RocketPodShaderController.md) 备弹反馈
+    - [TargetTracker](./TargetTracker.md) 跟踪导弹目标锁定器
 
 
 ## 地图
@@ -131,7 +133,7 @@ category:
 - [GameModeInfo](./GameModeInfo.md) 地图信息
 - [Ladder](./Ladder.md) 梯子
 - [LandingZone](./LandingZone.md) 船只停泊区
-- [LevelColorGrading](./LevelColorGrading.md)
+- [LevelColorGrading](./LevelColorGrading.md) 地图颜色氛围
 - [LevelGravity](./LevelGravity.md) 地图重力
 - [MinimapCamera](./MinimapCamera.md) 小地图相机
 - [ObjectOptionsToggler](./ObjectOptionsToggler.md) 游戏选项关联物体
@@ -156,10 +158,10 @@ category:
 
 ## Custom GameMode（自定义游戏模式）
 - [自定义类型](./CustomTypes.md) 游戏使用的数据类型注释
-- [GameModeBase](./GameModeBase.md)
-- [ScriptedGameMode](./ScriptedGameMode.md)
+- [GameModeBase](./GameModeBase.md) 游戏模式基类
+- [ScriptedGameMode](./ScriptedGameMode.md) 脚本任务游戏模式
 - ScriptedGameMode触发系统
-    - [DynamicBlockWalkableBox](./DynamicBlockWalkableBox.md)
+    - [DynamicBlockWalkableBox](./DynamicBlockWalkableBox.md) 动态寻路盒
     - [ICompoundTriggerSender](./ICompoundTriggerSender.md)
     - [TriggerBaseComponent](./TriggerBaseComponent.md) Trigger基类
     - [TriggerDebug](./TriggerDebug.md)
@@ -259,4 +261,4 @@ category:
 - [DataContainer](./DataContainer.md) 数据体
 - [Lifetime](./Lifetime.md) GameObject生命周期
 - [RequireGameVersion](./RequireGameVersion.md) 限制最低运行游戏版本
-- [SynchronizeEditorTransforms](./SynchronizeEditorTransforms.md)
+- [SynchronizeEditorTransforms](./SynchronizeEditorTransforms.md) 同步物体变换
