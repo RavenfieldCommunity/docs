@@ -5,9 +5,7 @@ category:
 
 # 组件索引
 ::: warning
-此组件文档仍处于十分早期的阶段，由于相当一部分组件仅通过检查源码进行编写，所以可能与现实存在偏差，敬请在网站评论区或[此项目的Steam指南原链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158)评论区提出此错误！
-
-组件文档的更新速度可能会减慢，我们的中心将更偏向教程与社区项目开发
+此组件文档由于相当一部分组件仅通过检查源码进行编写，所以可能与现实存在偏差，敬请在网站评论区或[此项目的Steam指南原链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158)评论区提出此错误！
 
 另外请注意“[派生类](https://www.runoob.com/csharp/csharp-inheritance.html)”（类似“克隆”父脚本并添加一些新的内容）这个在[C#](https://www.runoob.com/csharp/csharp-tutorial.html)开发中的概念，父脚本的变量注解（可能需要转意）、注释大部分情况对于子脚本都是通用的，例外情况会特殊说明
 
@@ -66,7 +64,7 @@ category:
         - [FollowMainCamera](./FollowMainCamera.md) 跟随活动相机的Transform
         - [ForceHeight](./ForceHeight.md) 强制保持高度
         - [GeometryTrack](./GeometryTrack.md) 形状混合权重
-        - [HeadingGuide](./HeadingGuide.md)
+        - [HeadingGuide](./HeadingGuide.md) 跟随旋转+阻尼
         - [InheritDeltaRotation](./InheritDeltaRotation.md) 增量旋转
 		- [InheritDeltaPosition](./InheritDeltaPosition.md) 增量移动
         - [Joystick](./Joystick.md) 飞机操控手柄
@@ -75,7 +73,7 @@ category:
         - [PitchRollGuide](./PitchRollGuide.md) 飞机水平仪
         - [PlayerRecoilCamera](./PlayerRecoilCamera.md) 玩家镜头抖动
         - [PlayerRecoilTransform](./PlayerRecoilTransform.md) 开火后座
-        - [RollGuide](./RollGuide.md)
+        - [RollGuide](./RollGuide.md) 横向水平仪
         - [Rotor](./Rotor.md) 飞机螺旋桨
         - [SteeringWheel](./SteeringWheel.md) 载具方向盘
         - [UvOffset](./UvOffset.md) UV贴图滚动
