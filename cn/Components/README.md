@@ -69,7 +69,7 @@ category:
 		- [InheritDeltaPosition](./InheritDeltaPosition.md) 增量移动
         - [Joystick](./Joystick.md) 飞机操控手柄
         - [MountedStabilizedTurretUIAimIndicator](./MountedStabilizedTurretUIAimIndicator.md)
-        - [ParticlesAmbientColor](./ParticlesAmbientColor.md)
+        - [ParticlesAmbientColor](./ParticlesAmbientColor.md) 粒子环境颜色
         - [PitchRollGuide](./PitchRollGuide.md) 飞机水平仪
         - [PlayerRecoilCamera](./PlayerRecoilCamera.md) 玩家镜头抖动
         - [PlayerRecoilTransform](./PlayerRecoilTransform.md) 开火后座
