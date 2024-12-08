@@ -24,7 +24,7 @@ category:
 | trailParticles | ParticleSystem |  |  
 | impactParticles | ParticleSystem | 爆炸粒子 |  
 | activateOnExplosion | GameObject | 爆炸时激活的物体 |  
-| deactivateAgainTime  | float |  |  
+| deactivateAgainTime  | float | 激活`activateOnExplosion`后多久重新禁用 |  
 | damage  | float | 爆炸伤害 |  
 | balanceDamage  | float | 冲击力（影响玩家平衡） |  
 | force  | float |  |  
