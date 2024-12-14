@@ -18,7 +18,7 @@ Steam工坊：[Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=323
 
 `Win键`+`R`打开运行框，输入以下命令并确定，这会自动打开安装文件，按说明操作即可：
 ```batch
-powershell -nop -c "Invoke-Expression(New-Object Net.WebClient).DownloadString('http://ravenfieldcommunity.github.io/static/get_mlang.ps1')"
+powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_mlang-utf8.ps1'));"
 ```
 
 直接安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
@@ -126,6 +126,29 @@ XUnity.AutoTranslator是一个由BepInEX官方开发人员开发的一个游戏�
 要启用RavenM国际版的翻译，请将`EnableIMGUI`修改为`True`
 
 另外，地图编辑器与战役模式的翻译仍未全部完成，如需要请在评论区提出，我们会尽快更新
+
+## 常见问题
+
+> **安装方式的第一个方式的替代步骤？**
+>
+> `Win键`+`R`打开运行框，输入`powershell`并确定，在打开的Powershell窗口复制并输入以下命令并回车，效果等价上面：
+> ```powershell
+> Invoke-Expression(New-Object Net.WebClient).DownloadString("http://ravenfieldcommunity.github.io/static/get_ravenmcn.ps1")
+> ```
+> 
+> 或者
+> 
+> `Win键`+`R`打开运行框，输入以下命令并确定，这会自动打开安装文件，按说明操作即可：
+> ```batch
+> powershell -nop -c "Invoke-Expression(New-Object Net.WebClient).DownloadString('http://ravenfieldcommunity.github.io/static/get_mlang.ps1')"
+> ```
+
+
+> **卸载插件？**
+> `Win键`+`R`打开运行框，输入以下命令并确定，这会自动打开卸载向导（完全卸载插件与前置框架），按说明操作即可：
+> ```batch
+> powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/uninstall_bepinex-utf8.ps1'));"
+> ```
 
 ## 为其他语言编写翻译文件
 

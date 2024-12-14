@@ -74,7 +74,7 @@ link: /cn/RESOURCE.md
 ```card
 title: Ravenscript IDEA
 desc: 新一代RS开发snippet插件
-logo: \image\Project\rsidea.001.png
+logo: \image\Projects\rsidea.001.png
 link: /cn/Projects/rsidea.md
 ```
 
