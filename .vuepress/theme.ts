@@ -84,7 +84,7 @@ export default hopeTheme({
         ]
       },
   seo: {
-    autoDescription: false
+    //autoDescription: false
   }
   }
 });
