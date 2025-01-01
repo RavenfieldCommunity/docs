@@ -74,7 +74,7 @@ end
 在第三部分中，你可以选择从注册的table派生一些一些方法，解释器会在游戏运行期间调用它们，
 `Awake`、`OnEnable`、`OnDisable`、`OnDestroy`、`Start`、`Update`、`LateUpdate`、`FixedUpdate`、`OnAnimatorIK`这些都是默认可用的方法名，他们的意义与执行顺序与Unity C#的一致，你可以参考[Unity文档](https://docs.unity3d.com/cn/2020.3/Manual/ExecutionOrder.html)
 
-至于为什么Ravenscript与Unity C#一样，不像一般编程一样直接在文件里贴代码，你可以自行探讨
+至于为什么Ravenscript与Unity C#一样，不像一般类似python编程一样直接在文件里贴代码，你可以自行探讨unity C#的工作流程
 
 ## 1.1 文档使用方法
 
@@ -83,9 +83,9 @@ end
 ### 类Class
 尽管文档没有标注，首先你仍需要明白文档中那些classes（其实classes这个名称并不准确？）可以分别是怎么用的
 
-即哪些类已经实例化可以直接作为api对象进行调用（如[Player](http://ravenfieldgame.com/ravenscript/api/Player.html),它可以直接在脚本里Player.actor.health =9999这样直接调用 ）
+即哪些类已经实例化可以直接作为api对象进行调用（如[Player](http://ravenfieldgame.com/ravenscript/api/Player.html),它可以直接在脚本里`Player.actor.health =9999`这样直接调用 ）
 
-哪些是作为“数据类型”需要先实例化这个类才能使用（如[类Actor](http://ravenfieldgame.com/ravenscript/api/Actor.html)，它需要先在一个Bot的GameObject上通过GameObject.GetComponentInParent(Actor)，“get”了这个类才能使用 ）
+哪些是作为“数据类型”需要先实例化这个类才能使用（如[类Actor](http://ravenfieldgame.com/ravenscript/api/Actor.html)，它需要先在一个Bot的GameObject上通过`GameObject.GetComponentInParent(Actor)`，“get”了这个类才能使用 ）
 
 那些是作为enum枚举类使用(如[AudioMixer](http://ravenfieldgame.com/ravenscript/api/AudioMixer.html)，用于枚举Audio Source的Output配置)
 
@@ -99,40 +99,40 @@ end
 
 构建函数用于实例化一个新类，需要按函数重载传入一些初始值，之后函数会返回实例化的新类
 
-在成员属性中，如：
+在成员属性中，如[这个](http://ravenfieldgame.com/ravenscript/api/Actor.html#_CPPv4N5Actor7balanceE)：
 
-{缺图}[Page](http://ravenfieldgame.com/ravenscript/api/Actor.html#_CPPv4N5Actor7balanceE)
+![](https://ravenfieldcommunity.github.io/docs-img/Tutorials/rvs.1.001.png)
 
-int表示这个属性的类型是int整数，balance表示这个属性的名字，其他的类似，RS自带的内建类会提供一个超链接高亮显示
+float表示这个属性的类型是float浮点数，balance表示这个属性的名字，其他的类似，RS自带的内建类类型会提供一个超链接高亮显示
 
 可能你也会看到一些诸如const、static这样的关键字（类似于“标识符”），他们的含义如下：
 | 关键字 | 含义 |
 |------|------|
-| const | 表示这个属性是常量，不可更改，指向的内容始终不变（即使玩家层面可见的变更，即使被变量无限引用） |
-| static | 静态属性，无论如何类实例化，返回值不受实例的类影响，始终一致 |
+| const | 表示这个属性是常量，指向的内容不可更改（当然如果这个常量里包括可更改的内容。即使玩家层面可见的变更） |
+| static | 静态属性，无论如何类实例化，返回值不受实例的类影响，始终一致（不想要GetComponent即可使用） |
 
-在成员方法中，如：
+在成员方法中，如[这个](http://ravenfieldgame.com/ravenscript/api/Actor.html#_CPPv4N5Actor14CanBeDamagedByE6Weapon)：
 
-{缺图}[Page](http://ravenfieldgame.com/ravenscript/api/Actor.html#_CPPv4N5Actor14CanBeDamagedByE6Weapon)
+![](https://ravenfieldcommunity.github.io/docs-img/Tutorials/rvs.1.002.png)
 
 方法名前的是方法返回的数据的类型（如果是void则表示无返回值），`seat`表示的是参数，前头的`Seat`表示的是这个参数的类型
 
 一个方法可能有多个重载，你可以按需求使用合适的重载
 
-在成员事件中，如：
+在成员事件中，如[这个](http://ravenfieldgame.com/ravenscript/api/Actor.html#_CPPv4N5Actor12onTakeDamageE)：
 
-{缺图}[Page](http://ravenfieldgame.com/ravenscript/api/Actor.html#_CPPv4N5Actor12onTakeDamageE)
+![](https://ravenfieldcommunity.github.io/docs-img/Tutorials/rvs.1.003.png)
 
 这是实际上是一个为[ScriptEvent](http://ravenfieldgame.com/ravenscript/api/ScriptEvent.html)类型的属性
 
-在实际上，他是这样使用的：
+他是这样使用的：
 ```lua
 behavior("test")
 
 function test: Start ()
     --注册事件
-    --self指触发事件时调用方法所在的table(ScriptedBehavior)，如果你已经获取了别的ScriptedBehavior，你也可以将self替换为ScriptedBehavior所在变量
-    --"onTakeDamage"指触发事件时调用self所在方法的方法名，不一定非要填写属性ScriptEvent的属性名
+    --`self`指触发事件时调用方法所在的table(ScriptedBehavior)，如果你已经获取了别的ScriptedBehavior，你也可以将self替换为ScriptedBehavior所在变量
+    --`onTakeDamage`指触发事件时调用self所在方法的方法名，不一定非要填写属性ScriptEvent的属性名
     Player.onTakeDamage.AddListener(self, "onTakeDamage")
 end
 

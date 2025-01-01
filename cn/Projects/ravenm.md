@@ -79,11 +79,17 @@ Macos/linux用户，请按照[BepInEX官方文档](https://docs.bepinex.dev/arti
 > powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/uninstall_bepinex-utf8.ps1'));"
 > ```
 
+> **开了Steamcommunity302也无法正常执行命令？**
+>
+> 记得在设置里启用默认关闭的github代理:
+>
+> ![](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.007.png)
+
 > **安装方式的第二个方式的替代步骤？**
 >
 > `Win键`+`R`打开运行框，输入`powershell`并确定，在打开的Powershell窗口复制并输入以下命令并回车，效果等价上面：
 > ```powershell
-> Invoke-Expression(New-Object Net.WebClient).DownloadString("http://ravenfieldcommunity.github.io/static/get_ravenmcn.ps1")
+> $w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_ravenmcn-utf8.ps1'));
 > ```
 
 > **安装方式的第一个方式的替代步骤？**

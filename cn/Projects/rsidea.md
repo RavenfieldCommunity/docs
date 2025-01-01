@@ -54,6 +54,8 @@ RSIDEA是一个帮助modder编写RS脚本的插件，依赖于前端Framework，
 
 等待插件管理器从Github拉取完插件（可能需要本机安装了git,必须可以访问Github，然后在插件列表找到”Ravenscript IDEA”并启用（Enable），然后尽情享用我们带给你的snippet体验吧~
 
+![](https://ravenfieldcommunity.github.io/docs-img/Project/rsidea.001.png)
+
 ### 本地安装
 
 如果你使用的是其他的IDE或你无法使用插件管理器时你才应选择此方式

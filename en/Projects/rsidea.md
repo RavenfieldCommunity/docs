@@ -40,9 +40,9 @@ RSIDEA is a sub addon to help modders develop ravenscript. though dependent exte
 
 ✅ Multi-IDE compatible
 
-🅾 RavenM extra api will be added in the future
+✅ RavenM extra api added 
 
-❌ Sparse self pointers with register (behaviour registration, local variable injection and basic unavailability of synchronization)
+✅ Sparse self pointers with register (behaviour registration, local variable injection and basic unavailability of synchronization)
 
 ❌ Non-existent const / var / static discrimination \(I can't help it if the frontend extension doesn't support it\)
 ```
@@ -57,6 +57,8 @@ Install Luals for vscode extension [![Install in VS Code](https://img.shields.io
 When you're done,open a folder or code-workspace, open any Lua file, right-click and select "Lua: Open Addon Manager" or Ctrl+P to open the command panel and enter “`>lua.addon_manager.open`”
 
 Wait for the Addons manager to finish fetching plugins from Github (you may need to have git installed locally, you must have connect to Github, then find "Ravenscript IDEA" in the list of addons and enable it), then enjoy the snippet experience that we bring to you!
+
+![](https://ravenfieldcommunity.github.io/docs-img/Project/rsidea.001.png)
 
 ### Local install
 

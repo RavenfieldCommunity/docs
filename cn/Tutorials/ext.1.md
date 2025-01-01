@@ -2,7 +2,7 @@
 category: 
 - 教程
 ---
-# ext.1 BepInEX插件
+# ext.1 拓展框架
 
 欢迎，勇者！
 
@@ -14,9 +14,13 @@ category:
 
 ## LETMS载具
 
+参考加入[Discord服务器](https://discord.gg/7JBHD4cKVU)
+
+当然直接进本站[这里](./README.md#社区服务支持)提到的QQ群更好，国内LETMS组都在这里
+
 ## Phoenix武器
 
-Phoenix已经停止支持并不再兼容当前游戏版本，故此处不提供教程
+Phoenix框架已经停止支持并不再兼容当前游戏版本，故此处不提供教程
 
 ## BepInEX插件
 
@@ -40,6 +44,4 @@ Phoenix已经停止支持并不再兼容当前游戏版本，故此处不提供�
 因为RF使用的.Net Framework版本为4，但是这就不代表你可以使用类似[VS Express 2010 Visual C#](https://visualstudio.microsoft.com/zh-hans/dev-essentials/)编辑器来代替VS Community或VSCode这类2019年后的IDE
 
 目前所有C# project及solution均要求使用[SDK风格项目文件](https://zhuanlan.zhihu.com/p/408933763),否则将无法使用一些所依赖的C#7.0以上新特性（虽然也能将就）
-
-如果插件要引入外部Assets资源，记得先给assets构建AssetBundles并通过加载AssetBundles的方式导入资源（像RF本身的模组导入一样）
 :::
