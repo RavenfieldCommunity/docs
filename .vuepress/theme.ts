@@ -29,7 +29,7 @@ export default hopeTheme({
     "/cn/": {
       navbar: cnNavbar,
       sidebar: cnSidebar,
-      footer: "<p>基于CC-BY-NC-4.0许可 版权所有 © 2023-PRESENT RavenfieldCommunity</p><p>使用Google Analytics与Umami Cloud匿名分析网站数据</p><p>我们希望您在实际开发模组时遇到的问题与笔记、文档纰漏不吝麻烦在本站留言，既给自己一个记忆也帮助了他人，谢谢支持!</p> <a href="https://forms.office.com/r/iGw5BN33hC" target="_blank">点我匿名反馈♪(´▽｀)</a>",
+      footer: '<p>基于CC-BY-NC-4.0许可 版权所有 © 2023-PRESENT RavenfieldCommunity</p><p>使用Google Analytics与Umami Cloud匿名分析网站数据</p><p>我们希望您在实际开发模组时遇到的问题与笔记、文档纰漏不吝麻烦在本站留言，既给自己一个记忆也帮助了他人，谢谢支持!</p> <a href="https://forms.office.com/r/iGw5BN33hC" target="_blank">点我匿名反馈♪(´▽｀)</a>',
       displayFooter: true,
       metaLocales: {
         editLink: "在 GitHub 上编辑此页", 
