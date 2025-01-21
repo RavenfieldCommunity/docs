@@ -22,7 +22,12 @@ RavenM联机插件国内版（授权），是国内社区在原RavenM国际版�
 > powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.ps1'));"
 > ```
 >
->直接安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
+> 直接安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
+>
+> 如果你是MacOS或Linux用户，请打开终端运行以下命令 （因为没有测试设备，未检查在Macos下的可运行性）：
+> ```sh
+> curl -sSL http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.sh | bash
+> ```
 
 > 工具辅助安装
 >

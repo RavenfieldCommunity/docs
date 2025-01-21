@@ -62,6 +62,20 @@ description: 适用于国内版RavenM联机插件的使用说明
 
 右上角会显示Ping延迟值（房主的当然为0ms）
 
+另附聊天框的可用命令（有些命令需要权限）:
+| 命令 | 仅房主可用 | 描述 |
+|------|------|
+| `/help <命令名>` | 否 | 获取对应命令的帮助 |
+| `/nametags True|False` | 是 | 是否启用玩家名牌 |
+| `/nametagsteamonly True|False` | 是 | 是否仅启用同队伍的玩家名牌 |
+| `/kill <玩家名>` | 是 | 击杀对应名称的玩家 |
+| `/kick <玩家名>` | 是 | 将对应名称的玩家踢出房间 |
+| `/ban` |  | 将对应名称的玩家永久踢出房间 |
+| `/hostteammemberchange ?` | 是 |  |
+| `/hostteamchange ?` | 是 |  |
+
+示例如: `/nametags True`
+
 玩的开心！
 
 ![截图 Discord@Sofa#8366](https://steamuserimages-a.akamaihd.net/ugc/1917988387306327667/C90622D8C9B8B654E187AA5038A84759DFF050D9/)
