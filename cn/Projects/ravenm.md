@@ -19,21 +19,25 @@ RavenM联机插件国内版（授权），是国内社区在原RavenM国际版�
 >
 > `Win键`+`R`打开运行框，输入以下命令并确定，这会自动打开安装文件，按说明操作即可：
 > ```batch
-> powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.ps1'));"
+> powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.ps1'));Read-Host;"
 > ```
 >
 > 直接安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
+
+> Macos/linux直接安装
 >
-> 如果你是MacOS或Linux用户，请打开终端运行以下命令 （因为没有测试设备，未检查在Macos下的可运行性）：
+>如果你是MacOS或Linux用户，请打开终端运行以下命令 （因为没有测试设备，未检查在Macos下的可运行性）：
 > ```sh
 > curl -sSL http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.sh | bash
 > ```
+>
+> 或者请按照[BepInEX官方文档](https://docs.bepinex.dev/articles/user_guide/installation/index.html?tabs=tabid-nix#installing-bepinex-1)来配置你的BepInEX环境后，让一个用Windows的朋友安装RavenM并让他把游戏目录下的`BepInEX\plugins\RavenM.dll`发给你，然后安装这个插件dll
 
 > 工具辅助安装
 >
 > `Win键`+`R`打开运行框，输入以下命令并确定，这会自动打开安装文件，按说明操作即可：
 > ```batch
-> powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_ravenmcn-utf8.ps1'));"
+> powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_ravenmcn-utf8.ps1'));Read-Host;"
 > ```
 >
 >直接安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
@@ -45,8 +49,6 @@ RavenM联机插件国内版（授权），是国内社区在原RavenM国际版�
 > 若无法访问蓝奏云，请参考[此知乎专栏](https://zhuanlan.zhihu.com/p/419457461)
 >
 > 在电脑上**下载并运行**网盘zip压缩包内的EXE文件即可
-
-Macos/linux用户，请按照[BepInEX官方文档](https://docs.bepinex.dev/articles/user_guide/installation/index.html?tabs=tabid-nix#installing-bepinex-1)来配置你的BepInEX环境后，让一个用Windows的朋友安装RavenM并让他把游戏目录下的`BepInEX\plugins\RavenM.dll`发给你，然后安装这个插件dll
 
 ### 使用
 
