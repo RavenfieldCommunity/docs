@@ -113,6 +113,31 @@ XUnity.AutoTranslator是一个由BepInEX官方开发人员开发的一个游戏�
 
 **如果可能的话，请回到[我们的Steam工坊物品页面](https://steamcommunity.com/sharedfiles/filedetails/?id=3237432182)点一个免费的赞，让更多的人知道这个项目！（否则我就会怀疑这玩意到底有没有人用 XD）**
 
+### 启用Proton
+
+此步骤仅适用于使用Unix类系统的玩家
+
+Valve（Steam母公司） Proton是一个基于Wine的的项目，旨在为非Windwos用户提供还原甚至超越Windwos原生游戏的游玩体验
+
+出于兼容性与玩家体验，本站所有的Unix专供安装脚本均要求玩家启用此功能
+
+要启用为BepInEX启用Proton：
+
+首先打开Steam设置，打开`Compatibility 兼容性`选项卡，勾选`Enable Steam Play`，然后按提示重启Steam 
+
+![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.008.png)
+
+如果你已经启用过此选项，请自行忽略
+
+然后打开Steam库的Ravenfield的在游戏属性，打开`Compatibility 兼容性`选项卡，勾选`Force the use of a Steam Play compatibility tool 强制启用Steam Play`，在其下的下拉选项里选择一个较新的Proton版本
+
+然后打开Steam库的Ravenfield的在游戏属性，在游戏属性的启动参数里加上`WINEDLLOVERRIDES="winhttp.dll=n,b" %command%`（如果已经有其他参数请空格再加）即可，如图，要关闭BepInEX时记得手动删除：
+
+![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.009.png)
+
+任何关于Proton的问题可参考[ProtonDB](https://www.protondb.com/help/troubleshooting-faq)
+
+
 ## 提示
 
 `main-sch.txt`是基本的游戏翻译文件

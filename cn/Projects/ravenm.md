@@ -83,7 +83,7 @@ Macos/linux用户，请按照[BepInEX官方文档](https://docs.bepinex.dev/arti
 >
 > 记得在设置里启用默认关闭的github代理:
 >
-> ![](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.007.png)
+> ![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.007.png)
 
 > **安装方式的第二个方式的替代步骤？**
 >
