@@ -243,7 +243,7 @@ K完帧了？是时候下一步了
 ## 2.2 预配置武器图标
 此处配置武器图标的部分属性，否则在[下一章](#_2-4-在场景配置武器)时可能会出现奇怪的Bug（？
 
-在Unity的`Project`窗口选中武器图标文件，在右侧的`Inspector`选择将`Texture Type`改为`Sprite(2D and UI)`，勾选`Generate Mip Maps`，`Filter Mode`改为`Trilinear`：
+在Unity的`Project`窗口选中武器图标文件，在右侧的`Inspector`选择将图标的`Texture Type`改为`Sprite(2D and UI)`，勾选`Generate Mip Maps`，`Filter Mode`改为`Trilinear`：
 
 {缺图}
 

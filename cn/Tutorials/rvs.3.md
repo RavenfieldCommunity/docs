@@ -76,13 +76,7 @@ end
 apAS.SetOutputAudioMixer(AudioMixer.FirstPerson)  --将AS组件的Output设置为玩家的
 ```
 
-不推荐使用jumpscare（极度不推荐）、强制传教等方式来恐吓盗版玩家
-
-毕竟做人留一线，日后好相见
-
-自己也有可能被自己的AP机制吓到
-
-做人不要做太死
+不推荐使用jumpscare（极度不推荐）等方式来恐吓盗版玩家
 
 适度就好
 
@@ -97,3 +91,5 @@ apAS.SetOutputAudioMixer(AudioMixer.FirstPerson)  --将AS组件的Output设置�
 在介绍完原理与操作后，相信您应该可以自行构建一个反盗版脚本了
 
 祝您好运！（〃｀ 3′〃）
+
+（实际上你作为modder可以直接进国内的modding要AP的成品Prefab hhh）
