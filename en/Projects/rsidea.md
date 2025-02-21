@@ -1,11 +1,9 @@
 ---
 title: Ravenscript IDEA
-home: true
 heroImage: \image\Project\rsidea.001.png
 heroText: Ravenscript IDEA
 tagline: "Ravenscript IDE Addon, the NEXT snippet addons for ravenscript coding"
 description: "The NEXT snippet addons for ravenscript coding"
-sidebar: true
 ---
 
 # Ravenscript IDEA

@@ -19,6 +19,10 @@ export const enNavbar = navbar([
           {
             text: "RS IDEA",
             link: "/en/Projects/rsidea"
+          },
+		  {
+		  text: "HavenM",
+            link: "/en/Projects/havenm"
           }
         ]
     },
