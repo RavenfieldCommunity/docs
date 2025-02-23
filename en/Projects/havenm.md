@@ -11,7 +11,7 @@ Project repo：[Github](https://github.com/RavenfieldCommunity/HavenM) Steam Wor
 ::: tip
 Though this project is hosted on us, it doesn't belong to us (Github@RavenfieldCommunity).
 
-中国玩家请参阅[此处](https://ravenfieldcommunity.github.io/docs/cn/Projects/havenm.html)(可能未完工)
+中国玩家请参阅[此处](https://ravenfieldcommunity.github.io/docs/cn/Projects/havenm.html)(可能未完工)  Chinese players please refer this [page](https://ravenfieldcommunity.github.io/docs/cn/Projects/havenm.html).
 :::
 
 ## Description
@@ -20,7 +20,7 @@ Refer Github
 
 ## Install by command
 
-Refer Github
+Refer Github, `Win` + `R` to Open "Run" dialog window and run the command.
 
 Re-installing equals updating!
 
@@ -32,9 +32,13 @@ Run this command to get a full update from time to time!
 
 Download the `Assembly-CSharp.dll` [here](https://github.com/RavenfieldCommunity/HavenM/releases/tag/Release).
 
-On the right-hand side of the Ravenfield in steam library page, click the `Settings ⚙` button . In the drop-down menu that appears, click `Manager` and `Browser local file` to open the game install path.
+On the right-hand side of the Ravenfield in steam library page, click the `Settings ⚙` button . In the drop-down menu that appears, click `Manager` and `Browser local file` to open the game install path:
+
+![](https://ravenfieldcommunity.github.io/docs-img/Projects/havenm.001.en.png)
 
 Then open `ravenfield_Data\Managed`, replace downloaded dll to this directory.
+
+![](https://ravenfieldcommunity.github.io/docs-img/Projects/havenm.002.png)
 
 ### Install BepInEX
 
@@ -48,17 +52,22 @@ This step is for players who want to auto update the dll and it's no-need and no
 
 Because HavenM works by editing game dll, so the dll may be replaced to the original game dll by Steam when game has offical update. The ACUpdater will solve this problem.
 
-Download the `HavenM.ACUpdater.dll` [here](https://github.com/RavenfieldCommunity/HavenM/releases/tag/ACUpdaterRelease).
+Download the `HavenM.ACUpdater.dll` [here](https://github.com/RavenfieldCommunity/HavenM/releases/tag/ACUpdaterRelease).	
 
 Make sure BepInEX is already installed.
 
-Open game install path and add it to `BepInEx\plugins`. If the folder isn't exist and you installed BepInEX just now, run the game and the folder will be created automatically.
+Open game install path and add it to `BepInEx\plugins`. If the folder isn't exist and you installed BepInEX just now, run the game and the folder will be created automatically:
+
+![](https://ravenfieldcommunity.github.io/docs-img/Projects/havenm.003.png)
 
 ### Uninstall
 
-Open game install path and open folder `BepInEx\plugins`, delete `HavenM.ACUpdater.dll` and `HavenM.ACUpdater0.dll`(if exists). 
+Open game install path and open folder `BepInEx\plugins`, **delete** `HavenM.ACUpdater.dll` and `HavenM.ACUpdater0.dll`(if exists). 
 
-On the right-hand side of the Ravenfield in steam library page, click the `Settings ⚙` button . In the drop-down menu that appears, click `Properties` and click `Verify game` button on `GENERAL` page.
+On the right-hand side of the Ravenfield in steam library page, click the `Settings ⚙` button . In the drop-down menu that appears, click `Properties` and click `Verify imegrity of game files` button on `Installed Files` page:
+
+![](https://ravenfieldcommunity.github.io/docs-img/Projects/havenm.004.en.png)
+
 
 ## Q&A
 > **The firewall blocked the command.**

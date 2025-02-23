@@ -56,7 +56,7 @@ When you're done,open a folder or code-workspace, open any Lua file, right-click
 
 Wait for the Addons manager to finish fetching plugins from Github (you may need to have git installed locally, you must have connect to Github, then find "Ravenscript IDEA" in the list of addons and enable it), then enjoy the snippet experience that we bring to you!
 
-![](https://ravenfieldcommunity.github.io/docs-img/Project/rsidea.001.png)
+![](https://ravenfieldcommunity.github.io/docs-img/Projects/rsidea.001.png)
 
 ### Local install
 

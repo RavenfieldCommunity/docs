@@ -39,7 +39,7 @@ export default hopeTheme({
   plugins:{
     comment: {
       provider: "Giscus",
-      repo: "RavenfieldCommunity/comment_for_docs",
+      repo: "RavenfieldCommunity/docs-comment",
       repoId: "R_kgDOJde86g",
       category: "Announcements",
       categoryId: "DIC_kwDOJde86s4CWLdI"

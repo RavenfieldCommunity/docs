@@ -90,7 +90,7 @@ RavenM联机插件国内版（授权），是国内社区在原RavenM国际版�
 >
 > 记得在设置里启用默认关闭的github代理:
 >
-> ![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.007.png)
+> ![](https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.007.png)
 
 > **安装方式的第二个方式的替代步骤？**
 >

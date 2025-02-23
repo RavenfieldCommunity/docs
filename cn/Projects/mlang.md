@@ -43,7 +43,7 @@ BepInEX是一个Unity模组插件框架，本项目的前置多语言插件需�
 >
 > 在此页面找到并点击`Assets`下拉选项，找到`BepInEx_x64_XXX.zip`（例如`BepInEx_x64_5.4.22.0.zip`），点击并下载
 > 
-> ![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.001.png)
+> ![](https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.001.png)
 
 > [KGithub镜像](https://kkgithub.com/BepInEx/BepInEx/releases/latest)
 >
@@ -59,11 +59,11 @@ BepInEX是一个Unity模组插件框架，本项目的前置多语言插件需�
 
 打开游戏目录（例如`E:\Program Files\Steam\steamapps\common\Ravenfield`）,你也可以在Steam的库页面找到游戏，点击`属性` > `管理` > `浏览本地文件`
 
-![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.002.png)
+![](https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.002.png)
 
 将压缩文件内的文件解压到游戏目录，现在目录应该看着像多了这些文件：
 
-![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.003.png)
+![](https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.003.png)
 
 启动一次游戏，等到出现过场动画就可以关闭，如果无报错，则BepInEX安装完成
 
@@ -87,7 +87,7 @@ XUnity.AutoTranslator是一个由BepInEX官方开发人员开发的一个游戏�
 
 将压缩文件解压到游戏目录，现在你的游戏目录看着应该像这样，原有的`BepInEX`文件夹下的`plugins`下多了两个文件夹，`core`下多了一个文件：
 
-![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.004.png)
+![](https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.004.png)
 
 再运行一次游戏，同上，确保插件已正确安装
 
@@ -101,13 +101,13 @@ XUnity.AutoTranslator是一个由BepInEX官方开发人员开发的一个游戏�
 
 然后依次打开当前目录下的`\workshop\content\636480\3237432182`,如图（保证已订阅上面的工坊项目，此处的`3237432182`即为我们的工坊项目id）：
 
-![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.006.png)
+![](https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.006.png)
 
 里面就是所需文件，将它们全部复制
 
 然后回到游戏目录，打开目录下的`BepInEX\`文件夹下的`Translation\`下的`en\`下的`Text`文件夹（默认,否则查看`BepInEx\config\AutoTranslatiorConfig.ini`的`Language`一项的值），将先前复制的文件粘贴到这里：
 
-![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.005.png)
+![](https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.005.png)
 
 大功告成！
 
@@ -125,7 +125,7 @@ Valve（Steam母公司） Proton是一个基于Wine的的项目，旨在为非Wi
 
 首先打开Steam设置，打开`Compatibility 兼容性`选项卡，勾选`Enable Steam Play`，然后按提示重启Steam 
 
-![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.008.png)
+![](https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.008.png)
 
 如果你已经启用过此选项，请自行忽略
 
@@ -133,7 +133,7 @@ Valve（Steam母公司） Proton是一个基于Wine的的项目，旨在为非Wi
 
 然后打开Steam库的Ravenfield的在游戏属性，在游戏属性的启动参数里加上`WINEDLLOVERRIDES="winhttp.dll=n,b" %command%`（如果已经有其他参数请空格再加）即可，如图，要关闭BepInEX时记得手动删除：
 
-![](https://ravenfieldcommunity.github.io/docs-img/Project/mlang.009.png)
+![](https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.009.png)
 
 任何关于Proton的问题可参考[ProtonDB](https://www.protondb.com/help/troubleshooting-faq)
 
