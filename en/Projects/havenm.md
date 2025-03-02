@@ -28,6 +28,8 @@ Run this command to get a full update from time to time!
 
 ## Install manually
 
+Non-windows players please refer [Q&A](#Q&A)!
+
 ### Replace dll
 
 Download the `Assembly-CSharp.dll` [here](https://github.com/RavenfieldCommunity/HavenM/releases/tag/Release).

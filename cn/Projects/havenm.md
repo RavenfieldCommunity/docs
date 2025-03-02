@@ -31,51 +31,73 @@ powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Tex
 
 ## 手动安装
 
+非windows玩家请参考 [Q&A](#Q&A)!
+
 ### 替换dll
 
-在 [这里](https://github.com/RavenfieldCommunity/HavenM/releases/tag/Release)下载 `Assembly-CSharp.dll` .
+在这里下载 `Assembly-CSharp.dll`:
 
-On the right-hand side of the Ravenfield in steam library page, click the `Settings ⚙` button . In the drop-down menu that appears, click `Manager` and `Browser local file` to open the game install path:
+> [Github](https://github.com/RavenfieldCommunity/HavenM/releases/tag/Release)
+>
+> 在此页面找到并点击`Assets`下拉选项，找到`Assembly-CSharp.dll`点击并下载
 
-![](https://ravenfieldcommunity.github.io/docs-img/Projects/havenm.001.en.png)
+> [KGithub镜像](https://kkgithub.com/RavenfieldCommunity/HavenM/releases/tag/Release)
+>
+> 方法同上
 
-Then open `ravenfield_Data\Managed`, replace downloaded dll to this directory.
+> [GHProxy](https://ghproxy.net/https://github.com/RavenfieldCommunity/HavenM/releases/download/Release/Assembly-CSharp.dll)
+
+打开游戏目录（例如`E:\Program Files\Steam\steamapps\common\Ravenfield`）,你也可以在Steam的库页面找到游戏，点击`属性` > `管理` > `浏览本地文件`
+
+![](https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.002.png)
+
+然后打开目录下的 `ravenfield_Data\Managed`, 将下载的dll替换进去
 
 ![](https://ravenfieldcommunity.github.io/docs-img/Projects/havenm.002.png)
 
-### Install BepInEX
+### 安装BepInEX
 
-This step is for players who want to auto update the dll and it's no-need and not suitable for non-Windows player.
+如果你想启用自动更新，那么请跟着做，非windows玩家没必要也不能这么做。
 
-Refer [docs](https://docs.bepinex.dev/articles/user_guide/installation/index.html)
+参考[这里](./mlang.md#安装BepInEX)
 
-### Install ACUpdater
+### 安装ACUpdater
 
-This step is for players who want to auto update the dll and it's no-need and not suitable for non-Windows player.
+如果你想启用自动更新，那么请跟着做，非windows玩家没必要也不能这么做。
 
-Because HavenM works by editing game dll, so the dll may be replaced to the original game dll by Steam when game has offical update. The ACUpdater will solve this problem.
+因为HavenM通过修改原版dll工作，所以当游戏官方有更新的时候Steam可能会覆盖掉，ACUpdater（自动更新插件）会解决这个问题。
 
-Download the `HavenM.ACUpdater.dll` [here](https://github.com/RavenfieldCommunity/HavenM/releases/tag/ACUpdaterRelease).	
+在这里下载 `HavenM.ACUpdater.dll`:
 
-Make sure BepInEX is already installed.
+> [Github](https://github.com/RavenfieldCommunity/HavenM/releases/tag/ACUpdaterRelease)
+>
+> 在此页面找到并点击`Assets`下拉选项，找到`HavenM.ACUpdater.dll`点击并下载
 
-Open game install path and add it to `BepInEx\plugins`. If the folder isn't exist and you installed BepInEX just now, run the game and the folder will be created automatically:
+> [KGithub镜像](https://kkgithub.com/RavenfieldCommunity/HavenM/releases/tag/ACUpdaterRelease)
+>
+> 方法同上
+
+> [GHProxy](https://ghproxy.net/https://github.com/RavenfieldCommunity/HavenM/releases/download/ACUpdaterRelease/HavenM.ACUpdater.dll)	
+
+确保已经安装BepInEX。
+
+打开游戏安装目录下的`BepInEx\plugins`并黏贴插件dll到这里，没有这个文件夹就先开一次游戏
 
 ![](https://ravenfieldcommunity.github.io/docs-img/Projects/havenm.003.png)
 
-### Uninstall
+### 卸载
 
-Open game install path and open folder `BepInEx\plugins`, **delete** `HavenM.ACUpdater.dll` and `HavenM.ACUpdater0.dll`(if exists). 
+打开游戏安装目录下的`BepInEx\plugins`并**删除** `HavenM.ACUpdater.dll` 和 `HavenM.ACUpdater0.dll`(如果有).。
 
-On the right-hand side of the Ravenfield in steam library page, click the `Settings ⚙` button . In the drop-down menu that appears, click `Properties` and click `Verify imegrity of game files` button on `Installed Files` page:
+在Steam的库页面找到游戏，点击`属性` > `管理` > 点击`属性`，再点击 `已安装文件` 选项页的`验证游戏文件的完整性`:
 
 ![](https://ravenfieldcommunity.github.io/docs-img/Projects/havenm.004.en.png)
 
 
 ## Q&A
-> **The firewall blocked the command.**
+> **命令安全软件被误杀**
 >
-> Just allow it on your firewall.
+> 点一下允许即可
 >
 >  Or copy the following command and open [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) or [powershell](https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.5), paste and press `Enter`
 >  
@@ -85,19 +107,7 @@ On the right-hand side of the Ravenfield in steam library page, click the `Setti
 >
 > Or copy the [original install script](http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.ps1), paste and run it on windows terminal or powershell
 
-> **Is this a trojan? Why you tell me to turn off the firewall? Why you made such a installer?**
->
-> It isn't a trojan, you can check the dll and [original install script](http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.ps1) in any time, all the details are visible.
->
-> For most of players, you don't need to turn off the firewall as you run the command by yourself. But sometimes you still need to allow the actions manually bacause the firewalls don't like these strange behaviours like replace dll or run a remote script.
->
-> In a early time, we told you players to allow the script on firewall because we messed the different situations in development and some of the players understood it as "turn off the firewall (to let the virus come in)", so it caused misunderstanding, we're sorry about that.
->
-> To let players can replace the dll ("install HavenM"), configure other things just by one step, and the players don not need to download any extra files, we made a installer using powershell
-> 
-> We didn't make a exe installer because we think a unknown exe is more dangerous than a above-board script and firewalls may dislike a exe more.
-
-> **Can HavenM run on mac/linux?**
+> **HavenM run on mac/linux?**
 >
 > Yes. Refer [this](https://www.howtogeek.com/738967/how-to-use-steams-proton-to-play-windows-games-on-linux/#how-to-use-proton-for-steam) to enable Proton and install HavenM manually like on Windows.
 >

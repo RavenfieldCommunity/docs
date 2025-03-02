@@ -28,6 +28,10 @@ export const cnNavbar = navbar([
         text: "联机插件",
         link: "/cn/Projects/ravenm"
       },
+	  {
+        text: "HavenM",
+        link: "/cn/Projects/havenm"
+      },
 	    {
         text: "其他社区项目",
         link: "/cn/Projects/other"

@@ -57,7 +57,7 @@ BepInEX是一个Unity模组插件框架，本项目的前置多语言插件需�
 
 然后打开压缩文件
 
-打开游戏目录（例如`E:\Program Files\Steam\steamapps\common\Ravenfield`）,你也可以在Steam的库页面找到游戏，点击`属性` > `管理` > `浏览本地文件`
+打开游戏目录（例如`E:\Program Files\Steam\steamapps\common\Ravenfield`）,你也可以在Steam的库页面找到游戏，点击`管理 ⚙` > `管理` > `浏览本地文件`
 
 ![](https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.002.png)
 

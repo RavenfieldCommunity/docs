@@ -93,6 +93,13 @@ link: /cn/Projects/ravenm.md
 ```
 
 ```card
+title: HavenM
+desc: Ravenfield原版AI增强
+logo: /image/Components.png
+link: /cn/Projects/havenm.md
+```
+
+```card
 title: 其他社区项目
 desc: 其他社区项目 (不属于本站)
 logo: /image/Components.png
