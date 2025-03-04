@@ -48,11 +48,13 @@ This step is for players who want to auto update the dll and it's no-need and no
 
 Refer [docs](https://docs.bepinex.dev/articles/user_guide/installation/index.html)
 
+**Install BepInEX 5.x instead of 6.x!**
+
 ### Install ACUpdater
 
 This step is for players who want to auto update the dll and it's no-need and not suitable for non-Windows player.
 
-Because HavenM works by editing game dll, so the dll may be replaced to the original game dll by Steam when game has offical update. The ACUpdater will solve this problem.
+Because HavenM works by editing game dll, the dll may be replaced to the original game dll by Steam when game has offical update. The ACUpdater will solve this problem.
 
 Download the `HavenM.ACUpdater.dll` [here](https://github.com/RavenfieldCommunity/HavenM/releases/tag/ACUpdaterRelease).	
 

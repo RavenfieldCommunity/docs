@@ -20,7 +20,7 @@ category:
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | floatAcceleration | float | 上浮加速度 |
-| floatDepth | float | 上浮起始作用的深度 |
+| floatDepth | float | 上浮起始作用的深度（与重心，或者说侧翻概率有关？） |
 | speed | float | 速度 |
 | reverseMultiplier | float | 倒车速度倍率 |
 | turnSpeed | float | 转向速度 |
