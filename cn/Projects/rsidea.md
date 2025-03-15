@@ -119,7 +119,9 @@ end
 
 ## 鸣谢&贡献项目
 
-我估计没有外部贡献者，所以还没打算写贡献指南呢...如果你想帮助我们贡献项目，你可以给我们提issue、留下评论在本站评论区或[Steam评论区](https://steamcommunity.com/sharedfiles/filedetails/?id=3160495493)，我会加紧时间赶写贡献文档，或吸取你的建议修bug和完善插件
+我估计没有外部贡献者，所以还没打算写贡献指南呢...
+
+如果你想帮助我们贡献项目，你可以给我们提issue、留下评论在本站评论区或[Steam评论区](https://steamcommunity.com/sharedfiles/filedetails/?id=3160495493)，我会加紧时间赶写贡献文档，或吸取你的建议修bug和完善插件
 
 ## ❤捐助
 

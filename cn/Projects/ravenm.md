@@ -110,4 +110,10 @@ RavenM联机插件国内版（授权），是国内社区在原RavenM国际版�
 >
 > 参考[CSDN](https://blog.csdn.net/qq_54780911/article/details/121993809)
 >
-> 安装后记得回复原来的Windows Defender设置，**不建议使用链接中提供的工具！**
+> 安装后记得回复原来的Windows Defender设置，**不建议使用CSDN链接中提供的工具！**
+
+> **盗版能跑？**
+>
+> 疑似可行，但绝对有严重bug譬如无法同步mod
+>
+> 方法不公开，有条件真的建议入正
