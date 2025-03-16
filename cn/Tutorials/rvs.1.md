@@ -108,8 +108,8 @@ float表示这个属性的类型是float浮点数，balance表示这个属性的
 可能你也会看到一些诸如const、static这样的关键字（类似于“标识符”），他们的含义如下：
 | 关键字 | 含义 |
 |------|------|
-| const | 表示这个属性是常量，指向的内容不可更改（当然如果这个常量里包括可更改的内容。即使玩家层面可见的变更） |
-| static | 静态属性，无论如何类实例化，返回值不受实例的类影响，始终一致（不想要GetComponent即可使用） |
+| const | 表示这个属性是常量，指向的内容不可更改（即使玩家层面可见的变更） |
+| static | 静态属性，无论如何类实例化，返回值不受实例的类影响，始终一致（不需要GetComponent即可使用） |
 
 在成员方法中，如[这个](http://ravenfieldgame.com/ravenscript/api/Actor.html#_CPPv4N5Actor14CanBeDamagedByE6Weapon)：
 
@@ -133,7 +133,7 @@ function test: Start ()
     --注册事件
     --`self`指触发事件时调用方法所在的table(ScriptedBehavior)，如果你已经获取了别的ScriptedBehavior，你也可以将self替换为ScriptedBehavior所在变量
     --`onTakeDamage`指触发事件时调用self所在方法的方法名，不一定非要填写属性ScriptEvent的属性名
-    Player.onTakeDamage.AddListener(self, "onTakeDamage")
+    Player.actor.onTakeDamage.AddListener(self, "onTakeDamage")
 end
 
 --触发事件时就会调用这个方法

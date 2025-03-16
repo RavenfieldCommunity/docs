@@ -50,13 +50,13 @@ end
 
 如阻止玩家进行游戏（血量清零、删除地图场景内所有物体）：
 ```lua
-Player.MoveActor(Vector3(0,0,0)) --阻止玩家移动
+Player.actor.MoveActor(Vector3(0,0,0)) --阻止玩家移动
 
 Player.actor.health = 0 --玩家血量清零
 
 SpawnUi.Open()  --打开武器选择界面来阻止玩家游戏
 
-Player.activeWeapon.LockWeapon()  --锁定玩家武器
+Player.actor.activeWeapon.LockWeapon()  --锁定玩家武器
 
 Time.timeScale = 1 --阻止玩家暂停游戏
 
