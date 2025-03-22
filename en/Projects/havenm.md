@@ -116,3 +116,9 @@ On the right-hand side of the Ravenfield in steam library page, click the `Setti
 >
 > Second, don't run the command on the windows terminal or powershell directly, run it on "Run" dialog window (press key `Win`+`R`), otherwise you only need to type the part enclosed in quote marks command (refer question "The firewall blocked the command.").
 
+
+## Support Us
+
+Give a `Like` in the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3428665609) or a star on github, thanks for support!
+
+You can feedback any issues and suggestions on workshop!

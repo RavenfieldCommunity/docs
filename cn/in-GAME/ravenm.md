@@ -66,8 +66,8 @@ description: 适用于国内版RavenM联机插件的使用说明
 | 命令 | 仅房主可用 | 描述 |
 |------|------|------|
 | `/help <命令名>` | 否 | 获取对应命令的帮助 |
-| `/nametags True|False` | 是 | 是否启用玩家名牌 |
-| `/nametagsteamonly True|False` | 是 | 是否仅启用同队伍的玩家名牌 |
+| `/nametags True\|False` | 是 | 是否启用玩家名牌 |
+| `/nametagsteamonly True\|False` | 是 | 是否仅启用同队伍的玩家名牌 |
 | `/kill <玩家名>` | 是 | 击杀对应名称的玩家 |
 | `/kick <玩家名>` | 是 | 将对应名称的玩家踢出房间 |
 | `/ban` | 是 | 将对应名称的玩家永久踢出房间 |
