@@ -23,7 +23,7 @@ powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Tex
 
 直接安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
 
-安装完后记得看完这篇文档！ ↓↓↓
+**安装完后或者有问题记得看完这篇文档！ ↓↓↓**
 
 ## 手动安装
 
