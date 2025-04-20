@@ -12,7 +12,7 @@ category:
 
 套用在一个空物体作为起始点上
 
-或者直接使用\Assets\Prefabs\Map Elements\Must Have\的Pathfinding Link.prefab(推荐)
+或者直接使用`RFTools\Prefabs\Map Elements\Must Have\的Pathfinding Link.prefab`(推荐)
 
 ## 注释
 
