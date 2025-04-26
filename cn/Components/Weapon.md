@@ -52,7 +52,7 @@ category:
 
 切换到子武器时， 类似`loaded ammo`的parameter值会覆写成子武器的
 
-另外注意[Animation Event 帧事件](https://docs.unity.cn/cn/2020.3/Manual/script-AnimationWindowEvent.html)的用法，每个Event其用途与官方的脚本api的对应函数名一致
+另外注意[Animation Event 帧事件](https://docs.unity.cn/cn/2020.3/Manual/script-AnimationWindowEvent.html)的用法，每个Event其用途与官方的[脚本api](https://ravenfieldgame.com/ravenscript/api/Weapon.html#methods)的对应函数名一致
 
 ## 变量
 | 名称 | 类型 | 描述 |
