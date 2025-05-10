@@ -45,8 +45,14 @@ category:
 | call | trigger | 召集队员时为True |
 | direct | trigger | 指挥队员时为True |
 | random | float | 在切换到武器时或每帧随机生成一个0到100的浮点值 |
+| walk cycle | float |  |
+| want to aim | bool |  |
 
 对于此组件的子组件，部分选项是不可用的，请按照逻辑判断
+
+切换到子武器时， 类似`loaded ammo`的parameter值会覆写成子武器的
+
+另外注意[Animation Event 帧事件](https://docs.unity.cn/cn/2020.3/Manual/script-AnimationWindowEvent.html)的用法，每个Event其用途与官方的[脚本api](https://ravenfieldgame.com/ravenscript/api/Weapon.html#methods)的对应函数名一致
 
 ## 变量
 | 名称 | 类型 | 描述 |

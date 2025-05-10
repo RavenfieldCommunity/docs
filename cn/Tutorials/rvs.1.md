@@ -51,13 +51,13 @@ Ravenscript可以控制Ravenfield和Unity引擎的某些部分
 ## 1.0 文件结构
 标准的RS脚本一般分为3个结构：
 ```lua
---#1 注册RS父table，这样你才能从里面派生方法并让游戏执行
+#1 注册RS父table，这样你才能从里面派生方法并让游戏执行
 behavior("test")
 
---#2 local变量，（现在这一步是可选的）
+#2 local变量，（现在这一步是可选的）
 local var1
 
---#3 定义事件方法体
+#3 定义事件方法体
 function test: Start ()
     --这是对#2的另一种替代
     self.var1 = 1
@@ -83,7 +83,7 @@ end
 ### 类Class
 尽管文档没有标注，首先你仍需要明白文档中那些classes（其实classes这个名称并不准确？）可以分别是怎么用的
 
-即哪些类已经实例化可以直接作为api对象进行调用（如[Player](http://ravenfieldgame.com/ravenscript/api/Player.html),它可以直接在脚本里`Player.actor.health =9999`这样直接调用 ）
+即哪些类已经实例化或者本身为静态可以直接作为api对象进行调用（如[Player](http://ravenfieldgame.com/ravenscript/api/Player.html),它可以直接在脚本里`Player.actor.health =9999`这样直接调用 ）
 
 哪些是作为“数据类型”需要先实例化这个类才能使用（如[类Actor](http://ravenfieldgame.com/ravenscript/api/Actor.html)，它需要先在一个Bot的GameObject上通过`GameObject.GetComponentInParent(Actor)`，“get”了这个类才能使用 ）
 
@@ -108,8 +108,8 @@ float表示这个属性的类型是float浮点数，balance表示这个属性的
 可能你也会看到一些诸如const、static这样的关键字（类似于“标识符”），他们的含义如下：
 | 关键字 | 含义 |
 |------|------|
-| const | 表示这个属性是常量，指向的内容不可更改（当然如果这个常量里包括可更改的内容。即使玩家层面可见的变更） |
-| static | 静态属性，无论如何类实例化，返回值不受实例的类影响，始终一致（不想要GetComponent即可使用） |
+| const | 表示这个属性是常量，指向的内容不可更改（即使玩家层面可见的变更，但指向的内容里的东西可以修改） |
+| static | 静态属性，无论如何类实例化，返回值不受实例的类影响，始终一致（不需要GetComponent即可使用） |
 
 在成员方法中，如[这个](http://ravenfieldgame.com/ravenscript/api/Actor.html#_CPPv4N5Actor14CanBeDamagedByE6Weapon)：
 
@@ -133,7 +133,7 @@ function test: Start ()
     --注册事件
     --`self`指触发事件时调用方法所在的table(ScriptedBehavior)，如果你已经获取了别的ScriptedBehavior，你也可以将self替换为ScriptedBehavior所在变量
     --`onTakeDamage`指触发事件时调用self所在方法的方法名，不一定非要填写属性ScriptEvent的属性名
-    Player.onTakeDamage.AddListener(self, "onTakeDamage")
+    Player.actor.onTakeDamage.AddListener(self, "onTakeDamage")
 end
 
 --触发事件时就会调用这个方法

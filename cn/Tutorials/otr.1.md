@@ -153,19 +153,14 @@ Ravenfield Tool
 ```
 
 ## 常见问题
-### 打开Unity工程，提示进入安全模式
-提示[安全模式](https://docs.unity.cn/cn/2020.3/Manual/SafeMode.html)时，此时如果忽略错误并强制进入，大部分情况下RFTools的所有依赖组件都会无法运行
-
-按以下方式排查：
-1. 上一次打开工程时刚导入RFTools包
-
-尝试新建工程，再次导入RFTools包，检查控制台是否有报错
-
-如果有，则说明以下2个可能：
-> 1. RFTools损坏或有Bug，尝试到官网下载一个最新版使用
+> **打开Unity工程，提示进入安全模式**
 >
-> 2. RFTools包与当前的Unity Editor版本不兼容，请确保使用的Unity Editor与Tools版本对应。详情请看本站的资源镜像
-
-2. 不是第一个情况
-
-请检查上一次打开工程时是否添加了外部C#脚本进入工程或修改了RFTools依赖组件，如果有，替换原版脚本或删除外来脚本
+> 提示[安全模式](https://docs.unity.cn/cn/2020.3/Manual/SafeMode.html)时，此时如果忽略错误并强制进入，大部分情况下RFTools的所有依赖组件都会无法运行
+>
+>若上一次打开工程时刚导入RFTools包，则尝试新建工程，再次导入RFTools包，检查控制台是否有报错
+>
+>如果有，则说明可能RFTools损坏或有Bug，尝试到官网下载一个最新版使用
+>
+> RFTools包与当前的Unity Editor版本不兼容，请确保使用的Unity Editor与Tools版本对应。详情请看本站的资源镜像
+>
+> 或请检查上一次打开工程时是否添加了外部C#脚本进入工程或修改了RFTools依赖组件，如果有，替换原版脚本或删除外来脚本

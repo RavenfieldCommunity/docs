@@ -11,6 +11,8 @@ Project repo：[Github](https://github.com/RavenfieldCommunity/HavenM) Steam Wor
 ::: tip
 Though this project is hosted on us, it doesn't belong to us (Github@RavenfieldCommunity).
 
+It belongs to Standt_Up
+
 中国玩家请参阅[此处](https://ravenfieldcommunity.github.io/docs/cn/Projects/havenm.html)(可能未完工)  Chinese players please refer this [page](https://ravenfieldcommunity.github.io/docs/cn/Projects/havenm.html).
 :::
 
@@ -48,11 +50,13 @@ This step is for players who want to auto update the dll and it's no-need and no
 
 Refer [docs](https://docs.bepinex.dev/articles/user_guide/installation/index.html)
 
+**Install BepInEX 5.x instead of 6.x!**
+
 ### Install ACUpdater
 
 This step is for players who want to auto update the dll and it's no-need and not suitable for non-Windows player.
 
-Because HavenM works by editing game dll, so the dll may be replaced to the original game dll by Steam when game has offical update. The ACUpdater will solve this problem.
+Because HavenM works by editing game dll, the dll may be replaced to the original game dll by Steam when game has offical update. The ACUpdater will solve this problem.
 
 Download the `HavenM.ACUpdater.dll` [here](https://github.com/RavenfieldCommunity/HavenM/releases/tag/ACUpdaterRelease).	
 
@@ -114,3 +118,9 @@ On the right-hand side of the Ravenfield in steam library page, click the `Setti
 >
 > Second, don't run the command on the windows terminal or powershell directly, run it on "Run" dialog window (press key `Win`+`R`), otherwise you only need to type the part enclosed in quote marks command (refer question "The firewall blocked the command.").
 
+
+## Support Us
+
+Give a `Like` in the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3428665609) or a star on github, thanks for support!
+
+You can feedback any issues and suggestions on workshop!

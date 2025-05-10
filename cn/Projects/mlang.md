@@ -23,7 +23,7 @@ powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Tex
 
 直接安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
 
-安装完后记得看完这篇文档！ ↓↓↓
+**安装完后或者有问题记得看完这篇文档！ ↓↓↓**
 
 ## 手动安装
 
@@ -137,6 +137,7 @@ Valve（Steam母公司） Proton是一个基于Wine的的项目，旨在为非Wi
 
 任何关于Proton的问题可参考[ProtonDB](https://www.protondb.com/help/troubleshooting-faq)
 
+Proton对macos的官方支持可能在未来发布，在此之前请自行在bing搜proton的社区版本
 
 ## 提示
 
@@ -154,19 +155,14 @@ Valve（Steam母公司） Proton是一个基于Wine的的项目，旨在为非Wi
 
 ## 常见问题
 
-> **安装方式的第一个方式的替代步骤？**
+> **第一个安装方式的备用方法？**
 >
 > `Win键`+`R`打开运行框，输入`powershell`并确定，在打开的Powershell窗口复制并输入以下命令并回车，效果等价上面：
 > ```powershell
-> Invoke-Expression(New-Object Net.WebClient).DownloadString("http://ravenfieldcommunity.github.io/static/get_ravenmcn.ps1")
+> $w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_mlang-utf8.ps1'));
 > ```
 > 
-> 或者
-> 
-> `Win键`+`R`打开运行框，输入以下命令并确定，这会自动打开安装文件，按说明操作即可：
-> ```batch
-> powershell -nop -c "Invoke-Expression(New-Object Net.WebClient).DownloadString('http://ravenfieldcommunity.github.io/static/get_mlang.ps1')"
-> ```
+> 如果无法正常链接到脚本，请将脚本中的`ghproxy.net/https://raw.githubusercontent.com/ravenfieldcommunity/ravenfieldcommunity.github.io/main`替换为`ravenfieldcommunity.github.io`(准确替换！)
 
 
 > **开了Steamcommunity302也无法正常执行命令？**
@@ -176,10 +172,15 @@ Valve（Steam母公司） Proton是一个基于Wine的的项目，旨在为非Wi
 > ![](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.007.png)
 
 > **卸载插件？**
+>
 > `Win键`+`R`打开运行框，输入以下命令并确定，这会自动打开卸载向导（完全卸载插件与前置框架），按说明操作即可：
 > ```batch
 > powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/uninstall_bepinex-utf8.ps1'));"
 > ```
+
+> **Steam启动时奇奇怪怪的问题？**
+>
+> 在Steam的库页面找到游戏，点击`属性` > `管理` > 点击`属性`，再点击 `已安装文件` 选项页的`验证游戏文件的完整性`:
 
 ## 为其他语言编写翻译文件
 
