@@ -1,7 +1,16 @@
 ---
-title: RavenM联机插件国内版
-description: 适用于国内Ravenfield玩家的RavenM联机插件
+title: RavenM Muitlplayer
+description: RavenM Muitlplayer plugin for Ravenfield
 ---
+
+> [!caution]
+> **This webpage does not belong to [iliadsh/RavenM](https://github.com/iliadsh/RavenM) itself!!!**
+>
+> **This webpage does not belong to [iliadsh/RavenM](https://github.com/iliadsh/RavenM) itself!!!** 
+>
+> **This webpage does not belong to [iliadsh/RavenM](https://github.com/iliadsh/RavenM) itself!!!**
+>
+> This is a webpage for only guide.
 
 ::: center
 ![QQGuild](https://img.shields.io/badge/QQ频道-9pmc179t29-blue?style=flat-square) ![插件QQ群](https://img.shields.io/badge/插件QQ群-710832844-blue?style=flat-square) ![插件QQ群](https://img.shields.io/badge/插件QQ群-677540488-blue?style=flat-square)
@@ -26,9 +35,9 @@ RavenM联机插件国内版（授权），是国内社区在原RavenM国际版�
 
 > **Macos/linux直接安装**
 >
->如果你是MacOS或Linux用户，请打开终端运行以下命令，这会自动打开安装文件，按说明操作即可：
+>如果你是MacOS或Linux用户，请打开终端运行以下命令 （Macos用户请自行配置Valve Proton，即Steam Play）：
 > ```sh
-> curl -sSL http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.sh | bash
+> curl -sSL http://ravenfieldcommunity.github.io/static/get_ravenm_d-utf8.sh | bash
 > ```
 >
 > 或者请按照[BepInEX官方文档](https://docs.bepinex.dev/articles/user_guide/installation/index.html?tabs=tabid-nix#installing-bepinex-1)来配置你的BepInEX环境后，让一个用Windows的朋友安装RavenM并让他把游戏目录下的`BepInEX\plugins\RavenM.dll`发给你，然后安装这个插件dll
@@ -40,7 +49,7 @@ RavenM联机插件国内版（授权），是国内社区在原RavenM国际版�
 > powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ghproxy.net/https://raw.githubusercontent.com/ravenfieldcommunity/ravenfieldcommunity.github.io/main/static/get_ravenmcn-utf8.ps1'));Read-Host;"
 > ```
 >
->此安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
+>直接安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
 
 > **手动一键安装**
 >

@@ -162,7 +162,7 @@ Proton对macos的官方支持可能在未来发布，在此之前请自行在bin
 > $w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_mlang-utf8.ps1'));
 > ```
 > 
-> 如果无法正常链接到脚本，请将脚本中的`ravenfieldcommunity.github.io`替换为`ghproxy.net/https://raw.githubusercontent.com/ravenfieldcommunity/ravenfieldcommunity.github.io/main`(准确替换！)
+> 如果无法正常链接到脚本，请将脚本中的`ghproxy.net/https://raw.githubusercontent.com/ravenfieldcommunity/ravenfieldcommunity.github.io/main`替换为`ravenfieldcommunity.github.io`(准确替换！)
 
 
 > **开了Steamcommunity302也无法正常执行命令？**
