@@ -5,15 +5,19 @@ description: "Bot enhancement for Ravenfield."
 ---
 
 ::: center
+![](https://img.shields.io/discord/1132554570099343380.svg?label=Discord&logo=Discord&style=flat-square) ![](https://img.shields.io/github/downloads/RavenfieldCommunity/HavenM/latest/total.svg?label=Currect%20version%27s%20downloads&logo=GitHub&style=flat-square) 
+
+![](https://img.shields.io/badge/dynamic/json?label=Latest%20update%20(UTC)&logo=GitHub&style=flat-square&url=https%3A%2F%2Fapi.github.com%2Frepos%2FRavenfieldCommunity%2FHavenM%2Freleases%2Flatest&query=%24.assets%5B0%5D.updated_at)
+
 Project repo：[Github](https://github.com/RavenfieldCommunity/HavenM) Steam Workshop:[Item](https://steamcommunity.com/sharedfiles/filedetails/?id=3428665609)
 :::
 
 ::: tip
 Though this project is hosted on us, it doesn't belong to us (Github@RavenfieldCommunity).
 
-It belongs to Standt_Up
+It belongs to [Standt_Up](https://steamcommunity.com/profiles/76561198296228036)
 
-中国玩家请参阅[此处](https://ravenfieldcommunity.github.io/docs/cn/Projects/havenm.html)(可能未完工)  Chinese players please refer this [page](https://ravenfieldcommunity.github.io/docs/cn/Projects/havenm.html).
+中国玩家请参阅[此处](https://ravenfieldcommunity.github.io/docs/cn/Projects/havenm.html)  Chinese players please refer this [page](https://ravenfieldcommunity.github.io/docs/cn/Projects/havenm.html).
 :::
 
 ## Description
@@ -31,6 +35,8 @@ Run this command to get a full update from time to time!
 ## Install manually
 
 Non-windows players please refer [Q&A](#Q&A)!
+
+You can find out the history release [here](https://github.com/RavenfieldCommunity/HavenM/releases/tag/Archive), but remember to rename the dll files to `Assembly-CSharp.dll`!
 
 ### Replace dll
 
@@ -66,7 +72,13 @@ Open game install path and add it to `BepInEx\plugins`. If the folder isn't exis
 
 ![](https://ravenfieldcommunity.github.io/docs-img/Projects/havenm.003.png)
 
-### Uninstall
+## Uninstall by command
+
+Copy the following command and open [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) or [powershell](https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.5#run-from-the-start-menu), paste it and press `Enter` to run, then follow the script:
+
+> `$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/uninstall_bepinex-utf8.ps1'));Read-Host;`
+
+## Uninstall manually
 
 Open game install path and open folder `BepInEx\plugins`, **delete** `HavenM.ACUpdater.dll` and `HavenM.ACUpdater0.dll`(if exists). 
 
@@ -79,14 +91,6 @@ On the right-hand side of the Ravenfield in steam library page, click the `Setti
 > **The firewall blocked the command.**
 >
 > Just allow it on your firewall.
->
->  Or copy the following command and open [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) or [powershell](https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.5), paste and press `Enter`
->  
-> ```powershell
-> $w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.ps1'));
-> ```
->
-> Or copy the [original install script](http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.ps1), paste and run it on windows terminal or powershell
 
 > **Is this a trojan? Why you tell me to turn off the firewall? Why you made such a installer?**
 >
@@ -102,7 +106,7 @@ On the right-hand side of the Ravenfield in steam library page, click the `Setti
 
 > **Can HavenM run on mac/linux?**
 >
-> Yes. Refer [this](https://www.howtogeek.com/738967/how-to-use-steams-proton-to-play-windows-games-on-linux/#how-to-use-proton-for-steam) to enable Proton and install HavenM manually like on Windows.
+> Yes. Refer [this](https://www.howtogeek.com/738967/how-to-use-steams-proton-to-play-windows-games-on-linux/#how-to-use-proton-for-steam) to enable Proton and install HavenM manually like on Windows, because runs HavenM natively may cause some bugs.
 >
 > Auto-updater and installation script are unavailable now.
 >
@@ -112,11 +116,13 @@ On the right-hand side of the Ravenfield in steam library page, click the `Setti
 >
 > No.
 
+> **My game crash on splash screen**
+>
+> Check the game isn't on `beta` or `test` or any non-stable branch, then reinstall HavenM or verify imegrity of game files on Steam
+
 > **Error "\* is not recongnized as the a name of cmdlet ..."**
 >
-> First, the command cannot be run on Windows 7. 
->
-> Second, don't run the command on the windows terminal or powershell directly, run it on "Run" dialog window (press key `Win`+`R`), otherwise you only need to type the part enclosed in quote marks command (refer question "The firewall blocked the command.").
+> The command cannot be run on Windows 7. 
 
 
 ## Support Us

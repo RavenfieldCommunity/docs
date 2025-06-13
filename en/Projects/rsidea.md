@@ -78,7 +78,7 @@ Place the cursor over the 'behavior()' in the code to check for updates and open
 
 ### Associate file types (NO NEED)
 
-In the new version of RFTools (the old is RavenfieldToolPack), there is no need to configure extension associations, and Unity can automatically recognize Lua files as TextAsset
+**In the new version of RFTools (the old is RavenfieldToolPack), there is no need to configure extension associations, and Unity can automatically recognize Lua files as TextAsset**
 
 If you are using an old RavenfieldToolPack ,you have to associate the txt files with the Lua language in the IDE, so that you can use the Lua extension to develop RS.
 
@@ -153,7 +153,9 @@ end
 
 ## Acknowledgement & Contribution
 
-I'm guessing there are no external contributors, so I'm not planning to write a contribution guide yet... If you want to help us contribute to the project, you can send us an issue, leave a comment in the comments section of this site or in the [Steam comments](https://steamcommunity.com/sharedfiles/filedetails/?id=2902808812), and I'll try to hurry up and write a contribution document, or take your suggestions to fix bugs and improve the plugin!
+I'm guessing there are no external contributors, so I'm not planning to write a contribution guide yet lol...
+
+ If you want to help us contribute to the project, you can send us an issue, leave a comment in the comments section of this site or in the [Steam comments](https://steamcommunity.com/sharedfiles/filedetails/?id=2902808812), and I'll try to hurry up and write a contribution document, or take your suggestions to fix bugs and improve the plugin!
 
 ## ❤SPONSER
 
