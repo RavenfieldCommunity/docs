@@ -177,7 +177,7 @@ Proton对macos的官方支持可能在未来发布，在此之前请自行在bin
 
 如果有一些奇奇怪怪的机翻出现，这是插件自带的半可用的网络翻译服务复活，请将`Endpoint`一项配置清空
 
-另外，地图编辑器与战役模式的翻译仍未全部完成，如需要请在评论区提出，我们会尽快更新
+另外，地图编辑器的翻译仍未全部完成，如需要请在评论区提出，我们会尽快更新
 
 ## 常见问题
 
@@ -191,7 +191,7 @@ Proton对macos的官方支持可能在未来发布，在此之前请自行在bin
 > 如果无法正常链接到脚本，请将脚本中的`ravenfieldcommunity.github.io`替换为`ghproxy.net/https://raw.githubusercontent.com/ravenfieldcommunity/ravenfieldcommunity.github.io/main`(准确替换！)
 
 
-> **开了Steamcommunity302也无法正常执行命令？**
+> **开了Steamcommunity302或watt toolkit也无法正常执行命令？**
 >
 > 记得在设置里启用默认关闭的github代理:
 >

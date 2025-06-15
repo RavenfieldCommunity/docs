@@ -9,8 +9,7 @@ description: "The NEXT snippet addons for ravenscript coding"
 # Ravenscript IDEA
 
 ::: center
-![GitHub issues](https://img.shields.io/github/issues/RavenfieldCommunity/ravenscriptidea.svg?style=flat-square&) ![GitHub last commit](https://img.shields.io/github/last-commit/RavenfieldCommunity/ravenscriptidea.svg?style=flat-square&)
-
+![GitHub last commit](https://img.shields.io/github/last-commit/RavenfieldCommunity/ravenscriptidea.svg?style=flat-square&) ![Release](https://img.shields.io/github/v/release/RavenfieldCommunity/ravenscriptidea?label=release&logo=GitHub&style=flat-square)
 
 [![License](https://img.shields.io/badge/LICENSED%20UNDER-GPLv3-lightblue.svg?style=for-the-badge&)](https://github.com/RavenfieldCommunity/ravenscriptidea/blob/main/LICENSE)
 

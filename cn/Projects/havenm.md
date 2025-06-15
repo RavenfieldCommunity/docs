@@ -5,6 +5,10 @@ description: "Ravenfield原版AI增强."
 ---
 
 ::: center
+![](https://img.shields.io/discord/1132554570099343380.svg?label=Discord&logo=Discord&style=flat-square) ![](https://img.shields.io/github/downloads/RavenfieldCommunity/HavenM/latest/total.svg?label=Currect%20version%27s%20downloads&logo=GitHub&style=flat-square) 
+
+![](https://img.shields.io/badge/dynamic/json?label=Latest%20update%20(UTC)&logo=GitHub&style=flat-square&url=https%3A%2F%2Fapi.github.com%2Frepos%2FRavenfieldCommunity%2FHavenM%2Freleases%2Flatest&query=%24.assets%5B0%5D.updated_at)
+
 项目repo：[Github](https://github.com/RavenfieldCommunity/HavenM) Steam工坊:[Item](https://steamcommunity.com/sharedfiles/filedetails/?id=3428665609)
 :::
 

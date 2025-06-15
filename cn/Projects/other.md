@@ -5,7 +5,7 @@ description: Ravenfield社区的其他项目（非本站）
 
 一些构成比较大的RF项目或工坊模组
 
-:::warn
+::: tip
 以下项目或工坊模组不隶属于本站（RavenfieldCommunity），这里仅作推荐和指路！
 :::
 
@@ -23,7 +23,7 @@ description: Ravenfield社区的其他项目（非本站）
 
 ## Phoenix Framework
 
-工坊模组（又名凤凰框架），已停更，武器扩展模块
+工坊模组（又名凤凰框架），已弃坑，武器扩展模块
 
 链接：[Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2292661997)
 

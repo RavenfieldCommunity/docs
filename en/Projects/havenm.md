@@ -24,19 +24,23 @@ It belongs to [Standt_Up](https://steamcommunity.com/profiles/76561198296228036)
 
 Refer Github
 
+Re-installing equals updating!
+
+::: caution
+**DO NOT USE THE GAME'S BETA OR ANY NON-STABLE BRANCH!**
+
+AND DO NOT download the dll from *[Archive](https://github.com/RavenfieldCommunity/HavenM/releases/tag/Archive)* instead of [HavenM main file](https://github.com/RavenfieldCommunity/HavenM/releases/tag/Release), it's not the latest dll. 
+:::
+
 ## Install by command
 
 Refer Github, `Win` + `R` to Open "Run" dialog window and run the command.
 
-Re-installing equals updating!
-
-Run this command to get a full update from time to time!
+Run this command to get a update for Updater from time to time!
 
 ## Install manually
 
 Non-windows players please refer [Q&A](#Q&A)!
-
-You can find out the history release [here](https://github.com/RavenfieldCommunity/HavenM/releases/tag/Archive), but remember to rename the dll files to `Assembly-CSharp.dll`!
 
 ### Replace dll
 
@@ -71,6 +75,12 @@ Make sure BepInEX is already installed.
 Open game install path and add it to `BepInEx\plugins`. If the folder isn't exist and you installed BepInEX just now, run the game and the folder will be created automatically:
 
 ![](https://ravenfieldcommunity.github.io/docs-img/Projects/havenm.003.png)
+
+## Use ahcrived dll
+
+You can find out the old history release [here](https://github.com/RavenfieldCommunity/HavenM/releases/tag/Archive), but remember to rename the dll files to `Assembly-CSharp.dll`!
+
+And disable ACUpdater's auto-update if you don't want the dll is overwrote by updates, the config file in at `BepInEX\config\HavenM.ACUpdater.cfg`
 
 ## Uninstall by command
 

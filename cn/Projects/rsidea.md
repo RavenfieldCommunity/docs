@@ -7,8 +7,7 @@ description: "Ravenscript IDE Addon,新一代RS开发snippet插件（又新又�
 ---
 
 ::: center
-![GitHub issues](https://img.shields.io/github/issues/RavenfieldCommunity/ravenscriptidea.svg?style=flat-square&) ![GitHub last commit](https://img.shields.io/github/last-commit/RavenfieldCommunity/ravenscriptidea.svg?style=flat-square&)
-
+![GitHub last commit](https://img.shields.io/github/last-commit/RavenfieldCommunity/ravenscriptidea.svg?style=flat-square&) ![Release](https://img.shields.io/github/v/release/RavenfieldCommunity/ravenscriptidea?label=release&logo=GitHub&style=flat-square)
 
 [![License](https://img.shields.io/badge/%E6%8E%88%E6%9D%83%E5%9F%BA%E4%BA%8E%E8%AE%B8%E5%8F%AF-GPLv3-lightblue.svg?style=for-the-badge&)](https://github.com/RavenfieldCommunity/ravenscriptidea/blob/main/LICENSE)
 
