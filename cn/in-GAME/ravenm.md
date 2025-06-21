@@ -11,7 +11,7 @@ description: 适用于国内版RavenM联机插件的使用说明
 
 **已安装插件的玩家，如果插件有更新，游戏时会弹窗提示（但你需要手动重新下载安装）：**
 
-![](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.004.png)
+![更新提示](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.004.png)
 
 你可以直接运行你以前下载的安装工具，安装工具的会自动使用服务器提供的最新版本RavenM安装
 
@@ -22,17 +22,17 @@ description: 适用于国内版RavenM联机插件的使用说明
 
 进入游戏后打开Instant Action（即平常跟游戏时一样）的对局配置界面，在此时按下`M`键以呼出联机大厅菜单：
 
-![](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.001.png)
+![主界面](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.001.png)
 
 `主机`（`HOST`）意为创建房间，`加入`（`JOIN`）意为加入房间
 
-点击`主机`，你可以自行配置房间属性，注意当你勾选`是否为公共房间`时，你的房间会公开在联机大厅列表
+点击`主机`，你可以自行配置房间属性，注意当你勾选`是否为公共房间`时，你的房间会公开在联机大厅列表（该选项在新版本已经被房间密码功能替代）
 
-![](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.002.png)
+![房间配置界面](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.002.png)
 
 点击`确定`，即可进入预开始界面，点击`离开房间`可以关闭此房间（关闭地图不会关闭房间，除了关闭游戏），左边菜单的数字是你的房间Lobby ID（LID，房间ID）
 
-![](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.003.png)
+![玩家列表](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.003.png)
 
 像平常一样，配置好本局游戏（也会有Bot的！），点击开始`START`即可进入游戏
 
@@ -40,7 +40,13 @@ description: 适用于国内版RavenM联机插件的使用说明
 
 点击联机列表的一个房间，可以查看房间信息并选择进入房间（房间如果设置了限制或为 RavenM国际版 创建的房间，或房主使用的兼容版EA27插件较为古老，`加入房间`按钮可能不可用）	
 
-加入后，如果房主没有开始游戏，你点击开始`START`后，你可能需要等待房主开局（左边的玩家列表中玩家名字的颜色即为准备状态，绿色为就绪。房主可以踢人、修改玩家队伍），如果已经开始，你会直接进入对局（但是地图可能不会正确同步）
+加入后，如果房主没有开始游戏，你点击开始`START`后，你可能需要等待房主开局（左边的玩家列表中玩家名字的颜色即为准备状态（绿色=就绪，红色=为加载玩mod，灰色=游戏中处于死亡状态）
+
+玩家加载完成mod后，玩家名左边会显示所处队伍，否则为已加载mod数
+
+房主可以通过在玩家列表右键玩家名，或通过命令踢人
+
+如果游戏已经开始，你会直接进入对局（但是地图可能不会正确同步）
 
 另外，无论如何（即使为No Mod模式），玩家都会同步下载房主所使用的Mod，Mod会在进入房间的时候下载与载入
 
@@ -54,15 +60,15 @@ description: 适用于国内版RavenM联机插件的使用说明
 
 按`F7`可打开数据流检测UI(仅作测试用)
 
-按`~`可打开玩家坐标指示
+按`~`可标记地点
 
-按`“`可标记地点
-
-小队指挥控件（`G`、`B`键）是可用的，用于指挥小队内其他玩家
+小队指挥控件（`G`、`B`键）不可用于指挥小队内其他玩家
 
 右上角会显示Ping延迟值（房主的当然为0ms）
 
-另附聊天框的可用命令（有些命令需要权限）:
+计分面板会也会显示玩家击杀统计
+
+另附聊天框的可用命令（有些命令需要权限，`true`和`false`参数不分大小写）:
 | 命令 | 仅房主可用 | 描述 |
 |------|------|------|
 | `/help <命令名>` | 否 | 获取对应命令的帮助 |
@@ -76,9 +82,11 @@ description: 适用于国内版RavenM联机插件的使用说明
 
 示例如: `/nametags True`
 
+你也可以订阅mod[房主工具](https://steamcommunity.com/sharedfiles/filedetails/?id=3433624237)，有ui更方便
+
 玩的开心！
 
-![截图 Discord@Sofa#8366](https://steamuserimages-a.akamaihd.net/ugc/1917988387306327667/C90622D8C9B8B654E187AA5038A84759DFF050D9/)
+![游戏截图 Discord@Sofa#8366](https://steamuserimages-a.akamaihd.net/ugc/1917988387306327667/C90622D8C9B8B654E187AA5038A84759DFF050D9/)
 
 ## 常见问题
 
@@ -97,6 +105,8 @@ description: 适用于国内版RavenM联机插件的使用说明
 > **无法使用本地Mod**
 >
 > 由于联机需要房主与玩家同步工坊Mod，这依赖于Steam创意工坊服务（从本地Mod体量、云服务传输文件成本考虑，后续也不会考虑兼容本地Mod），故不本地Mod不可用
+>
+> 未来大概会支持？
 > 
 > 爱发电定制的Mod一般会由作者上传到工坊，请在工坊订阅问题Mod
 
@@ -119,7 +129,7 @@ description: 适用于国内版RavenM联机插件的使用说明
 > **联机失败**
 >
 > 请检查：
-> - 游戏版本是否为最新（非`ravenm-compatible`分支版本，非任何`legacy-ea**`分支版本。建议非Beta版）
+> - 游戏版本是否为最新（非`ravenm-compatible`分支版本，非任何`legacy-ea**`、`pervious-ea`、`test`分支版本，steam游戏开始按钮旁边写的就是当前游戏分支版本。建议非Beta版）
 > - 是否安装了非动态汉化补丁（极少概率导致）
 > - 插件版本是否为最新，且不为国际版（否则请至[本站](/cn/Project/ravenm.md)下载）
 > - 网络是否稳定、可用（是否运行过你所安装的安全软件的网络修复工具来尝试修复，是否修改了hosts，是已经启动加速器）
