@@ -9,7 +9,7 @@ Steam工坊：[Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=323
 
 ## 描述
 
-为Ravenfield提供动态多语言支持，无需频繁手动更新dll与覆盖，支持游戏Beta版
+为Ravenfield提供动态多语言支持，无需频繁手动更新dll与覆盖，支持游戏全部版本
 
 本项目依赖前置BepInEX插件
 
@@ -21,9 +21,13 @@ Steam工坊：[Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=323
 powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_mlang-utf8.ps1'));"
 ```
 
-直接安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
+::: tip
+如果你不信任此命令也可以手动安装，或参见[常见问题](#常见问题)以获取更多信息
 
 **安装完后或者有问题记得看完这篇文档！ ↓↓↓**
+:::
+
+直接安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
 
 ## 手动安装
 
@@ -181,7 +185,16 @@ Proton对macos的官方支持可能在未来发布，在此之前请自行在bin
 
 ## 常见问题
 
-> **第一个安装方式的备用方法？**
+> **杀软报毒**
+>
+> 只要是个脚本大部分情况下像Windows Defender、360都会提示（一般用户很少用到powershell，所以干脆全部拦截）
+>
+> 放行即可，如果你不信任此命令也可以手动安装
+>
+> 脚本使用powershell编写，命令中以“`https://`”开头的即是脚本链接，你可以自行检查，内容均为明文
+
+
+> **第一个安装方式的备用方法与出现安装失败？**
 >
 > `Win键`+`R`打开运行框，输入`powershell`并确定，在打开的Powershell窗口复制并输入以下命令并回车，效果等价上面：
 > ```powershell
@@ -189,13 +202,15 @@ Proton对macos的官方支持可能在未来发布，在此之前请自行在bin
 > ```
 > 
 > 如果无法正常链接到脚本，请将脚本中的`ravenfieldcommunity.github.io`替换为`ghproxy.net/https://raw.githubusercontent.com/ravenfieldcommunity/ravenfieldcommunity.github.io/main`(准确替换！)
+>
+> 若出现安装失败可以先运行卸载命令或间隔一段时间再次运行安装命令
 
 
 > **开了Steamcommunity302或watt toolkit也无法正常执行命令？**
 >
 > 记得在设置里启用默认关闭的github代理:
 >
-> ![](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.007.png)
+> ![steamcommunity302截图](https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.007.png)
 
 > **卸载插件？**
 >

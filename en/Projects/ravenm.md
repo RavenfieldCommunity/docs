@@ -15,6 +15,8 @@ OFFICIAL: ![Discord](https://img.shields.io/discord/458403487982682113.svg?label
 **This webpage does not belong to [github.com/iliadsh/RavenM](https://github.com/iliadsh/RavenM) this project itself but [community edition](https://github.com/RavenfieldCommunity/RavenM) !!!**
 
 **For guidance only !!!**
+
+Some content may not suitable for official edition
 :::
 
 ## Description
@@ -45,7 +47,7 @@ Official version of RavenM only.
 #### Manually
 
 #### Install BepInEX
-BepInEX is a cross=platform mod framework for Unity modding.
+BepInEX is a cross-platform mod framework for Unity modding.
 
 Refer [BepInEX docs](https://docs.bepinex.dev/articles/user_guide/installation/index.html).
 
@@ -59,7 +61,7 @@ You can download the plugin here:
 
 > [Community edition's github](https://github.com/RavenfieldCommunity/RavenM/releases)
 
-As you downloaded the release, unzip the `.zip` file to `BepInEX\plugins` in game directory, or direct put the plugin `.dll` to `BepInEX\plugins` in game directory.
+As you downloaded the release, unzip the `.zip` file to `BepInEX\plugins` in game directory, or directly put the plugin `.dll` to `BepInEX\plugins` in game directory.
 
 Now start the game, there will be a line of build id at the down-left corner of window, if the plugin is installed correctly.
 

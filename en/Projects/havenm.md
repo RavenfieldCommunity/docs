@@ -38,6 +38,10 @@ Refer Github, `Win` + `R` to Open "Run" dialog window and run the command.
 
 Run this command to get a update for Updater from time to time!
 
+::: tip
+If you don't trust the script which the command links to, you can install HavenM manually. Or visit the Q&A for more info.
+:::
+
 ## Install manually
 
 Non-windows players please refer [Q&A](#Q&A)!
@@ -128,7 +132,7 @@ On the right-hand side of the Ravenfield in steam library page, click the `Setti
 
 > **My game crash on splash screen**
 >
-> Check the game isn't on `beta` or `test` or any non-stable branch, then reinstall HavenM or verify imegrity of game files on Steam
+> Check the game isn't on `beta` or `test` or any non-stable branch, then reinstall HavenM by command or manually or verify imegrity of game files on Steam later
 
 > **Error "\* is not recongnized as the a name of cmdlet ..."**
 >

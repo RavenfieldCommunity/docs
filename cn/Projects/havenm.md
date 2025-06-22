@@ -110,6 +110,8 @@ powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Tex
 > ```
 >
 > Or copy the [original install script](http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.ps1), paste and run it on windows terminal or powershell
+>
+> 详情参见[此处](./mlang.md#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
 
 > **HavenM run on mac/linux?**
 >
