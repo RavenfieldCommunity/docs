@@ -23,6 +23,10 @@ export const enNavbar = navbar([
 		  {
 		  text: "HavenM",
             link: "/en/Projects/havenm"
+          },
+		  {
+		  text: "RavenM",
+            link: "/en/Projects/ravenm"
           }
         ]
     },

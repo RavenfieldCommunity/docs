@@ -34,13 +34,13 @@ description: 适用于国内版RavenM联机插件的使用说明
 
 ![玩家列表](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.003.png)
 
-像平常一样，配置好本局游戏（也会有Bot的！），点击开始`START`即可进入游戏
+像平常一样，配置好本局游戏（也会有Bot。非房主只能选择队伍），点击开始`START`即可进入游戏
 
 点击`加入`，分别有两个选项，一为通过联机大厅列表进入，一为直接使用LID进入房间
 
 点击联机列表的一个房间，可以查看房间信息并选择进入房间（房间如果设置了限制或为 RavenM国际版 创建的房间，或房主使用的兼容版EA27插件较为古老，`加入房间`按钮可能不可用）	
 
-加入后，如果房主没有开始游戏，你点击开始`START`后，你可能需要等待房主开局（左边的玩家列表中玩家名字的颜色即为准备状态（绿色=就绪，红色=为加载玩mod，灰色=游戏中处于死亡状态）
+加入后，如果房主没有开始游戏，你点击开始`START`后，你可能需要等待房主开局（左边的玩家列表中玩家名字的颜色即为准备状态（绿色=就绪，红色=为加载玩mod，灰色=游戏中处于重生cd）
 
 玩家加载完成mod后，玩家名左边会显示所处队伍，否则为已加载mod数
 
@@ -62,31 +62,36 @@ description: 适用于国内版RavenM联机插件的使用说明
 
 按`~`可标记地点
 
-小队指挥控件（`G`、`B`键）不可用于指挥小队内其他玩家
+小队指挥控件（`G`、`B`键）不可用于指挥小队内其他玩家（因为连添加都添加不了）
 
 右上角会显示Ping延迟值（房主的当然为0ms）
 
-计分面板会也会显示玩家击杀统计
+按`Tab`打开的计分面板会也会显示玩家击杀统计
 
 另附聊天框的可用命令（有些命令需要权限，`true`和`false`参数不分大小写）:
 | 命令 | 仅房主可用 | 描述 |
 |------|------|------|
 | `/help <命令名>` | 否 | 获取对应命令的帮助 |
-| `/nametags True\|False` | 是 | 是否启用玩家名牌 |
-| `/nametagsteamonly True\|False` | 是 | 是否仅启用同队伍的玩家名牌 |
+| `/nametags <True\|False>` | 是 | 是否启用玩家名牌 |
+| `/nametagsteamonly <True\|False>` | 是 | 是否仅启用同队伍的玩家名牌 |
 | `/kill <玩家名>` | 是 | 击杀对应名称的玩家 |
 | `/kick <玩家名>` | 是 | 将对应名称的玩家踢出房间 |
 | `/ban` | 是 | 将对应名称的玩家永久踢出房间 |
 | `/hostteammemberchange ?` | 是 |  |
 | `/hostteamchange ?` | 是 |  |
 
-示例如: `/nametags True`
-
-你也可以订阅mod[房主工具](https://steamcommunity.com/sharedfiles/filedetails/?id=3433624237)，有ui更方便
+示例如: `/nametags true`
 
 玩的开心！
 
-![游戏截图 Discord@Sofa#8366](https://steamuserimages-a.akamaihd.net/ugc/1917988387306327667/C90622D8C9B8B654E187AA5038A84759DFF050D9/)
+![游戏截图_Discord@Wolffe#6986](https://steamuserimages-a.akamaihd.net/ugc/1917988387306327667/C90622D8C9B8B654E187AA5038A84759DFF050D9/)
+
+
+## 附加mod 
+
+你也可以订阅mod[房主工具](https://steamcommunity.com/sharedfiles/filedetails/?id=3433624237)用来代替房间命令
+
+启用mutator后在游戏按`O`键打开面板，有ui更方便
 
 ## 常见问题
 
@@ -129,13 +134,15 @@ description: 适用于国内版RavenM联机插件的使用说明
 > **联机失败**
 >
 > 请检查：
-> - 游戏版本是否为最新（非`ravenm-compatible`分支版本，非任何`legacy-ea**`、`pervious-ea`、`test`分支版本，steam游戏开始按钮旁边写的就是当前游戏分支版本。建议非Beta版）
+> - 游戏版本是否为最新稳定版，非`ravenm-compatible`分支版本，非任何`legacy-ea**`、`pervious-ea`、`test`分支版本，建议非Beta版
+>
+>    steam游戏开始按钮旁边，或者游戏室属性的“`测试版`”选项卡写的就是当前游戏分支版本，为“`None 无`”即为最新稳定版。
 > - 是否安装了非动态汉化补丁（极少概率导致）
 > - 插件版本是否为最新，且不为国际版（否则请至[本站](/cn/Project/ravenm.md)下载）
 > - 网络是否稳定、可用（是否运行过你所安装的安全软件的网络修复工具来尝试修复，是否修改了hosts，是已经启动加速器）
 > - 如果是朋友间联机，请让朋友一并检查
 >
-> 如果仍无法解决问题，请提问[QQ群](/cn/Project/ravenm.md#常见问题)
+> 如果仍无法解决问题，可能为Steam问题，请等待一段时间，或提问[QQ群](/cn/Project/ravenm.md#常见问题)
 
 > **Ping延迟有点高**
 >

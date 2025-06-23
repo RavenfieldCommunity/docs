@@ -47,7 +47,7 @@ Official version of RavenM only.
 #### Manually
 
 #### Install BepInEX
-BepInEX is a cross-platform mod framework for Unity modding.
+BepInEX is a cross-platform framework for Unity modding.
 
 Refer [BepInEX docs](https://docs.bepinex.dev/articles/user_guide/installation/index.html).
 
