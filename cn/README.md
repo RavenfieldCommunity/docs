@@ -24,7 +24,7 @@ Ravenfield是一款由[SteelRaven7开发的FPS射击游戏](/cn/in-GAME/README.m
 ::: tip
 我们推荐你将本网站以PWA（通俗叫“网页APP”、“快应用”。这时候你的浏览器可能已经弹出了安装提示）安装到你的设备以加快访问速度
 
-如果网站有更新，打开PWA应用后右下角应该会提示手动更新（`新内容已就绪`）按钮
+如果网站有更新，打开PWA应用后右下角应该会提示手动更新（`新内容已就绪`）按钮或自动更新
 :::
 ------
 
@@ -74,7 +74,7 @@ link: /cn/RESOURCE.md
 ```card
 title: Ravenscript IDEA
 desc: 新一代RS开发snippet插件
-logo: \image\Projects\rsidea.001.png
+logo: /image/Project/rsidea.001.png
 link: /cn/Projects/rsidea.md
 ```
 

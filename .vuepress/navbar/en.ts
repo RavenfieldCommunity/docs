@@ -27,6 +27,10 @@ export const enNavbar = navbar([
 		  {
 		  text: "RavenM",
             link: "/en/Projects/ravenm"
+          },
+		  {
+            text: "Nuget Packages",
+            link: "/en/Projects/gamelibs"
           }
         ]
     },

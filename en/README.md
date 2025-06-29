@@ -83,6 +83,13 @@ link: /en/Projects/rsidea.md
 ```
 
 ```card
+title: Nuget Packages for Ravenfield
+desc: Plugin development dependencies for Ravenfield.
+logo: /image/Components.png
+link: /en/Projects/gamelibs.md
+```
+
+```card
 title: HavenM
 desc: Bot enhancement for Ravenfield
 logo: /image/Components.png

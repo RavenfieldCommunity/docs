@@ -11,7 +11,7 @@ category:
 | ----------- | ----------- | ----------- |
 | mesh | Mesh | 此MeshSkin的Mesh（模型） |  
 | materials | Material[] | 此MeshSkin模型所用材质 |  
-| teamMaterial  | int | 该MeshSkin对应的队伍（0为Eagle蓝队，1为Raven红队） |  
+| teamMaterial  | int | 该MeshSkin材质对应的队伍（`0`为Eagle蓝队，`1`为Raven红队） |  
 
 # MaterialTarget
 | 名称 | 类型 | 描述 |
