@@ -66,7 +66,6 @@ category:
 | reloadAudio | AudioSource | 装填音效(开启`advanceRaload`时忽略此项，此AudioSource建议放置于武器内的空物体上，参阅[RFCreator Project](/cn/Tutorials/README.md)) |  
 | changeFireModeAudio | AudioSource | 切换开火模式的音效 |  
 | reflectionSound  | enum.ReflectionSound | 回音效果（Auto=自动、None=无、Handgun=手枪、RifleSmall=小步枪、RifleLarge=大步枪、Launcher=炮、Tank=坦克） |  
-| keepScriptsOnThirdPersonImposter  | bool |  |  
 | reflectionVolume  | float | 回音效果大小 |  
 | walkBobMultiplier  | float | 走路时晃动倍数 |  
 | sprintBobMultiplier  | float | 跑步时晃动倍数 |  
@@ -76,10 +75,10 @@ category:
 | allowArmMeshReplacement  | bool |  是否允许实际游戏时玩家皮肤替换手部皮肤 |  
 | parentWeapon | [Weapon](./Weapon.md) | 父武器（有子武器时可用，子武器就是Weapon物体里再套一个Weapon） |  
 | useParentWeaponSightModes | bool | 使用父武器的`sightModes` |  
-| ammo | int | 武器装载的弹药数（如武器无此弹药逻辑则设为-1） |  
+| ammo | int | 武器装载的弹药数（如武器无弹药逻辑则设为-1） |  
 | isLocked  | bool | 是否该锁定武器 |  
 | auto  | bool | 是否为自动武器（影响开火是否为连发还是单发，影响开火音效是即时停止还是直接播放完音效） |  
-| spareAmmo  | int | 武器备用的弹药数（如武器无此弹药逻辑则设为-1 |  
+| spareAmmo  | int | 武器备用的弹药数（如武器无弹药逻辑则设为-1) |  
 | resupplyNumber  | int | 每次从补给箱补充的弹药数 |  
 | reloadTime  | float | 装填所需时间（启用`advanceReload`时不可用） |  
 | cooldown  | float | 开火时连续两发子弹的间隔（开火速度，值越小越快） |  
