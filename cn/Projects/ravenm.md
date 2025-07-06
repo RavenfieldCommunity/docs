@@ -4,7 +4,9 @@ description: 适用于国内Ravenfield玩家的RavenM联机插件
 ---
 
 ::: center
-![QQGuild](https://img.shields.io/badge/QQ频道-9pmc179t29-blue?style=flat-square) ![插件QQ群](https://img.shields.io/badge/插件QQ群-710832844-blue?style=flat-square) ![插件QQ群](https://img.shields.io/badge/插件QQ群-677540488-blue?style=flat-square)
+![QQ频道号](https://img.shields.io/badge/QQ频道-9pmc179t29-blue?style=flat-square) ![插件QQ群号](https://img.shields.io/badge/插件QQ群-710832844-blue?style=flat-square) ![插件QQ群号](https://img.shields.io/badge/插件QQ群-677540488-blue?style=flat-square)
+
+![最新版本号](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&logo=GitHub&style=flat-square&url=https://gitee.com/api/v5/repos/RedQieMei/Raven-M/releases/372833&query=%24.name)
 :::
 
 ## 描述
@@ -96,7 +98,7 @@ RavenM联机插件国内版（授权），是国内社区在原RavenM国际版�
 >
 > 记得在设置里启用默认关闭的github代理:
 >
-> ![](https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.007.png)
+> ![]steamcommunity302设置页面截图(https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.007.png)
 
 > **第一个安装方式的备用方法？**
 >

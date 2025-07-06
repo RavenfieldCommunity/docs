@@ -11,13 +11,13 @@ description: Ravenfield社区的其他项目（非本站）
 
 ## Reshade
 
-一个对任何unity游戏进行重着色的插件，获得不一样的画面风格
+一个对任何游戏进行重着色的插件，获得不一样的画面风格（不要理解为单独给RF的）
 
 链接: [官网](https://reshade.me/)
 
 ## LETMS
 
-工坊模组，Tank扩展模块
+工坊模组，坦克扩展模块
 
 链接：[Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2798038529)
 
