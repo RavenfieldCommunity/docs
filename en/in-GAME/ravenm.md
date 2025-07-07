@@ -1,4 +1,5 @@
 ---
+title: RavenM Usage 
 description: Guide for how to use RavenM
 ---
 
@@ -18,9 +19,7 @@ When you can see a line of RavenM message at the left-down corner of game window
 
 **Remember to check updates on our github page, re-installing enquals updating.**
 
-## Configure lobby
-
-### Join&create a lobby
+## Join&create a lobby
 
 Open Instant Action Menu, press `M` to open the multi-player ui:
 
