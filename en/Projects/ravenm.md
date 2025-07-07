@@ -69,4 +69,45 @@ Now start the game, there will be a line of build id at the down-left corner of 
 
 Refer [RavenM Usage Guide](/en/in-GAME/ravenm.md)
 
+### Uninstallation
+
+#### By script on windows 
+
+Copy the following command and open [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) or [powershell](https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.5), paste it and press `Enter` to run:
+> `$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/uninstall_bepinex-utf8.ps1'));Read-Host;`
+
+#### Manually
+
 ## Q&A
+
+> **Where I can find others who playing RavenM or give some suggestions for RavenM?**
+>
+> Join the discord server below the page title.
+>
+> For community edition suggestions, you can go [here](https://discord.com/channels/458403487982682113/1370918742795616276) after joining the server.
+
+> **What is the differences between RFMP and RavenM**
+>
+> RFMP (or RFMM, full name is “Ravenfield: Multiplayer Mod”, at [Steam store](https://store.steampowered.com/app/1104390)) is a community-made game with multi-play feature, independent from the vanilla game.
+>
+> It looks like vanilla game because SteelRaven7 has give some original game resources to it. (and RavenM is a truly plugin made for vanilla game)
+>
+> RFMP released on July 11, 2019, last updated on [May 31,2020 (from SteamDB)](https://steamdb.info/app/1104390/patchnotes/)
+>
+> At official discord server of RFMP (no post link provided), the dev team announced this project stopped developing in 2020, and set the all channels to read-only, suggesting players to use RavenM for a better choice.
+>
+> RFMP had its wonderful lifetime, but because of bad game qualitiy, cheat problems, then mostly no one play on it sooon + no updates + lots of bad ratings + close online server forever.
+>
+> It was wonder of Ravenfield game community.
+
+
+> **Windows Defender raised an red flag for it?**
+> 
+> Common problem, just allow it.
+
+
+> **Can I run it on pirated game?**
+>
+> Yes, but we won't provide the solutions for you.
+>
+> Some problems take skills to work out.

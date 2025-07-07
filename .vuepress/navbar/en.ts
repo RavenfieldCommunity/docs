@@ -13,6 +13,15 @@ export const enNavbar = navbar([
         text: "Component Reference",
         link: "/en/Components/"
     },
+    {
+        text: "in-Game Tutorials",
+        children: [
+          {
+            text: "RavenM Usage",
+            link: "/en/in-GAME/ravenm"
+          }
+        ]
+    },
 	{
         text: "Community Project",
         children: [

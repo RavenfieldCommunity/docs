@@ -53,6 +53,9 @@ Yes add property `IncludeAssets="compile"` so that the game dlls will not be exp
   - `0.32.1`
 
       The `Assembly-CSharp.dll` was from `test` branch bulid of EA32, though already some changes in game since this version's upload.
+  - `0.32.2`
+  
+      From beta branch on July 6, 2025
 
 ### `Ravenfield.ThirdpartyLibs`
 

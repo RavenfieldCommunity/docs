@@ -76,7 +76,7 @@ description: 适用于国内版RavenM联机插件的使用说明
 | `/nametagsteamonly <True\|False>` | 是 | 是否仅启用同队伍的玩家名牌 |
 | `/kill <玩家名>` | 是 | 击杀对应名称的玩家 |
 | `/kick <玩家名>` | 是 | 将对应名称的玩家踢出房间 |
-| `/ban` | 是 | 将对应名称的玩家永久踢出房间 |
+| `/ban <玩家名>` | 是 | 将对应名称的玩家永久踢出房间 |
 | `/hostteammemberchange ?` | 是 |  |
 | `/hostteamchange ?` | 是 |  |
 
