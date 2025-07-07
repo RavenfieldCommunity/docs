@@ -55,3 +55,31 @@ Click `JOIN`, one way is joining from lobby list, another one is from lobby id.
 Select a lobby, you can see the info and join the lobby (if the plugin and game is different, you can't join it).	
 
 Colors of member name stand for member status (`green`=ready，`red`=loading mods, `grey or yellow`=in respawn cd time).
+
+At the left side of member names, there is the loaded mods count, or selected team after all mod loaded.
+
+You can right click a member's name to copy his user id.
+
+If the game has already started, you will enter the game directly.
+
+Besides, the mods that host used will always loaded when joining the lobby, even you launch the game with no mods mode. **So it is a good skill to launch the game with this mode if your friends invite you and it can reduce loading time.**
+
+## In-game
+
+Press `P` to show/hide chat field, press `Y` to send a global message (`Enter` is send, and `Esc` is close the text box), press `U` to send in team(Eagle\\Raven).
+
+Press `Enter`(or `Esc` in community edition) to open lobby list.
+
+Press `CapsLock` to send voice messages (depending on Steam, positional)
+
+Press `F7` will show something for debug.
+
+Press `~` to place a marker to a place.
+
+Squad order (`G`, `B` key) isn't avaliable between real players and players.
+
+Left-up corner is the ping status.
+
+Press `Tab` to show player scoreboard.
+
+Available commands（Some commands need permission, `true`=`on` and `false`=`off` in community edition, and word .
