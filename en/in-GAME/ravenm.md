@@ -87,9 +87,8 @@ Available commands（Some commands need permission, `true`=`on` and `false`=`off
 |------|------|------|
 | `/help [name]` | No | Get all available commands or specific command's details |
 | `/nametags (on|off|team)` (in community edition is `/tags`) | Yes | Enable player nametags or only for same team |
-| `/kill (<player steamid>|<player steam name>)` | Yes | Kill specific bot or player |
-| `/ban (<player steamid>|<player steam name>)` | Yes | Ban player out of lobby (applied before the lobby is closed) |
-
+| `/unban (<player steamid>|<player steam name>)` | Yes | Undo `/ban` |
+| `/tp` | Yes | ? |
 
 e.g. `/nametags true`
 
