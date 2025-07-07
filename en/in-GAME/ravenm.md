@@ -128,9 +128,9 @@ Have fun!
 
 > **Big bug caused while I playing vanilla game**
 >
-> RavenM's bug or RavenM isn't really compatible with current game. Unload or update RavenM, please.
+> RavenM's bug or RavenM isn't really compatible with current game. Unload or update RavenM, or raise bug report, please.
 
-> **How can I disable RavenM **
+> **How can I disable RavenM**
 >
 > Open Steam add `-noravenm` to `Advanced launching arguments` (If there are already other things, just add a space first), remember to remove it when you want enable RavenM :
 >
@@ -138,14 +138,15 @@ Have fun!
 >
 > Or open`Ravenfield\BepInEX\plugins` directory, rename `RavenM.dll` to `RavenM.dall`, anyway the file extension name shouldn't include “`dll`“.
 
-> **Failed to mutil-play with others**
+> **Failed to muitl-play with others**
 >
 > Please check:
 > - Is your game is latest stable version, instead of `ravenm-compatible` branch, any `legacy-ea**`, `pervious-ea`, or `test` branch version, non-Beta version is suggested.
 >
 >    In steam, next to the `START` button is the game branch tag, click it or goto Game `properties` goto `Beta test` to set your game to stable branch, the choice "`None`" is stable branch.
 > - Is your RavenM is latest version, otherwise update it.
-> - Is your network high-quality enough and stable, sometimes have something to do with Steam if you sure there isn't other problem and you can muitl-play successfully recently. Wait until a certain time if it is Steam's problem.
+> - Is your network high-quality enough and stable.
+>    Sometimes have something to do with Steam if you sure there isn't other problem and you can muitl-play successfully last time. Wait until a certain time if it is Steam's problem.
 > - Tell your friends to check together.
 >
 > If these solutions aren't helpful, please ask for help in discord server or raise a bug report.
