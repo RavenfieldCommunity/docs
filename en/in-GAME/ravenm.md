@@ -82,7 +82,10 @@ Left-up corner is the ping status.
 
 Press `Tab` to show player scoreboard.
 
-
+Available commands（Some commands need permission, `true`=`on` and `false`=`off` in community edition, and word case ignored) :
+| command names | OP access need? | Details |
+|------|------|------|
+| `/help [name]` | No | Get all available commands or specific command's details |
 
 e.g. `/nametags true`
 
