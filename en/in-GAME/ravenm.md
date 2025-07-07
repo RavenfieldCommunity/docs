@@ -67,7 +67,7 @@ Besides, the mods that host used will always loaded when joining the lobby, even
 
 ## In-game
 
-Press `P` to show/hide chat field, press `Y` to send a global message (`Enter` is send, and `Esc` is close the text box), press `U` to send in team(Eagle\Raven).
+Press `P` to show/hide chat field, press `Y` to send a global message (`Enter` is send, and `Esc` is close the text box), press `U` to send in team(Eagle\\Raven).
 
 Press `Enter`(or `Esc` in community edition) to open lobby list.
 
@@ -77,7 +77,7 @@ Press `F7` will show something for debug.
 
 Press `~` to place a marker to a place.
 
-Squad order (G`, `B` key) isn't avaliable between real players and players.
+Squad order (`G`, `B` key) isn't avaliable between real players and players.
 
 Left-up corner is the ping status.
 
@@ -91,7 +91,7 @@ Available commands（Some commands need permission, `true`=`on` and `false`=`off
 | `/kill (<player steamid>|<player steam name>)` | Yes | Kill specific bot or player |
 | `/ban (<player steamid>|<player steam name>)` | Yes | Ban player out of lobby (applied before the lobby is closed) |
 | `/unban (<player steamid>|<player steam name>)` | Yes | Undo `/ban` |
-| `/tp ` | Yes |  |
+| `/tp ` | Yes | ? |
 
 e.g. : `/nametags true`
 
