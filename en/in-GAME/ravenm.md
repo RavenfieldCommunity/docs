@@ -66,6 +66,29 @@ Besides, the mods that host used will always loaded when joining the lobby, even
 
 ## In-game
 
+Press `P` to show/hide chat field, press `Y` to send a global message (`Enter` is send, and `Esc` is close the text box), press `U` to send in team(Eagle or Raven).
+
+Press `Enter`(or `Esc` in community edition) to open lobby list.
+
+Press `CapsLock` to send voice messages (depending on Steam, positional)
+
+Press `F7` will show something for debug.
+
+Press `~` to place a marker to a place.
+
+Squad order (`G`, `B` key) isn't avaliable between real players and players.
+
+Left-up corner is the ping status.
+
+Press `Tab` to show player scoreboard.
+
+
+
+e.g. `/nametags true`
+
+Have fun!
+
+![Screenshot_Discord@Wolffe#6986](https://steamuserimages-a.akamaihd.net/ugc/1917988387306327667/C90622D8C9B8B654E187AA5038A84759DFF050D9/)
 
 ## Q&A
 
