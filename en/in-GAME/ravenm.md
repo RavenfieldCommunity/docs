@@ -40,7 +40,7 @@ Props details:
 | `SHOW ON LOBBY LIST` | Show the lobby in public lobby list? otherwise others can only join it by lobby id |
 | `JOINABLE MIDGAME ` | Can players join the game after the game is started?( Yes default is off because we aren't sure if it will cause extra bugs) |
 | `ENABLE GOD INSPECT ` | Can players press `F8` to open inspect camera? |
-| `ENABLE WALLHACK ` | Can players press `F7` to show others position in game? |
+| `ENABLE WALLHACK ` | Can players press `F10` to show others' position in game? |
 | `NAMETAGS ` | Whether to show a nametag above each player's head, and is it only for same team(Eagle/Raven)? |
 | `LOBBY NOTE ` | Additional message for this lobby, will show in lobby info before join the lobby |
 
@@ -78,7 +78,7 @@ Press `~` to place a marker to a place.
 
 Squad order (`G`, `B` key) isn't avaliable between real players and players.
 
-Left-up corner is the ping status.
+Left-up corner is the ping status, higher is your network worse.
 
 Press `Tab` to show player scoreboard.
 
@@ -87,7 +87,7 @@ Available commands（Some commands need permission, `true`=`on` and `false`=`off
 |------|------|------|
 | `/help [name]` | No | Get all available commands or specific command's details |
 | `/nametags (on|off|team)` (in community edition is `/tags`) | Yes | Enable player nametags or only for same team |
-| `/kill .` | Yes | Kill specific bot or player |
+| `/kill ?` | Yes | Kill specific bot or player |
 | `/ban ?` | Yes | Ban player out of lobby (applied before the lobby is closed) |
 | `/unban ?` | Yes | Undo `/ban` |
 | `/tp` | Yes | ? |
@@ -138,7 +138,7 @@ Have fun!
 >
 > Or open`Ravenfield\BepInEX\plugins` directory, rename `RavenM.dll` to `RavenM.dall`, anyway the file extension name shouldn't include “`dll`“.
 
-> **Failed to muitl-play with others**
+> **Failed to multi-play with others**
 >
 > Please check:
 > - Is your game is latest stable version, instead of `ravenm-compatible` branch, any `legacy-ea**`, `pervious-ea`, or `test` branch version, non-Beta version is suggested.
@@ -154,3 +154,7 @@ Have fun!
 > **Ping is too high**
 >
 > Your network or Steam server problem(problem of Steam is rare), use network booster or wait until a certain time.
+
+> **Where can I get RavenM's chinese build (or "chinam")**
+>
+> [Here](/cn/Projects/ravenm.md), not suggested to use it as it provides no English language support, but it updates more faster than Official RavenM now.
