@@ -86,7 +86,7 @@ Available commands（Some commands need permission, `true`=`on` and `false`=`off
 | command names | OP access need? | Details |
 |------|------|------|
 | `/help [name]` | No | Get all available commands or specific command's details |
-| `/nametags (on|off|team)` (in community edition is `/tags`) | Yes | Enable player nametags or only for same team |
+| `/nametags (on\|off\|team)` (in community edition is `/tags`) | Yes | Enable player nametags or only for same team |
 | `/kill ?` | Yes | Kill specific bot or player |
 | `/ban ?` | Yes | Ban player out of lobby (applied before the lobby is closed) |
 | `/unban ?` | Yes | Undo `/ban` |
@@ -146,7 +146,7 @@ Have fun!
 >    In steam, next to the `START` button is the game branch tag, click it or goto Game `properties` goto `Beta test` to set your game to stable branch, the choice "`None`" is stable branch.
 > - Is your RavenM is latest version, otherwise update it.
 > - Is your network high-quality enough and stable.
->    Sometimes have something to do with Steam if you sure there isn't other problem and you can muitl-play successfully last time. Wait until a certain time if it is Steam's problem.
+>    Sometimes have something to do with Steam if you sure there isn't other problems and you can multi-play successfully last time. Then wait until a certain time if it is surely Steam's problem.
 > - Tell your friends to check together.
 >
 > If these solutions aren't helpful, please ask for help in discord server or raise a bug report.
