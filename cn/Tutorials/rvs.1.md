@@ -27,12 +27,10 @@ Ravenscript可以控制Ravenfield和Unity引擎的某些部分
 
 3. 安装vscode-lua扩展[![Install in VS Code](https://img.shields.io/badge/VS%20Code-Install-blue?style=for-the-badge&logo=visualstudiocode "Install in VS Code")](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)并安装[RSIDEA](/cn/Project/rsidea.md)
 
-4. 安装C#扩展[![Install in VS Code](https://img.shields.io/badge/VS%20Code-Install-blue?style=for-the-badge&logo=visualstudiocode "Install in VS Code")](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
-
 5. 配置工作区的.vscode\settings.json为：
 ```json 
 {
-    //配置文件扩展名关联
+    //配置文件扩展名关联，可跳过
     "files.associations": {
         "*.txt": "lua",
     },
@@ -51,10 +49,10 @@ Ravenscript可以控制Ravenfield和Unity引擎的某些部分
 ## 1.0 文件结构
 标准的RS脚本一般分为3个结构：
 ```lua
-#1 注册RS父table，这样你才能从里面派生方法并让游戏执行
+#1 注册RS父table，这样你才能从里面派生方法，让游戏执行
 behavior("test")
 
-#2 local变量，（现在这一步是可选的）
+#2 local以声明变量，（现在这一步是可选的）
 local var1
 
 #3 定义事件方法体
@@ -67,14 +65,18 @@ function test: Update ()
 end
 ```
 
-在此示例中，第一部分的作用是向Ravenscript解释器要求注册一个名为`test`的table（应与[ScriptedBehaviour](/cn/Components/ScriptedBehaviour.md)的`behaviour`的值一致，或与文件名一致），调用此方法后解释器会在当前环境中创建一个名为`test`的table，这个table派生于[ScriptedBehaviour](http://ravenfieldgame.com/ravenscript/api/ScriptedBehaviour.html)，用于定义self指针包含的内容方便调用，并注复制test外部的local（即第二步定义的局部变量）进`test`
+在此示例中，第一部分的作用是向Ravenscript解释器要求注册一个名为`test`的table（应与[ScriptedBehaviour](/cn/Components/ScriptedBehaviour.md)的`behaviour`的值一致，或与文件名一致）
 
-在第二部分中，在外部定义变量而不是在方法体内定义的原因时各个方法体的局部变量不可互相访问，在外部定义就可以直接通过self指针（例如`self.var1`）在table方法体内部全局读写变量（但因为解释器的逻辑，你不能在此处使用RS的Api初始化值？）
+调用此方法后解释器会在当前环境中创建一个名为`test`的table，这个table派生于[ScriptedBehaviour](http://ravenfieldgame.com/ravenscript/api/ScriptedBehaviour.html)，用于定义self指针包含的内容方便调用，并注册复制test外部的local（即第二步定义的局部变量）进`test`
+
+非一般类型（数字、字符）的变量必须在方法体内赋值
+
+在第二部分中，在外部定义变量而不是在方法体内定义的原因时各个方法体的局部变量不可互相访问，在外部定义就可以直接通过self指针（例如`self.var1`）在table方法体内部全局读写变量
 
 在第三部分中，你可以选择从注册的table派生一些一些方法，解释器会在游戏运行期间调用它们，
 `Awake`、`OnEnable`、`OnDisable`、`OnDestroy`、`Start`、`Update`、`LateUpdate`、`FixedUpdate`、`OnAnimatorIK`这些都是默认可用的方法名，他们的意义与执行顺序与Unity C#的一致，你可以参考[Unity文档](https://docs.unity3d.com/cn/2020.3/Manual/ExecutionOrder.html)
 
-至于为什么Ravenscript与Unity C#一样，不像一般类似python编程一样直接在文件里贴代码，你可以自行探讨unity C#的工作流程
+至于为什么Ravenscript与Unity C#一样，不像一般类似python编程一样直接在文件里贴代码，你可以自行探索unity C#的工作流程（一个脚步本的生命周期），此处不再赘述
 
 ## 1.1 文档使用方法
 
@@ -83,9 +85,15 @@ end
 ### 类Class
 尽管文档没有标注，首先你仍需要明白文档中那些classes（其实classes这个名称并不准确？）可以分别是怎么用的
 
-即哪些类已经实例化或者本身为静态可以直接作为api对象进行调用（如[Player](http://ravenfieldgame.com/ravenscript/api/Player.html),它可以直接在脚本里`Player.actor.health =9999`这样直接调用 ）
+即哪些类已经实例化或者本身为静态，有确定性，可以直接作为api对象进行调用
 
-哪些是作为“数据类型”需要先实例化这个类才能使用（如[类Actor](http://ravenfieldgame.com/ravenscript/api/Actor.html)，它需要先在一个Bot的GameObject上通过`GameObject.GetComponentInParent(Actor)`，“get”了这个类才能使用 ）
+如[Player](http://ravenfieldgame.com/ravenscript/api/Player.html)，玩家管理类，它可以直接在脚本里`Player.actor.health =9999`这样直接调用
+
+哪些是作为“数据类型”，有不确定性，需要先实例化（获取这个类型才能使用
+
+如[类Actor](http://ravenfieldgame.com/ravenscript/api/Actor.html)，无法直接调用，你要也不能直接确定是哪个bot
+
+它需要先在一个Bot的GameObject上通过`GameObject.GetComponent(Actor)`，“get”了这个类才能使用 
 
 那些是作为enum枚举类使用(如[AudioMixer](http://ravenfieldgame.com/ravenscript/api/AudioMixer.html)，用于枚举Audio Source的Output配置)
 
@@ -95,7 +103,7 @@ end
 
 点击一个类的文档，在Details一栏，你会发现这样的一些文本，下面是这些类成员的描述
 
-它们分为构建函数（Constructors，部分，参考C#）、成员属性（Members，参考C#）、成员方法（Methods，部分，参考C#）、成员事件（Events，部分）
+它们分为构建函数（Constructors，部分，参考C#）、成员属性（Members，参考C#）、成员方法（Methods，参考C#）、成员事件（Events，部分）
 
 构建函数用于实例化一个新类，需要按函数重载传入一些初始值，之后函数会返回实例化的新类
 
@@ -108,8 +116,8 @@ float表示这个属性的类型是float浮点数，balance表示这个属性的
 可能你也会看到一些诸如const、static这样的关键字（类似于“标识符”），他们的含义如下：
 | 关键字 | 含义 |
 |------|------|
-| const | 表示这个属性是常量，指向的内容不可更改（即使玩家层面可见的变更，但指向的内容里的东西可以修改） |
-| static | 静态属性，无论如何类实例化，返回值不受实例的类影响，始终一致（不需要GetComponent即可使用） |
+| const | 表示这个属性是常量，指向的内容不可更改，但指向的内容里的东西可以修改 |
+| static | 静态属性，无论如何类实例化，返回值不受实例的类影响，始终一致（即直接就能用） |
 
 在成员方法中，如[这个](http://ravenfieldgame.com/ravenscript/api/Actor.html#_CPPv4N5Actor14CanBeDamagedByE6Weapon)：
 
@@ -117,7 +125,7 @@ float表示这个属性的类型是float浮点数，balance表示这个属性的
 
 方法名前的是方法返回的数据的类型（如果是void则表示无返回值），`seat`表示的是参数，前头的`Seat`表示的是这个参数的类型
 
-一个方法可能有多个重载，你可以按需求使用合适的重载
+一个方法可能有多个重载（同一个方法名可以使用不同参数），你可以按需求使用合适的重载
 
 在成员事件中，如[这个](http://ravenfieldgame.com/ravenscript/api/Actor.html#_CPPv4N5Actor12onTakeDamageE)：
 
@@ -133,11 +141,11 @@ function test: Start ()
     --注册事件
     --`self`指触发事件时调用方法所在的table(ScriptedBehavior)，如果你已经获取了别的ScriptedBehavior，你也可以将self替换为ScriptedBehavior所在变量
     --`onTakeDamage`指触发事件时调用self所在方法的方法名，不一定非要填写属性ScriptEvent的属性名
-    Player.actor.onTakeDamage.AddListener(self, "onTakeDamage")
+    Player.actor.onTakeDamage.AddListener(self, "onTakeDamageK")
 end
 
 --触发事件时就会调用这个方法
-function test: onTakeDamage ()
+function test: onTakeDamageK ()
 
 end
 ```

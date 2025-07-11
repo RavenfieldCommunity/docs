@@ -18,7 +18,11 @@ category:
 
 或者直接使用`RFTools\Prefabs\Map Elements\Must Have\Pathfinding`内的prefab(推荐，名字的不同对应不同类型的寻路盒，可在下面修改，不必纠结)
 
+然后生成NAV MESH即可
+
 ## 注释
+
+在生成NAV时，NAV能覆盖到的地方都是白色，黑色、黄色、红色 、蓝色都有问题
 
 ## 变量
 | 名称 | 类型 | 描述 |

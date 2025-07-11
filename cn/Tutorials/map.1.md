@@ -10,7 +10,11 @@ category:
 ## 0.0 构思
 我们同样需要想一下怎么做我们的地图
 
-首先确定地图大小，小的如[Free Hold](https://steamcommunity.com/sharedfiles/filedetails/?id=1861292254)，小空间，动线（活动路径）灵活，速战速决，大的如（不知道？），地图大，文件大小也大，加载时间也长，适合好友约好联机，跑图
+首先确定地图大小
+
+小的如[Free Hold](https://steamcommunity.com/sharedfiles/filedetails/?id=1861292254)，小空间，动线（活动路径）灵活，速战速决
+
+大的如[Al Brashal]()，地图大，文件大小也大，加载时间也长，适合好友约好联机，长时间跑图
 
 然后是地图活动路线，小地图务必确保多路线与路线灵活性，免得被围殴
 
@@ -20,7 +24,7 @@ category:
 
 ## 1.0 制作所需资源
 
-一般来说，地图仅包含的模型
+一般来说，地图仅包含模型
 
 细节上，另有音效、以及[粒子效果](https://docs.unity.cn/cn/2020.3/Manual/ParticleSystems.html)（用于模拟烟雾、火焰）
 
@@ -45,6 +49,8 @@ category:
 
 对于一些自定义模型，若要实现特定功能，按[文档](/cn/Components/README.md#地图)说明，添加组件即可
 
+普通模型直接添加，注意如果这个模型是路线的一部分，应确保这里玩家比较好走
+
 ## 2.2 寻路Pathfinding配置
 
 不像游戏的Map Editor，在Unity你需要自行配置Pathfinding Box寻路盒
@@ -52,6 +58,8 @@ category:
 参考[PathfindingBox](/cn/Components/PathfindingBox.md)
 
 其他的Pathfinding工具参见[组件文档](/cn/Components/README.md#地图)
+
+一定要确保NAV覆盖到该覆盖的位置
 
 ## 2.3 地图特性索引
 
@@ -65,11 +73,11 @@ category:
 
 首先，你需要分清，Trigger组件分为"触发器"组件与"动作器"组件（官方没有注明）
 
-触发器组件用于“接受刺激”,即接受到一定的条件或发生的事件，就将信息传导到动作器组件，告诉动作器组件去执行它的定义操作（这个“它”指动作器组件）的操作
+触发器组件用于“接受刺激”，即接受到一定的条件或发生的事件，就将信息传导到动作器组件，告诉动作器组件去执行它的定义的操作（这个“它”指动作器组件），如检查玩家是否走到了某个区域
 
 触发器组件的标志是组件名包含"TriggerOn"，或由[TriggerBaseComponent](/cn/Components/TriggerBaseComponent.md)派生，或组件选项中包含"`Sender`"字段（这个字段是用来放动作器组件的）
 
-动作器组件用于接受触发器组件的信息，执行玩家在动作器组件上定义的操作，例如结束游戏，跳转场景
+动作器组件用于接受触发器组件的信息，执行在动作器组件上定义的操作，例如结束游戏，跳转场景
 
 动作器组件的标志与触发器组件的标志的相反，由[TriggerReceiver](/cn/Components/TriggerReceiver.md)派生
 

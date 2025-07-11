@@ -20,7 +20,11 @@ category:
 
 按大多数MOD采用的方案，都是用判断`Player.actor.name`是否等于"`Unknown Player`"？来确定游戏是否为盗版
 
-使用这原理的缘由是因为这是游戏提供的唯一一个可用Api（毕竟你游限制了外来C#的导入，C#使用SteamworksAPI进行盗版验证会更加地准确。即使是在正版环境，如果Steam不在后台，`Player.actor.name`仍等于"`Unknown Player`"，这是一个问题。此处仍可以通过***dll进行规避
+使用这原理的缘由是因为这是游戏提供的唯一一个可用Api（毕竟你游限制了外来C#的导入，C#使用SteamworksAPI进行盗版验证会更加地准确）
+
+即使是在正版环境，如果Steam不在后台，`Player.actor.name`仍等于"`Unknown Player`"，这是一个问题
+
+此处仍可以通过某种方法进行规避
 
 而且当Steam在后台时（即正版的运行环境）时，Steamworks API会传入用户名到游戏来填充`Player.actor.name`，即使Steam用户名未设置似乎也不会为"`Unknown Player`"？
 
@@ -50,7 +54,7 @@ end
 
 如阻止玩家进行游戏（血量清零、删除地图场景内所有物体）：
 ```lua
-Player.actor.MoveActor(Vector3(0,0,0)) --阻止玩家移动
+Player.actor.Freeze() --阻止玩家移动
 
 Player.actor.health = 0 --玩家血量清零
 

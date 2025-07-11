@@ -121,7 +121,7 @@ XUnity.AutoTranslator是一个由BepInEX官方开发人员开发的一个游戏�
 
 - `tmpchinesefont` 微软雅黑
 - `arialuni_sdf_u2019` Noto CJK
-- `wenquanyi_bitmap_song_12px_sdf` 文泉驿点阵 12px (推荐，最小)
+- `wenquanyi_bitmap_song_12px_sdf` 文泉驿点阵 12px (推荐，最小，字库不全问题可能日后修复)
 
 你可以在以下网站下载我们提供的字体补丁：
 
@@ -189,7 +189,7 @@ Proton对macos的官方支持可能在未来发布，在此之前请自行在bin
 >
 > 只要是个脚本大部分情况下像Windows Defender、360都会提示（一般用户很少用到powershell，所以干脆全部拦截）
 >
-> 放行即可，如果你不信任此命令也可以手动安装
+> 放行即可，如果你不信任此命令也可以手动安装，或者使用下面的备用方法安装
 >
 > 脚本使用powershell编写，命令中以“`https://`”开头的即是脚本链接，你可以自行检查，内容均为明文
 
