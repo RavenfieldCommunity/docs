@@ -218,6 +218,8 @@ Proton对macos的官方支持可能在未来发布，在此之前请自行在bin
 > ```batch
 > powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/uninstall_bepinex-utf8.ps1'));"
 > ```
+>
+> 手动卸载就按手动安装的步骤反过来
 
 > **Steam启动时奇奇怪怪的问题？**
 >

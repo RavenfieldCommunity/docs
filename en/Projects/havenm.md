@@ -24,12 +24,16 @@ It belongs to [Standt_Up](https://steamcommunity.com/profiles/76561198296228036)
 
 Refer Github
 
+```batch
+powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_havenm-utf8.ps1'));Read-Host;"
+```
+
 Re-installing equals updating!
 
 ::: caution
 **DO NOT USE THE GAME'S BETA OR ANY NON-STABLE BRANCH!**
 
-AND DO NOT download the dll from *[Archive](https://github.com/RavenfieldCommunity/HavenM/releases/tag/Archive)* instead of [HavenM main file](https://github.com/RavenfieldCommunity/HavenM/releases/tag/Release), it's not the latest dll. 
+AND **DO NOT** download the dll from *[Archive](https://github.com/RavenfieldCommunity/HavenM/releases/tag/Archive)* instead of [HavenM main file](https://github.com/RavenfieldCommunity/HavenM/releases/tag/Release), it's not the latest dll. 
 :::
 
 ## Install by command
@@ -117,6 +121,8 @@ On the right-hand side of the Ravenfield in steam library page, click the `Setti
 > To let players can replace the dll ("install HavenM"), configure other things just by one step, and the players don not need to download any extra files, we made a installer using powershell
 > 
 > We didn't make a exe installer because we think a unknown exe is more dangerous than a above-board script and firewalls may dislike a exe more.
+>
+> And for dll files, it maybe also raised red flag. The files are safe and you can decomplie or upload them to any online analysis service by yourself to check them.
 
 > **Can HavenM run on mac/linux?**
 >
@@ -132,11 +138,11 @@ On the right-hand side of the Ravenfield in steam library page, click the `Setti
 
 > **My game crash on splash screen**
 >
-> Check the game isn't on `beta` or `test` or any non-stable branch, then reinstall HavenM by command or manually or verify imegrity of game files on Steam later
+> Check the game isn't on `beta` or `test` or any non-stable branch, then reinstall HavenM by command or manually or uninstall HavenM, verify imegrity of game files on Steam later.
 
 > **Error "\* is not recongnized as the a name of cmdlet ..."**
 >
-> The command cannot be run on Windows 7. 
+> The command cannot be run on Windows 7. There maybe also this bug on windows 11, will fix it.
 
 
 ## Support Us

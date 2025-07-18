@@ -217,7 +217,7 @@ end
 
 然后实际测试，发现没有Bug，然后继续添加下一个功能，不断重复这个过程，直到完成：
 ```lua 
-behaviour("QuickTreat"
+behaviour("QuickTreat")
 
 local timer = 0
 local cooldown  --冷却时间
@@ -245,7 +245,7 @@ function QuickTreat:Update()
 		if Time.time >= self.timer then
             Player.actor.ResupplyHealth(Player.actor.maxHealth * self.ratio)
 			self.timer = Time.time + self.cooldown
-			Overlay.ShowMessage("[QuickTreat]Sucess",0.15)  --调用Overlay.ShowMessage()来显示一行信息，后半部分的数值是消失延迟
+			Overlay.ShowMessage("[QuickTreat]Sucess",0.15)  --调用 Overlay.ShowMessage() 来显示一行信息，后半部分的数值是消失延迟
         else
             Overlay.ShowMessage("[QuickTreat]Failure,Need delay",0.15)
 		end
@@ -282,3 +282,5 @@ end
 否则尝试迁移Unity项目位置
 
 ## 1.6 Debug
+
+哎woc新版本debug好像废了那我就不讲了吧（

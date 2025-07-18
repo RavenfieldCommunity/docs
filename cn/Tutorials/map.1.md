@@ -14,7 +14,7 @@ category:
 
 小的如[Free Hold](https://steamcommunity.com/sharedfiles/filedetails/?id=1861292254)，小空间，动线（活动路径）灵活，速战速决
 
-大的如[Al Brashal]()，地图大，文件大小也大，加载时间也长，适合好友约好联机，长时间跑图
+大的如[巴士拉]()，地图大，文件大小也大（？），加载时间也长，适合好友约好联机，长时间跑图
 
 然后是地图活动路线，小地图务必确保多路线与路线灵活性，免得被围殴
 
@@ -39,7 +39,7 @@ category:
 
 然后将你的模型放在地图上布置好
 
-## 2.1 配置必需项与组件
+## 2.1 配置所需项与组件
 
 首先将`RFTools\Prefabs\Map Elements\Must Haves`内的Prefab全部添加到地图（`Pathfinding`内的稍后解释），这些东西是CP据点旗帜，Minimap[小地图摄像机](/cn/Components/MinimapCamera.md)，NM管理器（[Neighbor Manager](/cn/Components/SpawnPointNeighborManager.md)），RP[反射探针](/cn/Components/ReflectionProber.md)`，SC[背景场景相机](/cn/Components/SceneryCamera.md)，TD[世界属性](/cn/Components/TimeOfDay.md)，WP[海平面](/cn/Components/WaterPlane.md)（当然地图不需要海平面可以不加），这些是地图必需包含的东西
 
@@ -49,11 +49,11 @@ category:
 
 对于一些自定义模型，若要实现特定功能，按[文档](/cn/Components/README.md#地图)说明，添加组件即可
 
-普通模型直接添加，注意如果这个模型是路线的一部分，应确保这里玩家比较好走
+普通模型直接添加，拖到场景里，注意如果这个模型是路线的一部分（比如斜坡模型），应确保这里玩家和bot好走
 
 ## 2.2 寻路Pathfinding配置
 
-不像游戏的Map Editor，在Unity你需要自行配置Pathfinding Box寻路盒
+不像游戏的Map Editor，在Unity你需要自行配置Pathfinding Box寻路盒，用于生成
 
 参考[PathfindingBox](/cn/Components/PathfindingBox.md)
 

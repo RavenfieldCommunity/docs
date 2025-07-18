@@ -98,10 +98,10 @@ Copy the following command and open [Windows Terminal](https://apps.microsoft.co
 >
 > RFMP had its wonderful lifetime, but because of bad game qualitiy, cheat problems, then mostly no one play on it sooon + no updates + lots of bad ratings + close online server forever.
 >
-> It was wonder of Ravenfield game community.
+> It was a past wonder of Ravenfield game community.
 
 
-> **Windows Defender raised an red flag for it?**
+> **Windows Defender raised a red flag for it?**
 > 
 > Common problem, just allow it.
 

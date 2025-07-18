@@ -15,7 +15,11 @@ RavenM联机插件国内版（授权），是国内社区在原RavenM国际版�
 
 ## 安装
 
+::: caution
 **安装完后或者有问题记得看完这篇文档！ ↓↓↓**
+
+**特别是下面的[常见问题](#常见问题)！**
+:::
 
 > **直接安装**
 >
@@ -62,7 +66,7 @@ RavenM联机插件国内版（授权），是国内社区在原RavenM国际版�
 
 ## 常见问题详情参见
 
-> **运行命令，杀软报毒**
+> **运行命令，为什么杀软报毒**
 >
 > 参见[此处](./mlang.md#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
 
@@ -107,7 +111,7 @@ RavenM联机插件国内版（授权），是国内社区在原RavenM国际版�
 > $w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.ps1'));
 > ```
 >
-> 如果无法正常链接到脚本，请将脚本中的`ghproxy.net/https://raw.githubusercontent.com/ravenfieldcommunity/ravenfieldcommunity.github.io/main`替换为`ravenfieldcommunity.github.io`(准确替换！)
+> 如果无法正常链接到脚本，请将命令中的`ghproxy.net/https://raw.githubusercontent.com/ravenfieldcommunity/ravenfieldcommunity.github.io/main`替换为`ravenfieldcommunity.github.io`(准确替换！)
 
 > **Windows Defender误报病毒？**
 >

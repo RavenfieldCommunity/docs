@@ -8,7 +8,7 @@ Reproduction only
 
 ### RFTools
 
-For EA26+, version 2020.3.48f1
+For EA26+, unity version is 2020.3.48f1
 
 If there is no problem, you can double-click the file to import the added components.
 
@@ -18,7 +18,7 @@ Please refer to the official Discord channel for detailed update information.
 
 - ~~RavenfieldToolPack~~ (deprecated)
 
-EA26 and below apply,RFTools' old version 5.6.7f1
+EA26 and below apply, RFTools' old version for unity 5.6.7f1
 
 [[Github mirror]](https://github.com/Leafx-code/RavenfieldCommunityResource/releases/download/Resource/RavenfieldToolsPack.zip) [[**Official link **(officially removed)]](http://ravenfieldgame.com/modding.html) 
 

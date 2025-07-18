@@ -14,13 +14,17 @@ description: "Ravenfield原版AI增强."
 
 ::: tip
 尽管此项目被我们托管，却不属于本站(Github@RavenfieldCommunity).
+
+其属于 [Standt_Up](https://steamcommunity.com/profiles/76561198296228036).
+
+本中文版页面内容可能较英文版不完整.
 :::
 
 ## 描述
 
 HavenM 是一个旨在通过使用dnSpy反编dll来爆改原版bot逻辑的项目
 
-其余参考Github
+其余功能与修改请参见Github
 
 ## 直接安装
 
@@ -30,6 +34,8 @@ powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Tex
 ```
 
 重新安装等价于更新!
+
+国内可能无法直接运行
 
 **安装完后记得看完这篇文档！ ↓↓↓**
 
@@ -89,13 +95,19 @@ powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Tex
 
 ![](https://ravenfieldcommunity.github.io/docs-img/Projects/havenm.003.png)
 
-### 卸载
+### 手动卸载
 
 打开游戏安装目录下的`BepInEx\plugins`并**删除** `HavenM.ACUpdater.dll` 和 `HavenM.ACUpdater0.dll`(如果有).。
 
 在Steam的库页面找到游戏，点击`属性` > `管理` > 点击`属性`，再点击 `已安装文件` 选项页的`验证游戏文件的完整性`:
 
 ![](https://ravenfieldcommunity.github.io/docs-img/Projects/havenm.004.en.png)
+
+## 自动卸载
+
+Copy the following command and open [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701) or [powershell](https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.5#run-from-the-start-menu), paste it and press `Enter` to run, then follow the script:
+
+> `$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/uninstall_bepinex-utf8.ps1'));Read-Host;`
 
 
 ## Q&A
