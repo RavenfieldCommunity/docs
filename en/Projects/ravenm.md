@@ -6,9 +6,9 @@ description: The RavenM Multiplayer Plugin
 ::: center
 OFFICIAL: ![Discord online member count](https://img.shields.io/discord/458403487982682113.svg?label=Discord&logo=Discord&colorB=7289da&style=flat-square) ![Last commit time](https://img.shields.io/github/last-commit/ABigPickle/RavenM.svg?style=flat-square&) ![Latest release version number](https://img.shields.io/github/v/release/ABigPickle/RavenM?label=release&logo=GitHub&style=flat-square) ![Downloads count](https://img.shields.io/github/downloads/ABigPickle/RavenM/total.svg?logo=GitHub&style=flat-square)
 
-**COMMUNITY EDITION**: ![Last commit time](https://img.shields.io/github/last-commit/RavenfieldCommunity/RavenM.svg?style=flat-square&) ![Latest release version number ](https://img.shields.io/github/v/release/RavenfieldCommunity/RavenM?label=release&logo=GitHub&style=flat-square) 
+**COMMUNITY EDITION**: ![Last commit time](https://img.shields.io/github/last-commit/RavenfieldCommunity/RavenM.svg?style=flat-square&) ![Latest release version number ](https://img.shields.io/github/v/release/RavenfieldCommunity/RavenM?label=release&logo=GitHub&style=flat-square) ![Downloads count](https://img.shields.io/github/downloads/RavenfieldCommunity/RavenM/total.svg?logo=GitHub&style=flat-square)
 
- [![Join Discord]( https://img.shields.io/badge/discord-JOIN%20DISCORD%20SERVER-grey.svg?style=for-the-badge&logo=discord&colorB=7289da)](https://discord.gg/63zE4gY) ![Downloads count](https://img.shields.io/github/downloads/RavenfieldCommunity/RavenM/total.svg?logo=GitHub&style=flat-square)
+ [![Join Discord]( https://img.shields.io/badge/discord-JOIN%20DISCORD%20SERVER-grey.svg?style=for-the-badge&logo=discord&colorB=7289da)](https://discord.gg/63zE4gY)
 :::
 
 ::: caution
