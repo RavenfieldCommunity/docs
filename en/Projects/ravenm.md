@@ -23,7 +23,12 @@ Some content may not suitable for official edition
 
 A Ravenfield multiplayer plugin.
 
-Here also provide a community edition of RavenM for newer game as the official one has no update currently (if the version is still v0.7 for EA29).
+You can use workshop mods, join lobbies, chat, or play in matches with other Ravenfield players in the muitlplayer gaming, which supported by RavenM, depended on safe and high-quality [Steam Network](https://partner.steamgames.com/doc/features/multiplayer).
+
+Here we also provide a community edition of RavenM for newer game as the official one has no update currently (if the version is still v0.7 for EA29).
+
+## Pictures
+
 
 ## Usage
 
@@ -63,7 +68,7 @@ You can download the plugin here:
 
 As you downloaded the release, unzip the `.zip` file to `BepInEX\plugins` in game directory, or directly put the plugin `.dll` to `BepInEX\plugins` in game directory.
 
-Now start the game, there will be a line of build id at the down-left corner of window, if the plugin is installed correctly.
+Now start the game, there will be a line of RavenM info at the down-left corner of window, if the plugin is installed correctly.
 
 ### Usage
 
@@ -78,6 +83,10 @@ Copy the following command and open [Windows Terminal](https://apps.microsoft.co
 
 #### Manually
 
+Open `BepInEX/plugins/`, and delete the dll with name "`RavenM`".
+
+If yoi also want to delete BepInEX, then delete the folder `BepInEX` and dll `winhttp.dll`.
+
 ## Q&A
 
 > **Where I can find others who playing RavenM or give some suggestions for RavenM?**
@@ -90,11 +99,11 @@ Copy the following command and open [Windows Terminal](https://apps.microsoft.co
 >
 > RFMP (or RFMM, full name is “Ravenfield: Multiplayer Mod”, at [Steam store](https://store.steampowered.com/app/1104390)) is a community-made game with multi-play feature, independent from the vanilla game.
 >
-> It looks like vanilla game because SteelRaven7 has give some original game resources to it. (and RavenM is a truly plugin made for vanilla game)
+> It looks like vanilla game because SteelRaven7 has give some original game resources to it. (instead, RavenM is a truly plugin made for vanilla game).
 >
 > RFMP released on July 11, 2019, last updated on [May 31,2020 (from SteamDB)](https://steamdb.info/app/1104390/patchnotes/)
 >
-> At official discord server of RFMP (no post link provided), the dev team announced this project stopped developing in 2020, and set the all channels to read-only, suggesting players to use RavenM for a better choice.
+> At the official discord server of RFMP (no post link provided), the dev team announced this project stopped developing in 2020, and set the all channels to read-only, suggesting players to use RavenM for a better choice.
 >
 > RFMP had its wonderful lifetime, but because of bad game qualitiy, cheat problems, then mostly no one play on it sooon + no updates + lots of bad ratings + close online server forever.
 >
@@ -111,3 +120,12 @@ Copy the following command and open [Windows Terminal](https://apps.microsoft.co
 > Yes, but we won't provide the solutions for you.
 >
 > Some problems take skills to work out.
+
+
+## THANKS
+
+All [contributors](https://github.com/RavenfieldCommunity/RavenM/graphs/contributors), because of you this project is more perfected day by day ❤❤❤:
+
+![GitHub Contributors Image](https://contrib.rocks/image?repo=RavenfieldCommunity/RavenM)
+
+And all the dev version testers in the discord server, thanks for finding out the bugs!

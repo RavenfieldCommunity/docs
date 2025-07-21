@@ -158,3 +158,31 @@ Have fun!
 > **Where can I get RavenM's chinese build (or "chinam")**
 >
 > [Here](/cn/Projects/ravenm.md), not suggested to use it as it provides no English language support, but it updates more faster than Official RavenM now.
+
+> **My message is sent automatically but I didn't finish it yet**
+>
+> A little problem of your IME, try another one.
+
+> **How can I, the host, control the mods user quickly**
+>
+> Open steam game properties' workshop page, you can manage the mods directly without starting the game.
+>
+> ![]()
+>
+> You can correct the checkbox of each item to enable/disable the mod. The search can find mods by name or tag.
+>
+> Click the `Advanced Options` button, create a new collections, then you can quick switch the mod collections you want to used to load in game.
+>
+> Click link [`steam://gameproperties/636480/workshop`](steam://gameproperties/636480/workshop) can take you to there, or you can copy this it and create a quick link on your desktop.
+
+> **How to reduce the time from launching game to joining my friends' lobby**
+>
+> Launch the game with no mods mode. Then you can jump out of loading your own mods and only load host's mods once.
+
+> **Some mutators do not work as expected sometimes.**
+>
+> Yep RavenM is not really compatible with them, as their logic cannot work in muitlplayer well.
+
+> **I can't save the map in my Map Editor**
+>
+> Please disable RavenM first. This issue maybe fixed in future.
