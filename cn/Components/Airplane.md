@@ -27,9 +27,9 @@ category:
 | perpendicularDrag  | float | 垂直阻力 |  
 | pitchSensitivity  | float | 俯仰操作灵敏度 |  
 | yawSensitivity  | float | 偏航操作灵敏度 |  
-| rollSensitivity  | float |  |  
+| rollSensitivity  | float | 翻滚操作灵敏度 |  
 | liftGainTime  | float |  |  
 | controlWhenBurning  | float | 飞机滚动的灵敏度 |  
-| landingGearActivationObjects | GameObject[] | 起落架物体 |  
+| landingGearActivationObjects | GameObject[] | 起落架物体（收起起落架状态时隐藏） |  
 | throttleEngineAudioPitchControl  | float |  |  
 | flightAltitudeMultiplier  | float |  |  

@@ -28,12 +28,12 @@ category:
 | loaded ammo | int | 已装载的弹药数 |
 | unholster | trigger | 切换到武器时为True |
 | tuck | bool | 冲刺且没有换弹行为时为True |
-| muzzle | int | 开火时等于目前武器所处的枪口序号（默认0开始）之后+1，以此类推（如果当前武器枪口数量小于1或勾选fireFromAllMuzzles选项将忽略此条件） |
-| alt weapon | int | 当武器动画激活或切换到子武器时，等于目前子武器所处的序号（0=处于主武器，默认1开始） |
+| muzzle | int | 开火时等于目前武器所处的枪口序号（默认`0`开始）之后+1，以此类推（如果当前武器枪口数量小于1或勾选fireFromAllMuzzles选项将忽略此条件） |
+| alt weapon | int | 当武器动画激活或切换到子武器时，等于目前子武器所处的序号（`0`=处于主武器，默认`1`开始） |
 | charging | bool | 处于充能状态时为True |
 | overheat | bool | 过热时为True |
 | sight mode | int | 等于目前玩家所处的瞄准模式（默认0开始） |
-| smooth sight mode | float | 等于目前玩家所处的瞄准模式（与sight mode等同，适用于BlenderTree） |
+| smooth sight mode | float | 等于目前玩家所处的瞄准模式（与`sight mode`等同，适用于BlenderTree） |
 | fire | trigger | 开火时为True |
 | aim | bool | 瞄准时为True，其余状态为False |
 | reload | trigger | 装填时为True |
@@ -60,12 +60,12 @@ category:
 | displayName | string | 武器在实际UI显示的名称 |  
 | thirdPersonTransform | Transform |  第三人称显示的武器模型（包括手臂） |  
 | thirdPersonOffset  | Vector3 | 第三人称显示的武器模型位置偏移量（矫正位置） |  
-| cullInThirdPerson | GameObject[] | 第三人称不显示的游戏物体（`Size`=数量。先填写要隐藏的物体数量，再在Element*处拖入物体） |  
+| cullInThirdPerson | GameObject[] | 第三人称不显示的游戏物体（`Size`=数量。先填写要隐藏的物体数量，再在`Element*`处拖入物体） |  
 | thirdPersonScale  | float | 第三人称显示的武器模型缩放偏移量（矫正位置） |  
 | keepScriptsOnThirdPersonImposter  | bool |  | 
 | reloadAudio | AudioSource | 装填音效(开启`advanceRaload`时忽略此项，此AudioSource建议放置于武器内的空物体上，参阅[RFCreator Project](/cn/Tutorials/README.md)) |  
 | changeFireModeAudio | AudioSource | 切换开火模式的音效 |  
-| reflectionSound  | enum.ReflectionSound | 回音效果（Auto=自动、None=无、Handgun=手枪、RifleSmall=小步枪、RifleLarge=大步枪、Launcher=炮、Tank=坦克） |  
+| reflectionSound  | enum.ReflectionSound | 回音效果（`Auto`=自动、`None`=无、`Handgun`=手枪、`RifleSmall`=小步枪、`RifleLarge`=大步枪、`Launcher`=炮、`Tank`=坦克） |  
 | reflectionVolume  | float | 回音效果大小 |  
 | walkBobMultiplier  | float | 走路时晃动倍数 |  
 | sprintBobMultiplier  | float | 跑步时晃动倍数 |  
@@ -78,7 +78,7 @@ category:
 | ammo | int | 武器装载的弹药数（如武器无弹药逻辑则设为-1） |  
 | isLocked  | bool | 是否该锁定武器 |  
 | auto  | bool | 是否为自动武器（影响开火是否为连发还是单发，影响开火音效是即时停止还是直接播放完音效） |  
-| spareAmmo  | int | 武器备用的弹药数（如武器无弹药逻辑则设为-1) |  
+| spareAmmo  | int | 武器备用的弹药数（如武器无弹药逻辑则设为`-1`) |  
 | resupplyNumber  | int | 每次从补给箱补充的弹药数 |  
 | reloadTime  | float | 装填所需时间（启用`advanceReload`时不可用） |  
 | cooldown  | float | 开火时连续两发子弹的间隔（开火速度，值越小越快） |  
@@ -94,7 +94,7 @@ category:
 | forceAutoReload  | bool |  强制自动换弹（如投掷类武器） |  
 | loud  | bool |  开火造成声音是否响亮（会使武器持有者高亮4秒） |  
 | forceWorldAudioOutput  | bool |  强制场景音频输出 |  
-| muzzles | Transform[] |  枪口（或近战武器攻击点，掷弹点。生成子弹projectiles的地方，`Size`=数量。先填写枪口数量，一般为1，再在`Element*`处拖入物体。**muzzlesz中指定的物体及此物体的子层级的Particle System组件在在开火时会触发**） |  
+| muzzles | Transform[] |  枪口（或近战武器攻击点，掷弹点。生成子弹projectiles的地方，`Size`=数量。先填写枪口数量，一般为1，再在`Element*`处拖入物体。**`muzzles`中指定的物体及此物体的子层级的Particle System组件在在开火时会触发**） |  
 | optionalThirdPersonMuzzles | Transform[] | 可选的第三人称时的枪口 |  
 | casingParticles | ParticleSystem[] | 抛壳口（`Size`=数量。先填写数量，一般为1，再在`Element*`处拖入物体，抛壳次序与`muzzles`次序保持一致） |  
 | fireFromAllMuzzles  | bool | 每次开火时所有的枪口是否全部开火（否则按照枪口顺序向下运行） |  
@@ -118,22 +118,22 @@ category:
 | snapProneMultiplier  | float |  |  
 | aiAllowedAimSpread  | float |  Bot瞄准不精准度（数值越高，Bot就越容易开火，即使未瞄准） |  
 | aiAimSwing  | float | Bot的攻击时的瞄准误差 |  
-| effInfantry  | enum.Effectiveness | 攻击是否对步兵作用(No, Yes, Preferred) | 
-| effInfantryGroup  | enum.Effectiveness |  攻击是否对步兵群作用(No, Yes, Preferred) | 
-| effUnarmored  | enum.Effectiveness |  攻击是否对无装甲的载具作用(No, Yes, Preferred) | 
-| effArmored  | enum.Effectiveness |  攻击是否对装甲载具作用(No, Yes, Preferred) | 
-| effAir  | enum.Effectiveness | 攻击是否对空中目标作用(No, Yes, Preferred) | 
-| effAirFastMover  | enum.Effectiveness |  攻击是否对快速移动的空中目标作用(No, Yes, Preferred) | 
+| effInfantry  | enum.Effectiveness | 攻击是否对步兵作用(`No`=否, `Yes`=是, `Preferred`=是且为偏指定专用) | 
+| effInfantryGroup  | enum.Effectiveness |  攻击是否对步兵群作用(`No`, `Yes`, `Preferred`) | 
+| effUnarmored  | enum.Effectiveness |  攻击是否对无装甲的载具作用(`No`, `Yes`, `Preferred`) | 
+| effArmored  | enum.Effectiveness |  攻击是否对装甲载具作用(`No`, `Yes`, `Preferred`) | 
+| effAir  | enum.Effectiveness | 攻击是否对空中目标作用(`No`, `Yes`, `Preferred`) | 
+| effAirFastMover  | enum.Effectiveness |  攻击是否对快速移动的空中目标作用(`No`, `Yes`, `Preferred`) | 
 | effectiveRange  | float | 攻击有效范围 |  
-| diffInfantry  | enum.Difficulty | Bot使用此武器攻击步兵的难度(Auto=自动调整,Easy=轻松,Challenging=还行,Hard=困难,Impossible=不可能。**游戏中Bot自动分为Beginner、Normal、Veteran、Elite四个等级，各个级别的实力可从名字体现，武器的攻击难度对于不同级别的Bot是不同的，会削减或增强**) |  
-| diffInfantryGroup  | enum.Difficulty | Bot使用此武器攻击步兵群的难度(Auto=自动调整,Easy=轻松,Challenging=还行,Hard=困难,Impossible=不可能) |  
-| diffGroundVehicles  | enum.Difficulty | Bot使用此武器攻击载具的难度(Auto=自动调整,Easy=轻松,Challenging=还行,Hard=困难,Impossible=不可能) |  
-| diffAir  | enum.Difficulty | Bot使用此武器攻击空中目标的难度(Auto=自动调整,Easy=轻松,Challenging=还行,Hard=困难,Impossible=不可能) |  
-| diffAirFastMover  | enum.Difficulty | Bot使用此武器攻击快速移动的空中目标的难度(Auto=自动调整,Easy=轻松,Challenging=还行,Hard=困难,Impossible=不可能) |  
-| haltStrategy  | enum.HaltStrategy |  Bot移动时的开火策略（建议不改。Auto=自动调整, Never=移动时始终开火, PreferredLongRange=远距离优先停止移动再开火但近距离依旧开火, PreferredAnyRange=允许边移动边开火跑打但优先停移, AlwaysLongRange=远距离才始终停移但近距离依旧开火, Always=开火时始终停移) |  
-| pose  | int |  第三人称握持武器的姿势(例子：0=AK、1=手雷、2=SMAW) |  
+| diffInfantry  | enum.Difficulty | Bot使用此武器攻击步兵的难度(`Auto`=自动调整, `Easy`=轻松, `Challenging`=还行, `Hard`=困难, `Impossible`=不可能。**游戏中Bot自动分为Beginner、Normal、Veteran、Elite四个等级，各个级别的实力可从名字体现，武器的攻击难度对于不同级别的Bot是不同的，会削减或增强**) |  
+| diffInfantryGroup  | enum.Difficulty | Bot使用此武器攻击步兵群的难度(`Auto`=自动调整, `Easy`=轻松, `Challenging`=还行, `Hard`=困难, `Impossible`=不可能) |  
+| diffGroundVehicles  | enum.Difficulty | Bot使用此武器攻击载具的难度(`Auto`=自动调整, `Easy`=轻松, `Challenging`=还行, `Hard`=困难, `Impossible`=不可能) |  
+| diffAir  | enum.Difficulty | Bot使用此武器攻击空中目标的难度(`Auto`=自动调整, `Easy`=轻松, `Challenging`=还行, `Hard`=困难, `Impossible`=不可能) |  
+| diffAirFastMover  | enum.Difficulty | Bot使用此武器攻击快速移动的空中目标的难度(`Auto`=自动调整, `Easy`=轻松, `Challenging`=还行, `Hard`=困难, `Impossible`=不可能) |  
+| haltStrategy  | enum.HaltStrategy |  Bot移动时的开火策略（建议不改。`Auto`=自动调整, `Never`=移动时始终开火, `PreferredLongRange`=远距离优先停止移动再开火但近距离依旧开火, `PreferredAnyRange`=允许边移动边开火跑打但优先停移, `AlwaysLongRange`=远距离才始终停移但近距离依旧开火, `Always`=开火时始终停移) |  
+| pose  | int |  第三人称握持武器的姿势(例子：`0`=AK、`1`=手雷、`2`=SMAW) |  
 | applyHeat  | bool | 是否有过热效果 |  
-| heatMaterial | MaterialTarget |  过热效果的材质（参考Unity的文档与Prefab,需要自发光材质） |  
+| heatMaterial | MaterialTarget |  过热效果的材质（参考Unity的文档与Prefab, 需要自发光材质） |  
 | heatGainPerShot  | float | 每发使武器过热%多少） |  
 | heatDrainRate  | float |  每秒使武器散热%多少 |  
 | heatColor | Color |  过热效果的颜色 |  
@@ -147,6 +147,6 @@ category:
 | maxRemainingAmmoAfterDrop  | int | 丢弃弹药后最大剩余弹药 |  
 | useMaxAmmoPerReload  | bool | 限制每次换弹的最大装填数 |  
 | maxAmmoPerReload  | int | 每次换弹的最大装填数（与`useMaxAmmoPerReload`联动） |  
-| advancedReload  | bool | 是否启用高级装填（用于单\多发装填武器,需要在AnimationEvent手动调用ReloadDone才能结束装填） |  
+| advancedReload  | bool | 是否启用高级装填（用于单\多发装填武器,需要在AnimationEvent手动调用`ReloadDone`才能结束装填） |  
 | allowedReloads | int[] |  启用高级装填选项后，换弹时将会按照设定好的顺序，装填对应的弹药数量 |  
-| sightModes | SightMode[] | 瞄准方式（`Sizes`=有多少种瞄准方式；overrideFov=是否使用此`sightMode`的`fov`；fov=可视范围；name=名称，显示在实际游戏时的HUB中） |  
+| sightModes | SightMode[] | 瞄准方式（`Sizes`=有多少种瞄准方式；overrideFov=是否使用此`sightMode`的`fov`；`fov`=可视范围；`name`=名称，显示在实际游戏时的HUB中） |  

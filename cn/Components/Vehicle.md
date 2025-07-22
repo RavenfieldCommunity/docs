@@ -39,7 +39,7 @@ category:
 | name | string | 载具名称 | 
 | seats | List<[Seat](./Seat.md)> | 座位(第一个座位将设置为驾驶位) |
 | targetType | enum.Actor.TargetType | 目标类型（载具自身的类型。`Infantry`=单步兵运输, `InfantryGroup`=步兵群运输, `Unarmored`=非装甲, `Armored`=装甲, `Air`=空中（即直升机）, `AirFastMover`=高速的空中目标（即飞机））|
-| armorDamagedBy | enum.ArmorRating | 载具可被哪种武器攻击（SmallArms=轻武器, HeavyArms=重武器, AntiTank=穿甲） | 
+| armorDamagedBy | enum.ArmorRating | 载具可被哪种武器攻击（`SmallArms`=轻武器, `HeavyArms`=重武器, `AntiTank`=穿甲） | 
 | smallArmsMultiplier | float | 轻武器伤害倍率 | 
 | heavyArmsMultiplier | float | 重武器伤害倍率 |
 | canBeRepairedAfterDeath | bool | 死亡后可修复 |
@@ -73,7 +73,7 @@ category:
 | disableOnDeath | GameObject[] | 死亡时隐藏的物体 |
 | activateOnDeath | GameObject[] | 死亡时显示（启用）的物体 |
 | teamColorMaterials | MaterialTarget[] |  阵营颜色材质（需事先在Blender分配一个材质槽用于显示材质颜色） |
-| hasCountermeasures | bool | 有无干扰弹 |
+| hasCountermeasures | bool | 有无干扰弹（或称热诱弹） |
 | countermeasuresActiveTime | float |   干扰效果持续时间 |
 | countermeasuresCooldown | float |   干扰弹冷却时间 |
 | countermeasureParticles | ParticleSystem |  干扰弹发射时的粒子 |

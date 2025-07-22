@@ -157,6 +157,6 @@ flowchart TD
 最后配置完ArcadeCar组件的剩余项`name`、`crashDamageSpeedThrehshold`、`crashDamageMultiplier`、`aiType`、`aiUseToDefendPoint`、`blip`、`disableOnDeath`、`acceleration`、`topSpeed`、`brakeAccelerationTriggerSpeed`、`driftByBrake`、`extraStability`、`groundDrag`
 
 
-
-
 ## 3.0 测试与导出
+
+参见[ActorSkinContentMod](/cn/Components/ActorSkinContentMod.md)

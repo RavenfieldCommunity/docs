@@ -181,7 +181,7 @@ Have fun!
 
 > **Some mutators do not work as expected sometimes.**
 >
-> Yep RavenM is not really compatible with them, as their logic cannot work in muitlplayer well.
+> Yep RavenM is not really compatible with them, as their script's logic cannot work in multiplayer well.
 
 > **I can't save the map in my Map Editor**
 >

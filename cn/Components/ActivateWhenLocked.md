@@ -18,5 +18,5 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| isBeingLockedObject | GameObject | 被导弹锁定时激活的物体 |  
-| isTrackedByMissileObject | GameObject | 开始被导弹跟踪时激活的物体 |  
+| isBeingLockedObject | GameObject | 被导弹锁定（热诱弹可解除）时激活的物体 |  
+| isTrackedByMissileObject | GameObject | 有导弹跟踪时激活的物体 |  

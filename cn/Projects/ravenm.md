@@ -1,17 +1,26 @@
 ---
 title: RavenM联机插件国内版
-description: 适用于国内Ravenfield玩家的RavenM联机插件
+description: 适用于国内Ravenfield玩家的RavenM联机插件。通过插件，只需简易操作，您即可在多人游戏中加入房间，与他人文字或语音聊天，同其他玩家在游戏地图中畅玩，包括全mod支持
 ---
 
 ::: center
-![QQ频道号](https://img.shields.io/badge/QQ频道-9pmc179t29-blue?style=flat-square) ![插件QQ群号](https://img.shields.io/badge/插件QQ群-710832844-blue?style=flat-square) ![插件QQ群号](https://img.shields.io/badge/插件QQ群-677540488-blue?style=flat-square) ![插件oopz频道号](https://img.shields.io/badge/插件Oopz频道-?-blue?style=flat-square)
+![QQ频道号](https://img.shields.io/badge/QQ频道-9pmc179t29-blue?style=flat-square) ![插件QQ群号](https://img.shields.io/badge/插件QQ群-710832844-blue?style=flat-square) ![插件QQ群号](https://img.shields.io/badge/插件QQ群-677540488-blue?style=flat-square) ![插件oopz频道号](https://img.shields.io/badge/%E6%8F%92%E4%BB%B6Oopz%E9%A2%91%E9%81%93-%E6%97%A0%E9%82%80%E8%AF%B7%E9%93%BE%E6%8E%A5-blue?style=flat-square)
 
 ![最新版本号](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&&color=green&&style=flat-square&url=https://gitee.com/api/v5/repos/RedQieMei/Raven-M/releases/372833&query=%24.name)
 :::
 
 ## 描述
 
-RavenM联机插件国内版（授权），是国内社区在原RavenM国际版（社区驱动的Ravenfield联机插件，在[Github](https://github.com/iliadsh/RavenM)）基础上的二改版本，更适合中国RF玩家使用
+RavenM联机插件国内版（此页面已经授权。本插件国内名或称 RFM），是国内社区在原RavenM国际版的基础上的二改版本，更适合中国RF玩家使用
+
+通过插件，只需简易操作，您即可在多人游戏中加入房间，与他人文字/语音聊天，同其他玩家在游戏地图中畅玩，包括全mod支持
+
+这一切都由RavenM提供，依靠Steam官方稳定、安全、强大的[玩家网络](https://partner.steamgames.com/doc/features/multiplayer)提供主机中继与点对点连接服务
+
+RavenM是社区驱动的Ravenfield联机插件，国际版在[Github](https://github.com/iliadsh/RavenM)，另可参见本站英文版获取详情
+
+## 预览图
+
 
 ## 安装
 
@@ -19,13 +28,18 @@ RavenM联机插件国内版（授权），是国内社区在原RavenM国际版�
 **安装完后或者有问题记得看完这篇文档！ ↓↓↓**
 
 **特别是下面的[常见问题](#常见问题)！**
+
+**你也可以在[这里](#使用)获取RavenM的详细使用指南**
 :::
 
 > **直接安装**
 >
-> `Win键`+`R`打开运行框，输入以下命令并确定，这会自动打开安装文件，按说明操作即可：
-> ```batch
-> powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ghproxy.net/https://raw.githubusercontent.com/ravenfieldcommunity/ravenfieldcommunity.github.io/main/static/get_ravenmcn_d-utf8.ps1'));Read-Host;"
+> 在开始菜单找到并打开 [终端](https://apps.microsoft.com/detail/9n0dx20hk701?hl=zh-CN&gl=CN) 或 [Powershell](https://www.51cto.com/article/696873.html)，右键复制粘贴以下命令到那边，并回车确定，稍等一下，按说明操作即可：
+> ```powershell
+> $w=(New-Object System.Net.WebClient);
+> $w.Encoding=[System.Text.Encoding]::UTF8;
+> iex($w.DownloadString('http://ghproxy.net/https://raw.githubusercontent.com/ravenfieldcommunity/ravenfieldcommunity.github.io/main/static/get_ravenmcn_d-utf8.ps1'));
+> Read-Host;
 > ```
 >
 > 直接安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式

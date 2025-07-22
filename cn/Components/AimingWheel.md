@@ -19,4 +19,4 @@ category:
 | ----------- | ----------- | ----------- |
 | target | Transform | 目标物体 |  
 | rotationMultiplier  | float | 旋转速度倍增 |  
-| axis | enum.Axis | 跟随的坐标轴方向(X, Y, Z) |  
+| axis | enum.Axis | 跟随的坐标轴方向(`X`, `Y`, `Z`) |  

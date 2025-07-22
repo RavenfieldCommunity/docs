@@ -21,12 +21,12 @@ category:
 游戏默认TAG标签的自动分配机制：
 | TAG | 译名 | 机制 |
 |------|------|------|
-| CLOSE QUARTERS | 近战武器 | `slot`=Primary, 武器的`projectilesPerShot`>1 |
-| ASSAULT | 突击性武器 | `slot`=Primary, 武器的`auto`=true|
-| MARKSMAN | 远程武器 | `slot`=Primary且不符合CLOSE QUARTERS与ASSAULT的后一个判定 |
-| EQUIPMENT | 装备 | `slot`=Gear或LargeGear，武器的`projectilesPerShot`=null或都不符合GRENADES与ANTI ARMOR的后一个判定  |
-| GRENADES | 手榴弹 | `slot`=Gear或LargeGear，武器的`projectiles`是[GrenadeProjectile](./GrenadeProjectile.md) |
-| ANTI ARMOR | 反装甲武器 | `slot`=Gear或LargeGear，武器的`projectiles`是[ExplodingProjectile](./ExplodingProjectile.md)或其派生类 |
+| CLOSE QUARTERS | 近战武器 | `slot`=`Primary`, 武器的`projectilesPerShot`>1 |
+| ASSAULT | 突击性武器 | `slot`=`Primary`, 武器的`auto`=true|
+| MARKSMAN | 远程武器 | `slot`=`Primary`且不符合CLOSE QUARTERS与ASSAULT的后一个判定 |
+| EQUIPMENT | 装备 | `slot`=`Gear`或`LargeGear`，武器的`projectilesPerShot`=null或都不符合GRENADES与ANTI ARMOR的后一个判定  |
+| GRENADES | 手榴弹 | `slot`=`Gear`或`LargeGear`，武器的`projectiles`是[GrenadeProjectile](./GrenadeProjectile.md) |
+| ANTI ARMOR | 反装甲武器 | `slot`=`Gear`或`LargeGear`，武器的`projectiles`是[ExplodingProjectile](./ExplodingProjectile.md)或其派生类 |
 | UNTAGGED | 未分类 | 均不符合以上判定 |
 
 ## 变量

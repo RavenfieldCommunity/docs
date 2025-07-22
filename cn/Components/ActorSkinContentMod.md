@@ -16,6 +16,8 @@ category:
 
 配置各个Skin时先在`Sizes`设置本次导出的Skin数量再配置各个皮肤
 
+点Projects窗口里，模型文件旁边的展开按钮，把mesh拖进各个槽位
+
 然后再各个MeshSkin槽位配置对应皮肤模型
 
 最后选中物体，在菜单栏导出
@@ -28,6 +30,6 @@ MeshSkin类槽位变量：[MeshSkin](.\CustomTypes.md#MeshSkin)
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | name  | string | 皮肤名 |  
-| characterSkin | MeshSkin | 第三人称的MeshSkin |  
+| characterSkin | MeshSkin | 第三人称的全身MeshSkin |  
 | armSkin | MeshSkin | 第一人称手臂的MeshSkin |  
-| kickLegSkin | MeshSkin | 第一人称腿的模型的MeshSkin |  
+| kickLegSkin | MeshSkin | 第一人称腿（右腿？）的模型的MeshSkin |  

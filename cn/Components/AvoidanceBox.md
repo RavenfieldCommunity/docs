@@ -22,6 +22,6 @@ category:
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
 | applyToAllTypes  | bool | 是否针对所有Bot |  
-| type | [PathfindingBox](./PathfindingBox.md).Type | 是针对哪些Bot的(Infantry=步兵, Car=车辆, Boat=船) |  
+| type | [PathfindingBox](./PathfindingBox.md).Type | 是针对哪些Bot的(`Infantry`=步兵, `Car`=车辆, `Boat`=船) |  
 | penalty  | uint | 惩罚值（类似于在这条路行走的代价，但似乎在此处无论如何（即使`penalty`=0）Bot都会认为这条路的代价过大而不行走。此处1000=Unity里的1？） |  
 | unwalkable  | bool | 是否不可行走 |  
