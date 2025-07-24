@@ -5,7 +5,7 @@
   "license": "CC-BY-NC-4.0",
   "type": "module",
   "scripts": {
-    "docs:build": "cross-env HOSTER=github vuepress build .",
+    "docs:build": " HOSTER=github vuepress build .",
     "docs:build-netlify": "cross-env HOSTER=netlify vuepress build .",
     "docs:clean-dev": "cross-env HOSTER=github vuepress dev . --clean-cache",
     "docs:dev": "cross-env HOSTER=github vuepress dev .",
