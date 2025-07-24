@@ -6,8 +6,10 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 import { umamiAnalyticsPlugin } from '@vuepress/plugin-umami-analytics'
 
+var isNetlifyApp = process.env.HOSTER === 'netlify';
+
 export default defineUserConfig({
-  base: "/docs/",
+  base: isNetlifyApp == true ? "/" : "/docs/",
   locales: {
     '/cn/': {
             lang: 'zh-CN',
