@@ -6,7 +6,7 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 import { umamiAnalyticsPlugin } from '@vuepress/plugin-umami-analytics'
 
-var isNetlifyApp = process.env.HOSTER === 'netlify';
+let isNetlifyApp = process.env.HOSTER === 'netlify';
 
 export default defineUserConfig({
   base: isNetlifyApp == true ? "/" : "/docs/",

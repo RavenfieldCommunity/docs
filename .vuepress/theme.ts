@@ -2,7 +2,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, cnNavbar } from "./navbar/index.js";
 import { enSidebar, cnSidebar } from "./sidebar/index.js";
 
-var isNetlifyApp = process.env.HOSTER === 'netlify';
+let isNetlifyApp = process.env.HOSTER === 'netlify';
 string 
 // Env config: https://juejin.cn/post/7124972142512308237
 
