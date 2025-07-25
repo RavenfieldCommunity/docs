@@ -9,7 +9,7 @@ process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
 export const isNetlifyApp = process.env.VITE_APP_HOSTER === "netlify";
 
-export theme = hopeTheme({
+export let theme = hopeTheme({
   hostname: "https://ravenfieldcommunity.github.io",
   logo: "/Logo.png",
   favicon: "/favicon.ico",
