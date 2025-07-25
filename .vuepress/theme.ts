@@ -2,8 +2,14 @@ import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, cnNavbar } from "./navbar/index.js";
 import { enSidebar, cnSidebar } from "./sidebar/index.js";
 
+import { loadEnv } from 'vite';
 
-export default hopeTheme({
+const mode = process.env.NODE_ENV || 'development';
+process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
+
+export const isNetlifyApp = process.env.VITE_APP_HOSTER === "netlify";
+
+export theme = hopeTheme({
   hostname: "https://ravenfieldcommunity.github.io",
   logo: "/Logo.png",
   favicon: "/favicon.ico",

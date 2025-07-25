@@ -1,10 +1,12 @@
 import { defineUserConfig } from "vuepress";
-import theme from "./theme.js";
+import { theme, isNetlifyApp } from "./theme.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { redirectPlugin } from "@vuepress/plugin-redirect";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 import { umamiAnalyticsPlugin } from '@vuepress/plugin-umami-analytics'
+
+
 
 export default defineUserConfig({
   base: "/docs/",
