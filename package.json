@@ -5,10 +5,10 @@
   "license": "CC-BY-NC-4.0",
   "type": "module",
   "scripts": {
-    "docs:build": " HOSTER=github vuepress build .",
-    "docs:build-netlify": "cross-env HOSTER=netlify vuepress build .",
-    "docs:clean-dev": "cross-env HOSTER=github vuepress dev . --clean-cache",
-    "docs:dev": "cross-env HOSTER=github vuepress dev .",
+    "docs:build": "vuepress build .",
+    "docs:build-netlify": "vuepress build .",
+    "docs:clean-dev": "vuepress dev . --clean-cache",
+    "docs:dev": "vuepress dev .",
     "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {

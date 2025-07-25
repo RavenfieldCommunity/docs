@@ -2,12 +2,9 @@ import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, cnNavbar } from "./navbar/index.js";
 import { enSidebar, cnSidebar } from "./sidebar/index.js";
 
-let isNetlifyApp = process.env.HOSTER === 'netlify';
-string 
-// Env config: https://juejin.cn/post/7124972142512308237
 
 export default hopeTheme({
-  hostname: isNetlifyApp == true ? "https://ravenfield-docs.netlify.app" : "https://ravenfieldcommunity.github.io",
+  hostname: "https://ravenfieldcommunity.github.io",
   logo: "/Logo.png",
   favicon: "/favicon.ico",
   repo: "ravenfieldcommunity/docs",

@@ -143,7 +143,7 @@ Have fun!
 > Please check:
 > - Is your game is latest stable version, instead of `ravenm-compatible` branch, any `legacy-ea**`, `pervious-ea`, or `test` branch version, non-Beta version is suggested.
 >
->    In steam, next to the `START` button is the game branch tag, click it or goto Game `properties` goto `Beta test` to set your game to stable branch, the choice "`None`" is stable branch.
+>    In steam, next to the `START` button is the game branch tag, click it or goto Game `properties` goto `Betas` to set your game to stable branch, the choice "`None`" is stable branch.
 > - Is your RavenM is latest version, otherwise update it.
 > - Is your network high-quality enough and stable.
 >    Sometimes have something to do with Steam if you sure there isn't other problems and you can multi-play successfully last time. Then wait until a certain time if it is surely Steam's problem.

@@ -23,7 +23,7 @@ Some content may not suitable for official edition
 
 A Ravenfield multiplayer plugin.
 
-You can use workshop mods, join lobbies, chat, or play in matches with other Ravenfield players in the muitlplayer gaming, which supported by RavenM, depended on safe and high-quality [Steam Network](https://partner.steamgames.com/doc/features/multiplayer).
+You can use workshop mods, join lobbies, chat, or play in matches with other Ravenfield players in the multiplayer gaming, which supported by RavenM, depended on safe and high-quality [Steam Network](https://partner.steamgames.com/doc/features/multiplayer).
 
 Here we also provide a community edition of RavenM for newer game as the official one has no update currently (if the version is still v0.7 for EA29).
 
