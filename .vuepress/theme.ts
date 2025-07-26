@@ -2,10 +2,12 @@ import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, cnNavbar } from "./navbar/index.js";
 import { enSidebar, cnSidebar } from "./sidebar/index.js";
 
+/*
 import { loadEnv } from 'vite';
 
 const mode = process.env.NODE_ENV || 'development';
 process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
+*/
 
 export const isNetlifyApp = process.env.VITE_APP_HOSTER === "netlify";
 
