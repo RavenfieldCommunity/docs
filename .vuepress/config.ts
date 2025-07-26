@@ -9,7 +9,7 @@ import { umamiAnalyticsPlugin } from '@vuepress/plugin-umami-analytics'
 
 
 export default defineUserConfig({
-  base: "/docs/",
+  base: isNetlifyApp ? "/" : "/docs/",
   locales: {
     '/cn/': {
             lang: 'zh-CN',
