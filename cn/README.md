@@ -8,7 +8,8 @@ description: Ravenfield中文社区模组开发与游戏入门文档
 
 ## Ravenfield社区文档
 
-![GitHub pr数](https://img.shields.io/github/issues-pr/RavenfieldCommunity/docs.svg?style=flat-square&label=待通过PR) ![GitHub最后提交时间](https://img.shields.io/github/last-commit/RavenfieldCommunity/docs.svg?style=flat-square&label=最后提交时间) ![Github docs deploy](https://img.shields.io/github/actions/workflow/status/RavenfieldCommunity/docs/deploy-docs.yml?style=flat-square&label=构建)
+![GitHub pr数](https://img.shields.io/github/issues-pr/RavenfieldCommunity/docs.svg?style=flat-square&label=待通过PR) ![GitHub最后提交时间](https://img.shields.io/github/last-commit/RavenfieldCommunity/docs.svg?style=flat-square&label=最后提交时间) ![Github docs deploy status](https://img.shields.io/github/actions/workflow/status/RavenfieldCommunity/docs/deploy-docs.yml?style=flat-square&label=构建) ![Netlify build status](https://img.shields.io/netlify/f0bf63e4-7656-47b5-b9b5-a3022430379f?style=flat-square&logo=Netlify&label=Netlify%20build)
+
 
 
 [![License](https://img.shields.io/badge/%E6%8E%88%E6%9D%83%E5%9F%BA%E4%BA%8E%E8%AE%B8%E5%8F%AF-CC%20BY--NC%204.0-lightblue.svg?style=for-the-badge&)](https://github.com/RavenfieldCommunity/docs/blob/main/LICENSE) [![在 Steam 上了解Ravenfield](https://img.shields.io/badge/steam-%E4%BA%86%E8%A7%A3%20Ravenfield-blue.svg?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/636480/)
