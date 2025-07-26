@@ -16,6 +16,7 @@ export let theme = hopeTheme({
   logo: "/Logo.png",
   favicon: "/favicon.ico",
   repo: "ravenfieldcommunity/docs",
+  git: isNetlifyApp ? false : true,
   pure: true,
   contributors: false,
   pageInfo: ["Category", "Tag"],
