@@ -38,7 +38,7 @@ RavenM是社区驱动的Ravenfield联机插件，国际版在[Github](https://gi
 > ```powershell
 > $w=(New-Object System.Net.WebClient);
 > $w.Encoding=[System.Text.Encoding]::UTF8;
-> iex($w.DownloadString('http://ghproxy.net/https://raw.githubusercontent.com/ravenfieldcommunity/ravenfieldcommunity.github.io/main/static/get_ravenmcn_d-utf8.ps1'));
+> iex($w.DownloadString('https://ravenfieldcommunity-static.netlify.app/get_ravenmcn_d-utf8.ps1'));
 > Read-Host;
 > ```
 >
@@ -57,7 +57,7 @@ RavenM是社区驱动的Ravenfield联机插件，国际版在[Github](https://gi
 >
 > `Win键`+`R`打开运行框，输入以下命令并确定，这会自动打开安装文件，按说明操作即可：
 > ```batch
-> powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ghproxy.net/https://raw.githubusercontent.com/ravenfieldcommunity/ravenfieldcommunity.github.io/main/static/get_ravenmcn-utf8.ps1'));Read-Host;"
+> powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('https://ravenfieldcommunity-static.netlify.app/get_ravenmcn-utf8.ps1'));Read-Host;"
 > ```
 >
 >此安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式

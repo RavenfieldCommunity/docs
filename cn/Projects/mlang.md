@@ -20,7 +20,7 @@ Steam工坊：[Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=323
 ```powershell
 $w=(New-Object System.Net.WebClient);
 $w.Encoding=[System.Text.Encoding]::UTF8;
-iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_mlang-utf8.ps1'));
+iex($w.DownloadString('https://ravenfieldcommunity-static.netlify.app/static/get_mlang-utf8.ps1'));
 ```
 
 ::: tip
