@@ -141,12 +141,16 @@ Have fun!
 > **Failed to multi-play with others**
 >
 > Please check:
+> - Reopen lobby or game first.
 > - Is your game is latest stable version, instead of `ravenm-compatible` branch, any `legacy-ea**`, `pervious-ea`, or `test` branch version, non-Beta version is suggested.
 >
->    In steam, next to the `START` button is the game branch tag, click it or goto Game `properties` goto `Betas` to set your game to stable branch, the choice "`None`" is stable branch.
+>    In steam, what next to the `START` button is the current game branch tag, click it or goto Game `properties` goto `Betas` to set your game to stable branch, the choice "`None`" is stable branch.
 > - Is your RavenM is latest version, otherwise update it.
 > - Is your network high-quality enough and stable.
->    Sometimes have something to do with Steam if you sure there isn't other problems and you can multi-play successfully last time. Then wait until a certain time if it is surely Steam's problem.
+>    
+> - Have something to do with Steam
+>
+>    If you sure there isn't other problems and you can multi-play successfully last time. Then wait until a certain time if it is surely Steam's problem sometomes.
 > - Tell your friends to check together.
 >
 > If these solutions aren't helpful, please ask for help in discord server or raise a bug report.
@@ -181,8 +185,18 @@ Have fun!
 
 > **Some mutators do not work as expected sometimes.**
 >
-> Yep RavenM is not really compatible with them, as their script's logic cannot work in multiplayer well.
+> Yep, RavenM is not really compatible with them, as their script's logic cannot work in multiplayer well.
 
 > **I can't save the map in my Map Editor**
 >
 > Please disable RavenM first. This issue maybe fixed in future.
+
+> **What is build id (or client id)**
+>
+> It is a tag to sort the game environments that players are using, according to your Ravenfield version(Community edition only) and plugin version).
+>
+> This stuff is used to make sure clients are compatible with each other.
+>
+> For community edition, the client id is calculated like this following, including  game version(`EA32`), plugin version(`0-9`), and plugin uuid(`3d5fec24`) that linked with exact plugin version:
+>
+> `EA32-0-9-3d5fec24`

@@ -7,7 +7,7 @@ category:
 ## 描述
 从[TriggerReceiver](./TriggerReceiver.md)类派生
 
-一般用于激活或隐藏一些特定的游戏物体
+用于激活或隐藏一些特定的游戏物体
 ## 用法
 
 挂载在任意空物体上后触发即可

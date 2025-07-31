@@ -6,6 +6,12 @@ category:
 
 ## ActorFilter
 
+## ActorReference
+| 名称 | 类型 | 描述 |
+| ----------- | ----------- | ----------- |
+| type | enum | 要筛选到的人物（`Player`=仅玩家, `SquadMember`=小队成员, `VehiclePassenger`=载具乘客, `FromSignal`=触发触发器的人物, `None`=无） |
+| squad | SquadReference | （仅`type`为`SquadMember`时可用）目标小队 |
+
 ## MeshSkin
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |

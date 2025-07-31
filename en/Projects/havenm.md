@@ -24,8 +24,11 @@ It belongs to [Standt_Up](https://steamcommunity.com/profiles/76561198296228036)
 
 Refer Github
 
-```batch
-powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_havenm-utf8.ps1'));Read-Host;"
+```powershell
+$w=(New-Object System.Net.WebClient);
+$w.Encoding=[System.Text.Encoding]::UTF8;
+iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/get_havenm-utf8.ps1'));
+Read-Host;
 ```
 
 Re-installing equals updating!

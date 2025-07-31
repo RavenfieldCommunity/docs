@@ -32,43 +32,39 @@ RavenM是社区驱动的Ravenfield联机插件，国际版在[Github](https://gi
 **你也可以在[这里](#使用)获取RavenM的详细使用指南**
 :::
 
-> **直接安装**
->
-> 在开始菜单找到并打开 [终端](https://apps.microsoft.com/detail/9n0dx20hk701?hl=zh-CN&gl=CN) 或 [Powershell](https://www.51cto.com/article/696873.html)，右键复制粘贴以下命令到那边，并回车确定，稍等一下，按说明操作即可：
-> ```powershell
-> $w=(New-Object System.Net.WebClient);
-> $w.Encoding=[System.Text.Encoding]::UTF8;
-> iex($w.DownloadString('https://ravenfieldcommunity-static.netlify.app/get_ravenmcn_d-utf8.ps1'));
-> Read-Host;
-> ```
->
-> 直接安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
+### 直接安装
 
-> **Macos/linux直接安装**
->
->如果你是MacOS或Linux用户，请打开终端运行以下命令，这会自动打开安装文件，按说明操作即可：
-> ```sh
-> curl -sSL http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.sh | bash
-> ```
->
-> 或者请按照[BepInEX官方文档](https://docs.bepinex.dev/articles/user_guide/installation/index.html?tabs=tabid-nix#installing-bepinex-1)来配置你的BepInEX环境后，让一个用Windows的朋友安装RavenM并让他把游戏目录下的`BepInEX\plugins\RavenM.dll`发给你，然后安装这个插件dll
+在开始菜单找到并打开 [终端](https://apps.microsoft.com/detail/9n0dx20hk701?hl=zh-CN&gl=CN) 或 [Powershell](https://www.51cto.com/article/696873.html)，右键复制粘贴以下命令到那边，并回车确定，稍等一下，按说明操作即可：
 
-> **工具辅助安装**
->
-> `Win键`+`R`打开运行框，输入以下命令并确定，这会自动打开安装文件，按说明操作即可：
-> ```batch
-> powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('https://ravenfieldcommunity-static.netlify.app/get_ravenmcn-utf8.ps1'));Read-Host;"
-> ```
->
->此安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
+```powershell
+$w=(New-Object System.Net.WebClient);
+$w.Encoding=[System.Text.Encoding]::UTF8;
+iex($w.DownloadString('https://ravenfieldcommunity-static.netlify.app/get_ravenmcn_d-utf8.ps1'));
+Read-Host;
+```
 
-> **手动一键安装**
->
-> 访问链接获取安装文件：[[蓝奏云(提取码:eetl)]](https://wwyl.lanzouj.com/b007slq59i)  最新版本号见网盘内备注
->
-> 若无法访问蓝奏云，请参考[此知乎专栏](https://zhuanlan.zhihu.com/p/419457461)
->
-> 在电脑上**下载并运行**网盘zip压缩包内的EXE文件即可
+直接安装方式不支持Win7自带的Powershell 2.0，有需要可以自行升级Powershell或使用手动安装方式
+
+如果你是MacOS或Linux用户，请打开终端运行以下命令，这会自动打开安装文件，按说明操作即可：
+```sh
+curl -sSL http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.sh | bash
+```
+
+### 手动安装
+先安装[BepInEX](./mlang.md#安装BepInEX)
+
+然后加入qq群，获取插件包，将其解压到游戏目录下的 `BepInEX/plugins` 目录
+
+如果没有这个目录，就在正确安装BepInEX后先运行一遍游戏
+
+
+### 工具辅助安装
+
+访问链接获取安装文件：[[蓝奏云(提取码:eetl)]](https://wwyl.lanzouj.com/b007slq59i)  
+
+若无法访问蓝奏云，请参考[此知乎专栏](https://zhuanlan.zhihu.com/p/419457461)
+
+在电脑上**下载并运行**网盘zip压缩包内的EXE文件即可
 
 ## 使用
 

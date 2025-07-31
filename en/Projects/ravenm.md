@@ -38,6 +38,8 @@ Here we also provide a community edition of RavenM for newer game as the officia
 
 join the [Official discord server](https://discord.gg/63zE4gY), you can get the Windows installer on [#mod-installation channel](https://discord.com/channels/458403487982682113/458455470793949234).
 
+It will finish all thing you need.
+
 Official version of RavenM only.
 
 #### By script on Macos/Linux
@@ -66,7 +68,7 @@ You can download the plugin here:
 
 > [Community edition's github](https://github.com/RavenfieldCommunity/RavenM/releases)
 
-As you downloaded the release, unzip the `.zip` file to `BepInEX\plugins` in game directory, or directly put the plugin `.dll` to `BepInEX\plugins` in game directory.
+As you downloaded the release, unzip the `.zip` file to `BepInEX\plugins` in game directory, or directly put the plugin `.dll` to `BepInEX\plugins` in game directory if there are only dlls(`.dll` files are plugin itself).
 
 Now start the game, there will be a line of RavenM info at the down-left corner of window, if the plugin is installed correctly.
 
@@ -128,4 +130,4 @@ All [contributors](https://github.com/RavenfieldCommunity/RavenM/graphs/contribu
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=RavenfieldCommunity/RavenM)
 
-And all the dev version testers in the discord server, thanks for finding out the bugs!
+**And all the dev version testers in the discord server, thanks for taking time to find out the bugs! ❤❤❤❤️❤️**
