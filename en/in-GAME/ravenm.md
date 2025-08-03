@@ -70,11 +70,11 @@ Press `P` to show/hide chat field, press `Y` to send a global message (`Enter` i
 
 Press `Enter`(or `Esc` in community edition) to open lobby list.
 
-Press `CapsLock` to send voice messages (depending on Steam, positional)
+Press `CapsLock` to send voice messages (depending on Steam, positional, for same team only. using Discord instead is better)
 
 Press `F7` will show something for debug.
 
-Press `~` to place a marker to a place.
+Press `~` to place a marker to a place(for same team only).
 
 Squad order (`G`, `B` key) isn't avaliable between real players and players.
 
@@ -144,7 +144,10 @@ Have fun!
 > - Reopen lobby or game first.
 > - Is your game is latest stable version, instead of `ravenm-compatible` branch, any `legacy-ea**`, `pervious-ea`, or `test` branch version, non-Beta version is suggested.
 >
->    In steam, what next to the `START` button is the current game branch tag, click it or goto Game `properties` goto `Betas` to set your game to stable branch, the choice "`None`" is stable branch.
+>    In steam, what next to the `START` button is the current game branch tag, click it or goto Game `properties` goto `Betas` to set your game to stable branch, the choice "`None`" is stable branch:
+>
+>    ![game props of beta page](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.005.en.png)
+>
 > - Is your RavenM is latest version, otherwise update it.
 > - Is your network high-quality enough and stable.
 >    
@@ -171,7 +174,7 @@ Have fun!
 >
 > Open steam game properties' workshop page, you can manage the mods directly without starting the game.
 >
-> ![]()
+> ![workshop manage ui](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.006.en.png)
 >
 > You can correct the checkbox of each item to enable/disable the mod. The search can find mods by name or tag.
 >

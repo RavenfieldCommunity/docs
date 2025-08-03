@@ -1,6 +1,7 @@
 ---
 title: RavenM 
 description: The RavenM Multiplayer Plugin
+photoSwipe: true
 ---
 
 ::: center
@@ -27,8 +28,44 @@ You can use workshop mods, join lobbies, chat, or play in matches with other Rav
 
 Here we also provide a community edition of RavenM for newer game as the official one has no update currently (if the version is still v0.7 for EA29).
 
-## Pictures
+## Previews
 
+<!-- markdownlint-disable -->
+<!-- from https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/docs/theme/src/zh/guide/feature/photo-swipe.md -->
+<div class="image-preview">
+  <img src="https://ravenfieldcommunity.github.io/docs-img/Projects/ravenm.001.en.png" />
+  <img src="https://ravenfieldcommunity.github.io/docs-img/Projects/ravenm.002.png" />
+</div>
+
+<style>
+  .image-preview {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .image-preview > img {
+     box-sizing: border-box;
+     width: 33.3% !important;
+     padding: 9px;
+     border-radius: 16px;
+  }
+
+  @media (max-width: 719px){
+    .image-preview > img {
+      width: 50% !important;
+    }
+  }
+
+  @media (max-width: 419px){
+    .image-preview > img {
+      width: 100% !important;
+    }
+  }
+</style>
+
+<!-- markdownlint-restore -->
 
 ## Usage
 

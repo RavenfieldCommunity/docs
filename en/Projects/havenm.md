@@ -24,6 +24,8 @@ It belongs to [Standt_Up](https://steamcommunity.com/profiles/76561198296228036)
 
 Refer Github
 
+HavenM is a project in order to overhaul Ravenfield's bot logic in gaming, bringing a better and smarter experiences.
+
 ```powershell
 $w=(New-Object System.Net.WebClient);
 $w.Encoding=[System.Text.Encoding]::UTF8;

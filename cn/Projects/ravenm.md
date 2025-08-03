@@ -1,6 +1,7 @@
 ---
 title: RavenM联机插件国内版
 description: 适用于国内Ravenfield玩家的RavenM联机插件。通过插件，只需简易操作，您即可在多人游戏中加入房间，与他人文字或语音聊天，同其他玩家在游戏地图中畅玩，包括全mod支持
+photoSwipe: true
 ---
 
 ::: center
@@ -21,6 +22,42 @@ RavenM是社区驱动的Ravenfield联机插件，国际版在[Github](https://gi
 
 ## 预览图
 
+<!-- markdownlint-disable -->
+<!-- from https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/docs/theme/src/zh/guide/feature/photo-swipe.md -->
+<div class="image-preview"> 
+  <img src="https://ravenfieldcommunity.github.io/docs-img/Projects/ravenm.001.cn.png" />
+  <img src="https://ravenfieldcommunity.github.io/docs-img/Projects/ravenm.002.png" />
+</div>
+
+<style>
+  .image-preview {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .image-preview > img {
+     box-sizing: border-box;
+     width: 33.3% !important;
+     padding: 9px;
+     border-radius: 16px;
+  }
+
+  @media (max-width: 719px){
+    .image-preview > img {
+      width: 50% !important;
+    }
+  }
+
+  @media (max-width: 419px){
+    .image-preview > img {
+      width: 100% !important;
+    }
+  }
+</style>
+
+<!-- markdownlint-restore -->
 
 ## 安装
 
@@ -114,7 +151,7 @@ curl -sSL http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.sh | b
 >
 > 记得在设置里启用默认关闭的github代理:
 >
-> ![]steamcommunity302设置页面截图(https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.007.png)
+> ![steamcommunity302设置页面截图](https://ravenfieldcommunity.github.io/docs-img/Projects/mlang.007.png)
 
 > **第一个安装方式的备用方法？**
 >
