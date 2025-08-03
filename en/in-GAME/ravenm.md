@@ -21,8 +21,7 @@ When you can see a line of RavenM message at the left-down corner of game window
 
 ## Join&create a lobby
 
-Open Instant Action Menu, press `M` to open the multi-player ui:
-
+Open Instant Action Menu, press `M` to open the multi-player ui
 
 `HOST` is creating(hosting) a lobby, while `JOIN` is joining a lobby.
 
@@ -80,7 +79,7 @@ Squad order (`G`, `B` key) isn't avaliable between real players and players.
 
 Left-up corner is the ping status, higher is your network worse.
 
-Press `Tab` to show player scoreboard.
+Press `Tab` to show player scoreboard(may sync incorrectly).
 
 Available commands（Some commands need permission, `true`=`on` and `false`=`off` in community edition, and word case ignored) :
 | command names | OP access need? | Details |
@@ -95,8 +94,6 @@ Available commands（Some commands need permission, `true`=`on` and `false`=`off
 e.g. `/nametags true`
 
 Have fun!
-
-![Screenshot_Discord@Wolffe#6986](https://steamuserimages-a.akamaihd.net/ugc/1917988387306327667/C90622D8C9B8B654E187AA5038A84759DFF050D9/)
 
 ## Q&A
 
@@ -178,7 +175,7 @@ Have fun!
 >
 > You can correct the checkbox of each item to enable/disable the mod. The search can find mods by name or tag.
 >
-> Click the `Advanced Options` button, create a new collections, then you can quick switch the mod collections you want to used to load in game.
+> Click the `Advanced Options` button, create a new collections by `Save Filitered to Collection`, then you can quick switch the mod collections you want to used to load in game.
 >
 > Click link [`steam://gameproperties/636480/workshop`](steam://gameproperties/636480/workshop) can take you to there, or you can copy this it and create a quick link on your desktop.
 
