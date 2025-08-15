@@ -149,6 +149,7 @@ Ravenfield Tool
 │  ├─ Sanity Check Content Mod #检查选中的Mod导出向导Prefab是否可以导出（是否缺失必要物体）
 │  └─ Export Content Mod #导出选中的Mod导出向导Prefab
 ├─ Export Map or Content Mod #导出选中的Map或Mod导出向导Prefab
+├─ Setup Layer Name #为物体设置layer名
 ├─ Test Map or Content Mod #导出并运行游戏测试选中的Map或Mod导出向导Prefab
 └─ Publish to Steam Workshop #发布已导出的Mod或Map到Steam创意工坊
 ```

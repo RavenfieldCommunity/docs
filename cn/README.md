@@ -8,7 +8,7 @@ description: Ravenfield中文社区模组开发与游戏入门文档
 
 ## Ravenfield社区文档
 
-![GitHub pr数](https://img.shields.io/github/issues-pr/RavenfieldCommunity/docs.svg?style=flat-square&label=待通过PR) ![GitHub最后提交时间](https://img.shields.io/github/last-commit/RavenfieldCommunity/docs.svg?style=flat-square&label=最后提交时间) ![Github docs deploy status](https://img.shields.io/github/actions/workflow/status/RavenfieldCommunity/docs/deploy-docs.yml?style=flat-square&label=构建) ![Netlify build status](https://img.shields.io/netlify/f0bf63e4-7656-47b5-b9b5-a3022430379f?style=flat-square&logo=Netlify&label=Netlify%20build)
+![GitHub pr数](https://img.shields.io/github/issues-pr/RavenfieldCommunity/docs.svg?style=flat-square&label=待通过PR) ![GitHub最后提交时间](https://img.shields.io/github/last-commit/RavenfieldCommunity/docs.svg?style=flat-square&label=最后提交时间) ![Github docs deploy status](https://img.shields.io/github/actions/workflow/status/RavenfieldCommunity/docs/deploy-docs.yml?style=flat-square&label=构建) ![Netlify build status](https://img.shields.io/netlify/f0bf63e4-7656-47b5-b9b5-a3022430379f?style=flat-square&logo=Netlify&label=Netlify%20构建)
 
 
 
@@ -25,6 +25,8 @@ Ravenfield是一款由[SteelRaven7开发的FPS射击游戏](/cn/in-GAME/README.m
 本站另有镜像站于Netlify，为 [ravenfieldcommunity.netlify.app](https://ravenfieldcommunity.netlify.app)
 
 ::: tip
+**访问我们的镜像站（在上面）来加快国内访问速度！**
+
 我们推荐你将本网站以PWA（通俗叫“网页APP”、“快应用”。这时候你的浏览器可能已经弹出了安装提示）安装到你的设备以加快访问速度
 
 如果网站有更新，打开PWA应用后右下角应该会提示手动更新（`新内容已就绪`）按钮或自动更新
