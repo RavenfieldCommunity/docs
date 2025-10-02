@@ -16,8 +16,6 @@ Project repo：[Github](https://github.com/RavenfieldCommunity/HavenM) Steam Wor
 Though this project is hosted on us, it doesn't belong to us (Github@RavenfieldCommunity).
 
 It belongs to [Standt_Up](https://steamcommunity.com/profiles/76561198296228036)
-
-中国玩家请参阅[此处](https://ravenfieldcommunity.github.io/docs/cn/Projects/havenm.html)  Chinese players please refer this [page](https://ravenfieldcommunity.github.io/docs/cn/Projects/havenm.html).
 :::
 
 ## Description

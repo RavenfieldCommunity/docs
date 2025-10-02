@@ -25,6 +25,8 @@ Open Instant Action Menu, press `M` to open the multi-player ui
 
 `HOST` is creating(hosting) a lobby, while `JOIN` is joining a lobby.
 
+In `More`, there are other functions you can use.
+
 Click `HOST`, you can edit some props of new lobby:
 
 ![Lobby creating ui](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.002.en.png)
@@ -53,11 +55,15 @@ Click `JOIN`, one way is joining from public lobby list, another one is by lobby
 
 Select a lobby, you can see the info and join the lobby (if the plugin or game they are using is different from yours, you can't join it).	
 
-Colors of member name stand for member status (`green`=ready，`red`=loading mods, `grey or yellow`=in respawn cd time).
+Colors of member name stand for member status (`green`=ready, `red`=loading mods, `grey or yellow`=in respawn cd time).
 
 At the left side of member names, there is the loaded mods count, or selected team after all mod loaded.
 
 You can right click a member's name to copy his user id(in official edition is ban out sb.).
+
+Click the lobby name button then you can hide the in-lobby menu ui.
+
+Click `...` for more options.
 
 If the game has already started, you will enter the game directly.
 
@@ -95,6 +101,27 @@ e.g. `/nametags true`
 
 Have fun!
 
+### Deal with bugs
+
+A real bug that we can fix include these points: 
+
+  - It can be always triggered steadily by certain ways
+  
+  - It isn't caused by outside factors like network or Steam
+  
+      That means this bug will disappear after a while or some days
+
+
+If you find bug while playing, please tell us at `#bug-teports` or `#help` channel in discord server, and describe how you trigger it exactly or make a screen record video for it.
+
+To save error log and send it to us, after trigger it, open main menu or more options in in-lobby menu and click `Save error log`:
+
+![]()
+
+If the log file is too big (>50MB), please re-launch game and re-trigger bug and re-save it(lol how many `re` I used in this sentence).
+
+And you would better to put the debug file `RavenM.pdb`(in the zip file you downloaded from our GitHub page when you installing RavenM) next to the plugin before you trigger the bug and raise a bug report to us.
+
 ## Q&A
 
 > **My game stuck in mod loading when I launch the game**
@@ -123,7 +150,7 @@ Have fun!
 >
 > Open game directory like `E:\Program Files\Steam\steamapps\common\Ravenfield` and back to `E:\Program Files\Steam\steamapps\\`, then open `\workshop\content\636480\\`, delete all the content(the mods you subscribed will also be deleted, so you don't have to care about this problem).
 
-> **Big bug caused while I playing vanilla game**
+> **Critical bug caused while I playing vanilla game**
 >
 > RavenM's bug or RavenM isn't really compatible with current game. Unload or update RavenM, or raise bug report, please.
 
@@ -139,25 +166,34 @@ Have fun!
 >
 > Please check:
 > - Reopen lobby or game first.
-> - Is your game is latest stable version, instead of `ravenm-compatible` branch, any `legacy-ea**`, `pervious-ea`, or `test` branch version, non-Beta version is suggested.
+> - Is your game is latest stable version
+>
+>    Instead of `ravenm-compatible` branch, any `legacy-ea**`, `pervious-ea`, or `test` branch version. Non-beta version is suggested.
 >
 >    In steam, what next to the `START` button is the current game branch tag, click it or goto Game `properties` goto `Betas` to set your game to stable branch, the choice "`None`" is stable branch:
 >
 >    ![game props of beta page](https://ravenfieldcommunity.github.io/docs-img/in-GAME/ravenm.005.en.png)
 >
-> - Is your RavenM is latest version, otherwise update it.
-> - Is your network high-quality enough and stable.
+> - Is your RavenM is latest version
+>
+>    Otherwise update it.
+> - Is your network high-quality enough and stable
+>
+>    *This is most common one*
+>
+>    Tell your friend to host the lobby by himself, so you can join it
+> - Steam and game is blocked by Windows Firewall
 >    
 > - Have something to do with Steam
 >
->    If you sure there isn't other problems and you can multi-play successfully last time. Then wait until a certain time if it is surely Steam's problem sometomes.
+>    If you can multi-play successfully last time, then wait for a while.
 > - Tell your friends to check together.
 >
 > If these solutions aren't helpful, please ask for help in discord server or raise a bug report.
 
 > **Ping is too high**
 >
-> Your network or Steam server problem(problem of Steam is rare), use network booster or wait until a certain time.
+> Your network or Steam server problem(rare), use network booster or wait until a certain time.
 
 > **Where can I get RavenM's chinese build (or "chinam")**
 >
@@ -167,7 +203,7 @@ Have fun!
 >
 > A little problem of your IME, try another one.
 
-> **How can I, the host, control the mods user quickly**
+> **How can I, the host, control the mods used quickly**
 >
 > Open steam game properties' workshop page, you can manage the mods directly without starting the game.
 >
@@ -181,7 +217,7 @@ Have fun!
 
 > **How to reduce the time from launching game to joining my friends' lobby**
 >
-> Launch the game with no mods mode. Then you can jump out of loading your own mods and only load host's mods once.
+> Launch the game with no mods mode. Then you can skip loading your own mods and only load host's mods once.
 
 > **Some mutators do not work as expected sometimes.**
 >

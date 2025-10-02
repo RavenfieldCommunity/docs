@@ -7,7 +7,7 @@ photoSwipe: true
 ::: center
 OFFICIAL: ![Discord online member count](https://img.shields.io/discord/458403487982682113.svg?label=Discord&logo=Discord&colorB=7289da&style=flat-square) ![Last commit time](https://img.shields.io/github/last-commit/ABigPickle/RavenM.svg?style=flat-square&) ![Latest release version number](https://img.shields.io/github/v/release/ABigPickle/RavenM?label=release&logo=GitHub&style=flat-square) ![Downloads count](https://img.shields.io/github/downloads/ABigPickle/RavenM/total.svg?logo=GitHub&style=flat-square)
 
-**COMMUNITY EDITION**: ![Last commit time](https://img.shields.io/github/last-commit/RavenfieldCommunity/RavenM.svg?style=flat-square&) ![Latest release version number ](https://img.shields.io/github/v/release/RavenfieldCommunity/RavenM?label=release&logo=GitHub&style=flat-square) ![Downloads count](https://img.shields.io/github/downloads/RavenfieldCommunity/RavenM/total.svg?logo=GitHub&style=flat-square)
+**COMMUNITY EDITION**: ![Last commit time](https://img.shields.io/github/last-commit/RavenfieldCommunity/RavenM.svg?style=flat-square&) ![Latest release version number ](https://img.shields.io/github/v/release/RavenfieldCommunity/RavenM?label=release&logo=GitHub&style=flat-square) ![Downloads count](https://img.shields.io/github/downloads/RavenfieldCommunity/RavenM/total.svg?logo=GitHub&style=flat-square) ![Update time](https://img.shields.io/badge/dynamic/json?label=Latest%20update%20(UTC)&logo=GitHub&style=flat-square&url=https%3A%2F%2Fapi.github.com%2Frepos%2FRavenfieldCommunity%2FRavenM%2Freleases%2Flatest&query=%24.assets%5B0%5D.updated_at)
 
  [![Join Discord]( https://img.shields.io/badge/discord-JOIN%20DISCORD%20SERVER-grey.svg?style=for-the-badge&logo=discord&colorB=7289da)](https://discord.gg/63zE4gY)
 :::
@@ -77,7 +77,7 @@ join the [Official discord server](https://discord.gg/63zE4gY), you can get the 
 
 It will finish all thing you need.
 
-Official version of RavenM only.
+**Official version of RavenM only.**
 
 #### By script on Macos/Linux
 Open terminal and run the following command, then follow the script(on macos, this script may work badly):
@@ -86,16 +86,24 @@ Open terminal and run the following command, then follow the script(on macos, th
 curl -sSL http://ravenfieldcommunity.github.io/static/get_ravenm_d-utf8.sh | bash
 ```
 
-Official version of RavenM only.
+**Official version of RavenM only.**
 
 #### Manually
 
 #### Install BepInEX
 BepInEX is a cross-platform framework for Unity modding.
 
-Refer [BepInEX docs](https://docs.bepinex.dev/articles/user_guide/installation/index.html).
+Refer [BepInEX docs](https://docs.bepinex.dev/articles/user_guide/installation/index.html) or [ThunderStore(windows only)](https://thunderstore.io/package/bbepis/BepInExPack/) to finish installing BepInEX.
+
+Do not use the package in ThunderStore, as they are same with the pervious one but older.
+
+For Mac/Linux players, you can use [gib](https://github.com/toebeann/gib) for a friendly BepInEX setup.
+
+And for macos players who run on M series CPU like m1, refer [discord](https://discord.com/channels/458403487982682113/1002735877543436398/1090232033130852352) for the last step(join our server first).
 
 **Install BepInEX 5.x instead of 6.x!**
+
+After installing BepInEX, launch game to generate some files first.
 
 #### Download and install the plugin
 
@@ -105,7 +113,13 @@ You can download the plugin here:
 
 > [Community edition's github](https://github.com/RavenfieldCommunity/RavenM/releases)
 
-As you downloaded the release, unzip the `.zip` file to `BepInEX\plugins` in game directory, or directly put the plugin `.dll` to `BepInEX\plugins` in game directory if there are only dlls(`.dll` files are plugin itself).
+> person's version for EA30/31
+    
+    Go to the discord server for it
+
+As you downloaded the release, unzip the `.zip` file to `BepInEX\plugins` in game directory, or directly put the plugin `.dll` to `BepInEX\plugins` in game directory if there are only dlls(`.dll` files are plugin itself):
+
+![]()
 
 Now start the game, there will be a line of RavenM info at the down-left corner of window, if the plugin is installed correctly.
 
@@ -122,7 +136,7 @@ Copy the following command and open [Windows Terminal](https://apps.microsoft.co
 
 #### Manually
 
-Open `BepInEX/plugins/`, and delete the dll with name "`RavenM`".
+Open `BepInEX/plugins/`, and delete all the dlls with name "`RavenM`".
 
 If yoi also want to delete BepInEX, then delete the folder `BepInEX` and dll `winhttp.dll`.
 
@@ -144,7 +158,7 @@ If yoi also want to delete BepInEX, then delete the folder `BepInEX` and dll `wi
 >
 > At the official discord server of RFMP (no post link provided), the dev team announced this project stopped developing in 2020, and set the all channels to read-only, suggesting players to use RavenM for a better choice.
 >
-> RFMP had its wonderful lifetime, but because of bad game qualitiy, cheat problems, then mostly no one play on it sooon + no updates + lots of bad ratings + close online server forever.
+> RFMP had its wonderful lifetime, but because of bad game qualitiy, cheat problems, then nobody play it almost, no updates, causing lots of bad ratings, and finally closed online server forever.
 >
 > It was a past wonder of Ravenfield game community.
 
@@ -152,6 +166,8 @@ If yoi also want to delete BepInEX, then delete the folder `BepInEX` and dll `wi
 > **Windows Defender raised a red flag for it?**
 > 
 > Common problem, just allow it.
+>
+> If you don't trust this plugin, feel free to upload it to any online sandbox analysis service or build it from source code by yourself.
 
 
 > **Can I run it on pirated game?**
@@ -167,4 +183,4 @@ All [contributors](https://github.com/RavenfieldCommunity/RavenM/graphs/contribu
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=RavenfieldCommunity/RavenM)
 
-**And all the dev version testers in the discord server, thanks for taking time to find out the bugs! ❤❤❤❤️❤️**
+**And all the dev testers in the discord server, thanks for taking time to find out the bugs! ❤❤❤❤️❤️**
