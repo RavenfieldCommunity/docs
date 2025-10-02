@@ -184,3 +184,5 @@ All [contributors](https://github.com/RavenfieldCommunity/RavenM/graphs/contribu
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=RavenfieldCommunity/RavenM)
 
 **And all the dev testers in the discord server, thanks for taking time to find out the bugs! ❤❤❤❤️❤️**
+
+**Feel free to give us a star on [github](https://github.com/RavenfieldCommunity/RavenM), thanks for support!**
