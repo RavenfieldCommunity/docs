@@ -124,6 +124,16 @@ And you would better to put the debug file `RavenM.pdb`(in the zip file you down
 
 ## Q&A
 
+> **I can't spawn in map**
+>
+> Usually, you can see `🏴0 - 0🚩`(captured flags) in game progress bar at the top, or the ping is 0ms.
+>
+> This can be caused by network or Steam problem, check your local firewall whether allow game and Steam go through the network.
+>
+> Or ask your friends to host the lobby instead of you.
+>
+> Check following question "**Failed to multi-play with others**" for more
+
 > **My game stuck in mod loading when I launch the game**
 >
 > Do not run your game while Steam isn't running, and don't use pirated game.

@@ -111,7 +111,7 @@ curl -sSL http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.sh | b
 
 仿照安装步骤，重新安装一遍即可
 
-## 常见问题详情参见
+## 常见问题
 
 > **运行命令，为什么杀软报毒**
 >

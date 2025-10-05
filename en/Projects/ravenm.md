@@ -17,7 +17,7 @@ OFFICIAL: ![Discord online member count](https://img.shields.io/discord/45840348
 
 **For guidance only !!!**
 
-Some content may not suitable for official edition
+Some content maybe not suitable for official edition
 :::
 
 ## Description
@@ -115,7 +115,7 @@ You can download the plugin here:
 
 > person's version for EA30/31
     
-    Go to the discord server for it
+>    Go to the discord server for it
 
 As you downloaded the release, unzip the `.zip` file to `BepInEX\plugins` in game directory, or directly put the plugin `.dll` to `BepInEX\plugins` in game directory if there are only dlls(`.dll` files are plugin itself):
 
@@ -150,15 +150,15 @@ If yoi also want to delete BepInEX, then delete the folder `BepInEX` and dll `wi
 
 > **What is the differences between RFMP and RavenM**
 >
-> RFMP (or RFMM, full name is “Ravenfield: Multiplayer Mod”, at [Steam store](https://store.steampowered.com/app/1104390)) is a community-made game with multi-play feature, independent from the vanilla game.
+> RFMP (or RFMM, full name is “Ravenfield: Multiplayer Mod”, at [Steam store](https://store.steampowered.com/app/1104390)) is a community-made game with multi-play feature, independing from the vanilla game.
 >
-> It looks like vanilla game because SteelRaven7 has give some original game resources to it. (instead, RavenM is a truly plugin made for vanilla game).
+> It looks like vanilla game because SteelRaven7 has give some original artwork resources to it. (instead, RavenM is a truly plugin made for vanilla game).
 >
 > RFMP released on July 11, 2019, last updated on [May 31,2020 (from SteamDB)](https://steamdb.info/app/1104390/patchnotes/)
 >
 > At the official discord server of RFMP (no post link provided), the dev team announced this project stopped developing in 2020, and set the all channels to read-only, suggesting players to use RavenM for a better choice.
 >
-> RFMP had its wonderful lifetime, but because of bad game qualitiy, cheat problems, then nobody play it almost, no updates, causing lots of bad ratings, and finally closed online server forever.
+> RFMP had its wonderful lifetime, but because of bad game quality, cheat problems, then nobody play it almost, no updates, causing lots of bad ratings, and finally closed online server forever.
 >
 > It was a past wonder of Ravenfield game community.
 
