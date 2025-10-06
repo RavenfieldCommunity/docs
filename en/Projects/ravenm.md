@@ -26,7 +26,7 @@ A Ravenfield multiplayer plugin.
 
 You can use workshop mods, join lobbies, chat, or play in matches with other Ravenfield players in the multiplayer gaming, which supported by RavenM, depended on safe and high-quality [Steam Network](https://partner.steamgames.com/doc/features/multiplayer).
 
-Here we also provide a community edition of RavenM for newer game as the official one has no update currently (if the version is still v0.7 for EA29).
+Here we also provide a community edition of RavenM for newer game like **EA32** as the official one has no update currently (if the version is still v0.7 for EA29).
 
 ## Previews
 
@@ -109,12 +109,12 @@ After installing BepInEX, launch game to generate some files first.
 
 You can download the plugin here:
 
-> [Official github](https://github.com/iliadsh/RavenM/releases)
+> [Official github](https://github.com/iliadsh/RavenM/releases) for EA29 or older
 
-> [Community edition's github](https://github.com/RavenfieldCommunity/RavenM/releases)
+> [Community edition's github](https://github.com/RavenfieldCommunity/RavenM/releases) for EA32 or newer
 
-> person's version for EA30/31
-    
+> personperhaps' version for EA30/31
+>
 >    Go to the discord server for it
 
 As you downloaded the release, unzip the `.zip` file to `BepInEX\plugins` in game directory, or directly put the plugin `.dll` to `BepInEX\plugins` in game directory if there are only dlls(`.dll` files are plugin itself):
@@ -158,7 +158,7 @@ If yoi also want to delete BepInEX, then delete the folder `BepInEX` and dll `wi
 >
 > At the official discord server of RFMP (no post link provided), the dev team announced this project stopped developing in 2020, and set the all channels to read-only, suggesting players to use RavenM for a better choice.
 >
-> RFMP had its wonderful lifetime, but because of bad game quality, cheat problems, then nobody play it almost, no updates, causing lots of bad ratings, and finally closed online server forever.
+> RFMP had its wonderful lifetime, but because of bad game quality and cheat problems, nobody play it almost soon. As no updates, it caused lots of bad ratings, and finally closed online server forever.
 >
 > It was a past wonder of Ravenfield game community.
 
@@ -179,7 +179,7 @@ If yoi also want to delete BepInEX, then delete the folder `BepInEX` and dll `wi
 
 ## THANKS
 
-All [contributors](https://github.com/RavenfieldCommunity/RavenM/graphs/contributors), because of you this project is more perfected day by day ❤❤❤:
+All [contributors](https://github.com/RavenfieldCommunity/RavenM/graphs/contributors), because of you this project is more perfect day by day ❤❤❤:
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=RavenfieldCommunity/RavenM)
 
