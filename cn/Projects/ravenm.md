@@ -76,6 +76,13 @@ RavenM是社区驱动的Ravenfield联机插件，国际版在[Github](https://gi
 ```powershell
 $w=(New-Object System.Net.WebClient);
 $w.Encoding=[System.Text.Encoding]::UTF8;
+iex($w.DownloadString('https://ghproxy.net/github.com/RavenfieldCommunity/UnionSetup/releases/download/1/get_ravenmcn_d-utf8.zip'));
+Read-Host;
+```
+备用链接：
+```powershell
+$w=(New-Object System.Net.WebClient);
+$w.Encoding=[System.Text.Encoding]::UTF8;
 iex($w.DownloadString('https://ravenfieldcommunity-static.netlify.app/get_ravenmcn_d-utf8.ps1'));
 Read-Host;
 ```

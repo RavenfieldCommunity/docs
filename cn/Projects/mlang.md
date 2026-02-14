@@ -20,6 +20,13 @@ Steam工坊：[Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=323
 ```powershell
 $w=(New-Object System.Net.WebClient);
 $w.Encoding=[System.Text.Encoding]::UTF8;
+iex($w.DownloadString('https://ghproxy.net/github.com/RavenfieldCommunity/UnionSetup/releases/download/1/get_mlang-utf8.appx'));
+Read-Host;
+```
+备用链接：
+```powershell
+$w=(New-Object System.Net.WebClient);
+$w.Encoding=[System.Text.Encoding]::UTF8;
 iex($w.DownloadString('https://ravenfieldcommunity-static.netlify.app/static/get_mlang-utf8.ps1'));
 ```
 
@@ -216,9 +223,17 @@ Proton对macos的官方支持可能在未来发布，在此之前请自行在bin
 
 > **卸载插件？**
 >
-> `Win键`+`R`打开运行框，输入以下命令并确定，这会自动打开卸载向导（完全卸载插件与前置框架），按说明操作即可：
-> ```batch
-> powershell -nop -c "$w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/uninstall_bepinex-utf8.ps1'));"
+> 在开始菜单找到并打开 [终端](https://apps.microsoft.com/detail/9n0dx20hk701?hl=zh-CN&gl=CN) 或 [Powershell](https://www.51cto.com/article/696873.html)，右键复制粘贴以下命令到那边，并回车确定，稍等一下，按说明操作即可：
+> ```powershell
+> $w=(New-Object System.Net.WebClient);
+> $w.Encoding=[System.Text.Encoding]::UTF8;
+> iex($w.DownloadString('https://ghproxy.net/github.com/RavenfieldCommunity/UnionSetup/releases/download/1/get_mlang-utf8.appx'));
+> Read-Host;
+```
+备用链接：
+>
+> ```powershell
+> $w=(New-Object System.Net.WebClient);$w.Encoding=[System.Text.Encoding]::UTF8;iex($w.DownloadString('http://ravenfieldcommunity.github.io/static/uninstall_bepinex-utf8.ps1'));
 > ```
 >
 > 手动卸载就按手动安装的步骤反过来
