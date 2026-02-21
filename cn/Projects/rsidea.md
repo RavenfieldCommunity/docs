@@ -47,7 +47,14 @@ RSIDEA是一个帮助modder编写RS脚本的插件，依赖于前端Framework，
 
 ### 快速安装(仅VSCode)
 
-首先Git
+首先安装[Git](https://git-scm.com/install/)，使用默认设置即可
+
+对于国内用户可以在[这里](https://mirrors.tuna.tsinghua.edu.cn/)的右侧蓝色按钮找到国内镜像
+
+安装完成后重启VSCode
+
+安装Luals for vscode的扩展 [![Install in VS Code](https://img.shields.io/badge/VS%20Code-Install-blue?style=for-the-badge&logo=visualstudiocode "Install in VS Code")](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
+
 
 再安装Luals for vscode的扩展 [![Install in VS Code](https://img.shields.io/badge/VS%20Code-Install-blue?style=for-the-badge&logo=visualstudiocode "Install in VS Code")](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
 

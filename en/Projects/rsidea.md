@@ -49,6 +49,8 @@ This plugin supports Luals and [Emmylua](https://emmylua.github.io) (only compat
 
 ### Quick install(VSCode ONLY)
 
+First install [Git](https://git-scm.com/install/), just as default config.
+
 Install Luals for vscode extension [![Install in VS Code](https://img.shields.io/badge/VS%20Code-Install-blue?style=for-the-badge&logo=visualstudiocode "Install in VS Code")](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
 
 When you're done,open a folder or code-workspace, open any Lua file, right-click and select "Lua: Open Addon Manager" or Ctrl+P to open the command panel and enter “`>lua.addon_manager.open`”

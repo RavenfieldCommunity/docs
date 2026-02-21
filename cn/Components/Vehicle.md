@@ -71,7 +71,8 @@ category:
 | ramSize | Vector3 |   撞击区域大小调整 |
 | ramOffset | Vector3 |  撞击区域位置调整 |
 | disableOnDeath | GameObject[] | 死亡时隐藏的物体 |
-| activateOnDeath | GameObject[] | 死亡时显示（启用）的物体 |
+| activateOnDeath | GameObject[] | 死亡时显示（启用）的物体（若物体带`RigidBody`且勾选
+了`isKinematic`，该物体会从父物体独立并自带弹出速度） |
 | teamColorMaterials | MaterialTarget[] |  阵营颜色材质（需事先在Blender分配一个材质槽用于显示材质颜色） |
 | hasCountermeasures | bool | 有无干扰弹（或称热诱弹） |
 | countermeasuresActiveTime | float |   干扰效果持续时间 |
