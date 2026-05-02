@@ -17,5 +17,5 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| useWorldUpDirection  | bool |  |  
+| useWorldUpDirection  | bool | ？是否不随跟随载具转动 |  
 | positionBobWeight  | float | 相机位置随载具移动的权重（阻尼？） |  

@@ -76,6 +76,8 @@ link: /cn/RESOURCE.md
 
 **社区项目**
 
+::: card
+
 ```card
 title: Ravenscript IDEA
 desc: 新一代RS开发snippet插件
@@ -111,6 +113,8 @@ logo: /image/Components.png
 link: /cn/Projects/ravenm.md
 ```
 
+:::
+
 **鸣谢**
 
 所有的[贡献者](https://github.com/RavenfieldCommunity/docs/graphs/contributors)们，因为你们才使得了这个文档日臻完善❤❤❤:
@@ -122,6 +126,8 @@ link: /cn/Projects/ravenm.md
 以及以下开源项目 ：
 - [SocialSisterYi/bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect/)
 
+    （奠）
+    
     为这个项目的结构与的构建提供了参考
 - [vuepress-theme-hope](https://github.com/vuepress-theme-hope/vuepress-theme-hope)、[vuepress/vuepress](https://github.com/vuepress/vuepress-next)、[JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
 

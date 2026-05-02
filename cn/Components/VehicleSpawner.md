@@ -25,5 +25,5 @@ category:
 | respawnType  | enum.RespawnType | 何时再生成载具(`AfterDestroyed`=前一个报废后, `AfterMoved`=前一个开走后, `Never`=从不) |  
 | typeToSpawn | enum.VehicleSpawnType | 生成类型(`Jeep`, `JeepMachineGun`, `Quad`, `Tank`, `AttackHelicopter`, `AttackPlane`, `Rhib`, `AttackBoat`, `BombPlane`, `TransportHelicopter`, `Apc`) |  
 | prefab | GameObject | 自定义生成载具Prefab（即单独指定一个，此选项不受游戏选项的影响） |  
-| priority  | byte | 优先级（作用未知） |  
+| priority  | byte | bot使用该生成点载具的优先程度 |  
 | isRelevantPathfindingPointForBoats  | bool | 是船的Pathfinding Point（当生成的载具为Boat时请启用） |  

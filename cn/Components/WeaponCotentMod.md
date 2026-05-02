@@ -32,11 +32,11 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| name  | string | 武器名（意义不等于武器的`displayName`） |  
+| name  | string | 武器名（意义不等于主要使用的武器的`displayName`，默认看不到） |  
 | prefab | GameObject | 武器的Prefab |  
 | slot | enum.WeaponSlot | 武器槽位类型(`Primary`=主武器, `Secondary`=副武器, `Gear`=一小格装备, `LargeGear`=两格装备) |  
 | usableByAi  | bool | 此武器Bot可用 |  
 | usableByAiAllowOverride  | bool | 此武器Bot可用（优先） |  
 | type | enum.LoadoutType | 武器类型(`Normal`=普通, `Stealth`=消声类, `AntiArmor`=反装甲, `Repair`=载具修理工具, `ResupplyAmmo`=弹药补给包, `ResupplyHealth`=健康补给包) |  
-| sortPriority | int |  |  
+| sortPriority | int | ？游戏开发内部使用的排序优先级 |  
 | tags | string[] | 标签（`Size`=数量。先填写标签数量，再输入文本。会覆盖游戏默认分配的TAG） |  

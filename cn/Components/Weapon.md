@@ -48,11 +48,11 @@ category:
 | walk cycle | float |  |
 | want to aim | bool |  |
 
-对于此组件的子组件，部分选项是不可用的，请按照逻辑判断
+对于此组件的子组件，部分选项是不可用（无效）的，请按照逻辑判断
 
 切换到子武器时， 类似`loaded ammo`的parameter值会覆写成子武器的
 
-另外注意[Animation Event 帧事件](https://docs.unity.cn/cn/2020.3/Manual/script-AnimationWindowEvent.html)的用法，每个Event其用途与官方的[脚本api](https://ravenfieldgame.com/ravenscript/api/Weapon.html#methods)的对应函数名一致
+另外注意[Animation Event 帧事件](https://docs.unity.cn/cn/2020.3/Manual/script-AnimationWindowEvent.html)的用法，每个Event其用途与官方的[脚本api](https://ravenfieldgame.com/ravenscript/api/Weapon.html#methods)的对应函数名一致，可以帮助实现一些高级特性比如在某一帧的时间修改当前`cooldown`值，在event的目标物体拖入武器武器即可配置
 
 ## 变量
 | 名称 | 类型 | 描述 |
@@ -62,7 +62,7 @@ category:
 | thirdPersonOffset  | Vector3 | 第三人称显示的武器模型位置偏移量（矫正位置） |  
 | cullInThirdPerson | GameObject[] | 第三人称不显示的游戏物体（`Size`=数量。先填写要隐藏的物体数量，再在`Element*`处拖入物体） |  
 | thirdPersonScale  | float | 第三人称显示的武器模型缩放偏移量（矫正位置） |  
-| keepScriptsOnThirdPersonImposter  | bool |  | 
+| keepScriptsOnThirdPersonImposter  | bool | 是否允许bot为武器使用者时运行武器下的[ScriptedBehaviour](.\ScriptedBehaviour.md)（否则销毁ScriptedBehaviour物体） | 
 | reloadAudio | AudioSource | 装填音效(开启`advanceRaload`时忽略此项，此AudioSource建议放置于武器内的空物体上，参阅[RFCreator Project](/cn/Tutorials/README.md)) |  
 | changeFireModeAudio | AudioSource | 切换开火模式的音效 |  
 | reflectionSound  | enum.ReflectionSound | 回音效果（`Auto`=自动、`None`=无、`Handgun`=手枪、`RifleSmall`=小步枪、`RifleLarge`=大步枪、`Launcher`=炮、`Tank`=坦克） |  
@@ -71,7 +71,7 @@ category:
 | sprintBobMultiplier  | float | 跑步时晃动倍数 |  
 | proneBobMultiplier  | float | 趴下时晃动倍数 |  
 | uiSprite | Sprite | 武器图标 |  
-| arms | SkinnedMeshRenderer | 武器动画的手臂模型（场景层级内的！包含骨骼，默认名为“Hands“） |  
+| arms | SkinnedMeshRenderer | 武器动画的手臂模型（场景层级内的！包含骨骼，默认名为“`Hands`“） |  
 | allowArmMeshReplacement  | bool |  是否允许实际游戏时玩家皮肤替换手部皮肤 |  
 | parentWeapon | [Weapon](./Weapon.md) | 父武器（有子武器时可用，子武器就是Weapon物体里再套一个Weapon） |  
 | useParentWeaponSightModes | bool | 使用父武器的`sightModes` |  
@@ -115,7 +115,7 @@ category:
 | kickbackProneMultiplier  | float | 趴下时后座倍数 |  
 | spreadProneMultiplier  | float | 不精准度倍数 |  
 | followupSpreadProneMultiplier  | float | 趴下时后续增加的不精准度倍数 | 
-| snapProneMultiplier  | float |  |  
+| snapProneMultiplier  | float | （疑似未实装） |  
 | aiAllowedAimSpread  | float |  Bot瞄准不精准度（数值越高，Bot就越容易开火，即使未瞄准） |  
 | aiAimSwing  | float | Bot的攻击时的瞄准误差 |  
 | effInfantry  | enum.Effectiveness | 攻击是否对步兵作用(`No`=否, `Yes`=是, `Preferred`=是且为偏指定专用) | 

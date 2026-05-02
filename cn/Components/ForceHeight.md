@@ -8,6 +8,8 @@ category:
 
 强制将挂载此组件的物体的transform.position.y属性设置为定义的height
 
+即固定物体位置高度
+
 ## 用法
 
 挂载此组件至目标物体

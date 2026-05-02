@@ -29,7 +29,7 @@ EA26以下适用,RFTools的5.6.7f1旧版本
 [[**官方链接**(官方已移除)]](http://ravenfieldgame.com/modding.html) [[Github镜像]](https://github.com/Leafx-code/RavenfieldCommunityResource/releases/download/Resource/RavenfieldToolsPack.zip) [[蓝奏云社区分流(提取码:rfcn)]](https://wwyl.lanzoum.com/b052nto8h)
 
 ## 其他
-Unity Editor国际版 :[[**官方链接**]](https://download.unity3d.com/download_unity/75bff06b76bf/Windows64EditorInstaller/UnitySetup64-2020.3.43f1.exe) [[Unity Hub直链]](unityhub://2020.3.43f1/75bff06b76bf)
+Unity Editor国际版 :[[**官方链接**]](https://download.unity3d.com/download_unity/b805b124c6b7/Windows64EditorInstaller/UnitySetup64-2020.3.48f1.exe) [[Unity Hub直链]](unityhub://2020.3.48f1/b805b124c6b7)
 
 Blender :[**[Blender官网]**](https://www.blender.org/) [[Blender中文社区]](https://www.blendercn.org/downloadme)
 

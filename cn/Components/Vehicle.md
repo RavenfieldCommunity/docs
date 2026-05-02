@@ -63,10 +63,10 @@ category:
 | deathSound | AudioSource |   死亡音效 |
 | impactAudio | AudioSource |   撞击音效 |
 | heavyDamageAudio | AudioSource |  冒烟时的音效 |
-| blockSensor | Transform |  阻挡检测物体(一个简单的方块，并关闭其Mesh Render即可。如果有友军在检测器的范围内，车辆的驾驶员会尝试刹车，直到检测器内没有任何友军后才会继续行驶，但对直升机和飞机无效。疑似废弃，原版载具没有配置此项)  |
+| blockSensor | Transform |  阻挡检测物体（一个简单的方块，并关闭其Mesh Render即可。如果有友军在检测器的范围内，车辆的驾驶员会尝试刹车，直到检测器内没有任何友军后才会继续行驶。对直升机和飞机无效）  |
 | blip | Texture |   小地图上的载具图标 |
 | blipScale | float |   小地图上的载具图标的显示大小倍率 |
-| avoidanceSize | Vector2 | 载具生成避让大小(AI在巡路系统中认为的体积大小) |
+| avoidanceSize | Vector2 | 载具生成避让大小(AI在巡路系统中认为的体积大小。如果三个值乘积大于200，该载具可能会被拒绝生成) |
 | pathingRadius | float | AI进入载具的范围(该值越大，则AI就能从更远的地方直接进入该载具)  |
 | ramSize | Vector3 |   撞击区域大小调整 |
 | ramOffset | Vector3 |  撞击区域位置调整 |

@@ -115,6 +115,8 @@ All [contributors](https://github.com/RavenfieldCommunity/docs/graphs/contributo
 and the following open source projects :
 - [SocialSisterYi/bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect/)
 
+    (R.I.P.)
+
     Provides a reference for the structure and construction of this project.
 - [vuepress-theme-hope](https://github.com/vuepress-theme-hope/vuepress-theme-hope)、[vuepress/vuepress](https://github.com/vuepress/vuepress-next)、[JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
 

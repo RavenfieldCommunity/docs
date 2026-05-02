@@ -4,7 +4,7 @@ category:
 ---
 # rvs.1 Ravenscrpit
 ## -2.0 何为Ravenscrpit？
-Ravenscrpit是一个基于Lua的游戏语言（其实就是Lua），为了Ravenfield的模组化开发
+Ravenscrpit是一个基于Lua的游戏语言（其实就是Lua），为了Ravenfield的模组化而开发
 
 它的诞生基于[MoonSharp Project](https://www.moonsharp.org/)（可惜自2016年就没了更新，官方仓库堆了一堆PR）
 

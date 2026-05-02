@@ -14,7 +14,7 @@ category:
 
 小的如[Free Hold](https://steamcommunity.com/sharedfiles/filedetails/?id=1861292254)，小空间，动线（活动路径）灵活，速战速决
 
-大的如[巴士拉]()，地图大，文件大小也大（？），加载时间也长，适合好友约好联机，长时间跑图
+大的如[巴士拉（国内RFM活动钦定）](https://steamcommunity.com/sharedfiles/filedetails/?id=2396530431)，地图大，文件大小也大（？上百MB），加载时间也长，适合好友约好联机，长时间跑图
 
 然后是地图活动路线，小地图务必确保多路线与路线灵活性，免得被围殴
 
@@ -51,9 +51,15 @@ category:
 
 普通模型直接添加，拖到场景里，注意如果这个模型是路线的一部分（比如斜坡模型），应确保这里玩家和bot好走
 
+::: caution 
+**不要在地图里放置超大量物体，能在blender修改建模阶段就尽量合并，有概率影响运行性能**
+
+**也尽量不要缩放物体，应保持xyz均为1，大量被缩放的物体和缩放比过大的物体对运行性能的影响更严重**
+:::
+
 ## 2.2 寻路Pathfinding配置
 
-不像游戏的Map Editor，在Unity你需要自行配置Pathfinding Box寻路盒，用于生成
+不像游戏的Map Editor，在Unity你需要自行配置Pathfinding Box寻路盒，用于生成NAV-MESH
 
 参考[PathfindingBox](/cn/Components/PathfindingBox.md)
 
@@ -85,6 +91,6 @@ category:
 
 ## 3.0 测试&导出
 
-参考[RFTools杂项](/cn/Tutorials/otr.1.md)，确保已经打开要测试/导出的地图，点击菜单的`*** Map or Content Mod`即可
+参考[RFTools杂项](/cn/Tutorials/otr.1.md)，确保已经打开要测试/导出的地图，点击菜单的`Map`里的`Export Open Scene as Map`即可
 
 

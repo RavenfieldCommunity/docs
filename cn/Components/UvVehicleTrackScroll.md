@@ -8,7 +8,7 @@ category:
 
 从[UvOffset](./UvOffset.md)派生
 
-使车辆开动时，车辆的`targetMaterial`的贴图附带滚动效果
+使车辆开动时，车辆的`targetMaterial`的贴图附带滚动效果（即位置偏移）
 
 ## 用法
 

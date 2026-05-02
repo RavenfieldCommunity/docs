@@ -39,7 +39,7 @@ RSIDEA是一个帮助modder编写RS脚本的插件，依赖于前端Framework，
 
 ✅ self指针与register(behaviour注册、local常量注入与同步)
 
-❌ 不存在的const / var / static 辨别（前置扩展不支持我也没办法
+❌ 不存在的const / var / static 辨别（前置扩展不支持我们也没办法
 ```
 
 ## 安装

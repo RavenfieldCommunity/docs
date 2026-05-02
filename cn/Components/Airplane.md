@@ -22,14 +22,14 @@ category:
 | baseLift  | float | 升力 |  
 | acceleration  | float | 加速度 |  
 | accelerationThrottleUp  | float | 油门加速度 |  
-| accelerationThrottleDown  | float |  |  
+| accelerationThrottleDown  | float | ？油门反推加速度 |  
 | autoPitchTorqueGain  | float | 自动俯仰转矩增益 |  
 | perpendicularDrag  | float | 垂直阻力 |  
 | pitchSensitivity  | float | 俯仰操作灵敏度 |  
 | yawSensitivity  | float | 偏航操作灵敏度 |  
 | rollSensitivity  | float | 翻滚操作灵敏度 |  
-| liftGainTime  | float |  |  
+| liftGainTime  | float | ？升力削损时间 |  
 | controlWhenBurning  | float | 飞机滚动的灵敏度 |  
 | landingGearActivationObjects | GameObject[] | 起落架物体（收起起落架状态时隐藏） |  
-| throttleEngineAudioPitchControl  | float |  |  
-| flightAltitudeMultiplier  | float |  |  
+| throttleEngineAudioPitchControl  | float | 引擎（`engine`那项）音效受油门控制的音高程度 |  
+| flightAltitudeMultiplier  | float | bot的最大飞行高度倍率 |  

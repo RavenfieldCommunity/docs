@@ -23,4 +23,4 @@ category:
 | ----------- | ----------- | ----------- |
 | typeToSpawn | enum.TurretSpawnType | 生成类型(`MachineGun`, `AntiTank`, `AntiAir`) |  
 | prefab | GameObject | 自定义生成炮塔Prefab（即单独指定一个，此选项不受游戏选项的影响） |  
-| priority  | byte | 优先级（作用未知） |  
+| priority  | byte | bot使用该生成点载具的优先程度 |  

@@ -21,4 +21,4 @@ category:
 | sideDrag  | float | 侧面阻力 |  
 | upwardsDrag  | float | 升力阻力 |  
 | directionMatrixOverride | Transform |  |  
-| forceApplyPoint | Transform |  |  
+| forceApplyPoint | Transform | ？阻力等效作用点的位置 |  

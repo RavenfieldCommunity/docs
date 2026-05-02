@@ -7,7 +7,7 @@ category:
 ## 描述
 从[ExplodingProjectile](./ExplodingProjectile.md)类派生
 
-远程引信导弹，发射后经过一段距离爆炸
+远程引信导弹，发射后经过一段距离爆炸（？空爆）
 
 一般用于攻击载具
 ## 用法
@@ -23,5 +23,5 @@ category:
 | distanceWobbleGain  | float | 距离误差 |  
 | armDistance  | float | 离开火者多远才允许引爆 |  
 | autoExplodeDistance  | float | 经过多远距离引爆 |  
-| allowAllTargets  | bool |  |  
-| allowedTargetTypes | Actor.TargetType[] |  |  
+| allowAllTargets  | bool | 允许捕捉所有目标（覆盖`allowedTargetTypes`，即是否对载具、bot等目标也执行空爆） |  
+| allowedTargetTypes | Actor.TargetType[] | 捕捉目标类型 |  

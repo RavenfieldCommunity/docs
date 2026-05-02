@@ -19,4 +19,4 @@ category:
 ## 变量
 | 名称 | 类型 | 描述 |
 | ----------- | ----------- | ----------- |
-| speedThreshold  | float | 速度最大值（rigidbody.velocity.magnitude） |  
+| speedThreshold  | float | 速度最大值（unity开发里的`rigidbody.velocity.magnitude`） |  

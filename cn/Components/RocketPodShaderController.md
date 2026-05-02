@@ -6,13 +6,15 @@ category:
 # RocketPodShaderController
 ## 描述
 
-根据武器备弹情况调整Renderer的`_CutoffUV`
+根据武器备弹情况调整Renderer的`_CutoffUV`（shader属性）
 
 比如直升机炮弹组的弹药模型显示
 
 ## 用法
 
 挂载在Renderer组件下面
+
+（未确定前期对模型材质的修改方法）
 
 ## 注释
 

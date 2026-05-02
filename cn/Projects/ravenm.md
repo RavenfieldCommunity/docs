@@ -5,7 +5,7 @@ photoSwipe: true
 ---
 
 ::: center
-![QQ频道号](https://img.shields.io/badge/QQ频道-9pmc179t29-blue?style=flat-square) ![插件QQ群号](https://img.shields.io/badge/插件QQ群-710832844-blue?style=flat-square) ![插件QQ群号](https://img.shields.io/badge/插件QQ群-677540488-blue?style=flat-square) ![插件oopz频道号](https://img.shields.io/badge/%E6%8F%92%E4%BB%B6Oopz%E9%A2%91%E9%81%93-%E6%97%A0%E9%82%80%E8%AF%B7%E9%93%BE%E6%8E%A5-blue?style=flat-square)
+![QQ频道号](https://img.shields.io/badge/QQ频道-9pmc179t29-blue?style=flat-square) ![插件QQ群号](https://img.shields.io/badge/插件QQ群-794322470-blue?style=flat-square) ![插件oopz频道号](https://img.shields.io/badge/%E6%8F%92%E4%BB%B6Oopz%E9%A2%91%E9%81%93-%E6%97%A0%E9%82%80%E8%AF%B7%E9%93%BE%E6%8E%A5-blue?style=flat-square)
 
 ![最新版本号](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&&color=green&&style=flat-square&url=https://gitee.com/api/v5/repos/RedQieMei/Raven-M/releases/372833&query=%24.name)
 :::
@@ -18,7 +18,7 @@ RavenM联机插件国内版（此页面已经授权。本插件国内名或称 R
 
 这一切都由RavenM提供，依靠Steam官方稳定、安全、强大的[玩家网络](https://partner.steamgames.com/doc/features/multiplayer)提供主机中继与点对点连接服务
 
-RavenM是社区驱动的Ravenfield联机插件，国际版在[Github](https://github.com/iliadsh/RavenM)，另可参见本站英文版获取详情
+RavenM是社区驱动的Ravenfield联机插件，国际版在[Github（已经放弃维护）](https://github.com/iliadsh/RavenM)，另可参见本站英文版获取详情
 
 ## 预览图
 
@@ -76,14 +76,23 @@ RavenM是社区驱动的Ravenfield联机插件，国际版在[Github](https://gi
 ```powershell
 $w=(New-Object System.Net.WebClient);
 $w.Encoding=[System.Text.Encoding]::UTF8;
-iex($w.DownloadString('https://ghproxy.net/github.com/RavenfieldCommunity/UnionSetup/releases/download/1/get_ravenmcn_d-utf8.zip'));
+iex($w.DownloadString('https://gitee.com/ravenfieldcommunity/UnionSetup/raw/master/get_ravenmcn_d-utf8.txt'));
 Read-Host;
 ```
+
+
 备用链接：
 ```powershell
 $w=(New-Object System.Net.WebClient);
 $w.Encoding=[System.Text.Encoding]::UTF8;
 iex($w.DownloadString('https://ravenfieldcommunity-static.netlify.app/get_ravenmcn_d-utf8.ps1'));
+Read-Host;
+```
+
+```powershell
+$w=(New-Object System.Net.WebClient);
+$w.Encoding=[System.Text.Encoding]::UTF8;
+iex($w.DownloadString('https://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.ps1'));
 Read-Host;
 ```
 
@@ -147,6 +156,12 @@ curl -sSL http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.sh | b
 > RFMP曾辉煌了一段时期（甚至RF贴吧那边都搭建过国服服务器，开设联机赛，当然现在已经关了，Steam评论区犹见当年吧主贴的[公告评论](https://steamcommunity.com/profiles/76561198357197363/recommended/1104390/)），但由于RFMP确实确实比较粗糙，质量堪忧，挂壁飞天，不久就鬼服（指没人玩，没人有时间经常玩，越没人玩越不想玩）+ 停更 + 贬褒不一（评论区一堆差评和之前的好评） + 几年后永久停服了
 >
 > 至此，RFMP应是RF史上的一座遗迹
+
+> **什么叫做“国际版已放弃维护？**
+>
+> RavenM国际版（也就是初项目）至今未获得维护更新，且项目所有者已经在discord服务器上宣布放弃维护
+>
+> 目前使用的插件均由本社区维护或国内版本英化而来
 
 > **卸载插件？**
 > `Win键`+`R`打开运行框，输入以下命令并确定，这会自动打开卸载向导（完全卸载插件与前置框架），按说明操作即可：

@@ -24,5 +24,5 @@ category:
 | swingTime  | float | 单次攻击所需时间（一次只有最多两个伤害到的目标） |  
 | damage  | float | 对人的伤害 |  
 | balanceDamage  | float | 冲击力（影响平衡） |  
-| force  | float |  |  
+| force  | float | rigidbody作用力大小（影响钢体） |  
 | hitSound | AudioClip | 攻击音效 |  

@@ -28,7 +28,7 @@ category:
 | requireLockToFire  | bool | 锁定目标后武器才可以开火 |  
 | onlyLockWhenWeaponIsEquipped  | bool |  |  
 | useMountedWeaponUserLook  | bool |  |  
-| lockOntoEmptyVehicles  | bool |  |  
+| lockOntoEmptyVehicles  | bool | 是否锁定空载具 |  
 | maxPointTargetAngle  | float |  |  
 | trackingPositionIndicator | Transform | 中心瞄准物体 |  
 | pointTargetPositionIndicator | Transform |  |  
