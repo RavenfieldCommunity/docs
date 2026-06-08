@@ -27,7 +27,6 @@
     ]
   },
   "dependencies": {
-    "@rolldown/binding-win32-x64-msvc": "^1.1.0",
     "@vuepress/plugin-umami-analytics": "2.0.0-rc.27"
   }
 }
