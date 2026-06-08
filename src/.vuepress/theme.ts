@@ -46,6 +46,14 @@ export let theme = hopeTheme({
       }
     },
   },
+   markdown:{
+    mermaid: true,
+    align: true,
+    tabs:true,
+    spoiler: true,
+    markmap: true,
+    component: true,
+  },
   plugins:{
     comment: {
       provider: "Giscus",
@@ -73,8 +81,6 @@ export let theme = hopeTheme({
       },
     },
     mdEnhance: {
-      mermaid: true,
-	    align: true,
 	    card: true,
     },
 	redirect: {

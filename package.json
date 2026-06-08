@@ -1,28 +1,33 @@
 {
-  "name": "ravenfield-modding-documents",
-  "version": "1.0.0",
-  "description": "Ravenfield Community Modding Documents(UNOFFICIAL)",
+  "name": "ravenfield-docs",
+  "description": "Ravenfield Community Documents(UNOFFICIAL)",
+  "version": "2.0.0",
   "license": "CC-BY-NC-4.0",
   "type": "module",
   "scripts": {
-    "docs:build": "vuepress build .",
-    "docs:build-netlify": "vuepress build .",
-    "docs:clean-dev": "vuepress dev . --clean-cache",
-    "docs:dev": "vuepress dev .",
+    "docs:build": "vuepress-vite build src",
+    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
+    "docs:dev": "vuepress-vite dev src",
     "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@starzkg/vuepress-plugin-analytics": "1.1.4",
-    "@starzkg/vuepress-plugin-clarity-analytics": "1.1.4",
-    "@vuepress/bundler-vite": "2.0.0-rc.15",
-    "@vuepress/plugin-comment": "2.0.0-rc.42",
-    "@vuepress/plugin-google-analytics": "2.0.0-rc.42",
-    "@vuepress/plugin-pwa": "2.0.0-rc.42",
-    "@vuepress/plugin-redirect": "2.0.0-rc.42",
-    "@vuepress/plugin-umami-analytics": "2.0.0-rc.42",
-    "vue": "^3.5.3",
-    "vuepress": "2.0.0-rc.15",
-    "vuepress-plugin-md-enhance": "2.0.0-rc.52",
-    "vuepress-theme-hope": "2.0.0-rc.52"
+    "@vuepress/bundler-vite": "2.0.0-rc.30",
+    "markmap-lib": "^0.18.12",
+    "markmap-toolbar": "^0.18.12",
+    "markmap-view": "^0.18.12",
+    "mermaid": "^11.15.0",
+    "sass-embedded": "^1.99.0",
+    "vue": "^3.5.34",
+    "vuepress": "2.0.0-rc.30",
+    "vuepress-theme-hope": "2.0.0-rc.107"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "dependencies": {
+    "@rolldown/binding-win32-x64-msvc": "^1.1.0",
+    "@vuepress/plugin-umami-analytics": "2.0.0-rc.27"
   }
 }

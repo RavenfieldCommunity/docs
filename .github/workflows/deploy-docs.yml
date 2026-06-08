@@ -39,5 +39,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh_pages
-          folder: .vuepress/dist
+          folder: src/.vuepress/dist
           token: ${{ secrets.GITHUB_TOKEN }}

@@ -35,85 +35,72 @@ Ravenfield是一款由[SteelRaven7开发的FPS射击游戏](/cn/in-GAME/README.m
 
 **浏览文档的组成部分**
 
-::: card
+<VPCard
+  title="游戏入门"
+  desc="引导 上手 熟悉Ravenfield"
+  logo="/image/Components.png"
+  link="/cn/in-GAME/README.md"
+/>
 
-```card
-title: 游戏入门
-desc: 引导 上手 熟悉Ravenfield
-logo: /image/Components.png
-link: /cn/in-GAME/README.md
-```
-
-```card
-title: 教程
-desc: 开发Ravenfield模组
-logo: /image/Components.png
-link: /cn/Tutorials/README.md
-```
-
-```card
-title: 组件参考
-desc: RFTools自建组件参考文档
-logo: /image/Components.png
-link: /cn/Components/README.md
-```
-
-```card
-title: ❤贡献指南
-desc: 帮助我们维护文档！
-logo: /image/Components.png
-link: /cn/CONTRIBUTING.md
-```
-
-```card
-title: 资源镜像
-desc: 开发资源链接
-logo: /image/Components.png
-link: /cn/RESOURCE.md
-```
-
-:::
+<VPCard
+  title="教程"
+  desc="开发Ravenfield模组"
+  logo="/image/Components.png"
+  link="/cn/Tutorials/README.md"
+/>
+<VPCard
+  title="组件参考"
+  desc="RFTools自建组件参考文档"
+  logo="/image/Components.png"
+  link="/cn/Components/README.md"
+/>
+<VPCard
+  title="❤贡献指南"
+  desc="帮助我们维护文档！"
+  logo="/image/Components.png"
+  link="/cn/CONTRIBUTING.md"
+/>
+<VPCard
+  title="资源镜像"
+  desc="开发资源链接"
+  logo="/image/Components.png"
+  link="/cn/RESOURCE.md"
+/>
 
 **社区项目**
 
-::: card
 
-```card
-title: Ravenscript IDEA
-desc: 新一代RS开发snippet插件
-logo: /image/Project/rsidea.001.png
-link: /cn/Projects/rsidea.md
-```
+<VPCard
+  title="Ravenscript IDEA"
+  desc="新一代RS开发snippet插件"
+  logo="/image/Project/rsidea.001.png"
+  link="/cn/Projects/rsidea.md"
+/>
+<VPCard
+  title="游戏多语言"
+  desc="游戏本地化多语言支持"
+  logo="/image/Components.png"
+  link="/cn/Projects/mlang.md"
+/>
+<VPCard
+  title="联机插件国内版"
+  desc="国内社区优化的RavenM联机插件"
+  logo="/image/Components.png"
+  link="/cn/Projects/ravenm.md"
+/>
+<VPCard
+  title="HavenM"
+  desc="Ravenfield原版AI增强"
+  logo="/image/Components.png"
+  link="/cn/Projects/havenm.md"
+/>
+<VPCard
+  title="其他社区项目"
+  desc="其他社区项目 (不属于本站)"
+  logo="/image/Components.png"
+  link="/cn/Projects/other.md"
+/>
 
-```card
-title: 游戏多语言
-desc: 游戏本地化多语言支持
-logo: /image/Components.png
-link: /cn/Projects/mlang.md
-```
-
-```card
-title: 联机插件国内版
-desc: 国内社区优化的RavenM联机插件
-logo: /image/Components.png
-link: /cn/Projects/ravenm.md
-```
-
-```card
-title: HavenM
-desc: Ravenfield原版AI增强
-logo: /image/Components.png
-link: /cn/Projects/havenm.md
-```
-
-```card
-title: 其他社区项目
-desc: 其他社区项目 (不属于本站)
-logo: /image/Components.png
-link: /cn/Projects/ravenm.md
-```
-
-:::
 
 **鸣谢**
 
