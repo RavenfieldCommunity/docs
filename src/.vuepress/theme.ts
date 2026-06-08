@@ -16,7 +16,6 @@ export let theme = hopeTheme({
   logo: "/Logo.png",
   favicon: "/favicon.ico",
   repo: "ravenfieldcommunity/docs",
-  git: isNetlifyApp ? false : true,
   pure: true,
   contributors: false,
   pageInfo: ["Category", "Tag"],
@@ -32,13 +31,16 @@ export let theme = hopeTheme({
       outlookLocales: {
         themeColor: "#0000ff"
       },
-      routeLocales: {
-        notFoundMsg: ["Or this page doesn't support this language now, plz try to switch to \"简体中文\" language."]
+      routerLocales: {
+        notFoundMsg: ["Or this page isn't available in this language yet, try to switch to  language \"简体中文\"."]
       }
     },
     "/cn/": {
       navbar: cnNavbar,
       sidebar: cnSidebar,
+      outlookLocales: {
+        themeColor: "#ff0000"
+      },
       footer: '<p>基于CC-BY-NC-4.0许可 版权所有 © 2023-PRESENT RavenfieldCommunity</p><p>使用Google Analytics与Umami Cloud匿名分析网站数据</p><p>我们希望您在实际开发模组时遇到的问题与笔记、文档纰漏不吝麻烦在本站留言，既给自己一个记忆也帮助了他人，谢谢支持!</p> <a href="https://forms.office.com/r/iGw5BN33hC" target="_blank">点我匿名反馈♪(´▽｀)</a>',
       displayFooter: true,
       metaLocales: {
@@ -63,6 +65,7 @@ export let theme = hopeTheme({
       categoryId: "DIC_kwDOJde86s4CWLdI"
     },
     readingTime: false,
+    git: isNetlifyApp ? false : true,
     pwa: {
       themeColor: '#6d6d6d',
       cacheHTML: true,
@@ -80,9 +83,6 @@ export let theme = hopeTheme({
         }]
       },
     },
-    mdEnhance: {
-	    card: true,
-    },
 	redirect: {
 	    autoLocale: true, 
 	    config: {
@@ -95,8 +95,7 @@ export let theme = hopeTheme({
 	},
 	components: {
         components: [
-          "BiliBili",
-          "VPCard"
+          "BiliBili"
         ]
       },
   seo: {

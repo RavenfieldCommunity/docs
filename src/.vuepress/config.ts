@@ -1,7 +1,5 @@
 import { defineUserConfig } from "vuepress";
 import { theme, isNetlifyApp } from "./theme.js";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
-import { redirectPlugin } from "@vuepress/plugin-redirect";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { umamiAnalyticsPlugin } from '@vuepress/plugin-umami-analytics'
 
