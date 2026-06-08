@@ -106,7 +106,16 @@ curl -sSL http://ravenfieldcommunity.github.io/static/get_ravenmcn_d-utf8.sh | b
 ### 手动安装
 先安装[BepInEX](./mlang.md#安装BepInEX)
 
-然后加入qq群，获取插件包，将其解压到游戏目录下的 `BepInEX/plugins` 目录
+然后点下边按钮下载插件：
+
+<button onclick="window.downloadPlugin()">下载插件</button>
+<script>window.downloadPlugin = () => {
+
+fetch(atob('aHR0cHM6Ly9naXRlZS5jb20vYXBpL3Y1L3JlcG9zL1JlZFFpZU1laS9SYXZlbi1NL3JlbGVhc2VzLzM3MjgzMw==')).then((response) => response.json()).then((data) => window.open(data.assets[0].browser_download_url, "_blank"));  // waow from: https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch
+}
+</script>
+
+或者加入qq群，获取插件包，将其解压到游戏目录下的 `BepInEX/plugins` 目录
 
 如果没有这个目录，就在正确安装BepInEX后先运行一遍游戏
 
