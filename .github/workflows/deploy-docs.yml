@@ -21,6 +21,7 @@ jobs:
         uses: pnpm/action-setup@v6
         with:
             version: 11
+            run_install: true
 
       - name: 设置 Node.js
         uses: actions/setup-node@v6
@@ -29,9 +30,6 @@ jobs:
           node-version: 24
           # 缓存 pnpm 依赖
           cache: pnpm
-
-      - name: 安装依赖
-        run: pnpm ci
 
       # 运行构建脚本
       - name: 构建 VuePress 站点
