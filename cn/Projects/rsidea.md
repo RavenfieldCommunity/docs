@@ -77,7 +77,17 @@ RSIDEA是一个帮助modder编写RS脚本的插件，依赖于前端Framework，
 
 ## 用法
 
-由于前置扩展与我的开发经验不成熟，因此您在早期开发rs脚本时需遵循以下步骤
+由于前置扩展与开发经验不成熟，因此您在早期开发rs脚本时需遵循以下步骤
+
+### 注册脚本
+
+本插件提供`self`变量与方法的内联提示，但是由于插件管理器的限制，您需要手动启用该特性
+
+首先下载[`plugin.lua`](https://github.com/RavenfieldCommunity/RavenscriptIDEA/raw/refs/heads/main/plugin.lua) （可能需要复制到github加速站），然后把它放到电脑合适的位置
+
+然后打开 vscode -> `文件` -> `首选项` -> `设置` -> `扩展` -> `Lua` -> `Runtime: Plugin`, 然后填入`plugin.lua`文件的完整路径(**记得用 `\\`**):
+
+![](https://ravenfieldcommunity.github.io/docs-img/Projects/rsidea.002.png)
 
 ### 更新插件
 

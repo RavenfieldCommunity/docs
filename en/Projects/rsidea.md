@@ -87,41 +87,13 @@ Find out for yourself on the Internet
 
 ### Register script
 
-**If you only need to use RSIDEA's basic snippet fill and don't care about the self pointer fill and the autofill for creating functions or if it's too much of a hassle, you can ignore this step.**
+This addon provide `self` vars and funcs pointers. However, you need to configure it manually due to Addon Manager restriction.
 
-Before starting the development of each rs script, you need to create a separate file in the workspace (e.g. open folder, look it up yourself if you don't understand the concept, or define the global use of the following file in the extension's settings) as follows (here the example file name is `exampleWorker.lua`, the filename is arbitrary):
-```lua
----@meta
+To enable this feature, firstly download [`plugin.lua`](https://github.com/RavenfieldCommunity/RavenscriptIDEA/raw/refs/heads/main/plugin.lua) and put it to a suitable place.
 
----@class TO_DEF: Behaviours 
-TO_DEF2 = {
-    ---@type float
-    a=ANY,
-	b=ANY
-}
+Then open vscode -> `File` -> `Preferences` -> `Settings` -> `Extensions` -> `Lua` -> `Runtime: Plugin`, and fill in the full path of the `plugin.lua` file, like(yes **use `\\` instead**):
 
-rawset(_G,"YOUR_BEHAVIOUR_NAME",TO_DEF2)
-
---Duplication in this case means that multiple behaviors can be defined in the same file.
----@class TO_DEF_X: Behaviours 
-TO_DEF_X2 = {
-    ---@type float
-    a=ANY,
-	b=ANY
-}
-
-rawset(_G,"YOUR_BEHAVIOUR_NAME_X",TO_DEF_X2)
-```
-
-where the `---@meta` tag needs to appear only once in the file to indicate that the file is globally enabled in the workspace
-
-`---@class TO_DEF: Behaviours` refers to the derivation of a class `TO_DEF` from the class `Behaviour` (as with `TO_DEF2` below, which may be named something else but may not be duplicated, the variable `TO_DEF2` is used in place of the class `TO_DEF`. This variable `TO_DEF2` is used to replace the class `TO_DEF`.)
-
-The following `TO_DEF2` is filled with the variable you want to use in the self pointer when writing the rs script (so it can be left blank, but not missing `TO_DEF2 = {}`), and `ANY` is a placeholder for the `--@type float` that means that the variable is of type float (optional).
-
-Finally, in `rawset(_G, "YOUR_BEHAVIOUR_NAME",TO_DEF2)`, `YOUR_BEHAVIOUR_NAME` is filled in with the name of the behavior registered in `behaviour()` in your ravenscript, and `TO_DEF2` refers to the variable defined above.
-
-Now you can put this file aside and start writing this ravenscript
+![](https://ravenfieldcommunity.github.io/docs-img/Projects/rsidea.002.png)
 
 ### Example Usage
 
