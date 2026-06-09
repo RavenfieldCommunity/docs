@@ -39,6 +39,8 @@ category:
 
 然后将你的模型放在地图上布置好
 
+![Scene截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/MAP.1.001.jpg)
+
 ## 2.1 配置所需项与组件
 
 首先将`RFTools\Prefabs\Map Elements\Must Haves`内的Prefab全部添加到地图（`Pathfinding`内的稍后解释），这些东西是CP据点旗帜，Minimap[小地图摄像机](/cn/Components/MinimapCamera.md)，NM管理器（[Neighbor Manager](/cn/Components/SpawnPointNeighborManager.md)），RP[反射探针](/cn/Components/ReflectionProber.md)`，SC[背景场景相机](/cn/Components/SceneryCamera.md)，TD[世界属性](/cn/Components/TimeOfDay.md)，WP[海平面](/cn/Components/WaterPlane.md)（当然地图不需要海平面可以不加），这些是地图必需包含的东西
@@ -65,7 +67,9 @@ category:
 
 其他的Pathfinding工具参见[组件文档](/cn/Components/README.md#地图)
 
-一定要确保NAV覆盖到该覆盖的位置
+![Scene截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/map.1.002.jpg)
+
+一定要在菜单栏处生成NAVMESH（参见[otr.1](.\otr.1.md#菜单栏功能)），确保NAV覆盖到该覆盖的位置
 
 ## 2.3 地图特性索引
 
@@ -91,6 +95,7 @@ category:
 
 ## 3.0 测试&导出
 
-参考[RFTools杂项](/cn/Tutorials/otr.1.md)，确保已经打开要测试/导出的地图，点击菜单的`Map`里的`Export Open Scene as Map`即可
+参考[RFTools杂项](/cn/Tutorials/otr.1.md)，确保已经打开要测试/导出的地图，点击菜单的`Map`里的`Export Open Scene as Map`（参见[otr.1](.\otr.1.md#菜单栏功能)）即可
 
+你也可以在`Map Metadata`设置地图推荐bot配置与预览风格
 

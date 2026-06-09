@@ -37,6 +37,7 @@ Audacity ：[**[Audacity]**](https://www.audacityteam.org/)
 
 VS Code ：[**[VS Code]**](https://code.visualstudio.com/)
 
+
 JetBrains ：[**[JetBrains官网]**](www.jetbrains.com)
 
 ViS Community :[**[Visual Studio Community]**](https://visualstudio.microsoft.com/zh-hans/vs/community/)

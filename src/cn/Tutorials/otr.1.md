@@ -136,6 +136,8 @@ RFTools
 ```
 
 ## 菜单栏功能
+![菜单栏截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/otr.1.001.jpg)
+
 ```
 Ravenfield Tool
 ├─ Build Target #导出MOD对应目标系统类型（点击“Set ...”设置）

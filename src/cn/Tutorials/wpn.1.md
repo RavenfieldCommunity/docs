@@ -49,6 +49,8 @@ flowchart TD
 
 一般来说，一个武器包含的美术资源有模型、音效、以及[粒子效果](https://docs.unity.cn/cn/2020.3/Manual/ParticleSystems.html)
 
+可能还有贴图，如RF用的[Textures.com](https://www.textures.com/free)里面
+
 音效对于冷兵器来说只有攻击音效、热兵器有攻击、切换、装填等音效，如果是单/多发装填武器则需要将装填音效分割成多个片段以对应各个装填动画，如果只是想练手可以选择直接套用RFTools自带音效用于测试，如果追求武器的精致则还需更多音效
 
 冷兵器不需要粒子效果，热兵器则需要枪口火花、烟雾等，可以选择直接套用RFTools自带的粒子
@@ -69,33 +71,35 @@ flowchart TD
 
 如果想自己制作而建模有些许不行，可以在[Sketchfab](https://www.sketchfab.com/)、[模之屋](https://www.aplaybox.com/)这类网站寻找模型或按要仿制的游戏武器自行寻找对应原版游戏美术资源（新手建议）
 
-当我们制作完模型后，它应该看着应该是这样的：
+当我们制作完模型后，它应该看着应该是这样的（此处使用工具包模型作为例子）：
 
-{缺图}
+![Blende内模型截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.001.jpg)
 
 所有的物体能独立的都已独立并设置了父物体（方便后期维护+Clone），原点正确，已应用缩放，物体mesh无问题
 
-这时您就可以在菜单处追加`RFTools\Models\Character\Hands.blend`内的所有内容
+这时您就可以在菜单处追加`RFTools\Models\Character\Hands.blend`内的所有内容（Object里的三个东西，`Hands`、`Armature`和`Camera`）
 
 并继续下一步
 
 ::: details 如果您的武器包含光学瞄具、全息瞄具...（瞄具预制作方法）
-**双渲镜与UI材质方案**：请单独选择一个薄的物体（类似标准正方体、圆柱）放在瞄具对应的位置，并单独给予一个材质（不用纠结用什么，材质在Unity都会被替换），这个物体在Unity会被修改成瞄具瞄准画面，替换完成后，他看起来应该像这样
+**双渲镜与UI材质方案**：请单独选择一个薄的物体（类似标准正方体、圆柱、平面）放在瞄具对应的位置，并单独给予一个材质（不用纠结用什么，材质在Unity都会被替换），这个物体在Unity会被修改成瞄具瞄准画面，替换完成后，他看起来应该像这样
 
-{缺图}
+![模型瞄准镜内嵌物体](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.002.jpg)
+
+注意物体的旋转属性
 
 准星将在稍后再Unity配置，请预制做一个准星贴图
 
-**贴图方案（仅光学）**：直接制作一个准星贴图放置在瞄具对应的位置即可（`RFTools\Models\Weapons\Sinper.blend`内有，可以在此基础上修改）
+**准星贴图方案（仅光学）**：直接制作一个准星贴图放置在瞄具对应的位置即可（`RFTools\Models\Weapons\Sinper.blend`内有，可以在此基础上修改）
 
 后续详细过程请参考[2.5 瞄具设置（仅枪械）](#_2-5-瞄具设置-仅枪械)
 :::
 
 ## 1.2 制作动画
 
-当您追加`RFTools\Models\Character\Hands.blend`完成后，它应该看着是这样的：
+当您追加`RFTools\Models\Character\Hands.blend`（不是`Hands no IK for custom models.blend`）完成后，它应该看着是这样的：
 
-{缺图}
+![Blender内追加手臂](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.003.jpg)
 
 相机的位置在X0 Y0 Z0，所有物体均已应用缩放
 
@@ -103,21 +107,21 @@ flowchart TD
 
 好，在Blender菜单栏将新建一个工作区，自行命名工作区，将工作区调整为如下样式
 
-{缺图}
+![Blender工作区样式](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.004.jpg)
 
-这需要您合并、分割区域，添加线性编辑器、动画摄影表、时间线，属性编辑器上方添加添加一个3D视图并调整为相机画面
+这需要您合并、分割区域，添加线性编辑器、动画摄影表、时间线，添加一个3D视图并调整为相机画面
 
 相机画面需要隐藏标题栏、视图Gizom以移除遮挡画面的工具UI
 
 动画摄影表需要取消勾选“仅显示已选中”以显示所有关键帧，这有助于确保物体关键帧与对应的姿态关键帧保持在同一个位置
 
-这时，我们先打开姿态模式，调整好手的位置、形态：
+这时，我们先打开姿态模式，调整好手的位置、形态（可以选Wireframe渲染模式方便观察）：
 
-{缺图}
+![调整骨骼位置](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.005.jpg)
 
-按您的需求，在“骨骼约束”为骨骼设置子级将手部的两个主骨骼（这两个就够了！）绑定在武器对应的位置，譬如:
+按您的需求，在“`骨骼约束`”为骨骼设置`子级`，将手部的两个主骨骼（两个够了）绑定在武器对应的位置，譬如:
 
-{缺图}
+![骨骼绑定](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.006.png)
 
 这时，我们就可以正式开始为武器制作动画
 
@@ -149,9 +153,11 @@ flowchart TD
 
 另外，请确保手部骨骼始终保持贴合手的模型，像左图而不是右图，否则Unity内可能会出现动画问题：
 
-{缺图}
+![骨骼贴合正例](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.007.png) ![骨骼贴合反例](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.008.png)
 
 K完帧了？是时候下一步了
+
+![结束截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.009.jpg)
 
 ::: tip
 简单动画（如抛壳）可以在[Unity](https://docs.unity.cn/cn/2020.3/Manual/AnimationEditorGuide.html)中完成
@@ -164,7 +170,7 @@ K完帧了？是时候下一步了
 
 然后追加武器模型，调整模型位置，添加相机（大小随意，默认相机大小即可）与光源（面光）:
 
-{缺图}
+![模型与相机](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.010.jpg)
 
 将您的武器与相机对齐
 
@@ -178,7 +184,7 @@ K完帧了？是时候下一步了
 
 太白灯光就后退一点，几乎没东西灯光就近一点：
 
-{缺图}
+![渲染效果](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.011.jpg)
 
 最终效果参考`RFTools\Materials\Textures\UI\Weapons`
 
@@ -206,11 +212,9 @@ K完帧了？是时候下一步了
 
 在Unity的`Project`窗口选中模型文件，在右侧的`Inspector`选择`Animation`选项卡：
 
-{缺图}
+![Inspector截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.012.jpg)
 
 在Clips处新建动画片段并在`Start`与`End`处设置动画起始帧与结束帧（像`1~25`、`1~2`而不是`1~1`，`1~1`在Unity无法正常播放补救方法为`0.9~1`），设置好所有的片段（名字按动画随便起）：
-
-{缺图}
 
 请始终确保待机(Hip，此时武器枪口正对前方)动画处于`Cilps`的最顶层，这将有助于在Unity场景中设置枪口位置！
 
@@ -219,7 +223,7 @@ K完帧了？是时候下一步了
 
 首先确保你已经配置好动画Cilps，将Reload动画细分为开始装弹、装入子弹动作、结束装弹（拉栓）,将开火动画（仅包括跳栓）以及Idle动画细分.**参考**`RFTools\Models\Weapons\Garand.blend`：
 
-{缺图}
+![Clips设置](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.013.jpg)
 
 这一步需要先行在场景配置[Weapon](/cn/Components/Weapon.md)组件（启用`advenceReload`）以及[SoundBank](/cn/Components/SoundBank.md)组件,若未配置请先调至[下一章](#_2-4-在场景配置武器)然后再配置动画事件
 
@@ -232,6 +236,8 @@ K完帧了？是时候下一步了
 **在一个装弹循环结束的对应时间点添加一个`Function`为`MotionDone`的Event**
 
 否则游戏时会卡动画
+
+![Events设置](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.015.jpg)
 :::
 
 ::: details 如果您的武器是投掷类武器...（配置动画事件）
@@ -243,9 +249,9 @@ K完帧了？是时候下一步了
 ## 2.2 预配置武器图标
 此处配置武器图标的部分属性，否则在[下一章](#_2-4-在场景配置武器)时可能会出现奇怪的Bug（？
 
-在Unity的`Project`窗口选中武器图标文件，在右侧的`Inspector`选择将图标的`Texture Type`改为`Sprite(2D and UI)`，勾选`Generate Mip Maps`，`Filter Mode`改为`Trilinear`：
+在Unity的`Project`窗口选中武器图标文件，在右侧的`Inspector`选择将图标的`Texture Type`改为`Sprite(2D and UI)`，勾选`Generate Mip Maps`，（`Filter Mode`改为`Trilinear`？）：
 
-{缺图}
+![Sprite设置](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.014.jpg)
 
 这样就将武器图标从普通图片配置成了Sprite（又称精灵图或UI图像）
 
@@ -264,6 +270,9 @@ K完帧了？是时候下一步了
 等会要用
 
 ::: details 如果您的武器是烟雾弹...（烟雾弹原理）
+在projectlie预制件里放几个碰撞箱Box Collider，压扁一点，在Inspector的Layer出选`aiVisionOccluder`，没有就按菜单栏 => `Ravnefield Tools` => `Setup Layer Name`先添加layer名
+
+然后烟雾用粒子效果组件做
 :::
 
 ## 2.4 在场景配置武器
@@ -273,11 +282,9 @@ K完帧了？是时候下一步了
 
 这时他看着应该是这样的：
 
-{缺图}
+![场景视图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.016.jpg)
 
-选中您的武器（它现在应该自带Animator组件）：
-
-{缺图}
+选中您的武器（它现在应该自带Animator组件）
 
 添加[Weapon](/cn/Components/Weapon.md)（或按武器类型添加[MeleeWeapon](/cn/Components/MeleeWeapon.md)、[Wrench](/cn/Components/Wrench.md)或[ThrowableWeapon](/cn/Components/ThrowableWeapon.md)）、Audio Source（Weapon组件会附带）组件
 
@@ -285,11 +292,11 @@ K完帧了？是时候下一步了
 
 创建一个（多枪口可以多个）名为`Muzzle`（作为枪口、近战武器攻击点或投掷类武器投掷点，其他名字亦可）的空物体对齐模型的枪口（或投掷点），确保空物体Z轴正对前方：
 
-{缺图}
+![枪口设置](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.017.jpg)
 
 然后将这个空物体拖入Weapon组件(或其他)的`muzzles`：
 
-{缺图}
+![muzzles配置](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.018.jpg)
 
 在`Muzzle`物体下新建多个空物体作为枪口火花、烟雾的[粒子系统](https://docs.unity.cn/cn/2020.3/Manual/PartSysMainModule.html)（自行配置,主要为Particle System主模块（管理一般参数）与Renderer模块（管理外部模型、图像的渲染与显示）的参数，可以从其他武器复制、冷兵器可以跳过）
 
@@ -317,24 +324,28 @@ K完帧了？是时候下一步了
 二是**双渲染**：在Bledner放个薄的物体（类似标准平面、圆柱）当镜片，
 在Unity新建一个`Render Texture`材质，`500x500px`大概够用了：
 
-{缺图}
+![Inspector截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.019.jpg)
 
-新建普通材质，将类型改为`Unlit\Texture`，`Base`选择刚才创建的`Render Texture`：
+新建普通材质，将Shader类型改为`Unlit\Texture`，`Base`选择刚才创建的`Render Texture`：
 
-{缺图}
+![Inspector截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.020.jpg)
 
 场景内新建一个摄像机在武器下（不要放在武器模型的层级下）,检查器内的`Target Texture`就选刚才创建的`Render Texture`：
 
-{缺图}
+![Inspector截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.020.jpg)
 
 最后，把刚才创建的普通材质应用在镜片即可，相机的Z轴位置可以调一下，跟换倍率的效果差不多：
 
-{缺图}
+![Inspector截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.021.jpg)
 
 ::: details 狙击手聚焦视角
-{缺图}
+![Game截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.022.jpg)
 
 对于像图中的狙击手聚焦视角，把场景内的`FP_scope`（官方武器Sinper下）复制到与镜片相同的层级下即可，可能需要细调一下`FP_scope`的位置，请自行调整，别忘记把这个物体拖到Weapon组件的`scopeAimObject`里！
+
+![Scene截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.023.jpg)
+
+最后，禁用该物体即可，避免影响自己在场景的观感
 
 如果不满意`FP_scope`的标线，您可以到Blender自行更改，它在`RFTools\Assets\Models\Weapons\Sinper.blend`里 
 :::
@@ -350,12 +361,12 @@ K完帧了？是时候下一步了
 
 贴图太大可以把带`Holo Sight`材质的物体的Y方向拖远一点
 
+![Scene截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.024.jpg)
+
 ### 红点瞄具
 同样简单，在武器下新建一个空物体，添加组件`Line Render`，取消勾选组件的`Use World Space`
 
-将`Positions`的`Sizes`设为2，`Element 0`不动，调整`Element 1`的Z方向长度即可，颜色可以在`Color`改，`Width`可以改线条宽度，`Material`处可以改射线材质（`RFTools\Materials\Tracers`）：
-
-{缺图}
+将`Positions`的`Sizes`设为2，`Element 0`不动，调整`Element 1`的Z方向长度即可，颜色可以在`Color`改，`Width`可以改线条宽度，`Material`处可以改射线材质（`RFTools\Materials\Tracers\\`）：
 
 ## 2.6 制作动画机
 这玩意就需要你的想象力了
@@ -410,6 +421,10 @@ flowchart LR
 
 参上
 
+### 3.2.3 烟雾弹
+
+参上
+
 ### 3.2.1 
 
 ## 3.3 测试与导出
@@ -448,4 +463,4 @@ flowchart LR
 
 配置过程参考[WeaponContectMod的组件文档](/cn/Components/WeaponCotentMod.md)
 
-然后选中你的武器Prefab，在[菜单栏](./otr.1.md)上的 Ravenfied Tools 里 选择  “Test ...”或“Export ...”，然后即可测试或导出
+然后选中你的武器Prefab，在[菜单栏](./otr.1.md)上的 Ravenfied Tools 里选择对应选项 （参见[otr.1](.\otr.1.md#菜单栏功能)），然后即可测试或导出

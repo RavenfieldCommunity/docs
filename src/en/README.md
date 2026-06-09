@@ -27,84 +27,65 @@ Also, please feel free to help us write & translate the document!
 
 **Browse this Documents**
 
-::: card
+<VPCard
+  title="Introduction to the game"
+  desc="Getting Started with Ravenfield"
+  logo="/image/Components.png"
+  link="/en/in-GAME/README.md"
+/>
 
-```card
-title: Introduction to the game
-desc: Getting Started with Ravenfield
-logo: /image/Components.png
-link: /en/in-GAME/README.md
-```
-
-```card
-title: Tutorials
-desc: Developing the Ravenfield Mod
-logo: /image/Components.png
-link: /en/Tutorials/README.md
-```
-
-```card
-title: Components Reference
-desc: RFTools Self-Built Components Reference
-logo: /image/Components.png
-link: /en/Components/README.md
-```
-
-```card
-title: ❤CONTRIBUTING GUIDE
-desc: Help us maintain documents!
-logo: /image/Components.png
-link: /en/CONTRIBUTING.md
-```
-
-```card
-title: Resource Mirror
-desc: Links to Development Resources
-logo: /image/Components.png
-link: /en/RESOURCE.md
-```
-
-```card
-title: Old version of the project
-desc: The original Steam project for this document
-logo: https://store.steampowered.com/favicon.ico
-link: https://steamcommunity.com/sharedfiles/filedetails/?id=2902809158
-```
-:::
+<VPCard
+  title="Tutorials"
+  desc="Developing Ravenfield Mods"
+  logo="/image/Components.png"
+  link="/en/Tutorials/README.md"
+/>
+<VPCard
+  title="Components Reference"
+  desc="RFTools Built-in Components Reference"
+  logo="/image/Components.png"
+  link="/en/Components/README.md"
+/>
+<VPCard
+  title="❤CONTRIBUTING GUIDE"
+  desc="Help us maintain documents!"
+  logo="/image/Components.png"
+  link="/en/CONTRIBUTING.md"
+/>
+<VPCard
+  title="Resource Mirror"
+  desc="Links to Development Resources"
+  logo="/image/Components.png"
+  link="/en/RESOURCE.md"
+/>
 
 **Community Project**
 
-::: card
 
-```card
-title: Ravenscript IDEA
-desc: The NEXT snippet addons for ravenscript coding
-logo: /image/Project/rsidea.001.png
-link: /en/Projects/rsidea.md
-```
-
-```card
-title: Nuget Packages for Ravenfield
-desc: Plugin development dependencies for Ravenfield.
-logo: /image/Components.png
-link: /en/Projects/gamelibs.md
-```
-
-```card
-title: HavenM
-desc: Bot enhancement for Ravenfield
-logo: /image/Components.png
-link: /en/Projects/havenm.md
-```
-
-```card
-title: RavenM
-desc: A Ravenfield multiplayer plugin
-logo: /image/Components.png
-link: /en/Projects/ravenm.md
-```
-
-:::
+<VPCard
+  title="Ravenscript IDEA"
+  desc="The NEXT snippet addons for ravenscript coding"
+  logo="/image/Project/rsidea.001.png"
+  link="/en/Projects/rsidea.md"
+/>
+<VPCard
+  title="Nuget Packages for Ravenfield"
+  desc="Plugin development dependencies for Ravenfield."
+  logo="/image/Components.png"
+  link="/en/Projects/gamelibs.md"
+/>
+<VPCard
+  title="RavenM"
+  desc="A Ravenfield multiplayer plugin"
+  logo="/image/Components.png"
+  link="/en/Projects/ravenm.md"
+/>
+<VPCard
+  title="HavenM"
+  desc="Bot enhancement for Ravenfield"
+  logo="/image/Components.png"
+  link="/en/Projects/havenm.md"
+/>
 
 **THANKS**
 

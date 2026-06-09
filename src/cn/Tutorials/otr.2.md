@@ -4,6 +4,8 @@ category:
 ---
 # otr.2 皮肤
 
+参见[工坊指南](https://steamcommunity.com/sharedfiles/filedetails/?id=2769041707)
+
 ## 1.0 准备模型
 
 准备人物模型，自制或自己找来

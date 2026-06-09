@@ -12,6 +12,10 @@ Also note the "[Derived Classes](https://learn.microsoft.com/en-us/dotnet/csharp
 This document is heavily used and omits references to the parents of the subclasses, but at the beginning of the document where the link to the parent document is indicated.
 :::
 
+::: caution
+**MAYBE OUTDATED, CHECK CHINESE VERSION FIRST!**
+:::
+
 ## Vehicle
 - [Airplane](./Airplane.md) 
 - [VehicleContentMod](./VehicleContentMod.md) 

@@ -109,7 +109,7 @@ end
 
 在成员属性中，如[这个](http://ravenfieldgame.com/ravenscript/api/Actor.html#_CPPv4N5Actor7balanceE)：
 
-![](https://ravenfieldcommunity.github.io/docs-img/Tutorials/rvs.1.001.png)
+![网页截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/rvs.1.001.png)
 
 float表示这个属性的类型是float浮点数，balance表示这个属性的名字，其他的类似，RS自带的内建类类型会提供一个超链接高亮显示
 
@@ -121,7 +121,7 @@ float表示这个属性的类型是float浮点数，balance表示这个属性的
 
 在成员方法中，如[这个](http://ravenfieldgame.com/ravenscript/api/Actor.html#_CPPv4N5Actor14CanBeDamagedByE6Weapon)：
 
-![](https://ravenfieldcommunity.github.io/docs-img/Tutorials/rvs.1.002.png)
+![网页截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/rvs.1.002.png)
 
 方法名前的是方法返回的数据的类型（如果是void则表示无返回值），`seat`表示的是参数，前头的`Seat`表示的是这个参数的类型
 
@@ -129,7 +129,7 @@ float表示这个属性的类型是float浮点数，balance表示这个属性的
 
 在成员事件中，如[这个](http://ravenfieldgame.com/ravenscript/api/Actor.html#_CPPv4N5Actor12onTakeDamageE)：
 
-![](https://ravenfieldcommunity.github.io/docs-img/Tutorials/rvs.1.003.png)
+![网页截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/rvs.1.003.png)
 
 这是实际上是一个为[ScriptEvent](http://ravenfieldgame.com/ravenscript/api/ScriptEvent.html)类型的属性
 

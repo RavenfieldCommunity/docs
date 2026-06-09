@@ -95,7 +95,8 @@ export let theme = hopeTheme({
 	},
 	components: {
         components: [
-          "BiliBili"
+          "BiliBili",
+          "VPCard"
         ]
       },
   seo: {
