@@ -141,23 +141,23 @@ RFTools
 ```
 Ravenfield Tool
 ├─ Build Target #导出MOD对应目标系统类型（点击“Set ...”设置）
-├─ Set Game Executeble #选择游戏文件目录（方便测试MOD）
 ├─ Map #地图相关
-│   ├─ Map Metadata #设置地图的推荐bot人数以及部分属性
+│   ├─ Metadata Editor #设置地图的推荐bot人数以及部分属性
 │   ├─ Scan Pathfinding #扫描地图的NAV-MESH（会唤醒游戏进程）
 │   ├─ Export Open Scene as Map #将打开的Unity场景作为Map导出
 │   └─ Sanity Check Map #检查Map是否可以导出（是否缺失必要物体）
 ├─ Content #MOD
 │  ├─ Sanity Check Content Mod #检查选中的Mod导出向导Prefab是否可以导出（是否缺失必要物体）
 │  └─ Export Content Mod #导出选中的Mod导出向导Prefab
+├─ Set Game Executeble #选择游戏文件目录（方便测试MOD）
 ├─ Export Map or Content Mod #导出选中的Map或Mod导出向导Prefab
-├─ Setup Layer Name #为物体设置layer名
+├─ Setup Layer Name #向当前Unity项目添加RF内建的layer名
 ├─ Test Map or Content Mod #导出并运行游戏测试选中的Map或Mod导出向导Prefab
 └─ Publish to Steam Workshop #发布已导出的Mod或Map到Steam创意工坊
 ```
 
 ## 常见问题
-> **打开Unity工程，提示进入安全模式**
+> *打开Unity工程，提示进入安全模式*
 >
 > 提示[安全模式](https://docs.unity.cn/cn/2020.3/Manual/SafeMode.html)时，此时如果忽略错误并强制进入，大部分情况下RFTools的所有依赖组件都会无法运行
 >
@@ -169,15 +169,15 @@ Ravenfield Tool
 >
 > 或请检查上一次打开工程时是否添加了外部C#脚本进入工程或修改了RFTools依赖组件，如果有，替换原版脚本或删除外来脚本
 
-> **我换设备打开工程的时候出现了错误**
+> *我换设备打开工程的时候出现了错误*
 >
 > 确保Unity版本与通过安装包安装的Blender版本完全一致，或者先在旧电脑导出unity package
 
-> **无法上传工坊物品，打开对应工坊页面提示正在审查**
+> *无法上传工坊物品，打开对应工坊页面提示正在审查*
 >
 > Steam审查期间不可操作物品，若等待审核时间过长请找客服，提供问题工坊项目链接
 
-> **无法公开工坊物品**
+> *无法公开工坊物品*
 >
 > 受社区封禁的账户，或Steam账户未达到新注册用户的要求消费线（累积最低商店消费。用来防止水军）
 >

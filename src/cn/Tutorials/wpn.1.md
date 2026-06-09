@@ -82,7 +82,7 @@ flowchart TD
 并继续下一步
 
 ::: details 如果您的武器包含光学瞄具、全息瞄具...（瞄具预制作方法）
-**双渲镜与UI材质方案**：请单独选择一个薄的物体（类似标准正方体、圆柱、平面）放在瞄具对应的位置，并单独给予一个材质（不用纠结用什么，材质在Unity都会被替换），这个物体在Unity会被修改成瞄具瞄准画面，替换完成后，他看起来应该像这样
+**双渲镜与UI材质方案**：请单独选择一个薄的物体（类似标准正方体、圆柱、平面）放在瞄具对应的位置，并单独给予一个材质，这个物体的材质在Unity会被修改成瞄具瞄准画面，添加后，他看起来应该像这样
 
 ![模型瞄准镜内嵌物体](https://ravenfieldcommunity.github.io/docs-img/Tutorials/wpn.1.002.jpg)
 
@@ -401,6 +401,8 @@ flowchart LR
 
 这是一个繁琐的过程，在Unity Editor基本调完后还要在游戏里测试
 
+在Editor，可以调完后点播放在场景测试，然后取消播放再改一次参数
+
 各种武器的属性参见互联网与B站，如OfficialArch系列
 
 ## 3.2 武器特性索引
@@ -463,4 +465,4 @@ flowchart LR
 
 配置过程参考[WeaponContectMod的组件文档](/cn/Components/WeaponCotentMod.md)
 
-然后选中你的武器Prefab，在[菜单栏](./otr.1.md)上的 Ravenfied Tools 里选择对应选项 （参见[otr.1](.\otr.1.md#菜单栏功能)），然后即可测试或导出
+然后选中你的武器Prefab，在[菜单栏](./otr.1.md)上的 Ravenfied Tools 里选择对应选项 （参见[otr.1](.\otr.1#菜单栏功能)），然后即可测试或导出

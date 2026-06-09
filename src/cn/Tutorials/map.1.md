@@ -39,7 +39,7 @@ category:
 
 然后将你的模型放在地图上布置好
 
-![Scene截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/MAP.1.001.jpg)
+![Scene截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/map.1.001.jpg)
 
 ## 2.1 配置所需项与组件
 
@@ -69,7 +69,7 @@ category:
 
 ![Scene截图](https://ravenfieldcommunity.github.io/docs-img/Tutorials/map.1.002.jpg)
 
-一定要在菜单栏处生成NAVMESH（参见[otr.1](.\otr.1.md#菜单栏功能)），确保NAV覆盖到该覆盖的位置
+一定要在菜单栏处生成NAVMESH（参见[otr.1](.\otr.1#菜单栏功能)），确保NAV覆盖到该覆盖的位置
 
 ## 2.3 地图特性索引
 
