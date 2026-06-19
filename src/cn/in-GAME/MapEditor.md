@@ -224,30 +224,21 @@ SMOOTH效果图（原图：平滑后）：
 他们位于`ASSET`内的`Built-in Types`标签内
 
 分别是：
+|物体名|译名|
+|------|------|
+| Audio Source | 环境音 |
+| Avoidance Box|  回避箱|
+|Capture Point |据点旗帜|
+|Collider Box |空气墙|
+|Ladder |梯子|
+|Light| 灯光|
+|Pathfing Box |路径盒|
+|Pathfinding Link| 强制寻路器|
+|Spawn Point| 出生点|
+|Turret Spawn |固定武器生成点（如机枪）|
+|Vehicle Spawn |载具生成点|
 
-Audio Source 环境音
-
-Avoidance Box 回避箱
-
-Capture Point 据点旗帜
-
-Collider Box 空气墙
-
-Ladder 梯子
-
-Light 灯光
-
-Pathfing Box 路径盒
-
-Pathfinding Link 强制寻路器
-
-Spawn Point 出生点
-
-Turret Spawn 固定武器生成点（如机枪）
-
-Vehicle Spawn 载具生成点
-
-参加本站[组件文档](/cn/Components)
+参见本站[组件文档](/cn/Components)
 
 ### AI寻路规划
 
@@ -309,7 +300,7 @@ Vehicle Spawn 载具生成点
 
 - `Upload`
 
-  参考[3.0 保存 / 发布地图]()
+  参考[3.0 保存/发布地图]()
 
 以下为`SETTING`的解释：
 
@@ -358,7 +349,7 @@ Vehicle Spawn 载具生成点
 
 点击`MAIN MENU`中的`SAVE`
 
-在弹出的方框中的”`File Name`“里输入一个名字后点击SAVE
+在弹出的方框中的”`File Name`“里输入一个名字后点击`SAVE`
 
 然后就会开始保存地图：
 
@@ -376,18 +367,18 @@ Vehicle Spawn 载具生成点
 
 文件名为`保存的名称+rfld后缀`
 
-游玩
+- 游玩
 
-在`CUSTOM MAP`处点击，找到您的地图并点击即可游玩
+  在`CUSTOM MAP`处点击，找到您的地图并点击即可游玩
 
-发布至Steam创意工坊
+- 发布至Steam创意工坊
 
-点击`MAIN MENU` -> `LEVEL DETAILS` -> `Upload`
+  点击`MAIN MENU` -> `LEVEL DETAILS` -> `Upload`
 
-它可能会在”`Please fix following problem:`“这个框内显示一些问题：
+  它可能会在”`Please fix following problem:`“这个框内显示一些问题
 
-请自行修复
+  请自行修复
 
-如果一切正常，请直接点击`CONNECT`，这会跳转至Steam，按照提示操作即可
+  如果一切正常，请直接点击`CONNECT`，这会跳转至Steam，按照提示操作即可
 
-注意：请确保您游玩的不是盗版，并且Steam在后台，可以连接创意工坊！！！
+  确保Steam在后台

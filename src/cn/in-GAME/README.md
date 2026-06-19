@@ -48,205 +48,247 @@ SteelRaven7 （大乌鸦），瑞典人，单人独立开发Ravenfield
 
 游戏官网是：[Ravenfield](http://ravenfieldgame.com/)
 
-你可以在这里了解到更多信关于RF的今生前世：[\[百度贴吧\]Ravenfield全球通史](https://tieba.baidu.com/p/7329861755?see_lz=1)
+你可以在这里了解到更多信关于RF的今生前世：[\[百度贴吧\]Ravenfield全球通史（已删除）](https://tieba.baidu.com/p/7329861755?see_lz=1)
 
-以下为补充与搬运：
+以下为补充与搬运（时区应该为北京时间）：
 
 :::warn 
-**未完成，甚至还没去请求转载授权，非常抱歉**
+**未请求转载授权，非常抱歉**
 :::
 
+
 - 2015年 夏天
-  SteelRaven7 在一个凌晨开始了Ravenfield的开发。最初，使用的版本为，Beta1是5.4.0,Beta2是5.3.5f1,Beta3/4/5是5.4.0f3
+  SteelRaven7在一个凌晨开始了Ravenfield的开发。最初，使用的版本为，Beta1--5.4.0，Beta2--5.3.5f1，Beta3/4/5--5.4.0f3
+
+- 2015年3月19日 3:06
+  乌鸦发布了一条最早有关RF的帖子：
+  
+  > I wrote down a bunch of callouts for my intruder map: https://superbossgames.com/forum/viewtopic.php?f=14&t=2033&p=12717#p12717
+  >
+  > 我给我做的[Intruder](https://baike.baidu.com/item/Intruder/24296672)地图绘制了一堆标注。（推文链接无法访问，WebArchive无快照）
+  
+  这个地图是SteelRaven7上传在RF创意工坊中唯一的正式地图:[Oceanside](https://steamcommunity.com/sharedfiles/filedetails/?id=974147860)。
+  
+  由在2014年12月20日（？），Intruder的制作公司Superboss Games在[YouTube](https://m.youtube.com/watch?v=NqssmYypnM8)发布的一个浏览这张地图的视频，我们能够判定这张地图的出现早于2014年12月。
+
+  在Intruder的创意工坊，排名第一（现非）的地图就是这张[Oceanside](https://steamcommunity.com/sharedfiles/filedetails/?id=1813453028)，而发布者是另一个人Rob Storm，Intruder的首席开发者。
+  
+- 2015年10月11日 6:00
+  乌鸦发布的Ravenfield本体在互联网网上最早出现的图片与推文:
+
+  > SMAW#screenshotsaturday
   
 - 2016年7月3日 20:34:09
-  Ravenfield Beta 1完成构建
+  Ravenfield Beta1完成构建
   
 - 2016年7月16日
-  Beta 1正式发布于 gamejolt和itch.io平台.
+  Beta1正式发布于[gamejolt](https://gamejolt.com/)和[itch.io](https://itch.io/)平台。
   
-  在一年左右的时间里,SteelRaven7挑战了许多难题.对于这种风格的游戏,他是陌生的.在之前开发的游戏里,也很难找到直接应用的代码和素材.所幸的是,RF的风格极大的减少了素材制作量.以至于他能够将大部分精力转移到游戏机制的开发和优化.
+  在一年左右的时间里，SteelRaven7挑战了许多难题，但对于这种风格的游戏仍然是陌生的，之前开发的游戏里也很难找到直接应用给RF的代码和素材。
+  
+  所幸的是，RF的风格极大的减少了素材制作量，以至于他能够将大部分精力转移到游戏机制的开发和优化。
+  
+  SteelRaven7身边的朋友不仅很多很铁，很多还是游戏开发和技术上的大佬，和一些知名独立游戏制作人。在7DFPS比赛上，有许多朋友与他互相切磋，同台竞技。
+  
+  其中有很大一部分是FPS类游戏开发，在2015年的一些推文里可以看到乌鸦经常在一些游戏开发论坛上发帖求识或解答问题，上面15年的帖子就是一个例子
   
 - 2016年7月8日
-  国外某视频平台的一位用户"iwanPlays"发布了一段长达11分34秒的Ravenfield实况解说视频.视频将大部分游戏元素都介绍地淋漓尽致,一下子就惊艳到了许多玩家.后据考证确认,此人为SteelRaven7的朋友,因在游戏方面兴趣相投,两人便在网络上结识.在RF的开发过程中,"iwanPlays"也经常提出建议并帮忙测试游戏.而这个视频,也被证实是首次出现Ravenfield在视频平台上的视频.
+
+  YouTube的一位用户iwanPlays发布了一段长达11分34秒的Ravenfield[实况解说视频](https://youtube.com/watch?v=xuF2X3rhHjg)（？）。
   
-  在视频的简介中,也给出了游戏的最初介绍:
+  视频将大部分游戏元素都介绍地淋漓尽致，一下子就惊艳到了许多玩家
+  
+  后据考证确认，此人为SteelRaven7的朋友，因在游戏方面兴趣相投，两人便在网络上结识。
+  
+  在RF的开发过程中，iwanPlays也经常提出建议并帮忙测试游戏。
+  
+  而这个视频，也被证实是首次出现Ravenfield在视频平台上的视频。
+  
+  在视频的简介中，也给出了游戏的最初介绍:
   
   > Ravenfield is a singleplayer battlefield style game. It started out as an experiment with ragdolls and AI, and will remain a slightly experimental, for-fun game project.
+  > 
+  > Ravenfield是一款单人战地类游戏。它最初是将布娃娃物理和AI机制融合的实验。我们将继续开发这个有趣的实验性游戏项目。
   
-  Ravenfield是一款单人战地类游戏.它最初是将布娃娃物理和AI机制融合的实验.我们将继续开发这个有趣的实验性游戏项目.
-  
-  8天后.SteelRaven7正式将Ravenfield上传发布.当天,他还上传了一个名为"Ravenfield Audio Pass"视频.视频下一条回复能够说明一切:"And so he begins.(所以,他出发了)".
-  
-  这个时龄24岁的瑞典男孩，从2012年开始的游戏开发，开始了他的不平凡的人生.而Ravenfield,注定被载入游戏的史册.
+  8天后，SteelRaven7正式将Ravenfield上传发布。当天，他还上传了一个名为[Ravenfield Audio Pass](https://youtube.com/watch?v=6j-tFOU6xuQ)视频。视频下一条回复能够说明一切:"And so he begins.(所以，他出发了)"。
 
 - 2016年7月8日 16:52
-  Ravenfield贴吧的第一个帖子就此发出.(https://tieba.baidu.com/p/4658215950 )
+  Ravenfield贴吧的第一个[帖子](https://tieba.baidu.com/p/4658215950)就此发出。
   
-  对于这个帖子的楼主"零拾壹-",几乎没人了解他.而然他曾经担任过Ravenfield的吧主.
+  对于这个帖子的楼主"零拾壹-"，几乎没人了解他。而然他曾经担任过Ravenfield的吧主。
  
- 在2018年1月13日后就消失了踪迹.他留给贴吧的最后一个帖子,是如今的水楼.
+ 在2018年1月13日后就消失了踪迹。他留给贴吧的最后一个帖子，是如今的水楼。
+ 
 - 2016年7月12日 00:35 
-  "零拾壹-"在贴吧里发帖"游戏下载地址"(https://tieba.baidu.com/p/4664876046 ).比官方发布游戏整整早了4天.如今已无法知晓当时的来源.但经推测和论证,SteelRaven7在游戏正式发布前流出过Alpha版和一些临时编译版本.而"零拾壹-"在帖子中的下载链接的文件,经比对与正式发布版本相同,均为2016年7月3日编译.这也论证了在官方发布Beta1之前,游戏已经在小众圈子内出名.
+  "零拾壹-"在贴吧里发帖"游戏下载地址"(https://tieba.baidu.com/p/4664876046 )。比官方发布游戏整整早了4天。如今已无法知晓当时的来源。
+  
+  但经推测和论证，SteelRaven7在游戏正式发布前流出过Alpha版和一些临时编译版本。
+  
+  而"零拾壹-"在帖子中的下载链接的文件，经比对与正式发布版本相同，均为2016年7月3日编译。
+  
+  这也论证了在官方发布Beta1之前，游戏已经在小众圈子内出名。
 
 - 2016年12月15日 13:09
-  战地模拟器吧建立并发布第一个由机器人发布的帖子(https://tieba.baidu.com/p/4900464106 ).同时,也证实了Ravenfield贴吧实际上创立时间比战地模拟器吧时间还早的事实.
+  战地模拟器吧建立并发布第一个由机器人发布的帖子(https://tieba.baidu.com/p/4900464106 )。
+  
+  同时，也证实了Ravenfield贴吧实际上创立时间比战地模拟器吧时间还早的事实。
 
 - 2016年7月19日 
-  itch.io发布<itch.io 7月游戏指南>,Ravenfield的介绍被放在"精选游戏(Highlighted games)"第一的位置.
+  itch.io发布itch.io的7月游戏指南，Ravenfield的介绍被放在"精选游戏(Highlighted games)"第一的位置。
   
-  在介绍时,还引用了"iwanPlays"的最初介绍.【图片】
+  在介绍时，还引用了"iwanPlays"的最初介绍。
   
 - 2016年7月31日
-  SteelRaven7发布Beta2的体验视频"Ravenfield Beta 2 Sneak Peek".
+  SteelRaven7发布Beta2的体验视频"Ravenfield Beta 2 Sneak Peek"。
   
 - 2016年7月31日 
-  Beta2编译完成.同日发布到itch.io.【图片
+  Beta2编译完成。同日发布到itch.io。【图片
   
 - 2016年9月14日
-  SteelRaven7发布Beta3的体验视频"Ravenfield Beta 3".
-  同时,这个视频也是Beta版介绍视频中的播放量最高的视频(26万次).这也为接下来的Beta4在国内外的大火奠定基础.
+  SteelRaven7发布Beta3的体验视频"Ravenfield Beta 3"。
+  
+  同时，这个视频也是Beta版介绍视频中的播放量最高的视频(26万次)。这也为接下来的Beta4在国内外的大火奠定基础。
 
 - 2016年9月16日
- Beta3编译完成并发布.【图片】
+  Beta3编译完成并发布。
  
 - 2016年10月21日
- SteelRaven7发布Beta4的体验视频"Ravenfield Beta 4".
+ SteelRaven7发布Beta4的体验视频"Ravenfield Beta 4"。
  
 - 2016年10月21日 22:13:05
-  Beta4编译打包完成并发布.
+  Beta4编译打包完成并发布。
   
-  关于Beta4后游戏在世界大火的历史,我们后面再讲.【图片】
 - 2016年12月9日 
-  SteelRaven7发布Beta5的体验视频"Ravenfield Beta 5".
+  SteelRaven7发布Beta5的体验视频"Ravenfield Beta 5"。
+  
 - 2016年12月9日 2:09:25 
-  Beta5编译打包完成并发布.
+
+  Beta5编译打包完成并发布。
   
-  至此,Ravenfield的Beta版本全部发布完毕.
+  至此，Ravenfield的免费Beta版本全部发布完毕
   
-  但在当初,SteelRaven7的一些朋友在Beta5发布后还开始介绍Beta6.对于Beta6,SteelRaven7也曾经介绍过.但最终,为什么会停止更新免费版,选择参加Steam Greenlight(青睐之光)计划,入驻Steam平台呢?在翻阅蓝鸟时,大概也能找到答案.
-  
-  SteelRaven7很早就有创造一款独立游戏的梦想.他的许多朋友和同僚,都是一些小有名气的游戏开发者.这也给他产生了一些压力.在蓝鸟上,他经常转发朋友的游戏开发进程和新技术,并与自己做比较.加入Steam青睐之光计划,其实也早在计划之中.
 - 2017年2月2日 2:06 
-  Ravenfield正式登陆Steam Greenlight(青睐之光)计划.
+  Ravenfield正式登陆[Steam Greenlight计划](https://www.zhihu.com/question/55680388/answer/146887017)。
+  
+  SteelRaven7很早就有创造一款独立游戏的梦想。他的许多朋友和同僚，都是一些小有名气的游戏开发者。这也给他产生了一些压力。
+  
+  在X（Twitter）上，他经常转发朋友的游戏开发进程和新技术，并与自己做比较。加入Steam青睐之光计划，其实也早在计划之中。
+  
+  Ravenfield的历史自此进入了Steam时代，大部分更新可在Steam公告检索
+  
 - 2017年2月2日 6:18 
-  仅4小时后,关注度已经上升到第80名.
-  24小时后(系SteelRaven7记忆错误,应为25小时),排名上升到第4.
-- 2017年2月6日19:53 
-  排名已达到第二,投票超过20,000票.
+  Steam Greenlight关注度已经上升到第80名。
+  
+  24小时后(系SteelRaven7记忆错误，应为25小时)，排名上升到第4。
+  
+- 2017年2月6日 19:53 
+
+  排名已达到第二，投票超过20000票。
+  
 - 2017年2月7日 5:44 
-  Ravenfield在Steam Greenlight上排名第一.
-  第一同时意味着,游戏,马上就能登陆Steam平台发售了.
+
+  Ravenfield在Steam Greenlight上排名第一。
+  
+  同时意味着游戏马上就能登陆Steam平台发售。
+  
 - 2017年2月7日 5:46 
-  SteelRaven7发了一条蓝鸟:
+  SteelRaven7发了一条蓝鸟（Twitter）：
   
   > As there are still some things that I need sort out, a release date for the game will be announced at a later time!
+  >
+  >由于仍有一些事情我需要解决，因此游戏的发布日期将在以后宣布！
+
+- 2017年5月12日 1:19 
+
+  SteelRaven7发了一条蓝鸟，再次引起轩然大波:
+  > Ravenfield has a steam page and a release date! May 18!
+  >
+  >Ravenfield已经有了一个Steam页面和正式发布日期!5月18日!
   
-  由于仍有一些事情我需要解决，因此游戏的发布日期将在以后宣布！
+- 2017年5月19日 12:00 （瑞典斯德哥尔摩时间2017年5月19日 上午6:00UTC+2 夏令时）
+  SteelRaven7发布蓝鸟:
   
-  而Ravenfield的历史,进入了Steam时代.
+  > Ravenfield is out on Steam! Get it during the launch week for a discounted price! RTs super appreciated!
   
+  很快，众多国外游戏资讯平台纷纷发布文章介绍游戏，许多某视频平台up主也迅速抢先体验。
   
+  在众多评论中，有这样一条刺眼的差评:
+  
+  > 15€, are you f**king kidding me, no way i'm ever gonna buy it, there are so much better games for less than this
+  >
+  > 15欧元 ，你**的在开玩笑吗，我绝对不会买它，有这么多比这更好的游戏
+  
+  作为一款抢先体验的游戏，游戏内容的完成度成了众多游戏玩家按下支付键前的犹豫。
+  
+  但是，真正的好游戏，一定能经得起历史的检验。
 
+  SteelRaven对于这条推文的回复，表明了他的决心:
 
-此篇是关于Ravenfield最远历史的论证
-在一开始,我就已经介绍Ravenfield的开发开始于2015年的夏天.
-但仍有一些问题:
-有没有人帮助过SteelRaven7或者曾合作开发过?
-最先知道RF的游戏内容的人是谁?
-最早在互联网关于RF的内容是什么?
-为什么从开发到Beta1用了近一年的时间?
----------------------------
-在查找资料时,很明显能感受到,SteelRaven7身边的朋友不仅很多很铁,很多还是游戏开发和技术上的大佬.例如,在7DFPS比赛上,有许多朋友与他互相切磋,同台竞技,里面不乏一些知名的独立游戏制作人.不禁想起一句话:"近朱者赤,近墨者黑."
-而他的朋友里面,有很大一部分是开发FPS类游戏.在2015年的一些推文里,可以看到他经常在一些游戏开发论坛上发帖求识或解答问题.
-而这里,就不得不提其中一篇.
-2015年3月19日 3:06 SteelRaven7发了一篇配图推文:
-I wrote down a bunch of callouts for my intruder map: https://superbossgames.com/forum/viewtopic.php?f=14&t=2033&p=12717#p12717 
-我给我做的Intruder(一款FPS联机游戏)地图绘制了一堆标注.【图片】这个地图,正是SteelRaven7上传在RF创意工坊中唯一的正式地图:Oceanside.目前,推文里的网页已经无法访问,且未查到任何网页快照.
-实际上,在2014年12月20日,Intruder的制作公司"Superboss Games"在某视频平台就发布了一个浏览这张地图的视频.因此,也能够判定,这张地图的出现早于2014年12月.
-如果我们浏览Intruder的创意工坊,会发现排名第一的地图就是这张Oceanside.而发布者是另一个人:Rob Storm.这位就是Intruder的首席开发者.
-而这个视频和图片,成为了有关Ravenfield在互联网上最早的内容.
-而Ravenfield本体在互联网网上最早出现的图片,是这篇2015年10月11日 6:00的推文:
-SMAW#screenshotsaturday【图片】至于,为什么从开发到Beta1会经历如此长的时间,大概就能从这幅图片里解读出来,我们下次再说.
+  >Sad to hear that. Hopefully I'll add enough content so you feel the game justifies the price again!
+  >
+  >听到这个消息我很悲伤。请大家相信我会添加丰富的内容，来向您证明游戏价格的合理！
 
+- 2017年5月17日 15:53:00UTC+0
+  游戏正式发布
 
+> 2019年12月27日 [Ravenfield手机盗版事件](https://zh.moegirl.org.cn/zh-cn/Ravenfield#%E5%A4%A7%E4%BA%8B%E4%BB%B6)
+  在好游快爆上有自称是"战地模拟器的超级爱好者"发布了未经授权的电脑免费试玩版本的手机移植版
 
+  随后国内诸多玩家通过Discord将情况告知的远在瑞典的SteelRaven7并将侵权内容整理成[视频](https://www.bilibili.com/video/BV1LK411L7Dw)
 
-谈一下Ravenfield名字的由来
-从字面上看，Ravenfield是由“Raven”和“field”两个单词组成。
-Raven即是乌鸦的意思，取自自己的网名steelRaven7.
-field有田地，土地的意思，在这里可引申为战场。
-因此，直译的话应为乌鸦战场。
-其游戏名称及内容灵感均来自EA游戏battlefield（战地）。
-因此，国内最早的民间译名即为“战地模拟器”。
-之后陆续出现“掠夺之地”“瑞文战争”等译名，均为一些游戏资讯网站自己命名。
-贴吧曾组织中文译投票，最终得票率最高的为“鸦潮”。如今已鲜为人知。
+  2020年1月31日，SteelRaven7在Steam平台发布[公告](https://steamcommunity.com/games/636480/announcements/detail/1714118468064054445)申权
+  
+  数天后，在舆论压力下，平台好游快爆撤下了单机版。
 
+  同天，联机版依旧可以下载，手机移植者声称"广告盈利是为维持多人服务器开销"。经过玩家多方调查，一致认为仍存在侵权行为。
 
-【图片】2017年5月12日上午1:19 SteelRaven7发了一条蓝鸟,再次引起轩然大波:
-Ravenfield has a steam page and a release date! May 18!
-Ravenfield已经有了一个Steam页面和正式发布日期!5月18日!
-北京时间2017年5月19日 上午12:00
-瑞典斯德哥尔摩时间 ·2017年5月19日 上午6:00(UTC+2 夏令时)
-SteelRaven7发布蓝鸟:
-#Ravenfield is out on Steam! Get it during the launch week for a discounted price! RTs super appreciated!
-很快,众多国外游戏资讯平台纷纷发布文章介绍游戏,许多某视频平台up主也迅速抢先体验.
-在众多评论中,有这样一条刺眼的差评:
-15€, are you f**king kidding me, no way i'm ever gonna buy it, there are so much better games for less than this
-15欧元 ，你**的在开玩笑吗，我绝对不会买它，有这么多比这更好的游戏
-作为一款抢先体验的游戏,游戏内容的完成度成了众多游戏玩家按下支付键前的犹豫.
-游戏会继续开发吗?将来会越做越好吗?不会弃坑吗?一系列问题不仅考验着玩家,也煎熬着开发者的内心.李时珍用30年写就<本草纲目>,但没有一个书商愿意刊印如此一本巨著,写书难,刊印更难.而游戏开发者亦是如此,开发难,更新更难.如何将一个转瞬即逝的灵感形成一个史诗级的游戏,这不仅考验着开发者的技术,更考验开发者是否能做到不忘初心,砥砺前行.
-但是,真正的好游戏,一定能经得起历史的检验.
-SteelRaven对于这条推文的回复,表明了他的决心:
-Sad to hear that. Hopefully I'll add enough content so you feel the game justifies the price again!
-听到这个消息我很悲伤。请大家相信我会添加丰富的内容,来向您证明游戏价格的合理！
+  2020年3月-4月，多位国内玩家仍坚持对盗版游戏的声讨，并多次联系SteelRaven7。
 
+  在此期间，SteelRaven7曾与盗版作者多次互通邮件，在盗版作者发给SteelRaven7的邮件中明显存在遮掩实施，回避侵权的意思，甚至表示希望购买其版权。SteelRaven7对此表示拒绝并发出警告。
+  
+  2020年3月29日，经过多方努力，好游快爆终于暂停盗版游戏的下载，但其介绍页仍存在至今。
+  
+  参见：[关于战地模拟器手机移植版的真相](https://tieba.baidu.com/p/6470407620)、[关于“战场模拟”手游侵权通知](https://tieba.baidu.com/p/6573505564)、[SteelRaven7亲自发布的视频](https://tieba.baidu.com/p/6577976910)、[关于战地模拟器手游移植一事的事后总结与思考](https://tieba.baidu.com/p/6684484495)、[最早关于手机盗版的帖](https://tieba.baidu.com/p/6422211598)
+  
+- 2021年8月 [恶意模组美术资源倒卖事件](https://zh.moegirl.org.cn/zh-cn/Ravenfield#.E6.81.B6.E6.84.8F.E7.9B.97.E5.8D.96Mod.E4.BA.8B.E4.BB.B6)
 
+  [@Lezvin](https://steamcommunity.com/id/Lezvin)（Ravenfield创意工坊知名国内Mod制作者）在个人（steam？）游戏动态里表示因mod被恶意解包、传播和牟利，自己永远退出Ravenfield圈
+  
+  此后，众多Ravenfield玩家对此愤愤不平，并对某些在某宝某鱼某夕参与盗卖Ravenfield模组的商家表示谴责。
 
-经过申请steam数据查询,确定正式发布时间:18 May 2017 – 15:53:00 UTC
+  甚至，连国外制作者都纷纷下架自己的Mod表示抗议(如[@ninjagrape](https://steamcommunity.com/id/Ninjagrape7993)，曾多次与Lezvin合作)。
 
+  盗卖这种行为严重打击了国内外Modder的创作兴趣，尤其是国内RF圈。
 
-2017年6月29日 Ravenfield Early Access Build 2 发布【图片】这是SteelRaven7在某视频平台的介绍视频中的简介:
-The new Ravenfield update just dropped, featuring a completely reworked Archipelago map, and some new tools such as attack boats and wire-guided missile launchers to fight with!
-新的 Ravenfield 更新刚刚发布，更新了完全重新设计的群岛地图，以及一些新的武器，例如战船和导弹发射器等！
+  为了促进国内Modder的活跃度和创作热情，Ravenfield贴吧吧主展开贴吧吧内活动“模组激励计划”（见贴吧）
+  
+- 2022年4月29日
 
+  经长期beta测试，正式在EA26发布中开发引擎版本正式由Unity5.6迁移到Unity2020.3
 
-2017年7月29日 Ravenfield Early Access Build 3 发布【图片】蓝鸟:
-You can now publish and download custom maps via the Steam Workshop!
-您现在可以通过 Steam 创意工坊发布和下载自定义地图！
+- 2023年9月 Runtime fee事件
+  由于Unity（游戏开发使用的引擎服务商）宣布将[调整Unity收费模式](https://developer.unity.cn/projects/650025a7edbc2ad788ccc1ea)，RF开发将经受极大经济影响
+  
+  在非官方Discord服务器传出了（可信消息，来自知名modder[@Sofa](https://steamcommunity.com/id/csp499)）应对措施，包括但不限于尽快完成RF1.0版本的开发后结束更新支持、吊销Unity开发者执照和可能的未来开发引擎迁移
+  
+  上述措施随Unity的在巨量公众压力下的政策撤回而搁置
 
-2017年9月15日周五 01:07 AI Commanding - Early Access build 4发布【图片】这次主要涉及的是AI更新和一些载具武器更新.
-最值得注意的是第一个Changelog:
-- Updated to Unity Engine 5.6.3p1
-至发帖时间,Ravenfield的Unity版本仍是5.6.3p1.
-全部更新内容:https://store.steampowered.com/news/app/636480/view/4548028998604888721 
+- 2025年9月 
+  乌鸦在[Steam公告](https://store.steampowered.com/news/app/636480/view/506213027443377679)宣布RF已经组建开发团队，结束个人独立开发阶段
 
-（参见steam公告）
-
-各版本(Beta1-EA24)的Unity版本
-Beta1: Unity 5.4.0 Personal
-Beta2: Unity 5.3.5f1Personal
-Beta3/4/5: Unity 5.4.0f3 Personal
-EA1-3: Unity5.5.2 Pro
-EA4-17: Unity5.6.3p1 Pro
-EA18-24: Unity5.6.7f1 Pro
-
-Ravenfield手机盗版事件
-萌娘百科:
-https://zh.moegirl.org.cn/zh-cn/Ravenfield#%E5%A4%A7%E4%BA%8B%E4%BB%B6 
-贴吧重要帖子:
-关于战地模拟器手机移植版的真相[https://tieba.baidu.com/p/6470407620 ]
-[公告]关于“战场模拟”手游侵权通知[https://tieba.baidu.com/p/6573505564 ]
-SteelRaven7亲自发布的视频[https://tieba.baidu.com/p/6577976910 ]
-(个人推荐阅读)关于战地模拟器手游移植一事的事后总结与思考[https://tieba.baidu.com/p/6684484495 ]
-最早关于手机盗版的帖子[https://tieba.baidu.com/p/6422211598 ]
-注:手机盗版发布最确切的时间是2019年12月27日
-
-恶意盗卖搬运事件目前没有一个完整的调查报告,暂时无法写入此贴,我正在尝试在萌娘百科预先写一下
-https://zh.moegirl.org.cn/zh-cn/Ravenfield#%E5%A4%A7%E4%BA%8B%E4%BB%B6 
-
-runtime fee
-
-dev team
-
-ea32
+> *Ravenfield名字的由来*
+>
+> 从字面上看，Ravenfield是由“Raven”和“field”两个单词组成。
+>
+> Raven即是乌鸦的意思，取自自己的网名steelRaven7.
+>
+> field有田地，土地的意思，在这里可引申为战场。
+> 因此，直译的话应为乌鸦战场。
+>
+> 其游戏名称及内容灵感均来自EA游戏battlefield（战地）。
+>
+> RF国内最早的民间译名即为“战地模拟器”。
+>  
+>  之后陆续出现“掠夺之地”“瑞文战争”等译名，均为一些游戏资讯网站自己命名。
+>  
+>  贴吧曾组织中文译投票，最终得票率最高的为“鸦潮”。如今已鲜为人知。
