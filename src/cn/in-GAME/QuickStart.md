@@ -19,7 +19,7 @@
 ## 主菜单
 进入游戏，在游戏加载完后按任意键，进入游戏主界面：
 
-{缺图}
+
 
 | 选项 | 对应操作 |
 |------|------|
@@ -27,6 +27,7 @@
 | MODS | 模组管理 |
 | MAP EDITOR | 地图编辑器 |
 | OPTIONS | 设置 |
+| EXIT | 退出游戏 |
 
 
 ### Mod管理
@@ -56,7 +57,7 @@
 |------|------|
 | Instant Actions 即时行动 | 一般模式 |
 | Conquest 征服 | 战旗模式，已经暂时退出游戏 |
-| Arcade 街机 | 卡牌策略与一般模式的结合 |
+| Arcade 休闲 | Campaign 征服模式内的官方子模式，卡牌策略与一般模式的结合 |
 
 在实际中，我们主要游玩的是INSTANT ACTION模式，以下的文档内容主要面向此模式
 
@@ -66,22 +67,29 @@
 
 点击INSTANT ACTION进入本局游戏的配置界面
 
+![instant actions配置界面](https://ravenfieldcommunity.github.io/docs-img/in-GAME/quickstart.001.jpg)
+
 在左上角的大封面中选择地图，可搜索或筛选、调整预览图标大小
 
 在`GAME MODE`处选择游戏模式，目前游戏有以下6个模式：
 - `SKIRMISH` 死斗模式
+
   双方只有一个初始据点，玩家无法重生（飞机增援时除外），死亡后将附身在存活的AI，继承AI的武器或者载具继续战斗。双方队伍拥有2次增援，双方兵力将不断损耗，直至一方兵力损耗完或者把地图旗帜据点全部占领，游戏结束。
 - `POINT MATCH` 征服模式
+
   双方任意一方达到击杀数量即胜利
 - `BATTLE` 对战模式 
+
   游戏开始时，双方都有固定兵力，击杀敌人或占领了地图内全部据点都会损耗敌方兵力，如果敌方兵力降为0后游戏胜即利。
 - `SPEC OPS` 特别行动模式
   特工任务模式
   
-  懒(✿◡‿◡)，此处直接引用，参见[Steam指南](https://steamcommunity.com/sharedfiles/filedetails/?id=2584237725)（感谢 @[VadertheConqueror](https://steamcommunity.com/profiles/76561199102628353)）
+  懒(✿◡‿◡)，此处直接引用，参见[百度贴吧（Steam指南版好像似了）](https://tieba.baidu.com/p/7514576910)（感谢 @[VadertheConqueror](https://steamcommunity.com/profiles/76561199102628353)）
 - `HAUNTED` 亡灵模式
+
   类似于生存模式，你需要带领队员在骷髅的围剿攻击下生存7回合即可胜利。骷髅分为2种，一种是近战骷髅，一种是远程骷髅，每回合都会有新的武器补给，但是攻击的时候不能跑出圈外，不然会持续掉血。
 - `DOMINATION` 兵力对抗模式
+
   游戏双方都有三个进程，一方三个进程全部结束，则该方不会再继续刷兵，并且游戏会胜利，如果一方据点占领得多，血条掉的也会更快。
 
 `PLAYER TEAM`处选择玩家的队伍，`Eagle`和`Raven`分别为蓝、红队，`Spectator`为旁观模式（即上帝视角，游戏中你可以通过单击一个AI来追踪他的行动，再次单击取消）
@@ -96,11 +104,17 @@
 
 接着翻到下一页（CONFIG页），你可以调整更多
 
+![instant actions配置界面的队伍配置](https://ravenfieldcommunity.github.io/docs-img/in-GAME/quickstart.002.jpg)
+
 这一页可以预览队伍配置
 
-在`SAVE`处上面的按钮选择已保存的游戏配置（即脚本、武器、皮肤、载具等配置）（如果你下载了一些整合包也是在这里选择），也可以安`SAVE`来保存自己的配置，方便调用。（重命名时如果名字已存在会覆盖已有的配置）
+在`SAVE`处上面的按钮选择已保存的游戏配置（即脚本、武器、皮肤、载具等配置）（如果你下载了一些整合包也是在这里选择），也可以按`SAVE`来保存自己的配置，方便调用。（重命名时如果名字已存在会覆盖已有的配置）
+
+保存界面里也可以删除已有配置
 
 点击`EDIT EAGLE`或者下面红队的选项，来修改队伍配置
+
+![instant actions配置界面的单个队伍配置](https://ravenfieldcommunity.github.io/docs-img/in-GAME/quickstart.003.jpg)
 
 最顶处选择本队伍的预设配置
 
@@ -109,6 +123,8 @@
 `CHARCTER SKINS`处选择双方的皮肤（上方的窗口可以预览，载具、武器同样）。
 
 单击`WEAPON SELECT`可以选择AI可用的武器，右上角可以搜索、选择分类和筛选，每个图标左上角的小圆点表示稀有度（玩家和bot可以获得使用的概率，包括禁用、普通、稀有和超稀有）
+
+![instant actions配置界面的武器选择](https://ravenfieldcommunity.github.io/docs-img/in-GAME/quickstart.004.jpg)
 
 `PAINT ALL`为应用左上角四个圆点中被选中的稀有度到所有武器
 
@@ -170,13 +186,17 @@
 
 这是游戏中的UI：
 
-当然还有玩家列表（TAB键）处“`K`、`D`、`F`、`V`”，分别表示击杀数（误杀友军会抵消）、死亡次数、占领据点数、击毁载具数
+![hub](https://ravenfieldcommunity.github.io/docs-img/in-GAME/quickstart.005.jpg)
+
+`SQUAD - FOLLOW`为小队状态（参见下文），其下显示载具耐久（如有，一并会显示热诱弹状态和载具内人数），再下为生命值，其左为小队队员状态（生命值与武器或载具）
+
+当然还有玩家列表（`Tab键`）处“`K`、`D`、`F`、`V`”，分别表示击杀数（误杀友军会抵消）、死亡次数、占领据点数、击毁载具数
 
 游戏中按Enter键选择武器后可以点击`RESPAWN`重生并应用。
 
 `Esc`键可以暂停游戏并打开菜单。
 
-`RESUME`是继续游戏
+在菜单中，`RESUME`是继续游戏
 
 `RESTAET`是重新开始游戏
 
@@ -335,10 +355,9 @@
 
 ### Arcade模式
 
+
+
 ## 其他问题
-> **删除游戏配置与游戏内地图编辑器的保存地图**
->
->
 
 > **游戏彩蛋**
 >
