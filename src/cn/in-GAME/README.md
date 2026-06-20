@@ -50,11 +50,13 @@ SteelRaven7 （大乌鸦），瑞典人，单人独立开发Ravenfield
 
 你可以在这里了解到更多信关于RF的今生前世：[\[百度贴吧\]Ravenfield全球通史（已删除）](https://tieba.baidu.com/p/7329861755?see_lz=1)
 
+也欢迎在RF的[fandom百科](https://ravenfield.fandom.com/wiki/Ravenfield_Wiki)（英文）找到更多关于本游戏的有趣信息！
+
 以下为补充与搬运（时区应该为北京时间）：
 
-:::warn 
-**未请求转载授权，非常抱歉**
-:::
+> [!tip]
+> **暂未取得转载授权，非常抱歉**
+> 
 
 
 - 2015年 夏天
@@ -63,11 +65,11 @@ SteelRaven7 （大乌鸦），瑞典人，单人独立开发Ravenfield
 - 2015年3月19日 3:06
   乌鸦发布了一条最早有关RF的帖子：
   
-  > I wrote down a bunch of callouts for my intruder map: https://superbossgames.com/forum/viewtopic.php?f=14&t=2033&p=12717#p12717
+  > I wrote down a bunch of callouts for my intruder map: [superbossgames.com/forum/](https://superbossgames.com/forum/viewtopic.php?f=14&t=2033&p=12717#p12717)
   >
   > 我给我做的[Intruder](https://baike.baidu.com/item/Intruder/24296672)地图绘制了一堆标注。（推文链接无法访问，WebArchive无快照）
   
-  这个地图是SteelRaven7上传在RF创意工坊中唯一的正式地图:[Oceanside](https://steamcommunity.com/sharedfiles/filedetails/?id=974147860)。
+  这个地图是SteelRaven7上传在RF创意工坊中唯一的正式地图：[Oceanside](https://steamcommunity.com/sharedfiles/filedetails/?id=974147860)。
   
   由在2014年12月20日（？），Intruder的制作公司Superboss Games在[YouTube](https://m.youtube.com/watch?v=NqssmYypnM8)发布的一个浏览这张地图的视频，我们能够判定这张地图的出现早于2014年12月。
 
@@ -110,7 +112,7 @@ SteelRaven7 （大乌鸦），瑞典人，单人独立开发Ravenfield
   > 
   > Ravenfield是一款单人战地类游戏。它最初是将布娃娃物理和AI机制融合的实验。我们将继续开发这个有趣的实验性游戏项目。
   
-  8天后，SteelRaven7正式将Ravenfield上传发布。当天，他还上传了一个名为[Ravenfield Audio Pass](https://youtube.com/watch?v=6j-tFOU6xuQ)视频。视频下一条回复能够说明一切:"And so he begins.(所以，他出发了)"。
+  8天后，SteelRaven7正式将Ravenfield上传发布。当天，他还上传了一个名为[Ravenfield Audio Pass](https://youtube.com/watch?v=6j-tFOU6xuQ)视频。视频下一条回复能够说明一切：“And so he begins(所以，他出发了).”。
 
 - 2016年7月8日 16:52
   Ravenfield贴吧的第一个[帖子](https://tieba.baidu.com/p/4658215950)就此发出。
@@ -120,7 +122,7 @@ SteelRaven7 （大乌鸦），瑞典人，单人独立开发Ravenfield
  在2018年1月13日后就消失了踪迹。他留给贴吧的最后一个帖子，是如今的水楼。
  
 - 2016年7月12日 00:35 
-  "零拾壹-"在贴吧里发帖"游戏下载地址"(https://tieba.baidu.com/p/4664876046 )。比官方发布游戏整整早了4天。如今已无法知晓当时的来源。
+  "零拾壹-"在贴吧里发帖[游戏下载地址](https://tieba.baidu.com/p/4664876046)。比官方发布游戏整整早了4天。如今已无法知晓当时的来源。
   
   但经推测和论证，SteelRaven7在游戏正式发布前流出过Alpha版和一些临时编译版本。
   
@@ -129,20 +131,20 @@ SteelRaven7 （大乌鸦），瑞典人，单人独立开发Ravenfield
   这也论证了在官方发布Beta1之前，游戏已经在小众圈子内出名。
 
 - 2016年12月15日 13:09
-  战地模拟器吧建立并发布第一个由机器人发布的帖子(https://tieba.baidu.com/p/4900464106 )。
+  战地模拟器吧建立并发布第一个由机器人发布的[帖子](https://tieba.baidu.com/p/4900464106)。
   
   同时，也证实了Ravenfield贴吧实际上创立时间比战地模拟器吧时间还早的事实。
 
 - 2016年7月19日 
-  itch.io发布itch.io的7月游戏指南，Ravenfield的介绍被放在"精选游戏(Highlighted games)"第一的位置。
+  itch.io发布itch.io的7月游戏指南，Ravenfield的介绍被放在“精选游戏(Highlighted games)”第一的位置。
   
-  在介绍时，还引用了"iwanPlays"的最初介绍。
+  在介绍时，还引用了iwanPlays的最初介绍。
   
 - 2016年7月31日
   SteelRaven7发布Beta2的体验视频"Ravenfield Beta 2 Sneak Peek"。
   
 - 2016年7月31日 
-  Beta2编译完成。同日发布到itch.io。【图片
+  Beta2编译完成。同日发布到itch.io。
   
 - 2016年9月14日
   SteelRaven7发布Beta3的体验视频"Ravenfield Beta 3"。
@@ -231,7 +233,7 @@ SteelRaven7 （大乌鸦），瑞典人，单人独立开发Ravenfield
 - 2017年5月17日 15:53:00UTC+0
   游戏正式发布
 
-> 2019年12月27日 [Ravenfield手机盗版事件](https://zh.moegirl.org.cn/zh-cn/Ravenfield#%E5%A4%A7%E4%BA%8B%E4%BB%B6)
+- 2019年12月27日 [Ravenfield手机盗版事件](https://zh.moegirl.org.cn/zh-cn/Ravenfield#%E5%A4%A7%E4%BA%8B%E4%BB%B6)
   在好游快爆上有自称是"战地模拟器的超级爱好者"发布了未经授权的电脑免费试玩版本的手机移植版
 
   随后国内诸多玩家通过Discord将情况告知的远在瑞典的SteelRaven7并将侵权内容整理成[视频](https://www.bilibili.com/video/BV1LK411L7Dw)
@@ -262,21 +264,21 @@ SteelRaven7 （大乌鸦），瑞典人，单人独立开发Ravenfield
 
   为了促进国内Modder的活跃度和创作热情，Ravenfield贴吧吧主展开贴吧吧内活动“模组激励计划”（见贴吧）
   
-- 2022年4月29日
+- 2022年4月29日 开发引擎更新
 
-  经长期beta测试，正式在EA26发布中开发引擎版本正式由Unity5.6迁移到Unity2020.3
+  经长期beta测试，在EA26发布时游戏开发引擎版本正式由Unity5.6迁移到Unity2020.3
 
 - 2023年9月 Runtime fee事件
   由于Unity（游戏开发使用的引擎服务商）宣布将[调整Unity收费模式](https://developer.unity.cn/projects/650025a7edbc2ad788ccc1ea)，RF开发将经受极大经济影响
   
-  在非官方Discord服务器传出了（可信消息，来自知名modder[@Sofa](https://steamcommunity.com/id/csp499)）应对措施，包括但不限于尽快完成RF1.0版本的开发后结束更新支持、吊销Unity开发者执照和可能的未来开发引擎迁移
+  非官方Discord服务器传出了（可信消息，来自知名modder[@Sofa](https://steamcommunity.com/id/csp499)）应对措施，包括但不限于尽快完成RF1.0版本的开发后结束更新支持、吊销Unity开发者执照和可能的未来开发引擎迁移
   
-  上述措施随Unity的在巨量公众压力下的政策撤回而搁置
+  上述措施随Unity在巨量公众压力下的政策撤回而搁置
 
-- 2025年9月 
+- 2025年9月 开发团队组建
   乌鸦在[Steam公告](https://store.steampowered.com/news/app/636480/view/506213027443377679)宣布RF已经组建开发团队，结束个人独立开发阶段
 
-> *Ravenfield名字的由来*
+> *附：论Ravenfield的名字*
 >
 > 从字面上看，Ravenfield是由“Raven”和“field”两个单词组成。
 >
