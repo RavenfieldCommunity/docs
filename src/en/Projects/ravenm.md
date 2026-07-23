@@ -113,7 +113,7 @@ You can download the plugin here:
 
 > [Community edition's github](https://github.com/RavenfieldCommunity/RavenM/releases) for EA32 or newer
 >
-> Latest build is updated at ![update timestamp](https://img.shields.io/badge/dynamic/json?label=UTC&logo=GitHub&style=flat-square&url=https%3A%2F%2Fapi.github.com%2Frepos%2FRavenfieldCommunity%2FRavenM%2Freleases%2Flatest&query=%24.assets%5B0%5D.updated_at).
+> Latest build is updated at ![update timestamp](https://img.shields.io/badge/dynamic/json?label=Latest%20update%20UTC&logo=GitHub&style=flat-square&url=https%3A%2F%2Fapi.github.com%2Frepos%2FRavenfieldCommunity%2FRavenM%2Freleases%2Flatest&query=%24.updated_at).
 >
 > The testing build(find out the "`test`" tab to download) is updated at ![update timestamp](https://img.shields.io/badge/dynamic/json?label=UTC&logo=GitHub&style=flat-square&url=https%3A%2F%2Fapi.github.com%2Frepos%2FRavenfieldCommunity%2FRavenM%2Freleases%2F225323657&query=%24.assets%5B0%5D.updated_at).
 >

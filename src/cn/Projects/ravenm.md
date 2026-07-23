@@ -7,7 +7,7 @@ photoSwipe: true
 ::: center
 ![QQ频道号](https://img.shields.io/badge/QQ频道-9pmc179t29-blue?style=flat-square) ![插件QQ群号](https://img.shields.io/badge/插件QQ群-794322470-blue?style=flat-square) ![插件oopz频道号](https://img.shields.io/badge/%E6%8F%92%E4%BB%B6Oopz%E9%A2%91%E9%81%93-%E6%97%A0%E9%82%80%E8%AF%B7%E9%93%BE%E6%8E%A5-blue?style=flat-square)
 
-![最新版本号](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&&color=green&&style=flat-square&url=https://gitee.com/api/v5/repos/RedQieMei/Raven-M/releases/372833&query=%24.name)
+![最新版本号](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&&color=green&&style=flat-square&url=https://gitee.com/api/v5/repos/qw124134/rfm/releases/758351&query=%24.name)
 :::
 
 ## 描述
