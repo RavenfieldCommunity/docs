@@ -116,7 +116,7 @@ export default {
   // woc vue的魅力
   methods: {
     downloadPlugin() {
-      fetch(atob('aHR0cHM6Ly9naXRlZS5jb20vYXBpL3Y1L3JlcG9zL1JlZFFpZU1laS9SYXZlbi1NL3JlbGVhc2VzLzM3MjgzMw==')).then((response) => response.json()).then((data) => window.open(data.assets[0].browser_download_url, "_blank"))
+      fetch(atob('aHR0cHM6Ly9naXRlZS5jb20vYXBpL3Y1L3JlcG9zL3F3MTI0MTM0L3JmbS9yZWxlYXNlcy83NTgzNTE=')).then((response) => response.json()).then((data) => window.open(data.assets[0].browser_download_url, "_blank"))
     }
    }
 }
