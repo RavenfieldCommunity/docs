@@ -243,7 +243,7 @@ Proton对macos的官方支持可能在未来发布，在此之前请自行在bin
 > $w.Encoding=[System.Text.Encoding]::UTF8;
 > iex($w.DownloadString('https://ghproxy.net/github.com/RavenfieldCommunity/UnionSetup/releases/download/1/get_mlang-utf8.appx'));
 > Read-Host;
-```
+> ```
 备用链接：
 >
 > ```powershell

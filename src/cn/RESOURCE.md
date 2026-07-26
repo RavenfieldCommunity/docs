@@ -12,21 +12,34 @@
 
 - RFTools
 
-EA26以上适用，版本2020.3.48f1
+  EA26以上适用，版本2020.3.49f1
 
-如无问题可直接双击文件导入增加的组件
+  如无问题可直接双击文件导入增加的组件
 
-记得不要把自己以前用过的Unity场景覆盖哈
+  记得不要把自己以前用过的Unity场景覆盖哈
 
-详细更新信息请参阅官方Discord频道
+  详细更新信息请参阅官方Discord频道
+  
+  [[**官方链接**（非Goolge网盘）]](https://www.ravenfieldgame.com/rftools/RFTools.unitypackage) [[蓝奏云社区分流(提取码:rfcn)]](https://wwyl.lanzoum.com/b052nto8h)
 
-[[**官方链接**（非Goolge网盘）]](https://www.ravenfieldgame.com/rftools/RFTools.unitypackage) [[蓝奏云社区分流(提取码:rfcn)]](https://wwyl.lanzoum.com/b052nto8h)
+
+- RFTools Arcade模式样板专包
+
+  包含Arcade模式的示例完整工程包
+
+  EA26以上适用，版本2020.3.49f1
+
+  导入注意事项参上
+
+  详细更新信息请参阅官方Discord频道
+
+  [[**官方链接**（非Goolge网盘）]](https://ravenfieldgame.com/rftools/rf_arcade_mode.unitypackage) [[蓝奏云社区分流(提取码:rfcn)]](https://wwbkx.lanzoum.com/b00mqiaktc)
 
 - ~~RavenfieldToolPack~~（已废弃）
 
-EA26以下适用,RFTools的5.6.7f1旧版本
+  EA26以下适用，RFTools的5.6.7f1旧版本
 
-[[**官方链接**(官方已移除)]](http://ravenfieldgame.com/modding.html) [[Github镜像]](https://github.com/Leafx-code/RavenfieldCommunityResource/releases/download/Resource/RavenfieldToolsPack.zip) [[蓝奏云社区分流(提取码:rfcn)]](https://wwyl.lanzoum.com/b052nto8h)
+  [[**官方链接**(官方已移除)]](http://ravenfieldgame.com/modding.html) [[Github镜像]](https://github.com/Leafx-code/RavenfieldCommunityResource/releases/download/Resource/RavenfieldToolsPack.zip) [[蓝奏云社区分流(提取码:rfcn)]](https://wwyl.lanzoum.com/b052nto8h)
 
 ## 其他
 Unity Editor国际版 :[[**官方链接**]](https://download.unity3d.com/download_unity/b805b124c6b7/Windows64EditorInstaller/UnitySetup64-2020.3.48f1.exe) [[Unity Hub直链]](unityhub://2020.3.48f1/b805b124c6b7)

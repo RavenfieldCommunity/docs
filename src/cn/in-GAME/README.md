@@ -55,9 +55,8 @@ SteelRaven7 （大乌鸦），瑞典人，单人独立开发Ravenfield
 以下为补充与搬运（时区应该为北京时间）：
 
 > [!tip]
+>
 > **暂未取得转载授权，非常抱歉**
-> 
-
 
 - 2015年 夏天
   SteelRaven7在一个凌晨开始了Ravenfield的开发。最初，使用的版本为，Beta1--5.4.0，Beta2--5.3.5f1，Beta3/4/5--5.4.0f3
@@ -266,7 +265,7 @@ SteelRaven7 （大乌鸦），瑞典人，单人独立开发Ravenfield
   
 - 2022年4月29日 开发引擎更新
 
-  经长期beta测试，在EA26发布时游戏开发引擎版本正式由Unity5.6迁移到Unity2020.3
+  经长期beta测试，在EA26发布时，游戏开发引擎版本正式由Unity5.6迁移到Unity2020.3
 
 - 2023年9月 Runtime fee事件
   由于Unity（游戏开发使用的引擎服务商）宣布将[调整Unity收费模式](https://developer.unity.cn/projects/650025a7edbc2ad788ccc1ea)，RF开发将经受极大经济影响
@@ -276,6 +275,7 @@ SteelRaven7 （大乌鸦），瑞典人，单人独立开发Ravenfield
   上述措施随Unity在巨量公众压力下的政策撤回而搁置
 
 - 2025年9月 开发团队组建
+
   乌鸦在[Steam公告](https://store.steampowered.com/news/app/636480/view/506213027443377679)宣布RF已经组建开发团队，结束个人独立开发阶段
 
 > *附：论Ravenfield的名字*
