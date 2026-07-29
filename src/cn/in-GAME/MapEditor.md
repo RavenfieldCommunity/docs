@@ -220,7 +220,7 @@
 |Turret Spawn |固定武器生成点（如机枪）|
 |Vehicle Spawn |载具生成点|
 
-用法参见本站[组件文档](/cn/Components)
+用法参见本站[组件文档](/cn/Components)，部分元素选项需要配合汉化，恕此处不另行贴出
 
 ### AI寻路规划
 
@@ -274,22 +274,31 @@
 
   调整游戏时白天和黑夜的颜色
 
-  以下翻译：
+  
 
 
 - `Atmosphere`
 
   调整环境大气散射（天空氛围）
 
-  以下翻译：
+  
 
 - `Validation`
 
-  错误检查器
+  错误检查器，列出有问题的地方
+  
+  | 原文 | 解释 |
+  |------|------|
+  | Some neighbours are unassigned | 部分据点未配置[Neighbors战役路线](#战役路线) |
+  | Some \* spawners are not inside the protection ring of any capture point | 部分载具生成点不在据点保护范围 |
+  | The level must contain at-least two capture points | 地图据点少于两个 |
+  | A capture point must belong to the \* team | Eagle/Raven队 至少各有一个据点 |
+  | A name is required (save level to disk) | 地图需要文件名 | 
+  | A photo is required (snap one with the Photo tool) | 地图需要封面 | 
 
 - `Upload`
 
-  参考[#保存_发布地图]()
+  参考[保存/发布地图](#%E4%BF%9D%E5%AD%98-%E5%8F%91%E5%B8%83%E5%9C%B0%E5%9B%BE)
 
 以下为`SETTING`的解释：
 
@@ -338,13 +347,9 @@
 
 #### 保存/发布地图
 
-当您完成了您的地图
+当您完成了您的地图，就是时候保存他们了
 
-就是时候保存他们了
-
-点击`MAIN MENU`中的`SAVE`
-
-在弹出的方框中的”`File Name`“里输入一个名字后点击`SAVE`
+点击`MAIN MENU`中的`SAVE`，在弹出的方框中的”`File Name`“里输入一个名字后点击`SAVE`
 
 然后就会开始保存地图：
 
@@ -352,22 +357,18 @@
 
 按需求点击即可，点击`NO`会回到命名框要求重新命名
 
-可以通过`Ctrl`+`S`来快速保存，不过这样不会保存NAV（寻路网格），导致游戏过程中出现bot不会走路
-
-这时需要在菜单完整保存一次
+可以通过`Ctrl`+`S`来快速保存，不过这样不会保存NAV（寻路网格），导致游戏过程中出现bot不会走路，这时需要在菜单完整保存一次
 
 保存后，地图将会保存在`C:\Users\*你的用户名*\AppData\LocalLow\SteelRaven7\RavenfieldSteam\save\`，文件名为`*保存的名称*.rfld`
 
 - 游玩
 
-  在`CUSTOM MAP`处点击，找到您的地图并点击即可游玩
+  在主菜单找到您的地图并点击即可游玩
 
 - 发布至Steam创意工坊
 
   点击`MAIN MENU` -> `LEVEL DETAILS` -> `Upload`
 
-  它可能会在”`Please fix following problem:`“这个框内显示一些问题
+  它可能会在”`Please fix following problem:`“这个框内显示一些问题，同`Validation`错误检查器，请自行修复
 
-  请自行修复
-
-  如果一切正常，请直接点击`CONNECT`，这会跳转至Steam，按照提示操作即可，确保Steam在后台
+  如果一切正常，请直接点击`CONNECT`关联Steam，按照提示操作即可，填好物品名、简介、更新日志（可在Steam另外再修改）、标签，勾选同意Steam协议，即可发布

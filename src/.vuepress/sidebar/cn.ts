@@ -17,6 +17,7 @@ export const cnSidebar = sidebar({
       "/cn/Tutorials/wpn.1",
 	    "/cn/Tutorials/vhc.1",
 				"/cn/Tutorials/map.1",
+	"/cn/Tutorials/map.2",
       "/cn/Tutorials/otr.1",
 	    "/cn/Tutorials/rvs.1",
       "/cn/Tutorials/rvs.2",
