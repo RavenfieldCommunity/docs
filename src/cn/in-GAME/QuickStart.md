@@ -255,9 +255,7 @@
 
 回到游戏中的HUD处（左、右下角）
 
-`SQUAD(2)`的意思是小队中有2个队友
-
-`NO SQUAD`的意思是你的小队内没有队员
+`SQUAD(2)`的意思是小队中有2个队友，而`NO SQUAD`的意思是你的小队内没有队员
 
 横杠后面的是队友的状态
 
@@ -411,17 +409,37 @@ Arcade休闲模式 属于 Campaign战役模式 内官方出品的子模式
 
 #### 游戏内
 
-进入游戏，顶部显示天数和
+进入游戏，顶部显示天数和胜利情况
+
+下方选择本轮游戏操作：`EQUIPMENT DROP` 投放武器、`NEW VEHICLE` 获取载具、`REINFORCEMENTS` 获取增援
+
+前两个操作可以使用银币换一批新的载具或武器
+
+选完操作后，你还可以使用银币再购买一次武器
+
+然后你将需要选择进攻点，并进入游戏战斗（在暂停菜单按`SURRENDER`投降）
+
+结束本轮游戏后，你将获得收益
 
 ## 其他问题
 
 > **游戏彩蛋**
 >
+> 参见[Steam指南：圣剑](https://steamcommunity.com/sharedfiles/filedetails/?id=2788043171)和[Steam指南：轨道炮](https://steamcommunity.com/sharedfiles/filedetails/?id=1388717934)
+
+> **VR模式**
 >
+> 参见[Steam第三方指南](https://steamcommunity.com/sharedfiles/filedetails/?id=3691966864)
+
+> **本地双屏双人游玩**
+>
+> 安装[Nucleus co-op](https://github.com/SplitScreen-Me/splitscreenme-nucleus)，搜索Ravenfield即可找到预设
 
 > **自定义Bot名字**
 >
-> 
+> 打开游戏目录下的`ravenfield_Data\botnames.txt`（macos可能需要打开`显示包内容`，删除原文件内容填入新名字，一行一个
+>
+> 然后在游戏选项的bot名字来源选择即可
 
 > **多人联机**
 >

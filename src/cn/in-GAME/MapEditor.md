@@ -274,14 +274,56 @@
 
   调整游戏时白天和黑夜的颜色
 
-  
+  | 原文 | 解释 |
+  |------|------|
+  | Sunlight Color | 太阳光颜色 |
+  | Moonlight Color | 月光颜色 |
+  | Sun Direction | 太阳方向(角度) |
+  | Moon Direction | 月亮方向(角度) |
+  | Sun Pitch | 太阳高度 |
+  | Moon Pitch | 月亮高度 |
+  | Day Light Above | 白天高光 |
+  | Night Light Above | 夜晚高光 |
+  | Day Light Side | 白天侧光 |
+  | Night Light Side | 夜晚侧光 |
+  | Day Light Below | 白天底光 |
+  | Night Light Below | 夜晚侧光 | 
+  | Day Fog Color | 白天雾色 |
+  | Night Fog Color | 夜晚雾色 |
+  | Day Fog Density | 白天雾密度 |
+  | Night Fog Density | 夜晚雾密度 |
+  | COLOR PICKER | 拾色器 |
+  | Intensity | 色彩浓烈程度 |
+  | HEX | HEX值 |
 
 
 - `Atmosphere`
 
   调整环境大气散射（天空氛围）
 
-  
+  | 原文 | 解释 |
+  |------|------|
+  | Day Sky Thickness | 白天天空厚重度 |
+  | Night Sky Thickness | 夜晚天空厚重度 |
+  | Day Sky Exposure | 白天天空通透率 |
+  | Night Sky Exposure | 夜晚天空通透率 |
+  | Sun Size | 太阳大小 |
+  | Moon Size | 月亮大小 |
+  | Day Sky Tint | 白天天空色调 |
+  | Day Ground Color | 白天地面色调 |
+  | Night Sky Tint | 夜晚天空色调 |
+  | Night Ground Color | 夜晚地面色调 |
+  | Post Processing Preset | 后处理预设 |
+  | Default | 默认 | 
+  | Bright | 明亮 |
+  | Muted | 沉寂 |
+  | Dark | 黑暗 |
+  | HotSand | 热土 |
+  | ScorchingFire | 火炙 |
+  | CoolIce | 冰雪 |
+  | FrozenSolid | 冻土 |
+  | Moody | 幻情 |
+  | Trippy | 迷幻 |
 
 - `Validation`
 
